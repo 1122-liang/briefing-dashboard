@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三美股份每周估值</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载三美估值数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('sanmei', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('sanmei');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '三美估值数据将在每周一自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+      const products = latest.products || {};
+      const v = latest.valuation || {};
+
+      // Time series data
+      const dates = allData.map(d => d.data.date).reverse();
+      const productSeries = {};
+      const productNames = Object.keys(products);
+      for (const pname of productNames) {
+        productSeries[pname] = allData.map(d => d.data.products?.[pname]?.price).reverse();
+      }
+      const avgPrices = allData.map(d => d.data.weighted_avg_price).reverse();
+      const stockPrices = allData.map(d => d.data.stock_price).reverse();
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">💹 三美股份每周估值</h1>
+          <div>
+            <span class="text-sm" style="color:var(--text-muted)">${latest.date}</span>
+            <span class="badge badge-blue" style="margin-left:8px">${latest.data_source || ''}</span>
+            ${latest.cookie_expired ? '<span class="badge badge-yellow" style="margin-left:4px">Cookie过期</span>' : ''}
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">加权均价</div>
+            <div class="stat-value">${fmtPrice(latest.weighted_avg_price)}/吨</div>
+            <div class="stat-change neutral">制冷剂加权</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">吨利润</div>
+            <div class="stat-value">${fmtPrice(latest.profit_per_ton)}</div>
+            <div class="stat-change down">每吨毛利</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">现价</div>
+            <div class="stat-value">¥${latest.stock_price || '-'}</div>
+            <div class="stat-change neutral">603379.SH</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">年化EPS</div>
+            <div class="stat-value">${latest.eps_annual || '-'}</div>
+            <div class="stat-change neutral">基于产品级模型</div>
+          </div>
+        </div>
+
+        <!-- Valuation Cards -->
+        <div class="card">
+          <div class="card-title mb-4">三档估值</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+            ${['pessimistic','neutral','optimistic'].map(key => {
+              const labels = { pessimistic: '悲观', neutral: '基准', optimistic: '乐观' };
+              const colors = { pessimistic: 'var(--green)', neutral: 'var(--accent)', optimistic: 'var(--red)' };
+              const val = v[key] || {};
+              return `
+                <div style="text-align:center;padding:20px;background:var(--bg-primary);border-radius:var(--radius)">
+                  <div class="text-sm" style="color:var(--text-muted)">${labels[key]} ${val.pe || '-'}×</div>
+                  <div style="font-size:32px;font-weight:700;color:${colors[key]};margin:8px 0">¥${val.target || '-'}</div>
+                  <div class="text-xs" style="color:var(--text-muted)">vs 现价 ¥${latest.stock_price || '-'}</div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+
+        <!-- Product Prices Chart -->
+        <div class="card">
+          <div class="card-title mb-4">制冷剂品种价格</div>
+          <div id="productChart" class="chart-container"></div>
+        </div>
+
+        <!-- Product Price Table -->
+        <div class="card">
+          <div class="card-title mb-4">各品种详情</div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>品种</th><th>价格</th><th>涨跌幅</th></tr>
+              ${Object.entries(products).map(([name, p]) => `
+                <tr>
+                  <td class="font-bold">${name}</td>
+                  <td>${fmtPrice(p.price)}/${p.unit || '吨'}</td>
+                  <td class="${changeClass(p.change_pct)}">${fmtPct(p.change_pct)}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>
+
+        <!-- Cost Structure -->
+        ${latest.cost_structure ? `
+        <div class="card">
+          <div class="card-title mb-4">成本结构</div>
+          <div id="costChart" class="chart-container" style="min-height:250px"></div>
+        </div>
+        ` : ''}
+
+        <!-- History -->
+        <div class="card">
+          <div class="card-title mb-4">历史估值</div>
+          <div id="historyList"></div>
+        </div>
+      `;
+
+      // Render product price chart
+      const prodChart = initChart('productChart');
+      if (prodChart && productNames.length > 0) {
+        const theme = getEChartsTheme();
+        const colors = ['#3b82f6','#22c55e','#eab308','#f97316','#8b5cf6'];
+        prodChart.setOption({
+          ...theme,
+          tooltip: { ...theme.tooltip, trigger: 'axis' },
+          legend: { ...theme.legend, data: productNames, bottom: 0 },
+          grid: { left: 60, right: 20, top: 20, bottom: 50 },
+          xAxis: { ...theme.xAxis, type: 'category', data: dates },
+          yAxis: { ...theme.yAxis, type: 'value', name: '元/吨',
+            axisLabel: { ...theme.yAxis.axisLabel, formatter: v => (v/10000).toFixed(1) + '万' } },
+          series: productNames.map((name, i) => ({
+            name, type: 'line', smooth: true, data: productSeries[name] || [],
+            lineStyle: { width: 2 }, itemStyle: { color: colors[i % colors.length] }
+          }))
+        });
+      }
+
+      // Render cost chart
+      if (latest.cost_structure) {
+        const costChart = initChart('costChart');
+        if (costChart) {
+          const theme = getEChartsTheme();
+          const costItems = Object.entries(latest.cost_structure);
+          costChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'item' },
+            series: [{
+              type: 'pie', radius: ['40%', '70%'],
+              label: { color: '#94a3b8', formatter: '{b}: ¥{c}' },
+              data: costItems.map(([k, v]) => ({ name: k, value: v }))
+            }]
+          });
+        }
+      }
+
+      // History
+      const historyEl = document.getElementById('historyList');
+      historyEl.innerHTML = allData.slice(0, 20).map(d => {
+        const data = d.data;
+        const nv = data.valuation?.neutral || {};
+        return `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
+            <div>
+              <span class="font-bold">${data.date}</span>
+              <span class="badge badge-blue" style="margin-left:8px">${data.data_source || ''}</span>
+            </div>
+            <div>
+              均价 ${fmtPrice(data.weighted_avg_price)} ·
+              现价 ¥${data.stock_price || '-'} ·
+              目标 ¥${nv.target || '-'}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投研简报总览</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载数据中...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('index', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+
+      // Load latest data from all modules in parallel
+      const [lithium, deviation, sanmei, aihot, mcpSkills] = await Promise.all([
+        loadLatest('lithium').catch(() => null),
+        loadLatest('deviation').catch(() => null),
+        loadLatest('sanmei').catch(() => null),
+        loadLatest('aihot').catch(() => null),
+        loadLatest('mcp_skills').catch(() => null),
+      ]);
+
+      loading.remove();
+
+      // Build summary cards
+      const cards = [];
+
+      // Lithium card
+      if (lithium) {
+        const li = lithium.li_price || {};
+        const scoreColor = (lithium.score || 0) >= 60 ? 'up' : (lithium.score || 0) <= 40 ? 'down' : 'neutral';
+        cards.push(`
+          <a href="lithium.html" class="stat-card">
+            <div class="stat-label">🔋 碳酸锂日报</div>
+            <div class="stat-value">${fmtPrice(li.close, '¥')}/吨</div>
+            <div class="stat-change ${changeClass(li.change_pct)}">${fmtPct(li.change_pct)}</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              综合评分 <span class="font-bold ${scoreColor}">${lithium.score || '-'}</span> · ${lithium.score_level || '-'}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="lithium.html" class="stat-card">
+            <div class="stat-label">🔋 碳酸锂日报</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Deviation card
+      if (deviation && deviation.runs && deviation.runs.length > 0) {
+        const latestRun = deviation.runs[deviation.runs.length - 1];
+        const stocks = latestRun.stocks || [];
+        const alerts = stocks.filter(s => s.status !== 'normal').length;
+        const total = stocks.length;
+        cards.push(`
+          <a href="deviation.html" class="stat-card">
+            <div class="stat-label">📈 偏离度预警</div>
+            <div class="stat-value">${total} 只</div>
+            <div class="stat-change">
+              ${alerts > 0
+                ? `<span class="up">${alerts} 只偏高/极高</span>`
+                : '<span class="down">全部正常</span>'}
+            </div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              最近更新 ${fmtDateTime(latestRun.generated_at)}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="deviation.html" class="stat-card">
+            <div class="stat-label">📈 偏离度预警</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Sanmei card
+      if (sanmei) {
+        const v = sanmei.valuation || {};
+        const neutral = v.neutral || {};
+        cards.push(`
+          <a href="sanmei.html" class="stat-card">
+            <div class="stat-label">💹 三美股份估值</div>
+            <div class="stat-value">¥${neutral.target || '-'}</div>
+            <div class="stat-change neutral">基准目标价 (15×PE)</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              现价 ¥${sanmei.stock_price || '-'} · ${sanmei.data_source || ''}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="sanmei.html" class="stat-card">
+            <div class="stat-label">💹 三美股份估值</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // AIHOT card
+      if (aihot) {
+        const count = aihot.total_opportunities || 0;
+        cards.push(`
+          <a href="aihot.html" class="stat-card">
+            <div class="stat-label">🤖 AIHOT 机会日报</div>
+            <div class="stat-value">${count} 个</div>
+            <div class="stat-change neutral">今日投资机会</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${aihot.no_opportunity ? '无机会' : (aihot.opportunities || []).map(o => o.industry).join(' · ')}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="aihot.html" class="stat-card">
+            <div class="stat-label">🤖 AIHOT 机会日报</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // MCP/Skills card
+      if (mcpSkills) {
+        const updates = mcpSkills.updates_available || 0;
+        cards.push(`
+          <a href="mcp_skills.html" class="stat-card">
+            <div class="stat-label">🔧 MCP/Skills</div>
+            <div class="stat-value">${updates} 项</div>
+            <div class="stat-change ${updates > 0 ? 'up' : 'down'}">
+              ${updates > 0 ? '待更新' : '全部最新'}
+            </div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              检查日期 ${mcpSkills.date || '-'}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="mcp_skills.html" class="stat-card">
+            <div class="stat-label">🔧 MCP/Skills</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Build timeline from all modules
+      const events = [];
+      if (lithium && lithium.generated_at) {
+        events.push({ time: lithium.generated_at, module: '碳酸锂', icon: '🔋',
+          content: `锂价 ${fmtPrice(lithium.li_price?.close)}/吨 ${fmtPct(lithium.li_price?.change_pct)}，综合评分 ${lithium.score}` });
+      }
+      if (deviation && deviation.runs) {
+        deviation.runs.forEach(r => {
+          const alerts = (r.stocks || []).filter(s => s.status !== 'normal');
+          events.push({ time: r.generated_at, module: '偏离度', icon: '📈',
+            content: `${r.time} 检查：${alerts.length > 0 ? alerts.length + ' 只预警' : '全部正常'}` });
+        });
+      }
+      if (sanmei && sanmei.generated_at) {
+        events.push({ time: sanmei.generated_at, module: '三美估值', icon: '💹',
+          content: `数据源: ${sanmei.data_source}，加权均价 ¥${sanmei.weighted_avg_price || '-'}` });
+      }
+      if (aihot && aihot.generated_at) {
+        events.push({ time: aihot.generated_at, module: 'AIHOT', icon: '🤖',
+          content: aihot.no_opportunity ? '今日无投资机会' : `发现 ${aihot.total_opportunities} 个投资机会` });
+      }
+      if (mcpSkills && mcpSkills.generated_at) {
+        events.push({ time: mcpSkills.generated_at, module: 'MCP/Skills', icon: '🔧',
+          content: `${mcpSkills.updates_available || 0} 项待更新` });
+      }
+
+      events.sort((a, b) => new Date(b.time) - new Date(a.time));
+
+      const timelineHTML = events.length > 0
+        ? `<div class="timeline">${events.map(e => `
+            <div class="timeline-item">
+              <div class="timeline-date">${fmtDateTime(e.time)}</div>
+              <div class="timeline-content">
+                <span class="badge badge-blue">${e.icon} ${e.module}</span>
+                <span style="margin-left:8px">${e.content}</span>
+              </div>
+            </div>
+          `).join('')}</div>`
+        : '<div class="empty-state"><p>暂无最近事件</p></div>';
+
+      app.innerHTML = `
+        <h1 style="font-size:24px;font-weight:700;margin-bottom:24px">📋 投研简报总览</h1>
+        <div class="stats-grid">${cards.join('')}</div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📅 最近事件</div>
+          </div>
+          ${timelineHTML}
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

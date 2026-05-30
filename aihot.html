@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIHOT 投资机会日报</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载 AIHOT 数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('aihot', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('aihot');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, 'AIHOT 投资机会日报将在每个工作日自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+
+      // Aggregate industry stats
+      const industryCount = {};
+      const typeCount = {};
+      let totalOpps = 0;
+      for (const entry of allData) {
+        for (const opp of (entry.data.opportunities || [])) {
+          totalOpps++;
+          industryCount[opp.industry] = (industryCount[opp.industry] || 0) + 1;
+          typeCount[opp.type] = (typeCount[opp.type] || 0) + 1;
+        }
+      }
+
+      const industries = Object.entries(industryCount).sort((a, b) => b[1] - a[1]);
+      const types = Object.entries(typeCount).sort((a, b) => b[1] - a[1]);
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">🤖 AIHOT 投资机会日报</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latest.date}</span>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">今日机会</div>
+            <div class="stat-value">${latest.total_opportunities || 0}</div>
+            <div class="stat-change neutral">${latest.no_opportunity ? '无投资机会' : '个投资机会'}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计机会</div>
+            <div class="stat-value">${totalOpps}</div>
+            <div class="stat-change neutral">${allData.length} 天数据</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">覆盖行业</div>
+            <div class="stat-value">${industries.length}</div>
+            <div class="stat-change neutral">${industries.length > 0 ? industries[0][0] : '-'}</div>
+          </div>
+        </div>
+
+        <!-- Industry Distribution -->
+        ${industries.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">行业分布</div>
+          <div id="industryChart" class="chart-container" style="min-height:280px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Type Distribution -->
+        ${types.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">机会类型分布</div>
+          <div id="typeChart" class="chart-container" style="min-height:280px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Today's Opportunities -->
+        <div class="card">
+          <div class="card-title mb-4">📌 今日投资机会</div>
+          ${latest.no_opportunity || !latest.opportunities || latest.opportunities.length === 0
+            ? '<div class="empty-state"><p>今日暂无投资机会</p></div>'
+            : latest.opportunities.map(opp => `
+              <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;margin-bottom:12px;border-left:3px solid var(--accent)">
+                <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
+                  <span class="font-bold" style="font-size:16px">${opp.title}</span>
+                  <span class="badge badge-blue">${opp.industry}</span>
+                  <span class="badge badge-yellow">${opp.type}</span>
+                </div>
+                ${opp.summary ? `<p class="text-sm" style="color:var(--text-secondary);margin-bottom:8px">${opp.summary}</p>` : ''}
+                ${opp.investment_logic ? `
+                  <div class="text-sm" style="margin-bottom:8px">
+                    <span style="color:var(--accent)">💡 投资逻辑：</span>
+                    <span style="color:var(--text-secondary)">${opp.investment_logic}</span>
+                  </div>
+                ` : ''}
+                ${opp.target_stocks && opp.target_stocks.length > 0 ? `
+                  <div class="text-sm">
+                    <span style="color:var(--text-muted)">🎯 潜在标的：</span>
+                    ${opp.target_stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">${s}</span>`).join('')}
+                  </div>
+                ` : ''}
+                ${opp.risk_note ? `
+                  <div class="text-xs" style="margin-top:6px;color:var(--yellow)">⚠️ ${opp.risk_note}</div>
+                ` : ''}
+              </div>
+            `).join('')}
+        </div>
+
+        <!-- History Timeline -->
+        <div class="card">
+          <div class="card-title mb-4">历史日报</div>
+          <div class="timeline">
+            ${allData.slice(0, 30).map(entry => {
+              const d = entry.data;
+              return `
+                <div class="timeline-item">
+                  <div class="timeline-date">${d.date}</div>
+                  <div class="timeline-content">
+                    ${d.no_opportunity
+                      ? '<span style="color:var(--text-muted)">无投资机会</span>'
+                      : `<span class="badge badge-green">${d.total_opportunities} 个机会</span>
+                         ${(d.opportunities || []).slice(0, 3).map(o =>
+                           `<span class="badge badge-blue" style="margin-left:4px">${o.industry}</span>`
+                         ).join('')}`
+                    }
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+
+      // Industry chart
+      if (industries.length > 0) {
+        const indChart = initChart('industryChart');
+        if (indChart) {
+          const theme = getEChartsTheme();
+          indChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'item' },
+            series: [{
+              type: 'pie', radius: ['40%', '70%'],
+              label: { color: '#94a3b8', formatter: '{b}: {c} ({d}%)' },
+              data: industries.map(([name, count]) => ({ name, value: count }))
+            }]
+          });
+        }
+      }
+
+      // Type chart
+      if (types.length > 0) {
+        const typeChart = initChart('typeChart');
+        if (typeChart) {
+          const theme = getEChartsTheme();
+          typeChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'axis', axisPointer: { type: 'shadow' } },
+            grid: { left: 100, right: 20, top: 20, bottom: 20 },
+            xAxis: { ...theme.xAxis, type: 'value' },
+            yAxis: { ...theme.yAxis, type: 'category', data: types.map(t => t[0]).reverse() },
+            series: [{ type: 'bar', data: types.map(t => t[1]).reverse(),
+              itemStyle: { color: '#3b82f6', borderRadius: [0, 4, 4, 0] },
+              barWidth: '50%' }]
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>碳酸锂期货日报</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载碳酸锂数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('lithium', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('lithium');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '碳酸锂日报数据将在下一个交易日自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+      const li = latest.li_price || {};
+      const companies = latest.companies || {};
+      const dates = allData.map(d => d.data.date).reverse();
+      const prices = allData.map(d => d.data.li_price?.close).reverse();
+      const scores = allData.map(d => d.data.score).reverse();
+
+      // Company name mapping
+      const companyNames = { ganfeng: '赣锋锂业', yanhu: '盐湖股份', zkcy: '中矿资源', tianqi: '天齐锂业' };
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">🔋 碳酸锂期货日报</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latest.date} · ${li.source || ''}</span>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">碳酸锂主连</div>
+            <div class="stat-value">${fmtPrice(li.close)}/吨</div>
+            <div class="stat-change ${changeClass(li.change_pct)}">${fmtPct(li.change_pct)}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">综合评分</div>
+            <div class="stat-value">${latest.score || '-'}</div>
+            <div class="stat-change neutral">${latest.score_level || '-'}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">季节性指数</div>
+            <div class="stat-value">${latest.seasonal_index || '-'}</div>
+            <div class="stat-change neutral">${(latest.seasonal_index || 0) > 1 ? '旺季' : '淡季'}</div>
+          </div>
+        </div>
+
+        <!-- Price Chart -->
+        <div class="card">
+          <div class="card-title mb-4">碳酸锂价格走势</div>
+          <div id="priceChart" class="chart-container"></div>
+        </div>
+
+        <!-- Score Gauge -->
+        <div class="card">
+          <div class="card-title mb-4">综合评分</div>
+          <div id="scoreChart" class="chart-container" style="min-height:250px"></div>
+        </div>
+
+        <!-- Company Valuation Table -->
+        <div class="card">
+          <div class="card-title mb-4">四公司三档估值</div>
+          <div class="table-wrap">
+            <table>
+              <tr>
+                <th>公司</th><th>现价</th><th>吨毛利</th><th>毛利率</th>
+                <th>季度净利(亿)</th><th>年化EPS</th><th>悲观12×</th><th>正常15×</th><th>乐观18×</th><th>弹性</th>
+              </tr>
+              ${Object.entries(companies).map(([k, c]) => `
+                <tr>
+                  <td class="font-bold">${c.name}</td>
+                  <td>${fmtPrice(c.price)}</td>
+                  <td>${fmtNum(c.ton_profit)}</td>
+                  <td>${c.gross_margin}%</td>
+                  <td>${c.quarterly_net}</td>
+                  <td>${c.eps_annual}</td>
+                  <td>${fmtPrice(c.valuation?.pessimistic)}</td>
+                  <td>${fmtPrice(c.valuation?.neutral)}</td>
+                  <td>${fmtPrice(c.valuation?.optimistic)}</td>
+                  <td>${c.elasticity}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>
+
+        <!-- Geo Risks -->
+        ${latest.geo_risks && latest.geo_risks.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">地缘政治风险</div>
+          ${latest.geo_risks.map(r => `
+            <div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--border)">
+              <span class="badge ${r.score >= 6 ? 'badge-red' : r.score >= 4 ? 'badge-yellow' : 'badge-green'}">${r.score}分</span>
+              <span class="font-bold">${r.name}</span>
+              <span class="text-sm" style="color:var(--text-muted)">${r.status}</span>
+            </div>
+          `).join('')}
+        </div>
+        ` : ''}
+
+        <!-- History List -->
+        <div class="card">
+          <div class="card-title mb-4">历史日报</div>
+          <div id="historyList"></div>
+        </div>
+      `;
+
+      // Render price chart
+      const priceChart = initChart('priceChart');
+      if (priceChart) {
+        const theme = getEChartsTheme();
+        priceChart.setOption({
+          ...theme,
+          tooltip: { ...theme.tooltip, trigger: 'axis' },
+          grid: { left: 60, right: 20, top: 30, bottom: 50 },
+          xAxis: { ...theme.xAxis, type: 'category', data: dates },
+          yAxis: {
+            ...theme.yAxis, type: 'value',
+            name: '元/吨',
+            axisLabel: { ...theme.yAxis.axisLabel, formatter: v => (v/10000).toFixed(1) + '万' }
+          },
+          series: [{
+            type: 'line', data: prices, smooth: true,
+            lineStyle: { color: '#3b82f6', width: 2 },
+            areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: 'rgba(59,130,246,0.3)' },
+              { offset: 1, color: 'rgba(59,130,246,0.02)' }
+            ])},
+            itemStyle: { color: '#3b82f6' }
+          }],
+          dataZoom: allData.length > 10 ? [{ type: 'inside' }] : []
+        });
+      }
+
+      // Render score gauge
+      const scoreChart = initChart('scoreChart');
+      if (scoreChart) {
+        scoreChart.setOption({
+          series: [{
+            type: 'gauge',
+            min: 0, max: 100,
+            progress: { show: true, width: 18 },
+            axisLine: { lineStyle: { width: 18, color: [[0.3, '#22c55e'], [0.7, '#eab308'], [1, '#ef4444']] } },
+            axisTick: { show: false },
+            splitLine: { length: 10, lineStyle: { width: 2, color: '#64748b' } },
+            axisLabel: { distance: 25, color: '#94a3b8', fontSize: 12 },
+            pointer: { itemStyle: { color: '#3b82f6' } },
+            title: { offsetCenter: [0, '70%'], fontSize: 14, color: '#94a3b8' },
+            detail: { valueAnimation: true, fontSize: 32, color: '#f1f5f9', offsetCenter: [0, '40%'], formatter: '{value}' },
+            data: [{ value: latest.score || 0, name: latest.score_level || '' }]
+          }]
+        });
+      }
+
+      // Render history list
+      const historyEl = document.getElementById('historyList');
+      historyEl.innerHTML = allData.map(d => {
+        const data = d.data;
+        const li2 = data.li_price || {};
+        return `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
+            <div>
+              <span class="font-bold">${data.date}</span>
+              <span class="text-xs" style="color:var(--text-muted);margin-left:8px">评分 ${data.score || '-'}</span>
+            </div>
+            <div>
+              <span>${fmtPrice(li2.close)}/吨</span>
+              <span class="${changeClass(li2.change_pct)}" style="margin-left:8px">${fmtPct(li2.change_pct)}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>股票池新闻+研报日报</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载新闻研报数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('news-report', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('news-report');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '股票池新闻+研报日报将在每个工作日 08:30 自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+      const stats = latest.stats || {};
+
+      // Aggregate stats across all history
+      let totalNewsAll = 0, totalReportsAll = 0, totalHighAll = 0, totalChangesAll = 0;
+      for (const entry of allData) {
+        const s = entry.data.stats || {};
+        totalNewsAll += s.total_news || 0;
+        totalReportsAll += s.total_reports || 0;
+        totalHighAll += s.high_impact_count || 0;
+        totalChangesAll += s.report_changes_count || 0;
+      }
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">📰 股票池新闻+研报日报</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latest.date} (${latest.hours}h窗口)</span>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">今日新闻</div>
+            <div class="stat-value">${stats.total_news || 0}</div>
+            <div class="stat-change ${stats.high_impact_count > 0 ? 'up' : 'neutral'}">重大 ${stats.high_impact_count || 0} 条</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">今日研报</div>
+            <div class="stat-value">${stats.total_reports || 0}</div>
+            <div class="stat-change ${stats.report_changes_count > 0 ? 'up' : 'neutral'}">变化 ${stats.report_changes_count || 0} 项</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计新闻</div>
+            <div class="stat-value">${totalNewsAll}</div>
+            <div class="stat-change neutral">${allData.length} 天</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计研报</div>
+            <div class="stat-value">${totalReportsAll}</div>
+            <div class="stat-change neutral">重大${totalHighAll} | 变化${totalChangesAll}</div>
+          </div>
+        </div>
+
+        <!-- High Impact News -->
+        ${latest.high_impact_news && latest.high_impact_news.length > 0 ? `
+        <div class="card" style="border-left:3px solid var(--red)">
+          <div class="card-title mb-4">🔴 重大影响新闻 (${latest.high_impact_news.length}条)</div>
+          ${latest.high_impact_news.map(news => `
+            <div style="background:var(--bg-primary);border-radius:var(--radius);padding:12px;margin-bottom:8px;">
+              <div class="flex items-center gap-2 mb-4" style="margin-bottom:6px">
+                <span class="badge badge-red">${news.stock_name}</span>
+                <span class="font-bold">${news.title}</span>
+              </div>
+              <div class="text-sm" style="color:var(--text-muted)">
+                ${news.time ? news.time.substring(0, 16) : ''}
+                ${news.src ? ` · ${news.src}` : ''}
+                ${news.impact_reason ? ` · <span style="color:var(--yellow)">⚠️ ${news.impact_reason}</span>` : ''}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+        ` : ''}
+
+        <!-- Report Changes -->
+        ${latest.report_changes && latest.report_changes.length > 0 ? `
+        <div class="card" style="border-left:3px solid var(--accent)">
+          <div class="card-title mb-4">📊 研报观点变化 (${latest.report_changes.length}项)</div>
+          ${latest.report_changes.map(report => `
+            <div style="background:var(--bg-primary);border-radius:var(--radius);padding:12px;margin-bottom:8px;">
+              <div class="flex items-center gap-2 mb-4" style="margin-bottom:6px">
+                <span class="badge badge-blue">${report.stock_name}</span>
+                ${report.change_type === 'new' ? '<span class="badge badge-green">新研报</span>' : ''}
+                ${report.change_type === 'rating_change' ? '<span class="badge badge-yellow">评级变化</span>' : ''}
+                <span class="font-bold">${report.title}</span>
+              </div>
+              <div class="text-sm" style="color:var(--text-secondary)">
+                ${report.change_reason ? `→ ${report.change_reason}` : ''}
+                ${report.rating ? ` · 评级: ${report.rating}` : ''}
+              </div>
+              <div class="text-xs" style="color:var(--text-muted);margin-top:4px">
+                ${report.time ? report.time.substring(0, 10) : ''} · ${report.src || ''}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+        ` : ''}
+
+        <!-- News by Stock -->
+        <div class="card">
+          <div class="card-title mb-4">📰 新闻汇总</div>
+          ${renderNewsByStock(latest.news_by_stock || {})}
+        </div>
+
+        <!-- Reports by Stock -->
+        <div class="card">
+          <div class="card-title mb-4">📑 研报汇总</div>
+          ${renderReportsByStock(latest.reports_by_stock || {})}
+        </div>
+
+        <!-- History -->
+        <div class="card">
+          <div class="card-title mb-4">历史日报</div>
+          <div class="timeline">
+            ${allData.slice(0, 30).map(entry => {
+              const d = entry.data;
+              const s = d.stats || {};
+              return `
+                <div class="timeline-item">
+                  <div class="timeline-date">${d.date}</div>
+                  <div class="timeline-content">
+                    <span class="badge badge-blue">新闻${s.total_news || 0}</span>
+                    <span class="badge badge-green">研报${s.total_reports || 0}</span>
+                    ${s.high_impact_count > 0 ? `<span class="badge badge-red">重大${s.high_impact_count}</span>` : ''}
+                    ${s.report_changes_count > 0 ? `<span class="badge badge-yellow">变化${s.report_changes_count}</span>` : ''}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderNewsByStock(newsByStock) {
+      const stocks = Object.entries(newsByStock);
+      if (stocks.length === 0) return '<div class="empty-state"><p>暂无新闻数据</p></div>';
+
+      let html = '';
+      for (const [code, items] of stocks) {
+        if (!items || items.length === 0) continue;
+        const name = items[0].stock_name || code;
+        const displayItems = items.slice(0, 5);
+
+        html += `
+          <div style="margin-bottom:16px;">
+            <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
+              <span class="font-bold">${name}</span>
+              <span class="text-sm" style="color:var(--text-muted)">${code}</span>
+              <span class="badge badge-blue">${items.length}条</span>
+            </div>
+            ${displayItems.map(item => `
+              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
+                <span style="color:var(--text-muted)">${item.time ? item.time.substring(5, 16) : ''}</span>
+                · ${item.title}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.src})</span>` : ''}
+                ${item.impact_level === 'high' ? '<span class="badge badge-red" style="margin-left:4px">重大</span>' : ''}
+              </div>
+            `).join('')}
+            ${items.length > 5 ? `<div class="text-sm" style="color:var(--text-muted);margin-top:4px">...及其他${items.length - 5}条</div>` : ''}
+          </div>
+        `;
+      }
+      return html || '<div class="empty-state"><p>暂无新闻数据</p></div>';
+    }
+
+    function renderReportsByStock(reportsByStock) {
+      const stocks = Object.entries(reportsByStock);
+      if (stocks.length === 0) return '<div class="empty-state"><p>暂无研报数据</p></div>';
+
+      let html = '';
+      for (const [code, items] of stocks) {
+        if (!items || items.length === 0) continue;
+        const name = items[0].stock_name || code;
+        const displayItems = items.slice(0, 5);
+        const ratings = [...new Set(items.map(r => r.rating).filter(Boolean))];
+
+        html += `
+          <div style="margin-bottom:16px;">
+            <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
+              <span class="font-bold">${name}</span>
+              <span class="text-sm" style="color:var(--text-muted)">${code}</span>
+              <span class="badge badge-green">${items.length}份</span>
+              ${ratings.length > 0 ? `<span style="color:var(--accent);font-size:12px">评级: ${ratings.join(', ')}</span>` : ''}
+            </div>
+            ${displayItems.map(item => `
+              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
+                <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
+                · ${item.title}
+                ${item.rating ? `<span class="badge badge-yellow" style="margin-left:4px">${item.rating}</span>` : ''}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.src})</span>` : ''}
+              </div>
+            `).join('')}
+            ${items.length > 5 ? `<div class="text-sm" style="color:var(--text-muted);margin-top:4px">...及其他${items.length - 5}份</div>` : ''}
+          </div>
+        `;
+      }
+      return html || '<div class="empty-state"><p>暂无研报数据</p></div>';
+    }
+  </script>
+</body>
+</html>

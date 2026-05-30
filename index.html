@@ -21,12 +21,13 @@
       const loading = document.getElementById('loading');
 
       // Load latest data from all modules in parallel
-      const [lithium, deviation, sanmei, aihot, mcpSkills] = await Promise.all([
+      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport] = await Promise.all([
         loadLatest('lithium').catch(() => null),
         loadLatest('deviation').catch(() => null),
         loadLatest('sanmei').catch(() => null),
         loadLatest('aihot').catch(() => null),
         loadLatest('mcp_skills').catch(() => null),
+        loadLatest('news-report').catch(() => null),
       ]);
 
       loading.remove();
@@ -155,6 +156,31 @@
         `);
       }
 
+      // News/Report card
+      if (newsReport) {
+        const stats = newsReport.stats || {};
+        const hasAlert = (stats.high_impact_count || 0) > 0 || (stats.report_changes_count || 0) > 0;
+        cards.push(`
+          <a href="news-report.html" class="stat-card">
+            <div class="stat-label">📰 新闻研报日报</div>
+            <div class="stat-value">${stats.total_news || 0} 条</div>
+            <div class="stat-change ${hasAlert ? 'up' : 'neutral'}">
+              重大${stats.high_impact_count || 0} · 变化${stats.report_changes_count || 0}
+            </div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${newsReport.date} · ${newsReport.hours}h窗口 · 研报${stats.total_reports || 0}份
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="news-report.html" class="stat-card">
+            <div class="stat-label">📰 新闻研报日报</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
       // Build timeline from all modules
       const events = [];
       if (lithium && lithium.generated_at) {
@@ -179,6 +205,11 @@
       if (mcpSkills && mcpSkills.generated_at) {
         events.push({ time: mcpSkills.generated_at, module: 'MCP/Skills', icon: '🔧',
           content: `${mcpSkills.updates_available || 0} 项待更新` });
+      }
+      if (newsReport && newsReport.stats) {
+        const s = newsReport.stats;
+        events.push({ time: newsReport.generated_at || newsReport.date, module: '新闻研报', icon: '📰',
+          content: `新闻${s.total_news || 0}条(重大${s.high_impact_count || 0}) · 研报${s.total_reports || 0}份(变化${s.report_changes_count || 0})` });
       }
 
       events.sort((a, b) => new Date(b.time) - new Date(a.time));

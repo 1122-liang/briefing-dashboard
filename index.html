@@ -21,13 +21,14 @@
       const loading = document.getElementById('loading');
 
       // Load latest data from all modules in parallel
-      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport] = await Promise.all([
+      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview] = await Promise.all([
         loadLatest('lithium').catch(() => null),
         loadLatest('deviation').catch(() => null),
         loadLatest('sanmei').catch(() => null),
         loadLatest('aihot').catch(() => null),
         loadLatest('mcp_skills').catch(() => null),
         loadLatest('news-report').catch(() => null),
+        loadLatest('weekly-review').catch(() => null),
       ]);
 
       loading.remove();
@@ -177,6 +178,27 @@
           <a href="news-report.html" class="stat-card">
             <div class="stat-label">📰 新闻研报日报</div>
             <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Weekly Review card
+      if (weeklyReview) {
+        cards.push(`
+          <a href="weekly-review.html" class="stat-card">
+            <div class="stat-label">📋 周度复盘</div>
+            <div class="stat-value">${weeklyReview.total_hours ? weeklyReview.total_hours.toFixed(1) + 'h' : '-'}</div>
+            <div class="stat-change neutral">${(weeklyReview.projects || []).length} 个项目</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${weeklyReview.period || weeklyReview.date || '-'} · 产出${weeklyReview.files_created || 0}个文件
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="weekly-review.html" class="stat-card">
+            <div class="stat-label">📋 周度复盘</div>
+            <div class="empty-state" style="padding:20px"><p>每周日 20:00 自动生成</p></div>
           </a>
         `);
       }

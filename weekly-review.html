@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周度复盘报告</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载周度复盘数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('weekly-review', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('weekly-review');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '周度复盘报告将在每周日 20:00 自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+
+      // Aggregate stats across all weeks
+      const allProjects = {};
+      let totalHours = 0;
+      for (const entry of allData) {
+        const d = entry.data;
+        totalHours += d.total_hours || 0;
+        for (const p of (d.projects || [])) {
+          if (!allProjects[p.name]) allProjects[p.name] = { hours: 0, weeks: 0 };
+          allProjects[p.name].hours += p.hours || 0;
+          allProjects[p.name].weeks++;
+        }
+      }
+
+      const projectEntries = Object.entries(allProjects).sort((a, b) => b[1].hours - a[1].hours);
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">📋 周度复盘报告</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latest.period || latest.date}</span>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">本周使用时长</div>
+            <div class="stat-value">${latest.total_hours ? latest.total_hours.toFixed(1) + 'h' : '-'}</div>
+            <div class="stat-change neutral">估算值</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">活跃项目</div>
+            <div class="stat-value">${(latest.projects || []).length}</div>
+            <div class="stat-change neutral">个</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">产出文件</div>
+            <div class="stat-value">${latest.files_created || 0}</div>
+            <div class="stat-change neutral">新建/修改</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">自动化运行</div>
+            <div class="stat-value">${latest.automation_runs || 0}</div>
+            <div class="stat-change neutral">次</div>
+          </div>
+        </div>
+
+        <!-- Time Distribution Chart -->
+        ${(latest.projects || []).length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">本周精力分布</div>
+          <div id="timeChart" class="chart-container" style="min-height:300px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Project Details -->
+        <div class="card">
+          <div class="card-title mb-4">📂 项目详情</div>
+          ${(latest.projects || []).length === 0
+            ? '<div class="empty-state"><p>暂无项目数据</p></div>'
+            : latest.projects.map(p => `
+              <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;margin-bottom:12px;border-left:3px solid ${p.efficiency === 'high' ? 'var(--green)' : p.efficiency === 'low' ? 'var(--red)' : 'var(--yellow)'}">
+                <div class="flex items-center justify-between mb-4" style="margin-bottom:8px">
+                  <span class="font-bold" style="font-size:16px">${p.name}</span>
+                  <span class="badge ${p.efficiency === 'high' ? 'badge-green' : p.efficiency === 'low' ? 'badge-red' : 'badge-yellow'}">${p.efficiency === 'high' ? '高效' : p.efficiency === 'low' ? '需改进' : '中等'}</span>
+                </div>
+                <div class="text-sm" style="color:var(--text-secondary);margin-bottom:8px">${p.summary || ''}</div>
+                <div class="flex gap-2" style="gap:8px;flex-wrap:wrap">
+                  <span class="badge badge-blue">⏱ ${p.hours ? p.hours.toFixed(1) + 'h' : '-'}</span>
+                  <span class="badge badge-purple">📄 ${p.files || 0} 个文件</span>
+                </div>
+                ${p.issues ? `<div class="text-xs" style="margin-top:8px;color:var(--yellow)">⚠️ ${p.issues}</div>` : ''}
+              </div>
+            `).join('')}
+        </div>
+
+        <!-- Suggestions -->
+        ${(latest.suggestions || []).length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">💡 优化建议</div>
+          ${latest.suggestions.map((s, i) => `
+            <div style="background:var(--bg-primary);border-radius:var(--radius);padding:12px 16px;margin-bottom:8px;border-left:3px solid var(--accent)">
+              <div class="text-sm" style="color:var(--text-secondary)"><strong>${i + 1}.</strong> ${s}</div>
+            </div>
+          `).join('')}
+        </div>
+        ` : ''}
+
+        <!-- History -->
+        <div class="card">
+          <div class="card-title mb-4">历史复盘</div>
+          <div class="timeline">
+            ${allData.slice(0, 12).map(entry => {
+              const d = entry.data;
+              return `
+                <div class="timeline-item">
+                  <div class="timeline-date">${d.period || d.date}</div>
+                  <div class="timeline-content">
+                    <span class="badge badge-blue">${d.total_hours ? d.total_hours.toFixed(1) + 'h' : '-'}</span>
+                    <span class="badge badge-green">${(d.projects || []).length} 个项目</span>
+                    <span class="badge badge-purple">${d.files_created || 0} 个文件</span>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+
+      // Time distribution pie chart
+      if ((latest.projects || []).length > 0) {
+        const timeChart = initChart('timeChart');
+        if (timeChart) {
+          const theme = getEChartsTheme();
+          timeChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'item', formatter: '{b}: {c}h ({d}%)' },
+            legend: {
+              ...theme.legend,
+              orient: 'vertical',
+              right: 10,
+              top: 'center',
+              formatter: name => {
+                const p = latest.projects.find(x => x.name === name);
+                return p ? `${name} (${p.hours ? p.hours.toFixed(1) : 0}h)` : name;
+              }
+            },
+            series: [{
+              type: 'pie',
+              radius: ['40%', '70%'],
+              center: ['40%', '50%'],
+              label: { show: false },
+              emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold' } },
+              data: latest.projects.map(p => ({
+                name: p.name,
+                value: p.hours || 0
+              }))
+            }]
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

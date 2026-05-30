@@ -173,6 +173,7 @@ function renderNav(currentPage) {
     { id: 'aihot', label: 'AIHOT', icon: '🤖' },
     { id: 'news-report', label: '新闻研报', icon: '📰' },
     { id: 'mcp_skills', label: 'MCP/Skills', icon: '🔧' },
+    { id: 'weekly-review', label: '周度复盘', icon: '📋' },
   ];
   const nav = document.createElement('nav');
   nav.className = 'nav';

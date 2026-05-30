@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-31",
+  "hours": 24,
+  "stock_pool": [
+    "赣锋锂业",
+    "天齐锂业",
+    "紫金矿业",
+    "三美股份",
+    "ST人福",
+    "紫金黄金国际",
+    "宝丰能源",
+    "中国石油"
+  ],
+  "news_by_stock": {
+    "sz002460": [],
+    "sz002466": [],
+    "sh601899": [
+      {
+        "time": "2026-05-30 09:05:00",
+        "title": "易控智驾完成港股上市备案，冲击“矿区无人驾驶第一股”，紫金矿业、宁德时代为股东",
+        "src": "独角兽早知道",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026053009073394fc40c7&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh603379": [],
+    "sh600079": [],
+    "hk02259": [],
+    "sh600989": [],
+    "sh601857": [
+      {
+        "time": "2026-05-30 03:10:07",
+        "title": "中国石油获得发明专利授权：“一种纹层结构切分与非均质性评价方法”",
+        "src": "证券之星企业动态",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202605300327519760e681&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-05-30 03:10:06",
+        "title": "中国石油获得发明专利授权：“电机润滑脂组合物”",
+        "src": "证券之星企业动态",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260530032640a4376b93&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ]
+  },
+  "reports_by_stock": {
+    "sz002460": [],
+    "sz002466": [],
+    "sh601899": [],
+    "sh603379": [],
+    "sh600079": [],
+    "hk02259": [],
+    "sh600989": [],
+    "sh601857": []
+  },
+  "high_impact_news": [],
+  "report_changes": [],
+  "stats": {
+    "total_news": 3,
+    "total_reports": 0,
+    "high_impact_count": 0,
+    "report_changes_count": 0
+  },
+  "_filename": "2026-05-31.json",
+  "_saved_at": "2026-05-31T02:41:59.371386+08:00"
+}

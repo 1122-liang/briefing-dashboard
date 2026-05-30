@@ -81,7 +81,7 @@
               </div>
               <div class="text-sm" style="color:var(--text-muted)">
                 ${news.time ? news.time.substring(0, 16) : ''}
-                ${news.src ? ` · ${news.src}` : ''}
+                ${news.src ? ` · ${news.url ? `<a href="${news.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${news.src}</a>` : news.src}` : ''}
                 ${news.impact_reason ? ` · <span style="color:var(--yellow)">⚠️ ${news.impact_reason}</span>` : ''}
               </div>
             </div>
@@ -106,7 +106,7 @@
                 ${report.rating ? ` · 评级: ${report.rating}` : ''}
               </div>
               <div class="text-xs" style="color:var(--text-muted);margin-top:4px">
-                ${report.time ? report.time.substring(0, 10) : ''} · ${report.src || ''}
+                ${report.time ? report.time.substring(0, 10) : ''} · ${report.src ? (report.url ? `<a href="${report.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${report.src}</a>` : report.src) : ''}
               </div>
             </div>
           `).join('')}
@@ -170,7 +170,7 @@
               <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(5, 16) : ''}</span>
                 · ${item.title}
-                ${item.src ? `<span style="color:var(--text-muted)">(${item.src})</span>` : ''}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
                 ${item.impact_level === 'high' ? '<span class="badge badge-red" style="margin-left:4px">重大</span>' : ''}
               </div>
             `).join('')}
@@ -205,7 +205,7 @@
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
                 · ${item.title}
                 ${item.rating ? `<span class="badge badge-yellow" style="margin-left:4px">${item.rating}</span>` : ''}
-                ${item.src ? `<span style="color:var(--text-muted)">(${item.src})</span>` : ''}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
               </div>
             `).join('')}
             ${items.length > 5 ? `<div class="text-sm" style="color:var(--text-muted);margin-top:4px">...及其他${items.length - 5}份</div>` : ''}

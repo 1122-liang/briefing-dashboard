@@ -21,7 +21,7 @@
       const loading = document.getElementById('loading');
 
       // Load latest data from all modules in parallel
-      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview] = await Promise.all([
+      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest] = await Promise.all([
         loadLatest('lithium').catch(() => null),
         loadLatest('deviation').catch(() => null),
         loadLatest('sanmei').catch(() => null),
@@ -29,6 +29,7 @@
         loadLatest('mcp_skills').catch(() => null),
         loadLatest('news-report').catch(() => null),
         loadLatest('weekly-review').catch(() => null),
+        loadLatest('xueqiu-digest').catch(() => null),
       ]);
 
       loading.remove();
@@ -203,6 +204,29 @@
         `);
       }
 
+      // Xueqiu Digest card
+      if (xueqiuDigest) {
+        const active = xueqiuDigest.active_users || 0;
+        const filtered = xueqiuDigest.filtered_posts || 0;
+        cards.push(`
+          <a href="xueqiu-digest.html" class="stat-card">
+            <div class="stat-label">🐦 雪球关注人动态</div>
+            <div class="stat-value">${active} 人</div>
+            <div class="stat-change ${filtered > 0 ? 'up' : 'down'}">${filtered} 条有效帖子</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${xueqiuDigest.date || '-'} · ${(xueqiuDigest.top_posts || []).length} 条重点
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="xueqiu-digest.html" class="stat-card">
+            <div class="stat-label">🐦 雪球关注人动态</div>
+            <div class="empty-state" style="padding:20px"><p>每天 22:30 自动生成</p></div>
+          </a>
+        `);
+      }
+
       // Build timeline from all modules
       const events = [];
       if (lithium && lithium.generated_at) {
@@ -232,6 +256,10 @@
         const s = newsReport.stats;
         events.push({ time: newsReport.generated_at || newsReport.date, module: '新闻研报', icon: '📰',
           content: `新闻${s.total_news || 0}条(重大${s.high_impact_count || 0}) · 研报${s.total_reports || 0}份(变化${s.report_changes_count || 0})` });
+      }
+      if (xueqiuDigest && xueqiuDigest.date) {
+        events.push({ time: xueqiuDigest.generated_at || xueqiuDigest.date, module: '雪球动态', icon: '🐦',
+          content: `${xueqiuDigest.active_users || 0}人活跃 · ${xueqiuDigest.filtered_posts || 0}条有效 · ${(xueqiuDigest.top_posts || []).length}条重点` });
       }
 
       events.sort((a, b) => new Date(b.time) - new Date(a.time));

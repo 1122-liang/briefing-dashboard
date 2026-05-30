@@ -174,6 +174,7 @@ function renderNav(currentPage) {
     { id: 'news-report', label: '新闻研报', icon: '📰' },
     { id: 'mcp_skills', label: 'MCP/Skills', icon: '🔧' },
     { id: 'weekly-review', label: '周度复盘', icon: '📋' },
+    { id: 'xueqiu-digest', label: '雪球动态', icon: '🐦' },
   ];
   const nav = document.createElement('nav');
   nav.className = 'nav';

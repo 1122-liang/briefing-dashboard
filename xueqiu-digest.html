@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雪球关注人动态摘要</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载雪球动态数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('xueqiu-digest', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('xueqiu-digest');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '雪球关注人动态摘要将在每天 22:30 自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+
+      // Summary stats
+      const totalUsers = latest.total_users || 0;
+      const activeUsers = latest.active_users || 0;
+      const totalPosts = latest.total_posts || 0;
+      const filteredPosts = latest.filtered_posts || 0;
+      const topPosts = latest.top_posts || [];
+      const categories = latest.categories || {};
+
+      // Category breakdown for chart
+      const catEntries = Object.entries(categories).filter(([k, v]) => v > 0);
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">🐦 雪球关注人每日动态</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latest.date || '-'}</span>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">关注人数</div>
+            <div class="stat-value">${totalUsers}</div>
+            <div class="stat-change neutral">今日活跃 ${activeUsers} 人</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">原始帖子</div>
+            <div class="stat-value">${totalPosts}</div>
+            <div class="stat-change neutral">过滤前总数</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">有效帖子</div>
+            <div class="stat-value">${filteredPosts}</div>
+            <div class="stat-change ${filteredPosts > 0 ? 'up' : 'down'}">${filteredPosts > 0 ? '投资相关内容' : '无有效内容'}</div>
+          </div>
+        </div>
+
+        <!-- Category Distribution -->
+        ${catEntries.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">话题分布</div>
+          <div id="categoryChart" class="chart-container" style="min-height:280px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Top Posts -->
+        <div class="card">
+          <div class="card-title mb-4">⭐ 重点消息 TOP${Math.min(topPosts.length, 10)}</div>
+          ${topPosts.length === 0
+            ? '<div class="empty-state"><p>今日无重点消息</p></div>'
+            : topPosts.slice(0, 10).map((post, i) => `
+              <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;margin-bottom:12px;border-left:3px solid ${i < 3 ? 'var(--accent)' : 'var(--border)'}">
+                <div class="flex items-center gap-2" style="margin-bottom:8px">
+                  <span style="color:var(--accent);font-weight:700">#${i + 1}</span>
+                  <span class="font-bold">${post.user_name || '未知'}</span>
+                  ${post.category ? `<span class="badge badge-blue">${post.category}</span>` : ''}
+                  ${post.sentiment ? `<span class="badge ${post.sentiment === '正面' ? 'badge-green' : post.sentiment === '负面' ? 'badge-red' : 'badge-yellow'}">${post.sentiment}</span>` : ''}
+                  ${post.likes ? `<span style="color:var(--text-muted);font-size:12px">👍${post.likes}</span>` : ''}
+                  ${post.comments ? `<span style="color:var(--text-muted);font-size:12px">💬${post.comments}</span>` : ''}
+                </div>
+                <p class="text-sm" style="color:var(--text-secondary)">${post.summary || post.text || ''}</p>
+                ${post.stocks && post.stocks.length > 0 ? `
+                  <div style="margin-top:6px">
+                    ${post.stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">$${s}$</span>`).join('')}
+                  </div>
+                ` : ''}
+              </div>
+            `).join('')}
+        </div>
+
+        <!-- AI Analysis -->
+        ${latest.analysis ? `
+        <div class="card">
+          <div class="card-title mb-4">🤖 AI 分析摘要</div>
+          <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;white-space:pre-wrap;line-height:1.8;color:var(--text-secondary)">${latest.analysis}</div>
+        </div>
+        ` : ''}
+
+        <!-- History Timeline -->
+        <div class="card">
+          <div class="card-title mb-4">历史摘要</div>
+          <div class="timeline">
+            ${allData.slice(0, 30).map(entry => {
+              const d = entry.data;
+              return `
+                <div class="timeline-item">
+                  <div class="timeline-date">${d.date || entry.filename}</div>
+                  <div class="timeline-content">
+                    <span class="badge badge-blue">${d.active_users || 0} 人活跃</span>
+                    <span class="badge badge-green" style="margin-left:4px">${d.filtered_posts || 0} 条有效</span>
+                    ${(d.top_posts || []).slice(0, 2).map(p =>
+                      `<span style="margin-left:8px;color:var(--text-muted)">${p.user_name}: ${(p.summary || '').slice(0, 30)}...</span>`
+                    ).join('')}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+
+      // Category chart
+      if (catEntries.length > 0) {
+        const catChart = initChart('categoryChart');
+        if (catChart) {
+          const theme = getEChartsTheme();
+          catChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'item' },
+            series: [{
+              type: 'pie', radius: ['40%', '70%'],
+              label: { color: '#94a3b8', formatter: '{b}: {c} ({d}%)' },
+              data: catEntries.map(([name, count]) => ({ name, value: count }))
+            }]
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

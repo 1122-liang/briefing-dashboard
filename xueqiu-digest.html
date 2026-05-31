@@ -36,6 +36,8 @@
       const filteredPosts = latest.filtered_posts || 0;
       const topPosts = latest.top_posts || [];
       const categories = latest.categories || {};
+      const todayTopics = latest.today_topics || [];
+      const todayTopicsCount = latest.today_topics_count || todayTopics.length;
 
       // Category breakdown for chart
       const catEntries = Object.entries(categories).filter(([k, v]) => v > 0);
@@ -63,6 +65,11 @@
             <div class="stat-value">${filteredPosts}</div>
             <div class="stat-change ${filteredPosts > 0 ? 'up' : 'down'}">${filteredPosts > 0 ? '投资相关内容' : '无有效内容'}</div>
           </div>
+          <div class="stat-card">
+            <div class="stat-label">今日话题</div>
+            <div class="stat-value">${todayTopicsCount}</div>
+            <div class="stat-change ${todayTopicsCount > 0 ? 'up' : 'down'}">${todayTopicsCount > 0 ? '篇热门文章' : '暂无数据'}</div>
+          </div>
         </div>
 
         <!-- Category Distribution -->
@@ -70,6 +77,28 @@
         <div class="card">
           <div class="card-title mb-4">话题分布</div>
           <div id="categoryChart" class="chart-container" style="min-height:280px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Today Topics -->
+        ${todayTopics.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">📰 今日话题精选 (${todayTopicsCount} 篇)</div>
+          ${todayTopics.slice(0, 15).map((topic, i) => `
+            <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;border-left:3px solid ${i < 3 ? '#f59e0b' : 'var(--border)'}">
+              <div class="flex items-center gap-2" style="margin-bottom:6px">
+                <span style="color:#f59e0b;font-weight:700">#${i + 1}</span>
+                <span class="font-bold" style="font-size:14px">${topic.user_name || '未知'}</span>
+                ${topic.like_count ? `<span style="color:var(--text-muted);font-size:12px">👍${topic.like_count}</span>` : ''}
+                ${topic.reply_count ? `<span style="color:var(--text-muted);font-size:12px">💬${topic.reply_count}</span>` : ''}
+                ${topic.retweet_count ? `<span style="color:var(--text-muted);font-size:12px">🔄${topic.retweet_count}</span>` : ''}
+              </div>
+              <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0 0 4px 0">
+                ${topic.target ? `<a href="https://xueqiu.com${topic.target}" target="_blank" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
+              </p>
+              ${topic.description ? `<p class="text-sm" style="color:var(--text-secondary);margin:0;line-height:1.6">${topic.description}</p>` : ''}
+            </div>
+          `).join('')}
         </div>
         ` : ''}
 

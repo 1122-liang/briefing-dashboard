@@ -88,15 +88,11 @@
             <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;border-left:3px solid ${i < 3 ? '#f59e0b' : 'var(--border)'}">
               <div class="flex items-center gap-2" style="margin-bottom:6px">
                 <span style="color:#f59e0b;font-weight:700">#${i + 1}</span>
-                <span class="font-bold" style="font-size:14px">${topic.user_name || '未知'}</span>
-                ${topic.like_count ? `<span style="color:var(--text-muted);font-size:12px">👍${topic.like_count}</span>` : ''}
-                ${topic.reply_count ? `<span style="color:var(--text-muted);font-size:12px">💬${topic.reply_count}</span>` : ''}
-                ${topic.retweet_count ? `<span style="color:var(--text-muted);font-size:12px">🔄${topic.retweet_count}</span>` : ''}
+                ${topic.created_at_str ? `<span style="color:var(--text-muted);font-size:12px">${topic.created_at_str}</span>` : ''}
               </div>
-              <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0 0 4px 0">
-                ${topic.target ? `<a href="https://xueqiu.com${topic.target}" target="_blank" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
+              <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0">
+                ${topic.url ? `<a href="${topic.url}" target="_blank" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
               </p>
-              ${topic.description ? `<p class="text-sm" style="color:var(--text-secondary);margin:0;line-height:1.6">${topic.description}</p>` : ''}
             </div>
           `).join('')}
         </div>

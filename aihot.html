@@ -51,7 +51,10 @@
       app.innerHTML = `
         <div class="flex items-center justify-between mb-4">
           <h1 style="font-size:24px;font-weight:700">🤖 AIHOT 投资机会日报</h1>
-          <span class="text-sm" style="color:var(--text-muted)">${latest.date}</span>
+          <div style="display:flex;gap:8px;align-items:center">
+            <span class="text-sm" style="color:var(--text-muted)">${latest.date}</span>
+            <a href="aihot-trends.html" class="badge badge-green" style="text-decoration:none">📊 趋势分析</a>
+          </div>
         </div>
 
         <!-- Stats -->

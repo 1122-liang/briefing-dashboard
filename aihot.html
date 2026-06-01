@@ -109,11 +109,19 @@
                   </div>
                 ` : ''}
                 ${opp.target_stocks ? `
-                  <div class="text-sm">
+                  <div class="text-sm" style="margin-top:6px">
                     <span style="color:var(--text-muted)">🎯 潜在标的：</span>
-                    ${Array.isArray(opp.target_stocks)
-                      ? opp.target_stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">${s}</span>`).join('')
-                      : opp.target_stocks.split(/[、,，]/).filter(Boolean).map(s => `<span class="badge badge-green" style="margin-left:4px">${s.trim()}</span>`).join('')}
+                    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+                      ${(Array.isArray(opp.target_stocks)
+                        ? opp.target_stocks
+                        : opp.target_stocks.split(/[、,，]/).filter(Boolean).map(s => s.trim())
+                      ).map(s => `
+                        <span style="display:inline-flex;align-items:center;gap:4px;background:var(--bg-secondary);border-radius:var(--radius);padding:3px 8px;font-size:12px">
+                          <span style="color:#22c55e;font-weight:600">${s}</span>
+                          <span style="color:var(--text-muted);font-size:11px">${opp.industry}</span>
+                        </span>
+                      `).join('')}
+                    </div>
                   </div>
                 ` : ''}
                 ${opp.risk_note ? `
@@ -122,6 +130,43 @@
               </div>
             `).join('')}
         </div>
+
+        <!-- Stock Index: cross-reference of stocks to opportunities -->
+        ${(() => {
+          const stockMap = {}; // stock -> [{title, industry}]
+          for (const opp of (latest.opportunities || [])) {
+            const stocks = Array.isArray(opp.target_stocks)
+              ? opp.target_stocks
+              : (opp.target_stocks || '').split(/[、,，]/).filter(Boolean).map(s => s.trim());
+            for (const s of stocks) {
+              if (!stockMap[s]) stockMap[s] = [];
+              stockMap[s].push({ title: opp.title, industry: opp.industry });
+            }
+          }
+          const entries = Object.entries(stockMap).sort((a, b) => b[1].length - a[1].length);
+          if (entries.length === 0) return '';
+          return `
+        <div class="card">
+          <div class="card-title mb-4">🗂 标的索引（${entries.length} 只）</div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>标的</th><th>出现次数</th><th>所属投资机会</th></tr>
+              ${entries.map(([stock, opps]) => `
+                <tr>
+                  <td class="font-bold" style="color:#22c55e;white-space:nowrap">${stock}</td>
+                  <td style="text-align:center">${opps.length}</td>
+                  <td>${opps.map(o =>
+                    `<span style="display:inline-flex;align-items:center;gap:4px;margin:2px 4px 2px 0;background:var(--bg-secondary);border-radius:var(--radius);padding:2px 8px;font-size:12px">
+                      <span>${o.title.length > 20 ? o.title.slice(0, 20) + '…' : o.title}</span>
+                      <span class="badge badge-blue" style="font-size:10px;padding:1px 4px">${o.industry}</span>
+                    </span>`
+                  ).join('')}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>`;
+        })()}
 
         <!-- History Timeline -->
         <div class="card">

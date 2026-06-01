@@ -1,0 +1,109 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T09:41:15.950900+08:00",
+  "mcp_services": [
+    {
+      "name": "lexiang",
+      "type": "Remote MCP (streamable-http)",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本"
+    },
+    {
+      "name": "dayu-financials",
+      "type": "Local MCP (stdio)",
+      "current_version": "custom",
+      "latest_version": "custom",
+      "status": "up_to_date",
+      "note": "本地自定义服务，无版本号"
+    },
+    {
+      "name": "claude-memory-fts",
+      "type": "npm MCP (stdio)",
+      "current_version": "2.0.1",
+      "latest_version": "2.0.1",
+      "status": "up_to_date"
+    },
+    {
+      "name": "scrapling",
+      "type": "pip MCP (stdio)",
+      "current_version": "0.4.8",
+      "latest_version": "0.4.8",
+      "status": "up_to_date"
+    }
+  ],
+  "skills_summary": {
+    "total_count": 66,
+    "checked": 8,
+    "updates_needed": 0
+  },
+  "python_packages": [
+    {
+      "name": "akshare",
+      "current_version": "1.18.44",
+      "latest_version": "1.18.64",
+      "status": "needs_update"
+    },
+    {
+      "name": "tushare",
+      "current_version": "1.4.25",
+      "latest_version": "1.4.29",
+      "status": "needs_update"
+    },
+    {
+      "name": "pandas",
+      "current_version": "3.0.1",
+      "latest_version": "3.0.3",
+      "status": "needs_update"
+    },
+    {
+      "name": "numpy",
+      "current_version": "2.4.3",
+      "latest_version": "2.4.6",
+      "status": "needs_update"
+    },
+    {
+      "name": "requests",
+      "current_version": "2.32.5",
+      "latest_version": "2.34.2",
+      "status": "needs_update"
+    },
+    {
+      "name": "beautifulsoup4",
+      "current_version": "4.14.3",
+      "latest_version": "N/A",
+      "status": "up_to_date"
+    },
+    {
+      "name": "openpyxl",
+      "current_version": "3.1.5",
+      "latest_version": "3.1.5",
+      "status": "up_to_date"
+    },
+    {
+      "name": "scrapling",
+      "current_version": "0.4.8",
+      "latest_version": "0.4.8",
+      "status": "up_to_date"
+    },
+    {
+      "name": "mootdx",
+      "current_version": "未安装",
+      "latest_version": "0.11.7",
+      "status": "needs_install",
+      "note": "pip dry-run显示可安装"
+    },
+    {
+      "name": "playwright",
+      "current_version": "未安装(venv)",
+      "latest_version": "1.60.0",
+      "status": "needs_install",
+      "note": "pip dry-run显示可安装"
+    }
+  ],
+  "updates_available": 7,
+  "aihot_api_status": "available (HTTP 200)",
+  "_filename": "2026-06-01.json",
+  "_saved_at": "2026-06-01T09:41:15.950934+08:00"
+}

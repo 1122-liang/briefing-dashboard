@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>雪球关注人动态摘要</title>
+  <title>雪球关注人动态摘要 - 投研简报</title>
+  <meta property="og:title" content="雪球关注人动态摘要">
+  <meta property="og:description" content="107位关注人每日动态、重点消息、AI分析摘要">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
@@ -91,7 +95,7 @@
                 ${topic.created_at_str ? `<span style="color:var(--text-muted);font-size:12px">${topic.created_at_str}</span>` : ''}
               </div>
               <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0">
-                ${topic.url ? `<a href="${topic.url}" target="_blank" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
+                ${topic.url ? `<a href="${topic.url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
               </p>
             </div>
           `).join('')}

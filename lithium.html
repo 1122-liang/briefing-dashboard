@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>碳酸锂期货日报</title>
+  <title>碳酸锂期货日报 - 投研简报</title>
+  <meta property="og:title" content="碳酸锂期货日报">
+  <meta property="og:description" content="碳酸锂期货价格走势、综合评分、技术指标、成本曲线">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔋</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
@@ -29,13 +33,9 @@
 
       const latest = allData[0].data;
       const li = latest.li_price || {};
-      const companies = latest.companies || {};
       const dates = allData.map(d => d.data.date).reverse();
       const prices = allData.map(d => d.data.li_price?.close).reverse();
       const scores = allData.map(d => d.data.score).reverse();
-
-      // Company name mapping
-      const companyNames = { ganfeng: '赣锋锂业', yanhu: '盐湖股份', zkcy: '中矿资源', tianqi: '天齐锂业' };
 
       app.innerHTML = `
         <div class="flex items-center justify-between mb-4">
@@ -205,33 +205,6 @@
         </div>
         ` : ''}
 
-        <!-- Company Valuation Table -->
-        <div class="card">
-          <div class="card-title mb-4">四公司三档估值</div>
-          <div class="table-wrap">
-            <table>
-              <tr>
-                <th>公司</th><th>现价</th><th>吨毛利</th><th>毛利率</th>
-                <th>季度净利(亿)</th><th>年化EPS</th><th>悲观12×</th><th>正常15×</th><th>乐观18×</th><th>弹性</th>
-              </tr>
-              ${Object.entries(companies).map(([k, c]) => `
-                <tr>
-                  <td class="font-bold">${c.name}</td>
-                  <td>${fmtPrice(c.price)}</td>
-                  <td>${fmtNum(c.ton_profit)}</td>
-                  <td>${c.gross_margin}%</td>
-                  <td>${c.quarterly_net}</td>
-                  <td>${c.eps_annual}</td>
-                  <td>${fmtPrice(c.valuation?.pessimistic)}</td>
-                  <td>${fmtPrice(c.valuation?.neutral)}</td>
-                  <td>${fmtPrice(c.valuation?.optimistic)}</td>
-                  <td>${c.elasticity}</td>
-                </tr>
-              `).join('')}
-            </table>
-          </div>
-        </div>
-
         <!-- Geo Risks (top-level, fallback if not in indicators) -->
         ${!latest.indicators?.geo_risks?.length && latest.geo_risks && latest.geo_risks.length > 0 ? `
         <div class="card">
@@ -276,7 +249,7 @@
             ])},
             itemStyle: { color: '#3b82f6' }
           }],
-          dataZoom: allData.length > 10 ? [{ type: 'inside' }] : []
+          dataZoom: defaultDataZoom(allData.length)
         });
       }
 

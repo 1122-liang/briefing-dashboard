@@ -1,6 +1,6 @@
 /* Briefing Dashboard - Shared JavaScript Utilities */
 
-const DATA_BASE = '../data';
+const DATA_BASE = './data';
 
 // ============================================================
 // Data Loading
@@ -145,6 +145,10 @@ function getEChartsTheme() {
 function initChart(containerId) {
   const el = document.getElementById(containerId);
   if (!el) return null;
+  if (typeof echarts === 'undefined') {
+    console.warn(`initChart(${containerId}): echarts not loaded`);
+    return null;
+  }
   const chart = echarts.init(el);
   window.addEventListener('resize', () => chart.resize());
   // Mobile observer
@@ -152,6 +156,20 @@ function initChart(containerId) {
     new ResizeObserver(() => chart.resize()).observe(el);
   }
   return chart;
+}
+
+/**
+ * Default dataZoom config for line/bar charts with many data points
+ * Provides both inside (scroll/pinch) and slider (drag bar) for mobile
+ * @param {number} count - number of data points
+ * @returns {Array} ECharts dataZoom option
+ */
+function defaultDataZoom(count) {
+  if (count <= 10) return [];
+  return [
+    { type: 'inside', start: 0, end: 100 },
+    { type: 'slider', start: 0, end: 100, height: 20, bottom: 5, borderColor: '#334155', backgroundColor: '#1e293b', fillerColor: 'rgba(59,130,246,0.15)', handleStyle: { color: '#3b82f6' }, textStyle: { color: '#94a3b8' } }
+  ];
 }
 
 // ============================================================
@@ -225,9 +243,41 @@ async function initPage(pageId, renderFn) {
   renderNav(pageId);
   try {
     await renderFn();
+    // Update global footer with data freshness
+    renderFooter();
   } catch (e) {
     console.error(`Page ${pageId} init failed:`, e);
     const main = document.querySelector('.container') || document.body;
     showError(main, `页面加载失败: ${e.message}`);
   }
+}
+
+/**
+ * Render a global footer showing data freshness info
+ */
+function renderFooter() {
+  const container = document.querySelector('.container');
+  if (!container) return;
+
+  // Check if footer already exists
+  if (container.querySelector('.global-footer')) return;
+
+  // Collect all _saved_at timestamps from the page
+  const savedTimes = [];
+  try {
+    // Look for any elements with data-generated-at attribute
+    const allData = performance.getEntriesByType('resource')
+      .filter(r => r.name.includes('/data/') && r.name.endsWith('.json'))
+      .map(r => r.responseEnd);
+  } catch (e) { /* ignore */ }
+
+  const footer = document.createElement('div');
+  footer.className = 'global-footer';
+  footer.innerHTML = `
+    <div style="text-align:center;padding:24px 0 8px;color:var(--text-muted);font-size:12px;border-top:1px solid var(--border);margin-top:24px">
+      投研简报 · 数据来源于自动化脚本采集
+      <span style="margin-left:8px">页面刷新获取最新数据</span>
+    </div>
+  `;
+  container.appendChild(footer);
 }

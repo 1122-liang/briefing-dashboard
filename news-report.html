@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>股票池新闻+研报日报</title>
+  <title>股票池新闻+研报日报 - 投研简报</title>
+  <meta property="og:title" content="股票池新闻+研报日报">
+  <meta property="og:description" content="8只核心股票新闻研报每日汇总，重大影响新闻提醒">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -81,7 +85,7 @@
               </div>
               <div class="text-sm" style="color:var(--text-muted)">
                 ${news.time ? news.time.substring(0, 16) : ''}
-                ${news.src ? ` · ${news.url ? `<a href="${news.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${news.src}</a>` : news.src}` : ''}
+                ${news.src ? ` · ${news.url ? `<a href="${news.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:underline">${news.src}</a>` : news.src}` : ''}
                 ${news.impact_reason ? ` · <span style="color:var(--yellow)">⚠️ ${news.impact_reason}</span>` : ''}
               </div>
             </div>
@@ -106,7 +110,7 @@
                 ${report.rating ? ` · 评级: ${report.rating}` : ''}
               </div>
               <div class="text-xs" style="color:var(--text-muted);margin-top:4px">
-                ${report.time ? report.time.substring(0, 10) : ''} · ${report.src ? (report.url ? `<a href="${report.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${report.src}</a>` : report.src) : ''}
+                ${report.time ? report.time.substring(0, 10) : ''} · ${report.src ? (report.url ? `<a href="${report.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:underline">${report.src}</a>` : report.src) : ''}
               </div>
             </div>
           `).join('')}
@@ -165,10 +169,10 @@
               <span class="badge badge-blue">${items.length}条</span>
             </div>
             ${items.map(item => `
-              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
+              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border)">
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(5, 16) : ''}</span>
                 · ${item.title}
-                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
                 ${item.impact_level === 'high' ? '<span class="badge badge-red" style="margin-left:4px">重大</span>' : ''}
               </div>
             `).join('')}
@@ -197,11 +201,11 @@
               ${ratings.length > 0 ? `<span style="color:var(--accent);font-size:12px">评级: ${ratings.join(', ')}</span>` : ''}
             </div>
             ${items.map(item => `
-              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
+              <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border)">
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
                 · ${item.title}
                 ${item.rating ? `<span class="badge badge-yellow" style="margin-left:4px">${item.rating}</span>` : ''}
-                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
+                ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
               </div>
             `).join('')}
           </div>

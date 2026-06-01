@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投研简报总览</title>
+  <meta property="og:title" content="投研简报总览">
+  <meta property="og:description" content="A股投研数据看板 - 碳酸锂、偏离度、AIHOT、新闻研报等实时简报">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
@@ -33,6 +37,24 @@
       ]);
 
       loading.remove();
+
+      // Global data freshness check
+      const allModules = [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest];
+      const loadedCount = allModules.filter(Boolean).length;
+      const totalCount = allModules.length;
+      const latestGeneratedAt = allModules
+        .filter(Boolean)
+        .map(m => m.generated_at || m.date)
+        .filter(Boolean)
+        .sort()
+        .reverse()[0] || null;
+
+      const dataStatusHTML = loadedCount === 0
+        ? `<div class="error-box" style="margin-bottom:16px">⚠️ 所有数据模块加载失败，请检查数据文件是否已部署</div>`
+        : `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;color:var(--text-muted);font-size:12px">
+            <span>已加载 <strong>${loadedCount}/${totalCount}</strong> 个模块</span>
+            ${latestGeneratedAt ? `<span>数据更新: ${fmtDateTime(latestGeneratedAt)}</span>` : ''}
+          </div>`;
 
       // Build summary cards
       const cards = [];
@@ -278,6 +300,7 @@
 
       app.innerHTML = `
         <h1 style="font-size:24px;font-weight:700;margin-bottom:24px">📋 投研简报总览</h1>
+        ${dataStatusHTML}
         <div class="stats-grid">${cards.join('')}</div>
         <div class="card">
           <div class="card-header">

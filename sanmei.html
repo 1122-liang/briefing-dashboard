@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>三美股份每周估值</title>
+  <title>三美股份每周估值 - 投研简报</title>
+  <meta property="og:title" content="三美股份每周估值">
+  <meta property="og:description" content="三美股份制冷剂价格跟踪、三档估值模型">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💹</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
@@ -155,7 +159,8 @@
           series: productNames.map((name, i) => ({
             name, type: 'line', smooth: true, data: productSeries[name] || [],
             lineStyle: { width: 2 }, itemStyle: { color: colors[i % colors.length] }
-          }))
+          })),
+          dataZoom: defaultDataZoom(dates.length)
         });
       }
 

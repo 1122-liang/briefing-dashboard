@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>月度偏离度预警</title>
+  <title>月度偏离度预警 - 投研简报</title>
+  <meta property="og:title" content="月度偏离度预警">
+  <meta property="og:description" content="股票池偏离度实时监控、黄金RR指标">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
@@ -121,28 +125,6 @@
         </div>
         ` : ''}
 
-        <!-- Lithium Valuation -->
-        ${latestRun.stocks?.some(s => s.valuation) ? `
-        <div class="card">
-          <div class="card-title mb-4">🎯 锂业三档估值</div>
-          <div class="table-wrap">
-            <table>
-              <tr><th>公司</th><th>现价</th><th>偏离度</th><th>悲观12×</th><th>正常15×</th><th>乐观18×</th></tr>
-              ${stocks.filter(s => s.valuation).map(s => `
-                <tr>
-                  <td class="font-bold">${s.name}</td>
-                  <td>${fmtPrice(s.price)}</td>
-                  <td class="${changeClass(s.deviation_pct)}">${fmtPct(s.deviation_pct)}</td>
-                  <td>${fmtPrice(s.valuation.pessimistic)}</td>
-                  <td>${fmtPrice(s.valuation.neutral)}</td>
-                  <td>${fmtPrice(s.valuation.optimistic)}</td>
-                </tr>
-              `).join('')}
-            </table>
-          </div>
-        </div>
-        ` : ''}
-
         <!-- History -->
         <div class="card">
           <div class="card-title mb-4">历史记录</div>
@@ -170,7 +152,7 @@
           xAxis: { ...theme.xAxis, type: 'category', data: allDates, axisLabel: { ...theme.xAxis.axisLabel, rotate: 30 } },
           yAxis: { ...theme.yAxis, type: 'value', name: '偏离度 %' },
           series,
-          dataZoom: allDates.length > 10 ? [{ type: 'inside' }] : []
+          dataZoom: defaultDataZoom(allDates.length)
         });
       }
 

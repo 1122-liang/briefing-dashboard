@@ -49,8 +49,8 @@
       const latestRun = flatRuns[0];
       const stocks = latestRun.stocks || [];
 
-      // Get unique stock list
-      const stockNames = stocks.map(s => s.name);
+      // Get unique stock list (exclude stocks without valid monthly deviation data)
+      const stockNames = stocks.filter(s => s.threshold_pct > 0 && s.trigger_price != null).map(s => s.name);
 
       // Build deviation time series for charts
       const stockSeries = {};
@@ -79,12 +79,13 @@
         <!-- Current Status Cards -->
         <div class="stats-grid">
           ${stocks.map(s => {
-            const statusCls = s.status === 'normal' ? 'down' : s.status === 'high' ? 'neutral' : 'up';
+            const hasValidData = s.threshold_pct > 0 && s.trigger_price != null;
+            const statusCls = !hasValidData ? 'neutral' : s.status === 'normal' ? 'down' : s.status === 'high' ? 'neutral' : 'up';
             return `
               <div class="stat-card">
                 <div class="stat-label">${s.name} (${s.code})</div>
-                <div class="stat-value ${statusCls}">${fmtPct(s.deviation_pct)}</div>
-                <div class="stat-change neutral">阈值 ${s.threshold_pct}%</div>
+                <div class="stat-value ${statusCls}">${hasValidData ? fmtPct(s.deviation_pct) : '暂无数据'}</div>
+                <div class="stat-change neutral">${hasValidData ? `阈值 ${s.threshold_pct}%` : '月度数据未覆盖'}</div>
                 ${s.valuation ? `
                   <div class="text-xs" style="margin-top:4px;color:var(--text-muted)">
                     估: ${s.valuation.pessimistic}/${s.valuation.neutral}/${s.valuation.optimistic}
@@ -182,7 +183,8 @@
       // Render history
       const historyEl = document.getElementById('historyList');
       historyEl.innerHTML = flatRuns.slice(0, 30).map(run => {
-        const alerts = (run.stocks || []).filter(s => s.status !== 'normal');
+        // Exclude stocks with invalid deviation data (threshold_pct=0 means no monthly data)
+        const alerts = (run.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null);
         return `
           <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
             <div>

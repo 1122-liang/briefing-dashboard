@@ -86,7 +86,8 @@
       if (deviation && deviation.runs && deviation.runs.length > 0) {
         const latestRun = deviation.runs[deviation.runs.length - 1];
         const stocks = latestRun.stocks || [];
-        const alerts = stocks.filter(s => s.status !== 'normal').length;
+        // Exclude stocks with invalid deviation data (e.g. HK stocks without monthly deviation)
+        const alerts = stocks.filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null).length;
         const total = stocks.length;
         cards.push(`
           <a href="deviation.html" class="stat-card">

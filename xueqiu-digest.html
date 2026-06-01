@@ -97,7 +97,7 @@
               <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0 0 8px 0">
                 ${topic.url ? `<a href="${topic.url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
               </p>
-              ${topic.summary ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.summary}</p>` : ''}
+              ${topic.summary ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.summary}</p>` : (topic.content ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.content.substring(0, 200)}...</p>` : '')}
             </div>
           `).join('')}
         </div>

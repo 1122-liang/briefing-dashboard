@@ -157,8 +157,6 @@
       for (const [code, items] of stocks) {
         if (!items || items.length === 0) continue;
         const name = items[0].stock_name || code;
-        const displayItems = items.slice(0, 5);
-
         html += `
           <div style="margin-bottom:16px;">
             <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
@@ -166,7 +164,7 @@
               <span class="text-sm" style="color:var(--text-muted)">${code}</span>
               <span class="badge badge-blue">${items.length}条</span>
             </div>
-            ${displayItems.map(item => `
+            ${items.map(item => `
               <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(5, 16) : ''}</span>
                 · ${item.title}
@@ -174,7 +172,6 @@
                 ${item.impact_level === 'high' ? '<span class="badge badge-red" style="margin-left:4px">重大</span>' : ''}
               </div>
             `).join('')}
-            ${items.length > 5 ? `<div class="text-sm" style="color:var(--text-muted);margin-top:4px">...及其他${items.length - 5}条</div>` : ''}
           </div>
         `;
       }
@@ -189,7 +186,6 @@
       for (const [code, items] of stocks) {
         if (!items || items.length === 0) continue;
         const name = items[0].stock_name || code;
-        const displayItems = items.slice(0, 5);
         const ratings = [...new Set(items.map(r => r.rating).filter(Boolean))];
 
         html += `
@@ -200,7 +196,7 @@
               <span class="badge badge-green">${items.length}份</span>
               ${ratings.length > 0 ? `<span style="color:var(--accent);font-size:12px">评级: ${ratings.join(', ')}</span>` : ''}
             </div>
-            ${displayItems.map(item => `
+            ${items.map(item => `
               <div class="text-sm" style="padding:4px 0;border-bottom:1px solid var(--border-color)">
                 <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
                 · ${item.title}
@@ -208,7 +204,6 @@
                 ${item.src ? `<span style="color:var(--text-muted)">(${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--text-muted);text-decoration:underline">${item.src}</a>` : item.src})</span>` : ''}
               </div>
             `).join('')}
-            ${items.length > 5 ? `<div class="text-sm" style="color:var(--text-muted);margin-top:4px">...及其他${items.length - 5}份</div>` : ''}
           </div>
         `;
       }

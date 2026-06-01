@@ -83,10 +83,17 @@
               const labels = { pessimistic: '悲观', neutral: '基准', optimistic: '乐观' };
               const colors = { pessimistic: 'var(--green)', neutral: 'var(--accent)', optimistic: 'var(--red)' };
               const val = v[key] || {};
+              const sp = latest.stock_price;
+              const tgt = val.target;
+              let chgLabel = '';
+              if (sp && tgt) {
+                const chg = ((tgt - sp) / sp * 100);
+                chgLabel = chg >= 0 ? `(+${chg.toFixed(1)}%)` : `(${chg.toFixed(1)}%)`;
+              }
               return `
                 <div style="text-align:center;padding:20px;background:var(--bg-primary);border-radius:var(--radius)">
                   <div class="text-sm" style="color:var(--text-muted)">${labels[key]} ${val.pe || '-'}×</div>
-                  <div style="font-size:32px;font-weight:700;color:${colors[key]};margin:8px 0">¥${val.target || '-'}</div>
+                  <div style="font-size:32px;font-weight:700;color:${colors[key]};margin:8px 0">¥${val.target || '-'} <span style="font-size:16px;font-weight:400">${chgLabel}</span></div>
                   <div class="text-xs" style="color:var(--text-muted)">vs 现价 ¥${latest.stock_price || '-'}</div>
                 </div>
               `;

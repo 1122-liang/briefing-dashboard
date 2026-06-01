@@ -104,10 +104,12 @@
                     <span style="color:var(--text-secondary)">${opp.investment_logic}</span>
                   </div>
                 ` : ''}
-                ${opp.target_stocks && opp.target_stocks.length > 0 ? `
+                ${opp.target_stocks ? `
                   <div class="text-sm">
                     <span style="color:var(--text-muted)">🎯 潜在标的：</span>
-                    ${opp.target_stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">${s}</span>`).join('')}
+                    ${Array.isArray(opp.target_stocks)
+                      ? opp.target_stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">${s}</span>`).join('')
+                      : opp.target_stocks.split(/[、,，]/).filter(Boolean).map(s => `<span class="badge badge-green" style="margin-left:4px">${s.trim()}</span>`).join('')}
                   </div>
                 ` : ''}
                 ${opp.risk_note ? `

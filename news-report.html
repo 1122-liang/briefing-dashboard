@@ -126,6 +126,25 @@
         <!-- Reports by Stock -->
         <div class="card">
           <div class="card-title mb-4">📑 研报汇总</div>
+          
+          <!-- 未来产业周报 -->
+          ${latest.swfuture_weekly ? `
+          <div style="background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);border-radius:var(--radius);padding:16px;margin-bottom:16px;border-left:4px solid var(--accent);">
+            <div class="flex items-center gap-2 mb-4" style="margin-bottom:10px;">
+              <span class="badge badge-blue">策略周报</span>
+              <span class="font-bold" style="font-size:15px;">🚀 ${latest.swfuture_weekly.title || '申万宏源未来产业周报'}</span>
+            </div>
+            <div class="text-sm" style="color:var(--text-secondary);line-height:1.7;">
+              ${latest.swfuture_weekly.content ? latest.swfuture_weekly.content.substring(0, 1000) + (latest.swfuture_weekly.content.length > 1000 ? '...' : '') : '暂无内容'}
+            </div>
+            <div class="text-xs" style="color:var(--text-muted);margin-top:10px;">
+              来源: ${latest.swfuture_weekly.source || '申万宏源策略'} · 
+              ${latest.swfuture_weekly.date || ''}
+              ${latest.swfuture_weekly.url ? ` · <a href="${latest.swfuture_weekly.url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:underline">查看原文</a>` : ''}
+            </div>
+          </div>
+          ` : ''}
+          
           ${renderReportsByStock(latest.reports_by_stock || {})}
         </div>
 

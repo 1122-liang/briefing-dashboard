@@ -1,0 +1,52 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T09:02:27.147893+08:00",
+  "data_source": "氟务在线",
+  "products": {
+    "R32": {
+      "price": 55487.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R125": {
+      "price": 45133.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R134a": {
+      "price": 53982.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R143a": {
+      "price": 42920.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R22": {
+      "price": 18584.0,
+      "unit": "元/吨",
+      "change_pct": null
+    }
+  },
+  "weighted_avg_price": 49475,
+  "stock_price": 57.51,
+  "eps_annual": 5.46,
+  "valuation": {
+    "pessimistic": {
+      "pe": 12,
+      "target": 65.5
+    },
+    "neutral": {
+      "pe": 15,
+      "target": 81.9
+    },
+    "optimistic": {
+      "pe": 18,
+      "target": 98.3
+    }
+  },
+  "cookie_expired": false,
+  "_filename": "2026-06-01.json",
+  "_saved_at": "2026-06-01T09:02:27.147914+08:00"
+}

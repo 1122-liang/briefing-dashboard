@@ -34,7 +34,7 @@
       const latest = allData[0].data;
 
       // Summary stats
-      const totalUsers = latest.total_users || 0;
+      const totalFollowing = latest.total_following || latest.total_users || 0;
       const activeUsers = latest.active_users || 0;
       const totalPosts = latest.total_posts || 0;
       const filteredPosts = latest.filtered_posts || 0;
@@ -55,8 +55,8 @@
         <!-- Stats -->
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-label">关注人数</div>
-            <div class="stat-value">${totalUsers}</div>
+            <div class="stat-label">总关注人数</div>
+            <div class="stat-value">${totalFollowing}</div>
             <div class="stat-change neutral">今日活跃 ${activeUsers} 人</div>
           </div>
           <div class="stat-card">
@@ -94,9 +94,10 @@
                 <span style="color:#f59e0b;font-weight:700">#${i + 1}</span>
                 ${topic.created_at_str ? `<span style="color:var(--text-muted);font-size:12px">${topic.created_at_str}</span>` : ''}
               </div>
-              <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0">
+              <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0 0 8px 0">
                 ${topic.url ? `<a href="${topic.url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
               </p>
+              ${topic.summary ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.summary}</p>` : ''}
             </div>
           `).join('')}
         </div>

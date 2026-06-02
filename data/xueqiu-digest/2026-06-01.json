@@ -1,6 +1,6 @@
 {
   "date": "2026-06-01",
-  "generated_at": "2026-06-01T23:32:43.059743+08:00",
+  "generated_at": "2026-06-01T23:51:00.207846+08:00",
   "total_following": 0,
   "total_users": 0,
   "active_users": 0,
@@ -10,8 +10,8 @@
   "top_posts": [],
   "analysis": null,
   "time_range": {
-    "from": "2026-05-31 23:32",
-    "to": "2026-06-01 23:32"
+    "from": "2026-05-31 23:50",
+    "to": "2026-06-01 23:51"
   },
   "today_topics_count": 7,
   "today_topics": [
@@ -24,6 +24,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -37,6 +38,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -50,6 +52,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -63,6 +66,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -76,6 +80,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -89,6 +94,7 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
@@ -102,11 +108,12 @@
       "source": "今日话题",
       "content": "",
       "summary": "",
+      "content_available": false,
       "user_name": "",
       "like_count": 0,
       "reply_count": 0
     }
   ],
   "_filename": "2026-06-01.json",
-  "_saved_at": "2026-06-01T23:32:43.059801+08:00"
+  "_saved_at": "2026-06-01T23:51:00.207901+08:00"
 }

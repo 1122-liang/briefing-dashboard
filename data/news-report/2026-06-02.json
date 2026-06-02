@@ -1,0 +1,543 @@
+{
+  "date": "2026-06-02",
+  "hours": 24,
+  "stock_pool": [
+    "赣锋锂业",
+    "天齐锂业",
+    "紫金矿业",
+    "三美股份",
+    "ST人福",
+    "紫金黄金国际",
+    "宝丰能源",
+    "中国石油"
+  ],
+  "news_by_stock": {
+    "sz002460": [
+      {
+        "time": "2026-06-01 15:45:09",
+        "title": "赣锋锂业主力资金净流出2.3亿元 短期情绪偏空技术轮动加剧震荡",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601155403a729b842&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 15:04:06",
+        "title": "5月固态电池市场：固液装车启幕和全固态冲刺“1元时代”",
+        "src": "上海有色网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060115225894feeedd&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 12:40:00",
+        "title": "锂企积极卡位固态电池赛道",
+        "src": "中国能源报",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606011249329763afdb&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:27",
+        "title": "赣锋锂业5月29日被融资净卖出7776万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601094126b61cebe3&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:25",
+        "title": "赣锋锂业5月29日遭南向资金减持48.28万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060109401797636695&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      }
+    ],
+    "sz002466": [
+      {
+        "time": "2026-06-01 22:15:02",
+        "title": "天齐锂业获UBS Group AG增持34.4万股",
+        "src": "格隆汇",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601221537b61df6cd&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "medium",
+        "impact_reason": "增持"
+      },
+      {
+        "time": "2026-06-01 15:37:18",
+        "title": "天齐锂业主力资金净流出3381万 短期波动不改固态电池布局主线",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601154403a729b3c0&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 12:40:00",
+        "title": "锂企积极卡位固态电池赛道",
+        "src": "中国能源报",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606011249329763afdb&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 11:47:49",
+        "title": "是否已针对机器人场景做专项研发或客户对接？天齐锂业回应",
+        "src": "财闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601114830b61d2253&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 11:33:23",
+        "title": "天齐锂业：公司将优先考虑现金分红并持续提升股东回报水平",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601121004984fa53b&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 11:33:09",
+        "title": "天齐锂业：公司已在锂资源投资等方面积累丰富经验",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606011209599763a464&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:39",
+        "title": "天齐锂业5月29日遭南向资金减持116.78万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060109481494fe7aa8&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      },
+      {
+        "time": "2026-06-01 09:30:27",
+        "title": "天齐锂业5月29日被融资净卖出5954万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601094143a439eea5&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh601899": [
+      {
+        "time": "2026-06-02 07:42:43",
+        "title": "美国抢铜潮卷土重来！高盛：美国以外市场铜供应缺口暴增10倍",
+        "src": "财联社",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260602005255a43b2050&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 18:56:13",
+        "title": "刚果提高锂矿税率，紫金、贝佐斯、盖茨同时盯上非洲锂矿",
+        "src": "产联社CLS",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601202132b61dd04f&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 17:09:38",
+        "title": "紫金矿业55亿加元并购案遭遇审批阻力",
+        "src": "欧洲并购与投资",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601173556a729e2f9&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "并购"
+      },
+      {
+        "time": "2026-06-01 15:31:50",
+        "title": "紫金矿业主力资金净流出1.9亿元 短期避险情绪升温但长期价值稳固",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601153651a43a6b21&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 13:46:00",
+        "title": "耐普矿机与紫金矿业达成3年战略合作",
+        "src": "上海证券报·中国证券网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601134656b61d44ce&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "战略"
+      },
+      {
+        "time": "2026-06-01 10:25:41",
+        "title": "紫金矿业40亿美元收购Allied Gold在中国遭遇延迟",
+        "src": "中国金属网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060110394097638343&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "收购"
+      },
+      {
+        "time": "2026-06-01 09:30:52",
+        "title": "紫金矿业5月29日被融资净卖出8666万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060109552497636e8e&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:33",
+        "title": "紫金矿业5月29日遭南向资金减持980.20万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601094459b61cedc9&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      }
+    ],
+    "sh603379": [
+      {
+        "time": "2026-06-01 19:02:00",
+        "title": "美国放宽三代制冷剂使用！锂电、氟化工齐涨，华宝基金化工ETF上探2.88%！机构：行业底部企稳向上",
+        "src": "新浪基金",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060119032598503529&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 15:38:09",
+        "title": "三美股份主力资金净流入6696.6万元 行业反内卷预期与业绩复苏共振",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601154502a43a6e83&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "medium",
+        "impact_reason": "业绩"
+      },
+      {
+        "time": "2026-06-01 09:32:31",
+        "title": "三美股份涨5.29% 近半年8家券商买入",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601093327984f6449&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:39",
+        "title": "三美股份5月29日被融资净卖出3691万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601094855984f6cb3&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh600079": [
+      {
+        "time": "2026-06-01 15:37:31",
+        "title": "ST人福主力资金净流入401.9万 摘帽预期驱动短期博弈",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601154414984fe80e&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "medium",
+        "impact_reason": "ST"
+      }
+    ],
+    "hk02259": [
+      {
+        "time": "2026-06-01 16:30:33",
+        "title": "每日卖空追踪",
+        "src": "0",
+        "summary": "0",
+        "url": "紫金黄金国际 06月01日卖空量成交21.05万股，卖空比例为4.36%",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 16:15:31",
+        "title": "紫金黄金国际06月01日遭主力抛售819.9万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601161957a43a7df7&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 10:45:29",
+        "title": "紫金黄金40亿美元海外金矿并购，国内审批遇阻",
+        "src": "上海金属网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060111011694fe9cde&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "medium",
+        "impact_reason": "并购"
+      }
+    ],
+    "sh600989": [
+      {
+        "time": "2026-06-01 15:42:50",
+        "title": "宝丰能源主力资金净流入9020.7万元 短期情绪回暖叠加高股息偏好",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601155115a729b714&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 14:01:27",
+        "title": "化学纤维利润同比翻倍，碳排放双控重塑供给格局，化工板块景气上行周期重启",
+        "src": "财闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601140146a729907d&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 10:22:40",
+        "title": "宝丰能源涨3.08% 近半年33家券商买入",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601102245b61d0074&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:42",
+        "title": "宝丰能源5月29日被融资净卖出4132万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601095018984f6d6d&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh601857": [
+      {
+        "time": "2026-06-01 20:52:18",
+        "title": "国内高性能轮胎材料再添“新成员”！中石油广西石化官能化橡胶SSBR2055DF2成功投产",
+        "src": "投资广西",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606020250579764ae4d&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "投产"
+      },
+      {
+        "time": "2026-06-01 20:25:44",
+        "title": "中国石油与中国石化又有深度合作",
+        "src": "海贝能源",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060120393997644fe7&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 20:18:12",
+        "title": "险资私募调仓最新路线：鸿鹄系基金减持陕西煤业，新进贵州茅台、五粮液等，太保致远持仓扩至9股",
+        "src": "财联社",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601202112b61dd031&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      },
+      {
+        "time": "2026-06-01 18:34:56",
+        "title": "重磅签约！中国石油的朋友圈变了",
+        "src": "石油Link",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601185132b61db4fc&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 17:52:25",
+        "title": "中国石油首套SAF项目关键进展！",
+        "src": "中国石油和化工",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601181538a43aab9e&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 17:41:00",
+        "title": "油价飙涨！以总理下令打击黎巴嫩，停火协议“基本失效”！",
+        "src": "证券时报",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060117470998501a38&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 15:59:08",
+        "title": "中国石油大庆油田风光发电量突破30亿千瓦时",
+        "src": "国企网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060115591094fefeb8&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 15:27:32",
+        "title": "中国石油主力资金净流入1.1亿元 短期风格切换叠加政策预期提振",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601153054a43a68da&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "政策"
+      },
+      {
+        "time": "2026-06-01 14:01:27",
+        "title": "化学纤维利润同比翻倍，碳排放双控重塑供给格局，化工板块景气上行周期重启",
+        "src": "财闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601140146a729907d&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:52",
+        "title": "中国石油5月29日被融资净卖出944万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601095522984f701f&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-01 09:30:16",
+        "title": "中国石油股份5月29日获南向资金加仓4578.02万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260601093517984f6523&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ]
+  },
+  "reports_by_stock": {
+    "sz002460": [],
+    "sz002466": [],
+    "sh601899": [],
+    "sh603379": [],
+    "sh600079": [],
+    "hk02259": [],
+    "sh600989": [],
+    "sh601857": []
+  },
+  "high_impact_news": [],
+  "report_changes": [],
+  "stats": {
+    "total_news": 44,
+    "total_reports": 0,
+    "high_impact_count": 0,
+    "report_changes_count": 0
+  },
+  "swfuture_weekly": {
+    "date": "2026-06-02",
+    "title": "【申万宏源策略】周度研究成果（20260525- 20260531)",
+    "content": "未来产业周报第22期（2026/5/17-2026/5/23）专题研究1、Buy European制造业回流能否成功？——欧盟《工业加速器法》专题解读电话会议一周回顾1【大势研判】蓄力再突破——申万宏源策略一周回顾展望(26/05/25-26/05/30)一周回顾2026.5.30一、重申短期市场难有效突破：1. 短期增量资金流入力度偏弱，板块间资金相互虹吸。2. 近期，市场总体已经调整，科技龙头资产动量延续，短期结构分化行情已走向极致。3. 科技内部行情轮动加快、分化加剧，部分前期领涨板块筹码浮盈已走弱。二、思考市场再突破的条件：1. 新经济产业趋势进一步强化。2. 更广泛的基本面验证，新经济蓄力，其他方向接力。3. 增量资金正循环再强化。继续强调，大波段上涨行情不怕等，随着时间的推移，市场再突破的条件会越来越好。三、短期，动量延续的AI算力通胀方向减少，已向PCB细分领域、电容等方向聚焦。短期调整波段，高切低行情有所演绎，仍偏向于超跌反弹行情。中期，继续看好新能源、新能车和出口链的景气验证机会，同时，继续围绕着AI产业链和战略资源做配置。2【行业比较】A股估值及行业中观景气跟踪周报——行业比较周跟踪（20260525-20260531）一周回顾2026.5.311.风光装机2025年同期政策节点前后形成高基数，国内光伏项目以交付前期订单为主，出口受退税政策取消影响回落，行业各环节库存压力普遍增加；2.4月国内手机出货量同比下滑8.6%，降幅较3月收窄4.1个百分点，4月单月出货量同比增长2.8%实现今年以来首次正增长，头部厂商集中上市多款年度主力机型拉动终端销售；3.4月民航客运周转量同比增长3.7%，增速较3月回落12.2个百分点，三大航客座率环比回落0.8个百分点至86.1%，高油价推升出行成本，供给端也迫使航司主动削减运力；4.5月28日，据美国经济分析局（BEA）公布的数据，美国4月PCE物价指数同比3.8%与预期持平，为2023年5月以来最高水平，根据利率期货市场定价，年末美联储加息预期概率回落至50%以内；5.本周布伦特原油期货收盘价下跌12.0%，收报91.12美元/桶，伊美谅解备忘录框架披露，受海峡通航预期影响国际油价回落；6.山西煤矿事故后产地安监趋严，加之印尼煤炭出口专营政策即将实施，导致进口煤补充能力削弱，共同推动近期煤价上涨。3【资产配置】美债 VS 美股：关注曲线结构与波动率——全球资产配置每周聚焦 (20260515-20260522)一周回顾2026.5.252026年美伊冲突以来，海外债券利率上行，但是期限利差普遍收窄。 2026年以来，海外债券利率普遍上行。与2024/2025年不同的是，本轮海外债券利率上行是由短端上行幅度更大所驱动，期限利差普遍收窄，说明短端预期抬升（货币政策紧缩预期）是主要推动因素。美伊冲突爆发后，全球主要经济体的国债利率普遍上行，且短期利率的涨幅大多显著超过长期利率，导致收益率曲线普遍扁平化 / 倒挂加深，只有日本例外，其长期利率涨幅更大，期限利差反而走阔。其中，美国2年期国债利率+75bp，利率大幅上行，涨幅仅次于英国。美国30年国债利率+40bp，期限利差下降31bp。历史相对位置来看，2y国债利率方面，日本已经超过2007年高点，美国和英国接近2007年高点。30y国债利率方面，日本早已超过2007年高点，英国最近刚超过2007年高点，美国已经逼近2007年高点。4【主题投资】美国政府20亿美元入股量子企业；云深处IPO获受理；DNA引导CRISPR基因编辑取得突破——",
+    "source": "申万宏源策略",
+    "url": "https://news.qq.com/rain/a/20260531A08F7800"
+  },
+  "_filename": "2026-06-02.json",
+  "_saved_at": "2026-06-02T08:45:42.644364+08:00"
+}

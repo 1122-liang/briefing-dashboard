@@ -121,7 +121,7 @@
                       ).map(s => `
                         <span style="display:inline-flex;align-items:center;gap:4px;background:var(--bg-secondary);border-radius:var(--radius);padding:3px 8px;font-size:12px">
                           <span style="color:#22c55e;font-weight:600">${s}</span>
-                          <span style="color:var(--text-muted);font-size:11px">${opp.industry}</span>
+                          <span style="color:var(--text-muted);font-size:11px">${opp.title.length > 15 ? opp.title.slice(0, 15) + '…' : opp.title}</span>
                         </span>
                       `).join('')}
                     </div>

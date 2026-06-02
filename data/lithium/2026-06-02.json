@@ -1,17 +1,22 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T08:46:58.611284+08:00",
+  "generated_at": "2026-06-02T09:02:34.608700+08:00",
   "li_price": {
-    "close": 178900.0,
-    "open": 181000.0,
-    "high": 182100.0,
-    "low": 178000.0,
-    "change_pct": -0.62,
+    "close": 179000.0,
+    "open": 179000.0,
+    "high": 179220.0,
+    "low": 176800.0,
+    "change_pct": -0.57,
     "source": "sina_fallback"
   },
-  "score": -1,
+  "score": 1,
   "score_level": "中性观望",
   "score_details": [
+    {
+      "dimension": "趋势",
+      "score": "+1",
+      "note": "偏多（MA20>MA60）"
+    },
     {
       "dimension": "量价",
       "score": "0",
@@ -20,7 +25,12 @@
     {
       "dimension": "持仓",
       "score": "-1",
-      "note": "价格下跌+持仓433713手"
+      "note": "价格下跌+持仓432789手"
+    },
+    {
+      "dimension": "RSI",
+      "score": "+1",
+      "note": "RSI=28.1（偏弱/超卖）"
     },
     {
       "dimension": "成本支撑",
@@ -35,28 +45,28 @@
   ],
   "indicators": {
     "futures": {
-      "latest": 178900.0,
-      "open": 181000.0,
-      "high": 182100.0,
-      "low": 178000.0,
-      "change_pct": -0.62,
-      "volume": 146724.0,
+      "latest": 179000.0,
+      "open": 179000.0,
+      "high": 179220.0,
+      "low": 176800.0,
+      "change_pct": -0.57,
+      "volume": 14491.0,
       "amount_yi": null,
       "volume_ratio": null,
       "amplitude": null,
       "source": "sina_fallback"
     },
     "open_interest": {
-      "value": 433713.0,
-      "settle": 180020.0
+      "value": 432789.0,
+      "settle": 0.0
     },
     "technical": {
-      "ma20": null,
-      "ma60": null,
-      "trend": null,
-      "rsi": null,
-      "rsi_signal": null,
-      "data_points": null
+      "ma20": 188315.0,
+      "ma60": 171301.0,
+      "trend": "偏多（MA20>MA60）",
+      "rsi": 28.1,
+      "rsi_signal": "偏弱",
+      "data_points": 691
     },
     "cost": {
       "salt_lake": 3.5,
@@ -133,5 +143,5 @@
   "geo_risks": [],
   "seasonal_index": 0.98,
   "_filename": "2026-06-02.json",
-  "_saved_at": "2026-06-02T08:46:58.611352+08:00"
+  "_saved_at": "2026-06-02T09:02:34.609503+08:00"
 }

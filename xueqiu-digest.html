@@ -92,12 +92,16 @@
             <div style="background:var(--bg-primary);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;border-left:3px solid ${i < 3 ? '#f59e0b' : 'var(--border)'}">
               <div class="flex items-center gap-2" style="margin-bottom:6px">
                 <span style="color:#f59e0b;font-weight:700">#${i + 1}</span>
+                ${topic.user_name ? `<span style="color:var(--text-muted);font-size:12px">${topic.user_name}</span>` : ''}
                 ${topic.created_at_str ? `<span style="color:var(--text-muted);font-size:12px">${topic.created_at_str}</span>` : ''}
+                ${topic.like_count ? `<span style="color:var(--text-muted);font-size:12px">👍${topic.like_count}</span>` : ''}
+                ${topic.reply_count ? `<span style="color:var(--text-muted);font-size:12px">💬${topic.reply_count}</span>` : ''}
               </div>
               <p style="color:var(--text-primary);font-size:14px;font-weight:500;margin:0 0 8px 0">
                 ${topic.url ? `<a href="${topic.url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">${topic.title || '查看原文'}</a>` : (topic.title || '无标题')}
               </p>
-              ${topic.summary ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.summary}</p>` : (topic.content_available === false ? `<p style="color:#f59e0b;font-size:12px;margin:0">⚠️ 内容待获取（Playwright不可用）</p>` : (topic.content ? `<p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.content.substring(0, 200)}...</p>` : ''))}
+              ${topic.summary ? `<div style="background:rgba(59,130,246,0.08);border-radius:6px;padding:10px 12px;margin-bottom:8px;border-left:3px solid var(--accent)"><p style="color:var(--accent);font-size:12px;font-weight:600;margin:0 0 4px 0">🤖 AI 摘要</p><p style="color:var(--text-secondary);font-size:13px;margin:0;line-height:1.6">${topic.summary}</p></div>` : ''}
+              ${topic.content ? `<div class="topic-content-toggle" id="topic-content-${i}"><div class="topic-content-preview" style="color:var(--text-secondary);font-size:13px;line-height:1.6;max-height:80px;overflow:hidden;position:relative">${topic.content.substring(0, 300)}${topic.content.length > 300 ? '<span class="fade-overlay"></span>' : ''}</div>${topic.content.length > 300 ? `<div class="topic-content-full" style="display:none;color:var(--text-secondary);font-size:13px;line-height:1.6;white-space:pre-wrap">${topic.content}</div><button onclick="toggleTopicContent(${i})" class="toggle-btn" id="topic-btn-${i}">展开全文 ▼</button>` : ''}</div>` : (topic.content_available === false ? `<p style="color:#f59e0b;font-size:12px;margin:0">⚠️ 内容待获取（Playwright不可用）</p>` : '')}
             </div>
           `).join('')}
         </div>
@@ -108,31 +112,51 @@
           <div class="card-title mb-4">⭐ 重点消息 TOP${Math.min(topPosts.length, 10)}</div>
           ${topPosts.length === 0
             ? '<div class="empty-state"><p>今日无重点消息</p></div>'
-            : topPosts.slice(0, 10).map((post, i) => `
+            : topPosts.slice(0, 10).map((post, i) => {
+              const fullText = post.full_text || post.text || '';
+              const previewText = post.summary || (fullText.length > 120 ? fullText.substring(0, 120) + '...' : fullText);
+              const needsToggle = fullText.length > 120;
+              return `
               <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;margin-bottom:12px;border-left:3px solid ${i < 3 ? 'var(--accent)' : 'var(--border)'}">
-                <div class="flex items-center gap-2" style="margin-bottom:8px">
+                <div class="flex items-center gap-2" style="margin-bottom:8px;flex-wrap:wrap">
                   <span style="color:var(--accent);font-weight:700">#${i + 1}</span>
                   <span class="font-bold">${post.user_name || '未知'}</span>
+                  ${post.created_at_str ? `<span style="color:var(--text-muted);font-size:12px">${post.created_at_str}</span>` : ''}
                   ${post.category ? `<span class="badge badge-blue">${post.category}</span>` : ''}
                   ${post.sentiment ? `<span class="badge ${post.sentiment === '正面' ? 'badge-green' : post.sentiment === '负面' ? 'badge-red' : 'badge-yellow'}">${post.sentiment}</span>` : ''}
+                  ${post.post_type ? `<span class="badge badge-yellow">${post.post_type === 'original' ? '原创' : post.post_type === 'reply' ? '回复' : post.post_type}</span>` : ''}
                   ${post.likes ? `<span style="color:var(--text-muted);font-size:12px">👍${post.likes}</span>` : ''}
                   ${post.comments ? `<span style="color:var(--text-muted);font-size:12px">💬${post.comments}</span>` : ''}
                 </div>
-                <p class="text-sm" style="color:var(--text-secondary)">${post.summary || post.text || ''}</p>
+                <div id="post-text-${i}" class="post-text-container">
+                  <p class="text-sm post-preview" style="color:var(--text-secondary);margin:0;line-height:1.6">${previewText}</p>
+                  ${needsToggle ? `<p class="text-sm post-full" style="color:var(--text-secondary);margin:0;line-height:1.6;display:none;white-space:pre-wrap">${fullText}</p>` : ''}
+                </div>
+                ${needsToggle ? `<button onclick="togglePostContent(${i})" class="toggle-btn" id="post-btn-${i}">展开全文 ▼</button>` : ''}
                 ${post.stocks && post.stocks.length > 0 ? `
                   <div style="margin-top:6px">
                     ${post.stocks.map(s => `<span class="badge badge-green" style="margin-left:4px">$${s}$</span>`).join('')}
                   </div>
                 ` : ''}
               </div>
-            `).join('')}
+            `}).join('')}
         </div>
 
         <!-- AI Analysis -->
         ${latest.analysis ? `
         <div class="card">
-          <div class="card-title mb-4">🤖 AI 分析摘要</div>
+          <div class="card-title mb-4">🤖 AI 综合分析</div>
           <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;white-space:pre-wrap;line-height:1.8;color:var(--text-secondary)">${latest.analysis}</div>
+        </div>
+        ` : ''}
+
+        <!-- Posts AI Summary -->
+        ${latest.posts_analysis ? `
+        <div class="card">
+          <div class="card-title mb-4">📝 重点帖子 AI 汇总</div>
+          <div style="background:linear-gradient(135deg, rgba(59,130,246,0.05), rgba(168,85,247,0.05));border-radius:var(--radius);padding:16px;border:1px solid rgba(59,130,246,0.15)">
+            <div style="white-space:pre-wrap;line-height:1.8;color:var(--text-secondary);font-size:14px">${latest.posts_analysis}</div>
+          </div>
         </div>
         ` : ''}
 
@@ -174,6 +198,44 @@
             }]
           });
         }
+      }
+    }
+
+    // Toggle post content (expand/collapse)
+    function togglePostContent(index) {
+      const container = document.getElementById(`post-text-${index}`);
+      const btn = document.getElementById(`post-btn-${index}`);
+      if (!container || !btn) return;
+      const preview = container.querySelector('.post-preview');
+      const full = container.querySelector('.post-full');
+      if (!full) return;
+      if (full.style.display === 'none') {
+        preview.style.display = 'none';
+        full.style.display = 'block';
+        btn.textContent = '收起 ▲';
+      } else {
+        preview.style.display = 'block';
+        full.style.display = 'none';
+        btn.textContent = '展开全文 ▼';
+      }
+    }
+
+    // Toggle topic content (expand/collapse)
+    function toggleTopicContent(index) {
+      const container = document.getElementById(`topic-content-${index}`);
+      const btn = document.getElementById(`topic-btn-${index}`);
+      if (!container || !btn) return;
+      const preview = container.querySelector('.topic-content-preview');
+      const full = container.querySelector('.topic-content-full');
+      if (!full) return;
+      if (full.style.display === 'none') {
+        preview.style.display = 'none';
+        full.style.display = 'block';
+        btn.textContent = '收起 ▲';
+      } else {
+        preview.style.display = 'block';
+        full.style.display = 'none';
+        btn.textContent = '展开全文 ▼';
       }
     }
   </script>

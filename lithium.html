@@ -180,6 +180,12 @@
           <div id="priceChart" class="chart-container"></div>
         </div>
 
+        <!-- Price + Warehouse Chart -->
+        <div class="card">
+          <div class="card-title mb-4">📈 价格与仓单变动</div>
+          <div id="priceWarehouseChart" class="chart-container" style="min-height:350px"></div>
+        </div>
+
         <!-- Score Gauge -->
         <div class="card">
           <div class="card-title mb-4">综合评分</div>
@@ -251,6 +257,119 @@
           }],
           dataZoom: defaultDataZoom(allData.length)
         });
+      }
+
+      // Render price + warehouse chart (dual axis)
+      const whDates = allData.map(d => d.data.date).reverse();
+      const whPrices = allData.map(d => d.data.li_price?.close).reverse();
+      const whWarehouseTotal = allData.map(d => d.data.warehouse_data?.total || null).reverse();
+      const whWarehouseChange = allData.map(d => d.data.warehouse_data?.change || null).reverse();
+
+      const hasWarehouseData = whWarehouseTotal.some(v => v !== null);
+      const priceWarehouseChart = initChart('priceWarehouseChart');
+      if (priceWarehouseChart) {
+        const theme = getEChartsTheme();
+        const series = [
+          {
+            name: '碳酸锂价格',
+            type: 'line',
+            yAxisIndex: 0,
+            data: whPrices,
+            smooth: true,
+            lineStyle: { color: '#3b82f6', width: 2 },
+            itemStyle: { color: '#3b82f6' },
+            symbol: 'circle',
+            symbolSize: 6,
+          }
+        ];
+
+        if (hasWarehouseData) {
+          series.push({
+            name: '仓单总量',
+            type: 'line',
+            yAxisIndex: 1,
+            data: whWarehouseTotal,
+            smooth: true,
+            lineStyle: { color: '#f59e0b', width: 2, type: 'solid' },
+            itemStyle: { color: '#f59e0b' },
+            symbol: 'diamond',
+            symbolSize: 7,
+            areaStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: 'rgba(245,158,11,0.2)' },
+                { offset: 1, color: 'rgba(245,158,11,0.02)' }
+              ])
+            },
+          });
+          series.push({
+            name: '仓单日变化',
+            type: 'bar',
+            yAxisIndex: 2,
+            data: whWarehouseChange.map(v => ({
+              value: v,
+              itemStyle: {
+                color: v > 0 ? '#22c55e' : (v < 0 ? '#ef4444' : '#64748b'),
+                borderRadius: [3, 3, 0, 0],
+              }
+            })),
+            barMaxWidth: 20,
+          });
+        }
+
+        priceWarehouseChart.setOption({
+          ...theme,
+          tooltip: {
+            ...theme.tooltip,
+            trigger: 'axis',
+            axisPointer: { type: 'cross' },
+          },
+          legend: {
+            ...theme.textStyle,
+            data: hasWarehouseData
+              ? ['碳酸锂价格', '仓单总量', '仓单日变化']
+              : ['碳酸锂价格'],
+            top: 0,
+            right: 0,
+          },
+          grid: { left: 60, right: hasWarehouseData ? 80 : 20, top: 40, bottom: 50 },
+          xAxis: { ...theme.xAxis, type: 'category', data: whDates },
+          yAxis: [
+            {
+              ...theme.yAxis, type: 'value',
+              name: '价格（元/吨）',
+              position: 'left',
+              axisLabel: { ...theme.yAxis.axisLabel, formatter: v => (v/10000).toFixed(1) + '万' },
+            },
+            ...(hasWarehouseData ? [
+              {
+                ...theme.yAxis, type: 'value',
+                name: '仓单总量（手）',
+                position: 'right',
+                splitLine: { show: false },
+                axisLabel: { ...theme.yAxis.axisLabel, formatter: v => (v/10000).toFixed(1) + '万' },
+              },
+              {
+                ...theme.yAxis, type: 'value',
+                name: '日变化（手）',
+                position: 'right',
+                offset: 50,
+                splitLine: { show: false },
+                axisLabel: { ...theme.yAxis.axisLabel },
+              }
+            ] : [])
+          ],
+          series,
+          dataZoom: defaultDataZoom(allData.length),
+        });
+
+        // Show hint if no warehouse data
+        if (!hasWarehouseData) {
+          const el = document.getElementById('priceWarehouseChart');
+          const hint = document.createElement('div');
+          hint.style.cssText = 'text-align:center;color:#64748b;font-size:13px;margin-top:8px;';
+          hint.textContent = '💡 仓单数据需通过 --warehouse-total / --warehouse-change 参数手动输入';
+          el.parentNode.appendChild(hint);
+        }
       }
 
       // Render score gauge

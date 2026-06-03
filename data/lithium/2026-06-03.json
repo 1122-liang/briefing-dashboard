@@ -1,12 +1,12 @@
 {
   "date": "2026-06-03",
-  "generated_at": "2026-06-03T08:47:03.636715+08:00",
+  "generated_at": "2026-06-03T09:12:06.100442+08:00",
   "li_price": {
-    "close": 172980.0,
-    "open": 179000.0,
-    "high": 179220.0,
-    "low": 171100.0,
-    "change_pct": -3.91,
+    "close": 173100.0,
+    "open": 173100.0,
+    "high": 173100.0,
+    "low": 169060.0,
+    "change_pct": -0.44,
     "source": "sina_fallback"
   },
   "score": 1,
@@ -25,7 +25,7 @@
     {
       "dimension": "持仓",
       "score": "-1",
-      "note": "价格下跌+持仓432273手"
+      "note": "价格下跌+持仓433478手"
     },
     {
       "dimension": "RSI",
@@ -45,20 +45,20 @@
   ],
   "indicators": {
     "futures": {
-      "latest": 172980.0,
-      "open": 179000.0,
-      "high": 179220.0,
-      "low": 171100.0,
-      "change_pct": -3.91,
-      "volume": 214856.0,
+      "latest": 173100.0,
+      "open": 173100.0,
+      "high": 173100.0,
+      "low": 169060.0,
+      "change_pct": -0.44,
+      "volume": 50780.0,
       "amount_yi": null,
       "volume_ratio": null,
       "amplitude": null,
       "source": "sina_fallback"
     },
     "open_interest": {
-      "value": 432273.0,
-      "settle": 173860.0
+      "value": 433478.0,
+      "settle": 0.0
     },
     "technical": {
       "ma20": 187510.0,
@@ -93,13 +93,7 @@
       }
     ]
   },
-  "alerts": [
-    [
-      "🔴",
-      "单日跌幅异常",
-      "-3.91%"
-    ]
-  ],
+  "alerts": [],
   "companies": {
     "ganfeng": {
       "name": "赣锋锂业",
@@ -148,6 +142,7 @@
   },
   "geo_risks": [],
   "seasonal_index": 0.98,
+  "warehouse_data": null,
   "_filename": "2026-06-03.json",
-  "_saved_at": "2026-06-03T08:47:03.636933+08:00"
+  "_saved_at": "2026-06-03T09:12:06.101397+08:00"
 }

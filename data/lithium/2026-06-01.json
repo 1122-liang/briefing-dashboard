@@ -143,5 +143,9 @@
   "geo_risks": [],
   "seasonal_index": 0.98,
   "_filename": "2026-06-01.json",
-  "_saved_at": "2026-06-01T09:58:21.135690+08:00"
+  "_saved_at": "2026-06-01T09:58:21.135690+08:00",
+  "warehouse_data": {
+    "total": null,
+    "change": null
+  }
 }

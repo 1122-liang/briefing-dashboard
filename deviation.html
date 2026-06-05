@@ -50,19 +50,22 @@
       const stocks = latestRun.stocks || [];
 
       // Get unique stock list (exclude stocks without valid monthly deviation data)
-      const stockNames = stocks.filter(s => s.threshold_pct > 0 && s.trigger_price != null).map(s => s.name);
+      // Use code as stable key — name may change on ex-dividend days (e.g. "XD三美股")
+      const validStocks = stocks.filter(s => s.threshold_pct > 0 && s.trigger_price != null);
+      const stockCodes = validStocks.map(s => s.code);
+      const codeToName = Object.fromEntries(validStocks.map(s => [s.code, s.name]));
 
-      // Build deviation time series for charts
+      // Build deviation time series for charts (keyed by code for cross-day stability)
       const stockSeries = {};
-      for (const s of stockNames) {
-        stockSeries[s] = { dates: [], values: [] };
+      for (const code of stockCodes) {
+        stockSeries[code] = { dates: [], values: [] };
       }
       for (const run of flatRuns.slice().reverse()) {
         const label = `${run.date} ${run.time || ''}`;
         for (const s of (run.stocks || [])) {
-          if (stockSeries[s.name]) {
-            stockSeries[s.name].dates.push(label);
-            stockSeries[s.name].values.push(s.deviation_pct);
+          if (stockSeries[s.code]) {
+            stockSeries[s.code].dates.push(label);
+            stockSeries[s.code].values.push(s.deviation_pct);
           }
         }
       }
@@ -138,9 +141,9 @@
       if (devChart) {
         const theme = getEChartsTheme();
         const colors = ['#3b82f6','#22c55e','#ef4444','#eab308','#8b5cf6','#f97316','#ec4899','#06b6d4'];
-        const series = stockNames.map((name, i) => ({
-          name, type: 'line', smooth: true,
-          data: stockSeries[name]?.values || [],
+        const series = stockCodes.map((code, i) => ({
+          name: codeToName[code], type: 'line', smooth: true,
+          data: stockSeries[code]?.values || [],
           lineStyle: { width: 2 },
           itemStyle: { color: colors[i % colors.length] }
         }));
@@ -148,7 +151,7 @@
         devChart.setOption({
           ...theme,
           tooltip: { ...theme.tooltip, trigger: 'axis' },
-          legend: { ...theme.legend, data: stockNames, type: 'scroll', bottom: 0 },
+          legend: { ...theme.legend, data: stockCodes.map(c => codeToName[c]), type: 'scroll', bottom: 0 },
           grid: { left: 60, right: 20, top: 20, bottom: 60 },
           xAxis: { ...theme.xAxis, type: 'category', data: allDates, axisLabel: { ...theme.xAxis.axisLabel, rotate: 30 } },
           yAxis: { ...theme.yAxis, type: 'value', name: '偏离度 %' },

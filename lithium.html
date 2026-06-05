@@ -262,8 +262,8 @@
       // Render price + warehouse chart (dual axis)
       const whDates = allData.map(d => d.data.date).reverse();
       const whPrices = allData.map(d => d.data.li_price?.close).reverse();
-      const whWarehouseTotal = allData.map(d => d.data.warehouse_data?.total || null).reverse();
-      const whWarehouseChange = allData.map(d => d.data.warehouse_data?.change || null).reverse();
+      const whWarehouseTotal = allData.map(d => d.data.warehouse_data?.total ?? null).reverse();
+      const whWarehouseChange = allData.map(d => d.data.warehouse_data?.change ?? null).reverse();
 
       const hasWarehouseData = whWarehouseTotal.some(v => v !== null);
       const priceWarehouseChart = initChart('priceWarehouseChart');

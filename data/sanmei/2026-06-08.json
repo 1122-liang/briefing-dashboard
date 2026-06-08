@@ -1,0 +1,59 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T08:43:09.644084+08:00",
+  "data_source": "氟务在线 fuwuzaixian.cn",
+  "products": {
+    "R32": {
+      "price": 55487.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R125": {
+      "price": 45133.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R134a": {
+      "price": 54867.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R143a": {
+      "price": 46903.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R22": {
+      "price": 19469.0,
+      "unit": "元/吨",
+      "change_pct": null
+    }
+  },
+  "weighted_avg_price": 50111.0,
+  "profit_per_ton": 3.0,
+  "stock_price": 60.24,
+  "eps_annual": 5.57,
+  "valuation": {
+    "pessimistic": {
+      "pe": 12,
+      "target": 66.8
+    },
+    "neutral": {
+      "pe": 15,
+      "target": 83.6
+    },
+    "optimistic": {
+      "pe": 18,
+      "target": 100.3
+    }
+  },
+  "cookie_expired": false,
+  "cost_structure": {
+    "raw_material": 10801.199999999999,
+    "energy": 3600.4,
+    "labor": 1800.2,
+    "other": 1800.2
+  },
+  "_filename": "2026-06-08.json",
+  "_saved_at": "2026-06-08T08:43:09.644585+08:00"
+}

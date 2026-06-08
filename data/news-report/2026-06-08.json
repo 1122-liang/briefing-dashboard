@@ -1,0 +1,1355 @@
+{
+  "date": "2026-06-08",
+  "hours": 72,
+  "stock_pool": [
+    "赣锋锂业",
+    "天齐锂业",
+    "紫金矿业",
+    "三美股份",
+    "ST人福",
+    "紫金黄金国际",
+    "宝丰能源",
+    "中国石油",
+    "巨化股份",
+    "博通",
+    "谷歌",
+    "诺基亚",
+    "Wolfspeed"
+  ],
+  "news_by_stock": {
+    "sz002460": [
+      {
+        "time": "2026-06-06 00:00:00",
+        "title": "有色金属行业周报：美联储加息预期升温 有色板块震荡",
+        "src": "方正证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608073111b6275505&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:32:37",
+        "title": "赣锋锂业主力资金净流出2.9亿元 短期止跌企稳待锂价中枢确认",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605153721a4412648&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:46:33",
+        "title": "赣锋锂业大跌3% 券商看好增持",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605094638a72ff2f3&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "medium",
+        "impact_reason": "增持"
+      },
+      {
+        "time": "2026-06-05 09:30:30",
+        "title": "赣锋锂业6月4日被融资净卖出7573万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605094247a440a79c&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-05 09:30:18",
+        "title": "赣锋锂业6月4日遭南向资金减持172.06万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605093548b623a144&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      }
+    ],
+    "sz002466": [
+      {
+        "time": "2026-06-07 00:00:00",
+        "title": "有色金属行业大宗金属周报：非农大超预期 美联储加息预期升温 铜价或承压",
+        "src": "华源证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060713460795081009&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:56:47",
+        "title": "天齐锂业主力资金净流入2763.9万 短期情绪回暖待锂价反转验证",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605160752b62430f9&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 10:59:36",
+        "title": "天齐锂业净买入7380万，Q1净利增1699%",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605110058976a3e43&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:30:30",
+        "title": "天齐锂业6月4日被融资净卖出6506万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605094244b623a58e&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-05 09:30:28",
+        "title": "天齐锂业6月4日遭南向资金减持98.88万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060509413495052b5a&s=b",
+        "stock_name": "天齐锂业",
+        "stock_code": "sz002466",
+        "impact_level": "medium",
+        "impact_reason": "减持"
+      }
+    ],
+    "sh601899": [
+      {
+        "time": "2026-06-08 00:00:00",
+        "title": "上市公司强回购稳信心",
+        "src": "经济日报",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608054523976db6e1&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "回购"
+      },
+      {
+        "time": "2026-06-07 00:00:00",
+        "title": "有色金属行业周报：刚果资源收益诉求增强 关键资源安全溢价抬升",
+        "src": "中银证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608071611976dc99f&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 00:00:00",
+        "title": "有色金属行业周报：利率路径重新锚定 价格巨震",
+        "src": "东方证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060720062998594ef1&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 18:36:27",
+        "title": "紫金矿业年度股东会现场直击：高位进阶后的“韧性突围”",
+        "src": "紫金矿业官网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060718363398593cd2&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:56:00",
+        "title": "为什么2026年，巨头都在“靠并购过冬”？——从美团、安踏到紫金矿业，解析巨头生存逻辑",
+        "src": "尚普并购咨询",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606132350976bf06f&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "并购"
+      },
+      {
+        "time": "2026-06-06 00:00:00",
+        "title": "有色金属行业周报：美联储加息预期升温 有色板块震荡",
+        "src": "方正证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608073111b6275505&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 21:30:09",
+        "title": "紫金矿业：公司在上述交易所的黄金交易如涉及实物交割则按规定缴纳印花税",
+        "src": "证星董秘互动",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060521334295062fd8&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:55:46",
+        "title": "紫金矿业：2025年年度股东会审议通过《公司2025年度利润分配方案》等议案",
+        "src": "公司公告",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605210259976b168d&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:30:02",
+        "title": "紫金矿业：公司生产硫酸绝大部分进行外销",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605212700976b1f5b&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:30:02",
+        "title": "紫金矿业：公司已形成涵盖金、铜、锌（铅）、银、锂、钼等金属的世界级多元矿种组合与覆盖全球18个国家的资源布局，有助于降低宏观经济和局部地缘政治风险",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060520464695061f09&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:30:02",
+        "title": "紫金矿业：公司依托矿山开发主业，适度延伸一体化配套产业",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060520440398571129&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:30:02",
+        "title": "紫金矿业：公司在刚果（金）的项目目前运营正常，已提前做好疫情应对预案",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060520431995061dec&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 20:30:01",
+        "title": "紫金矿业：黄金是公司重点发展矿种，公司将持续关注黄金业务的并购机会",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605212634976b1f40&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "medium",
+        "impact_reason": "并购"
+      },
+      {
+        "time": "2026-06-05 19:48:52",
+        "title": "紫金矿业将于7月10日派发末期股息每10股 4.367344港元",
+        "src": "智通财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060519500795060d69&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 17:29:11",
+        "title": "紫金矿业今日大宗交易平价成交61.62万股，成交额1825.92万元",
+        "src": "界面新闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605173747a730a316&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh603379": [
+      {
+        "time": "2026-06-06 17:17:19",
+        "title": "政策与高温双重引爆，这个赛道迎来周期拐点？",
+        "src": "格隆汇",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606172316a442add8&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "medium",
+        "impact_reason": "政策"
+      },
+      {
+        "time": "2026-06-05 17:06:43",
+        "title": "2026年全球氟化工行业总体规模、主要企业国内外市场占有率及排名分析",
+        "src": "中研网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605170707a4414d34&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:46:46",
+        "title": "三美股份主力资金净流入1423.4万 短期量价齐升或推动上行",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605155450b6242b2e&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:54:59",
+        "title": "三美股份市净率破三年80%分位，行业景气支撑龙头溢价",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060509552998562406&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:30:47",
+        "title": "三美股份6月4日被融资净卖出304万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605095054976a22ce&s=b",
+        "stock_name": "三美股份",
+        "stock_code": "sh603379",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      }
+    ],
+    "sh600079": [
+      {
+        "time": "2026-06-08 07:30:00",
+        "title": "安全套生意不再性感，杰士邦被摆上拍卖台",
+        "src": "快马财媒",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608074358b6275868&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 12:37:42",
+        "title": "人福医药：别了，三进三出的杰士邦",
+        "src": "药圈观察局",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607150354a4439970&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 21:41:05",
+        "title": "安全套巨头杰士邦，要卖掉了！",
+        "src": "IVD资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606215246985856ee&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 19:33:00",
+        "title": "太突然，600079要彻底卖掉杰士邦，挂牌底价10.56亿元",
+        "src": "每日经济新闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606062007169507520d&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 03:24:00",
+        "title": "人福医药集团股份公司2025年年度股东会决议公告",
+        "src": "上海证券报",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606032854a7314602&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:28:33",
+        "title": "ST人福主力资金净流出555.3万元 资产处置博弈引发多空分化",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605153208a44123ed&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "medium",
+        "impact_reason": "ST"
+      }
+    ],
+    "hk02259": [
+      {
+        "time": "2026-06-07 18:15:29",
+        "title": "黄金年内涨幅清零，交易资金出逃、全球央行逆势“扫货”",
+        "src": "第一财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607173828976d2f98&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 16:30:33",
+        "title": "每日卖空追踪",
+        "src": "0",
+        "summary": "0",
+        "url": "紫金黄金国际 06月05日卖空量成交21.47万股，卖空比例为5.07%",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 16:15:09",
+        "title": "紫金黄金国际06月05日收跌1.84% 主力资金逆市抢筹",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605161539a4413854&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 10:16:09",
+        "title": "瑞银——紫金黄金国际（2259.HK）：并购仍是核心焦点——2026年分析师会议要点（附下载）",
+        "src": "星星闪耀X",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605143343a4410d81&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "medium",
+        "impact_reason": "并购"
+      },
+      {
+        "time": "2026-06-05 09:30:20",
+        "title": "紫金黄金国际6月4日获南向资金加仓50.49万股",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605093705950528c4&s=b",
+        "stock_name": "紫金黄金国际",
+        "stock_code": "hk02259",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "sh600989": [
+      {
+        "time": "2026-06-07 18:00:00",
+        "title": "宝丰能源聘任资深管理人员出任副总裁",
+        "src": "商䲜时代",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607181557a443c3c2&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:36:34",
+        "title": "宝丰能源主力资金净流出1.92亿元 短期承压待情绪修复与景气验证",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605154231a44128e8&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:33:18",
+        "title": "宝丰能源：目前新疆项目已上报国家发展改革委审核",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606051541129505ab07&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:33:16",
+        "title": "宝丰能源：内蒙烯烃二期项目，新疆烯烃项目，宁东高端聚酯一期 500万吨乙二醇项目目前还处于报批阶段",
+        "src": "互动易",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606051609449856ab0e&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:30:44",
+        "title": "宝丰能源6月4日获融资净买入9050万元 环比增加66.50%",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605094929a440ab1d&s=b",
+        "stock_name": "宝丰能源",
+        "stock_code": "sh600989",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      }
+    ],
+    "sh601857": [
+      {
+        "time": "2026-06-08 08:48:22",
+        "title": "绿能澎湃 中国石油新能源业务跑出“加速度”",
+        "src": "中国石油天然气集团有限公司",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606080848239859e17a&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-08 07:44:32",
+        "title": "塔里木油田今年绿电发电量已突破11亿度",
+        "src": "央视新闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608074945b62759a7&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-08 00:01:00",
+        "title": "中石油，双端官能化溶聚丁苯橡胶项目连获突破",
+        "src": "DT新材料",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608000648a69abbbd&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 15:09:47",
+        "title": "中国石油大庆石化双釜量产保障定制化供应",
+        "src": "中国报道",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608001726a69abe3a&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 13:20:40",
+        "title": "硫磺变“牛磺”，涨幅逼近600%，超级周期还未结束？",
+        "src": "WELINK化工",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606141900a4428762&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:07:34",
+        "title": "中石油人事调整",
+        "src": "海贝能源",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606061023219506dac3&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 08:00:00",
+        "title": "【重点关注】亚泰集团与中国石油吉林销售分公司签署战略合作协议",
+        "src": "亚泰集团",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606081229b62531d6&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "战略"
+      },
+      {
+        "time": "2026-06-06 03:33:55",
+        "title": "中国石油获得发明专利授权：“一种基于地质工程一体化的人工裂缝评估方法”",
+        "src": "证券之星企业动态",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606034342985775af&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 01:20:59",
+        "title": "塔里木120万吨/年乙烯项目顺利中交：中控技术赋能国家级重点能源化工工程取得重大成果",
+        "src": "中控技术",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606012951a7313077&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 23:14:49",
+        "title": "美石油行业警告：未来几周内全球能源价格可能飙升",
+        "src": "界面",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605231449976b3f8d&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 18:04:08",
+        "title": "中国石油物资采购中心副主任范士洪接受审查调查",
+        "src": "界面新闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605182144a4416a34&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:33:08",
+        "title": "583亿！中际旭创大涨20倍后高位跳水，成交额创科技股纪录，在A股仅次东方财富、中国石油、中国平安",
+        "src": "金融界",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060515382898569cba&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:18:24",
+        "title": "中国石油主力资金净流出7176万 短期承压待情绪与油价企稳",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605151857976a946d&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 12:01:07",
+        "title": "AH股分析丨中国石油2026年06月05日AH股溢价率16.74%",
+        "src": "大智慧idata",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605120928a7302709&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:31:07",
+        "title": "中国石油6月4日被融资净卖出192万元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605100054b623ae78&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      }
+    ],
+    "sh600160": [
+      {
+        "time": "2026-06-07 18:54:07",
+        "title": "巨化股份超纯PFA实现万吨级自主量产",
+        "src": "氟化工",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607185826a443cd3d&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 15:02:52",
+        "title": "化学制品行业现状与发展趋势深度分析(2026年)",
+        "src": "中研网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607150302a69a49b0&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 00:00:00",
+        "title": "化学原料行业研究：2027制冷剂配额政策征求意见稿下发；高GWP制冷剂报价上调；巨化股份超纯PFA突破万吨级量产",
+        "src": "开源证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607202124976d5116&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "medium",
+        "impact_reason": "政策"
+      },
+      {
+        "time": "2026-06-06 17:17:19",
+        "title": "政策与高温双重引爆，这个赛道迎来周期拐点？",
+        "src": "格隆汇",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606172316a442add8&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "medium",
+        "impact_reason": "政策"
+      },
+      {
+        "time": "2026-06-05 17:06:43",
+        "title": "2026年全球氟化工行业总体规模、主要企业国内外市场占有率及排名分析",
+        "src": "中研网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605170707a4414d34&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 15:29:02",
+        "title": "巨化股份主力资金净流入1.3亿元 板块轮动驱动量价齐升",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605153249b62420e1&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 10:29:40",
+        "title": "巨化股份：独立董事刘力、张子学因连续任职已满六年离任",
+        "src": "雷达财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060510303795054030&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 10:03:37",
+        "title": "AI算力背后的“降温大战”：液冷技术如何撑起千亿市场？",
+        "src": "液博会",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060509585298562590&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:40:50",
+        "title": "巨化股份涨3% 拟派现10亿",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605094115b623a4b0&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:30:58",
+        "title": "巨化股份6月4日获融资净买入5299万元 环比降低71.05%",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605095649976a25c7&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      }
+    ],
+    "usAVGO": [
+      {
+        "time": "2026-06-07 20:52:08",
+        "title": "博通财报不及预期：三大投行吵翻了，是什么信号？",
+        "src": "文八股调研纪要",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607212418a69a9b73&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 18:21:25",
+        "title": "博通CEO陈福阳回应股价重挫：从不关心股价",
+        "src": "观点地产网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607183402976d3b63&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 18:08:05",
+        "title": "AI周观察：博通财报良好但预期没有达到最佳",
+        "src": "国金证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607180810976d3593&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 18:08:00",
+        "title": "通信行业研究：GTC台北大会顺利召开，Spectrum-X硅光交换机量产",
+        "src": "国金证券",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607180804950845f2&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 10:47:12",
+        "title": "【招商电子】博通FY26Q2跟踪报告：下季营收预计环比+33%，AI芯片收入指引不及市场乐观预期",
+        "src": "招商电子",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606071306459858f910&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "medium",
+        "impact_reason": "营收"
+      },
+      {
+        "time": "2026-06-07 09:44:34",
+        "title": "亮眼财报后股价大跌？博通CEO：永远不关心股价，死磕技术客户就不会跑，看好“博通-谷歌-Anthropic”铁三角",
+        "src": "华尔街见闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606071225319858f0e9&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 08:30:00",
+        "title": "博通承认，被抢单了",
+        "src": "与非网eefocus",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607085052b6264e3f&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 00:00:00",
+        "title": "全球AI芯片供应链瓶颈：台积电、英伟达、博通、存储巨头订单积压全景",
+        "src": "电子邦",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607004025b625fe81&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "medium",
+        "impact_reason": "订单"
+      },
+      {
+        "time": "2026-06-06 21:41:06",
+        "title": "分析师称超大规模云商难寻英伟达替代品，2030年前其AI芯片利润有保障",
+        "src": "ITBEAR科技资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606224516a442ecd0&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 14:07:29",
+        "title": "阿波罗黑石博通350亿美元“芯片融资”新标杆，助力Anthropic租赁TPU扩张AI版图",
+        "src": "ITBEAR科技资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606150255a699420b&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-06 11:07:00",
+        "title": "博通“失宠”？不是AI芯片不行了",
+        "src": "环球老虎财经app",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606061114039506e5b4&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:07:00",
+        "title": "融资2400亿，抢购谷歌TPU",
+        "src": "半导体行业观察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060613231595070111&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-06 10:00:00",
+        "title": "博通Q2财报解读：AI订单积压至2028年",
+        "src": "讯石光通讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606103237976bcc0b&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "medium",
+        "impact_reason": "订单"
+      },
+      {
+        "time": "2026-06-06 09:18:02",
+        "title": "博通6月5日成交额为201.52亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606060918099857ba51&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 09:03:06",
+        "title": "芯片股惨遭抛售！指数重挫逾10%，市值蒸发超1万亿美元",
+        "src": "格隆汇",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606090547b6253e61&s=b",
+        "stock_name": "博通",
+        "stock_code": "usAVGO",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "usGOOGL": [
+      {
+        "time": "2026-06-08 06:25:11",
+        "title": "瑞银：为何在资本支出担忧下仍看好超大规模云服务商股票？",
+        "src": "invest wallstreet",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608062629976dbe5c&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 12:31:55",
+        "title": "谷歌Gemini Go登场：低内存Android Go手机畅享生成式AI新体验",
+        "src": "ITBEAR科技资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607131303a44385a2&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 10:11:00",
+        "title": "谷歌申请在美国释放3200万只不育蚊子",
+        "src": "国是直通车",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606071018439507e7f6&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 00:00:40",
+        "title": "谷歌启动800亿美元股权融资为哪般？",
+        "src": "证券时报网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060700005098586e2b&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-06 21:57:34",
+        "title": "谷歌开放Fitbit Air手环设计蓝图，第三方配件市场即将迎来新活力",
+        "src": "ITBEAR科技资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606230523976c646f&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 19:05:00",
+        "title": "谷歌每月支付9.2亿美元向SpaceX租用算力",
+        "src": "央视财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606190902976c3774&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 16:04:06",
+        "title": "欧盟多国政务停用 Windows、谷歌",
+        "src": "三言财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060616041998581300&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 13:26:25",
+        "title": "股神巴菲特投降了",
+        "src": "首席财经观察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606141648a44286f6&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 12:13:21",
+        "title": "谷歌否认将AI Mode设为Chrome默认搜索 称功能现身Canary版属“错误”",
+        "src": "ITBEAR科技资讯",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606061305269857ed3d&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 11:02:09",
+        "title": "合计700亿美元！SpaceX先后与Anthropic和谷歌签下大单，“算力租赁”ARR高达260亿美元",
+        "src": "华尔街见闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606171438b625a9ac&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:59:48",
+        "title": "宣传与实操脱节，谷歌内部吐槽AI编程短板",
+        "src": "环球网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606110131976bd22c&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:07:00",
+        "title": "融资2400亿，抢购谷歌TPU",
+        "src": "半导体行业观察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060613231595070111&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-06 09:45:53",
+        "title": "谷歌-A6月5日成交额为138.03亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606094554a698fefc&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 08:52:39",
+        "title": "库克最后一舞，苹果WWDC 2026 前瞻：Siri换脑、负责人跑路、放下身段用谷歌",
+        "src": "醉语闲言",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606095011b6254a0f&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 07:39:26",
+        "title": "继谷歌之后，Meta考虑数百亿美元股票融资，以满足AI资本开支",
+        "src": "智通财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606060745519857a457&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      }
+    ],
+    "usNOK": [
+      {
+        "time": "2026-06-07 18:12:20",
+        "title": "诺基亚“开卷”功能机：199块，青少年的下一个新终端？",
+        "src": "多知网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607181809985938bc&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-07 15:41:47",
+        "title": "双双暴涨160%！手机业务凉透后，诺基亚和黑莓搞AI闷声发财",
+        "src": "雷科技AGI",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260607155332a69a55d2&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 10:34:38",
+        "title": "诺基亚6月5日成交额为27.31亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606061034429857cd1d&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 00:06:43",
+        "title": "诺基亚股价重挫10.02% 市值跌82.76亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606000643976b4b0b&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-06 00:06:33",
+        "title": "诺基亚跌10%，板块共振",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260606000655a441d45f&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 18:42:30",
+        "title": "诺基亚发行5亿欧元优先无担保票据 用于再融资",
+        "src": "财联社",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605184242a44172c2&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "medium",
+        "impact_reason": "融资"
+      },
+      {
+        "time": "2026-06-05 18:31:02",
+        "title": "把小天才搬到手机上，时隔多年诺基亚手机又火了",
+        "src": "三易生活",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606051923179856f7c8&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 11:19:31",
+        "title": "AI时代，手机巨头重蹈诺基亚覆辙！",
+        "src": "天极网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605112057950552bf&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 11:00:36",
+        "title": "诺基亚200/210 4G功能机6月5日补货，首发HMD微聊及多维智能功能",
+        "src": "中关村在线",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605115155b623d641&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 10:37:44",
+        "title": "诺基亚6月4日成交额为20.73亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605103750a440be9b&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 09:40:25",
+        "title": "AT&T扩展了开放的RAN，云计算即将到来",
+        "src": "讯石光通讯网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605100035b623ae4c&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ],
+    "usWOLF": [
+      {
+        "time": "2026-06-06 12:11:49",
+        "title": "Wolfspeed, Inc.6月5日成交额为4.52亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606061211539506f166&s=b",
+        "stock_name": "Wolfspeed",
+        "stock_code": "usWOLF",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 21:33:42",
+        "title": "Wolfspeed跌10.14%，板块共振下行",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605213440a441aba3&s=b",
+        "stock_name": "Wolfspeed",
+        "stock_code": "usWOLF",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 17:54:58",
+        "title": "专访Wolfspeed于代辉：大中华区“新征程”与三年目标",
+        "src": "与非网",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN202606051808119856dba1&s=b",
+        "stock_name": "Wolfspeed",
+        "stock_code": "usWOLF",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-05 12:14:58",
+        "title": "Wolfspeed, Inc.6月4日成交额为5.04亿美元",
+        "src": "市场透视",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260605121500b623ddca&s=b",
+        "stock_name": "Wolfspeed",
+        "stock_code": "usWOLF",
+        "impact_level": "low",
+        "impact_reason": ""
+      }
+    ]
+  },
+  "reports_by_stock": {
+    "sz002460": [],
+    "sz002466": [],
+    "sh601899": [],
+    "sh603379": [],
+    "sh600079": [],
+    "hk02259": [],
+    "sh600989": [],
+    "sh601857": [],
+    "sh600160": [],
+    "usAVGO": [],
+    "usGOOGL": [],
+    "usNOK": [],
+    "usWOLF": []
+  },
+  "high_impact_news": [],
+  "report_changes": [],
+  "stats": {
+    "total_news": 116,
+    "total_reports": 0,
+    "high_impact_count": 0,
+    "report_changes_count": 0
+  },
+  "swfuture_weekly": {
+    "date": "2026-06-02",
+    "title": "【申万宏源策略】周度研究成果（20260525- 20260531)",
+    "content": "未来产业周报第22期（2026/5/17-2026/5/23）专题研究1、Buy European制造业回流能否成功？——欧盟《工业加速器法》专题解读电话会议一周回顾1【大势研判】蓄力再突破——申万宏源策略一周回顾展望(26/05/25-26/05/30)一周回顾2026.5.30一、重申短期市场难有效突破：1. 短期增量资金流入力度偏弱，板块间资金相互虹吸。2. 近期，市场总体已经调整，科技龙头资产动量延续，短期结构分化行情已走向极致。3. 科技内部行情轮动加快、分化加剧，部分前期领涨板块筹码浮盈已走弱。二、思考市场再突破的条件：1. 新经济产业趋势进一步强化。2. 更广泛的基本面验证，新经济蓄力，其他方向接力。3. 增量资金正循环再强化。继续强调，大波段上涨行情不怕等，随着时间的推移，市场再突破的条件会越来越好。三、短期，动量延续的AI算力通胀方向减少，已向PCB细分领域、电容等方向聚焦。短期调整波段，高切低行情有所演绎，仍偏向于超跌反弹行情。中期，继续看好新能源、新能车和出口链的景气验证机会，同时，继续围绕着AI产业链和战略资源做配置。2【行业比较】A股估值及行业中观景气跟踪周报——行业比较周跟踪（20260525-20260531）一周回顾2026.5.311.风光装机2025年同期政策节点前后形成高基数，国内光伏项目以交付前期订单为主，出口受退税政策取消影响回落，行业各环节库存压力普遍增加；2.4月国内手机出货量同比下滑8.6%，降幅较3月收窄4.1个百分点，4月单月出货量同比增长2.8%实现今年以来首次正增长，头部厂商集中上市多款年度主力机型拉动终端销售；3.4月民航客运周转量同比增长3.7%，增速较3月回落12.2个百分点，三大航客座率环比回落0.8个百分点至86.1%，高油价推升出行成本，供给端也迫使航司主动削减运力；4.5月28日，据美国经济分析局（BEA）公布的数据，美国4月PCE物价指数同比3.8%与预期持平，为2023年5月以来最高水平，根据利率期货市场定价，年末美联储加息预期概率回落至50%以内；5.本周布伦特原油期货收盘价下跌12.0%，收报91.12美元/桶，伊美谅解备忘录框架披露，受海峡通航预期影响国际油价回落；6.山西煤矿事故后产地安监趋严，加之印尼煤炭出口专营政策即将实施，导致进口煤补充能力削弱，共同推动近期煤价上涨。3【资产配置】美债 VS 美股：关注曲线结构与波动率——全球资产配置每周聚焦 (20260515-20260522)一周回顾2026.5.252026年美伊冲突以来，海外债券利率上行，但是期限利差普遍收窄。 2026年以来，海外债券利率普遍上行。与2024/2025年不同的是，本轮海外债券利率上行是由短端上行幅度更大所驱动，期限利差普遍收窄，说明短端预期抬升（货币政策紧缩预期）是主要推动因素。美伊冲突爆发后，全球主要经济体的国债利率普遍上行，且短期利率的涨幅大多显著超过长期利率，导致收益率曲线普遍扁平化 / 倒挂加深，只有日本例外，其长期利率涨幅更大，期限利差反而走阔。其中，美国2年期国债利率+75bp，利率大幅上行，涨幅仅次于英国。美国30年国债利率+40bp，期限利差下降31bp。历史相对位置来看，2y国债利率方面，日本已经超过2007年高点，美国和英国接近2007年高点。30y国债利率方面，日本早已超过2007年高点，英国最近刚超过2007年高点，美国已经逼近2007年高点。4【主题投资】美国政府20亿美元入股量子企业；云深处IPO获受理；DNA引导CRISPR基因编辑取得突破——",
+    "source": "申万宏源策略",
+    "url": "https://news.qq.com/rain/a/20260531A08F7800"
+  },
+  "_filename": "2026-06-08.json",
+  "_saved_at": "2026-06-08T08:55:00.414012+08:00"
+}

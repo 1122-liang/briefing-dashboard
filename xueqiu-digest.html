@@ -9,7 +9,6 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
 <body>
   <div class="container" id="app">
@@ -39,12 +38,8 @@
       const totalPosts = latest.total_posts || 0;
       const filteredPosts = latest.filtered_posts || 0;
       const topPosts = latest.top_posts || [];
-      const categories = latest.categories || {};
       const todayTopics = latest.today_topics || [];
       const todayTopicsCount = latest.today_topics_count || todayTopics.length;
-
-      // Category breakdown for chart
-      const catEntries = Object.entries(categories).filter(([k, v]) => v > 0);
 
       app.innerHTML = `
         <div class="flex items-center justify-between mb-4">
@@ -75,14 +70,6 @@
             <div class="stat-change ${todayTopicsCount > 0 ? 'up' : 'down'}">${todayTopicsCount > 0 ? '篇热门文章' : '暂无数据'}</div>
           </div>
         </div>
-
-        <!-- Category Distribution -->
-        ${catEntries.length > 0 ? `
-        <div class="card">
-          <div class="card-title mb-4">话题分布</div>
-          <div id="categoryChart" class="chart-container" style="min-height:280px"></div>
-        </div>
-        ` : ''}
 
         <!-- Today Topics -->
         ${todayTopics.length > 0 ? `
@@ -175,22 +162,6 @@
         </div>
       `;
 
-      // Category chart
-      if (catEntries.length > 0) {
-        const catChart = initChart('categoryChart');
-        if (catChart) {
-          const theme = getEChartsTheme();
-          catChart.setOption({
-            ...theme,
-            tooltip: { ...theme.tooltip, trigger: 'item' },
-            series: [{
-              type: 'pie', radius: ['40%', '70%'],
-              label: { color: '#94a3b8', formatter: '{b}: {c} ({d}%)' },
-              data: catEntries.map(([name, count]) => ({ name, value: count }))
-            }]
-          });
-        }
-      }
     }
 
     // Toggle post content (expand/collapse)

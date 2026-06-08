@@ -193,6 +193,7 @@ function renderNav(currentPage) {
     { id: 'mcp_skills', label: 'MCP/Skills', icon: '🔧' },
     { id: 'weekly-review', label: '周度复盘', icon: '📋' },
     { id: 'xueqiu-digest', label: '雪球动态', icon: '🐦' },
+    { id: 'macro-indicators', label: '宏观指标', icon: '🌐' },
   ];
   const nav = document.createElement('nav');
   nav.className = 'nav';

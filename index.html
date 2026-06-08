@@ -25,7 +25,7 @@
       const loading = document.getElementById('loading');
 
       // Load latest data from all modules in parallel
-      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest] = await Promise.all([
+      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, macroIndicators] = await Promise.all([
         loadLatest('lithium').catch(() => null),
         loadLatest('deviation').catch(() => null),
         loadLatest('sanmei').catch(() => null),
@@ -34,12 +34,13 @@
         loadLatest('news-report').catch(() => null),
         loadLatest('weekly-review').catch(() => null),
         loadLatest('xueqiu-digest').catch(() => null),
+        loadLatest('macro-indicators').catch(() => null),
       ]);
 
       loading.remove();
 
       // Global data freshness check
-      const allModules = [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest];
+      const allModules = [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, macroIndicators];
       const loadedCount = allModules.filter(Boolean).length;
       const totalCount = allModules.length;
       const latestGeneratedAt = allModules
@@ -246,6 +247,29 @@
           <a href="xueqiu-digest.html" class="stat-card">
             <div class="stat-label">🐦 雪球关注人动态</div>
             <div class="empty-state" style="padding:20px"><p>每天 22:30 自动生成</p></div>
+          </a>
+        `);
+      }
+
+      // Macro Indicators card
+      if (macroIndicators) {
+        const effr = macroIndicators.effr;
+        const totalTokens = macroIndicators.record?.total_weekly_tokens_t;
+        cards.push(`
+          <a href="macro-indicators.html" class="stat-card">
+            <div class="stat-label">🌐 宏观指标</div>
+            <div class="stat-value">${effr ? effr.toFixed(2) + '%' : totalTokens ? totalTokens.toFixed(1) + 'T' : '-'}</div>
+            <div class="stat-change neutral">${effr ? '美联储利率' : totalTokens ? '周Token量' : '多指标追踪'}</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              利率 · 消费者信心 · Token · AI CapEx
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="macro-indicators.html" class="stat-card">
+            <div class="stat-label">🌐 宏观指标</div>
+            <div class="empty-state" style="padding:20px"><p>点击查看详情</p></div>
           </a>
         `);
       }

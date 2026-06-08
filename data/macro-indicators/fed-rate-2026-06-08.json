@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-08",
+  "effr": 3.62,
+  "target_range": {
+    "lower": 3.5,
+    "upper": 3.75
+  },
+  "upcoming_meetings": 5,
+  "probabilities": [],
+  "data_source": "FRED + CME FedWatch",
+  "generated_at": "2026-06-08T23:15:13.867501+08:00"
+}

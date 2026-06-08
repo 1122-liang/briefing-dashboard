@@ -83,7 +83,7 @@
         <div class="stats-grid">
           ${stocks.map(s => {
             const hasValidData = s.threshold_pct > 0 && s.trigger_price != null;
-            const statusCls = !hasValidData ? 'neutral' : s.status === 'normal' ? 'down' : s.status === 'high' ? 'neutral' : 'up';
+            const statusCls = !hasValidData ? 'neutral' : s.deviation_pct >= 0 ? 'up' : 'down';
             return `
               <div class="stat-card">
                 <div class="stat-label">${s.name} (${s.code})</div>

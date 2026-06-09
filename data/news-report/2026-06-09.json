@@ -750,17 +750,6 @@
         "stock_code": "usAVGO",
         "impact_level": "low",
         "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 11:47:21",
-        "title": "从SeekingAlpha两篇关于Broadcom文章看AI投资风险",
-        "src": "光纤在线",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608114727b627b081&s=b",
-        "stock_name": "博通",
-        "stock_code": "usAVGO",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "usGOOGL": [
@@ -978,7 +967,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "天齐锂业",
-        "stock_code": "sz002466"
+        "stock_code": "sz002466",
+        "summary": "关键观点: 盈利能力关注"
       }
     ],
     "sh601899": [],
@@ -990,7 +980,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "三美股份",
-        "stock_code": "sh603379"
+        "stock_code": "sh603379",
+        "summary": "关键观点: 行业景气度"
       },
       {
         "time": "2026-05-11 00:00:00",
@@ -999,7 +990,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "三美股份",
-        "stock_code": "sh603379"
+        "stock_code": "sh603379",
+        "summary": "常规研报覆盖"
       }
     ],
     "sh600079": [],
@@ -1012,7 +1004,8 @@
         "rating": "增持",
         "url": "",
         "stock_name": "宝丰能源",
-        "stock_code": "sh600989"
+        "stock_code": "sh600989",
+        "summary": "常规研报覆盖"
       }
     ],
     "sh601857": [
@@ -1023,7 +1016,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "中国石油",
-        "stock_code": "sh601857"
+        "stock_code": "sh601857",
+        "summary": "关键观点: 盈利能力关注"
       },
       {
         "time": "2026-05-14 00:00:00",
@@ -1032,7 +1026,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "中国石油",
-        "stock_code": "sh601857"
+        "stock_code": "sh601857",
+        "summary": "关键观点: 行业景气度"
       }
     ],
     "sh600160": [
@@ -1043,7 +1038,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "巨化股份",
-        "stock_code": "sh600160"
+        "stock_code": "sh600160",
+        "summary": "关键观点: 行业景气度"
       },
       {
         "time": "2026-05-30 00:00:00",
@@ -1052,7 +1048,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "巨化股份",
-        "stock_code": "sh600160"
+        "stock_code": "sh600160",
+        "summary": "常规研报覆盖"
       },
       {
         "time": "2026-05-27 00:00:00",
@@ -1062,6 +1059,7 @@
         "url": "",
         "stock_name": "巨化股份",
         "stock_code": "sh600160",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
         "change_type": "rating_change",
         "change_reason": "评级变化: 买入 → 增持"
       },
@@ -1072,7 +1070,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "巨化股份",
-        "stock_code": "sh600160"
+        "stock_code": "sh600160",
+        "summary": "常规研报覆盖"
       },
       {
         "time": "2026-05-17 00:00:00",
@@ -1081,7 +1080,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "巨化股份",
-        "stock_code": "sh600160"
+        "stock_code": "sh600160",
+        "summary": "常规研报覆盖"
       },
       {
         "time": "2026-05-16 00:00:00",
@@ -1090,7 +1090,8 @@
         "rating": "买入",
         "url": "",
         "stock_name": "巨化股份",
-        "stock_code": "sh600160"
+        "stock_code": "sh600160",
+        "summary": "关键观点: 行业景气度"
       }
     ],
     "usAVGO": [],
@@ -1120,12 +1121,13 @@
       "url": "",
       "stock_name": "巨化股份",
       "stock_code": "sh600160",
+      "summary": "关键观点: 盈利能力关注、行业景气度",
       "change_type": "rating_change",
       "change_reason": "评级变化: 买入 → 增持"
     }
   ],
   "stats": {
-    "total_news": 84,
+    "total_news": 83,
     "total_reports": 12,
     "high_impact_count": 1,
     "report_changes_count": 1,
@@ -1142,5 +1144,5 @@
   "fomc_news": [],
   "fomc_date": null,
   "_filename": "2026-06-09.json",
-  "_saved_at": "2026-06-09T11:45:39.006951+08:00"
+  "_saved_at": "2026-06-09T11:51:01.869400+08:00"
 }

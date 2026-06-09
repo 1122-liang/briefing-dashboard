@@ -19,6 +19,17 @@
   "news_by_stock": {
     "sz002460": [
       {
+        "time": "2026-06-09 15:45:53",
+        "title": "赣锋锂业：南昌赣锋588Ah产线建设已进入收尾阶段",
+        "src": "爱集微",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609154643985c3d0f&s=b",
+        "stock_name": "赣锋锂业",
+        "stock_code": "sz002460",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
         "time": "2026-06-09 15:23:52",
         "title": "赣锋锂业主力资金净流入4.4亿元 短期企稳反弹叠加储能满产催化",
         "src": "智选洞察",
@@ -94,17 +105,6 @@
         "stock_code": "sz002460",
         "impact_level": "medium",
         "impact_reason": "产能"
-      },
-      {
-        "time": "2026-06-08 15:36:43",
-        "title": "赣锋锂业主力资金净流出3.0亿元 短期抛压压制上行空间",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608154319950987ce&s=b",
-        "stock_name": "赣锋锂业",
-        "stock_code": "sz002460",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "sz002466": [
@@ -162,20 +162,20 @@
         "stock_code": "sz002466",
         "impact_level": "medium",
         "impact_reason": "融资"
-      },
-      {
-        "time": "2026-06-08 15:40:06",
-        "title": "天齐锂业主力资金净流出2.3亿元 锂价回调与供给扰动预期逆转压制短期走势",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608154756a69bb77a&s=b",
-        "stock_name": "天齐锂业",
-        "stock_code": "sz002466",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "sh601899": [
+      {
+        "time": "2026-06-09 15:34:04",
+        "title": "紫金矿业主力资金净流出3.6亿元 短期承压不改资源价值重估",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609154000985c39b5&s=b",
+        "stock_name": "紫金矿业",
+        "stock_code": "sh601899",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
       {
         "time": "2026-06-09 12:19:26",
         "title": "《大行》高盛对资源股最新评级及目标价(表)",
@@ -287,20 +287,20 @@
         "stock_code": "sh603379",
         "impact_level": "medium",
         "impact_reason": "融资"
-      },
-      {
-        "time": "2026-06-08 15:52:58",
-        "title": "三美股份主力资金净流入1326.6万元 短期资金面与情绪共振引发波动",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608160551a69bbf04&s=b",
-        "stock_name": "三美股份",
-        "stock_code": "sh603379",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "sh600079": [
+      {
+        "time": "2026-06-09 15:44:22",
+        "title": "ST人福主力资金净流入1148.5万元 战略聚焦与央企赋能驱动估值修复",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060915532697703f1b&s=b",
+        "stock_name": "ST人福",
+        "stock_code": "sh600079",
+        "impact_level": "high",
+        "impact_reason": "涉及关键词: ST, 战略"
+      },
       {
         "time": "2026-06-08 16:57:40",
         "title": "人福医药彻底出清乐福思：当赚钱的生意成了战略的包袱",
@@ -311,17 +311,6 @@
         "stock_code": "sh600079",
         "impact_level": "medium",
         "impact_reason": "战略"
-      },
-      {
-        "time": "2026-06-08 15:43:12",
-        "title": "ST人福主力资金净流出1275.6万元 短期承压待主业盈利验证",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608155203976e7bbd&s=b",
-        "stock_name": "ST人福",
-        "stock_code": "sh600079",
-        "impact_level": "high",
-        "impact_reason": "涉及关键词: 盈利, ST"
       }
     ],
     "hk02259": [
@@ -342,17 +331,6 @@
         "src": "0",
         "summary": "0",
         "url": "紫金黄金国际 06月08日卖空量成交44.38万股，卖空比例为2.94%",
-        "stock_name": "紫金黄金国际",
-        "stock_code": "hk02259",
-        "impact_level": "low",
-        "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 16:15:15",
-        "title": "紫金黄金国际06月08日收跌8.78% 主力资金逆市抢筹",
-        "src": "市场透视",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608161730b6280ec7&s=b",
         "stock_name": "紫金黄金国际",
         "stock_code": "hk02259",
         "impact_level": "low",
@@ -403,20 +381,53 @@
         "stock_code": "sh600989",
         "impact_level": "medium",
         "impact_reason": "融资"
-      },
-      {
-        "time": "2026-06-08 15:40:59",
-        "title": "宝丰能源主力资金净流入1161.7万 短期企稳反弹预期增强",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608154907976e7a41&s=b",
-        "stock_name": "宝丰能源",
-        "stock_code": "sh600989",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "sh601857": [
+      {
+        "time": "2026-06-09 16:00:30",
+        "title": "南通首次实现LNG船舶产业跨域联动",
+        "src": "上观新闻",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609160158b629d020&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-09 15:56:49",
+        "title": "大连石化炼化一体化项目采购中标",
+        "src": "中国化工信息杂志",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060916041397704398&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "medium",
+        "impact_reason": "中标"
+      },
+      {
+        "time": "2026-06-09 15:51:09",
+        "title": "中国石油尾盘跌近5% 美国称将继续推动美伊协议 沙特下调对亚洲原油售价",
+        "src": "智通财经",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609161824950b5aee&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-09 15:35:47",
+        "title": "中国石油主力资金净流出1.2亿元 短期波动不改能源智能化长期逻辑",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060915423197703a39&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
       {
         "time": "2026-06-09 11:38:31",
         "title": "中石油党组成员、总会计师周松解读《关于促进人工智能与能源双向赋能的行动方案》",
@@ -495,6 +506,17 @@
         "impact_reason": ""
       },
       {
+        "time": "2026-06-09 08:54:49",
+        "title": "硫磺价格突破万元大关，荣盛石化深度受益",
+        "src": "化工原料价格行情",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609093302a4463efb&s=b",
+        "stock_name": "中国石油",
+        "stock_code": "sh601857",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
         "time": "2026-06-09 07:00:00",
         "title": "【石油化工】油价高位业绩向好，“三桶油“再迎布局良机——石油化工行业周报第453期（20260601—20260607）（赵乃迪/蔡嘉豪/王礼沫）",
         "src": "光大证券研究",
@@ -526,42 +548,20 @@
         "stock_code": "sh601857",
         "impact_level": "low",
         "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 20:04:38",
-        "title": "中国石油碳管理体系建设亮点集锦",
-        "src": "企观国资",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608201133976edf17&s=b",
-        "stock_name": "中国石油",
-        "stock_code": "sh601857",
-        "impact_level": "low",
-        "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 19:46:49",
-        "title": "伊朗停止对以军事行动！美股指期货拉升，马斯克唱多、美光爆拉带飞存储股",
-        "src": "腾讯自选股综合",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608153050976e7228&s=b",
-        "stock_name": "中国石油",
-        "stock_code": "sh601857",
-        "impact_level": "low",
-        "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 15:36:34",
-        "title": "中国石油主力资金净流入3.5亿元 地缘冲突驱动避险配置与估值修复",
-        "src": "智选洞察",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608154301a4450491&s=b",
-        "stock_name": "中国石油",
-        "stock_code": "sh601857",
-        "impact_level": "low",
-        "impact_reason": ""
       }
     ],
     "sh600160": [
+      {
+        "time": "2026-06-09 15:54:19",
+        "title": "巨化股份主力资金净流出1.7亿 短期情绪扰动不改国产替代长逻辑",
+        "src": "智选洞察",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609160618985c4537&s=b",
+        "stock_name": "巨化股份",
+        "stock_code": "sh600160",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
       {
         "time": "2026-06-09 13:25:00",
         "title": "液冷赛道格局初定：有哪些企业在抢占算力散热高地？",
@@ -713,17 +713,6 @@
         "src": "财闻",
         "summary": "",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608174443b628317b&s=b",
-        "stock_name": "博通",
-        "stock_code": "usAVGO",
-        "impact_level": "low",
-        "impact_reason": ""
-      },
-      {
-        "time": "2026-06-08 15:58:06",
-        "title": "美股最新评级",
-        "src": "0",
-        "summary": "0",
-        "url": "中金公司维持博通跑赢行业评级，目标价525美元",
         "stock_name": "博通",
         "stock_code": "usAVGO",
         "impact_level": "low",
@@ -898,6 +887,39 @@
       }
     ],
     "usNOK": [
+      {
+        "time": "2026-06-09 16:11:14",
+        "title": "一场算法幻觉引发的乌龙：SpaceX要收购诺基亚？别被AI洗稿自媒体骗了",
+        "src": "钛媒体APP",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609161518977048f1&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "medium",
+        "impact_reason": "收购"
+      },
+      {
+        "time": "2026-06-09 15:55:09",
+        "title": "诺基亚推出AI时代首个主动式DDoS防护平台，应对住宅僵尸网络威胁",
+        "src": "IT之家",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609155822a69d83e2&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-09 13:18:44",
+        "title": "深度｜诺基亚199元\"学生机\"：一个十年跑不通的品类，这次有什么不同？",
+        "src": "Leap Finance",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609153402b629c3ad&s=b",
+        "stock_name": "诺基亚",
+        "stock_code": "usNOK",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
       {
         "time": "2026-06-09 10:34:55",
         "title": "诺基亚6月8日成交额为15.12亿美元",
@@ -1090,15 +1112,15 @@
   },
   "high_impact_news": [
     {
-      "time": "2026-06-08 15:43:12",
-      "title": "ST人福主力资金净流出1275.6万元 短期承压待主业盈利验证",
+      "time": "2026-06-09 15:44:22",
+      "title": "ST人福主力资金净流入1148.5万元 战略聚焦与央企赋能驱动估值修复",
       "src": "智选洞察",
       "summary": "",
-      "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608155203976e7bbd&s=b",
+      "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN2026060915532697703f1b&s=b",
       "stock_name": "ST人福",
       "stock_code": "sh600079",
       "impact_level": "high",
-      "impact_reason": "涉及关键词: 盈利, ST"
+      "impact_reason": "涉及关键词: ST, 战略"
     }
   ],
   "report_changes": [
@@ -1116,11 +1138,11 @@
     }
   ],
   "stats": {
-    "total_news": 82,
+    "total_news": 84,
     "total_reports": 12,
     "high_impact_count": 1,
     "report_changes_count": 1,
-    "industry_reports_count": 119
+    "industry_reports_count": 117
   },
   "swfuture_weekly": {
     "date": "2026-06-02",
@@ -1132,28 +1154,6 @@
   "industry_reports": {
     "锂行业": [
       {
-        "title": "赣锋锂业2025年年报：锂需求强劲，预计2026年锂价突破15万元/吨",
-        "company": "",
-        "time": "2026-04-02 10:07:27",
-        "content": "需求侧，地缘冲突扰动下，海外电车、储能等需求边际走强，展望全年锂电需求有望持续超预期；同时，行业库存仍处于低位水平，将放大供给侧及需求侧的边际变化，为锂价提供较大上行动能。供需紧平衡下锂价具备较强底部支撑值得注意的是，在赣锋锂业2025年年报发布后，3月31日，135家机构参加了公司线上业绩说明会，其中包括高盛、花旗、摩根士丹利、中信证券、国泰海通等多家国内外知名投行和券商。赣锋锂业在会上表示，公",
-        "source": "neodata",
-        "industry": "锂行业",
-        "search_term": "锂行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260401191435a70b5b86",
-        "summary": "关键观点: 供需关系分析、技术创新进展、行业景气度"
-      },
-      {
-        "title": "2026年锂电产业链供需紧平衡，价格回升与投资策略分析",
-        "company": "",
-        "time": "2026-03-29 10:05:43",
-        "content": "国金证券表示，3月锂电产业链整体排产环比增长11%~22%、同比增长37%~56%，细分环节中电解液、隔膜排产同比增幅超50%，六氟磷酸锂、隔膜、铜铝箔等环节具备明确涨价弹性，且固态电池、钠电等新技术加速落地，将进一步推动行业结构优化。东方财富则表示，2025年Q1-Q3锂电产业链盈利呈现连续改善态势，印证行业周期拐点确立；而材料端企业经历前期亏损后，扩产态度愈发谨慎，预计2026年多个环节将出现",
-        "source": "neodata",
-        "industry": "锂行业",
-        "search_term": "锂行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260329122440a6fc7901",
-        "summary": "评级下调信号；关键观点: 产能扩张、盈利能力关注、供需关系分析"
-      },
-      {
         "title": "2026年锂电行业投资策略：盈利修复与技术突破双驱动",
         "company": "",
         "time": "2026-03-20 08:59:53",
@@ -1162,7 +1162,8 @@
         "industry": "锂行业",
         "search_term": "锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260320090219a47f6c1a",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、技术创新进展"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、技术创新进展",
+        "is_new": true
       },
       {
         "title": "2026年锂电需求将达3065GWh，市场供需紧平衡，投资策略推荐碳酸锂等环节",
@@ -1173,18 +1174,20 @@
         "industry": "锂行业",
         "search_term": "锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260405222101a71b8b1b",
-        "summary": "评级上调信号；关键观点: 产能扩张、盈利能力关注、供需关系分析"
+        "summary": "评级上调信号；关键观点: 产能扩张、盈利能力关注、供需关系分析",
+        "is_new": true
       },
       {
-        "title": "碳酸锂价格回升至15万元/吨，锂电池与储能需求强劲，行业前景乐观",
+        "title": "【内部研报】锂电池行业：锂电池相关行业景气度分析及投资机会研究",
         "company": "",
-        "time": "2026-04-28 08:26:04",
-        "content": "碳酸锂市场价重回15万元/吨以上，下游动储需求保持旺盛的情况下，产业链有望进入涨价周期。另外，隔膜价格或逐步提升，迎来供需反转的关键节点。业内普遍判断，从供给增长有限、下游需求旺盛的实际来看，碳酸锂供给全年或维持紧平衡状态，价格大幅波动概率较低，具备低成本与高自给率的企业将在新一轮竞争格局中持续领跑。国泰海通发布研报称，锂电池(核心股)和储能(核心股)系统2026年需求大好可期，看好锂电&储能板块",
+        "time": "2026-01-26 00:00:00",
+        "content": "动力电池及储能电池的需求增长将引领锂电池行业进入中长上行周期，锂盐、电解液、钠电等产业也将在这一过程受益。在销量增长及单车电量提升的双重作用下，动力电池需求将呈现明显的倍乘效应。通过汽车销量预测及单车装电量模型，2026年及2030年的动力电池需求可分别达到1135.2GWh和2090.4GWh。储能电池方面，在多重需求动力驱动下，储能电池需求量将维持较高增速。根据我们的预测模型，2026年储能需",
         "source": "neodata",
         "industry": "锂行业",
         "search_term": "锂行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260428083659a48007a0",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "url": "#",
+        "summary": "关键观点: 供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "锂电行业需求复苏，预计未来季度锂价易涨难跌，关注涨价环节与新技术龙头",
@@ -1195,29 +1198,56 @@
         "industry": "锂行业",
         "search_term": "锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260326151435a499f22c",
-        "summary": "评级下调信号；关键观点: 产能扩张、供需关系分析、技术创新进展"
+        "summary": "评级下调信号；关键观点: 产能扩张、供需关系分析、技术创新进展",
+        "is_new": true
       },
       {
-        "title": "锂行业需求增长：赣锋与天齐锂业2025年产能与市场前景分析",
+        "title": "国海证券：2026年锂电行业需求高增，材料价格修复可期，维持推荐评级",
         "company": "",
-        "time": "2026-04-24 09:59:05",
-        "content": "储能电池需求旺盛，加上国家层面政策支持，已成为锂行业需求增长的重要增量。供给需求双重共振，碳酸锂价格有望继续保持上升态势，而产业链标的尤其是上游标的市值也将继续走牛。龙头低估股或受资金青睐从个股来看，赣锋锂业为上游锂矿龙头，全产业链布局，业务覆盖锂矿资源、锂产品以及动力电池，其中动力电池收入份额持续提升，2025年占比超过35%，成为重要的增长曲线。从预期上看，该公司计划至2030年前形成年产不低",
+        "time": "2026-02-06 10:52:43",
+        "content": "智通财经APP获悉，国海证券发布研报称，随着2026年锂电行业需求维持高景气增长，锂电中游主要材料环节价格修复有望持续演绎、锂电新技术产业化持续推进，电池提质增效主线不变，供需关系改善下产业链价格持续回升，行业基本面预计向好，维持“推荐”评级。国海证券主要观点如下：动储多场景共振，行业需求持续向上政策支撑、带电量提升及新场景新市场驱动背景下，动力需求具备韧性。2025年高景气兑现，动力装机增长强劲",
         "source": "neodata",
         "industry": "锂行业",
         "search_term": "锂行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260424100734a471afbd",
-        "summary": "关键观点: 产能扩张、供需关系分析、政策影响"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260206111614a6d9ab2f",
+        "summary": "评级上调信号；关键观点: 供需关系分析、技术创新进展、政策影响",
+        "is_new": true
       },
       {
-        "title": "5月7日每日研选丨基本面与新技术共振，锂电新周期如何布局？",
+        "title": "瑞银：锂电行业进入第三次超级周期，2025年业绩预告显示全面回暖",
         "company": "",
-        "time": "2026-05-07 08:22:00",
-        "content": "5月国内电池排产达172.4GWh，环比增8%，同比猛增65%。另一边，钠电逻辑迎来里程碑：宁德时代签下3年60GWh战略订单，规模化量产正式启动。基本面与新技术共振，5月锂电怎么布局？请看机构最新研判。近期，锂电板块基本面实现重大变化，核心驱动力来自供需收紧与新技术支持。一方面，新能源汽车进入传统产销旺季，储能项目集中落地加速，国内多地项目审批开工，海外户储及大储订单持续放量，叠加前期产业链长期",
+        "time": "2026-02-23 07:22:00",
+        "content": "瑞银认为，市场已进入第三次锂价超级周期。业绩全面回暖从多家锂电上市公司披露的2025年业绩预告或业绩快报来看，锂电产业链的全线回暖正迎来业绩兑现。据Wind数据，71家A股锂电上市公司中51家实现净利润同比增长（包含减亏），19家扭亏为盈，行业供需改善拉动产品价格及企业盈利企稳回升。业绩预喜的上市公司覆盖上游、中游、下游全产业链。其中，“锂业双雄”天齐锂业、赣锋锂业均预计2025年重回增长轨道，同",
         "source": "neodata",
         "industry": "锂行业",
         "search_term": "锂行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026050708244394c6a00f",
-        "summary": "关键观点: 供需关系分析、技术创新进展"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260223075158a7142dd4",
+        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断",
+        "is_new": true
+      },
+      {
+        "title": "金融资讯：锂电板块估值修复，龙头股受青睐",
+        "company": "",
+        "time": "2025-12-23 17:59:10",
+        "content": "除赣锋锂业外，天齐锂业前三季度也实现扭亏，净利润达1.8亿元；\n国轩高科前三季度归母净利润25.33亿元，超过2024年全年的2倍，公司透露四季度排产持续增长，产能利用率处于高位；\n中矿资源、西藏矿业等中小市值企业也凭借技术突破或成本优势实现净利润大幅增长，整个板块呈现出“龙头领涨、多点开花”的良性盈利格局。\n此外，政策利好与机构共识的形成，也进一步强化了锂电股上涨逻辑。\n政策层面，两部门发文推动",
+        "source": "neodata",
+        "industry": "锂行业",
+        "search_term": "锂行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251223180459a46e7003",
+        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展",
+        "is_new": true
+      },
+      {
+        "title": "2026年全球锂电行业供需共振，投资机会聚焦产业链关键环节",
+        "company": "",
+        "time": "2025-12-26 09:40:51",
+        "content": "12月26日电，锂电池概念股开盘大涨，天华新能、万润新能、天际股份、华联控股、湖南裕能等涨超9%。消息面上，碳酸锂主力合约盘中强势突破13万关口，日内涨超8%，创2023年11月以来新高。\n锂电板块再次成为市场焦点。2025年9月以来锂电成为市场强势主线之一，2026年行情是否有望延续？又可关注哪些产业链机会？请看机构最新研判。\n近期，锂电板块关注度持续回升，其核心驱动力来自供需两端的强力共振。一",
+        "source": "neodata",
+        "industry": "锂行业",
+        "search_term": "锂行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251224090623a6c7e9e2",
+        "summary": "关键观点: 供需关系分析、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年锂电板块业绩修复显著，碳酸锂价格上涨超70%助力盈利反转",
@@ -1228,7 +1258,8 @@
         "industry": "锂行业",
         "search_term": "碳酸锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260324045844a6e593b2",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
         "title": "2026年一季度锂矿企业净利润翻倍增长，碳酸锂价格或稳20万元/吨",
@@ -1239,7 +1270,8 @@
         "industry": "锂行业",
         "search_term": "碳酸锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026051120342894d0a0d6",
-        "summary": "关键观点: 产能扩张、盈利能力关注、价格走势判断"
+        "summary": "关键观点: 产能扩张、盈利能力关注、价格走势判断",
+        "is_new": true
       },
       {
         "title": "2026年全球碳酸锂需求预测：储能电池成主要增量，价格稳中有升",
@@ -1250,7 +1282,8 @@
         "industry": "锂行业",
         "search_term": "碳酸锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260422075743a4685d9e",
-        "summary": "关键观点: 供需关系分析、价格走势判断"
+        "summary": "关键观点: 供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
         "title": "碳酸锂价格回升至15万元/吨，锂电池需求持续向好，2026年市场前景乐观",
@@ -1261,7 +1294,32 @@
         "industry": "锂行业",
         "search_term": "碳酸锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260428080604a6d6b5f7",
-        "summary": "关键观点: 供需关系分析、价格走势判断"
+        "summary": "关键观点: 供需关系分析、价格走势判断",
+        "is_new": true
+      },
+      {
+        "title": "2026年锂电产业链供需紧平衡，价格回升与投资策略分析",
+        "company": "",
+        "time": "2026-03-29 10:05:43",
+        "content": "国金证券表示，3月锂电产业链整体排产环比增长11%~22%、同比增长37%~56%，细分环节中电解液、隔膜排产同比增幅超50%，六氟磷酸锂、隔膜、铜铝箔等环节具备明确涨价弹性，且固态电池、钠电等新技术加速落地，将进一步推动行业结构优化。东方财富则表示，2025年Q1-Q3锂电产业链盈利呈现连续改善态势，印证行业周期拐点确立；而材料端企业经历前期亏损后，扩产态度愈发谨慎，预计2026年多个环节将出现",
+        "source": "neodata",
+        "industry": "锂行业",
+        "search_term": "碳酸锂行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260329122440a6fc7901",
+        "summary": "评级下调信号；关键观点: 产能扩张、盈利能力关注、供需关系分析",
+        "is_new": true
+      },
+      {
+        "title": "碳酸锂价格回升至15万元/吨，锂电池与储能需求强劲，行业前景乐观",
+        "company": "",
+        "time": "2026-04-28 08:26:04",
+        "content": "碳酸锂市场价重回15万元/吨以上，下游动储需求保持旺盛的情况下，产业链有望进入涨价周期。另外，隔膜价格或逐步提升，迎来供需反转的关键节点。业内普遍判断，从供给增长有限、下游需求旺盛的实际来看，碳酸锂供给全年或维持紧平衡状态，价格大幅波动概率较低，具备低成本与高自给率的企业将在新一轮竞争格局中持续领跑。国泰海通发布研报称，锂电池(核心股)和储能(核心股)系统2026年需求大好可期，看好锂电&储能板块",
+        "source": "neodata",
+        "industry": "锂行业",
+        "search_term": "碳酸锂行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260428083659a48007a0",
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年锂电板块盈利修复：碳酸锂价格上涨与低库存推动业绩增长",
@@ -1272,7 +1330,8 @@
         "industry": "锂行业",
         "search_term": "碳酸锂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260324071641a48f0e98",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
         "title": "金融视角：德方纳米等锂矿企业迎来量利双升机遇",
@@ -1283,7 +1342,8 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251226104318a6d0c3ef",
-        "summary": "关键观点: 供需关系分析、行业景气度"
+        "summary": "关键观点: 供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "锂矿板块涨5.89%，供需改善与锂价反弹推动市场情绪升温",
@@ -1294,7 +1354,8 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260327134215a6f55e16",
-        "summary": "关键观点: 供需关系分析"
+        "summary": "关键观点: 供需关系分析",
+        "is_new": true
       },
       {
         "title": "锂矿市场供需分析：储能需求激增与投资策略建议",
@@ -1305,7 +1366,8 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260415105127a44f141c",
-        "summary": "关键观点: 供需关系分析、政策影响"
+        "summary": "关键观点: 供需关系分析、政策影响",
+        "is_new": true
       },
       {
         "title": "【内部研报】A股锂矿行业2025年报及2026年Q1财报梳理分析：周期反转，盈利修复",
@@ -1316,18 +1378,8 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "#",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响"
-      },
-      {
-        "title": "金融资讯：锂电板块估值修复，龙头股受青睐",
-        "company": "",
-        "time": "2025-12-23 17:59:10",
-        "content": "除赣锋锂业外，天齐锂业前三季度也实现扭亏，净利润达1.8亿元；\n国轩高科前三季度归母净利润25.33亿元，超过2024年全年的2倍，公司透露四季度排产持续增长，产能利用率处于高位；\n中矿资源、西藏矿业等中小市值企业也凭借技术突破或成本优势实现净利润大幅增长，整个板块呈现出“龙头领涨、多点开花”的良性盈利格局。\n此外，政策利好与机构共识的形成，也进一步强化了锂电股上涨逻辑。\n政策层面，两部门发文推动",
-        "source": "neodata",
-        "industry": "锂行业",
-        "search_term": "锂矿行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251223180459a46e7003",
-        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响",
+        "is_new": true
       },
       {
         "title": "锂电需求2026年增长34%，供需改善，投资建议看好龙头企业与材料供应商",
@@ -1338,7 +1390,8 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260417090601a6ada7bd",
-        "summary": "关键观点: 产能扩张、盈利能力关注、供需关系分析"
+        "summary": "关键观点: 产能扩张、盈利能力关注、供需关系分析",
+        "is_new": true
       },
       {
         "title": "锂矿股盘中拉升 天齐锂业、赣锋锂业涨超5%",
@@ -1349,21 +1402,11 @@
         "industry": "锂行业",
         "search_term": "锂矿行业",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609151214b629ba33&s=b",
-        "summary": "评级下调信号；关键观点: 供需关系分析"
+        "summary": "评级下调信号；关键观点: 供需关系分析",
+        "is_new": true
       }
     ],
     "氟化工": [
-      {
-        "title": "氟化工企业竞争力提升：重点项目有序推进，一体化协同增强竞争优势",
-        "company": "",
-        "time": "2025-07-21 18:13:29",
-        "content": "氟聚合物、锂电材料等业务持续承压，一体化协同增强竞争优势；重点项目按计划有序推进，产品体系进一步丰富。近年来，氟聚合物、氟橡胶、锂电材料(六氟磷酸锂、电解液等)行业竞争持续加剧，导致全行业盈利持续承压，25Q2产品价格仍维持底部运行，拖累公司利润。公司作为国内领先的氟化工企业，尤其在中化蓝天并入后，业务基本涵盖整个氟化工产业链，一体化整合协同效应有望逐步显现，辅以持续的提质增效行动，竞争优势有望进",
-        "source": "neodata",
-        "industry": "氟化工",
-        "search_term": "氟化工行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250721203809a6b81b0a",
-        "summary": "关键观点: 盈利能力关注、价格走势判断、行业景气度"
-      },
       {
         "title": "氟化工与磷化工2025年业绩增长显著，行业景气持续向好",
         "company": "",
@@ -1373,51 +1416,56 @@
         "industry": "氟化工",
         "search_term": "氟化工行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260424163431a4730ed6",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
-        "title": "氟化工产业链深度解析：投资机会与风险并存",
+        "title": "国信证券：氟化工行业2026年投资策略及景气度展望",
         "company": "",
-        "time": "2025-07-20 00:00:00",
-        "content": "投资建议：氟化工产业链覆盖广泛，上游主要包括萤石等基础原料的开采与加工，中游是氟化物的合成与加工，下游则广泛应用于制冷、军工、电子、新能源等多个行业。其中：萤石是氟化工的基础资源，高品位萤石是稀缺资源，我国虽是萤石资源大国，但资源的稀缺性也增加了行业的进入壁垒，日益趋严的行业监管或促使行业落后中小产能逐步出清，同时下游制冷剂、含氟材料等产品有望拉动萤石需求增长，萤石价格中枢有望不断上行；制冷剂是氟",
+        "time": "2026-01-10 15:57:11",
+        "content": "国信证券石化化工团队\n杨林CPA执业证号S0980520120002\n张歆钰执业证号S0980524080004\n薛聪执业证号S0980520120001\n余双雨执业证号S0980523120001\n王新航执业证号S0980525080002\n董丙旭执业证号S0980524090002\n【石化化工行业2026年投资策略|石化化工行业景气度有望复苏】-国信证券\n【制冷剂配额核发点评|2026年制冷剂",
         "source": "neodata",
         "industry": "氟化工",
         "search_term": "氟化工行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250721185121a4594d44",
-        "summary": "关键观点: 产能扩张、供需关系分析、价格走势判断"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260110161146a4b34ae2",
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
-        "title": "氟化工行业深度分析：长期看好高端产品替代，短期面临需求疲弱等挑战",
+        "title": "《每日经济新闻》记者（以下简称每经记者）从中化蓝天某子公司了解到，3月下旬公司便已释放出部分制冷剂产品涨价的通知，这从一定程度上反映出行业供需收紧的趋势。",
         "company": "",
-        "time": "2025-07-09 12:15:32",
-        "content": "行业方面，PTFE长期来看供给端政策加速行业转型，高端产品替代成果初现；然而短期内核心需求无增长，以执行合约订单、刚需采购为主；截至2025年7月8日，悬浮中粒报盘价格在3.8万-4.2万元/吨。PVDF方面，随着原料成本持续回调、需求收缩及产能过剩持续施压影响，企业降价去库意愿略显增强。成本支撑薄弱叠加下游压价，抑制市场回升；截至2025年7月8日，涂料用途PVDF价格5.8万-6.0万元/吨。",
+        "time": "2026-05-17 20:58:18",
+        "content": "5月15日，氟化工板块在二级市场表现亮眼：Wind氟化工指数盘中一度冲高至5.09%，最终收涨3.05%，多氟多、中欣氟材等成分股强势涨停。实际上，这次二级市场的异动早已有迹可循。《每日经济新闻》记者（以下简称每经记者）从中化蓝天某子公司了解到，3月下旬公司便已释放出部分制冷剂产品涨价的通知，这从一定程度上反映出行业供需收紧的趋势。此外，不少头部企业先后推出六氟磷酸锂扩产计划，也为该产品价格企稳注",
         "source": "neodata",
         "industry": "氟化工",
         "search_term": "氟化工行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250709122908a43f71f3",
-        "summary": "关键观点: 产能扩张、供需关系分析、政策影响"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260517205912a70ac642",
+        "summary": "关键观点: 产能扩张、供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
-        "title": "氟化工行业深度解析：制冷剂与氟化液市场前景展望",
+        "title": "氟化工行业一季度业绩分析：14家公司盈利，净利润增幅显著",
         "company": "",
-        "time": "2025-09-02 10:27:00",
-        "content": "氟化工：制冷剂方面，2024年起中国三代制冷剂实行配额制，中国的三代制冷剂拥有全球80%以上的配额，形成了“全球供给侧结构性改革结果（过剩产能一次性去化，供给受配额限制）+全球特许经营权（配额许可）+配额集中度高（全球配额集中在中国、中国配额集中在行业头部企业）”特定商业模式。制冷剂价格脱离周期品定价，呈现超长景气周期价格上涨态势。氟化液方面，随着AI技术发展，服务器功率密度大幅提升，传统风冷散热",
+        "time": "2026-05-17 20:58:18",
+        "content": "值得一提的是，每经记者统计Wind氟化工指数成分股一季度业绩，其中：14家公司盈利，11家公司净利润同比增长，10家营收同比增长。数据来源：Wind数据统计截至5月15日统计结果显示，一季度净利润增幅前三的公司分别为永太科技、多氟多、昊华科技，同比增幅为889.5%、645.05%以及480.14%；净利润同比增幅在两位数及以上的公司有10家。尽管绝大多数公司业绩亮眼，但亦有部分公司出现增收不增利",
         "source": "neodata",
         "industry": "氟化工",
         "search_term": "氟化工行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250902110153950d8aa9",
-        "summary": "关键观点: 产能扩张、供需关系分析、技术创新进展"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260517205912a70ac642",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
-        "title": "氟化工行业风险提示及投资建议",
+        "title": "氟化工行业周报：2025年营收166.89亿，2026Q1盈利向好",
         "company": "",
-        "time": "2025-10-24 00:00:00",
-        "content": "风险提示：氟化工需求疲弱；项目投产进度不及预期；产品价格大幅下滑等。\n投资建议：公司作为氟化工龙头，产业链布局完善、成本与配套优势显著，且财务结构健康。氟制冷剂方面，公司制冷剂配额居国内第一，将直接受益制冷剂长期景气度提升。氟精细化学品及氟材料方面，随着我国人们生活水平不断改善和战略性新兴产业迅猛发展，氟化工产品以其独特的性能，应用领域和市场空间不断拓展，年需求稳步增长。从公司自身内生效益来看，多",
+        "time": "2026-05-05 20:10:58",
+        "content": "（以下内容从开源证券《氟化工行业周报：氟化工2025、2026Q1盈利向好，行业持续复苏》研报附件原文摘录）本周（4月27日-4月30日）行情回顾本周氟化工指数上涨1.79%，跑赢上证综指1.00%。本周（4月27日-4月30日）氟化工指数收于5676.97点，上涨1.79%，跑赢上证综指1.00%，跑赢沪深300指数1.00%，跑赢基础化工指数0.02%，跑输新材料指数0.25%。氟化工周行情：",
         "source": "neodata",
         "industry": "氟化工",
         "search_term": "氟化工行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2025102414530594db109a",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260505201103a6f0596a",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "全球氟化工市场动态：科慕投资20亿美元扩建工厂，行业价值重塑分析",
@@ -1428,7 +1476,8 @@
         "industry": "氟化工",
         "search_term": "氟化工行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260528100540975d8268",
-        "summary": "关键观点: 供需关系分析、技术创新进展、行业景气度"
+        "summary": "关键观点: 供需关系分析、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "金石资源公司动态研究：金鄂博氟化工产能释放 2025年归母净利润同比增长",
@@ -1439,7 +1488,20 @@
         "industry": "氟化工",
         "search_term": "氟化工行业",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260506140303a6f2f924&s=b",
-        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展"
+        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展",
+        "is_new": true
+      },
+      {
+        "title": "A股市场强势延续，氟化工板块迎多重利好与政策支持",
+        "company": "",
+        "time": "2026-05-28 09:44:20",
+        "content": "  【天极网IT新闻频道】今天A股市场延续强势表现，创业板指盘中一度冲高 ，深成指稳步上扬 ，市场情绪高涨 。在 AI 科技主线持续高歌猛进的 同 时 ，我们也要提醒大家注意风险控制 ，高位股的波动正在加剧 ，切忌盲 目 追高满仓博弈 。对于获利丰厚的品种 ，建议逢高分批兑现 ，锁定利润 。在科技主线之外，市场正在寻找新的 突破 口，今天重点和大家梳理一下氟化工板块。近期 ， 氟化工产业链迎来多重",
+        "source": "neodata",
+        "industry": "氟化工",
+        "search_term": "氟化工行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260528100540975d8268",
+        "summary": "关键观点: 盈利能力关注、技术创新进展、政策影响",
+        "is_new": true
       },
       {
         "title": "制冷剂行业2025年业绩大幅增长，龙头企业营收净利双增分析",
@@ -1450,7 +1512,8 @@
         "industry": "氟化工",
         "search_term": "制冷剂行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260424084229a6c82154",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响",
+        "is_new": true
       },
       {
         "title": "【内部研报】证券行业专题报告：券商1Q26业绩前瞻，预计板块利润同比增超2成，持续看好板块投资机会",
@@ -1461,18 +1524,20 @@
         "industry": "氟化工",
         "search_term": "制冷剂行业",
         "url": "#",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
-        "title": "上市券商年度分红集中落地，持续增厚股东现金回报",
+        "title": "投行全链条发力成券商新增长引擎",
         "company": "",
-        "time": "2026-06-09 15:23:16",
-        "content": "【环球网财经综合报道】近期，上市券商年度分红进入集中落地阶段。回顾2025年全年，多家券商通过提升分红比例、一年多次分红等方式，持续增厚股东现金回报。\n东方IC\n6月4日，西部证券完成分红除权派息登记，6月5日正式实施年度分红，每10股派发现金0.9元，本次分红总规模为4.02亿元。同时，中信证券披露称，将在6月10日发放现金红利，每10股派现4.1元，累计分红金额达60.76亿元；长江证券将于6",
+        "time": "2026-06-09 16:10:00",
+        "content": "伴随IPO常态化扩容、明星项目集中落地，券商二季度整体业绩有望延续一季度的高增长态势，投行业务链条成为业绩增长的独立催化因素，或推动券商板块估值与业绩进一步上行。\n2026年二季度，A股市场交易活跃度稳步回升，公募基金行业呈现结构性分化，与此同时，资本市场IPO节奏有所提速，一大批硬科技明星项目集中上会。在此背景下，券商投行产业链迎来发展良机，不仅直接增厚机构营收利润，更有望成为驱动券商板块行情的",
         "source": "neodata",
         "industry": "氟化工",
         "search_term": "制冷剂行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609152700950b43f5&s=b",
-        "summary": "常规研报覆盖"
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161154a69d8a6c&s=b",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "申港证券、固德威等成立新能源公司",
@@ -1483,7 +1548,8 @@
         "industry": "氟化工",
         "search_term": "制冷剂行业",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260531232805b61c75a0&s=b",
-        "summary": "关键观点: 技术创新进展"
+        "summary": "关键观点: 技术创新进展",
+        "is_new": true
       },
       {
         "title": "【研报】电子化学品行业重大事项点评：六氟化钨景气度预计向上 关注中船特气、中巨芯、昊华科技、和远气体等标的",
@@ -1494,7 +1560,8 @@
         "industry": "氟化工",
         "search_term": "含氟化学品",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res832960958750",
-        "summary": "关键观点: 价格走势判断、行业景气度"
+        "summary": "关键观点: 价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "电子化学品概念盘中走强，机构：行业景气度有望持续回升|异动情报",
@@ -1505,7 +1572,8 @@
         "industry": "氟化工",
         "search_term": "含氟化学品",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609113927a69d279c&s=b",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】证券行业2026年一季报综述：分化中前行",
@@ -1516,7 +1584,8 @@
         "industry": "氟化工",
         "search_term": "含氟化学品",
         "url": "#",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、政策影响",
+        "is_new": true
       }
     ],
     "有色金属": [
@@ -1529,7 +1598,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260222073702a7117637",
-        "summary": "关键观点: 政策影响、行业景气度"
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年有色金属及新材料行业投资策略报告：供给约束叠加需求变化 多种金属价值面临重塑",
@@ -1540,7 +1610,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260130200259a6c02ba0",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "华龙证券发布有色金属行业2026年投资策略报告",
@@ -1551,7 +1622,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251223110046a6c3f3a0",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "金融专家看好有色金属板块，供给短缺与需求扩张共振",
@@ -1562,7 +1634,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251231184242a48e47a6",
-        "summary": "关键观点: 供需关系分析"
+        "summary": "关键观点: 供需关系分析",
+        "is_new": true
       },
       {
         "title": "申万宏源：有色金属板块波动中前进 行业景气趋势仍将延续",
@@ -1573,7 +1646,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260319102611a47b0ed9",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "中信证券研报：2025年有色金属行情大涨，贵金属配置价值看好",
@@ -1584,7 +1658,8 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260202091826a470ff5b",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "机构：有色金属行业业绩具备上行空间",
@@ -1595,18 +1670,44 @@
         "industry": "有色金属",
         "search_term": "有色金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026051209132197379279",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
-        "title": "中原证券与中信建投：有色金属行业的未来展望与投资机会",
+        "title": "【内部研报】有色金属行业：金属龙头配置价值凸显",
         "company": "",
-        "time": "2025-12-11 09:31:00",
-        "content": "中原证券指出，供给端，国内产能受限于4500万吨的“天花板”约束，运行产能已处于高位，新增产能极为有限；需求端展现出结构韧性。在供应刚性、库存低位以及成本支撑作用下，电解铝价格预计易涨难跌，行业有望延续较高景气度。\n中信建投指出，在四季度全球宏观经济波动加剧与地缘政治冲突升级的背景下，有色金属凭借供需刚性、“反内卷”政策红利及避险属性，成为中长期资产配置的核心标的。展望后市，矿端供应紧张、绿色经济",
+        "time": "2026-06-01 00:00:00",
+        "content": "投资要点： 贵金属：通胀有所缓解，美联储主席强调独立性。美以伊冲突大趋势缓解，高油价背景下，美国核心CPI数据抬升幅度不及预期，通胀叙事暂缓。新任美联储主席强调美联储独立性，在通胀前景担忧的情况下，市场预期美联储降息将有所推后。贵金属长期逻辑仍然坚实，短期波动将成为较好的布局时点。推荐：山金国际、中金黄金、赤峰黄金。相关标的：山东黄金、招金矿业、盛达资源。 铜：美伊缓和释放铜价压力，铜股修复空间仍",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "有色金属行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251211093133a730dec1",
-        "summary": "关键观点: 产能扩张、供需关系分析、政策影响"
+        "url": "#",
+        "summary": "评级上调信号；关键观点: 行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "【内部研报】大宗商品分析框架之七：黄金还能突破新高么？",
+        "company": "",
+        "time": "2026-06-09 16:22:39",
+        "content": "大宗商品分析框架之七：黄金还能突破新高么？-250721-中美竞争催生黄金牛市逻辑-图21.拟合金价和实际金价走势较为一致..................................................................................................12图22.近20年金价价格变动中枢构成.....................",
+        "source": "neodata",
+        "industry": "有色金属",
+        "search_term": "黄金行业",
+        "url": "#",
+        "summary": "关键观点: 技术创新进展、价格走势判断",
+        "is_new": true
+      },
+      {
+        "title": "【内部研报】大宗商品分析框架之八：金价走到什么位置了？",
+        "company": "",
+        "time": "2026-06-09 16:22:39",
+        "content": "大宗商品分析框架之八：金价走到什么位置了？-250925-央行购金与美元体系挑战：金价长期走势预测-<footer>谨请参阅尾页重要声明及财通证券股票和行业评级标准</footer><footer>6</footer>#宏观深度报告/证券研究报告央行购金对金价的影响正如镜子的两面。一方面，在牙买加体系确立之后，黄金结束货币化，推动各国央行大幅减持黄金，拖累金价步入长周期熊市。另一方面，在主权货币超",
+        "source": "neodata",
+        "industry": "有色金属",
+        "search_term": "黄金行业",
+        "url": "#",
+        "summary": "评级下调信号；关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】证券行业专题报告：券商1Q26业绩前瞻，预计板块利润同比增超2成，持续看好板块投资机会",
@@ -1617,84 +1718,56 @@
         "industry": "有色金属",
         "search_term": "黄金行业",
         "url": "#",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
-        "title": "金饰行业洞察：短期压力下 静待景气拐点",
+        "title": "投行全链条发力成券商新增长引擎",
         "company": "",
-        "time": "2026-05-12 00:00:00",
-        "content": "行业近况2025 年在金价上行、居民保值增值需求提升背景下，金饰行业实现亮眼业绩。但随着金价高位且波动性加大，终端增长放缓，若金价后续未呈现理想状况，我们认为行业短期仍面临压力。评论2025 年黄金珠宝销售畅旺，金价高位波动逐步拖累终端表现。2025 年上海金交所Au9999 上涨59%，带动居民保值增值需求提升，叠加去年同期低基数，珠宝类社零年内同增13%跑赢社零总额。但金价持续高位及波动性加大",
+        "time": "2026-06-09 16:10:00",
+        "content": "伴随IPO常态化扩容、明星项目集中落地，券商二季度整体业绩有望延续一季度的高增长态势，投行业务链条成为业绩增长的独立催化因素，或推动券商板块估值与业绩进一步上行。\n2026年二季度，A股市场交易活跃度稳步回升，公募基金行业呈现结构性分化，与此同时，资本市场IPO节奏有所提速，一大批硬科技明星项目集中上会。在此背景下，券商投行产业链迎来发展良机，不仅直接增厚机构营收利润，更有望成为驱动券商板块行情的",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "黄金行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN202605121919299739b2bf",
-        "summary": "关键观点: 供需关系分析、行业景气度"
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161154a69d8a6c&s=b",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
-        "title": "上市券商年度分红集中落地，持续增厚股东现金回报",
+        "title": "【内部研报】特朗普经济学系列之二十：关税成本，到底谁在承担？",
         "company": "",
-        "time": "2026-06-09 15:23:16",
-        "content": "【环球网财经综合报道】近期，上市券商年度分红进入集中落地阶段。回顾2025年全年，多家券商通过提升分红比例、一年多次分红等方式，持续增厚股东现金回报。\n东方IC\n6月4日，西部证券完成分红除权派息登记，6月5日正式实施年度分红，每10股派发现金0.9元，本次分红总规模为4.02亿元。同时，中信证券披露称，将在6月10日发放现金红利，每10股派现4.1元，累计分红金额达60.76亿元；长江证券将于6",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "黄金行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609152700950b43f5&s=b",
-        "summary": "常规研报覆盖"
-      },
-      {
-        "title": "【内部研报】12月美联储议息会议点评：美联储如期降息并重启购债，未来降息步伐或将放缓",
-        "company": "",
-        "time": "2026-06-09 15:32:46",
-        "content": "12月美联储议息会议点评：美联储如期降息并重启购债，未来降息步伐或将放缓-251211-美联储降息并重启购债，未来降息步伐或放缓-####图3：美国联邦基金目标利率<footer>请务必阅读末页声明。</footer><footer>2</footer>#美联储议息会议点评<footer>请务必阅读末页声明。</footer><footer>3</footer>#美联储议息会议点评||公司投资评级",
+        "time": "2026-06-09 16:22:39",
+        "content": "特朗普经济学系列之二十：关税成本，到底谁在承担？-250818-特朗普关税政策：铜和黄金行业影响分析-而别国加征关税落地，幅度较豁免期有所提升，支撑我国对美出口。从行业影响来看，结合美国进口份额和各行业关税优劣势的边际变化，则家用电器、轻工制造和电力设备等行业受益最多。<footer>谨请参阅尾页重要声明及财通证券股票和行业评级标准</footer><footer>7</footer>除国家层面关",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "黄金行业",
         "url": "#",
-        "summary": "常规研报覆盖"
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
       },
       {
-        "title": "【内部研报】大类资产配置周报：通胀温和复苏",
+        "title": "【内部研报】资产配置跟踪周报：短期下行压力较大，中长期无需悲观",
         "company": "",
-        "time": "2026-06-09 15:32:46",
-        "content": "大类资产配置周报：通胀温和复苏-251109-通胀温和复苏下的资产配置分析->数据来源：WIND，SMM，钢联，百川盈孚，招商期货<footer>21</footer>##经济活动：经济活动指标已回归至正常水平<footer>22</footer>##地产：多项指标处于底部####100城成交土规划筑面积（万㎡）####螺纹表需（万吨）<footer>23</footer>##基建：多项指标处于低",
+        "time": "2026-06-09 16:22:39",
+        "content": "资产配置跟踪周报：短期下行压力较大，中长期无需悲观-251125-短期下行压力大，中长期黄金仍具潜力-震荡态势，从中长期看，黄金仍是对抗风险的核心资产，同时，去美元化逻辑仍在，黄金潜力尚未耗尽，但短期或更需谨慎。而原油再度走低，短期来看，以原油为代表的能源品类依然难以摆脱供大于求的现状，底部徘徊或仍是短期主要趋势。向后看，以黄金为主的贵金属价格在中长期或仍有继续表现的可能，但其他品类商品或难有表现",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "黄金行业",
         "url": "#",
-        "summary": "常规研报覆盖"
+        "summary": "评级下调信号；关键观点: 价格走势判断",
+        "is_new": true
       },
       {
-        "title": "【内部研报】新黄金系列报告一：从老黄金到新黄金",
+        "title": "【内部研报】宏观经济观察系列（十五）：进口缘何强势？",
         "company": "",
-        "time": "2026-06-09 15:32:46",
-        "content": "<footer>13/14</footer><footer>请务必阅读正文之后的免责条款部分</footer>#宏观深度报告##股票投资评级说明以报告日后的6个月内，证券相对于沪深300指数的涨跌幅为标准，定义如下：1.买入：相对于沪深300指数表现＋20％以上；2.增持：相对于沪深300指数表现＋10％～＋20％；3.中性：相对于沪深300指数表现－10％～＋10％之间波动；4.减持：相对于沪深",
+        "time": "2026-06-09 16:22:39",
+        "content": "#宏观周报#西部证券#2026年04月25日##1.3黄金需求不减反增贵金属需求也在上升，且对3月进口增速贡献率高达37%（口径用HS第71章，主要构成包括非货币用未锻造金）。这有季节性的原因，也有3月黄金价格调整期间央行和黄金ETF配置增持行为驱动。从进口国别来看，一季度黄金主要进口来源包括：1）瑞士，Q1进口规模达到231亿美元，同比增加近200亿美元；2）澳大利亚，Q1进口规模达到104亿美",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "黄金行业",
         "url": "#",
-        "summary": "评级上调信号 | 评级下调信号"
-      },
-      {
-        "title": "【内部研报】10月美联储议息会议点评：降息如期落地，美联储“放鹰”后宽松路径存疑",
-        "company": "",
-        "time": "2026-06-09 15:32:46",
-        "content": "10月美联储议息会议点评：降息如期落地，美联储“放鹰”后宽松路径存疑-251030-美联储10月降息落地，但未来宽松路径存疑-<footer>请务必阅读末页声明。</footer><footer>2</footer>#10月美联储议息会议点评<footer>请务必阅读末页声明。</footer><footer>3</footer>#10月美联储议息会议点评||公司投资评级||---|---||买入",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "黄金行业",
-        "url": "#",
-        "summary": "评级上调信号"
-      },
-      {
-        "title": "【内部研报】大类资产配置周报：全球流动性趋松，实物资产价值重估",
-        "company": "",
-        "time": "2026-06-09 15:32:46",
-        "content": "大类资产配置周报：全球流动性趋松，实物资产价值重估-251228-全球流动性趋松下，实物资产价值重估与多项经济指标低位-##经济活动：11月工业增加值较10月略有下降####中国高频经济活动指数<footer>22</footer>##地产：多项指标处于底部，PVC高位####30城商品房成交面积-一线城市（万㎡）####PVC周度需求（万吨）<footer>23</footer>##基建：多项指",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "黄金行业",
-        "url": "#",
-        "summary": "关键观点: 供需关系分析"
+        "summary": "评级上调信号；关键观点: 供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
         "title": "展望2026年，黄金在全球宏观格局变动下配置价值依然凸显；能源转型与AI算力需求支撑铜需求刚性，铜价有望中枢向上；锂2026年预计仍处于供应出清的低位震荡期，公司将聚焦“控本上产”，待周期拐点确认。",
@@ -1705,7 +1778,8 @@
         "industry": "有色金属",
         "search_term": "矿业行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260325183648a4963cd6",
-        "summary": "评级上调信号；关键观点: 盈利能力关注、供需关系分析、技术创新进展"
+        "summary": "评级上调信号；关键观点: 盈利能力关注、供需关系分析、技术创新进展",
+        "is_new": true
       },
       {
         "title": "煤炭底部配置机会显现 | 券商晨会",
@@ -1716,18 +1790,8 @@
         "industry": "有色金属",
         "search_term": "矿业行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260513093332973aecc0",
-        "summary": "关键观点: 行业景气度"
-      },
-      {
-        "title": "联储证券与中矿资源研报深度解析：四大战略金属的未来展望与投资机会",
-        "company": "",
-        "time": "2025-12-30 15:27:59",
-        "content": "联储证券点评中矿资源的研报显示：锂：产业链一体化建设成果显著，成本控制能力优异，行业周期性拐点的逐步确定，业务毛利率预期上行。铯：通过掌握上游资源，公司在产业链中近乎享有垄断地位，且伴随扩张产能放量，量价齐升，板块盈利有望再创新高。锗：国内出口管制举措出台导致锗价显著攀升且国内外价差快速拉大，公司矿山及冶炼产线均位于海外，放量后可充分享受政策红利，业务盈利前景可期。铜：战略版图拓展再尝试，公司完成",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "矿业行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251230152818a6e037b5",
-        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "券商推荐紫金矿业与中际旭创，4月A股市场展望乐观",
@@ -1738,29 +1802,20 @@
         "industry": "有色金属",
         "search_term": "矿业行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260403152958a713ee94",
-        "summary": "评级上调信号；关键观点: 产能扩张、供需关系分析"
+        "summary": "评级上调信号；关键观点: 产能扩张、供需关系分析",
+        "is_new": true
       },
       {
-        "title": "【内部研报】证券行业周报：市场交投保持活跃，关注券商估值修复机会",
+        "title": "联储证券与中矿资源研报深度解析：四大战略金属的未来展望与投资机会",
         "company": "",
-        "time": "2025-12-14 00:00:00",
-        "content": "市场回顾：本周券商指数跑赢沪深300，头部大型券商领涨 根据Wind数据，本周（12.8-12.12）上证指数下跌0.3%，沪深300指数下跌0.1%，创业板指上涨2.7%。申万非银金融指数上涨0.8%，涨跌幅排名7/31，跑赢沪深300指数0.9pct；其中，券商指数上涨0.3%，跑赢沪深300指数0.4pct。券商指数PB为1.37x，与上周基本持平，目前处于近十年的35%分位数。 本周券商板",
+        "time": "2025-12-30 15:27:59",
+        "content": "联储证券点评中矿资源的研报显示：锂：产业链一体化建设成果显著，成本控制能力优异，行业周期性拐点的逐步确定，业务毛利率预期上行。铯：通过掌握上游资源，公司在产业链中近乎享有垄断地位，且伴随扩张产能放量，量价齐升，板块盈利有望再创新高。锗：国内出口管制举措出台导致锗价显著攀升且国内外价差快速拉大，公司矿山及冶炼产线均位于海外，放量后可充分享受政策红利，业务盈利前景可期。铜：战略版图拓展再尝试，公司完成",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "矿业行业",
-        "url": "#",
-        "summary": "关键观点: 行业景气度"
-      },
-      {
-        "title": "申港证券、固德威等成立新能源公司",
-        "company": "",
-        "time": "2026-05-31 23:27:59",
-        "content": "天眼查App显示，近日，广州新联壹号新能源有限公司成立，法定代表人为李金荣，注册资本约5433万人民币，经营范围为技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广，以自有资金从事投资活动。股东信息显示，该公司由申港证券股份有限公司、西藏中联前源信息科技服务有限公司、苏州追日企业管理有限公司、固德威（688390）全资持股。\n。",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "矿业行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260531232805b61c75a0&s=b",
-        "summary": "关键观点: 技术创新进展"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251230152818a6e037b5",
+        "summary": "关键观点: 产能扩张、盈利能力关注、技术创新进展",
+        "is_new": true
       },
       {
         "title": "【研报】贵金属&战略金属2026年度策略：秩序失格 价值发现",
@@ -1771,7 +1826,8 @@
         "industry": "有色金属",
         "search_term": "贵金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res821724975425",
-        "summary": "关键观点: 供需关系分析、价格走势判断"
+        "summary": "关键观点: 供需关系分析、价格走势判断",
+        "is_new": true
       },
       {
         "title": "2026年贵金属市场展望：黄金白银价格上涨潜力与行业趋势分析",
@@ -1782,7 +1838,20 @@
         "industry": "有色金属",
         "search_term": "贵金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260127060100953e6eb7",
-        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断"
+        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断",
+        "is_new": true
+      },
+      {
+        "title": "加息并非绝对利空！六大逻辑或支撑黄金走出独立行情",
+        "company": "",
+        "time": "2026-06-09 16:13:52",
+        "content": "5月国际金价跌超1%，为连续第三个月录得下跌，以多数主要货币计价的黄金价格同样小幅走低，仅印度、土耳其市场金价录得月度上涨。6月，在美伊紧张局势反复、美联储加息压力越来越大的背景下，黄金的表现依旧低迷。\n世界黄金协会依托黄金收益归因模型（GRAM）分析，指出上个月各类显性变量并未出现单一主导金价走势的核心因素。\n一方面，市场风险偏好升温、股票资金流入规模超过债券资金、隐含波动率下行，叠加黄金ETF",
+        "source": "neodata",
+        "industry": "有色金属",
+        "search_term": "贵金属行业",
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN2026060916135697704867&s=b",
+        "summary": "关键观点: 价格走势判断",
+        "is_new": true
       },
       {
         "title": "2025年上半年贵金属市场分析：黄金白银价格走势与投资策略展望",
@@ -1793,18 +1862,8 @@
         "industry": "有色金属",
         "search_term": "贵金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026012817200097a3c25d",
-        "summary": "关键观点: 价格走势判断"
-      },
-      {
-        "title": "贵金属行业未来趋势：新能源驱动、技术升级与黄金避险价值分析",
-        "company": "",
-        "time": "2026-04-09 06:06:51",
-        "content": "贵金属行业未来发展趋势未来贵金属行业将呈现工业属性强化、循环经济主导、高端技术突围、价格中枢上移四大核心趋势。新能源革命驱动需求结构剧变，白银因光伏、新能源车、AI 服务器需求爆发，工业占比将突破 70%，供需缺口持续扩大；铂金、钯金依托氢能燃料电池与尾气净化，成为战略稀缺资源。供给端原生矿扩张受限，再生回收快速崛起，回收技术绿色化、高效化，铂族金属回收占比超 30%，白银回收成重要补充。产业链向",
-        "source": "neodata",
-        "industry": "有色金属",
-        "search_term": "贵金属行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260409060940954f4870",
-        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断"
+        "summary": "关键观点: 价格走势判断",
+        "is_new": true
       },
       {
         "title": "【研报】有色金属行业周报：关税不确定性仍存 金银价格创历史新高",
@@ -1815,18 +1874,20 @@
         "industry": "有色金属",
         "search_term": "贵金属行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res814221060288",
-        "summary": "关键观点: 价格走势判断、行业景气度"
+        "summary": "关键观点: 价格走势判断、行业景气度",
+        "is_new": true
       },
       {
-        "title": "2023年贵金属与有色行业展望：长期逻辑稳固，短期波动加剧",
+        "title": "贵金属行业未来趋势：新能源驱动、技术升级与黄金避险价值分析",
         "company": "",
-        "time": "2026-02-22 07:30:49",
-        "content": "相较2020-2022年，本轮稀土行情涨幅相对温和，龙头盈利仍有进一步释放空间。3）贵金属：长期逻辑坚挺，业绩释放助力估值修复。金价中长期逻辑依旧坚挺，中长期价格中枢有望维持高位，短期波动提供布局时点。股价方面，龙头年内业绩释放确定性较强，助力板块估值修复，2026年板块有望迎来盈利估值双击。风险提示：海外风险事件不确定性，贸易不确定性，宏观基本面及政策环境不确定性，海外地缘政治风险不确定性，美联",
+        "time": "2026-04-09 06:06:51",
+        "content": "贵金属行业未来发展趋势未来贵金属行业将呈现工业属性强化、循环经济主导、高端技术突围、价格中枢上移四大核心趋势。新能源革命驱动需求结构剧变，白银因光伏、新能源车、AI 服务器需求爆发，工业占比将突破 70%，供需缺口持续扩大；铂金、钯金依托氢能燃料电池与尾气净化，成为战略稀缺资源。供给端原生矿扩张受限，再生回收快速崛起，回收技术绿色化、高效化，铂族金属回收占比超 30%，白银回收成重要补充。产业链向",
         "source": "neodata",
         "industry": "有色金属",
         "search_term": "贵金属行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260222073702a7117637",
-        "summary": "关键观点: 盈利能力关注、政策影响、价格走势判断"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260409060940954f4870",
+        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断",
+        "is_new": true
       }
     ],
     "石油石化": [
@@ -1839,7 +1900,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251212140710979e50de",
-        "summary": "关键观点: 供需关系分析、行业景气度"
+        "summary": "关键观点: 供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "中东冲突成行业焦点，地缘风险推升景气",
@@ -1850,7 +1912,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260506092719a49b4511",
-        "summary": "关键观点: 产能扩张、盈利能力关注、价格走势判断"
+        "summary": "关键观点: 产能扩张、盈利能力关注、价格走势判断",
+        "is_new": true
       },
       {
         "title": "石化行业2026年度策略：聚焦高端跃升与反内卷框架确立",
@@ -1861,7 +1924,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260104080628a498da9d",
-        "summary": "关键观点: 产能扩张、供需关系分析、政策影响"
+        "summary": "关键观点: 产能扩张、供需关系分析、政策影响",
+        "is_new": true
       },
       {
         "title": "石化行业25年&26Q1总结：中东冲突成行业焦点，地缘风险推升景气",
@@ -1872,7 +1936,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260505201004a4999b08",
-        "summary": "关键观点: 盈利能力关注、价格走势判断、行业景气度"
+        "summary": "关键观点: 盈利能力关注、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "【研报】石油化工行业周报：深化改革积极转型 谱写中国式现代化石化新篇章",
@@ -1883,7 +1948,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res819058942004",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】石油化工行业周报：地缘扰动持续，港口原油库存去化，国内炼厂开工承压",
@@ -1894,18 +1960,8 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "#",
-        "summary": "关键观点: 价格走势判断、行业景气度"
-      },
-      {
-        "title": "石油化工行业周报：成品油出口计划量有所增长 汽柴油出口毛利分化",
-        "company": "",
-        "time": "2026-06-09 15:29:12",
-        "content": "炼化板块：海外成品油裂解价差上涨，烯烃价差涨跌不一。至2026 年6 月5 日当周新加坡炼油主要产品综合价差为40.20 美元/桶，较之前一周上涨2.29 美元/桶。至2026 年6月5 日当周美国汽油RBOB 与WTI 原油价差为37.2 美元/桶，较之前一周下跌5.9 美元/桶，历史平均为25.0 美元/桶。烯烃方面，至2026 年6 月5 日当周石脑油裂解乙烯综合价差208 美元/吨，较之前",
-        "source": "neodata",
-        "industry": "石油石化",
-        "search_term": "石油石化行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609152918a446c5a2&s=b",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "【研报】2024年石化板块三季报综述：上游盈利保持增长 关注下游复苏节奏",
@@ -1916,7 +1972,20 @@
         "industry": "石油石化",
         "search_term": "石油石化行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res785855320561",
-        "summary": "评级上调信号；关键观点: 盈利能力关注、供需关系分析、行业景气度"
+        "summary": "评级上调信号；关键观点: 盈利能力关注、供需关系分析、行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "国金证券：石化行业三季度总结：龙头业绩符合预期，反内卷背景下盈利将改善",
+        "company": "",
+        "time": "2025-11-03 00:06:12",
+        "content": "（以下内容从国金证券《石化行业25年三季度总结：龙头业绩符合预期，反内卷背景下盈利将改善》研报附件原文摘录）\n内容摘要\n原油：受地缘因素及宏观降息预期等影响，03原油均价环比上行，上游板块龙头持续推进增储上产与降本增效盈利环比提升。\n炼油：03价差环比改善，行业见底企稳超势，在反内卷及海外产能退出大背景下，板块景气度有望逐步回暖\n烯烃：03各工艺路线烯怪价差均环比略有改善，但仍处于历史低位，静待行",
+        "source": "neodata",
+        "industry": "石油石化",
+        "search_term": "石油石化行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251103000615a6dbe841",
+        "summary": "关键观点: 产能扩张、盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "能源格局重构需要重视四大方向——能源行业2026年夏季策略报告（精简版）",
@@ -1927,7 +1996,8 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260514174738973e78d4",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "券商晨会精华 | 新能源行业有望迎来戴维斯双击",
@@ -1938,7 +2008,8 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260327082516a49d4de2",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "中信证券：美伊冲突影响能源供应链，电力板块迎修复机遇",
@@ -1949,7 +2020,8 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260331092109a70409e5",
-        "summary": "评级上调信号；关键观点: 政策影响、价格走势判断"
+        "summary": "评级上调信号；关键观点: 政策影响、价格走势判断",
+        "is_new": true
       },
       {
         "title": "总投资14.6亿！内蒙3万吨绿氢项目获批",
@@ -1960,7 +2032,20 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260304150728a6a0f11c&s=b",
-        "summary": "常规研报覆盖"
+        "summary": "常规研报覆盖",
+        "is_new": true
+      },
+      {
+        "title": "投行全链条发力成券商新增长引擎",
+        "company": "",
+        "time": "2026-06-09 16:10:00",
+        "content": "伴随IPO常态化扩容、明星项目集中落地，券商二季度整体业绩有望延续一季度的高增长态势，投行业务链条成为业绩增长的独立催化因素，或推动券商板块估值与业绩进一步上行。\n2026年二季度，A股市场交易活跃度稳步回升，公募基金行业呈现结构性分化，与此同时，资本市场IPO节奏有所提速，一大批硬科技明星项目集中上会。在此背景下，券商投行产业链迎来发展良机，不仅直接增厚机构营收利润，更有望成为驱动券商板块行情的",
+        "source": "neodata",
+        "industry": "石油石化",
+        "search_term": "能源行业",
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161154a69d8a6c&s=b",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】电力能源行业周报",
@@ -1971,7 +2056,8 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "#",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "锂电储能板块向上信号明确 | 券商晨会",
@@ -1982,51 +2068,68 @@
         "industry": "石油石化",
         "search_term": "能源行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260508075223a4a3615d",
-        "summary": "关键观点: 产能扩张、价格走势判断、行业景气度"
+        "summary": "关键观点: 产能扩张、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
-        "title": "上市券商年度分红集中落地，持续增厚股东现金回报",
+        "title": "国信证券：2026年5月石化化工行业投资策略与市场表现分析",
         "company": "",
-        "time": "2026-06-09 15:23:16",
-        "content": "【环球网财经综合报道】近期，上市券商年度分红进入集中落地阶段。回顾2025年全年，多家券商通过提升分红比例、一年多次分红等方式，持续增厚股东现金回报。\n东方IC\n6月4日，西部证券完成分红除权派息登记，6月5日正式实施年度分红，每10股派发现金0.9元，本次分红总规模为4.02亿元。同时，中信证券披露称，将在6月10日发放现金红利，每10股派现4.1元，累计分红金额达60.76亿元；长江证券将于6",
-        "source": "neodata",
-        "industry": "石油石化",
-        "search_term": "能源行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609152700950b43f5&s=b",
-        "summary": "常规研报覆盖"
-      },
-      {
-        "title": "电力天然气周报：官方严查电力交易违规行为，全球海洋油气勘探开发投资连续5年增长",
-        "company": "",
-        "time": "2025-12-28 18:22:00",
-        "content": "六、投资建议和估值表\n●电力：国内历经多轮电力供需矛盾紧张之后，电力板块有望迎来盈利改善和价值重估。在电力供需矛盾紧张的态势下，煤电顶峰价值凸显；电力市场化改革的持续推进下，电价趋势有望稳中小幅上涨，电力现货市场和辅助服务市场机制有望持续推广，容量电价机制正式出台，明确煤电基石地位。双碳目标下的新型电力系统建设或将持续依赖系统调节手段的丰富和投入。此外，伴随着发改委加大电煤长协保供力度，电煤长协实",
-        "source": "neodata",
-        "industry": "石油石化",
-        "search_term": "能源行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251228183124a481d3ee",
-        "summary": "关键观点: 盈利能力关注、供需关系分析"
-      },
-      {
-        "title": "国信证券：2026年石化化工行业投资策略展望",
-        "company": "",
-        "time": "2026-01-05 09:40:18",
-        "content": "国信证券近日发布2026年石化化工行业1月投资策略：石化化工是周期性行业，现阶段石化化工行业“内卷式”竞争问题突出，低质量、同质化的无序竞争导致企业普遍面临增产不增利困境，全行业营业收入利润率从2021年的8.03%持续降至2024年的4.85%，2025年以来部分子行业率先复苏，前三季度行业归母净利润同比增长10.56%，行业盈利逐渐企稳复苏。\n以下为研究报告摘要：\n核心观点\n石化化工行业202",
+        "time": "2026-05-13 23:00:48",
+        "content": "国信证券近日发布石化化工行业2026年5月投资策略：石油石化与基础化工行业指数年内跑赢沪深300指数。截至2026年5月8日，SW石油石化行业指数收2928.84点，年内涨幅13.23%，跑赢沪深300指数8.00pcts，SW基础化工行业指数收4978.21点，年内涨幅13.86%，跑赢沪深300指数8.63pcts。以下为研究报告摘要：核心观点石化化工行业2025年及2026年一季度经营情况回",
         "source": "neodata",
         "industry": "石油石化",
         "search_term": "石化行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260105094935a6f3b58e",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260513230632a4ac4471",
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
-        "title": "国信证券：2025年石化行业复苏，前三季度净利润增10.56%",
+        "title": "2026年石油石化行业展望：盈利修复与新材料成长机会分析",
         "company": "",
-        "time": "2026-02-03 09:54:24",
-        "content": "智通财经APP获悉，国信证券发布研报称，2025年以来部分石化子行业率先复苏，前三季度行业归母净利润同比增长10.56%，行业盈利逐渐企稳复苏。展望2026年2月，部分化工产品海外需求复苏，内需也有望进一步发力，该行重点推荐中长期供需格局改善以及具有稀缺资源属性的化工品投资方向，重点推荐油气、炼油炼化、钾肥、磷化工等领域投资方向。国信证券主要观点如下：石化化工是周期性行业现阶段石化化工行业“内卷式",
+        "time": "2026-04-26 00:00:00",
+        "content": "SW 石油石化市盈率（TTM剔除负值）为16.09 倍，处在历史（2002 年至今）49.17%分位数；市净率为1.52 倍，处在历史52.60%分位数。展望2026 年，本轮行业扩产已近尾声，“反内卷”等措施有望催化行业盈利底部修复，同时新材料受益于下游需求的快速发展，有望开启新一轮高成长。短期地缘冲突持续影响原油及部分石化产品供应与运输，加剧波动幅度，关注：1.大型能源央企；2.原料供应稳定且",
         "source": "neodata",
         "industry": "石油石化",
         "search_term": "石化行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260203100151a6cc5084",
-        "summary": "评级上调信号；关键观点: 盈利能力关注、供需关系分析、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260426212559a47a580a",
+        "summary": "关键观点: 产能扩张、盈利能力关注、供需关系分析",
+        "is_new": true
+      },
+      {
+        "title": "【研报】石化化工行业2026年5月投资策略：石化化工景气度显著回暖 高油价下细分行业分化",
+        "company": "",
+        "time": "2026-05-12 00:00:00",
+        "content": "　　石化化工行业2025 年及2026 年一季度经营情况回顾：\r　　石油石化与基础化工行业指数年内跑赢沪深300 指数。截至2026 年5月8 日，SW 石油石化行业指数收2928.84 点，年内涨幅13.23%，跑赢沪深300 指数8.00 pcts，SW 基础化工行业指数收4978.21 点，年内涨幅13.86%，跑赢沪深300 指数8.63 pcts。\r　　2026 年3/4 月化工行业PP",
+        "source": "neodata",
+        "industry": "石油石化",
+        "search_term": "石化行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res831928130299",
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "2026年石化化工行业投资策略：油价上涨与PPI转正影响分析",
+        "company": "",
+        "time": "2026-05-13 09:35:26",
+        "content": "国信证券石化化工团队杨林 CPA执业证号S0980520120002薛  聪    执业证号S0980520120001余双雨   执业证号S0980523120001张歆钰   执业证号S0980123050087王新航   执业证号S0980525080002董丙旭   执业证号S0980524090002【石化化工4月投资策略：地缘局势推动原油加速上涨，石化化工影响程度分化】-国信证券【石化",
+        "source": "neodata",
+        "industry": "石油石化",
+        "search_term": "石化行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026051312154094d63db4",
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "荣盛石化2025年业绩展望：收入3086亿、净利润8.48亿，维持买入评级",
+        "company": "",
+        "time": "2026-04-29 21:43:12",
+        "content": "开源证券股份有限公司近期对荣盛石化进行研究并发布了研究报告《公司信息更新报告：业绩持续向好，炼化景气上行，公司发展弹性充足》，给予荣盛石化买入评级。荣盛石化(002493)业绩持续向好，炼化景气上行，公司发展弹性充足，维持“买入”评级据公司公告，2025年公司实现营业收入3086.22亿元，同比-5.47%；归母净利润8.48亿元，同比+17.09%。Q4，公司实现营业收入808.08亿元，同比-",
+        "source": "neodata",
+        "industry": "石油石化",
+        "search_term": "石化行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260429215313a6ddefb7",
+        "summary": "评级上调信号；关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       }
     ],
     "半导体": [
@@ -2039,7 +2142,8 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251209135217a72ca0bc",
-        "summary": "关键观点: 技术创新进展、行业景气度"
+        "summary": "关键观点: 技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "中国银河证券：半导体行业在多重因素驱动下整体表现较好",
@@ -2050,7 +2154,8 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251209133914a72c9bba",
-        "summary": "关键观点: 技术创新进展、行业景气度"
+        "summary": "关键观点: 技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "半导体行业中长期发展趋势与投资策略分析：聚焦技术攻关与市场整合",
@@ -2061,7 +2166,8 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260427142534a6d397ed",
-        "summary": "关键观点: 产能扩张、技术创新进展、行业景气度"
+        "summary": "关键观点: 产能扩张、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年2月半导体行业回暖，价格上涨，关注AI算力与存储涨价机会",
@@ -2072,7 +2178,8 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260305092207a44d49d1",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
       },
       {
         "title": "2025年半导体行业营收净利润增长，AI驱动国产替代加速",
@@ -2083,18 +2190,8 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260407172826a4caf227",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、行业景气度"
-      },
-      {
-        "title": "A股市场反弹，半导体板块受益，年报显示165家公司中115家盈利",
-        "company": "",
-        "time": "2026-04-08 16:06:07",
-        "content": "今天随着市场风险偏好改善，A股市场迎来了反弹，此前被情绪影响的半导体板块同样表现不俗。往后看，AI算力拉动、国产替代加速，以及消费电子新兴赛道落地，都有望推动半导体产业继续向好。当前正值年报披露期，据证券时报统计，截至4月6日披露的年报数据，165家公司中有115家实现了盈利，占比接近七成，超越2024年水平。信达证券表示，产业链上下游景气度维持在较高水平，反映出新一轮技术周期对基本面的持续支撑，",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "半导体行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260408161350a4ced600",
-        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "【研报】半导体行业存储设备专题报告：AI驱动存储扩容 设备环节确定性凸显",
@@ -2105,7 +2202,20 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res820431360721",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "A股市场反弹，半导体板块受益，年报显示165家公司中115家盈利",
+        "company": "",
+        "time": "2026-04-08 16:06:07",
+        "content": "今天随着市场风险偏好改善，A股市场迎来了反弹，此前被情绪影响的半导体板块同样表现不俗。往后看，AI算力拉动、国产替代加速，以及消费电子新兴赛道落地，都有望推动半导体产业继续向好。当前正值年报披露期，据证券时报统计，截至4月6日披露的年报数据，165家公司中有115家实现了盈利，占比接近七成，超越2024年水平。信达证券表示，产业链上下游景气度维持在较高水平，反映出新一轮技术周期对基本面的持续支撑，",
+        "source": "neodata",
+        "industry": "半导体",
+        "search_term": "半导体行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260408161350a4ced600",
+        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】半导体行业深度跟踪：存储现货价格高位趋稳，设备材料等业绩趋势向好",
@@ -2116,40 +2226,68 @@
         "industry": "半导体",
         "search_term": "半导体行业",
         "url": "#",
-        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断"
+        "summary": "关键观点: 供需关系分析、技术创新进展、价格走势判断",
+        "is_new": true
       },
       {
-        "title": "2026年半导体行业三重红利共振，投资者应关注上证科创板芯片指数",
+        "title": "芯片产业强劲上涨，国产替代成行情主驱动力",
         "company": "",
-        "time": "2026-05-11 16:39:18",
-        "content": "2026年以来，半导体行业迎来全球需求爆发、周期全面反转、国产替代加速的三重红利共振，成为资本市场确定性最强的长期投资主线之一。全市场主流芯片主题指数在编制逻辑、覆盖范围、行业分布和收益特征上存在显著差异，通过多维度客观对比，上证科创板芯片指数(000685)凭借高纯度半导体覆盖、适中的龙头集中度和贴合产业趋势的编制规则，成为当前布局芯片赛道的重要指数之一，对应的科创芯片ETF国泰(589100)",
+        "time": "2025-08-15 17:54:09",
+        "content": "行情回顾\n今天中证芯片产业指数（H30007.CSI）开盘走高，截至14:45，指数上涨1.43%，昨天盘中还一度涨幅接近4%。而本周芯片产业连涨五天，国产替代是行情的主要驱动力，细分领域来看，AI芯片涨幅最大，ASIC芯片头部公司涨幅也比较可观，另外光刻机、光刻胶等国产替代重点领域的相关公司也涨幅较大。\n行情点评\n芯片板块近期有走强的迹象，主要受益于如下三个方面：\n一、芯片维持高景气\n芯片近十年",
         "source": "neodata",
         "industry": "半导体",
         "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN202605111640419734d536",
-        "summary": "关键观点: 供需关系分析、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250815175736a6e806b1",
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
-        "title": "存储行业高景气周期有望延续至2027年，科创芯片ETF嘉实聚焦国产芯片投资机遇",
+        "title": "天风证券：半导体行业25Q1业绩亮眼，并购重组助力全球竞争力提升",
         "company": "",
-        "time": "2026-06-08 12:14:06",
-        "content": "截至2026年6月8日11:15，上证科创板芯片指数下跌3.56%。成分股方面涨跌互现，中船特气领涨10.77%，华峰测控上涨1.55%，有研硅上涨1.06%；乐鑫科技领跌，燕东微、思特威跟跌。全球半导体景气度持续高涨，WSTS大幅上调2026年行业增长预期至90%，市场规模预计达1.51万亿美元，其中存储器销售额将飙升约250%。平安证券认为，AI基础设施、HBM及加速计算平台的强劲需求是核心驱",
+        "time": "2025-04-30 08:44:00",
+        "content": "天风证券发布半导体行业研究周报：25Q1龙头业绩表现亮眼，并购重组助力强化全球竞争力，业绩方面，设备材料领域头部厂商2025Q1业绩表现亮眼，北方华创营收同比+37.9%（刻蚀/ALD设备技术突破驱动份额提升），应用材料受益AI芯片制造需求营收同比+7%。\n天风证券发布半导体行业研究周报：25Q1龙头业绩表现亮眼，并购重组助力强化全球竞争力。业绩方面，设备材料领域头部厂商2025Q1业绩表现亮眼，",
         "source": "neodata",
         "industry": "半导体",
         "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260608121646976e31d3",
-        "summary": "评级上调信号；关键观点: 供需关系分析、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250430090042974aca08",
+        "summary": "关键观点: 供需关系分析、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
-        "title": "半导体行业7月供需变化与涨价趋势分析及投资策略建议",
+        "title": "天风证券发布半导体行业研究周报：2025年全球半导体增长乐观，AI驱动下游增长，国产替代持续推进。",
         "company": "",
-        "time": "2026-06-01 16:21:00",
-        "content": "二、半导体材料方面，由于原料供应受限，日本主要生产厂商7月起将难以维持WF的生产与供货，全球WF供需格局变化。5月日本头部硅片厂再次执行了涨价，经过多轮涨价，半导体硅片行业有望走出低谷期。三、集成电路制造方面，上周一华为发布“韬定律”直接催化了晶圆代工板块上涨，因利好国内先进制程发展。此外，因TSMC、Samsung两大厂加速减产八英寸晶圆，而AI电源芯片需求强劲，成熟制程晶圆厂预计将涨价。预计后",
+        "time": "2025-07-21 15:01:00",
+        "content": "天风证券近日发布半导体行业研究周报：综合来看2025年，全球半导体增长延续乐观增长走势，2025年AI驱下游增长，同时，政策对供应链中断与重构风险持续升级，国产替代持续推进。\n天风证券近日发布半导体行业研究周报：综合来看2025年，全球半导体增长延续乐观增长走势，2025年AI驱下游增长。同时，政策对供应链中断与重构风险持续升级，国产替代持续推进。二季度各-环节公司业绩预告亮眼，展望三季度半导体旺",
         "source": "neodata",
         "industry": "半导体",
         "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260601164053985000f4",
-        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2025072116003397ae5a94",
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "中航证券研报：中芯国际先进产线战略地位及国内FAB成长空间看好",
+        "company": "",
+        "time": "2025-05-26 11:46:11",
+        "content": "智通财经APP获悉，中航证券发布研报称，短期业绩出现波动，长期来看，继续看好中芯国际(00981)先进产线的战略地位以及localforlocal趋势下，国内FAB的成长空间。主要半导体材料公司在经历了2023年的低迷后，2024年收入恢复增长。2024年、25Q1分别同比+22%、+21%。该行建议关注业务协同，有并购整合预期的公司。收入增速较快、业绩较为亮眼的是基本面较为扎实、平台化布局相对全",
+        "source": "neodata",
+        "industry": "半导体",
+        "search_term": "芯片行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20250526115755a48c6eb0",
+        "summary": "常规研报覆盖",
+        "is_new": true
+      },
+      {
+        "title": "2025年前三季度A股芯片设计企业营收增长超30%，净利润增超90%",
+        "company": "",
+        "time": "2026-01-30 16:07:36",
+        "content": "芯片设计行业价值解析赛道纯度高，聚焦产业链核心环节A股芯片设计企业覆盖数字芯片、模拟芯片、存储芯片、特种芯片等全细分领域，形成了从龙头企业到细分赛道隐形冠军的完整生态。其中，数字芯片设计占比超70%，聚焦AI算力、高端通用计算等核心方向；模拟芯片设计企业则在电源管理、信号链等领域实现进口替代，赛道纯度与产业相关性远超泛半导体板块。业绩增长强劲，盈利能力持续改善受益于需求爆发与国产化替代，A股芯片设",
+        "source": "neodata",
+        "industry": "半导体",
+        "search_term": "芯片行业",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260130161236a468350a",
+        "summary": "关键观点: 盈利能力关注、供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "技术颠覆？光芯片压印，成本仅DUV的1/10！多只大牛股，下周解禁",
@@ -2160,51 +2298,8 @@
         "industry": "半导体",
         "search_term": "芯片行业",
         "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260606182106976c2dcc&s=b",
-        "summary": "关键观点: 技术创新进展"
-      },
-      {
-        "title": "半导体行业2025年扭亏为盈，预计净利润2100万-3100万，涨价行情来临",
-        "company": "",
-        "time": "2026-03-17 05:58:34",
-        "content": "近10个月上涨113%。公司2025年业绩实现扭亏为盈，全年预计归母净利润2100万元–3100万元。编辑｜蓝猫作者 | 于晓明执业证书编号：A0680622030012特别提示通过本公众号发布的观点和信息仅供陕西巨丰投资资讯有限责任公司（下称“巨丰投顾”）客户中符合《证券期货投资者适当性管理办法》规定的特定客户参考。因本公众号暂时无法设置访问限制，若您并非巨丰投顾客户，为控制投资风险，请您取消关",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260317055948a6c7d33f",
-        "summary": "关键观点: 盈利能力关注、价格走势判断、行业景气度"
-      },
-      {
-        "title": "2023年中国半导体产业链发展趋势与RISC",
-        "company": "",
-        "time": "2026-04-13 21:58:40",
-        "content": "在此背景下，国内半导体(核心股)产业链的自主可控能力面临严峻考验，芯片设计作为产业链前端环节，其国产替代进程有望获得政策和资源的双重倾斜。从产能布局看，SEMI数据显示，2020年至2030年间，中国晶圆产能将从490万片增至1410万片，翻近三倍，全球市场份额从20%升至32%。2028年全球将新建108座晶圆厂，其中亚洲占84座，中国独占47座，超过亚洲新增产能的一半。晶圆产能的大幅扩张，将为",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260413222359a69fd9eb",
-        "summary": "关键观点: 产能扩张、政策影响"
-      },
-      {
-        "title": "4月3日A股震荡，科创芯片ETF华宝小幅上涨，半导体市场前景乐观",
-        "company": "",
-        "time": "2026-04-03 19:12:00",
-        "content": "4月3日，A股走势震荡，沪指再失3900点，科创芯片逆市上涨，全“芯”布局芯片产业的科创芯片ETF华宝（589190）场内价格一度涨逾1%，收涨0.12%。半导体材料方向冲高，中船特气20CM涨停，美伊冲突之下，半导体行业关键材料的采购和成本压力正引发担忧。光芯片表现不俗，源杰科技收涨4.93%，盘中上涨8%，股价一举超1200元，仅次于贵州茅台。此外，权重股走势分化，寒武纪、芯原股份涨超2%，海",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "芯片行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260403191346971acf9a",
-        "summary": "关键观点: 价格走势判断、行业景气度"
-      },
-      {
-        "title": "【内部研报】证券行业周报：券商，“极低估值+业绩爆发+并购催化”的多重共振",
-        "company": "",
-        "time": "2026-04-21 00:00:00",
-        "content": "（二）融资融券 本周两融资金明显向电子、电力设备及通信等科技成长赛道集中，TOP3行业吸金效应显著；而非银金融行业则面临较大的流出压力，净买入额位居全行业末尾。 截至2026/4/17，市场两融余额26,710亿元，其中融资余额26,512亿元，融券余额198亿元。2026/4/13-4/17期间，融资买入额11,892亿元，融资净买入额13亿元。 在融资买入额方面，市场热度高度集中在科技与制造领",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "芯片行业",
-        "url": "#",
-        "summary": "评级上调信号；关键观点: 行业景气度"
+        "summary": "关键观点: 技术创新进展",
+        "is_new": true
       },
       {
         "title": "博时基金刘钊：自主可控与新兴需求共振 集成电路景气上行",
@@ -2215,7 +2310,8 @@
         "industry": "半导体",
         "search_term": "集成电路行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260329224612a6fde742",
-        "summary": "关键观点: 供需关系分析、行业景气度"
+        "summary": "关键观点: 供需关系分析、行业景气度",
+        "is_new": true
       },
       {
         "title": "集成电路产业链景气度持续受到市场关注，集成电路ETF嘉实布局全产业链芯片龙头",
@@ -2226,18 +2322,8 @@
         "industry": "半导体",
         "search_term": "集成电路行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260520105742a710e9ea",
-        "summary": "关键观点: 产能扩张、供需关系分析、技术创新进展"
-      },
-      {
-        "title": "半导体行业：自主可控产业链的推荐进程与国产替代模拟芯片的加速发展",
-        "company": "",
-        "time": "2025-12-31 09:46:41",
-        "content": "半导体：推荐进程有望超预期的自主可控产业链，以及在景气复苏阶段加速国产替代的模拟芯片\n据SIA数据，2024年中国占全球半导体销售额的28%，但本土供应比例仅4.5%，自给率仍偏低，且由于增量主要来自GPU、HBM等云侧增量，自给率较2023年有所降低。但A股半导体公司的财务表现持续改善，据该行统计的146家公司的经营数据，季度收入最高值落在2025年的占比54%，3Q25SW半导体板块整体毛利率",
-        "source": "neodata",
-        "industry": "半导体",
-        "search_term": "集成电路行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251231105832a6e3a166",
-        "summary": "评级上调信号；关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 产能扩张、供需关系分析、技术创新进展",
+        "is_new": true
       },
       {
         "title": "科创板集成电路板块景气度持续攀升",
@@ -2248,18 +2334,32 @@
         "industry": "半导体",
         "search_term": "集成电路行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN202603112019359548a519",
-        "summary": "关键观点: 盈利能力关注、供需关系分析、行业景气度"
+        "summary": "关键观点: 盈利能力关注、供需关系分析、行业景气度",
+        "is_new": true
       },
       {
-        "title": "半导体板块大幅上涨，政策产业双轮驱动未来行情",
+        "title": "机构调研丨电子元件+MLCC+华为昇腾 这家公司是村田全球主要授权分销商 长尾现货业务Q1收入大增超3倍",
         "company": "",
-        "time": "2026-01-05 14:54:10",
-        "content": "今日（1月5日），半导体板块大幅上涨，其中，中微公司涨超14%，燕东微涨超12%，上海新阳涨超11%，成都华微涨超10%，兆易创新、立昂微10CM涨停。\n消息面上，半导体行业迎来多项利好催化。政策层面，近期提及芯片自主研发取得新突破，国家集成电路产业投资基金对中芯国际H股持股比例由4.79%大幅提升至9.25%，显示出国家对产业支持力度持续增强。产业层面，TrendForce近期全面上修一季度存储",
+        "time": "2026-06-09 16:01:34",
+        "content": "6月9日，多家上市公司发布投资者关系活动记录表公告，披露各自与机构之间的业务交流内容，其中透露出公司业务布局的诸多进展与亮点。\n深圳华强：电子元器件长尾现货业务收到的高端MLCC询盘需求明显增加\n深圳华强昨日接受中金公司、东北证券、鹏华基金等5家机构调研。\n在调研中，深圳华强透露，今年电子元器件长尾现货市场景气度回暖，包括存储、电源管理芯片、模拟芯片和MLCC在内的众多元器件出现缺货涨价情况。“以",
         "source": "neodata",
         "industry": "半导体",
         "search_term": "集成电路行业",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260105150040a49dc3fc",
-        "summary": "关键观点: 技术创新进展、政策影响、行业景气度"
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161233977047bd&s=b",
+        "summary": "关键观点: 供需关系分析、价格走势判断、行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "投行全链条发力成券商新增长引擎",
+        "company": "",
+        "time": "2026-06-09 16:10:00",
+        "content": "伴随IPO常态化扩容、明星项目集中落地，券商二季度整体业绩有望延续一季度的高增长态势，投行业务链条成为业绩增长的独立催化因素，或推动券商板块估值与业绩进一步上行。\n2026年二季度，A股市场交易活跃度稳步回升，公募基金行业呈现结构性分化，与此同时，资本市场IPO节奏有所提速，一大批硬科技明星项目集中上会。在此背景下，券商投行产业链迎来发展良机，不仅直接增厚机构营收利润，更有望成为驱动券商板块行情的",
+        "source": "neodata",
+        "industry": "半导体",
+        "search_term": "集成电路行业",
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161154a69d8a6c&s=b",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       }
     ],
     "医药": [
@@ -2272,7 +2372,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260521163730a714229d",
-        "summary": "评级上调信号；关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "评级上调信号；关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年一季度券商与医药行业市场展望及投资策略分析",
@@ -2283,7 +2384,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260403190138a4be0ed3",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年医药行业展望：创新药与CXO板块迎来回升机遇",
@@ -2294,7 +2396,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260508052048a6f9c9ea",
-        "summary": "关键观点: 技术创新进展、行业景气度"
+        "summary": "关键观点: 技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "券商与医药行业投资策略分析：关注低估值与创新药机遇",
@@ -2305,7 +2408,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260403192059a4be20c1",
-        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "【研报】医药商业行业跟踪报告：线下药店 “出清整合+精细化转型” 利润端修复明显",
@@ -2316,7 +2420,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res831986520355",
-        "summary": "关键观点: 盈利能力关注、行业景气度"
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】医药行业周报：龙头韧性凸显，关注消费医疗估值修复机会",
@@ -2327,7 +2432,8 @@
         "industry": "医药",
         "search_term": "医药行业",
         "url": "#",
-        "summary": "关键观点: 行业景气度"
+        "summary": "关键观点: 行业景气度",
+        "is_new": true
       },
       {
         "title": "【内部研报】证券行业周报：券商，“极低估值+业绩爆发+并购催化”的多重共振",
@@ -2338,29 +2444,44 @@
         "industry": "医药",
         "search_term": "制药行业",
         "url": "#",
-        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
-        "title": "上市券商年度分红集中落地，持续增厚股东现金回报",
+        "title": "医药行业周报：板块逐步筑底，政策改革深化",
         "company": "",
-        "time": "2026-06-09 15:23:16",
-        "content": "【环球网财经综合报道】近期，上市券商年度分红进入集中落地阶段。回顾2025年全年，多家券商通过提升分红比例、一年多次分红等方式，持续增厚股东现金回报。\n东方IC\n6月4日，西部证券完成分红除权派息登记，6月5日正式实施年度分红，每10股派发现金0.9元，本次分红总规模为4.02亿元。同时，中信证券披露称，将在6月10日发放现金红利，每10股派现4.1元，累计分红金额达60.76亿元；长江证券将于6",
+        "time": "2025-12-15 10:06:27",
+        "content": "（以下内容从西南证券《医药行业周报：医药板块逐步筑底》研报附件原文摘录）\n投资要点\n行情回顾：本周医药生物指数下跌1.04%，跑输沪深300指数0.96个百分点，行业涨跌幅排名第18。2025年初以来至今，医药行业上涨14.65%，跑输沪深300指数1.77个百分点，行业涨跌幅排名第18。本周医药行业估值水平(PE-TTM)为29.16倍，相对全部A股溢价率69.83%(-0.85pp)，相对剔除",
         "source": "neodata",
         "industry": "医药",
         "search_term": "制药行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609152700950b43f5&s=b",
-        "summary": "常规研报覆盖"
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251215100647a6a30153",
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
       },
       {
-        "title": "申港证券、固德威等成立新能源公司",
+        "title": "投行全链条发力成券商新增长引擎",
         "company": "",
-        "time": "2026-05-31 23:27:59",
-        "content": "天眼查App显示，近日，广州新联壹号新能源有限公司成立，法定代表人为李金荣，注册资本约5433万人民币，经营范围为技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广，以自有资金从事投资活动。股东信息显示，该公司由申港证券股份有限公司、西藏中联前源信息科技服务有限公司、苏州追日企业管理有限公司、固德威（688390）全资持股。\n。",
+        "time": "2026-06-09 16:10:00",
+        "content": "伴随IPO常态化扩容、明星项目集中落地，券商二季度整体业绩有望延续一季度的高增长态势，投行业务链条成为业绩增长的独立催化因素，或推动券商板块估值与业绩进一步上行。\n2026年二季度，A股市场交易活跃度稳步回升，公募基金行业呈现结构性分化，与此同时，资本市场IPO节奏有所提速，一大批硬科技明星项目集中上会。在此背景下，券商投行产业链迎来发展良机，不仅直接增厚机构营收利润，更有望成为驱动券商板块行情的",
         "source": "neodata",
         "industry": "医药",
         "search_term": "制药行业",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260531232805b61c75a0&s=b",
-        "summary": "关键观点: 技术创新进展"
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161154a69d8a6c&s=b",
+        "summary": "关键观点: 盈利能力关注、行业景气度",
+        "is_new": true
+      },
+      {
+        "title": "未来五年海外订单冲七成：“中国速度”赋能生物药制造，全球患者共享成果",
+        "company": "",
+        "time": "2026-06-09 16:09:58",
+        "content": "东方网记者刘轶琳6月9日报道:记者今天获悉，丹纳赫旗下Cytiva（思拓凡）宣布，其与CDMO公司鼎康生物联合打造的GMP-2生产基地在湖北武汉正式启用。Cytiva为该基地提供工艺设备与生产物料耗材等解决方案，助力鼎康生物更快响应、更稳交付服务全球市场。该基地启用标志着双方围绕KUBio模块化平台十年合作迈入商业化制造能力跃升的新阶段。\n过去十年，中国生物医药产业从“仿创结合”走向“全球创新”，",
+        "source": "neodata",
+        "industry": "医药",
+        "search_term": "生物医药",
+        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609161352a69d8b62&s=b",
+        "summary": "关键观点: 技术创新进展",
+        "is_new": true
       },
       {
         "title": "2025年医药行业创新牛股频现，2026年创新药板块性机会仍被看好",
@@ -2371,7 +2492,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260104200604a49adb90",
-        "summary": "关键观点: 技术创新进展、行业景气度"
+        "summary": "关键观点: 技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "金融研报揭秘：2026年医药生物行业投资策略与估值动态",
@@ -2382,7 +2504,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251216080559a6a6e56c",
-        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       },
       {
         "title": "港股创新药企借力政策东风 机构：生物医药板块正从“研发投入期”迈向“价值收获期”",
@@ -2393,7 +2516,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260306141137a452d64b",
-        "summary": "关键观点: 技术创新进展、政策影响"
+        "summary": "关键观点: 技术创新进展、政策影响",
+        "is_new": true
       },
       {
         "title": "2026年4月医药生物行业动态：政策、市场表现与投资策略分析",
@@ -2404,7 +2528,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026041311030094b8c677",
-        "summary": "关键观点: 政策影响、行业景气度"
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
       },
       {
         "title": "医药生物板块稳健发展，创新药产业链表现亮眼",
@@ -2415,7 +2540,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251209081031953249ec",
-        "summary": "关键观点: 技术创新进展、政策影响、行业景气度"
+        "summary": "关键观点: 技术创新进展、政策影响、行业景气度",
+        "is_new": true
       },
       {
         "title": "2026年医药生物行业动态：政策支持与投资机会分析",
@@ -2426,18 +2552,8 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260309102435a459dc86",
-        "summary": "关键观点: 政策影响、行业景气度"
-      },
-      {
-        "title": "“黑天鹅”事件又来了！药明康德A股、港股股价大跌逾5%",
-        "company": "",
-        "time": "2026-06-09 13:23:16",
-        "content": "6月9日上午，药明康德（603259.SH、02359.HK）A股、港股均大跌超过5%。\n这背后的导火线是，2026年6月8日（美国时间），美国国防部将药明康德列入其根据1260H条款认定的“中国军工企业”正式更新版名单中。\n这是继2024年美国生物安全法案立法风波事件后，药明康德又遭遇的一次“黑天鹅”事件。\n6月9日早间，药明康德发布公告进行回应，称公司不符合被认定为“中国军工企业”的法定标准，",
-        "source": "neodata",
-        "industry": "医药",
-        "search_term": "生物医药",
-        "url": "http://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=nesSN20260609132659b62995a1&s=b",
-        "summary": "常规研报覆盖"
+        "summary": "关键观点: 政策影响、行业景气度",
+        "is_new": true
       },
       {
         "title": "信达证券研报：2025年前三季度生物医药板块业绩分化明显，行业盈利能力止跌企稳",
@@ -2448,12 +2564,14 @@
         "industry": "医药",
         "search_term": "生物医药",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20251216092220a4501273",
-        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度"
+        "summary": "关键观点: 盈利能力关注、技术创新进展、行业景气度",
+        "is_new": true
       }
     ]
   },
   "fomc_news": [],
   "fomc_date": null,
+  "_run_timestamp": "2026-06-09T16:23:09.908090+08:00",
   "_filename": "2026-06-09.json",
-  "_saved_at": "2026-06-09T15:33:23.130739+08:00"
+  "_saved_at": "2026-06-09T16:23:09.957471+08:00"
 }

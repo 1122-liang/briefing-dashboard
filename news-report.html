@@ -233,6 +233,7 @@
                 <div class="text-sm">
                   <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
                   · ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-primary);text-decoration:none;font-weight:500">${item.title}</a>` : item.title}
+                  ${item.is_new ? '<span class="badge badge-green" style="margin-left:4px">最新</span>' : ''}
                   ${item.rating ? `<span class="badge badge-yellow" style="margin-left:4px">${item.rating}</span>` : ''}
                   ${item.src ? `<span style="color:var(--text-muted)">(${item.src})</span>` : ''}
                 </div>
@@ -250,30 +251,48 @@
       if (industries.length === 0) return '<div class="empty-state"><p>暂无行业研报数据</p></div>';
 
       let html = '';
+      let industryIdx = 0;
       for (const [industry, items] of industries) {
         if (!items || items.length === 0) continue;
-        
+        const idx = industryIdx++;
+        const hasMore = items.length > 5;
+
         html += `
           <div style="margin-bottom:16px;">
             <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
               <span class="font-bold" style="font-size:14px;">${industry}</span>
               <span class="badge badge-blue">${items.length}份</span>
             </div>
-            ${items.slice(0, 5).map(item => `
-              <div style="padding:4px 0;border-bottom:1px solid var(--border)">
+            ${items.map((item, i) => `
+              <div class="industry-report-item" data-industry="${idx}" style="padding:4px 0;border-bottom:1px solid var(--border);${i >= 5 ? 'display:none' : ''}">
                 <div class="text-sm">
                   <span style="color:var(--text-muted)">${item.time ? item.time.substring(0, 10) : ''}</span>
                   · ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text-primary);text-decoration:none;font-weight:500">${item.title}</a>` : item.title}
+                  ${item.is_new ? '<span class="badge badge-green" style="margin-left:4px">最新</span>' : ''}
                   ${item.company ? `<span style="color:var(--text-muted)">(${item.company})</span>` : ''}
                 </div>
                 ${item.summary ? `<div style="color:var(--text-secondary);font-size:12px;margin-top:2px;padding-left:8px;">💡 ${item.summary}</div>` : ''}
               </div>
             `).join('')}
-            ${items.length > 5 ? `<div style="color:var(--text-muted);font-size:12px;margin-top:4px;">...及其他${items.length - 5}份</div>` : ''}
+            ${hasMore ? `<button class="toggle-btn" onclick="toggleIndustry(this, ${idx}, ${items.length})" data-expanded="false">展开全部 (${items.length}份)</button>` : ''}
           </div>
         `;
       }
       return html || '<div class="empty-state"><p>暂无行业研报数据</p></div>';
+    }
+
+    function toggleIndustry(btn, idx, total) {
+      const items = document.querySelectorAll(`.industry-report-item[data-industry="${idx}"]`);
+      const expanded = btn.getAttribute('data-expanded') === 'true';
+      if (expanded) {
+        items.forEach((el, i) => { if (i >= 5) el.style.display = 'none'; });
+        btn.textContent = `展开全部 (${total}份)`;
+        btn.setAttribute('data-expanded', 'false');
+      } else {
+        items.forEach(el => { el.style.display = ''; });
+        btn.textContent = '收起';
+        btn.setAttribute('data-expanded', 'true');
+      }
     }
   </script>
 </body>

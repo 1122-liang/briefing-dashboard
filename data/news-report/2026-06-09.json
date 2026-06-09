@@ -754,22 +754,22 @@
     ],
     "usGOOGL": [
       {
-        "time": "2026-06-09 11:07:10",
-        "title": "苹果谷歌英伟达强强联手 开发Apple Foundation Model Cloud Pro重塑AI格局",
-        "src": "ITBEAR科技资讯",
+        "time": "2026-06-09 11:35:43",
+        "title": "Siri AI来了：苹果的身体，谷歌的大脑",
+        "src": "界面新闻",
         "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609114426985be804&s=b",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609115250a4467b19&s=b",
         "stock_name": "谷歌",
         "stock_code": "usGOOGL",
         "impact_level": "low",
         "impact_reason": ""
       },
       {
-        "time": "2026-06-09 11:05:00",
-        "title": "Siri AI来了：苹果的身体，谷歌的大脑",
-        "src": "AIX财经",
+        "time": "2026-06-09 11:07:10",
+        "title": "苹果谷歌英伟达强强联手 开发Apple Foundation Model Cloud Pro重塑AI格局",
+        "src": "ITBEAR科技资讯",
         "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609111659b6296a72&s=b",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609114426985be804&s=b",
         "stock_name": "谷歌",
         "stock_code": "usGOOGL",
         "impact_level": "low",
@@ -853,17 +853,6 @@
         "impact_reason": ""
       },
       {
-        "time": "2026-06-09 08:17:00",
-        "title": "英特尔盘前涨超14% 报道：谷歌拟下单三百万AI芯片、英伟达测试其18A工艺",
-        "src": "华尔街见闻",
-        "summary": "",
-        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260609081945985b952a&s=b",
-        "stock_name": "谷歌",
-        "stock_code": "usGOOGL",
-        "impact_level": "low",
-        "impact_reason": ""
-      },
-      {
         "time": "2026-06-09 08:05:13",
         "title": "苹果WWDC26：Apple Intelligence牵手谷歌Gemini，重构AI Siri",
         "src": "中关村在线",
@@ -913,6 +902,17 @@
         "src": "富途资讯",
         "summary": "",
         "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608214824950a1084&s=b",
+        "stock_name": "谷歌",
+        "stock_code": "usGOOGL",
+        "impact_level": "low",
+        "impact_reason": ""
+      },
+      {
+        "time": "2026-06-08 18:21:00",
+        "title": "苹果AI告急，库克押注谷歌Gemini救场",
+        "src": "影子备忘录",
+        "summary": "",
+        "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html#/index?id=nesSN20260608182502a4454733&s=b",
         "stock_name": "谷歌",
         "stock_code": "usGOOGL",
         "impact_level": "low",
@@ -1144,5 +1144,5 @@
   "fomc_news": [],
   "fomc_date": null,
   "_filename": "2026-06-09.json",
-  "_saved_at": "2026-06-09T11:51:01.869400+08:00"
+  "_saved_at": "2026-06-09T11:55:25.836120+08:00"
 }

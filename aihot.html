@@ -33,6 +33,21 @@
 
       const latest = allData[0].data;
 
+      // Industry grouping map (细分行大类)
+      const INDUSTRY_GROUP = {
+        'AI基础设施': 'AI基础设施/算力', '算力芯片': 'AI基础设施/算力',
+        '国产算力/GPU': 'AI基础设施/算力', 'AI推理芯片': 'AI基础设施/算力',
+        '光通信/算力网络': 'AI基础设施/算力', '太空AI算力': 'AI基础设施/算力',
+        'AI大模型': 'AI大模型/平台', 'AI平台': 'AI大模型/平台',
+        'AI架构创新': 'AI大模型/平台', 'AI平台竞争': 'AI大模型/平台',
+        '机器人': '具身智能/机器人', '具身智能/机器人': '具身智能/机器人',
+        'AGI/制造业AI': '具身智能/机器人', '自主武器/AI军事': '具身智能/机器人',
+        'AI视频': 'AI应用/内容', 'AI影视': 'AI应用/内容',
+        '企业AI服务': 'AI应用/内容', '金融AI应用': 'AI应用/内容',
+        'AI安全与合规': 'AI安全与政策', 'AI应用/政策监管': 'AI安全与政策',
+      };
+      function groupIndustry(raw) { return INDUSTRY_GROUP[raw] || raw; }
+
       // Aggregate industry stats
       const industryCount = {};
       const typeCount = {};
@@ -40,7 +55,8 @@
       for (const entry of allData) {
         for (const opp of (entry.data.opportunities || [])) {
           totalOpps++;
-          industryCount[opp.industry] = (industryCount[opp.industry] || 0) + 1;
+          const grouped = groupIndustry(opp.industry);
+          industryCount[grouped] = (industryCount[grouped] || 0) + 1;
           typeCount[opp.type] = (typeCount[opp.type] || 0) + 1;
         }
       }

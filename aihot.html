@@ -80,7 +80,7 @@
         ${industries.length > 0 ? `
         <div class="card">
           <div class="card-title mb-4">行业分布</div>
-          <div id="industryChart" class="chart-container" style="min-height:400px"></div>
+          <div id="industryChart" class="chart-container" style="min-height:450px"></div>
         </div>
         ` : ''}
 
@@ -205,15 +205,27 @@
             ...theme,
             tooltip: { ...theme.tooltip, trigger: 'item', formatter: '{b}: {c} ({d}%)' },
             legend: {
-              bottom: 0,
+              bottom: 10,
+              left: 'center',
               textStyle: { color: '#94a3b8', fontSize: 11 },
-              itemWidth: 10, itemHeight: 10
+              itemWidth: 10, itemHeight: 10,
+              itemGap: 16,
+              type: 'scroll'
             },
             series: [{
-              type: 'pie', radius: ['30%', '60%'], center: ['50%', '45%'],
-              label: { color: '#94a3b8', formatter: '{b}', position: 'outside', fontSize: 12 },
-              labelLine: { length: 15, length2: 10 },
-              labelLayout: { hideOverlap: true },
+              type: 'pie',
+              radius: ['30%', '55%'],
+              center: ['50%', '42%'],
+              label: {
+                color: '#94a3b8',
+                formatter: '{b}',
+                position: 'outside',
+                fontSize: 12,
+                overflow: 'truncate',
+                width: 100
+              },
+              labelLine: { length: 20, length2: 15 },
+              avoidLabelOverlap: true,
               data: industries.map(([name, count]) => ({ name, value: count }))
             }]
           });

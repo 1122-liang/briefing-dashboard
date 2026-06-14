@@ -80,7 +80,7 @@
         ${industries.length > 0 ? `
         <div class="card">
           <div class="card-title mb-4">行业分布</div>
-          <div id="industryChart" class="chart-container" style="min-height:450px"></div>
+          <div id="industryChart" class="chart-container" style="min-height:460px"></div>
         </div>
         ` : ''}
 
@@ -205,27 +205,31 @@
             ...theme,
             tooltip: { ...theme.tooltip, trigger: 'item', formatter: '{b}: {c} ({d}%)' },
             legend: {
-              bottom: 10,
+              bottom: 0,
               left: 'center',
               textStyle: { color: '#94a3b8', fontSize: 11 },
               itemWidth: 10, itemHeight: 10,
-              itemGap: 16,
-              type: 'scroll'
+              itemGap: 14,
+              type: 'scroll',
+              formatter: function(name) {
+                const item = industries.find(([n]) => n === name);
+                return item ? name + ' ' + item[1] : name;
+              }
             },
             series: [{
               type: 'pie',
-              radius: ['30%', '55%'],
-              center: ['50%', '42%'],
-              label: {
-                color: '#94a3b8',
-                formatter: '{b}',
-                position: 'outside',
-                fontSize: 12,
-                overflow: 'truncate',
-                width: 100
-              },
-              labelLine: { length: 20, length2: 15 },
+              radius: ['24%', '50%'],
+              center: ['50%', '38%'],
               avoidLabelOverlap: true,
+              minAngle: 10,
+              label: {
+                position: 'inner',
+                color: '#fff',
+                fontSize: 12,
+                fontWeight: 'bold',
+                formatter: '{d}%'
+              },
+              labelLine: { show: false },
               data: industries.map(([name, count]) => ({ name, value: count }))
             }]
           });

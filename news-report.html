@@ -254,6 +254,8 @@
       let industryIdx = 0;
       for (const [industry, items] of industries) {
         if (!items || items.length === 0) continue;
+        // 按时间降序排序（最新在前）
+        items.sort((a, b) => (b.time || '').localeCompare(a.time || ''));
         const idx = industryIdx++;
         const hasMore = items.length > 5;
 

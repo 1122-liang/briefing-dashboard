@@ -46,7 +46,22 @@
         '企业AI服务': 'AI应用/内容', '金融AI应用': 'AI应用/内容',
         'AI安全与合规': 'AI安全与政策', 'AI应用/政策监管': 'AI安全与政策',
       };
-      function groupIndustry(raw) { return INDUSTRY_GROUP[raw] || raw; }
+      // 关键词兜底匹配（按优先级排列）
+      const CATEGORY_KEYWORDS = [
+        { group: 'AI基础设施/算力', keywords: ['算力', '芯片', 'GPU', 'CPU', '光模块', '数据中心', '服务器', 'IDC', '液冷', '通信', '网络', '卫星', '太空', '基建'] },
+        { group: 'AI大模型/平台', keywords: ['大模型', '平台', '架构', '模型', '开源', '推理框架', 'Transformer', 'Agent框架'] },
+        { group: '具身智能/机器人', keywords: ['机器人', '具身', '制造', '军事', '武器', '无人机', '自动驾驶', '传感', '减速器'] },
+        { group: 'AI应用/内容', keywords: ['视频', '影视', '金融', '企业', 'SaaS', '办公', '教育', '医疗', '游戏', '内容', '电商'] },
+        { group: 'AI安全与政策', keywords: ['安全', '合规', '监管', '政策', '法律', '伦理', '隐私'] },
+      ];
+      function groupIndustry(raw) {
+        if (INDUSTRY_GROUP[raw]) return INDUSTRY_GROUP[raw];
+        const lower = raw.toLowerCase();
+        for (const { group, keywords } of CATEGORY_KEYWORDS) {
+          if (keywords.some(kw => lower.includes(kw.toLowerCase()))) return group;
+        }
+        return raw; // 无匹配 → 自成一类
+      }
 
       // Aggregate industry stats
       const industryCount = {};

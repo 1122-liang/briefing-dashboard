@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>情绪周期 RPS 选股</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<script>
+// ============================================================
+// 内嵌当日数据（由脚本自动生成，避免 fetch 跨域问题）
+// ============================================================
+const EMBEDDED_DATA = '__EMBEDDED_DATA_PLACEHOLDER__';
+</script>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f6fa; color: #333; line-height: 1.5; }
@@ -102,7 +108,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <h1>📊 情绪周期 RPS 选股</h1>
       <div class="meta">
         <span>数据日期: <select id="dateSelect" onchange="loadDate(this.value)"></select></span>
-        <span id="updateTime"></span>
+        <span id="updateTime" style="color:#d69e2e;">正在加载数据...</span>
         <span>⚠️ 数据仅供参考，不构成投资建议</span>
       </div>
     </div>
@@ -296,26 +302,56 @@ let activeCharts = {};
 // 初始化
 // ============================================================
 async function init() {
+  const statusEl = document.getElementById('updateTime');
   try {
-    // 并行加载 history 和日期列表
-    const [hResp] = await Promise.all([
-      fetch('../data/sentiment-rps/history.json')
-    ]);
+    // 优先使用内嵌数据（避免 fetch 跨域问题）
+    if (typeof EMBEDDED_DATA === 'object' && EMBEDDED_DATA.date) {
+      currentData = EMBEDDED_DATA;
+      currentDate = EMBEDDED_DATA.date;
+      statusEl.textContent = `更新于 ${currentData.date_display}`;
+      statusEl.style.color = '#8892b0';
+      document.getElementById('dateSelect').innerHTML = 
+        `<option>${EMBEDDED_DATA.date}</option>`;
+      renderAll();
+      
+      // 异步加载 history.json（用于折线图和日期选择器）
+      loadHistoryAsync();
+      return;
+    }
+    
+    statusEl.textContent = '正在加载 history.json (22MB)...';
+    
+    const hResp = await fetch('../data/sentiment-rps/history.json');
+    if (!hResp.ok) throw new Error(`history.json HTTP ${hResp.status}`);
     historyData = await hResp.json();
     
-    // 从 history 或快照获取可用日期
     if (historyData && historyData.dates && historyData.dates.length > 0) {
       const dates = historyData.dates;
       currentDate = dates[dates.length - 1];
+      statusEl.textContent = `正在加载 ${currentDate} 快照...`;
       populateDateSelector(dates);
       await loadDate(currentDate);
     } else {
-      // Fallback: 尝试从 data 目录获取
       await discoverDates();
     }
   } catch (e) {
     console.error('初始化失败:', e);
-    document.body.innerHTML += '<div style="padding:40px;text-align:center;color:#e53e3e;">⚠️ 数据加载失败，请先运行 RPS 计算引擎</div>';
+    statusEl.textContent = '❌ ' + e.message;
+    statusEl.style.color = '#e53e3e';
+  }
+}
+
+async function loadHistoryAsync() {
+  try {
+    const hResp = await fetch('../data/sentiment-rps/history.json');
+    if (hResp.ok) {
+      historyData = await hResp.json();
+      if (historyData.dates) {
+        populateDateSelector(historyData.dates);
+      }
+    }
+  } catch(e) {
+    console.log('历史数据加载延迟，折线图将在点击时加载');
   }
 }
 
@@ -357,13 +393,18 @@ function populateDateSelector(dates) {
 // ============================================================
 async function loadDate(dateStr) {
   currentDate = dateStr;
+  const statusEl = document.getElementById('updateTime');
   try {
     const resp = await fetch(`../data/sentiment-rps/${dateStr}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     currentData = await resp.json();
-    document.getElementById('updateTime').textContent = `更新于 ${currentData.date_display}`;
+    statusEl.textContent = `更新于 ${currentData.date_display}`;
+    statusEl.style.color = '#8892b0';
     renderAll();
   } catch (e) {
     console.error('加载日期失败:', e);
+    statusEl.textContent = '❌ 加载失败: ' + e.message;
+    statusEl.style.color = '#e53e3e';
   }
 }
 

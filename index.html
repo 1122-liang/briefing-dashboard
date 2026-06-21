@@ -25,7 +25,7 @@
       const loading = document.getElementById('loading');
 
       // Load latest data from all modules in parallel
-      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, macroIndicators] = await Promise.all([
+      const [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, sentimentRps, macroIndicators] = await Promise.all([
         loadLatest('lithium').catch(() => null),
         loadLatest('deviation').catch(() => null),
         loadLatest('sanmei').catch(() => null),
@@ -34,13 +34,14 @@
         loadLatest('news-report').catch(() => null),
         loadLatest('weekly-review').catch(() => null),
         loadLatest('xueqiu-digest').catch(() => null),
+        loadLatest('sentiment-rps').catch(() => null),
         loadLatest('macro-indicators').catch(() => null),
       ]);
 
       loading.remove();
 
       // Global data freshness check
-      const allModules = [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, macroIndicators];
+      const allModules = [lithium, deviation, sanmei, aihot, mcpSkills, newsReport, weeklyReview, xueqiuDigest, sentimentRps, macroIndicators];
       const loadedCount = allModules.filter(Boolean).length;
       const totalCount = allModules.length;
       const latestGeneratedAt = allModules
@@ -247,6 +248,33 @@
           <a href="xueqiu-digest.html" class="stat-card">
             <div class="stat-label">🐦 雪球关注人动态</div>
             <div class="empty-state" style="padding:20px"><p>每天 22:30 自动生成</p></div>
+          </a>
+        `);
+      }
+
+      // Sentiment RPS card
+      if (sentimentRps) {
+        const h = sentimentRps.highlights || {};
+        const stocksCount = (sentimentRps.stocks || []).length;
+        const newOne = (h.new_one_red_stocks || []).length;
+        const newThree = (h.new_three_red_stocks || []).length;
+        cards.push(`
+          <a href="sentiment-rps.html" class="stat-card">
+            <div class="stat-label">🎯 情绪周期RPS选股</div>
+            <div class="stat-value">${stocksCount} 只</div>
+            <div class="stat-change ${newOne > 0 ? 'up' : 'neutral'}">
+              新进一线${newOne} · 三线${newThree}
+            </div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${sentimentRps.date_display || '-'} · 板块RPS + 概念RPS + 个股筛选
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="sentiment-rps.html" class="stat-card">
+            <div class="stat-label">🎯 情绪周期RPS选股</div>
+            <div class="empty-state" style="padding:20px"><p>每个交易日 16:00 自动生成</p></div>
           </a>
         `);
       }

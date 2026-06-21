@@ -1,0 +1,76 @@
+{
+  "period": "06/15-06/21",
+  "total_hours": 41.0,
+  "projects": [
+    {
+      "name": "Level2回测数据管线",
+      "hours": 28.0,
+      "files": 15,
+      "summary": "351天特征数据(↑121天)，~1TB原始数据释放，5个Bug修复，脚本统一化",
+      "efficiency": "medium",
+      "issues": "并行/分批多轮尝试浪费~3h"
+    },
+    {
+      "name": "每日自动化维持",
+      "hours": 3.5,
+      "files": 5,
+      "summary": "7项自动化维持运行但成功率仅58%，雪球和晚场部署为主要瓶颈",
+      "efficiency": "low",
+      "issues": "成功率较上周下降35pp"
+    },
+    {
+      "name": "情绪周期计划书更新",
+      "hours": 3.0,
+      "files": 1,
+      "summary": "新增板块/概念三线红+第二层筛选加分项+股本数据集成",
+      "efficiency": "high"
+    },
+    {
+      "name": "K线数据迁移",
+      "hours": 2.0,
+      "files": 1,
+      "summary": "xlsx→parquet转换，提速70x，释放6.5GB",
+      "efficiency": "high"
+    },
+    {
+      "name": "Skills创建/更新",
+      "hours": 1.5,
+      "files": 3,
+      "summary": "新建level2-data-pipeline和data-cleanup-safety，更新kline-data-update",
+      "efficiency": "high"
+    },
+    {
+      "name": "雪球每日摘要调测",
+      "hours": 1.5,
+      "files": 4,
+      "summary": "4/7失败反复重试，Playwright回退不稳定",
+      "efficiency": "low"
+    },
+    {
+      "name": "概念板块数据",
+      "hours": 1.0,
+      "files": 2,
+      "summary": "THS/DC双源概念板块成分股获取",
+      "efficiency": "high"
+    },
+    {
+      "name": "其他(review/排查)",
+      "hours": 0.5,
+      "files": 0,
+      "summary": "损伤文件分析+编码排查",
+      "efficiency": "medium"
+    }
+  ],
+  "files_created": 50,
+  "automation_runs": 43,
+  "suggestions": [
+    "雪球自动化失败根因排查：分析4次失败共同模式，修复Playwright回退/空数据逻辑",
+    "自动化健康度看板：Dashboard展示各自动化7日成功率，低于50%红色告警",
+    "未来产业周报自动刷新：修复缓存刷新机制或添加过期告警(>7天)",
+    "Level2并行探索前置规则：遇到并行问题时优先查文档/快速验证",
+    "晚场部署SSH稳定性：添加重试机制(最多3次间隔30s)",
+    "2024Q4特征提取：l2_daily已有61天数据，待启动阶段2"
+  ],
+  "_filename": "2026-06-21.json",
+  "_saved_at": "2026-06-21T20:15:23.585433+08:00"
+}

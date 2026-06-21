@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>情绪周期 RPS 选股</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f6fa; color: #333; line-height: 1.5; }
+.container { max-width: 1600px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 20px 24px; border-radius: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.header h1 { font-size: 20px; font-weight: 600; }
+.header .meta { font-size: 13px; color: #8892b0; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.header .meta select { padding: 6px 10px; border-radius: 6px; border: 1px solid #3a3f5c; background: #1e2040; color: #fff; font-size: 13px; cursor: pointer; }
+
+/* Cards */
+.cards-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.card { background: #fff; border-radius: 8px; padding: 14px 16px; flex: 1; min-width: 200px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 12px; color: #888; margin-bottom: 6px; font-weight: 500; }
+.card-content { font-size: 13px; color: #333; max-height: 120px; overflow-y: auto; }
+.card-content .item { display: inline-block; background: #f0f3ff; color: #4a6cf7; padding: 2px 8px; border-radius: 4px; margin: 2px 4px 2px 0; font-size: 12px; }
+.card-content .item.red { background: #ffeaea; color: #e53e3e; }
+.card-content .item.gold { background: #fff8e1; color: #d69e2e; }
+
+/* Module section */
+.module { background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); margin-bottom: 24px; overflow: hidden; }
+.module-header { background: #f8f9fc; padding: 14px 20px; border-bottom: 1px solid #e8eaed; display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
+.module-header h2 { font-size: 16px; font-weight: 600; }
+.module-header .count { font-size: 12px; color: #888; }
+.module-header .toggle { margin-left: auto; color: #999; font-size: 14px; transition: transform 0.2s; }
+.module-body { padding: 0; overflow-x: auto; }
+.module-body.collapsed { display: none; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; font-size: 13px; white-space: nowrap; }
+thead th { background: #f8f9fc; padding: 10px 12px; text-align: left; font-weight: 600; color: #555; border-bottom: 2px solid #e8eaed; cursor: pointer; position: sticky; top: 0; z-index: 1; white-space: nowrap; }
+thead th:hover { background: #eef0f5; }
+thead th .sort-icon { font-size: 10px; margin-left: 4px; color: #bbb; }
+thead th.sorted .sort-icon { color: #4a6cf7; }
+tbody td { padding: 8px 12px; border-bottom: 1px solid #f0f1f3; }
+tbody tr:hover { background: #f8f9ff; }
+tbody tr.clickable { cursor: pointer; }
+tbody tr.clickable:hover { background: #eef0ff; }
+tbody tr.selected { background: #e8ecff !important; }
+
+/* RPS colors */
+.rps-red { color: #e53e3e; font-weight: 600; }
+.rps-default { color: #666; }
+.name-red { color: #e53e3e; font-weight: 600; }
+.name-yellow { color: #d69e2e; font-weight: 600; }
+.name-green { color: #38a169; }
+
+/* Chart panel */
+.chart-panel { display: none; padding: 16px 20px; border-top: 1px solid #e8eaed; background: #fafbfc; }
+.chart-panel.active { display: block; }
+.chart-panel h3 { font-size: 14px; margin-bottom: 10px; color: #555; }
+.chart-container { height: 300px; position: relative; }
+.chart-close { float: right; cursor: pointer; color: #999; font-size: 16px; padding: 0 4px; }
+.chart-close:hover { color: #333; }
+
+/* Badges */
+.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+.badge-red { background: #ffeaea; color: #e53e3e; }
+.badge-green { background: #e6ffed; color: #38a169; }
+.badge-blue { background: #ebf4ff; color: #4a6cf7; }
+
+/* Concept list in cell */
+.concept-list { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+.concept-list .badge { margin: 1px 2px; }
+
+/* Summary card */
+.summary-table { width: 100%; font-size: 12px; }
+.summary-table td { padding: 2px 8px; }
+.summary-table .bar { display: inline-block; height: 12px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+.summary-table .bar-one { background: #d69e2e; }
+.summary-table .bar-three { background: #e53e3e; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .header { padding: 14px 16px; }
+  .cards-row { flex-direction: column; }
+  table { font-size: 12px; }
+  thead th, tbody td { padding: 6px 8px; }
+}
+
+/* Filter/Search */
+.filter-bar { padding: 10px 20px; background: #fafbfc; border-bottom: 1px solid #eee; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.filter-bar input[type="text"] { padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 200px; }
+.filter-bar label { font-size: 12px; color: #666; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>📊 情绪周期 RPS 选股</h1>
+      <div class="meta">
+        <span>数据日期: <select id="dateSelect" onchange="loadDate(this.value)"></select></span>
+        <span id="updateTime"></span>
+        <span>⚠️ 数据仅供参考，不构成投资建议</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Module 1: 板块 RPS ==================== -->
+  <div class="module" id="module1">
+    <div class="module-header" onclick="toggleModule('module1')">
+      <h2>📋 板块 RPS 情况</h2>
+      <span class="count" id="sectorCount"></span>
+      <span class="toggle">▼</span>
+    </div>
+
+    <!-- Cards -->
+    <div style="padding: 16px 20px 0;">
+      <div class="cards-row">
+        <div class="card">
+          <div class="card-title">🔴 当日新进 5日RPS 一线红板块</div>
+          <div class="card-content" id="card-new-one-sector"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔴 当日新进 RPS 三线红板块</div>
+          <div class="card-content" id="card-new-three-sector"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🏆 一级行业排名（细分板块一线红/三线红 前五）</div>
+          <div class="card-content" id="card-l1-rank"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="sectorSearch" placeholder="搜索板块名称..." oninput="filterTable('sectorBody', this.value)">
+      <label><input type="checkbox" id="sectorOneRedOnly" onclick="applySectorFilter()"> 仅显示一线红+</label>
+    </div>
+
+    <div class="module-body" id="sectorBody-wrap">
+      <table id="sectorTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable('sectorTable', 0, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 1, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 2, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 3, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+          </tr>
+        </thead>
+        <tbody id="sectorBody"></tbody>
+      </table>
+    </div>
+    <div class="chart-panel" id="sectorChartPanel">
+      <span class="chart-close" onclick="closeChart('sectorChartPanel')">✕</span>
+      <h3 id="sectorChartTitle"></h3>
+      <div class="chart-container"><canvas id="sectorChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ==================== Module 2: 概念 RPS ==================== -->
+  <div class="module" id="module2">
+    <div class="module-header" onclick="toggleModule('module2')">
+      <h2>💡 概念 RPS 情况（一线红及以上）</h2>
+      <span class="count" id="conceptCount"></span>
+      <span class="toggle">▼</span>
+    </div>
+
+    <div style="padding: 16px 20px 0;">
+      <div class="cards-row">
+        <div class="card">
+          <div class="card-title">🔴 当日新进 5日RPS 一线红概念</div>
+          <div class="card-content" id="card-new-one-concept"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔴 当日新进 RPS 三线红概念</div>
+          <div class="card-content" id="card-new-three-concept"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="conceptSearch" placeholder="搜索概念名称..." oninput="filterTable('conceptBody', this.value)">
+    </div>
+
+    <div class="module-body" id="conceptBody-wrap">
+      <table id="conceptTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable('conceptTable', 0, this)" data-type="string">概念名称 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 1, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+          </tr>
+        </thead>
+        <tbody id="conceptBody"></tbody>
+      </table>
+    </div>
+    <div class="chart-panel" id="conceptChartPanel">
+      <span class="chart-close" onclick="closeChart('conceptChartPanel')">✕</span>
+      <h3 id="conceptChartTitle"></h3>
+      <div class="chart-container"><canvas id="conceptChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ==================== Module 3: 个股 RPS ==================== -->
+  <div class="module" id="module3">
+    <div class="module-header" onclick="toggleModule('module3')">
+      <h2>📈 个股 RPS 情况（一线红及以上）</h2>
+      <span class="count" id="stockCount"></span>
+      <span class="toggle">▼</span>
+    </div>
+
+    <div style="padding: 16px 20px 0;">
+      <div class="cards-row">
+        <div class="card">
+          <div class="card-title">🔴 当日新进 RPS 一线红个股</div>
+          <div class="card-content" id="card-new-one-stock"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔴 当日新进 RPS 三线红个股</div>
+          <div class="card-content" id="card-new-three-stock"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🆕 当日新进百日新高</div>
+          <div class="card-content" id="card-new-100d"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔥 首板/二板 + 新进一线红</div>
+          <div class="card-content" id="card-board12-one"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔥 首板/二板 + 新进三线红</div>
+          <div class="card-content" id="card-board12-three"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="stockSearch" placeholder="搜索个股名称/代码..." oninput="filterTable('stockBody', this.value)">
+      <label><input type="checkbox" id="stockThreeRedOnly" onclick="applyStockFilter()"> 仅显示三线红</label>
+      <label><input type="checkbox" id="stockBoard12Only" onclick="applyStockFilter()"> 仅显示首板/二板</label>
+      <label><input type="checkbox" id="stock100dOnly" onclick="applyStockFilter()"> 仅显示百日新高</label>
+    </div>
+
+    <div class="module-body" id="stockBody-wrap">
+      <table id="stockTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable('stockTable', 0, this)" data-type="string">个股名称 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 1, this)" data-type="string">个股代码 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 2, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 3, this)" data-type="number">流通市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 4, this)" data-type="number">50日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 5, this)" data-type="number">120日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 6, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 7, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 8, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 9, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 10, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 11, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 12, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 13, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 14, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
+          </tr>
+        </thead>
+        <tbody id="stockBody"></tbody>
+      </table>
+    </div>
+    <div class="chart-panel" id="stockChartPanel">
+      <span class="chart-close" onclick="closeChart('stockChartPanel')">✕</span>
+      <h3 id="stockChartTitle"></h3>
+      <div class="chart-container"><canvas id="stockChart"></canvas></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// 全局状态
+// ============================================================
+let currentData = null;
+let historyData = null;
+let currentDate = null;
+let sortState = {}; // tableId → {colIndex, direction}
+let activeCharts = {};
+
+// ============================================================
+// 初始化
+// ============================================================
+async function init() {
+  try {
+    // 并行加载 history 和日期列表
+    const [hResp] = await Promise.all([
+      fetch('../data/sentiment-rps/history.json')
+    ]);
+    historyData = await hResp.json();
+    
+    // 从 history 或快照获取可用日期
+    if (historyData && historyData.dates && historyData.dates.length > 0) {
+      const dates = historyData.dates;
+      currentDate = dates[dates.length - 1];
+      populateDateSelector(dates);
+      await loadDate(currentDate);
+    } else {
+      // Fallback: 尝试从 data 目录获取
+      await discoverDates();
+    }
+  } catch (e) {
+    console.error('初始化失败:', e);
+    document.body.innerHTML += '<div style="padding:40px;text-align:center;color:#e53e3e;">⚠️ 数据加载失败，请先运行 RPS 计算引擎</div>';
+  }
+}
+
+async function discoverDates() {
+  try {
+    const resp = await fetch('../data/sentiment-rps/');
+    const text = await resp.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+    const links = doc.querySelectorAll('a');
+    const dates = [];
+    links.forEach(a => {
+      const m = a.href.match(/(\d{8})\.json/);
+      if (m) dates.push(m[1]);
+    });
+    dates.sort();
+    if (dates.length > 0) {
+      currentDate = dates[dates.length - 1];
+      populateDateSelector(dates);
+      await loadDate(currentDate);
+    }
+  } catch (e) { console.error('日期发现失败:', e); }
+}
+
+function populateDateSelector(dates) {
+  const sel = document.getElementById('dateSelect');
+  sel.innerHTML = '';
+  dates.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}`;
+    if (d === currentDate) opt.selected = true;
+    sel.appendChild(opt);
+  });
+}
+
+// ============================================================
+// 数据加载
+// ============================================================
+async function loadDate(dateStr) {
+  currentDate = dateStr;
+  try {
+    const resp = await fetch(`../data/sentiment-rps/${dateStr}.json`);
+    currentData = await resp.json();
+    document.getElementById('updateTime').textContent = `更新于 ${currentData.date_display}`;
+    renderAll();
+  } catch (e) {
+    console.error('加载日期失败:', e);
+  }
+}
+
+// ============================================================
+// 渲染
+// ============================================================
+function renderAll() {
+  renderSectors();
+  renderConcepts();
+  renderStocks();
+  renderHighlights();
+}
+
+// ---- 板块渲染 ----
+function renderSectors() {
+  const sectors = currentData.sectors || [];
+  const tbody = document.getElementById('sectorBody');
+  document.getElementById('sectorCount').textContent = `共 ${sectors.length} 个细分行业`;
+  
+  tbody.innerHTML = sectors.map(s => {
+    const rl = s.red_lines || 0;
+    let nameClass = 'name-green';
+    if (rl >= 3) nameClass = 'name-red';
+    else if (rl >= 1) nameClass = 'name-yellow';
+    
+    const rpsCols = ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d'];
+    const rpsCells = rpsCols.map(c => {
+      const v = s[c] || 0;
+      const cls = v >= 90 ? 'rps-red' : 'rps-default';
+      return `<td class="${cls}">${v.toFixed(1)}</td>`;
+    }).join('');
+    
+    return `<tr class="clickable" onclick="showSectorChart('${s.sector_name}')" data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}">
+      <td class="${nameClass}">${s.sector_name}</td>
+      <td>${s['申万行业'] || '-'}</td>
+      <td>${s['申万产业'] || '-'}</td>
+      ${rpsCells}
+    </tr>`;
+  }).join('');
+  
+  applySectorFilter();
+}
+
+// ---- 概念渲染 ----
+function renderConcepts() {
+  const concepts = currentData.concepts || [];
+  document.getElementById('conceptCount').textContent = `共 ${concepts.length} 个概念`;
+  
+  const tbody = document.getElementById('conceptBody');
+  tbody.innerHTML = concepts.map(c => {
+    const rl = c.red_lines || 0;
+    let nameClass = 'name-yellow';
+    if (rl >= 3) nameClass = 'name-red';
+    
+    const rpsCols = ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d'];
+    const rpsCells = rpsCols.map(col => {
+      const v = c[col] || 0;
+      const cls = v >= 90 ? 'rps-red' : 'rps-default';
+      return `<td class="${cls}">${v.toFixed(1)}</td>`;
+    }).join('');
+    
+    return `<tr class="clickable" onclick="showConceptChart('${c.concept_name}')" data-search="${c.concept_name}">
+      <td class="${nameClass}">${c.concept_name}</td>
+      <td>${c.member_count || 0}</td>
+      ${rpsCells}
+    </tr>`;
+  }).join('');
+}
+
+// ---- 个股渲染 ----
+function renderStocks() {
+  const stocks = currentData.stocks || [];
+  document.getElementById('stockCount').textContent = `共 ${stocks.length} 只个股`;
+  
+  const tbody = document.getElementById('stockBody');
+  tbody.innerHTML = stocks.map(s => {
+    const isThreeRed = (s.rps_50d > 90 && s.rps_120d > 93 && s.rps_250d > 95);
+    let nameClass = 'name-yellow';
+    if (isThreeRed) nameClass = 'name-red';
+    
+    const rpsCells = ['rps_50d', 'rps_120d', 'rps_250d'].map(col => {
+      const v = s[col] || 0;
+      return `<td class="rps-red">${v.toFixed(1)}</td>`;
+    }).join('');
+    
+    const high100 = s.is_100d_high ? '<span class="badge badge-red">✅ 新高</span>' : '<span class="rps-default">—</span>';
+    const conLimits = s.consecutive_limits > 0 ? `<span class="badge badge-red">${s.consecutive_limits}板</span>` : '—';
+    
+    const concepts = (s.concepts || []).slice(0, 5).map(c => `<span class="badge badge-blue">${c}</span>`).join(' ');
+    
+    return `<tr class="clickable" onclick="showStockChart('${s.code}')" data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}">
+      <td class="${nameClass}">${s.name || s.code}</td>
+      <td>${s.code}</td>
+      <td>${(s.total_mv||0).toFixed(0)}</td>
+      <td>${(s.float_mv||0).toFixed(0)}</td>
+      ${rpsCells}
+      <td>${conLimits}</td>
+      <td>${high100}</td>
+      <td>${s.sector_l1 || '-'}</td>
+      <td>${s.sector_l2 || '-'}</td>
+      <td>${s.sector_l3 || '-'}</td>
+      <td>${s.sector_limit_count || 0}</td>
+      <td class="concept-list">${concepts}</td>
+      <td>${s.concept_limit_count || 0}</td>
+    </tr>`;
+  }).join('');
+  
+  applyStockFilter();
+}
+
+// ---- 卡片渲染 ----
+function renderHighlights() {
+  const h = currentData.highlights || {};
+  const sectors = currentData.sectors || [];
+  
+  // 板块名称映射
+  const sectorMap = {};
+  sectors.forEach(s => { sectorMap[s.sector_name] = {l1: s['申万产业']||'', l2: s['申万行业']||''}; });
+  
+  // 卡片1: 新进一线红板块
+  renderCard('card-new-one-sector', h.new_one_red_sectors || [], sectorMap, '板块');
+  // 卡片2: 新进三线红板块
+  renderCard('card-new-three-sector', h.new_three_red_sectors || [], sectorMap, '板块');
+  
+  // 卡片3: 一级行业排名
+  renderL1Rank(h.l1_rank || []);
+  
+  // 概念卡片
+  renderCard('card-new-one-concept', h.new_one_red_concepts || []);
+  renderCard('card-new-three-concept', h.new_three_red_concepts || []);
+  
+  // 个股卡片
+  renderStockCard('card-new-one-stock', h.new_one_red_stocks || []);
+  renderStockCard('card-new-three-stock', h.new_three_red_stocks || []);
+  renderStockCard('card-new-100d', h.new_100d_high_stocks || []);
+  renderStockCard('card-board12-one', h.board12_new_one_red || []);
+  renderStockCard('card-board12-three', h.board12_new_three_red || []);
+}
+
+function renderCard(id, items, sectorMap, label) {
+  const el = document.getElementById(id);
+  if (!items || items.length === 0) {
+    el.innerHTML = '<span style="color:#999;font-size:12px;">无</span>';
+    return;
+  }
+  el.innerHTML = items.map(item => {
+    let cls = 'item';
+    if (sectorMap && sectorMap[item]) cls += ' red';
+    return `<span class="${cls}">${item}</span>`;
+  }).join('');
+}
+
+function renderStockCard(id, items) {
+  const el = document.getElementById(id);
+  if (!items || items.length === 0) {
+    el.innerHTML = '<span style="color:#999;font-size:12px;">无</span>';
+    return;
+  }
+  const stocks = currentData.stocks || [];
+  const stockMap = {};
+  stocks.forEach(s => { stockMap[s.code] = s; });
+  
+  el.innerHTML = items.map(code => {
+    const s = stockMap[code];
+    const isThree = s ? (s.rps_50d > 90 && s.rps_120d > 93 && s.rps_250d > 95) : false;
+    const cls = isThree ? 'item red' : 'item gold';
+    return `<span class="${cls}">${code}</span>`;
+  }).join('');
+}
+
+function renderL1Rank(rankData) {
+  const el = document.getElementById('card-l1-rank');
+  if (!rankData || rankData.length === 0) {
+    el.innerHTML = '<span style="color:#999;font-size:12px;">无数据</span>';
+    return;
+  }
+  
+  const maxOne = Math.max(...rankData.map(r => r[1]), 1);
+  el.innerHTML = `<table class="summary-table">${rankData.map(r => {
+    const [name, oneCnt, threeCnt] = r;
+    const barWidth = Math.round(oneCnt / maxOne * 100);
+    return `<tr>
+      <td style="font-weight:500;">${name}</td>
+      <td><span class="bar bar-one" style="width:${barWidth}px;"></span>一线红 ${oneCnt}</td>
+      <td><span class="bar bar-three" style="width:${Math.round(threeCnt/maxOne*100)}px;"></span>三线红 ${threeCnt}</td>
+    </tr>`;
+  }).join('')}</table>`;
+}
+
+// ============================================================
+// 排序
+// ============================================================
+function sortTable(tableId, colIndex, thEl) {
+  const tbodyId = tableId.replace('Table', 'Body');
+  const tbody = document.getElementById(tbodyId);
+  const rows = Array.from(tbody.rows);
+  const dataType = thEl.getAttribute('data-type') || 'string';
+  
+  // 排序方向
+  const key = `${tableId}_${colIndex}`;
+  if (!sortState[key]) sortState[key] = 'asc';
+  else sortState[key] = sortState[key] === 'asc' ? 'desc' : 'asc';
+  const direction = sortState[key];
+  
+  // 清除其他列的排序标记
+  thEl.parentElement.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
+  thEl.classList.add('sorted');
+  
+  rows.sort((a, b) => {
+    let va = a.cells[colIndex].textContent.trim();
+    let vb = b.cells[colIndex].textContent.trim();
+    
+    if (dataType === 'number') {
+      va = parseFloat(va) || 0;
+      vb = parseFloat(vb) || 0;
+      return direction === 'asc' ? va - vb : vb - va;
+    }
+    return direction === 'asc' ? va.localeCompare(vb, 'zh') : vb.localeCompare(va, 'zh');
+  });
+  
+  rows.forEach(row => tbody.appendChild(row));
+}
+
+// ============================================================
+// 过滤器
+// ============================================================
+function filterTable(bodyId, query) {
+  const tbody = document.getElementById(bodyId);
+  const rows = tbody.rows;
+  const q = query.toLowerCase();
+  
+  for (let i = 0; i < rows.length; i++) {
+    const searchText = (rows[i].getAttribute('data-search') || '').toLowerCase();
+    const visible = q === '' || searchText.includes(q);
+    
+    // 额外检查模块特定过滤
+    if (bodyId === 'sectorBody' && document.getElementById('sectorOneRedOnly').checked) {
+      const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
+      if (rl < 1) { rows[i].style.display = 'none'; continue; }
+    }
+    if (bodyId === 'stockBody') {
+      if (document.getElementById('stockThreeRedOnly').checked && rows[i].getAttribute('data-three-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stockBoard12Only').checked && rows[i].getAttribute('data-board12') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stock100dOnly').checked && rows[i].getAttribute('data-100d') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+    }
+    
+    rows[i].style.display = visible ? '' : 'none';
+  }
+}
+
+function applySectorFilter() {
+  // 为 sector 行添加 data-red-lines
+  const sectors = currentData.sectors || [];
+  const rows = document.getElementById('sectorBody').rows;
+  if (sectors.length === rows.length) {
+    for (let i = 0; i < rows.length; i++) {
+      rows[i].setAttribute('data-red-lines', sectors[i].red_lines || 0);
+    }
+  }
+  filterTable('sectorBody', document.getElementById('sectorSearch').value);
+}
+
+function applyStockFilter() {
+  filterTable('stockBody', document.getElementById('stockSearch').value);
+}
+
+// ============================================================
+// 折线图
+// ============================================================
+let chartInstances = {};
+
+function showSectorChart(name) {
+  showChart('sectorChartPanel', 'sectorChart', name, '板块RPS趋势', 'sectors', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+}
+
+function showConceptChart(name) {
+  showChart('conceptChartPanel', 'conceptChart', name, '概念RPS趋势', 'concepts', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+}
+
+function showStockChart(code) {
+  showChart('stockChartPanel', 'stockChart', code, '个股RPS趋势', 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
+}
+
+function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
+  if (!historyData || !historyData[dataKey] || !historyData[dataKey][name]) {
+    console.warn(`无历史数据: ${name}`);
+    return;
+  }
+  
+  const panel = document.getElementById(panelId);
+  panel.classList.add('active');
+  document.getElementById(canvasId.replace('Chart', 'ChartTitle')).textContent = `${titlePrefix}: ${name}`;
+  
+  const entityData = historyData[dataKey][name];
+  const dates = historyData.dates;
+  const datasets = periods.map((p, i) => {
+    const colors = ['#e53e3e', '#4a6cf7', '#38a169', '#d69e2e'];
+    return {
+      label: p,
+      data: dates.map(d => {
+        const dayData = entityData.data[d];
+        return dayData ? dayData[p] : null;
+      }),
+      borderColor: colors[i],
+      backgroundColor: colors[i] + '20',
+      borderWidth: 2,
+      pointRadius: 2,
+      tension: 0.2,
+    };
+  });
+  
+  // 销毁旧图表
+  if (chartInstances[canvasId]) {
+    chartInstances[canvasId].destroy();
+  }
+  
+  const ctx = document.getElementById(canvasId).getContext('2d');
+  chartInstances[canvasId] = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: dates.map(d => `${d.slice(4,6)}/${d.slice(6,8)}`),
+      datasets: datasets,
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'top' },
+      },
+      scales: {
+        y: {
+          min: 0,
+          max: 100,
+          ticks: { callback: v => v + '%' },
+        },
+      },
+      interaction: { mode: 'index', intersect: false },
+    },
+  });
+}
+
+function closeChart(panelId) {
+  document.getElementById(panelId).classList.remove('active');
+}
+
+// ============================================================
+// 模块折叠
+// ============================================================
+function toggleModule(moduleId) {
+  const module = document.getElementById(moduleId);
+  const body = module.querySelector('.module-body');
+  const chartPanel = module.querySelector('.chart-panel');
+  const toggle = module.querySelector('.toggle');
+  
+  body.classList.toggle('collapsed');
+  if (chartPanel) chartPanel.classList.remove('active');
+  toggle.textContent = body.classList.contains('collapsed') ? '▶' : '▼';
+}
+
+// 启动
+init();
+</script>
+</body>
+</html>

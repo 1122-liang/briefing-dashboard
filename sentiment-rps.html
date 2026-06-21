@@ -321,7 +321,7 @@ async function init() {
     
     statusEl.textContent = '正在加载 history.json (22MB)...';
     
-    const hResp = await fetch('../data/sentiment-rps/history.json');
+    const hResp = await fetch('data/sentiment-rps/history.json');
     if (!hResp.ok) throw new Error(`history.json HTTP ${hResp.status}`);
     historyData = await hResp.json();
     
@@ -343,7 +343,7 @@ async function init() {
 
 async function loadHistoryAsync() {
   try {
-    const hResp = await fetch('../data/sentiment-rps/history.json');
+    const hResp = await fetch('data/sentiment-rps/history.json');
     if (hResp.ok) {
       historyData = await hResp.json();
       if (historyData.dates) {
@@ -357,7 +357,7 @@ async function loadHistoryAsync() {
 
 async function discoverDates() {
   try {
-    const resp = await fetch('../data/sentiment-rps/');
+    const resp = await fetch('data/sentiment-rps/');
     const text = await resp.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(text, 'text/html');
@@ -395,7 +395,7 @@ async function loadDate(dateStr) {
   currentDate = dateStr;
   const statusEl = document.getElementById('updateTime');
   try {
-    const resp = await fetch(`../data/sentiment-rps/${dateStr}.json`);
+    const resp = await fetch(`data/sentiment-rps/${dateStr}.json`);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     currentData = await resp.json();
     statusEl.textContent = `更新于 ${currentData.date_display}`;

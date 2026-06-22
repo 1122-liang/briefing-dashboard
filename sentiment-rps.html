@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>情绪周期 RPS 选股</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <script>
 // ============================================================
 // 内嵌当日数据（由脚本自动生成，避免 fetch 跨域问题）
@@ -735,15 +735,30 @@ function showStockChart(code) {
 function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
   const panel = document.getElementById(panelId);
   panel.classList.add('active');
-  document.getElementById(canvasId.replace('Chart', 'ChartTitle')).textContent = `${titlePrefix}: ${name}`;
   
-  // 优先使用 historyData（从 fetch 加载）
+  // 标题元素
+  const titleEl = document.getElementById(canvasId.replace('Chart', 'ChartTitle'));
+  if (titleEl) titleEl.textContent = `${titlePrefix}: ${name}`;
+  
+  // 确保 chart-container 有 canvas
+  const container = panel.querySelector('.chart-container');
+  if (!container) {
+    console.error('chart-container not found in', panelId);
+    return;
+  }
+  // 重置 container 内容（清除之前的 fallback HTML）
+  container.innerHTML = '<canvas id="' + canvasId + '"></canvas>';
+  
+  // 查找实体数据：优先 historyData，其次 EMBEDDED_HISTORY
   let entityData = null;
   let dates = [];
   
   if (historyData && historyData[dataKey] && historyData[dataKey][name]) {
     entityData = historyData[dataKey][name];
     dates = historyData.dates;
+  } else if (typeof EMBEDDED_HISTORY === 'object' && EMBEDDED_HISTORY[dataKey] && EMBEDDED_HISTORY[dataKey][name]) {
+    entityData = EMBEDDED_HISTORY[dataKey][name];
+    dates = EMBEDDED_HISTORY.dates;
   }
   
   if (!entityData) {
@@ -753,10 +768,7 @@ function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
       const keyField = dataKey === 'sectors' ? 'sector_name' : dataKey === 'concepts' ? 'concept_name' : 'code';
       const item = items.find(i => i[keyField] === name);
       if (item) {
-        // 显示提示信息
-        const ctx = document.getElementById(canvasId).getContext('2d');
-        if (chartInstances[canvasId]) chartInstances[canvasId].destroy();
-        panel.querySelector('.chart-container').innerHTML = 
+        container.innerHTML = 
           `<div style="text-align:center;padding:40px;color:#999;">` +
           `<p style="font-size:14px;margin-bottom:8px;">📊 ${name} 当日RPS</p>` +
           `<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">` +
@@ -765,11 +777,12 @@ function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
             const color = v >= 90 ? '#e53e3e' : v >= 50 ? '#d69e2e' : '#38a169';
             return `<div style="text-align:center;"><div style="font-size:24px;font-weight:bold;color:${color};">${v != null ? v.toFixed(1) : '-'}</div><div style="font-size:11px;color:#888;">${p}</div></div>`;
           }).join('') +
-          `</div><p style="font-size:12px;color:#aaa;margin-top:16px;">折线图需通过网络加载 history.json（22MB）<br>请访问在线版获取完整折线图功能</p></div>`;
+          `</div></div>`;
         return;
       }
     }
     console.warn(`无历史数据: ${name}`);
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:#999;">无历史数据</div>';
     return;
   }
   const datasets = periods.map((p, i) => {
@@ -793,7 +806,13 @@ function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
     chartInstances[canvasId].destroy();
   }
   
-  const ctx = document.getElementById(canvasId).getContext('2d');
+  // 确保画布存在
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) {
+    console.error('Canvas not found:', canvasId);
+    return;
+  }
+  const ctx = canvas.getContext('2d');
   chartInstances[canvasId] = new Chart(ctx, {
     type: 'line',
     data: {

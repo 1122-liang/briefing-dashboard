@@ -445,17 +445,80 @@ async function loadDate(dateStr) {
   currentDate = dateStr;
   const statusEl = document.getElementById('updateTime');
   try {
+    // 优先尝试从服务器加载完整快照
     const resp = await fetch(`data/sentiment-rps/${dateStr}.json`);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    currentData = await resp.json();
-    statusEl.textContent = `更新于 ${currentData.date_display}`;
-    statusEl.style.color = '#8892b0';
-    renderAll();
-  } catch (e) {
-    console.error('加载日期失败:', e);
-    statusEl.textContent = '❌ 加载失败: ' + e.message;
-    statusEl.style.color = '#e53e3e';
+    if (resp.ok) {
+      currentData = await resp.json();
+      statusEl.textContent = `更新于 ${currentData.date_display}`;
+      statusEl.style.color = '#8892b0';
+      renderAll();
+      setupClickHandlers();
+      return;
+    }
+  } catch(e) {
+    // fetch 失败，尝试从内嵌数据重建
   }
+  
+  // Fallback: 从 EMBEDDED_HISTORY 重建当日数据
+  if (typeof EMBEDDED_HISTORY === 'object' && EMBEDDED_HISTORY.dates) {
+    const h = EMBEDDED_HISTORY;
+    const sectors = [];
+    for (const [name, info] of Object.entries(h.sectors || {})) {
+      const dayData = info.data[dateStr];
+      if (!dayData) continue;
+      const rl = ['rps_5d','rps_10d','rps_15d','rps_20d'].filter(p => (dayData[p]||0) >= 90).length;
+      sectors.push({
+        sector_name: name, '申万行业': info.l2 || '', '申万产业': info.l1 || '',
+        rps_5d: dayData.rps_5d, rps_10d: dayData.rps_10d,
+        rps_15d: dayData.rps_15d, rps_20d: dayData.rps_20d,
+        red_lines: rl, limit_up_count: 0
+      });
+    }
+    
+    const concepts = [];
+    for (const [name, info] of Object.entries(h.concepts || {})) {
+      const dayData = info.data[dateStr];
+      if (!dayData) continue;
+      const rl = ['rps_5d','rps_10d','rps_15d','rps_20d'].filter(p => (dayData[p]||0) >= 90).length;
+      concepts.push({
+        concept_name: name, rps_5d: dayData.rps_5d, rps_10d: dayData.rps_10d,
+        rps_15d: dayData.rps_15d, rps_20d: dayData.rps_20d,
+        red_lines: rl, member_count: 0, limit_up_count: 0
+      });
+    }
+    
+    const stocks = [];
+    for (const [code, info] of Object.entries(h.stocks || {})) {
+      const dayData = info.data[dateStr];
+      if (!dayData) continue;
+      const rps50 = dayData.rps_50d || 0, rps120 = dayData.rps_120d || 0, rps250 = dayData.rps_250d || 0;
+      stocks.push({
+        code: code, name: code, rps_50d: rps50, rps_120d: rps120, rps_250d: rps250,
+        consecutive_limits: 0, is_100d_high: false, near_100d_high: false,
+        sector_l1: '', sector_l2: '', sector_l3: '',
+        sector_limit_count: 0, sector_three_red: false,
+        concepts: [], top_concept: null, top_concept_limit: 0, concept_limit_count: 0,
+        total_mv: 0, float_mv: 0, market: 'sz'
+      });
+    }
+    
+    currentData = {
+      date: dateStr,
+      date_display: dateStr.slice(0,4)+'-'+dateStr.slice(4,6)+'-'+dateStr.slice(6,8),
+      sectors: sectors, concepts: concepts, stocks: stocks,
+      highlights: {}
+    };
+    
+    const displayDate = currentData.date_display;
+    statusEl.textContent = `更新于 ${displayDate}（精简数据）`;
+    statusEl.style.color = '#d69e2e';
+    renderAll();
+    setupClickHandlers();
+    return;
+  }
+  
+  statusEl.textContent = '❌ 加载失败: 无可用数据';
+  statusEl.style.color = '#e53e3e';
 }
 
 // ============================================================

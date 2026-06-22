@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T08:50:05.772664+08:00",
+  "window_hours": 72,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "NSA曝Mythos数小时内攻破其几乎所有机密系统",
+      "industry": "AI安全",
+      "type": "重大事件",
+      "summary": "美国NSA局长承认，Anthropic Mythos模型数小时内攻破了其几乎所有机密系统。此前Mythos已在5天内破解MacOS，而Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。全球约20亿苹果设备中高价值用户面临前所未有的AI攻击威胁。",
+      "investment_logic": "AI驱动网络攻防进入质变阶段，单一AI模型的攻击能力已超越国家级黑客团队数月的工作量。AI安全防护、零信任架构、AI驱动的安全测试成为刚需。全球网络安全市场将因AI攻击能力跃升而迎来新一轮需求爆发，AI安全公司直接受益。",
+      "target_stocks": "美股CrowdStrike(CRWD)、Palo Alto Networks(PANW)；A股奇安信(688561)、深信服(300454)",
+      "risk_note": "AI安全监管政策不确定性；Mythos能力披露可能引发对AI模型的出口管制升级",
+      "source": "X: AI Safety Memes / NSA局长公开声明"
+    },
+    {
+      "id": 2,
+      "title": "Figure机器人数有史以来首次超过人类员工",
+      "industry": "AI+机器人",
+      "type": "重大事件",
+      "summary": "Figure宣布其机器人数量有史以来首次超过人类员工数量，标志着人形机器人从实验室走向规模化产业部署的历史性拐点。Figure是仅次于特斯拉Optimus的人形机器人头部企业。",
+      "investment_logic": "人形机器人产业化从万台级向更大规模迈进。制造业、物流、仓储等场景的机器人替代进入加速期。Figure的里程碑事件将引爆整个机器人产业链，包括减速器、电机、传感器、控制器等核心零部件，以及机器人整机和系统集成商。人形机器人赛道确定性大幅提升。",
+      "target_stocks": "美股特斯拉(TSLA)；A股绿的谐波(688017)、三花智控(002050)、汇川技术(300124)、拓普集团(601689)",
+      "risk_note": "机器人技术路线不确定性（液压vs电驱）；规模化生产成本控制挑战；Figure尚未上市，A股标的以零部件为主",
+      "source": "X: Rohan Paul / Figure官方"
+    },
+    {
+      "id": 3,
+      "title": "微软成全球最大AI模型中转站——双向转售GPT与DeepSeek",
+      "industry": "AI基础设施/云计算",
+      "type": "行业新方向",
+      "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户，构建起跨中美AI模型的双向贸易网络。微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供。",
+      "investment_logic": "微软Azure通过AI模型中转站角色建立了独特的跨市场地位。左手在中国市场分销GPT，右手在西方市场分销DeepSeek，形成双边网络效应。Azure AI业务有望获得额外增长动力，云基础设施需求同步增长。这一模式验证了AI模型即商品趋势，利好云平台。",
+      "target_stocks": "美股微软(MSFT)",
+      "risk_note": "中美科技脱钩政策风险；AI出口管制可能阻断双向贸易；中国模型在西方市场的合规风险",
+      "source": "X: 阿易AI Notes / 彭博社"
+    },
+    {
+      "id": 4,
+      "title": "AlphaFold负责人John Jumper离职DeepMind加入Anthropic",
+      "industry": "AI+生物科技",
+      "type": "行业新方向",
+      "summary": "AlphaFold团队负责人John Jumper在DeepMind工作近9年后离职，将加入Anthropic。DeepMind CEO Demis Hassabis表示AlphaFold改变了世界。Jumper回忆Hassabis在他博士毕业仅6个月后就大胆让他领导AlphaFold团队。",
+      "investment_logic": "顶级AI生物科技人才从DeepMind流向Anthropic，意味着Anthropic将大力布局AI+生物科技/科学方向。Anthropic IPO在即，生物科技可能成为其差异化的第二增长曲线。AI制药、AI蛋白质设计赛道可能因此加速发展。同时DeepMind-Isomorphic Labs在AI制药的领先地位可能面临挑战。",
+      "target_stocks": "美股Recursion Pharmaceuticals(RXRX)、Schrödinger(SDGR)；港股晶泰科技(02228.HK)；Anthropic(未上市/IPO在即)",
+      "risk_note": "人才流动对项目进度的影响存在滞后性（Jumper先休整一段时间）；AI制药从研发到商业化的周期较长",
+      "source": "X: Demis Hassabis / John Jumper"
+    },
+    {
+      "id": 5,
+      "title": "阿里开源向量数据库Zvec + 因果AI第四代范式提出",
+      "industry": "AI基础设施",
+      "type": "行业新方向",
+      "summary": "阿里将内部使用多年的向量数据库Zvec完全开源（pip install即可免费使用），十亿向量毫秒级检索，对标Pinecone每月70美元的商业产品。同时UCSD黄碧薇教授提出因果AI第四代范式（因果大模型），其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律。",
+      "investment_logic": "向量数据库是RAG和AI搜索的核心基础设施，阿里开源Zvec将大幅降低AI应用部署成本。因果AI第四代范式从相关性到因果推理，可能成为继大语言模型后的下一个技术范式，开启新的投资赛道。开源向量数据库+新一代AI范式的组合降低了整个AI生态的进入门槛，加速应用落地。",
+      "target_stocks": "港股阿里巴巴(09988.HK)；美股Elastic(ESTC)；Pinecone(未上市)",
+      "risk_note": "向量数据库开源化可能压低商业产品定价；因果AI范式仍处于学术早期阶段，商业化路径不明确",
+      "source": "X: 阿易AI Notes / UCSD黄碧薇教授"
+    },
+    {
+      "id": 6,
+      "title": "DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环",
+      "industry": "AI研发自动化",
+      "type": "行业新方向",
+      "summary": "DeepSeek研究员Deli Chen开源AutoResearch协议，AI智能体首次完全自主地在DeepSeek 285B模型上完成完整RL研究闭环——从实验设计、写代码、提交GPU任务、debug到结论总结，全程零人工干预。系统调用了GRPO工具，被视为持续学习研究的开端。",
+      "investment_logic": "AI自主科研取得关键突破，RL研究进入自动化时代。这将极大加速AI模型迭代速度，降低前沿AI研发的门槛。对算力（GPU）和训练数据的需求将进一步爆发式增长。AI研发服务（如AutoML平台、MLOps工具）的价值可能被重新定价。",
+      "target_stocks": "美股英伟达(NVDA)；DeepSeek(未上市)",
+      "risk_note": "AI自主研究的安全风险和伦理争议；自动化研究可能产生不可控的输出",
+      "source": "X: 阿易AI Notes / DeepSeek研究员Deli Chen"
+    },
+    {
+      "id": 7,
+      "title": "NVIDIA SpatialClaw空间推理框架 + Cloudflare Agent基础设施 + Elasticsearch Agent内存层",
+      "industry": "AI基础设施",
+      "type": "行业新方向",
+      "summary": "NVIDIA发布SpatialClaw免训练空间推理框架（20项基准平均准确率59.9%）。Cloudflare推出AI智能体临时账户，允许Agent数秒内部署Worker。Elasticsearch构建持久化代理内存层（R@10召回率0.89），支持MCP协议。三项基础设施升级共同降低了AI Agent开发部署的门槛。",
+      "investment_logic": "空间推理是具身智能和自主Agent的关键瓶颈，NVIDIA的突破将加速机器人、自动驾驶等领域。Cloudflare+Elasticsearch降低Agent部署和记忆的门槛，将催化AI Agent应用的爆发。AI基础设施从模型层向Agent运行时层延伸，云平台、数据平台、边缘计算全面受益。",
+      "target_stocks": "美股英伟达(NVDA)、Cloudflare(NET)、Elastic(ESTC)",
+      "risk_note": "空间推理技术仍处早期，商业化路径不明确；Agent基础设施市场碎片化，标准尚未统一",
+      "source": "MarkTechPost / Cloudflare Blog / Elastic Search Labs"
+    },
+    {
+      "id": 8,
+      "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+      "industry": "AI+消费",
+      "type": "行业新方向",
+      "summary": "美团上线tabbit国际版应用，免费集成GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash以及国内Kimi-2.6、GLM-5.1、MiniMax-M3等旗舰模型，用户无需单独订阅。旨在抢占AI入口，目前处于免费推广阶段。",
+      "investment_logic": "超级应用整合AI模型入口成为新趋势。美团通过免费策略抢占用户AI使用习惯，将AI作为水电煤基础设施嵌入日常消费场景。这一模式可能改变AI应用的分发和商业化格局——AI不再是独立产品，而是超级应用的增值服务。对传统AI订阅模式（ChatGPT Plus、Claude Pro等）形成直接竞争。",
+      "target_stocks": "港股美团(03690.HK)",
+      "risk_note": "免费策略的盈利模式不明确，旗舰模型API调用成本极高；国际版面临海外巨头（OpenAI/Google/Meta）的直接竞争",
+      "source": "X: 阿易AI Notes / 美团tabbit"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-22.json",
+  "_saved_at": "2026-06-22T08:50:05.772956+08:00"
+}

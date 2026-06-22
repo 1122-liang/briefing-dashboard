@@ -159,6 +159,7 @@ tbody tr.selected { background: #e8ecff !important; }
     <div class="filter-bar">
       <input type="text" id="sectorSearch" placeholder="搜索板块名称..." oninput="filterTable('sectorBody', this.value)">
       <label><input type="checkbox" id="sectorOneRedOnly" onclick="applySectorFilter()"> 仅显示一线红+</label>
+      <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
     </div>
 
     <div class="module-body" id="sectorBody-wrap">
@@ -202,6 +203,7 @@ tbody tr.selected { background: #e8ecff !important; }
 
     <div class="filter-bar">
       <input type="text" id="conceptSearch" placeholder="搜索概念名称..." oninput="filterTable('conceptBody', this.value)">
+      <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
     </div>
 
     <div class="module-body" id="conceptBody-wrap">
@@ -261,6 +263,8 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="stock100dOnly" onclick="applyStockFilter()"> 仅显示百日新高</label>
       <label><input type="checkbox" id="stockNear100dOnly" onclick="applyStockFilter()"> 仅显示接近新高</label>
       <label><input type="checkbox" id="stockSectorThreeOnly" onclick="applyStockFilter()"> 仅显示板块三线红</label>
+      <label><input type="checkbox" id="stockNewOneRedOnly" onclick="applyStockFilter()"> 当日新进一线红</label>
+      <label><input type="checkbox" id="stockNewThreeRedOnly" onclick="applyStockFilter()"> 当日新进三线红</label>
     </div>
 
     <div class="module-body" id="stockBody-wrap">
@@ -516,7 +520,7 @@ function renderConcepts() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
-    return `<tr data-search="${c.concept_name}">
+    return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
       <td>${c.member_count || 0}</td>
       ${rpsCells}
@@ -561,7 +565,7 @@ function renderStocks() {
       ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
       : '—';
     
-    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}">
+    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
       ${rpsCells}
@@ -709,9 +713,21 @@ function filterTable(bodyId, query) {
     const visible = q === '' || searchText.includes(q);
     
     // 额外检查模块特定过滤
-    if (bodyId === 'sectorBody' && document.getElementById('sectorOneRedOnly').checked) {
-      const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
-      if (rl < 1) { rows[i].style.display = 'none'; continue; }
+    if (bodyId === 'sectorBody') {
+      if (document.getElementById('sectorOneRedOnly').checked) {
+        const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
+        if (rl < 1) { rows[i].style.display = 'none'; continue; }
+      }
+      if (document.getElementById('sectorThreeRedOnly').checked) {
+        const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
+        if (rl < 3) { rows[i].style.display = 'none'; continue; }
+      }
+    }
+    if (bodyId === 'conceptBody') {
+      if (document.getElementById('conceptThreeRedOnly').checked) {
+        const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
+        if (rl < 3) { rows[i].style.display = 'none'; continue; }
+      }
     }
     if (bodyId === 'stockBody') {
       if (document.getElementById('stockThreeRedOnly').checked && rows[i].getAttribute('data-three-red') !== 'true') {
@@ -727,6 +743,12 @@ function filterTable(bodyId, query) {
         rows[i].style.display = 'none'; continue;
       }
       if (document.getElementById('stockSectorThreeOnly').checked && rows[i].getAttribute('data-sector-three') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stockNewOneRedOnly').checked && rows[i].getAttribute('data-new-one-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stockNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
     }
@@ -745,6 +767,10 @@ function applySectorFilter() {
     }
   }
   filterTable('sectorBody', document.getElementById('sectorSearch').value);
+}
+
+function applyConceptFilter() {
+  filterTable('conceptBody', document.getElementById('conceptSearch').value);
 }
 
 function applyStockFilter() {

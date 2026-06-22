@@ -61,9 +61,14 @@ tbody tr.selected { background: #e8ecff !important; }
 .name-green { color: #38a169; }
 
 /* Chart panel */
-.chart-panel { display: none; padding: 16px 20px; border-top: 1px solid #e8eaed; background: #fafbfc; }
-.chart-panel.active { display: block; }
-.chart-panel h3 { font-size: 14px; margin-bottom: 10px; color: #555; }
+/* 浮动折线图面板 */
+#chartOverlay { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; max-height: 45vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 2px solid #e0e0e0; overflow: hidden; }
+#chartOverlay.active { display: block; }
+#chartOverlay .chart-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-bottom: 1px solid #eee; }
+#chartOverlay .chart-header h3 { font-size: 15px; font-weight: 600; margin: 0; }
+#chartOverlay .chart-close { cursor: pointer; font-size: 20px; padding: 0 5px; color: #999; }
+#chartOverlay .chart-close:hover { color: #e53e3e; }
+#chartOverlay .chart-container { padding: 8px 16px; height: calc(45vh - 50px); }
 .chart-container { height: 300px; position: relative; }
 .chart-close { float: right; cursor: pointer; color: #999; font-size: 16px; padding: 0 4px; }
 .chart-close:hover { color: #333; }
@@ -101,6 +106,16 @@ tbody tr.selected { background: #e8ecff !important; }
 </style>
 </head>
 <body>
+
+<!-- 浮动折线图面板 -->
+<div id="chartOverlay" class="">
+  <div class="chart-header">
+    <h3 id="chartOverlayTitle">RPS 趋势</h3>
+    <span class="chart-close" onclick="document.getElementById('chartOverlay').classList.remove('active')">✕</span>
+  </div>
+  <div class="chart-container"><canvas id="chartOverlayCanvas"></canvas></div>
+</div>
+
 <div class="container">
 
   <!-- Header -->
@@ -162,11 +177,6 @@ tbody tr.selected { background: #e8ecff !important; }
         <tbody id="sectorBody"></tbody>
       </table>
     </div>
-    <div class="chart-panel" id="sectorChartPanel">
-      <span class="chart-close" onclick="closeChart('sectorChartPanel')">✕</span>
-      <h3 id="sectorChartTitle"></h3>
-      <div class="chart-container"><canvas id="sectorChart"></canvas></div>
-    </div>
   </div>
 
   <!-- ==================== Module 2: 概念 RPS ==================== -->
@@ -208,11 +218,6 @@ tbody tr.selected { background: #e8ecff !important; }
         </thead>
         <tbody id="conceptBody"></tbody>
       </table>
-    </div>
-    <div class="chart-panel" id="conceptChartPanel">
-      <span class="chart-close" onclick="closeChart('conceptChartPanel')">✕</span>
-      <h3 id="conceptChartTitle"></h3>
-      <div class="chart-container"><canvas id="conceptChart"></canvas></div>
     </div>
   </div>
 
@@ -282,11 +287,6 @@ tbody tr.selected { background: #e8ecff !important; }
         <tbody id="stockBody"></tbody>
       </table>
     </div>
-    <div class="chart-panel" id="stockChartPanel">
-      <span class="chart-close" onclick="closeChart('stockChartPanel')">✕</span>
-      <h3 id="stockChartTitle"></h3>
-      <div class="chart-container"><canvas id="stockChart"></canvas></div>
-    </div>
   </div>
 
 </div>
@@ -323,6 +323,7 @@ async function init() {
       }
       
       renderAll();
+      setupClickHandlers();
       
       // 异步加载完整 history.json（用于补充日期选择器，本地可能失败但不影响）
       if (!historyData) loadHistoryAsync();
@@ -365,6 +366,40 @@ async function loadHistoryAsync() {
   }
 }
 
+// ============================================================
+// 事件绑定（使用 addEventListener，不依赖内联 onclick）
+// ============================================================
+function setupClickHandlers() {
+  // 板块表格
+  document.getElementById('sectorBody').addEventListener('click', function(e) {
+    const td = e.target.closest('td[data-name]');
+    if (td) {
+      const name = td.getAttribute('data-name');
+      showOverlayChart(name, '板块RPS趋势', 'sectors', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+    }
+  });
+  
+  // 概念表格
+  document.getElementById('conceptBody').addEventListener('click', function(e) {
+    const td = e.target.closest('td[data-name]');
+    if (td) {
+      const name = td.getAttribute('data-name');
+      showOverlayChart(name, '概念RPS趋势', 'concepts', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+    }
+  });
+  
+  // 个股表格
+  document.getElementById('stockBody').addEventListener('click', function(e) {
+    const td = e.target.closest('td[data-code]');
+    if (td) {
+      const code = td.getAttribute('data-code');
+      showOverlayChart(code, '个股RPS趋势', 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
+    }
+  });
+  
+  console.log('✅ 点击事件已绑定');
+}
+
 async function discoverDates() {
   try {
     const resp = await fetch('data/sentiment-rps/');
@@ -382,6 +417,7 @@ async function discoverDates() {
       currentDate = dates[dates.length - 1];
       populateDateSelector(dates);
       await loadDate(currentDate);
+      setupClickHandlers();
     }
   } catch (e) { console.error('日期发现失败:', e); }
 }
@@ -450,7 +486,7 @@ function renderSectors() {
     }).join('');
     
     return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}">
-      <td class="${nameClass}" style="cursor:pointer;text-decoration:underline dotted;" onclick="showSectorChart('${s.sector_name.replace(/'/g, "\\'")}')">${s.sector_name}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
       ${rpsCells}
@@ -481,7 +517,7 @@ function renderConcepts() {
     }).join('');
     
     return `<tr data-search="${c.concept_name}">
-      <td class="${nameClass}" style="cursor:pointer;text-decoration:underline dotted;" onclick="showConceptChart('${c.concept_name.replace(/'/g, "\\'")}')">${c.concept_name}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
       <td>${c.member_count || 0}</td>
       ${rpsCells}
     </tr>`;
@@ -526,7 +562,7 @@ function renderStocks() {
       : '—';
     
     return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}">
-      <td class="${nameClass}" style="cursor:pointer;text-decoration:underline dotted;" onclick="showStockChart('${s.code}')">${s.name || s.code}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
       ${rpsCells}
       <td>${conLimits}</td>
@@ -716,40 +752,19 @@ function applyStockFilter() {
 }
 
 // ============================================================
-// 折线图
+// 浮动折线图（事件委托已在上方 setupClickHandlers 绑定）
 // ============================================================
 let chartInstances = {};
 
-function showSectorChart(name) {
-  showChart('sectorChartPanel', 'sectorChart', name, '板块RPS趋势', 'sectors', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
-}
-
-function showConceptChart(name) {
-  showChart('conceptChartPanel', 'conceptChart', name, '概念RPS趋势', 'concepts', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
-}
-
-function showStockChart(code) {
-  showChart('stockChartPanel', 'stockChart', code, '个股RPS趋势', 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
-}
-
-function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
-  const panel = document.getElementById(panelId);
-  panel.classList.add('active');
+function showOverlayChart(name, titlePrefix, dataKey, periods) {
+  const overlay = document.getElementById('chartOverlay');
+  const canvas = document.getElementById('chartOverlayCanvas');
+  const titleEl = document.getElementById('chartOverlayTitle');
   
-  // 标题元素
-  const titleEl = document.getElementById(canvasId.replace('Chart', 'ChartTitle'));
-  if (titleEl) titleEl.textContent = `${titlePrefix}: ${name}`;
+  overlay.classList.add('active');
+  titleEl.textContent = titlePrefix + ': ' + name;
   
-  // 确保 chart-container 有 canvas
-  const container = panel.querySelector('.chart-container');
-  if (!container) {
-    console.error('chart-container not found in', panelId);
-    return;
-  }
-  // 重置 container 内容（清除之前的 fallback HTML）
-  container.innerHTML = '<canvas id="' + canvasId + '"></canvas>';
-  
-  // 查找实体数据：优先 historyData，其次 EMBEDDED_HISTORY
+  // 数据查找
   let entityData = null;
   let dates = [];
   
@@ -762,83 +777,78 @@ function showChart(panelId, canvasId, name, titlePrefix, dataKey, periods) {
   }
   
   if (!entityData) {
-    // Fallback: 从内嵌快照中提取当日数据（单点）
-    if (typeof EMBEDDED_DATA === 'object' && EMBEDDED_DATA[dataKey]) {
-      const items = EMBEDDED_DATA[dataKey];
-      const keyField = dataKey === 'sectors' ? 'sector_name' : dataKey === 'concepts' ? 'concept_name' : 'code';
-      const item = items.find(i => i[keyField] === name);
-      if (item) {
-        container.innerHTML = 
-          `<div style="text-align:center;padding:40px;color:#999;">` +
-          `<p style="font-size:14px;margin-bottom:8px;">📊 ${name} 当日RPS</p>` +
-          `<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">` +
-          periods.map(p => {
-            const v = item[p];
-            const color = v >= 90 ? '#e53e3e' : v >= 50 ? '#d69e2e' : '#38a169';
-            return `<div style="text-align:center;"><div style="font-size:24px;font-weight:bold;color:${color};">${v != null ? v.toFixed(1) : '-'}</div><div style="font-size:11px;color:#888;">${p}</div></div>`;
-          }).join('') +
-          `</div></div>`;
-        return;
-      }
-    }
-    console.warn(`无历史数据: ${name}`);
-    container.innerHTML = '<div style="text-align:center;padding:40px;color:#999;">无历史数据</div>';
+    canvas.parentElement.innerHTML = '<div style="text-align:center;padding:20px;color:#999;">无历史数据</div>';
     return;
   }
+  
+  // 确保 canvas 存在
+  canvas.parentElement.innerHTML = '<canvas id="chartOverlayCanvas"></canvas>';
+  const chartCanvas = document.getElementById('chartOverlayCanvas');
+  
+  if (typeof Chart === 'undefined') {
+    chartCanvas.parentElement.innerHTML = '<div style="text-align:center;padding:20px;color:#e53e3e;">⚠️ Chart.js 未加载，请检查网络</div>';
+    return;
+  }
+  
+  // 阈值：个股 [50日>90, 120日>93, 250日>95]；板块/概念全部 >90
+  const isStock = dataKey === 'stocks';
+  const thresholds = isStock ? [90, 93, 95] : periods.map(() => 90);
+  const colors = isStock ? ['#2b6cb0', '#38a169', '#d69e2e'] : ['#2b6cb0', '#38a169', '#d69e2e', '#805ad5'];
+  
   const datasets = periods.map((p, i) => {
-    const colors = ['#e53e3e', '#4a6cf7', '#38a169', '#d69e2e'];
+    const data = dates.map(d => {
+      const dayData = entityData.data[d];
+      return dayData ? (dayData[p] != null ? dayData[p] : null) : null;
+    });
+    
     return {
       label: p,
-      data: dates.map(d => {
-        const dayData = entityData.data[d];
-        return dayData ? dayData[p] : null;
-      }),
+      data: data,
       borderColor: colors[i],
       backgroundColor: colors[i] + '20',
       borderWidth: 2,
       pointRadius: 2,
       tension: 0.2,
+      // 线段着色：个股超过阈值时变红
+      segment: {
+        borderColor: (ctx) => {
+          const v0 = ctx.p0.parsed.y, v1 = ctx.p1.parsed.y;
+          if ((v0 != null && v0 >= thresholds[i]) && (v1 != null && v1 >= thresholds[i])) return '#e53e3e';
+          return colors[i];
+        },
+        borderWidth: (ctx) => {
+          const v0 = ctx.p0.parsed.y, v1 = ctx.p1.parsed.y;
+          if ((v0 != null && v0 >= thresholds[i]) && (v1 != null && v1 >= thresholds[i])) return 3;
+          return 2;
+        }
+      },
+      // 点的着色
+      pointBackgroundColor: (ctx) => {
+        const v = data[ctx.dataIndex];
+        return (v != null && v >= thresholds[i]) ? '#e53e3e' : colors[i];
+      },
+      pointBorderColor: (ctx) => {
+        const v = data[ctx.dataIndex];
+        return (v != null && v >= thresholds[i]) ? '#e53e3e' : colors[i];
+      }
     };
   });
   
   // 销毁旧图表
-  if (chartInstances[canvasId]) {
-    chartInstances[canvasId].destroy();
-  }
+  if (chartInstances['overlay']) chartInstances['overlay'].destroy();
   
-  // 确保画布存在
-  const canvas = document.getElementById(canvasId);
-  if (!canvas) {
-    console.error('Canvas not found:', canvasId);
-    return;
-  }
-  const ctx = canvas.getContext('2d');
-  chartInstances[canvasId] = new Chart(ctx, {
+  const ctx = chartCanvas.getContext('2d');
+  chartInstances['overlay'] = new Chart(ctx, {
     type: 'line',
-    data: {
-      labels: dates.map(d => `${d.slice(4,6)}/${d.slice(6,8)}`),
-      datasets: datasets,
-    },
+    data: { labels: dates.map(d => d.slice(4,6) + '/' + d.slice(6,8)), datasets },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'top' },
-      },
-      scales: {
-        y: {
-          min: 0,
-          max: 100,
-          ticks: { callback: v => v + '%' },
-        },
-      },
+      plugins: { legend: { position: 'top', labels: { usePointStyle: true } } },
+      scales: { y: { min: 0, max: 100, ticks: { callback: v => v + '%' } } },
       interaction: { mode: 'index', intersect: false },
     },
   });
-}
-
-function closeChart(panelId) {
-  document.getElementById(panelId).classList.remove('active');
 }
 
 // ============================================================
@@ -847,11 +857,9 @@ function closeChart(panelId) {
 function toggleModule(moduleId) {
   const module = document.getElementById(moduleId);
   const body = module.querySelector('.module-body');
-  const chartPanel = module.querySelector('.chart-panel');
   const toggle = module.querySelector('.toggle');
   
   body.classList.toggle('collapsed');
-  if (chartPanel) chartPanel.classList.remove('active');
   toggle.textContent = body.classList.contains('collapsed') ? '▶' : '▼';
 }
 

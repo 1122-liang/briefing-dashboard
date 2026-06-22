@@ -849,14 +849,8 @@ function showOverlayChart(name, titlePrefix, dataKey, periods) {
         }
       },
       // 点的着色
-      pointBackgroundColor: (ctx) => {
-        const v = data[ctx.dataIndex];
-        return (v != null && v >= thresholds[i]) ? '#e53e3e' : colors[i];
-      },
-      pointBorderColor: (ctx) => {
-        const v = data[ctx.dataIndex];
-        return (v != null && v >= thresholds[i]) ? '#e53e3e' : colors[i];
-      }
+      pointBackgroundColor: colors[i],
+      pointBorderColor: colors[i]
     };
   });
   
@@ -871,7 +865,7 @@ function showOverlayChart(name, titlePrefix, dataKey, periods) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: { legend: { position: 'top', labels: { usePointStyle: true } } },
-      scales: { y: { min: 0, max: 100, ticks: { callback: v => v + '%' } } },
+      scales: { y: { min: isStock ? 50 : 0, max: 100, ticks: { callback: v => v + '%' } } },
       interaction: { mode: 'index', intersect: false },
     },
   });

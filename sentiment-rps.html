@@ -487,14 +487,19 @@ function renderStocks() {
   const stocks = currentData.stocks || [];
   document.getElementById('stockCount').textContent = `共 ${stocks.length} 只个股`;
   
+  function xueqiuUrl(code, market) {
+    const m = (market || '').toUpperCase() || 
+      (code.startsWith('6') ? 'SH' : code.startsWith('4') || code.startsWith('8') || code.startsWith('9') ? 'BJ' : 'SZ');
+    return `https://xueqiu.com/S/${m}${code}`;
+  }
+  
   const tbody = document.getElementById('stockBody');
   tbody.innerHTML = stocks.map(s => {
     const isThreeRed = (s.rps_50d > 90 && s.rps_120d > 93 && s.rps_250d > 95);
     let nameClass = 'name-yellow';
     if (isThreeRed) nameClass = 'name-red';
     
-    // 个股 RPS：阈值内红色，否则默认色
-    const thresholds = [90, 93, 95]; // 50日>90, 120日>93, 250日>95
+    const thresholds = [90, 93, 95];
     const rpsCols = ['rps_50d', 'rps_120d', 'rps_250d'];
     const rpsCells = rpsCols.map((col, i) => {
       const v = s[col] != null ? s[col] : 0;
@@ -504,19 +509,19 @@ function renderStocks() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
+    const url = xueqiuUrl(s.code, s.market);
     const high100 = s.is_100d_high ? '<span class="badge badge-red">✅ 新高</span>' : '<span class="rps-default">—</span>';
     const near100 = s.near_100d_high ? '<span class="badge badge-blue">🔥 接近</span>' : '<span class="rps-default">—</span>';
     const conLimits = s.consecutive_limits > 0 ? `<span class="badge badge-red">${s.consecutive_limits}板</span>` : '—';
     const sectorThree = s.sector_three_red ? '<span class="badge badge-red">✅ 三线红</span>' : '<span class="rps-default">—</span>';
     
-    // 概念显示：最高关联概念 + 涨停数
     const conceptDisplay = s.top_concept 
       ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
       : '—';
     
     return `<tr class="clickable" onclick="showStockChart('${s.code}')" data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}">
       <td class="${nameClass}">${s.name || s.code}</td>
-      <td>${s.code}</td>
+      <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;" onclick="event.stopPropagation()">${s.code}</a></td>
       <td>${(s.total_mv||0).toFixed(0)}</td>
       <td>${(s.float_mv||0).toFixed(0)}</td>
       ${rpsCells}

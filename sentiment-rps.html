@@ -263,21 +263,19 @@ tbody tr.selected { background: #e8ecff !important; }
           <tr>
             <th onclick="sortTable('stockTable', 0, this)" data-type="string">个股名称 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 1, this)" data-type="string">个股代码 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 2, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 3, this)" data-type="number">流通市值(亿) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 4, this)" data-type="number">50日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 5, this)" data-type="number">120日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 6, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 7, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 8, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 9, this)" data-type="string">接近新高 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 10, this)" data-type="string">板块三线红 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 11, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 12, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 13, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 14, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 15, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 16, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 2, this)" data-type="number">50日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 3, this)" data-type="number">120日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 4, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 5, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 6, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 7, this)" data-type="string">接近新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 8, this)" data-type="string">板块三线红 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 9, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 10, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 11, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 12, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 13, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 14, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="stockBody"></tbody>
@@ -522,8 +520,6 @@ function renderStocks() {
     return `<tr class="clickable" onclick="showStockChart('${s.code}')" data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}">
       <td class="${nameClass}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;" onclick="event.stopPropagation()">${s.code}</a></td>
-      <td>${(s.total_mv||0).toFixed(0)}</td>
-      <td>${(s.float_mv||0).toFixed(0)}</td>
       ${rpsCells}
       <td>${conLimits}</td>
       <td>${high100}</td>

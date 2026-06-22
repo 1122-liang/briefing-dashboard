@@ -161,6 +161,8 @@ tbody tr.selected { background: #e8ecff !important; }
       <input type="text" id="sectorSearch" placeholder="搜索板块名称..." oninput="filterTable('sectorBody', this.value)">
       <label><input type="checkbox" id="sectorOneRedOnly" onclick="applySectorFilter()"> 仅显示一线红+</label>
       <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
+      <label><input type="checkbox" id="sectorNewOneRedOnly" onclick="applySectorFilter()"> 当日新进一线红</label>
+      <label><input type="checkbox" id="sectorNewThreeRedOnly" onclick="applySectorFilter()"> 当日新进三线红</label>
     </div>
 
     <div class="module-body" id="sectorBody-wrap">
@@ -205,6 +207,8 @@ tbody tr.selected { background: #e8ecff !important; }
     <div class="filter-bar">
       <input type="text" id="conceptSearch" placeholder="搜索概念名称..." oninput="filterTable('conceptBody', this.value)">
       <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
+      <label><input type="checkbox" id="conceptNewOneRedOnly" onclick="applyConceptFilter()"> 当日新进一线红</label>
+      <label><input type="checkbox" id="conceptNewThreeRedOnly" onclick="applyConceptFilter()"> 当日新进三线红</label>
     </div>
 
     <div class="module-body" id="conceptBody-wrap">
@@ -544,6 +548,9 @@ function renderAll() {
 // ---- 板块渲染 ----
 function renderSectors() {
   const sectors = currentData.sectors || [];
+  const h = currentData.highlights || {};
+  const newOneRed = h.new_one_red_sectors || [];
+  const newThreeRed = h.new_three_red_sectors || [];
   const tbody = document.getElementById('sectorBody');
   document.getElementById('sectorCount').textContent = `共 ${sectors.length} 个细分行业`;
   
@@ -562,7 +569,10 @@ function renderSectors() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
-    return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}">
+    const isNewOneRed = newOneRed.includes(s.sector_name);
+    const isNewThreeRed = newThreeRed.includes(s.sector_name);
+    
+    return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
@@ -576,6 +586,9 @@ function renderSectors() {
 // ---- 概念渲染 ----
 function renderConcepts() {
   const concepts = currentData.concepts || [];
+  const h = currentData.highlights || {};
+  const newOneRed = h.new_one_red_concepts || [];
+  const newThreeRed = h.new_three_red_concepts || [];
   document.getElementById('conceptCount').textContent = `共 ${concepts.length} 个概念`;
   
   const tbody = document.getElementById('conceptBody');
@@ -593,12 +606,17 @@ function renderConcepts() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
-    return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}">
+    const isNewOneRed = newOneRed.includes(c.concept_name);
+    const isNewThreeRed = newThreeRed.includes(c.concept_name);
+    
+    return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
       <td>${c.member_count || 0}</td>
       ${rpsCells}
     </tr>`;
   }).join('');
+  
+  applyConceptFilter();
 }
 
 // ---- 个股渲染 ----
@@ -795,11 +813,23 @@ function filterTable(bodyId, query) {
         const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
         if (rl < 3) { rows[i].style.display = 'none'; continue; }
       }
+      if (document.getElementById('sectorNewOneRedOnly').checked && rows[i].getAttribute('data-new-one-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('sectorNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
     }
     if (bodyId === 'conceptBody') {
       if (document.getElementById('conceptThreeRedOnly').checked) {
         const rl = parseInt(rows[i].getAttribute('data-red-lines') || '0');
         if (rl < 3) { rows[i].style.display = 'none'; continue; }
+      }
+      if (document.getElementById('conceptNewOneRedOnly').checked && rows[i].getAttribute('data-new-one-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('conceptNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
       }
     }
     if (bodyId === 'stockBody') {
@@ -831,14 +861,6 @@ function filterTable(bodyId, query) {
 }
 
 function applySectorFilter() {
-  // 为 sector 行添加 data-red-lines
-  const sectors = currentData.sectors || [];
-  const rows = document.getElementById('sectorBody').rows;
-  if (sectors.length === rows.length) {
-    for (let i = 0; i < rows.length; i++) {
-      rows[i].setAttribute('data-red-lines', sectors[i].red_lines || 0);
-    }
-  }
   filterTable('sectorBody', document.getElementById('sectorSearch').value);
 }
 

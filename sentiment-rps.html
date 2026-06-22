@@ -253,6 +253,8 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="stockThreeRedOnly" onclick="applyStockFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="stockBoard12Only" onclick="applyStockFilter()"> 仅显示首板/二板</label>
       <label><input type="checkbox" id="stock100dOnly" onclick="applyStockFilter()"> 仅显示百日新高</label>
+      <label><input type="checkbox" id="stockNear100dOnly" onclick="applyStockFilter()"> 仅显示接近新高</label>
+      <label><input type="checkbox" id="stockSectorThreeOnly" onclick="applyStockFilter()"> 仅显示板块三线红</label>
     </div>
 
     <div class="module-body" id="stockBody-wrap">
@@ -268,12 +270,14 @@ tbody tr.selected { background: #e8ecff !important; }
             <th onclick="sortTable('stockTable', 6, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 7, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 8, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 9, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 10, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 11, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 12, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 13, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 14, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 9, this)" data-type="string">接近新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 10, this)" data-type="string">板块三线红 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 11, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 12, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 13, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 14, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 15, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 16, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="stockBody"></tbody>
@@ -434,7 +438,9 @@ function renderSectors() {
     const rpsCells = rpsCols.map(c => {
       const v = s[c] || 0;
       const cls = v >= 90 ? 'rps-red' : 'rps-default';
-      return `<td class="${cls}">${v.toFixed(1)}</td>`;
+      const delta = s[c+'_delta'];
+      const deltaStr = delta != null ? ` (${delta >= 0 ? '+' : ''}${delta.toFixed(1)})` : '';
+      return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
     return `<tr class="clickable" onclick="showSectorChart('${s.sector_name}')" data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}">
@@ -463,7 +469,9 @@ function renderConcepts() {
     const rpsCells = rpsCols.map(col => {
       const v = c[col] || 0;
       const cls = v >= 90 ? 'rps-red' : 'rps-default';
-      return `<td class="${cls}">${v.toFixed(1)}</td>`;
+      const delta = c[col+'_delta'];
+      const deltaStr = delta != null ? ` (${delta >= 0 ? '+' : ''}${delta.toFixed(1)})` : '';
+      return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
     return `<tr class="clickable" onclick="showConceptChart('${c.concept_name}')" data-search="${c.concept_name}">
@@ -485,17 +493,28 @@ function renderStocks() {
     let nameClass = 'name-yellow';
     if (isThreeRed) nameClass = 'name-red';
     
-    const rpsCells = ['rps_50d', 'rps_120d', 'rps_250d'].map(col => {
-      const v = s[col] || 0;
-      return `<td class="rps-red">${v.toFixed(1)}</td>`;
+    // 个股 RPS：阈值内红色，否则默认色
+    const thresholds = [90, 93, 95]; // 50日>90, 120日>93, 250日>95
+    const rpsCols = ['rps_50d', 'rps_120d', 'rps_250d'];
+    const rpsCells = rpsCols.map((col, i) => {
+      const v = s[col] != null ? s[col] : 0;
+      const cls = v >= thresholds[i] ? 'rps-red' : 'rps-default';
+      const delta = s[col+'_delta'];
+      const deltaStr = delta != null ? ` (${delta >= 0 ? '+' : ''}${delta.toFixed(1)})` : '';
+      return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
     const high100 = s.is_100d_high ? '<span class="badge badge-red">✅ 新高</span>' : '<span class="rps-default">—</span>';
+    const near100 = s.near_100d_high ? '<span class="badge badge-blue">🔥 接近</span>' : '<span class="rps-default">—</span>';
     const conLimits = s.consecutive_limits > 0 ? `<span class="badge badge-red">${s.consecutive_limits}板</span>` : '—';
+    const sectorThree = s.sector_three_red ? '<span class="badge badge-red">✅ 三线红</span>' : '<span class="rps-default">—</span>';
     
-    const concepts = (s.concepts || []).slice(0, 5).map(c => `<span class="badge badge-blue">${c}</span>`).join(' ');
+    // 概念显示：最高关联概念 + 涨停数
+    const conceptDisplay = s.top_concept 
+      ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
+      : '—';
     
-    return `<tr class="clickable" onclick="showStockChart('${s.code}')" data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}">
+    return `<tr class="clickable" onclick="showStockChart('${s.code}')" data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}">
       <td class="${nameClass}">${s.name || s.code}</td>
       <td>${s.code}</td>
       <td>${(s.total_mv||0).toFixed(0)}</td>
@@ -503,12 +522,14 @@ function renderStocks() {
       ${rpsCells}
       <td>${conLimits}</td>
       <td>${high100}</td>
+      <td>${near100}</td>
+      <td>${sectorThree}</td>
       <td>${s.sector_l1 || '-'}</td>
       <td>${s.sector_l2 || '-'}</td>
       <td>${s.sector_l3 || '-'}</td>
       <td>${s.sector_limit_count || 0}</td>
-      <td class="concept-list">${concepts}</td>
-      <td>${s.concept_limit_count || 0}</td>
+      <td>${conceptDisplay}</td>
+      <td>${s.top_concept_limit || 0}</td>
     </tr>`;
   }).join('');
   
@@ -563,15 +584,17 @@ function renderStockCard(id, items) {
     el.innerHTML = '<span style="color:#999;font-size:12px;">无</span>';
     return;
   }
+  const names = (currentData.highlights && currentData.highlights.stock_names) || {};
   const stocks = currentData.stocks || [];
   const stockMap = {};
   stocks.forEach(s => { stockMap[s.code] = s; });
   
   el.innerHTML = items.map(code => {
     const s = stockMap[code];
+    const name = names[code] || code;
     const isThree = s ? (s.rps_50d > 90 && s.rps_120d > 93 && s.rps_250d > 95) : false;
     const cls = isThree ? 'item red' : 'item gold';
-    return `<span class="${cls}">${code}</span>`;
+    return `<span class="${cls}">${name}(${code})</span>`;
   }).join('');
 }
 
@@ -653,6 +676,12 @@ function filterTable(bodyId, query) {
         rows[i].style.display = 'none'; continue;
       }
       if (document.getElementById('stock100dOnly').checked && rows[i].getAttribute('data-100d') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stockNear100dOnly').checked && rows[i].getAttribute('data-near100d') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('stockSectorThreeOnly').checked && rows[i].getAttribute('data-sector-three') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
     }

@@ -339,6 +339,7 @@ let historyData = null;
 let currentDate = null;
 let sortState = {}; // tableId → {colIndex, direction}
 let activeCharts = {};
+let memberDataMap = {}; // key: 'sector:名称' 或 'concept:名称' → member_stocks 数组
 
 // ============================================================
 // 初始化
@@ -411,10 +412,13 @@ async function loadHistoryAsync() {
 function setupClickHandlers() {
   // 板块表格 - 名称点击→折线图，成分股数点击→成分股面板
   document.getElementById('sectorBody').addEventListener('click', function(e) {
-    const tdMember = e.target.closest('td[data-member]');
-    if (tdMember && tdMember.getAttribute('data-member') !== '[]') {
-      showMemberPanel(tdMember.getAttribute('data-label'), tdMember.getAttribute('data-member'));
-      return;
+    const tdMember = e.target.closest('td[data-member-key]');
+    if (tdMember) {
+      const key = tdMember.getAttribute('data-member-key');
+      if (memberDataMap[key] && memberDataMap[key].length > 0) {
+        showMemberPanel(key.split(':').slice(1).join(':'), memberDataMap[key]);
+        return;
+      }
     }
     const td = e.target.closest('td[data-name]');
     if (td) {
@@ -425,10 +429,13 @@ function setupClickHandlers() {
   
   // 概念表格
   document.getElementById('conceptBody').addEventListener('click', function(e) {
-    const tdMember = e.target.closest('td[data-member]');
-    if (tdMember && tdMember.getAttribute('data-member') !== '[]') {
-      showMemberPanel(tdMember.getAttribute('data-label'), tdMember.getAttribute('data-member'));
-      return;
+    const tdMember = e.target.closest('td[data-member-key]');
+    if (tdMember) {
+      const key = tdMember.getAttribute('data-member-key');
+      if (memberDataMap[key] && memberDataMap[key].length > 0) {
+        showMemberPanel(key.split(':').slice(1).join(':'), memberDataMap[key]);
+        return;
+      }
     }
     const td = e.target.closest('td[data-name]');
     if (td) {
@@ -622,10 +629,12 @@ function renderSectors() {
     
     const mc = s.member_count || 0;
     const mcStyle = mc > 0 ? 'cursor:pointer;color:#4a6cf7;text-decoration:underline;' : 'color:#999;';
+    const memberKey = 'sector:' + s.sector_name;
+    if (s.member_stocks && s.member_stocks.length > 0) memberDataMap[memberKey] = s.member_stocks;
     
     return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
-      <td style="${mcStyle}" data-member='${JSON.stringify(s.member_stocks || [])}' data-label="${s.sector_name}">${mc}</td>
+      <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
       <td class="${pctClass}">${pctStr}</td>
@@ -669,10 +678,12 @@ function renderConcepts() {
     
     const mc = c.member_count || 0;
     const mcStyle = mc > 0 ? 'cursor:pointer;color:#4a6cf7;text-decoration:underline;' : 'color:#999;';
+    const memberKey = 'concept:' + c.concept_name;
+    if (c.member_stocks && c.member_stocks.length > 0) memberDataMap[memberKey] = c.member_stocks;
     
     return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
-      <td style="${mcStyle}" data-member='${JSON.stringify(c.member_stocks || [])}' data-label="${c.concept_name}">${mc}</td>
+      <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
     </tr>`;
@@ -944,13 +955,11 @@ function applyStockFilter() {
 // ============================================================
 // 成分股弹出面板
 // ============================================================
-function showMemberPanel(label, memberJson) {
+function showMemberPanel(label, members) {
   const panel = document.getElementById('memberPanel');
   const titleEl = document.getElementById('memberPanelTitle');
   const bodyEl = document.getElementById('memberPanelBody');
   
-  let members;
-  try { members = JSON.parse(memberJson); } catch(e) { return; }
   if (!members || members.length === 0) return;
   
   titleEl.textContent = `${label} — 一线红成分股（${members.length}只）`;

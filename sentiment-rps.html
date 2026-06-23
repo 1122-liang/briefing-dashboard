@@ -66,6 +66,18 @@ tbody tr.selected { background: #e8ecff !important; }
 .pct-down { color: #38a169; font-weight: 600; }
 .pct-flat { color: #666; }
 
+/* 成分股弹出面板 */
+#memberPanel { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 9998; max-height: 50vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 2px solid #e0e0e0; overflow: hidden; }
+#memberPanel.active { display: block; }
+#memberPanel .member-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-bottom: 1px solid #eee; background: #f8f9ff; }
+#memberPanel .member-header h3 { font-size: 15px; font-weight: 600; margin: 0; }
+#memberPanel .member-close { cursor: pointer; font-size: 20px; padding: 0 5px; color: #999; }
+#memberPanel .member-close:hover { color: #e53e3e; }
+#memberPanel .member-body { padding: 8px 16px; overflow-y: auto; max-height: calc(50vh - 50px); }
+#memberPanel table { width: 100%; border-collapse: collapse; font-size: 13px; }
+#memberPanel th { background: #f1f3f5; padding: 6px 10px; text-align: left; font-weight: 600; border-bottom: 2px solid #dee2e6; }
+#memberPanel td { padding: 5px 10px; border-bottom: 1px solid #f0f1f3; }
+
 /* Chart panel */
 /* 浮动折线图面板 */
 #chartOverlay { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; max-height: 45vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 2px solid #e0e0e0; overflow: hidden; }
@@ -122,6 +134,15 @@ tbody tr.selected { background: #e8ecff !important; }
   <div class="chart-container"><canvas id="chartOverlayCanvas"></canvas></div>
 </div>
 
+<!-- 成分股弹出面板 -->
+<div id="memberPanel">
+  <div class="member-header">
+    <h3 id="memberPanelTitle">成分股</h3>
+    <span class="member-close" onclick="document.getElementById('memberPanel').classList.remove('active')">✕</span>
+  </div>
+  <div class="member-body" id="memberPanelBody"></div>
+</div>
+
 <div class="container">
 
   <!-- Header -->
@@ -175,13 +196,14 @@ tbody tr.selected { background: #e8ecff !important; }
         <thead>
           <tr>
             <th onclick="sortTable('sectorTable', 0, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 1, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 2, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 3, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 1, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 2, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 3, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 8, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="sectorBody"></tbody>
@@ -387,8 +409,13 @@ async function loadHistoryAsync() {
 // 事件绑定（使用 addEventListener，不依赖内联 onclick）
 // ============================================================
 function setupClickHandlers() {
-  // 板块表格
+  // 板块表格 - 名称点击→折线图，成分股数点击→成分股面板
   document.getElementById('sectorBody').addEventListener('click', function(e) {
+    const tdMember = e.target.closest('td[data-member]');
+    if (tdMember && tdMember.getAttribute('data-member') !== '[]') {
+      showMemberPanel(tdMember.getAttribute('data-label'), tdMember.getAttribute('data-member'));
+      return;
+    }
     const td = e.target.closest('td[data-name]');
     if (td) {
       const name = td.getAttribute('data-name');
@@ -398,6 +425,11 @@ function setupClickHandlers() {
   
   // 概念表格
   document.getElementById('conceptBody').addEventListener('click', function(e) {
+    const tdMember = e.target.closest('td[data-member]');
+    if (tdMember && tdMember.getAttribute('data-member') !== '[]') {
+      showMemberPanel(tdMember.getAttribute('data-label'), tdMember.getAttribute('data-member'));
+      return;
+    }
     const td = e.target.closest('td[data-name]');
     if (td) {
       const name = td.getAttribute('data-name');
@@ -410,7 +442,10 @@ function setupClickHandlers() {
     const td = e.target.closest('td[data-code]');
     if (td) {
       const code = td.getAttribute('data-code');
-      showOverlayChart(code, '个股RPS趋势', 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
+      // 从 data 获取个股名称
+      const stock = (currentData.stocks || []).find(s => s.code === code);
+      const displayName = stock ? `${stock.name || code}（${code}）` : code;
+      showOverlayChart(code, '个股RPS趋势: ' + displayName, 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
     }
   });
   
@@ -585,8 +620,12 @@ function renderSectors() {
     const isNewOneRed = newOneRed.includes(s.sector_name);
     const isNewThreeRed = newThreeRed.includes(s.sector_name);
     
+    const mc = s.member_count || 0;
+    const mcStyle = mc > 0 ? 'cursor:pointer;color:#4a6cf7;text-decoration:underline;' : 'color:#999;';
+    
     return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
+      <td style="${mcStyle}" data-member='${JSON.stringify(s.member_stocks || [])}' data-label="${s.sector_name}">${mc}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
       <td class="${pctClass}">${pctStr}</td>
@@ -628,9 +667,12 @@ function renderConcepts() {
     const isNewOneRed = newOneRed.includes(c.concept_name);
     const isNewThreeRed = newThreeRed.includes(c.concept_name);
     
+    const mc = c.member_count || 0;
+    const mcStyle = mc > 0 ? 'cursor:pointer;color:#4a6cf7;text-decoration:underline;' : 'color:#999;';
+    
     return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
-      <td>${c.member_count || 0}</td>
+      <td style="${mcStyle}" data-member='${JSON.stringify(c.member_stocks || [])}' data-label="${c.concept_name}">${mc}</td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
     </tr>`;
@@ -896,6 +938,65 @@ function applyConceptFilter() {
 
 function applyStockFilter() {
   filterTable('stockBody', document.getElementById('stockSearch').value);
+}
+
+// ============================================================
+// ============================================================
+// 成分股弹出面板
+// ============================================================
+function showMemberPanel(label, memberJson) {
+  const panel = document.getElementById('memberPanel');
+  const titleEl = document.getElementById('memberPanelTitle');
+  const bodyEl = document.getElementById('memberPanelBody');
+  
+  let members;
+  try { members = JSON.parse(memberJson); } catch(e) { return; }
+  if (!members || members.length === 0) return;
+  
+  titleEl.textContent = `${label} — 一线红成分股（${members.length}只）`;
+  
+  // 按 red_lines 降序、rps_50d 降序排列
+  members.sort((a, b) => (b.red_lines - a.red_lines) || (b.rps_50d - a.rps_50d));
+  
+  const rows = members.map(m => {
+    const pct = m.pct_change;
+    const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+    const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+    const board = m.consecutive_limits > 0 ? `<span class="badge badge-red">${m.consecutive_limits}板</span>` : '—';
+    const rlClass = m.red_lines >= 3 ? 'rps-red' : 'rps-default';
+    return `<tr>
+      <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${m.code}">${m.name}</td>
+      <td>${m.code}</td>
+      <td class="${pctClass}">${pctStr}</td>
+      <td class="${m.rps_50d >= 90 ? 'rps-red' : 'rps-default'}">${m.rps_50d.toFixed(1)}</td>
+      <td class="${m.rps_120d >= 93 ? 'rps-red' : 'rps-default'}">${m.rps_120d.toFixed(1)}</td>
+      <td class="${m.rps_250d >= 95 ? 'rps-red' : 'rps-default'}">${m.rps_250d.toFixed(1)}</td>
+      <td class="${rlClass}">${m.red_lines}线红</td>
+      <td>${board}</td>
+    </tr>`;
+  }).join('');
+  
+  bodyEl.innerHTML = `<table>
+    <thead><tr>
+      <th>名称</th><th>代码</th><th>涨跌幅</th>
+      <th>50日RPS</th><th>120日RPS</th><th>250日RPS</th>
+      <th>红线条数</th><th>连板</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+  
+  // 点击成分股名称→打开折线图
+  bodyEl.querySelector('tbody').addEventListener('click', function(e) {
+    const td = e.target.closest('td[data-code]');
+    if (td) {
+      const code = td.getAttribute('data-code');
+      const stock = members.find(m => m.code === code);
+      const displayName = stock ? `${stock.name}（${code}）` : code;
+      showOverlayChart(code, '个股RPS趋势: ' + displayName, 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
+    }
+  });
+  
+  panel.classList.add('active');
 }
 
 // ============================================================

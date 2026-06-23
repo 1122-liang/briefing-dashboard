@@ -419,7 +419,7 @@ function setupClickHandlers() {
     const td = e.target.closest('td[data-name]');
     if (td) {
       const name = td.getAttribute('data-name');
-      showOverlayChart(name, '板块RPS趋势', 'sectors', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+      showOverlayChart(name, '板块RPS趋势: ' + name, 'sectors', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
     }
   });
   
@@ -433,7 +433,7 @@ function setupClickHandlers() {
     const td = e.target.closest('td[data-name]');
     if (td) {
       const name = td.getAttribute('data-name');
-      showOverlayChart(name, '概念RPS趋势', 'concepts', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
+      showOverlayChart(name, '概念RPS趋势: ' + name, 'concepts', ['rps_5d', 'rps_10d', 'rps_15d', 'rps_20d']);
     }
   });
   
@@ -1004,13 +1004,13 @@ function showMemberPanel(label, memberJson) {
 // ============================================================
 let chartInstances = {};
 
-function showOverlayChart(name, titlePrefix, dataKey, periods) {
+function showOverlayChart(name, titleText, dataKey, periods) {
   const overlay = document.getElementById('chartOverlay');
   const canvas = document.getElementById('chartOverlayCanvas');
   const titleEl = document.getElementById('chartOverlayTitle');
   
   overlay.classList.add('active');
-  titleEl.textContent = titlePrefix + ': ' + name;
+  titleEl.textContent = titleText;
   
   // 数据查找
   let entityData = null;

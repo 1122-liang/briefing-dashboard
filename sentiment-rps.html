@@ -61,6 +61,11 @@ tbody tr.selected { background: #e8ecff !important; }
 .name-yellow { color: #d69e2e; font-weight: 600; }
 .name-green { color: #38a169; }
 
+/* 涨跌幅颜色（中国股市惯例：红涨绿跌） */
+.pct-up { color: #e53e3e; font-weight: 600; }
+.pct-down { color: #38a169; font-weight: 600; }
+.pct-flat { color: #666; }
+
 /* Chart panel */
 /* 浮动折线图面板 */
 #chartOverlay { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; max-height: 45vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 2px solid #e0e0e0; overflow: hidden; }
@@ -172,10 +177,11 @@ tbody tr.selected { background: #e8ecff !important; }
             <th onclick="sortTable('sectorTable', 0, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('sectorTable', 1, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('sectorTable', 2, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 3, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 3, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="sectorBody"></tbody>
@@ -217,10 +223,11 @@ tbody tr.selected { background: #e8ecff !important; }
           <tr>
             <th onclick="sortTable('conceptTable', 0, this)" data-type="string">概念名称 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('conceptTable', 1, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 6, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="conceptBody"></tbody>
@@ -278,19 +285,20 @@ tbody tr.selected { background: #e8ecff !important; }
           <tr>
             <th onclick="sortTable('stockTable', 0, this)" data-type="string">个股名称 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 1, this)" data-type="string">个股代码 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 2, this)" data-type="number">50日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 3, this)" data-type="number">120日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 4, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 5, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 6, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 7, this)" data-type="string">接近新高 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 8, this)" data-type="string">板块三线红 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 9, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 10, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 11, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 12, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 13, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 14, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 2, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 3, this)" data-type="number">50日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 4, this)" data-type="number">120日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 5, this)" data-type="number">250日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 6, this)" data-type="number">连板数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 7, this)" data-type="string">百日新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 8, this)" data-type="string">接近新高 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 9, this)" data-type="string">板块三线红 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 10, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 11, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 12, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 13, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 14, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 15, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="stockBody"></tbody>
@@ -569,6 +577,11 @@ function renderSectors() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
+    // 涨跌幅
+    const pct = s.pct_change;
+    const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+    const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+    
     const isNewOneRed = newOneRed.includes(s.sector_name);
     const isNewThreeRed = newThreeRed.includes(s.sector_name);
     
@@ -576,6 +589,7 @@ function renderSectors() {
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
+      <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
     </tr>`;
   }).join('');
@@ -606,12 +620,18 @@ function renderConcepts() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
+    // 涨跌幅
+    const pct = c.pct_change;
+    const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+    const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+    
     const isNewOneRed = newOneRed.includes(c.concept_name);
     const isNewThreeRed = newThreeRed.includes(c.concept_name);
     
     return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
       <td>${c.member_count || 0}</td>
+      <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
     </tr>`;
   }).join('');
@@ -646,6 +666,11 @@ function renderStocks() {
       return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
     }).join('');
     
+    // 涨跌幅
+    const pct = s.pct_change;
+    const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+    const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+    
     const url = xueqiuUrl(s.code, s.market);
     const high100 = s.is_100d_high ? '<span class="badge badge-red">✅ 新高</span>' : '<span class="rps-default">—</span>';
     const near100 = s.near_100d_high ? '<span class="badge badge-blue">🔥 接近</span>' : '<span class="rps-default">—</span>';
@@ -659,6 +684,7 @@ function renderStocks() {
     return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
+      <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
       <td>${conLimits}</td>
       <td>${high100}</td>

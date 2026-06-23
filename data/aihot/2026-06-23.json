@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T08:42:19.728351+08:00",
+  "window_hours": 24,
+  "total_opportunities": 4,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "AI+影视制作成为科技巨头新战场：DeepMind投资A24，Runway集成Figma",
+      "industry": "AI+影视制作",
+      "type": "行业新方向",
+      "summary": "Google DeepMind宣布7500万美元投资独立电影制片厂A24，合作开发电影AI工具；Runway旗舰视频编辑模型Aleph 2.0集成Figma Weave，支持30秒1080p上下文视频编辑。AI正在从文字/图片向专业级视频创作渗透，影视制作成为AI商业化下一个重要场景。",
+      "investment_logic": "AI视频生成技术从短视频向专业影视制作升级，产业链受益顺序：①底层算力（GPU/云端渲染）②AI视频工具平台③内容制作公司。Adobe作为专业创意工具龙头正在加速AI化，Google拥有YouTube+DeepMind双引擎，万兴科技是A股稀缺的AI视频工具标的。",
+      "target_stocks": "Adobe(ADBE)、Google(GOOGL)、万兴科技(300624)",
+      "risk_note": "AI视频生成技术尚处早期，商业化路径不清晰；影视行业对AI接受度存在不确定性；A24投资为战略合作非收购，落地效果待观察。",
+      "source": "TechCrunch / Runway Blog"
+    },
+    {
+      "id": 2,
+      "title": "小米YU7 GT创全球首个纽北自动驾驶圈速纪录，自动驾驶技术获里程碑突破",
+      "industry": "AI+自动驾驶",
+      "type": "重大事件",
+      "summary": "小米YU7 GT以自动驾驶系统完成纽博格林北环全程无人计时圈，成绩10分29秒483，成为全球首个纽北自动驾驶圈速纪录，纽北官方为此新增\"自动驾驶\"分类。小米表示赛道锤炼的动态模型与毫秒级救车能力将下放至量产车。",
+      "investment_logic": "纽北是全球最具挑战性的赛道，自动驾驶完成全程圈速证明了中国车企在智驾领域的技术实力已达到世界级水平。受益方向：①智驾域控制器与传感器（德赛西威、禾赛科技）②智驾芯片（英伟达、地平线）③主机厂智驾领先者（小米、小鹏、理想）。小米汽车估值体系有望从硬件制造商向AI科技公司切换。",
+      "target_stocks": "小米集团(01810.HK)、德赛西威(002920)、英伟达(NVDA)",
+      "risk_note": "赛道场景与城市道路差异大，量产落地效果待验证；自动驾驶安全事故可能引发监管收紧；小米汽车盈利拐点尚未到来。",
+      "source": "IT之家"
+    },
+    {
+      "id": 3,
+      "title": "微信Agent小微灰度内测：AI Agent正式进入10亿用户级超级应用",
+      "industry": "AI+社交平台",
+      "type": "重大事件",
+      "summary": "微信Agent小微开始灰度内测，主入口位于微信首页，支持消息/红包/日程/待办/总结朋友圈、打通公众号视频号问答，子入口可读取聊天记录。内置小工具功能支持语音创建简易小程序，可调用第三方小程序。",
+      "investment_logic": "微信13亿月活用户首次接触AI Agent，这是全球最大规模的C端AI Agent落地实验。核心逻辑：①腾讯生态内AI Agent将成为超级流量入口，强化微信生态粘性②小程序+Agent结合可能催生新商业模式③腾讯AI能力通过微信场景快速积累数据飞轮。腾讯当前估值处于历史低位，AI Agent落地有望催化价值重估。",
+      "target_stocks": "腾讯控股(00700.HK)",
+      "risk_note": "灰度测试规模和时间线不确定；隐私争议（读取聊天记录）可能引发监管关注；Agent商业化变现路径尚不清晰。",
+      "source": "公众号：数字生命卡兹克"
+    },
+    {
+      "id": 4,
+      "title": "OpenAI发布Daybreak安全工具：AI+网络安全成为全新赛道",
+      "industry": "AI+网络安全",
+      "type": "行业新方向",
+      "summary": "OpenAI推出Daybreak系列安全工具，包括Codex Security和GPT-5.5-Cyber，帮助组织大规模发现、验证并修补漏洞。AI安全从\"用AI攻击\"转向\"用AI防御\"，标志着AI安全产业进入2.0阶段。",
+      "investment_logic": "AI代码生成工具普及导致代码漏洞数量激增（Cursor审计显示63%方案直接检索修正而非自主推导），AI驱动安全审计成为刚需。受益方向：①网络安全龙头（CrowdStrike、Palo Alto Networks）加速AI化②AI安全初创③A股网络安全公司。OpenAI亲自入场可能短期冲击传统厂商，但长期教育市场扩大蛋糕。",
+      "target_stocks": "CrowdStrike(CRWD)、Palo Alto Networks(PANW)、奇安信(688561)",
+      "risk_note": "OpenAI入场可能颠覆现有安全工具格局；AI安全工具误报/漏报风险；企业安全预算向AI工具迁移速度不确定。",
+      "source": "OpenAI Blog"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-23.json",
+  "_saved_at": "2026-06-23T08:42:19.728385+08:00"
+}

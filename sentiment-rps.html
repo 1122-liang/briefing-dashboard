@@ -692,16 +692,17 @@ function renderConcepts() {
   applyConceptFilter();
 }
 
+// ---- 雪球链接（全局） ----
+function xueqiuUrl(code, market) {
+  const m = (market || '').toUpperCase() ||
+    (code.startsWith('6') ? 'SH' : code.startsWith('4') || code.startsWith('8') || code.startsWith('9') ? 'BJ' : 'SZ');
+  return `https://xueqiu.com/S/${m}${code}`;
+}
+
 // ---- 个股渲染 ----
 function renderStocks() {
   const stocks = currentData.stocks || [];
   document.getElementById('stockCount').textContent = `共 ${stocks.length} 只个股`;
-  
-  function xueqiuUrl(code, market) {
-    const m = (market || '').toUpperCase() || 
-      (code.startsWith('6') ? 'SH' : code.startsWith('4') || code.startsWith('8') || code.startsWith('9') ? 'BJ' : 'SZ');
-    return `https://xueqiu.com/S/${m}${code}`;
-  }
   
   const tbody = document.getElementById('stockBody');
   tbody.innerHTML = stocks.map(s => {
@@ -975,7 +976,7 @@ function showMemberPanel(label, members) {
     const rlClass = m.red_lines >= 3 ? 'rps-red' : 'rps-default';
     return `<tr>
       <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${m.code}">${m.name}</td>
-      <td>${m.code}</td>
+      <td><a href="${xueqiuUrl(m.code)}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${m.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
       <td class="${m.rps_50d >= 90 ? 'rps-red' : 'rps-default'}">${m.rps_50d.toFixed(1)}</td>
       <td class="${m.rps_120d >= 93 ? 'rps-red' : 'rps-default'}">${m.rps_120d.toFixed(1)}</td>

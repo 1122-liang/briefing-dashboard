@@ -99,6 +99,7 @@ tbody tr.selected { background: #e8ecff !important; }
 .badge-red { background: #ffeaea; color: #e53e3e; }
 .badge-green { background: #e6ffed; color: #38a169; }
 .badge-blue { background: #ebf4ff; color: #4a6cf7; }
+.badge-orange { background: #fff5eb; color: #dd6b20; }
 
 /* Concept list in cell */
 .concept-list { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
@@ -300,6 +301,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="stockBoard12Only" onclick="applyStockFilter()"> 仅显示首板/二板</label>
       <label><input type="checkbox" id="stock100dOnly" onclick="applyStockFilter()"> 仅显示百日新高</label>
       <label><input type="checkbox" id="stockNear100dOnly" onclick="applyStockFilter()"> 仅显示接近新高</label>
+      <label><input type="checkbox" id="stockStrongNear100dOnly" onclick="applyStockFilter()"> 仅显示强接近</label>
       <label><input type="checkbox" id="stockSectorThreeOnly" onclick="applyStockFilter()"> 仅显示板块三线红</label>
       <label><input type="checkbox" id="stockNewOneRedOnly" onclick="applyStockFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="stockNewThreeRedOnly" onclick="applyStockFilter()"> 当日新进三线红</label>
@@ -752,6 +754,8 @@ function renderStocks() {
     let high100Cell = '';
     if (s.is_100d_high) {
       high100Cell = '<span class="badge badge-red">✅ 新高</span>';
+    } else if (s.strong_near_100d_high) {
+      high100Cell = '<span class="badge badge-orange">🔥 强接近</span>';
     } else if (s.near_100d_high) {
       high100Cell = '<span class="badge badge-blue">🔥 接近</span>';
     } else {
@@ -769,7 +773,7 @@ function renderStocks() {
       ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
       : '—';
     
-    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}">
+    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-strong-near100d="${s.strong_near_100d_high}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
@@ -959,6 +963,9 @@ function filterTable(bodyId, query) {
       if (document.getElementById('stockNear100dOnly').checked && rows[i].getAttribute('data-near100d') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
+      if (document.getElementById('stockStrongNear100dOnly').checked && rows[i].getAttribute('data-strong-near100d') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
       if (document.getElementById('stockSectorThreeOnly').checked && rows[i].getAttribute('data-sector-three') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
@@ -1012,6 +1019,8 @@ function showMemberPanel(label, members) {
     let high100Cell = '';
     if (m.is_100d_high) {
       high100Cell = '<span class="badge badge-red">✅ 新高</span>';
+    } else if (m.strong_near_100d_high) {
+      high100Cell = '<span class="badge badge-orange">🔥 强接近</span>';
     } else if (m.near_100d_high) {
       high100Cell = '<span class="badge badge-blue">🔥 接近</span>';
     } else {

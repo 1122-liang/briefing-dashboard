@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T08:50:59.093108+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "中国启动2950亿美元AI基础设施建设计划",
+      "industry": "AI基础设施",
+      "type": "政策影响",
+      "summary": "中国计划未来五年投入约2万亿元人民币（约2950亿美元）建设全国数据中心，推动国内AI产业发展并超越美国，覆盖大规模数据中心基础设施建设。",
+      "investment_logic": "国家级战略投资规模空前，直接拉动服务器、液冷、光模块、IDC建设等环节需求。受益标的沿产业链传导：IDC运营商直接受益于数据中心大规模建设订单；服务器/芯片供应商将获得持续5年的增量订单；液冷/电力配套随着高密度算力需求同步增长。",
+      "target_stocks": "润泽科技(300442)、宝信软件(600845)、万国数据(GDS)、中科曙光(603019)",
+      "risk_note": "投资落地节奏可能慢于预期，地方执行力度存在差异，AI芯片供应受限可能制约建设进度。",
+      "source": "Bloomberg"
+    },
+    {
+      "id": 2,
+      "title": "台湾考虑限制AI芯片对华出口以配合美国管制",
+      "industry": "算力芯片",
+      "type": "行业瓶颈变化",
+      "summary": "台湾当局正考虑对AI芯片出口中国大陆实施更严格管制，进一步与美国出口限制对齐，旨在遏制半导体走私。",
+      "investment_logic": "若台湾配合美国加码芯片出口管制，将进一步压缩中国大陆获取先进AI芯片的渠道。反向推动国产AI芯片替代加速，利好国产GPU/CPU厂商。但短期对依赖进口芯片的AI算力企业构成供给压力。",
+      "target_stocks": "寒武纪(688256)、海光信息(688041)、中芯国际(00981.HK)",
+      "risk_note": "国产芯片性能差距短期难以完全弥补，管制对抗升级可能引发更广泛供应链中断。",
+      "source": "Bloomberg"
+    },
+    {
+      "id": 3,
+      "title": "Anthropic发布Claude Fable 5/Mythos 5：全基准SOTA",
+      "industry": "AI大模型",
+      "type": "重大事件",
+      "summary": "Anthropic发布Claude Fable 5（通用安全版）和Mythos 5（受限安全版），在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到SOTA，Stripe称其将数月工程压缩至数天。",
+      "investment_logic": "Anthropic模型能力跃升直接利好其云服务商（推理需求激增）、芯片供应商（训练/推理算力需求扩大）。Apollo/Blackstone 350亿融资显示机构对Anthropic估值信心。同时模型能力跃升加速AI应用落地，利好企业级AI软件市场。",
+      "target_stocks": "谷歌(GOOGL)、英伟达(NVDA)、博通(AVGO)",
+      "risk_note": "Mythos 5安全限制可能影响商业化进度，AI安全监管风险持续存在（同日报告Mythos 5智能体互相杀戮）。",
+      "source": "Anthropic Newsroom"
+    },
+    {
+      "id": 4,
+      "title": "OpenAI秘密提交IPO申请，AI行业标杆启动上市",
+      "industry": "AI平台",
+      "type": "重大事件",
+      "summary": "OpenAI近日秘密提交IPO申请，同期CEO奥特曼旗下Tools for Humanity因营收困境裁员。Cursor欧洲总部落子伦敦，B2B年化营收约26亿美元，SpaceX持有600亿美元收购选择权。",
+      "investment_logic": "OpenAI作为全球AI行业标杆启动上市流程，将重塑AI行业估值锚定，带动整个AI产业链估值重估。微软作为OpenAI最大投资者将直接受益。AI编程工具赛道持续高增长（Cursor年化26亿美元），验证AI应用商业模式。",
+      "target_stocks": "微软(MSFT)、英伟达(NVDA)",
+      "risk_note": "IPO进程可能因监管审查延迟，AI行业估值泡沫风险需关注，OpenAI与微软合作关系存在不确定性。",
+      "source": "IT之家"
+    },
+    {
+      "id": 5,
+      "title": "SpaceX揭示AI1轨道AI数据中心卫星方案：吉瓦级太空算力",
+      "industry": "太空AI算力",
+      "type": "行业新方向",
+      "summary": "Elon Musk首次详解SpaceX AI1轨道AI数据中心卫星：峰值功率150kW/颗，激光链路约1Tbps互联，低轨600-800km延迟6-8ms。计划部署百万颗卫星，2027年底量产，目标吉瓦→太瓦级轨道算力。",
+      "investment_logic": "轨道AI数据中心是全新算力范式，突破地面数据中心能耗/散热/用地限制。SpaceX凭借Starship发射能力和Starlink通信网络拥有先发优势。相关产业链包括卫星制造、太空级芯片、激光通信、地面站网络等环节将迎来增量需求。",
+      "target_stocks": "Rocket Lab(RKLB)、AST SpaceMobile(ASTS)",
+      "risk_note": "轨道AI数据中心仍处于早期概念验证阶段，技术可行性（太空散热、电源管理）和商业可行性（成本vs地面数据中心）有待验证。Starship量产进度存在不确定性。",
+      "source": "X：Rohan Paul"
+    },
+    {
+      "id": 6,
+      "title": "Apollo/Blackstone联手350亿美元AI融资：基础设施融资模式创新",
+      "industry": "AI基础设施",
+      "type": "行业瓶颈变化",
+      "summary": "Apollo和Blackstone合作开展350亿美元AI融资交易，为昂贵AI芯片创建新融资模型，Anthropic和Broadcom参与其中。这可能标志着一个全新AI投资类别的开端。",
+      "investment_logic": "华尔街顶级PE机构联手入局AI基础设施融资，说明AI算力投资需求已远超传统企业融资能力，需要金融创新来填平资金缺口。数据中心REITs和AI基础设施运营商将受益于融资成本降低和资本涌入。此模式若成功推广，将大幅加速全球AI基础设施建设。",
+      "target_stocks": "Equinix(EQIX)、Digital Realty(DLR)、博通(AVGO)",
+      "risk_note": "新型融资模型存在结构风险，350亿美元规模可能加剧AI投资过热和产能过剩风险。",
+      "source": "Bloomberg"
+    },
+    {
+      "id": 7,
+      "title": "工信部/国资委：人形机器人2026年底万台级常态部署",
+      "industry": "机器人",
+      "type": "政策影响",
+      "summary": "两部门联合发文，目标到2026年底人形机器人在百个以上高价值场景完成验证并常态部署，万台级规模落地。各省选取不少于20个场景单元，央企不少于10个。鼓励\"人形机器人即服务\"等商业创新。",
+      "investment_logic": "政策首次明确人形机器人产业化时间表（2026年底）和规模目标（万台级），远超当前行业实际出货量（累计约千台级），意味着未来6个月将迎来数量级跃升。核心零部件（减速器、伺服电机、传感器）厂商直接受益于规模化放量，系统集成商受益于场景多元化。",
+      "target_stocks": "绿的谐波(688017)、拓斯达(300607)、埃斯顿(002747)、特斯拉(TSLA)",
+      "risk_note": "万台级目标半年度实现存在挑战，人形机器人技术成熟度（通用作业能力）仍需突破，产品定价和客户付费意愿需验证。",
+      "source": "IT之家"
+    },
+    {
+      "id": 8,
+      "title": "小米MiMo 1T模型推理突破1000 tokens/s：MoE推理革命",
+      "industry": "AI大模型",
+      "type": "行业新方向",
+      "summary": "小米MiMo与TileRT联合发布UltraSpeed模式，使1T参数旗舰模型输出速度首次突破1000 tokens/s（常规约100 tokens/s），采用FP4混合量化与DFlash块级并行推测解码，速度提升约10倍。FP4权重已开源。",
+      "investment_logic": "MoE大模型推理速度10倍突破具有里程碑意义。若该技术可推广，大模型推理成本将大幅降低，加速AI应用大规模部署。利好端侧AI（量化技术支撑）、AI Agent（延迟降低解锁实时交互场景）两个方向。小米在AI领域的技术储备可能成为新的估值驱动力。",
+      "target_stocks": "小米集团(01810.HK)、寒武纪(688256)",
+      "risk_note": "1000 tokens/s为特定优化条件下峰值，实际普及需验证多场景兼容性。FP4量化精度损失可能影响推理质量。UltraSpeed定价为Pro版3倍，成本仍较高。",
+      "source": "小米MiMo公众号"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-10.json",
+  "_saved_at": "2026-06-10T08:50:59.093320+08:00"
+}

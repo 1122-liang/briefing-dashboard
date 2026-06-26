@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIHOT 趋势分析 - 投研简报</title>
+  <meta property="og:title" content="AIHOT 趋势分析">
+  <meta property="og:description" content="AI投资机会行业频次趋势、标的热度排行、新兴主题检测">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载趋势数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('aihot-trends', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('aihot');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '趋势分析需要至少 1 天数据，请等待 AIHOT 日报生成');
+        return;
+      }
+
+      // Sort by date ascending for trend analysis
+      const sorted = allData.slice().sort((a, b) => a.data.date.localeCompare(b.data.date));
+
+      // === Aggregate all data ===
+      const dailyIndustry = {};  // date -> {industry: count}
+      const dailyType = {};      // date -> {type: count}
+      const stockFreq = {};      // stock -> {count, industries: Set, opportunities: []}
+      const industryFirstSeen = {}; // industry -> first date
+      const allDates = [];
+      const allIndustries = new Set();
+      const allTypes = new Set();
+
+      for (const entry of sorted) {
+        const d = entry.data;
+        allDates.push(d.date);
+        dailyIndustry[d.date] = {};
+        dailyType[d.date] = {};
+
+        for (const opp of (d.opportunities || [])) {
+          // Industry count
+          const ind = opp.industry || '未分类';
+          dailyIndustry[d.date][ind] = (dailyIndustry[d.date][ind] || 0) + 1;
+          allIndustries.add(ind);
+          if (!industryFirstSeen[ind]) industryFirstSeen[ind] = d.date;
+
+          // Type count
+          const typ = opp.type || '未分类';
+          dailyType[d.date][typ] = (dailyType[d.date][typ] || 0) + 1;
+          allTypes.add(typ);
+
+          // Stock frequency
+          const stocks = Array.isArray(opp.target_stocks)
+            ? opp.target_stocks
+            : (opp.target_stocks || '').split(/[、,，]/).filter(Boolean).map(s => s.trim());
+          for (const s of stocks) {
+            if (!stockFreq[s]) stockFreq[s] = { count: 0, industries: new Set(), opportunities: [] };
+            stockFreq[s].count++;
+            stockFreq[s].industries.add(ind);
+            stockFreq[s].opportunities.push({ date: d.date, title: opp.title, industry: ind });
+          }
+        }
+      }
+
+      // Sort industries by total frequency
+      const industryTotal = {};
+      for (const ind of allIndustries) {
+        industryTotal[ind] = 0;
+        for (const date of allDates) {
+          industryTotal[ind] += (dailyIndustry[date][ind] || 0);
+        }
+      }
+      const topIndustries = Object.entries(industryTotal)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(([name]) => name);
+
+      // Sort types by total frequency
+      const typeTotal = {};
+      for (const typ of allTypes) {
+        typeTotal[typ] = 0;
+        for (const date of allDates) {
+          typeTotal[typ] += (dailyType[date][typ] || 0);
+        }
+      }
+      const topTypes = Object.entries(typeTotal)
+        .sort((a, b) => b[1] - a[1])
+        .map(([name]) => name);
+
+      // Top stocks
+      const topStocks = Object.entries(stockFreq)
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 25);
+
+      // Emerging themes (appeared in last 3 days but not before)
+      const recentDates = allDates.slice(-3);
+      const earlierDates = allDates.slice(0, -3);
+      const emerging = [];
+      for (const ind of allIndustries) {
+        const recentCount = recentDates.reduce((s, d) => s + (dailyIndustry[d]?.[ind] || 0), 0);
+        const earlierCount = earlierDates.reduce((s, d) => s + (dailyIndustry[d]?.[ind] || 0), 0);
+        if (recentCount > 0 && earlierCount === 0) {
+          emerging.push({ name: ind, recentCount, trend: 'new' });
+        } else if (recentCount > earlierCount * 2 && recentCount >= 2) {
+          emerging.push({ name: ind, recentCount, earlierCount, trend: 'rising' });
+        }
+      }
+
+      // Check if we have enough data for trends
+      const hasTrend = allDates.length >= 2;
+
+      // === Render ===
+      let html = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">📊 AIHOT 趋势分析</h1>
+          <div style="display:flex;gap:8px;align-items:center">
+            <span class="text-sm" style="color:var(--text-muted)">${allDates.length} 天数据</span>
+            <a href="aihot.html" class="badge badge-blue" style="text-decoration:none">← 返回日报</a>
+          </div>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">数据天数</div>
+            <div class="stat-value">${allDates.length}</div>
+            <div class="stat-change neutral">${allDates[0]} ~ ${allDates[allDates.length - 1]}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计投资机会</div>
+            <div class="stat-value">${Object.values(industryTotal).reduce((s, v) => s + v, 0)}</div>
+            <div class="stat-change neutral">${allIndustries.size} 个行业方向</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计覆盖标的</div>
+            <div class="stat-value">${Object.keys(stockFreq).length}</div>
+            <div class="stat-change neutral">${topStocks.length > 0 ? topStocks[0][0] : '-'} 最热</div>
+          </div>
+          ${emerging.length > 0 ? `
+          <div class="stat-card">
+            <div class="stat-label">新兴主题</div>
+            <div class="stat-value up">${emerging.length}</div>
+            <div class="stat-change neutral">近 ${recentDates.length} 天新出现</div>
+          </div>
+          ` : ''}
+        </div>
+
+        ${!hasTrend ? `
+        <div class="card">
+          <div class="empty-state" style="padding:32px">
+            <p style="font-size:16px;margin-bottom:8px">📈 趋势图表需要至少 2 天数据</p>
+            <p style="color:var(--text-muted)">当前仅 ${allDates.length} 天数据，趋势图将在数据积累后自动展示</p>
+            <p style="color:var(--text-muted);margin-top:8px">以下展示当日汇总分析 ↓</p>
+          </div>
+        </div>
+        ` : ''}
+
+        <!-- Emerging Themes -->
+        ${emerging.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">🔥 新兴主题（近 ${recentDates.length} 天）</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            ${emerging.map(e => `
+              <span style="display:inline-flex;align-items:center;gap:6px;background:var(--bg-primary);border:1px solid var(--border);border-radius:var(--radius);padding:8px 12px">
+                <span style="font-weight:600">${e.name}</span>
+                <span class="badge ${e.trend === 'new' ? 'badge-green' : 'badge-yellow'}">${e.trend === 'new' ? '🆕 新出现' : '📈 升温'}</span>
+                <span style="color:var(--text-muted);font-size:12px">近${recentDates.length}天${e.recentCount}次</span>
+              </span>
+            `).join('')}
+          </div>
+        </div>
+        ` : ''}
+
+        <!-- Industry Frequency Trend (line chart) -->
+        ${hasTrend ? `
+        <div class="card">
+          <div class="card-title mb-4">📈 行业频次趋势</div>
+          <div id="industryTrendChart" class="chart-container" style="min-height:400px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Type Distribution Trend (stacked bar) -->
+        ${hasTrend ? `
+        <div class="card">
+          <div class="card-title mb-4">📊 机会类型分布变化</div>
+          <div id="typeTrendChart" class="chart-container" style="min-height:320px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Industry Heatmap -->
+        ${hasTrend ? `
+        <div class="card">
+          <div class="card-title mb-4">🗓 行业热力图</div>
+          <div id="heatmapChart" class="chart-container" style="min-height:${Math.max(280, allIndustries.size * 32 + 80)}px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Stock Frequency Ranking -->
+        <div class="card">
+          <div class="card-title mb-4">🏆 标的热度排行（Top 25）</div>
+          <div id="stockRankChart" class="chart-container" style="min-height:${Math.max(300, topStocks.length * 28 + 60)}px"></div>
+        </div>
+
+        <!-- Industry Frequency Table -->
+        <div class="card">
+          <div class="card-title mb-4">📋 行业频次统计</div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>行业方向</th><th>累计次数</th><th>日均</th><th>占比</th><th>首次出现</th></tr>
+              ${Object.entries(industryTotal).sort((a, b) => b[1] - a[1]).map(([ind, count]) => {
+                const pct = ((count / Object.values(industryTotal).reduce((s, v) => s + v, 0)) * 100).toFixed(1);
+                const avg = (count / allDates.length).toFixed(1);
+                return `
+                  <tr>
+                    <td class="font-bold">${ind}</td>
+                    <td style="text-align:center">${count}</td>
+                    <td style="text-align:center">${avg}</td>
+                    <td style="text-align:center">${pct}%</td>
+                    <td style="color:var(--text-muted)">${industryFirstSeen[ind] || '-'}</td>
+                  </tr>
+                `;
+              }).join('')}
+            </table>
+          </div>
+        </div>
+
+        <!-- Stock Detail Table -->
+        <div class="card">
+          <div class="card-title mb-4">📋 标的详细索引</div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>标的</th><th>出现次数</th><th>涉及行业</th><th>最近出现</th></tr>
+              ${topStocks.map(([stock, info]) => `
+                <tr>
+                  <td class="font-bold" style="color:#22c55e;white-space:nowrap">${stock}</td>
+                  <td style="text-align:center">${info.count}</td>
+                  <td>${[...info.industries].map(ind => `<span class="badge badge-blue" style="margin:1px 2px">${ind}</span>`).join('')}</td>
+                  <td style="color:var(--text-muted);white-space:nowrap">${info.opportunities[info.opportunities.length - 1]?.date || '-'}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>
+      `;
+
+      app.innerHTML = html;
+
+      // === Render Charts ===
+      const theme = getEChartsTheme();
+      const colors = ['#3b82f6','#22c55e','#ef4444','#eab308','#8b5cf6','#f97316','#ec4899','#06b6d4','#84cc16','#a855f7'];
+
+      // Industry Frequency Trend (line chart)
+      if (hasTrend) {
+        const indChart = initChart('industryTrendChart');
+        if (indChart) {
+          const series = topIndustries.map((ind, i) => ({
+            name: ind, type: 'line', smooth: true,
+            data: allDates.map(d => dailyIndustry[d]?.[ind] || 0),
+            lineStyle: { width: 2 },
+            itemStyle: { color: colors[i % colors.length] },
+            symbol: 'circle', symbolSize: 6
+          }));
+          indChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'axis' },
+            legend: { ...theme.legend, data: topIndustries, type: 'scroll', bottom: 0 },
+            grid: { left: 50, right: 20, top: 20, bottom: 60 },
+            xAxis: { ...theme.xAxis, type: 'category', data: allDates },
+            yAxis: { ...theme.yAxis, type: 'value', name: '出现次数', minInterval: 1 },
+            series,
+            dataZoom: defaultDataZoom(allDates.length)
+          });
+        }
+      }
+
+      // Type Distribution Trend (stacked bar)
+      if (hasTrend) {
+        const typeChart = initChart('typeTrendChart');
+        if (typeChart) {
+          const series = topTypes.map((typ, i) => ({
+            name: typ, type: 'bar', stack: 'total',
+            data: allDates.map(d => dailyType[d]?.[typ] || 0),
+            itemStyle: { color: colors[i % colors.length], borderRadius: i === topTypes.length - 1 ? [2, 2, 0, 0] : 0 },
+            barWidth: '60%'
+          }));
+          typeChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'axis' },
+            legend: { ...theme.legend, data: topTypes, type: 'scroll', bottom: 0 },
+            grid: { left: 50, right: 20, top: 20, bottom: 60 },
+            xAxis: { ...theme.xAxis, type: 'category', data: allDates },
+            yAxis: { ...theme.yAxis, type: 'value', name: '次数', minInterval: 1 },
+            series,
+            dataZoom: defaultDataZoom(allDates.length)
+          });
+        }
+      }
+
+      // Industry Heatmap
+      if (hasTrend) {
+        const heatChart = initChart('heatmapChart');
+        if (heatChart) {
+          const industries = Object.entries(industryTotal).sort((a, b) => b[1] - a[1]).map(([n]) => n);
+          const heatData = [];
+          let maxVal = 0;
+          industries.forEach((ind, yi) => {
+            allDates.forEach((date, xi) => {
+              const val = dailyIndustry[date]?.[ind] || 0;
+              heatData.push([xi, yi, val]);
+              if (val > maxVal) maxVal = val;
+            });
+          });
+          heatChart.setOption({
+            ...theme,
+            tooltip: {
+              ...theme.tooltip,
+              formatter: p => `${allDates[p.data[0]]}<br/>${industries[p.data[1]]}: ${p.data[2]} 次`
+            },
+            grid: { left: 120, right: 60, top: 10, bottom: 40 },
+            xAxis: { ...theme.xAxis, type: 'category', data: allDates, axisLabel: { ...theme.xAxis.axisLabel, rotate: 30 } },
+            yAxis: { ...theme.yAxis, type: 'category', data: industries },
+            visualMap: {
+              min: 0, max: Math.max(maxVal, 1),
+              orient: 'horizontal', right: 0, top: 0,
+              inRange: { color: ['#1e293b', '#1e3a5f', '#1d4ed8', '#3b82f6', '#60a5fa'] },
+              textStyle: { color: '#94a3b8' }, showLabel: false
+            },
+            series: [{
+              type: 'heatmap', data: heatData,
+              label: { show: true, color: '#e2e8f0', fontSize: 11, formatter: p => p.data[2] || '' },
+              emphasis: { itemStyle: { shadowBlur: 6, shadowColor: 'rgba(0,0,0,0.3)' } }
+            }]
+          });
+        }
+      }
+
+      // Stock Frequency Ranking (horizontal bar)
+      if (topStocks.length > 0) {
+        const stockChart = initChart('stockRankChart');
+        if (stockChart) {
+          const reversed = topStocks.slice().reverse();
+          stockChart.setOption({
+            ...theme,
+            tooltip: {
+              ...theme.tooltip,
+              formatter: p => {
+                const info = stockFreq[p.name];
+                return `<strong>${p.name}</strong><br/>出现 ${p.value} 次<br/>行业: ${[...info.industries].join('、')}`;
+              }
+            },
+            grid: { left: 110, right: 30, top: 10, bottom: 20 },
+            xAxis: { ...theme.xAxis, type: 'value', name: '出现次数', minInterval: 1 },
+            yAxis: { ...theme.yAxis, type: 'category', data: reversed.map(([s]) => s) },
+            series: [{
+              type: 'bar',
+              data: reversed.map(([, info]) => ({
+                value: info.count,
+                itemStyle: {
+                  color: info.count >= 3 ? '#ef4444' : info.count >= 2 ? '#eab308' : '#3b82f6',
+                  borderRadius: [0, 4, 4, 0]
+                }
+              })),
+              barWidth: '60%',
+              label: { show: true, position: 'right', color: '#94a3b8', fontSize: 12 }
+            }]
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-09",
+  "generated_at": "2026-06-09T08:51:53.457561+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "OpenAI秘密提交S-1 + AGI第三阶段路线图发布",
+      "industry": "AI基础设施",
+      "type": "重大事件",
+      "summary": "OpenAI向SEC秘密提交S-1草案启动IPO进程，同日Altman与首席科学家联合发布第三阶段战略：构建自动化AI研究员→推动经济提速→每人配备专属AGI。计划到2028年AI主导大部分研究工作。",
+      "investment_logic": "OpenAI IPO将重估整个AI产业链估值中枢，利好算力芯片、云计算、AI基础设施。AGI路线图从企业目标升级为公开承诺，加速产业链资本配置。同日微软AI CEO确认已组建超级智能团队、训练前沿模型，巨头竞赛白热化。",
+      "target_stocks": "NVIDIA(NVDA)、微软(MSFT)、台积电(TSM)、Broadcom(AVGO)、寒武纪(688256)",
+      "risk_note": "IPO时间未定且监管审批不确定；AGI路线图可能过于乐观；微软同时获准独立追求超级智能，OpenAI-微软关系存在变数",
+      "source": "OpenAI官方博客 + IT之家 + X：Rohan Paul"
+    },
+    {
+      "id": 2,
+      "title": "微信AI Agent生态曝光：超级应用Agent化启动",
+      "industry": "AI+社交/电商",
+      "type": "行业新方向",
+      "summary": "腾讯测试嵌入微信的AI Agent，用户右滑唤出对话窗口，通过自然语言指令调用数百万小程序完成点咖啡等任务。与华为、荣耀、小米、OPPO、vivo合作A2A助手。微信开放平台提供自动+开发两种接入模式。",
+      "investment_logic": "Agentic Commerce雏形出现——超级应用从「人找服务」到「Agent调用服务」的范式转变。微信13亿月活+数百万小程序的生态壁垒结合AI Agent能力，入口价值重估。手机厂商合作将AI助手能力延伸至系统层。",
+      "target_stocks": "腾讯控股(00700.HK)、小米集团(01810.HK)",
+      "risk_note": "仍在内测阶段，商业化路径不明；小程序开发者接入意愿和AI改造质量待验证；可能面临反垄断关注",
+      "source": "公众号：数字生命卡兹克 + IT之家"
+    },
+    {
+      "id": 3,
+      "title": "Apple WWDC 2026：端侧AI全栈升级 + Claude原生集成",
+      "industry": "AI+消费电子",
+      "type": "重大事件",
+      "summary": "Apple发布新一代Apple Intelligence和Siri AI，推出Core AI框架。Anthropic通过Swift包将Claude深度集成到Apple Foundation Models，开发者三行代码即可调用。覆盖iOS/iPadOS/macOS/visionOS/watchOS 27。",
+      "investment_logic": "Apple端侧AI从概念走向全平台落地，边缘推理需求确定性爆发。Claude作为首个第三方AI深度嵌入Apple生态，标志封闭生态向AI开放转型，利好Apple设备升级周期和AI芯片供应链。Siri AI在欧盟因DMA延迟反而凸显合规壁垒下的先发优势。",
+      "target_stocks": "苹果(AAPL)、高通(QCOM)、立讯精密(002475)、歌尔股份(002241)",
+      "risk_note": "Siri AI在欧盟因DMA延迟上线，欧洲市场存在不确定性；端侧AI对硬件换机周期的拉动效应需实际销售数据验证",
+      "source": "Apple Newsroom + Claude官方博客 + Hacker News"
+    },
+    {
+      "id": 4,
+      "title": "小米1T MoE模型单8-GPU节点突破1000 tokens/s",
+      "industry": "大模型推理",
+      "type": "行业瓶颈变化",
+      "summary": "小米MiMo联合TileRT_AI发布V2.5-Pro-UltraSpeed，首次在1万亿参数MoE模型上实现超1000 tokens/s输出速度，仅用单台标准8-GPGPU节点（非Cerebras/Groq方案），输出体验提升约10倍。",
+      "investment_logic": "中国AI大模型推理效率实现质变——标准硬件跑通1T参数模型，推理成本下降约10倍。这意味AI应用的经济模型正在从「烧钱」走向「可盈利」，利好AI应用层规模化和端侧部署。小米AI能力已跻身国内第一梯队，硬件+AI双轮驱动逻辑强化。",
+      "target_stocks": "小米集团(01810.HK)、寒武纪(688256)、海光信息(688041)",
+      "risk_note": "限时免费期后API价格为3倍，实际商业化定价可能限制规模；8-GPU节点在实际生产环境中的稳定性需验证",
+      "source": "X：小米MiMo官方"
+    },
+    {
+      "id": 5,
+      "title": "AI Agent提效87%降本94%：劳动力替代获实证",
+      "industry": "AI应用/企业服务",
+      "type": "行业瓶颈变化",
+      "summary": "Perplexity与哈佛大学联合发布3个月研究成果：使用AI Agent（Computer）的工人完成任务比仅使用搜索快87%，成本低94%，且满意度显著更高。研究覆盖真实工作场景下的多步骤复杂任务。",
+      "investment_logic": "这是目前最严格的AI Agent生产力实证研究之一——从实验室对比升级为「有统计学意义的劳动力替代效应」。企业级AI部署ROI获得学术背书，将加速Agent在企业服务、知识工作、客户支持等领域的采用。利好AI Agent平台和企业SaaS厂商。",
+      "target_stocks": "Salesforce(CRM)、ServiceNow(NOW)、UiPath(PATH)、金山办公(688111)",
+      "risk_note": "实验室受控环境与真实生产环境存在差距；Agent在关键业务场景的可靠性仍需提升；企业采购决策周期长于技术验证",
+      "source": "Perplexity Research + X：Perplexity官方"
+    },
+    {
+      "id": 6,
+      "title": "高德ABot-Earth0.5：全球3D空间智能基础设施级突破",
+      "industry": "AI+空间智能",
+      "type": "行业新方向",
+      "summary": "阿里巴巴高德发布全球首个3D原生城市世界模型，覆盖190+国家。输入卫星图或文字描述，10分钟在消费级GPU上生成公里级3D城市，制图成本为传统1%、效率提升约千倍，输出可编辑3DGS格式直接导入Unity等引擎。",
+      "investment_logic": "这是具身智能+低空经济+自动驾驶的「基础设施级」突破——3D空间智能从昂贵的数据采集工程变成低成本AI生成服务。成本降低100倍意味着空间智能应用从B端大客户走向中小企业和消费级场景。阿里巴巴在地理空间AI的布局从「地图服务商」升级为「空间智能平台」。",
+      "target_stocks": "阿里巴巴(09988.HK)、百度集团(09888.HK)、四维图新(002405)",
+      "risk_note": "内测阶段，商业化路径待验证；3DGS格式在工业界采用率不确定；高精度3D地图涉及测绘法规合规",
+      "source": "IT之家"
+    },
+    {
+      "id": 7,
+      "title": "Anthropic：生物学AI的数据基础设施被识别为关键瓶颈",
+      "industry": "AI+生物制药",
+      "type": "行业瓶颈变化",
+      "summary": "Anthropic研究揭示AI在编码领域远快于生物学的原因：生物数据库碎片化、格式特殊、接口不统一，AI智能体检索准确率不足。加入确定性检索层（gget virus）后准确率近100%。呼吁重建面向AI智能体的生物学数据基础设施。",
+      "investment_logic": "AI制药从「模型能力不够」的叙事转向「数据基建不到位」的诊断——这是可解决的工程问题而非技术天花板。确定性检索+AI智能体的组合方案为AI药物发现提供了明确的技术路径，利好具备生物数据积累的CXO和AI制药公司。",
+      "target_stocks": "药明康德(603259)、Recursion Pharmaceuticals(RXRX)、Schrödinger(SDGR)",
+      "risk_note": "数据基础设施改造需全球行业协作，推进速度不确定；AI制药从靶点发现到临床验证周期极长（10年+）",
+      "source": "Anthropic Research Blog + X：Anthropic官方"
+    },
+    {
+      "id": 8,
+      "title": "生数科技×华策影视：AI影视工业化从概念走向流程整合",
+      "industry": "AI+影视内容",
+      "type": "行业新方向",
+      "summary": "生数科技（Vidu视频大模型）与华策影视签署战略合作，设立「AI视听创制中心」，推广「实拍+AI」融合方案并在华策项目中试点。同时在浙江华策影视学校设立AI影视创制专业，培养复合型人才。",
+      "investment_logic": "AI视频生成从技术demo走向影视工业流程整合——这是国内首个头部AI视频模型与头部影视公司的战略级合作。内容生产范式从「纯人工」转向「实拍+AI融合」，有望降低制作成本、缩短周期。标杆效应将推动更多影视公司跟进AI工具链。",
+      "target_stocks": "Adobe(ADBE)、万兴科技(300624)、捷成股份(300182)",
+      "risk_note": "「实拍+AI」融合方案效果待实际作品验证；AI生成内容在专业影视制作中的质量控制标准尚未建立",
+      "source": "公众号：生数科技Vidu"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-09.json",
+  "_saved_at": "2026-06-09T08:51:53.457756+08:00"
+}

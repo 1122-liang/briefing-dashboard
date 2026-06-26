@@ -1,0 +1,89 @@
+{
+  "period": "06/01-06/07",
+  "total_hours": 22.0,
+  "projects": [
+    {
+      "name": "投研简报网站（Dashboard）",
+      "hours": 6.0,
+      "files": 12,
+      "summary": "全面审查10项修复 + AIHOT趋势分析页面 + 新功能开发",
+      "efficiency": "high",
+      "issues": ""
+    },
+    {
+      "name": "雪球摘要自动化",
+      "hours": 5.0,
+      "files": 5,
+      "summary": "预获取架构设计 + Playwright调试 + 文章总结模式迭代",
+      "efficiency": "medium",
+      "issues": "Playwright Sandbox限制反复调试浪费~3h"
+    },
+    {
+      "name": "AIHOT投资机会日报",
+      "hours": 2.5,
+      "files": 3,
+      "summary": "趋势分析6模块 + 标的索引优化 + 饼图标签修复",
+      "efficiency": "high",
+      "issues": ""
+    },
+    {
+      "name": "碳酸锂期货监控",
+      "hours": 2.0,
+      "files": 2,
+      "summary": "仓单数据自动获取 + 双轴图表 + 回退机制",
+      "efficiency": "high",
+      "issues": ""
+    },
+    {
+      "name": "自动化Prompt精简",
+      "hours": 2.0,
+      "files": 6,
+      "summary": "4个自动化从100行→20行 + 建立设计规范",
+      "efficiency": "high",
+      "issues": ""
+    },
+    {
+      "name": "情绪周期选股系统",
+      "hours": 1.5,
+      "files": 1,
+      "summary": "v3.1→v3.2计划迭代，待用户确认实施",
+      "efficiency": "medium",
+      "issues": "计划完成但未进入实施"
+    },
+    {
+      "name": "月度偏离度预警",
+      "hours": 1.5,
+      "files": 2,
+      "summary": "数据断裂修复 + 黄金RR修复 + name→code匹配",
+      "efficiency": "high",
+      "issues": ""
+    },
+    {
+      "name": "股票池新闻研报",
+      "hours": 1.0,
+      "files": 2,
+      "summary": "新增未来产业周报抓取 + 研报过滤排查",
+      "efficiency": "high",
+      "issues": "研报连续4天为0才排查"
+    },
+    {
+      "name": "模型成本优化",
+      "hours": 0.5,
+      "files": 0,
+      "summary": "12个自动化全面迁移至V4-Flash/V4-Pro，节省83%积分",
+      "efficiency": "high",
+      "issues": ""
+    }
+  ],
+  "files_created": 37,
+  "automation_runs": 30,
+  "suggestions": [
+    "建立自动化健康检查：每日汇总运行状态，异常主动告警",
+    "关键脚本修改后增加冒烟测试（dry-run模式）",
+    "需求确认模板：首次任务明确输入/输出/边界条件",
+    "研报过滤增加原始数量日志便于排查",
+    "清理._*资源分支文件残留，确认deploy.sh排除规则"
+  ],
+  "_filename": "2026-06-07.json",
+  "_saved_at": "2026-06-07T22:04:25.898597+08:00"
+}

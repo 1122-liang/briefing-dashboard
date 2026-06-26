@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-31",
+  "generated_at": "2026-05-31T23:52:36.260789+08:00",
+  "total_users": 0,
+  "active_users": 0,
+  "total_posts": 0,
+  "filtered_posts": 0,
+  "categories": {},
+  "top_posts": [],
+  "analysis": null,
+  "time_range": {
+    "from": "2026-05-30 23:52",
+    "to": "2026-05-31 23:52"
+  },
+  "today_topics_count": 8,
+  "today_topics": [
+    {
+      "id": "391845720",
+      "title": "或许只有“模糊的正确”：才是你投资逆境时的最后一道防线！",
+      "url": "https://xueqiu.com/9363345092/391845720",
+      "image": "https://xqimg.imedao.com/14964f7f3e4333fddf6e8945.jpg!540x280.png",
+      "created_at_str": "2026-05-31 09:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391609586",
+      "title": "十年三波",
+      "url": "https://xueqiu.com/2103206506/391609586",
+      "image": "https://xqimg.imedao.com/14a7af6befa93fddde3bb3e0.jpg!160x120.png",
+      "created_at_str": "2026-05-31 09:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391897588",
+      "title": "投资少看边际变化",
+      "url": "https://xueqiu.com/7123126150/391897588",
+      "image": "https://xqimg.imedao.com/14d8fac82a9103fe0b961c98.jpg!160x120.png",
+      "created_at_str": "2026-05-31 09:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391142003",
+      "title": "价值加摊薄就是所谓的抄底",
+      "url": "https://xueqiu.com/5642562501/391142003",
+      "image": "https://xqimg.imedao.com/152e789a58543fd5f3c91255.jpg!160x120.png",
+      "created_at_str": "2026-05-31 09:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391954694",
+      "title": "半导体减持激增！是见顶的信号吗？",
+      "url": "https://xueqiu.com/1843761023/391954694",
+      "image": "https://xqimg.imedao.com/14a1521d8aa33fe0891a60f3.jpg!540x280.png",
+      "created_at_str": "2026-05-31 21:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391957615",
+      "title": "港股要变天？",
+      "url": "https://xueqiu.com/7393602913/391957615",
+      "image": "https://xqimg.imedao.com/14a31b3a8ac183feaec2a32a.jpg!160x120.png",
+      "created_at_str": "2026-05-31 21:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391958621",
+      "title": "当拼多多的死多头开始质疑",
+      "url": "https://xueqiu.com/4111913912/391958621",
+      "image": "https://xqimg.imedao.com/14adc56066b63fe2c42c4266.jpg!160x120.png",
+      "created_at_str": "2026-05-31 21:05",
+      "source": "今日话题"
+    },
+    {
+      "id": "391961186",
+      "title": "国产AI超节点：VCSEL将大放异彩",
+      "url": "https://xueqiu.com/5672579962/391961186",
+      "image": "https://xqimg.imedao.com/149ada4cc49743fba8a2b67f.jpg!160x120.png",
+      "created_at_str": "2026-05-31 21:05",
+      "source": "今日话题"
+    }
+  ],
+  "_filename": "2026-05-31.json",
+  "_saved_at": "2026-05-31T23:52:36.260879+08:00"
+}

@@ -1,0 +1,8 @@
+._*
+.DS_Store
+__pycache__/
+
+# 大文件缓存（不部署到 GitHub Pages）
+*.parquet
+*-standalone*.html
+history.json

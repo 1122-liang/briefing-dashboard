@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIHOT 投资机会日报 - 投研简报</title>
+  <meta property="og:title" content="AIHOT 投资机会日报">
+  <meta property="og:description" content="AI热点投资机会聚合、行业分布、标的推荐">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载 AIHOT 数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('aihot', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('aihot');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, 'AIHOT 投资机会日报将在每个工作日自动生成');
+        return;
+      }
+
+      const latest = allData[0].data;
+
+      // Industry grouping map (细分行大类)
+      const INDUSTRY_GROUP = {
+        'AI基础设施': 'AI基础设施/算力', '算力芯片': 'AI基础设施/算力',
+        '国产算力/GPU': 'AI基础设施/算力', 'AI推理芯片': 'AI基础设施/算力',
+        '光通信/算力网络': 'AI基础设施/算力', '太空AI算力': 'AI基础设施/算力',
+        'AI大模型': 'AI大模型/平台', 'AI平台': 'AI大模型/平台',
+        'AI架构创新': 'AI大模型/平台', 'AI平台竞争': 'AI大模型/平台',
+        '机器人': '具身智能/机器人', '具身智能/机器人': '具身智能/机器人',
+        'AGI/制造业AI': '具身智能/机器人', '自主武器/AI军事': '具身智能/机器人',
+        'AI视频': 'AI应用/内容', 'AI影视': 'AI应用/内容',
+        '企业AI服务': 'AI应用/内容', '金融AI应用': 'AI应用/内容',
+        'AI安全与合规': 'AI安全与政策', 'AI应用/政策监管': 'AI安全与政策',
+      };
+      // 关键词兜底匹配（按优先级排列）
+      const CATEGORY_KEYWORDS = [
+        { group: 'AI基础设施/算力', keywords: ['算力', '芯片', 'GPU', 'CPU', '光模块', '数据中心', '服务器', 'IDC', '液冷', '通信', '网络', '卫星', '太空', '基建'] },
+        { group: 'AI大模型/平台', keywords: ['大模型', '平台', '架构', '模型', '开源', '推理框架', 'Transformer', 'Agent框架'] },
+        { group: '具身智能/机器人', keywords: ['机器人', '具身', '制造', '军事', '武器', '无人机', '自动驾驶', '传感', '减速器'] },
+        { group: 'AI应用/内容', keywords: ['视频', '影视', '金融', '企业', 'SaaS', '办公', '教育', '医疗', '游戏', '内容', '电商'] },
+        { group: 'AI安全与政策', keywords: ['安全', '合规', '监管', '政策', '法律', '伦理', '隐私'] },
+      ];
+      function groupIndustry(raw) {
+        if (INDUSTRY_GROUP[raw]) return INDUSTRY_GROUP[raw];
+        const lower = raw.toLowerCase();
+        for (const { group, keywords } of CATEGORY_KEYWORDS) {
+          if (keywords.some(kw => lower.includes(kw.toLowerCase()))) return group;
+        }
+        return raw; // 无匹配 → 自成一类
+      }
+
+      // Aggregate industry stats
+      const industryCount = {};
+      const typeCount = {};
+      let totalOpps = 0;
+      for (const entry of allData) {
+        for (const opp of (entry.data.opportunities || [])) {
+          totalOpps++;
+          const grouped = groupIndustry(opp.industry);
+          industryCount[grouped] = (industryCount[grouped] || 0) + 1;
+          typeCount[opp.type] = (typeCount[opp.type] || 0) + 1;
+        }
+      }
+
+      const industries = Object.entries(industryCount).sort((a, b) => b[1] - a[1]);
+      const types = Object.entries(typeCount).sort((a, b) => b[1] - a[1]);
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">🤖 AIHOT 投资机会日报</h1>
+          <div style="display:flex;gap:8px;align-items:center">
+            <span class="text-sm" style="color:var(--text-muted)">${latest.date}</span>
+            <a href="aihot-trends.html" class="badge badge-green" style="text-decoration:none">📊 趋势分析</a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">今日机会</div>
+            <div class="stat-value">${latest.total_opportunities || 0}</div>
+            <div class="stat-change neutral">${latest.no_opportunity ? '无投资机会' : '个投资机会'}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">累计机会</div>
+            <div class="stat-value">${totalOpps}</div>
+            <div class="stat-change neutral">${allData.length} 天数据</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">覆盖行业</div>
+            <div class="stat-value">${industries.length}</div>
+            <div class="stat-change neutral">${industries.length > 0 ? industries[0][0] : '-'}</div>
+          </div>
+        </div>
+
+        <!-- Industry Distribution -->
+        ${industries.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">行业分布</div>
+          <div id="industryChart" class="chart-container" style="min-height:460px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Type Distribution -->
+        ${types.length > 0 ? `
+        <div class="card">
+          <div class="card-title mb-4">机会类型分布</div>
+          <div id="typeChart" class="chart-container" style="min-height:280px"></div>
+        </div>
+        ` : ''}
+
+        <!-- Today's Opportunities -->
+        <div class="card">
+          <div class="card-title mb-4">📌 今日投资机会</div>
+          ${latest.no_opportunity || !latest.opportunities || latest.opportunities.length === 0
+            ? '<div class="empty-state"><p>今日暂无投资机会</p></div>'
+            : latest.opportunities.map(opp => `
+              <div style="background:var(--bg-primary);border-radius:var(--radius);padding:16px;margin-bottom:12px;border-left:3px solid var(--accent)">
+                <div class="flex items-center gap-2 mb-4" style="margin-bottom:8px">
+                  <span class="font-bold" style="font-size:16px">${opp.title}</span>
+                  <span class="badge badge-blue">${opp.industry}</span>
+                  <span class="badge badge-yellow">${opp.type}</span>
+                </div>
+                ${opp.summary ? `<p class="text-sm" style="color:var(--text-secondary);margin-bottom:8px">${opp.summary}</p>` : ''}
+                ${opp.investment_logic ? `
+                  <div class="text-sm" style="margin-bottom:8px">
+                    <span style="color:var(--accent)">💡 投资逻辑：</span>
+                    <span style="color:var(--text-secondary)">${opp.investment_logic}</span>
+                  </div>
+                ` : ''}
+                ${opp.target_stocks ? `
+                  <div class="text-sm" style="margin-top:6px">
+                    <span style="color:var(--text-muted)">🎯 潜在标的：</span>
+                    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+                      ${(Array.isArray(opp.target_stocks)
+                        ? opp.target_stocks
+                        : opp.target_stocks.split(/[、,，]/).filter(Boolean).map(s => s.trim())
+                      ).map(s => `
+                        <span style="display:inline-flex;align-items:center;gap:4px;background:var(--bg-secondary);border-radius:var(--radius);padding:3px 8px;font-size:12px">
+                          <span style="color:#22c55e;font-weight:600">${s}</span>
+                          <span style="color:var(--text-muted);font-size:11px">${opp.title.length > 15 ? opp.title.slice(0, 15) + '…' : opp.title}</span>
+                        </span>
+                      `).join('')}
+                    </div>
+                  </div>
+                ` : ''}
+                ${opp.risk_note ? `
+                  <div class="text-xs" style="margin-top:6px;color:var(--yellow)">⚠️ ${opp.risk_note}</div>
+                ` : ''}
+              </div>
+            `).join('')}
+        </div>
+
+        <!-- Stock Index: cross-reference of stocks to opportunities -->
+        ${(() => {
+          const stockMap = {}; // stock -> [{title, industry}]
+          for (const opp of (latest.opportunities || [])) {
+            const stocks = Array.isArray(opp.target_stocks)
+              ? opp.target_stocks
+              : (opp.target_stocks || '').split(/[、,，]/).filter(Boolean).map(s => s.trim());
+            for (const s of stocks) {
+              if (!stockMap[s]) stockMap[s] = [];
+              stockMap[s].push({ title: opp.title, industry: opp.industry });
+            }
+          }
+          const entries = Object.entries(stockMap).sort((a, b) => b[1].length - a[1].length);
+          if (entries.length === 0) return '';
+          return `
+        <div class="card">
+          <div class="card-title mb-4">🗂 标的索引（${entries.length} 只）</div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>标的</th><th>出现次数</th><th>所属投资机会</th></tr>
+              ${entries.map(([stock, opps]) => `
+                <tr>
+                  <td class="font-bold" style="color:#22c55e;white-space:nowrap">${stock}</td>
+                  <td style="text-align:center">${opps.length}</td>
+                  <td>${opps.map(o =>
+                    `<span style="display:inline-flex;align-items:center;gap:4px;margin:2px 4px 2px 0;background:var(--bg-secondary);border-radius:var(--radius);padding:2px 8px;font-size:12px">
+                      <span>${o.title.length > 20 ? o.title.slice(0, 20) + '…' : o.title}</span>
+                      <span class="badge badge-blue" style="font-size:10px;padding:1px 4px">${o.industry}</span>
+                    </span>`
+                  ).join('')}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>`;
+        })()}
+
+        <!-- History Timeline -->
+        <div class="card">
+          <div class="card-title mb-4">历史日报</div>
+          <div class="timeline">
+            ${allData.slice(0, 30).map(entry => {
+              const d = entry.data;
+              return `
+                <div class="timeline-item">
+                  <div class="timeline-date">${d.date}</div>
+                  <div class="timeline-content">
+                    ${d.no_opportunity
+                      ? '<span style="color:var(--text-muted)">无投资机会</span>'
+                      : `<span class="badge badge-green">${d.total_opportunities} 个机会</span>
+                         ${(d.opportunities || []).slice(0, 3).map(o =>
+                           `<span class="badge badge-blue" style="margin-left:4px">${o.industry}</span>`
+                         ).join('')}`
+                    }
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+
+      // Industry chart
+      if (industries.length > 0) {
+        const indChart = initChart('industryChart');
+        if (indChart) {
+          const theme = getEChartsTheme();
+          indChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+            legend: {
+              bottom: 0,
+              left: 'center',
+              textStyle: { color: '#94a3b8', fontSize: 11 },
+              itemWidth: 10, itemHeight: 10,
+              itemGap: 14,
+              type: 'scroll',
+              formatter: function(name) {
+                const item = industries.find(([n]) => n === name);
+                return item ? name + ' ' + item[1] : name;
+              }
+            },
+            series: [{
+              type: 'pie',
+              radius: ['24%', '50%'],
+              center: ['50%', '38%'],
+              avoidLabelOverlap: true,
+              minAngle: 10,
+              label: {
+                position: 'inner',
+                color: '#fff',
+                fontSize: 12,
+                fontWeight: 'bold',
+                formatter: '{d}%'
+              },
+              labelLine: { show: false },
+              data: industries.map(([name, count]) => ({ name, value: count }))
+            }]
+          });
+        }
+      }
+
+      // Type chart
+      if (types.length > 0) {
+        const typeChart = initChart('typeChart');
+        if (typeChart) {
+          const theme = getEChartsTheme();
+          typeChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'axis', axisPointer: { type: 'shadow' } },
+            grid: { left: 100, right: 20, top: 20, bottom: 20 },
+            xAxis: { ...theme.xAxis, type: 'value' },
+            yAxis: { ...theme.yAxis, type: 'category', data: types.map(t => t[0]).reverse() },
+            series: [{ type: 'bar', data: types.map(t => t[1]).reverse(),
+              itemStyle: { color: '#3b82f6', borderRadius: [0, 4, 4, 0] },
+              barWidth: '50%' }]
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

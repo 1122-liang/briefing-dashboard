@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26T08:42:46.229403+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "AI经济年化收入突破1750亿美元，营收增速为移动互联网3倍",
+      "industry": "AI基础设施",
+      "type": "重大事件",
+      "summary": "Exponentialview发布《AI经济状态》报告：过去12个月实际AI营收达1100亿美元，年化运行率超1750亿美元，增速约为移动/互联网普及浪潮的3倍。营收形成速度急剧加快——2023年新增10亿美元收入需180天，现缩短至不足2天。Token降价每10%刺激12-18%用量增长，需求价格弹性强。电力供应和数据中心成本仍是未来扩张主要瓶颈。",
+      "investment_logic": "AI商业化进入超级加速周期，营收增速3倍于历史技术浪潮；Token需求弹性极强（降本→用量暴增），算力需求长期向上；数据中心电力瓶颈意味着液冷/电力设备/能源基础设施受益；云厂商AI收入目前大致覆盖基础设施折旧，GPU经济效益依赖6年计算寿命假设，关注GPU利用率优化方向。",
+      "target_stocks": "美股：英伟达(NVDA)、博通(AVGO)、微软(MSFT)、Vertiv(VRT)；A股：中际旭创(300308)、工业富联(601138)",
+      "risk_note": "GPU 6年折旧假设若因技术迭代缩短将冲击云厂商利润率；电力供应瓶颈可能制约短期扩张速度；700亿美元年度折旧对应的实际ROI尚未充分验证",
+      "source": "X：Exponentialview/State of the AI Economy 报告"
+    },
+    {
+      "id": 2,
+      "title": "IBM发布全球首款亚纳米级芯片：0.7nm工艺+三维纳米堆叠架构",
+      "industry": "算力芯片",
+      "type": "行业瓶颈变化",
+      "summary": "IBM于6月25日发布全球首款亚纳米级芯片技术，采用0.7nm（7埃米）节点与全新三维纳米堆叠架构。指甲盖大小的芯片集成近1000亿个晶体管，密度约为IBM 2021年2nm芯片的两倍。相比2nm芯片，性能最高提升50%，能效最高提升70%。纳米堆叠架构实现SRAM面积缩减40%，有助于支撑先进AI工作负载的高带宽需求。该技术已在VLSI 2026会议上验证，IBM预计5年内量产。",
+      "investment_logic": "0.7nm突破意味着摩尔定律在亚纳米尺度延续，为2030年前AI算力持续增长提供物理基础；三维纳米堆叠是后摩尔时代的核心方向，设备/材料需求结构性增长；SRAM面积缩减40%将提升HBM/存内计算密度，利好先进封装；5年量产窗口意味着相关设备/材料供应商将进入研发投入期。",
+      "target_stocks": "美股：应用材料(AMAT)、泛林集团(LRCX)、台积电(TSM)；A股：中微公司(688012)、北方华创(002371)；日股：东京电子(8035.T)",
+      "risk_note": "IBM历史上先进制程量产转化率偏低（2nm至今未大规模量产）；5年量产窗口存在技术不确定性；三维堆叠散热和良率是产业化核心挑战",
+      "source": "IBM Newsroom / VLSI 2026"
+    },
+    {
+      "id": 3,
+      "title": "美国要求OpenAI暂缓GPT-5.6广泛发布：AI安全监管历史性升级",
+      "industry": "AI安全与合规",
+      "type": "政策影响",
+      "summary": "The Information报道，美国政府因网络安全顾虑要求OpenAI暂缓GPT-5.6的广泛发布，改为推出受控预览版。OpenAI计划先向小部分合作伙伴提供早期访问，并由政府逐客户审批准入。这一非常规做法主要担忧模型在自动化高科技网络工作上的能力：既能帮防御者更快发现漏洞，也可能被攻击者用于加速漏洞利用测试。CEO Sam Altman已向员工确认该审批流程。",
+      "investment_logic": "这是美国政府首次对商业AI模型发布实施前置审批，标志着AI安全监管从自愿承诺进入强制执行的拐点；网络安全AI攻防将成新赛道（防御/攻击/合规审计）；受控发布模式可能减缓OpenAI商业化节奏，利好Anthropic等竞争对手；AI模型安全测试/红队评估需求爆发。",
+      "target_stocks": "美股：CrowdStrike(CRWD)、Palo Alto Networks(PANW)、SentinelOne(S)；A股：奇安信(688561)、深信服(300454)；港股：中国软件国际(00354.HK)",
+      "risk_note": "受控发布模式若成为常态化可能削弱美国AI商业竞争力；监管政策具体执行细则尚未明确；网络安全AI攻防技术仍在早期，商业化路径不清晰",
+      "source": "The Information / X：Rohan Paul"
+    },
+    {
+      "id": 4,
+      "title": "General Intuition以23亿美元估值完成3.2亿美元融资：用游戏数据训练通用AI智能体",
+      "industry": "具身智能+AI Agent",
+      "type": "重大事件",
+      "summary": "General Intuition以23亿美元估值完成3.2亿美元融资（累计披露4.54亿），从旗下游戏剪辑平台Medal获取数亿小时含精确按键动作标签的游戏操作数据，训练单一模型同时驾驭Fortnite等虚拟环境和四足机器人。演示中AI在游戏中连续运行100小时，机器人仅靠8分钟真实街道数据微调即可自主探索办公室。由Khosla Ventures领投，General Catalyst、Jeff Bezos、Eric Schmidt等参投。资金将用于通过CoreWeave扩大计算规模、预训练下一代模型，计划夏末前开放API。",
+      "investment_logic": "游戏数据→现实世界迁移训练范式验证，具身智能最大瓶颈（真实世界数据稀缺）有望突破；23亿估值+顶级资本背书（Bezos/Schmidt）验证AI Agent长期赛道；仅需8分钟真实微调即可完成sim-to-real迁移，效率远超传统范式；CoreWeave GPU需求间接拉动算力基础设施。",
+      "target_stocks": "美股：英伟达(NVDA)、Palantir(PLTR)、Unity Software(U)；港股：优必选(9880.HK)；A股：汇川技术(300124)、绿的谐波(688017)",
+      "risk_note": "General Intuition尚未盈利，API商业化时间不确定；游戏到现实的泛化性需大规模验证；具身智能赛道竞争者众多（Figure AI、1X、Physical Intelligence等）",
+      "source": "TechCrunch"
+    },
+    {
+      "id": 5,
+      "title": "Anthropic指控阿里巴巴非法提取Claude模型能力：中美AI技术战升级",
+      "industry": "AI大模型+国产替代",
+      "type": "政策影响",
+      "summary": "据路透社报道，Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力，认为阿里通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。此事发生在中美AI技术竞争日益激烈的背景下，此前美国已出台AI模型出口管制限制Anthropic等公司向中国提供AI服务。",
+      "investment_logic": "中美AI技术脱钩加速，国内AI模型自主可控需求更迫切；阿里若被证实借鉴Claude，可能面临制裁风险，短期利空阿里、利好纯自研路线的国产AI厂商；模型知识产权争议将成为全球AI行业新焦点，AI模型溯源/水印/安全审计需求上升；反向利好OpenAI、Google等合规路线的国际AI服务商。",
+      "target_stocks": "美股：Alphabet(GOOGL)、微软(MSFT)；港股：阿里巴巴(09988.HK)、商汤-W(00020.HK)；A股：科大讯飞(002230)、寒武纪(688256)",
+      "risk_note": "Anthropic指控尚未经第三方验证，阿里可能反诉；中美AI管制政策走向不确定；模型知识产权法律框架尚未建立，维权路径不清晰",
+      "source": "Reuters / Hacker News"
+    },
+    {
+      "id": 6,
+      "title": "Ornith-1.0开源：专注射频编程的Agent Coding全参数模型家族",
+      "industry": "AI+软件开发",
+      "type": "行业新方向",
+      "summary": "Ornith-1.0开源模型家族发布，专注射频编程（Agentic Coding），覆盖9B Dense、31B Dense、35B MoE及397B MoE全参数规模。在Agent Coding基准上达开源顶尖：SWE-Bench Verified 82.4、SWE-Bench Pro 62.2、Terminal-Bench 2.1 77.5、NL2Repo 48.2、ClawEval 77.1。基于gemma4和qwen3.5后训练，采用强化学习联合优化任务脚手架与最终解决方案，让模型自主改进执行框架。全系列MIT开源，提供GGUF版本，支持Ollama、Unsloth等本地运行。",
+      "investment_logic": "Agent Coding开源模型性能比肩闭源（SWE-Bench 82.4），编程智能体平民化加速；397B MoE可本地运行意味着企业级AI编程无需云API，利好私有化部署方案；MIT开源许可证降低商业使用门槛，将催生大量基于Ornith的垂直编程Agent；编程效率提升→软件开发成本下降→软件公司利润率改善。",
+      "target_stocks": "美股：GitLab(GTLB)、Atlassian(TEAM)、ServiceNow(NOW)；港股：金蝶国际(00268.HK)；A股：金山办公(688111)、中国软件(600536)",
+      "risk_note": "开源模型同质化竞争加剧，Ornith能否建立生态壁垒存疑；AI编程安全性和代码质量仍需验证；397B MoE本地部署硬件门槛较高",
+      "source": "X：Berry Xia / Hugging Face"
+    },
+    {
+      "id": 7,
+      "title": "OpenAI内部报告：Codex已取代ChatGPT成为主要工作工具，非开发者增长189倍",
+      "industry": "AI Agent+企业软件",
+      "type": "行业新方向",
+      "summary": "OpenAI发布内部报告，观察2025年8月至2026年6月间，智能体产品Codex取代ChatGPT成为主要工作工具，各部门输出token中Codex占比从不足10%升至99.8%。80.6%个体用户曾发起预计等效人类工作时间超30分钟的请求，70.2%超1小时，25.6%超8小时；99百分位用户每日生成超60小时agent turns。非开发者用户增长迅猛：个体用户增长137倍，组织用户增长189倍。法务、财务、招聘部门在2026年4月前后跨过Codex使用过半拐点，平均每位律师或招聘人员超85%输出token来自Codex。",
+      "investment_logic": "AI Agent从辅助工具到主要工作执行者的范式转移已获OpenAI内部数据验证；非开发者用户189倍增长意味着AI Agent正突破技术圈层进入通用企业场景；法务/财务/招聘等垂直部门过半拐点确认企业级Agent规模化部署可行；Agent每小时产生60+ turns意味着企业级API调用量将呈指数增长。",
+      "target_stocks": "美股：Salesforce(CRM)、ServiceNow(NOW)、Workday(WDAY)；A股：用友网络(600588)、泛微网络(603039)；港股：明源云(00909.HK)",
+      "risk_note": "OpenAI内部报告存在选择性偏差（样本为活跃用户）；Agent自动化程度提升可能导致企业软件订阅模式变革（按turn计费vs按席位）；法律/财务等部门的合规风险尚未充分暴露",
+      "source": "OpenAI Blog / How Agents Are Transforming Work"
+    },
+    {
+      "id": 8,
+      "title": "Runway发布Agent 2.0：AI原生营销Agent覆盖创意→投放→优化全链路",
+      "industry": "AI+数字营销",
+      "type": "行业新方向",
+      "summary": "Runway发布Agent 2.0，面向营销全链路：品牌营销人员可在对话中开发活动概念、生成变体并自动本地化；绩效营销人员可上传创意并导入Meta、YouTube、TikTok或Google广告数据，由Agent分析后生成下一轮待测广告；社交媒体营销人员可一次性生成一周内容，自动裁剪为9:16、16:9、1:1等格式；产品营销人员可借助Agent确定定位角度并构建活动资产。Agent 2.0面向所有用户开放。",
+      "investment_logic": "AI从创意生成工具升级为营销全链路Agent，Runway Agent 2.0打通创意→投放→分析→优化闭环；跨平台（Meta/YouTube/TikTok/Google）数据整合能力意味着AI营销Agent有机会成为广告投放中枢；创意变体自动生成+本地化能力将显著降低全球化营销成本；AI Agent对传统广告代理模式的替代效应开始显现。",
+      "target_stocks": "美股：The Trade Desk(TTD)、HubSpot(HUBS)、AppLovin(APP)；A股：分众传媒(002027)、蓝色光标(300058)；港股：汇量科技(01860.HK)",
+      "risk_note": "AI营销Agent赛道进入门槛低，竞争将快速加剧；平台方（Meta/Google）可能自研Agent替代第三方工具；广告效果归因问题在Agent化后更复杂",
+      "source": "Runway News"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-26.json",
+  "_saved_at": "2026-06-26T08:42:46.229440+08:00"
+}

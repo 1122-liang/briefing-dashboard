@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T08:48:59.195108+08:00",
+  "window_hours": 72,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "美国对AI模型出口管制升级：Anthropic顶级模型停供",
+      "industry": "AI基础设施",
+      "type": "政策影响",
+      "summary": "美国政府以国家安全为由要求Anthropic停止向外籍人士开放Mythos 5/Fable 5模型访问权限，欧盟正评估实际影响。模型层出口管制标志AI博弈从芯片延伸至纯模型能力领域，加速全球AI阵营分化。",
+      "investment_logic": "模型层出口管制将加速各国AI自主化进程，中国国产算力+模型生态面临结构性需求扩张。顶级模型断供迫使非美国家加速自研，国内AI芯片和算力基础设施厂商中长期受益。",
+      "target_stocks": "寒武纪(688256)、海光信息(688041)、中芯国际(00981.HK)",
+      "risk_note": "国产芯片技术追赶不及预期；若中美关系缓和管制放松，自主化逻辑可能削弱",
+      "source": "IT之家/欧盟委员会（aihot）"
+    },
+    {
+      "id": 2,
+      "title": "Anthropic秘密申请IPO，估值9650亿美元",
+      "industry": "AI算力",
+      "type": "重大事件",
+      "summary": "Anthropic秘密提交IPO申请，估值高达9650亿美元，将成为史上估值最高的科技公司上市案例之一，标志AI行业从私募进入公开市场的标志性节点。",
+      "investment_logic": "接近万亿估值的AI公司IPO将引爆全球AI投资热情，AI算力基础设施需求将获进一步验证和提振。全球云厂商和芯片产业链订单有望加速，算力军备竞赛逻辑持续强化。",
+      "target_stocks": "英伟达(NVDA)、博通(AVGO)、台积电(TSM)",
+      "risk_note": "近万亿估值若上市后表现不及预期，或引发AI板块估值回调；IPO锁定期满后抛压风险",
+      "source": "Bloomberg（aihot）"
+    },
+    {
+      "id": 3,
+      "title": "Meta被迫撤销20亿美元Manus收购案",
+      "industry": "AI出海",
+      "type": "政策影响",
+      "summary": "北京要求Meta撤销对AI Agent公司Manus的20亿美元收购，Meta已启动解除程序。中美AI技术脱钩从芯片、模型延伸至企业并购层面。",
+      "investment_logic": "跨境AI并购受阻使国内AI公司的出海并购退出路径收窄，但国产替代和自主可控逻辑进一步强化。在政策保护下，国内AI企业在本土市场的竞争压力减轻，自主AI Agent赛道发展空间扩大。",
+      "target_stocks": "科大讯飞(002230)、第四范式(06682.HK)",
+      "risk_note": "国内AI企业商业化进展不及预期；缺乏国际并购退出路径影响一级市场融资热情",
+      "source": "TechCrunch（aihot）"
+    },
+    {
+      "id": 4,
+      "title": "1300亿美元数据中心项目因抗议被叫停",
+      "industry": "数据中心",
+      "type": "行业瓶颈变化",
+      "summary": "全球抗议已阻止约1300亿美元AI数据中心项目，抗议者以能源消耗、水资源占用和环境影响为由，迫使多地政府暂停或重新审查建设计划。",
+      "investment_logic": "数据中心供给端持续收缩，存量优质IDC资产稀缺性大幅提升。已通电的在运营数据中心运营商议价能力增强，租金和利用率有望持续走高。这一供给瓶颈短期内难以缓解。",
+      "target_stocks": "万国数据(GDS)、Equinix(EQIX)、世纪互联(VNET)",
+      "risk_note": "抗议活动可能扩散至现有运营项目；各国可能出台更严格的数据中心审批标准",
+      "source": "Ars Technica（aihot）"
+    },
+    {
+      "id": 5,
+      "title": "智谱GLM-5.2全量开放：1M上下文+最强国产编码模型",
+      "industry": "国产大模型",
+      "type": "行业新方向",
+      "summary": "智谱GLM-5.2全量开放，支持真正可用的百万Token上下文窗口，被称为最强国产编码模型，将于下周开源。该模型在长程任务和代码能力上实现突破。",
+      "investment_logic": "1M上下文对法律合同审查、金融报告分析、长文档处理等场景有直接商业价值，GLM-5.2的开源将进一步降低企业级AI应用门槛。国产模型能力突破将加速企业AI落地，带动国产算力需求。",
+      "target_stocks": "值得买(300785)、寒武纪(688256)",
+      "risk_note": "开源后差异化优势减弱，竞争对手可能快速追赶；商业化路径和变现能力仍不清晰",
+      "source": "智谱公众号（aihot）"
+    },
+    {
+      "id": 6,
+      "title": "字节豆包上线AI Agent任务模式：消费级Agent落地",
+      "industry": "AI Agent",
+      "type": "行业新方向",
+      "summary": "字节跳动豆包大范围上线任务模式，支持定时执行、零代码网页生成、PPT生成、数据分析等全链路Agent执行。「思考模式」升级为「专家模式」，调用豆包2.0 Pro。",
+      "investment_logic": "拥有亿级用户入口的字节将AI Agent推向消费级用户，标志Agent从概念验证进入大规模产品化阶段。用户使用习惯一旦养成，将带动AI应用生态整体爆发，办公软件、创意工具类AI应用最先受益。",
+      "target_stocks": "金山办公(688111)、万兴科技(300624)",
+      "risk_note": "Agent商业化变现路径不明；用户付费意愿待验证；字节等大厂的免费策略可能挤压中小AI应用公司空间",
+      "source": "IT之家（aihot）"
+    },
+    {
+      "id": 7,
+      "title": "Fusion API实现半价Fable级智能：推理成本革命",
+      "industry": "AI推理",
+      "type": "行业新方向",
+      "summary": "OpenRouter推出Fusion API，通过复合模型路由技术以Fable一半的价格实现Fable级别智能。AI推理成本进入快速下降通道，模型组合路由成为新的效率范式。",
+      "investment_logic": "推理成本大幅下降使AI应用的经济模型显著改善，AI应用层的毛利率有望提升。更低的推理成本意味着企业可以更大规模部署AI，推理芯片和AI应用公司双重受益。",
+      "target_stocks": "微软(MSFT)、Salesforce(CRM)、英伟达(NVDA)",
+      "risk_note": "推理价格战压缩模型厂商利润，若降价速度快于用量增长，AI公司盈利拐点可能推迟",
+      "source": "OpenRouter（aihot）"
+    },
+    {
+      "id": 8,
+      "title": "Google DeepMind机器人加速器启动：物理AI产业化提速",
+      "industry": "AI+机器人",
+      "type": "行业新方向",
+      "summary": "Google DeepMind启动为期三个月的机器人加速器，15家欧洲初创公司参与，将获Gemini Robotics模型及完整AI堆栈支持，系统性推进具身智能产业化。",
+      "investment_logic": "科技巨头从模型+硬件全栈推进具身智能产业化，类似自动驾驶早期Waymo带动产业链的路径。机器人核心零部件（减速器、传感器）和整机厂商将迎来技术迭代加速和订单放量机遇。",
+      "target_stocks": "绿的谐波(688017)、拓普集团(601689)、优必选(09880.HK)、特斯拉(TSLA)",
+      "risk_note": "具身智能技术成熟度不足，商业化时间表可能长于预期；机器人硬件成本居高不下",
+      "source": "Google DeepMind（aihot）"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-15.json",
+  "_saved_at": "2026-06-15T08:48:59.195142+08:00"
+}

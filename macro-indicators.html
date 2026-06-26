@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宏观指标 - 投研简报</title>
+  <meta property="og:title" content="宏观指标 - 投研简报">
+  <meta property="og:description" content="美联储加息概率、密歇根消费者信心、Token消耗量、AI资本开支">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载数据中...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('macro-indicators', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+
+      // Load all macro indicator data in parallel
+      const [fedRate, michigan, token, aiCapex] = await Promise.all([
+        loadLatest('macro-indicators').then(data => {
+          // Filter for fed-rate data
+          return data && data.effr ? data : null;
+        }).catch(() => null),
+        loadLatest('macro-indicators').then(data => {
+          return data && data.analysis ? data : null;
+        }).catch(() => null),
+        loadLatest('macro-indicators').then(data => {
+          return data && data.record && data.record.total_weekly_tokens_t ? data : null;
+        }).catch(() => null),
+        loadLatest('macro-indicators').then(data => {
+          return data && data.quarter ? data : null;
+        }).catch(() => null),
+      ]);
+
+      loading.remove();
+
+      // Build cards
+      const cards = [];
+
+      // Fed Rate Probability card
+      if (fedRate) {
+        const effr = fedRate.effr;
+        const target = fedRate.target_range || {};
+        const probs = fedRate.probabilities || [];
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">🏦 美联储利率</div>
+            <div class="stat-value">${effr.toFixed(2)}%</div>
+            <div class="stat-change neutral">目标区间 ${target.lower?.toFixed(2) || '-'}%-${target.upper?.toFixed(2) || '-'}%</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${probs.length > 0 ? `下次会议 ${probs[0]?.date || '-'}` : 'CME 数据待更新'}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">🏦 美联储利率</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Michigan Consumer Sentiment card
+      if (michigan && michigan.analysis) {
+        const a = michigan.analysis;
+        const changeClass = a.change >= 0 ? 'up' : 'down';
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">👥 消费者信心</div>
+            <div class="stat-value">${a.latest_value?.toFixed(1) || '-'}</div>
+            <div class="stat-change ${changeClass}">${a.change >= 0 ? '+' : ''}${a.change?.toFixed(1) || '-'} (${a.change_pct >= 0 ? '+' : ''}${a.change_pct?.toFixed(2) || '-'}%)</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${a.trend_icon || ''} ${a.trend || '-'} · ${a.level_icon || ''} ${a.level || '-'}
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">👥 消费者信心</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Token Consumption card
+      if (token && token.record) {
+        const r = token.record;
+        const g = token.growth || {};
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">🪙 Token 消耗量</div>
+            <div class="stat-value">${r.total_weekly_tokens_t?.toFixed(2) || '-'}T</div>
+            <div class="stat-change ${g.week_growth_pct >= 0 ? 'up' : 'down'}">
+              ${g.has_growth_data ? `周环比 ${g.week_growth_pct >= 0 ? '+' : ''}${g.week_growth_pct?.toFixed(2) || '-'}%` : '基准数据'}
+            </div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${g.trend_icon || ''} ${g.growth_trend || '数据积累中'} · ${r.models?.length || 0} 个模型
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">🪙 Token 消耗量</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // AI CapEx card
+      if (aiCapex && aiCapex.record) {
+        const r = aiCapex.record;
+        const total = r.total_capex_usd_b;
+        const yoy = r.total_yoy_pct;
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">💰 AI 资本开支</div>
+            <div class="stat-value">$${total?.toFixed(1) || '-'}B</div>
+            <div class="stat-change up">YoY +${yoy || '-'}%</div>
+            <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
+              ${r.quarter || '-'} · 四大云厂商合计
+            </div>
+          </a>
+        `);
+      } else {
+        cards.push(`
+          <a href="#" class="stat-card" onclick="return false;">
+            <div class="stat-label">💰 AI 资本开支</div>
+            <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
+          </a>
+        `);
+      }
+
+      // Build detail sections
+      let detailHTML = '';
+
+      // Fed Rate detail
+      if (fedRate && fedRate.probabilities && fedRate.probabilities.length > 0) {
+        detailHTML += `
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">🏦 美联储加息概率 — FOMC 会议预测</div>
+              <div class="text-xs" style="color:var(--text-muted)">EFFR: ${fedRate.effr?.toFixed(2)}% | 目标: ${fedRate.target_range?.lower?.toFixed(2)}%-${fedRate.target_range?.upper?.toFixed(2)}%</div>
+            </div>
+            <div style="overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead>
+                  <tr style="border-bottom:1px solid var(--border)">
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">会议日期</th>
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">合约</th>
+                    <th style="text-align:right;padding:8px 4px;color:var(--text-muted)">隐含利率</th>
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">概率分布</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${fedRate.probabilities.map(p => `
+                    <tr style="border-bottom:1px solid var(--border)">
+                      <td style="padding:8px 4px">${p.date}</td>
+                      <td style="padding:8px 4px">${p.contract}</td>
+                      <td style="text-align:right;padding:8px 4px">${p.implied_rate?.toFixed(2)}%</td>
+                      <td style="padding:8px 4px">
+                        ${Object.entries(p.probabilities || {}).map(([label, prob]) => `
+                          <div style="display:flex;align-items:center;gap:8px;margin:2px 0">
+                            <span style="min-width:120px;font-size:12px">${label}</span>
+                            <div style="flex:1;background:var(--bg-secondary);border-radius:4px;height:16px;overflow:hidden">
+                              <div style="width:${prob}%;height:100%;background:var(--accent);border-radius:4px;transition:width 0.3s"></div>
+                            </div>
+                            <span style="min-width:40px;text-align:right;font-weight:600">${prob}%</span>
+                          </div>
+                        `).join('')}
+                      </td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // Michigan detail
+      if (michigan && michigan.data) {
+        const data = michigan.data;
+        detailHTML += `
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">👥 密歇根消费者信心指数 — 历史趋势</div>
+              <div class="text-xs" style="color:var(--text-muted)">数据来源: FRED (UMCSENT)</div>
+            </div>
+            <div id="michigan-chart" style="height:300px"></div>
+          </div>
+        `;
+      }
+
+      // Token detail
+      if (token && token.record && token.record.models) {
+        const models = token.record.models;
+        detailHTML += `
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">🪙 Token 消耗量 — Top 10 模型</div>
+              <div class="text-xs" style="color:var(--text-muted)">数据来源: OpenRouter Rankings</div>
+            </div>
+            <div style="overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead>
+                  <tr style="border-bottom:1px solid var(--border)">
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">排名</th>
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">模型</th>
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">供应商</th>
+                    <th style="text-align:right;padding:8px 4px;color:var(--text-muted)">周 Token 量</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${models.map(m => `
+                    <tr style="border-bottom:1px solid var(--border)">
+                      <td style="padding:8px 4px">${m.rank}</td>
+                      <td style="padding:8px 4px;font-weight:500">${m.name}</td>
+                      <td style="padding:8px 4px">${m.vendor}</td>
+                      <td style="text-align:right;padding:8px 4px">${m.weekly_tokens_t?.toFixed(2)}T</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // AI CapEx detail
+      if (aiCapex && aiCapex.record) {
+        const r = aiCapex.record;
+        const companies = r.companies || {};
+        detailHTML += `
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">💰 AI 资本开支 — 各公司明细</div>
+              <div class="text-xs" style="color:var(--text-muted)">季度: ${r.quarter} | 数据来源: ${r.data_source}</div>
+            </div>
+            <div style="overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead>
+                  <tr style="border-bottom:1px solid var(--border)">
+                    <th style="text-align:left;padding:8px 4px;color:var(--text-muted)">公司</th>
+                    <th style="text-align:right;padding:8px 4px;color:var(--text-muted)">CapEx ($B)</th>
+                    <th style="text-align:right;padding:8px 4px;color:var(--text-muted)">同比</th>
+                    <th style="text-align:right;padding:8px 4px;color:var(--text-muted)">环比</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${Object.entries(companies).map(([ticker, d]) => {
+                    const names = {MSFT:'微软',AMZN:'亚马逊',GOOGL:'谷歌',META:'Meta',ORCL:'甲骨文',NVDA:'英伟达'};
+                    return `
+                      <tr style="border-bottom:1px solid var(--border)">
+                        <td style="padding:8px 4px">${names[ticker] || ticker} (${ticker})</td>
+                        <td style="text-align:right;padding:8px 4px">${d.capex_usd_b ? '$' + d.capex_usd_b.toFixed(1) + 'B' : '-'}</td>
+                        <td style="text-align:right;padding:8px 4px;color:var(--up)">${d.yoy_pct ? '+' + d.yoy_pct + '%' : '-'}</td>
+                        <td style="text-align:right;padding:8px 4px">${d.qoq_pct ? (d.qoq_pct >= 0 ? '+' : '') + d.qoq_pct + '%' : '-'}</td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // Render page
+      app.innerHTML = `
+        <h1 style="font-size:24px;font-weight:700;margin-bottom:24px">🌐 宏观指标</h1>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;color:var(--text-muted);font-size:12px">
+          <span>美联储利率 · 消费者信心 · Token消耗 · AI资本开支</span>
+          <span>更新时间: ${new Date().toLocaleString('zh-CN')}</span>
+        </div>
+        <div class="stats-grid">${cards.join('')}</div>
+        ${detailHTML}
+      `;
+
+      // Render Michigan chart if data available
+      if (michigan && michigan.data && michigan.data.length > 0) {
+        const chart = initChart('michigan-chart');
+        if (chart) {
+          const theme = getEChartsTheme();
+          chart.setOption({
+            ...theme,
+            tooltip: {
+              ...theme.tooltip,
+              trigger: 'axis',
+              formatter: '{b}<br/>消费者信心: {c}'
+            },
+            xAxis: {
+              ...theme.xAxis,
+              type: 'category',
+              data: michigan.data.map(d => d.date),
+              axisLabel: { ...theme.xAxis.axisLabel, rotate: 45 }
+            },
+            yAxis: {
+              ...theme.yAxis,
+              type: 'value',
+              name: '指数',
+              min: function(value) { return Math.floor(value.min / 10) * 10; }
+            },
+            series: [{
+              type: 'line',
+              data: michigan.data.map(d => d.value),
+              smooth: true,
+              lineStyle: { color: '#3b82f6', width: 2 },
+              areaStyle: { color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1, colorStops: [{ offset: 0, color: 'rgba(59,130,246,0.3)' }, { offset: 1, color: 'rgba(59,130,246,0)' }] } },
+              itemStyle: { color: '#3b82f6' },
+              markLine: {
+                data: [
+                  { yAxis: 60, name: '中性', lineStyle: { color: '#f59e0b', type: 'dashed' } },
+                  { yAxis: 80, name: '乐观', lineStyle: { color: '#10b981', type: 'dashed' } },
+                ],
+                label: { formatter: '{name}', color: '#94a3b8' }
+              }
+            }],
+            grid: { left: 50, right: 20, top: 30, bottom: 60 },
+            dataZoom: defaultDataZoom(michigan.data.length)
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

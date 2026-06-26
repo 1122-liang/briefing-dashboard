@@ -1,0 +1,156 @@
+{
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T08:49:51.569791+08:00",
+  "li_price": {
+    "close": 174440.0,
+    "open": 177600.0,
+    "high": 177920.0,
+    "low": 172320.0,
+    "change_pct": -1.32,
+    "source": "sina_fallback"
+  },
+  "score": -1,
+  "score_level": "中性观望",
+  "score_details": [
+    {
+      "dimension": "趋势",
+      "score": "+1",
+      "note": "偏多（MA20>MA60）"
+    },
+    {
+      "dimension": "量价",
+      "score": "0",
+      "note": "量价中性"
+    },
+    {
+      "dimension": "持仓",
+      "score": "-1",
+      "note": "价格下跌+持仓450397手"
+    },
+    {
+      "dimension": "RSI",
+      "score": "0",
+      "note": "RSI=48.4"
+    },
+    {
+      "dimension": "成本支撑",
+      "score": "0",
+      "note": "价格17.4万，在成本区间内"
+    },
+    {
+      "dimension": "季节性",
+      "score": "0",
+      "note": "月6季节性指数0.98（中性）"
+    },
+    {
+      "dimension": "仓单",
+      "score": "-1",
+      "note": "仓单增加973手"
+    }
+  ],
+  "indicators": {
+    "futures": {
+      "latest": 174440.0,
+      "open": 177600.0,
+      "high": 177920.0,
+      "low": 172320.0,
+      "change_pct": -1.32,
+      "volume": 177039.0,
+      "amount_yi": null,
+      "volume_ratio": null,
+      "amplitude": null,
+      "source": "sina_fallback"
+    },
+    "open_interest": {
+      "value": 450397.0,
+      "settle": 175200.0
+    },
+    "technical": {
+      "ma20": 174280.0,
+      "ma60": 173138.7,
+      "trend": "偏多（MA20>MA60）",
+      "rsi": 48.4,
+      "rsi_signal": "中性",
+      "data_points": 80
+    },
+    "cost": {
+      "salt_lake": 3.5,
+      "spodumene": 7.0,
+      "mica": 13.5,
+      "marginal": 21.0,
+      "price_wan": 17.4
+    },
+    "seasonal": {
+      "month": 6,
+      "index": 0.98,
+      "phase": "中性"
+    },
+    "geo_risks": [
+      {
+        "name": "津巴布韦禁令",
+        "status": "有条件恢复",
+        "score": 6
+      },
+      {
+        "name": "江西宜春整治",
+        "status": "换证停产中",
+        "score": 5
+      }
+    ]
+  },
+  "alerts": [],
+  "companies": {
+    "ganfeng": {
+      "name": "赣锋锂业",
+      "code": "002460",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "yanhu": {
+      "name": "盐湖股份",
+      "code": "000792",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "zkcy": {
+      "name": "中矿资源",
+      "code": "002738",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "tianqi": {
+      "name": "天齐锂业",
+      "code": "002466",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    }
+  },
+  "geo_risks": [],
+  "seasonal_index": 0.98,
+  "warehouse_data": {
+    "total": 53885,
+    "change": 973
+  },
+  "_filename": "2026-06-16.json",
+  "_saved_at": "2026-06-16T08:49:51.569995+08:00"
+}

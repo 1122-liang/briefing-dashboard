@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月度偏离度预警 - 投研简报</title>
+  <meta property="og:title" content="月度偏离度预警">
+  <meta property="og:description" content="股票池偏离度实时监控、黄金RR指标">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="loading" id="loading"><div class="spinner"></div>加载偏离度数据...</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    initPage('deviation', render);
+
+    async function render() {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loading');
+      const allData = await loadModuleData('deviation');
+      loading.remove();
+
+      if (allData.length === 0) {
+        showEmpty(app, '偏离度预警数据将在下一个交易日自动生成');
+        return;
+      }
+
+      // Flatten: each file may contain multiple runs (noon + afternoon)
+      // Build flat list: [{date, time, run}]
+      const flatRuns = [];
+      for (const entry of allData) {
+        const d = entry.data;
+        const runs = d.runs || [];
+        for (const run of runs) {
+          flatRuns.push({ date: d.date, time: run.time, ...run });
+        }
+      }
+      flatRuns.sort((a, b) => {
+        const cmp = b.date.localeCompare(a.date);
+        return cmp !== 0 ? cmp : (b.time || '').localeCompare(a.time || '');
+      });
+
+      const latestRun = flatRuns[0];
+      const stocks = latestRun.stocks || [];
+
+      // Get unique stock list (exclude stocks without valid monthly deviation data)
+      // Use code as stable key — name may change on ex-dividend days (e.g. "XD三美股")
+      const validStocks = stocks.filter(s => s.threshold_pct > 0 && s.trigger_price != null);
+      const stockCodes = validStocks.map(s => s.code);
+      const codeToName = Object.fromEntries(validStocks.map(s => [s.code, s.name]));
+
+      // Build deviation time series for charts (keyed by code for cross-day stability)
+      const stockSeries = {};
+      for (const code of stockCodes) {
+        stockSeries[code] = { dates: [], values: [] };
+      }
+      for (const run of flatRuns.slice().reverse()) {
+        const label = `${run.date} ${run.time || ''}`;
+        for (const s of (run.stocks || [])) {
+          if (stockSeries[s.code]) {
+            stockSeries[s.code].dates.push(label);
+            stockSeries[s.code].values.push(s.deviation_pct);
+          }
+        }
+      }
+
+      // Tabs for noon/afternoon
+      const timeTabs = [...new Set(flatRuns.map(r => r.time))].sort();
+
+      app.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <h1 style="font-size:24px;font-weight:700">📈 月度偏离度预警</h1>
+          <span class="text-sm" style="color:var(--text-muted)">${latestRun.date} ${latestRun.time || ''}</span>
+        </div>
+
+        <!-- Current Status Cards -->
+        <div class="stats-grid">
+          ${stocks.map(s => {
+            const hasValidData = s.threshold_pct > 0 && s.trigger_price != null;
+            const statusCls = !hasValidData ? 'neutral' : s.deviation_pct >= 0 ? 'up' : 'down';
+            return `
+              <div class="stat-card">
+                <div class="stat-label">${s.name} (${s.code})</div>
+                <div class="stat-value ${statusCls}">${hasValidData ? fmtPct(s.deviation_pct) : '暂无数据'}</div>
+                <div class="stat-change neutral">${hasValidData ? `阈值 ${s.threshold_pct}%` : '月度数据未覆盖'}</div>
+                ${s.valuation ? `
+                  <div class="text-xs" style="margin-top:4px;color:var(--text-muted)">
+                    估: ${s.valuation.pessimistic}/${s.valuation.neutral}/${s.valuation.optimistic}
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+        <!-- Deviation Chart -->
+        <div class="card">
+          <div class="card-title mb-4">偏离度趋势</div>
+          <div id="deviationChart" class="chart-container" style="min-height:400px"></div>
+        </div>
+
+        <!-- Gold RR Section -->
+        ${latestRun.gold_rr ? `
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">🏆 黄金 Risk Reversal (25-Delta)</div>
+            <div class="card-subtitle">${latestRun.gold_rr.data_time || ''} · 现货 ${fmtPrice(latestRun.gold_rr.spot, '$')}</div>
+          </div>
+          <div id="rrChart" class="chart-container" style="min-height:300px"></div>
+          <div class="table-wrap mt-4">
+            <table>
+              <tr><th>期限</th><th>RR</th><th>日变动</th><th>信号</th></tr>
+              ${(latestRun.gold_rr.terms || []).map(t => `
+                <tr>
+                  <td class="font-bold">${t.period}</td>
+                  <td class="${changeClass(t.rr)}">${t.rr > 0 ? '+' : ''}${t.rr}</td>
+                  <td class="${changeClass(t.daily_change)}">${t.daily_change > 0 ? '+' : ''}${t.daily_change}</td>
+                  <td>${statusBadge(getRrStatus(t.signal))}</td>
+                </tr>
+              `).join('')}
+            </table>
+          </div>
+        </div>
+        ` : ''}
+
+        <!-- History -->
+        <div class="card">
+          <div class="card-title mb-4">历史记录</div>
+          <div id="historyList"></div>
+        </div>
+      `;
+
+      // Render deviation chart
+      const devChart = initChart('deviationChart');
+      if (devChart) {
+        const theme = getEChartsTheme();
+        const colors = ['#3b82f6','#22c55e','#ef4444','#eab308','#8b5cf6','#f97316','#ec4899','#06b6d4'];
+        const series = stockCodes.map((code, i) => ({
+          name: codeToName[code], type: 'line', smooth: true,
+          data: stockSeries[code]?.values || [],
+          lineStyle: { width: 2 },
+          itemStyle: { color: colors[i % colors.length] }
+        }));
+        const allDates = [...new Set(flatRuns.slice().reverse().map(r => `${r.date} ${r.time || ''}`))];
+        devChart.setOption({
+          ...theme,
+          tooltip: { ...theme.tooltip, trigger: 'axis' },
+          legend: { ...theme.legend, data: stockCodes.map(c => codeToName[c]), type: 'scroll', bottom: 0 },
+          grid: { left: 60, right: 20, top: 20, bottom: 60 },
+          xAxis: { ...theme.xAxis, type: 'category', data: allDates, axisLabel: { ...theme.xAxis.axisLabel, rotate: 30 } },
+          yAxis: { ...theme.yAxis, type: 'value', name: '偏离度 %' },
+          series,
+          dataZoom: defaultDataZoom(allDates.length)
+        });
+      }
+
+      // Render RR chart
+      if (latestRun.gold_rr) {
+        const rrChart = initChart('rrChart');
+        if (rrChart) {
+          const theme = getEChartsTheme();
+          const terms = latestRun.gold_rr.terms || [];
+          rrChart.setOption({
+            ...theme,
+            tooltip: { ...theme.tooltip, trigger: 'axis' },
+            grid: { left: 60, right: 20, top: 20, bottom: 40 },
+            xAxis: { ...theme.xAxis, type: 'category', data: terms.map(t => t.period) },
+            yAxis: { ...theme.yAxis, type: 'value', name: 'RR' },
+            series: [{
+              type: 'bar', data: terms.map(t => ({
+                value: t.rr,
+                itemStyle: { color: t.rr >= 0 ? '#22c55e' : '#ef4444' }
+              })),
+              barWidth: '40%'
+            }]
+          });
+        }
+      }
+
+      // Render history
+      const historyEl = document.getElementById('historyList');
+      historyEl.innerHTML = flatRuns.slice(0, 30).map(run => {
+        // Exclude stocks with invalid deviation data (threshold_pct=0 means no monthly data)
+        const alerts = (run.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null);
+        return `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
+            <div>
+              <span class="font-bold">${run.date}</span>
+              <span class="badge badge-blue" style="margin-left:8px">${run.time || ''}</span>
+            </div>
+            <div>
+              ${alerts.length > 0
+                ? alerts.map(a => `<span class="badge badge-red" style="margin-left:4px">${a.name} ${fmtPct(a.deviation_pct)}</span>`).join('')
+                : '<span class="badge badge-green">全部正常</span>'}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function getRrStatus(signal) {
+      if (!signal) return 'neutral';
+      const s = signal.toLowerCase();
+      if (s.includes('强烈偏空')) return 'strong_bearish';
+      if (s.includes('偏空')) return 'bearish';
+      if (s.includes('强烈偏多')) return 'strong_bullish';
+      if (s.includes('偏多')) return 'bullish';
+      if (s.includes('中性偏多')) return 'neutral_bullish';
+      return 'neutral';
+    }
+  </script>
+</body>
+</html>

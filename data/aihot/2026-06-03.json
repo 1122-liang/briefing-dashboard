@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T08:50:09.082637+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "SK海力士五年产能翻倍，存储供需紧张延续至2030年",
+      "industry": "存储芯片",
+      "type": "行业瓶颈变化",
+      "summary": "SK海力士会长崔泰源宣布未来五年内将整体晶圆产能翻倍，应对AI普及带来的持续存储供应短缺。预测AI数据中心和AI PC的普及将持续拉动存储需求，供需紧张可能延续至2030年。",
+      "investment_logic": "HBM及高端存储供需缺口持续扩大，存储涨价周期有望延长。SK海力士扩产意味着设备采购需求同步增长，利好上游存储设备与材料供应商。",
+      "target_stocks": "江波龙(301308)、佰维存储(301367)、兆易创新(603986)、通富微电(002156)",
+      "risk_note": "扩产计划可能受地缘政治和贸易政策影响",
+      "source": "IT之家/SK海力士"
+    },
+    {
+      "id": 2,
+      "title": "Alphabet拟融资800亿美元加码AI基础设施",
+      "industry": "AI基础设施",
+      "type": "重大事件",
+      "summary": "Alphabet宣布拟通过股权融资800亿美元用于扩展AI基础设施。Anthropic已秘密提交IPO申请。",
+      "investment_logic": "800亿美元级融资创科技行业纪录，反映全球AI基础设施投资进入加速期，利好国内AI服务器供应链、光模块及PCB等配套产业。",
+      "target_stocks": "浪潮信息(000977)、中科曙光(603019)、工业富联(601138)、紫光股份(000938)",
+      "risk_note": "海外巨头投资与国内供应链的传导存在不确定性",
+      "source": "Bloomberg Technology"
+    },
+    {
+      "id": 3,
+      "title": "微软发布首款推理模型MAI-Thinking-1，推理算力需求进入新阶段",
+      "industry": "AI推理算力",
+      "type": "行业新方向",
+      "summary": "微软在Build 2026上发布首款高级推理AI模型MAI-Thinking-1，在关键软件工程基准测试中达到领先模型水平。",
+      "investment_logic": "推理模型竞赛从OpenAI o系列扩展到微软等巨头，推理阶段算力消耗远超训练阶段，利好AI芯片、推理加速卡及边缘计算厂商。",
+      "target_stocks": "寒武纪(688256)、海光信息(688041)、龙芯中科(688047)",
+      "risk_note": "国内AI芯片受出口管制影响，国产替代进度存在不确定性",
+      "source": "The Verge/Microsoft Build 2026"
+    },
+    {
+      "id": 4,
+      "title": "NVIDIA DGX Station GB300交付+NemoClaw平台发布",
+      "industry": "AI服务器与Agent平台",
+      "type": "重大事件",
+      "summary": "NVIDIA DGX Station搭载GB300开始从华硕、戴尔、惠普等合作伙伴发货。同时发布NemoClaw平台和自进化Hermes智能体。",
+      "investment_logic": "GB300量产交付标志着Blackwell Ultra架构进入规模化部署阶段，NemoClaw+Hermes双平台推动AI Agent从实验走向工业级应用。",
+      "target_stocks": "工业富联(601138)、浪潮信息(000977)、沪电股份(002463)、胜宏科技(300476)",
+      "risk_note": "GB300良率和交付进度需持续跟踪",
+      "source": "NVIDIA Blog/COMPUTEX 2026"
+    },
+    {
+      "id": 5,
+      "title": "阶跃星辰Step 3.7 Flash发布，国产推理模型效率突破",
+      "industry": "国产AI大模型",
+      "type": "行业新方向",
+      "summary": "阶跃星辰发布推理优化型模型Step 3.7 Flash，196B MoE架构，KV-cache成本仅为DeepSeek模型的约22%。",
+      "investment_logic": "国产推理模型在效率上实现显著突破，推理效率提升将推动更多企业落地AI应用，利好国产算力芯片和推理服务提供商。",
+      "target_stocks": "科大讯飞(002230)、商汤-W(00020.HK)、寒武纪(688256)",
+      "risk_note": "模型效率优势需在商业化场景中验证",
+      "source": "阶跃星辰StepFun官方"
+    },
+    {
+      "id": 6,
+      "title": "商汤开源SenseNova-Skills AI办公技能套件，Agent生态加速",
+      "industry": "AI Agent应用",
+      "type": "行业新方向",
+      "summary": "商汤开源AI办公技能套件SenseNova-Skills，为技能兼容智能体设计，提供图像信息图表生成、数据分析等四大核心功能。",
+      "investment_logic": "AI Agent技能套件的开源降低了智能体开发门槛，商汤从模型提供商向Agent生态平台转型，有望带动整个AI Agent产业链的投资热情。",
+      "target_stocks": "商汤-W(00020.HK)、金山办公(688111)、科大讯飞(002230)",
+      "risk_note": "开源生态的商业化路径尚不明确",
+      "source": "商汤SenseTime官方"
+    },
+    {
+      "id": 7,
+      "title": "Anthropic扩展安全项目至150个组织，AI安全基础设施需求增长",
+      "industry": "AI安全",
+      "type": "行业瓶颈变化",
+      "summary": "Anthropic将Project Glasswing计划扩展至约150个新组织，覆盖电力、水务、医疗、通信和硬件等关键基础设施行业。",
+      "investment_logic": "AI系统在关键基础设施中的部署加速，安全需求同步增长。AI安全从合规要求走向刚需，市场规模将快速扩大。",
+      "target_stocks": "奇安信(688561)、深信服(300454)、安恒信息(688023)",
+      "risk_note": "AI安全行业仍处早期，商业模式和付费意愿待验证",
+      "source": "Anthropic Newsroom"
+    },
+    {
+      "id": 8,
+      "title": "金融机构加速采用AI交易基础模型，金融科技AI化提速",
+      "industry": "金融科技",
+      "type": "政策影响",
+      "summary": "NVIDIA报告显示65%金融机构已使用AI，近90%正在部署或评估。金融机构正从独立AI模型转向基于Transformer的交易基础模型。",
+      "investment_logic": "金融行业AI渗透率从早期试点进入规模化部署阶段，交易基础模型模式将带动金融IT系统升级需求。",
+      "target_stocks": "恒生电子(600570)、同花顺(300033)、金证股份(600446)",
+      "risk_note": "金融行业监管严格，AI应用落地节奏可能慢于预期",
+      "source": "NVIDIA AI Blog"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-06-03.json",
+  "_saved_at": "2026-06-03T08:50:09.082824+08:00"
+}

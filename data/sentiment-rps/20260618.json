@@ -57565,8 +57565,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": -0.41,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.3,
+      "dev_30d": 11.58,
       "anomaly_alerts": []
     },
     {
@@ -57603,8 +57603,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": -1.6,
       "pct_change": 0.41,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -14.0,
+      "dev_30d": -27.34,
       "anomaly_alerts": []
     },
     {
@@ -57641,8 +57641,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 0.4,
       "pct_change": 3.75,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.05,
+      "dev_30d": 46.72,
       "anomaly_alerts": []
     },
     {
@@ -57682,8 +57682,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 0.33,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.59,
+      "dev_30d": 48.44,
       "anomaly_alerts": []
     },
     {
@@ -57721,8 +57721,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 0.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.49,
+      "dev_30d": 49.8,
       "anomaly_alerts": []
     },
     {
@@ -57765,8 +57765,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 3.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.96,
+      "dev_30d": 13.83,
       "anomaly_alerts": []
     },
     {
@@ -57805,8 +57805,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.7,
       "pct_change": -2.22,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 30.67,
+      "dev_30d": 31.31,
       "anomaly_alerts": []
     },
     {
@@ -57846,8 +57846,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.3,
       "pct_change": 4.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.56,
+      "dev_30d": -7.12,
       "anomaly_alerts": []
     },
     {
@@ -57887,8 +57887,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 0.6,
       "pct_change": 5.96,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 29.24,
+      "dev_30d": 36.38,
       "anomaly_alerts": []
     },
     {
@@ -57924,8 +57924,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.3,
       "pct_change": 2.4,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.59,
+      "dev_30d": 17.32,
       "anomaly_alerts": []
     },
     {
@@ -57963,8 +57963,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.0,
       "pct_change": 5.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.04,
+      "dev_30d": 49.12,
       "anomaly_alerts": []
     },
     {
@@ -58005,8 +58005,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 2.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 30.83,
+      "dev_30d": 27.31,
       "anomaly_alerts": []
     },
     {
@@ -58045,8 +58045,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 3.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.33,
+      "dev_30d": -18.24,
       "anomaly_alerts": []
     },
     {
@@ -58083,8 +58083,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.5,
       "pct_change": 1.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.41,
+      "dev_30d": 1.98,
       "anomaly_alerts": []
     },
     {
@@ -58120,8 +58120,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.1,
       "pct_change": 2.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.61,
+      "dev_30d": -3.96,
       "anomaly_alerts": []
     },
     {
@@ -58157,8 +58157,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.5,
       "pct_change": -2.11,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -8.49,
+      "dev_30d": 24.8,
       "anomaly_alerts": []
     },
     {
@@ -58203,8 +58203,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 44.07,
+      "dev_30d": 35.05,
       "anomaly_alerts": []
     },
     {
@@ -58240,8 +58240,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 2.47,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.85,
+      "dev_30d": 40.51,
       "anomaly_alerts": []
     },
     {
@@ -58279,8 +58279,8 @@
       "rps_120d_delta": -1.8,
       "rps_250d_delta": -0.3,
       "pct_change": -2.14,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.53,
+      "dev_30d": 9.4,
       "anomaly_alerts": []
     },
     {
@@ -58322,8 +58322,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 2.13,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 42.7,
+      "dev_30d": 67.34,
       "anomaly_alerts": []
     },
     {
@@ -58361,8 +58361,8 @@
       "rps_120d_delta": 1.9,
       "rps_250d_delta": 1.9,
       "pct_change": 11.22,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.11,
+      "dev_30d": 2.17,
       "anomaly_alerts": []
     },
     {
@@ -58407,8 +58407,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 4.97,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.03,
+      "dev_30d": 59.09,
       "anomaly_alerts": []
     },
     {
@@ -58455,8 +58455,8 @@
       "rps_120d_delta": 2.0,
       "rps_250d_delta": 3.7,
       "pct_change": 11.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.99,
+      "dev_30d": 15.88,
       "anomaly_alerts": []
     },
     {
@@ -58498,8 +58498,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 0.4,
       "pct_change": 14.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.92,
+      "dev_30d": 82.88,
       "anomaly_alerts": []
     },
     {
@@ -58535,8 +58535,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": 0.0,
       "pct_change": 0.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.97,
+      "dev_30d": 5.1,
       "anomaly_alerts": []
     },
     {
@@ -58584,8 +58584,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.2,
       "pct_change": 0.76,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.21,
+      "dev_30d": 47.93,
       "anomaly_alerts": []
     },
     {
@@ -58621,8 +58621,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.5,
       "pct_change": 1.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.17,
+      "dev_30d": 27.42,
       "anomaly_alerts": []
     },
     {
@@ -58663,8 +58663,8 @@
       "rps_120d_delta": -1.0,
       "rps_250d_delta": -0.1,
       "pct_change": -0.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.36,
+      "dev_30d": 45.71,
       "anomaly_alerts": []
     },
     {
@@ -58703,8 +58703,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 1.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.0,
+      "dev_30d": -11.17,
       "anomaly_alerts": []
     },
     {
@@ -58740,8 +58740,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -1.5,
       "pct_change": -6.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.39,
+      "dev_30d": 30.39,
       "anomaly_alerts": []
     },
     {
@@ -58782,8 +58782,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.6,
       "pct_change": -1.97,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.3,
+      "dev_30d": 47.74,
       "anomaly_alerts": []
     },
     {
@@ -58831,8 +58831,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": -0.5,
       "pct_change": -1.5,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.0,
+      "dev_30d": 46.24,
       "anomaly_alerts": []
     },
     {
@@ -58871,8 +58871,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.1,
       "pct_change": 2.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -15.9,
+      "dev_30d": -17.24,
       "anomaly_alerts": []
     },
     {
@@ -58918,8 +58918,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 4.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.13,
+      "dev_30d": -10.44,
       "anomaly_alerts": []
     },
     {
@@ -58964,8 +58964,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.7,
       "pct_change": 5.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.1,
+      "dev_30d": 61.19,
       "anomaly_alerts": []
     },
     {
@@ -59001,8 +59001,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.1,
       "pct_change": -1.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.65,
+      "dev_30d": 10.7,
       "anomaly_alerts": []
     },
     {
@@ -59040,8 +59040,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 1.8,
       "pct_change": 1.83,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.91,
+      "dev_30d": 40.17,
       "anomaly_alerts": []
     },
     {
@@ -59077,8 +59077,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.4,
       "pct_change": 0.76,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.1,
+      "dev_30d": 24.21,
       "anomaly_alerts": []
     },
     {
@@ -59119,8 +59119,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.5,
       "pct_change": -1.28,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.24,
+      "dev_30d": -9.55,
       "anomaly_alerts": []
     },
     {
@@ -59166,8 +59166,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.1,
       "pct_change": -1.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.62,
+      "dev_30d": 22.52,
       "anomaly_alerts": []
     },
     {
@@ -59205,8 +59205,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 14.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 40.34,
+      "dev_30d": 99.06,
       "anomaly_alerts": []
     },
     {
@@ -59252,8 +59252,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.6,
       "pct_change": 1.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.48,
+      "dev_30d": 3.91,
       "anomaly_alerts": []
     },
     {
@@ -59293,8 +59293,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.9,
       "pct_change": 3.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.05,
+      "dev_30d": 4.37,
       "anomaly_alerts": []
     },
     {
@@ -59331,8 +59331,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.6,
       "pct_change": 5.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 51.54,
+      "dev_30d": 59.32,
       "anomaly_alerts": []
     },
     {
@@ -59368,8 +59368,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 1.9,
       "pct_change": 10.68,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.1,
+      "dev_30d": 30.03,
       "anomaly_alerts": []
     },
     {
@@ -59408,8 +59408,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 6.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.56,
+      "dev_30d": 44.39,
       "anomaly_alerts": []
     },
     {
@@ -59458,8 +59458,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.4,
       "pct_change": 7.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.46,
+      "dev_30d": 53.07,
       "anomaly_alerts": []
     },
     {
@@ -59502,8 +59502,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 1.51,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.56,
+      "dev_30d": 50.55,
       "anomaly_alerts": []
     },
     {
@@ -59543,8 +59543,8 @@
       "rps_120d_delta": -2.4,
       "rps_250d_delta": -1.2,
       "pct_change": -5.25,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.64,
+      "dev_30d": 28.76,
       "anomaly_alerts": []
     },
     {
@@ -59582,8 +59582,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 0.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.28,
+      "dev_30d": -33.32,
       "anomaly_alerts": []
     },
     {
@@ -59621,8 +59621,8 @@
       "rps_120d_delta": -2.9,
       "rps_250d_delta": -0.5,
       "pct_change": -6.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.93,
+      "dev_30d": 14.38,
       "anomaly_alerts": []
     },
     {
@@ -59662,8 +59662,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 0.5,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 40.69,
+      "dev_30d": 66.05,
       "anomaly_alerts": []
     },
     {
@@ -59702,8 +59702,8 @@
       "rps_120d_delta": 1.2,
       "rps_250d_delta": 0.5,
       "pct_change": 9.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.3,
+      "dev_30d": 20.75,
       "anomaly_alerts": []
     },
     {
@@ -59745,8 +59745,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.7,
       "pct_change": 3.46,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.34,
+      "dev_30d": 34.01,
       "anomaly_alerts": []
     },
     {
@@ -59785,8 +59785,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.4,
       "pct_change": 5.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.24,
+      "dev_30d": 32.33,
       "anomaly_alerts": []
     },
     {
@@ -59822,8 +59822,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 0.74,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.8,
+      "dev_30d": 59.91,
       "anomaly_alerts": []
     },
     {
@@ -59859,8 +59859,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 0.9,
       "pct_change": 5.43,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.95,
+      "dev_30d": 9.19,
       "anomaly_alerts": []
     },
     {
@@ -59897,8 +59897,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 1.8,
       "pct_change": 3.67,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.01,
+      "dev_30d": 8.78,
       "anomaly_alerts": []
     },
     {
@@ -59935,8 +59935,8 @@
       "rps_120d_delta": 8.8,
       "rps_250d_delta": 7.7,
       "pct_change": 19.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.89,
+      "dev_30d": -0.66,
       "anomaly_alerts": []
     },
     {
@@ -59972,8 +59972,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -2.6,
       "pct_change": -5.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.61,
+      "dev_30d": 16.76,
       "anomaly_alerts": []
     },
     {
@@ -60010,8 +60010,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.1,
       "pct_change": 7.7,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.27,
+      "dev_30d": 58.98,
       "anomaly_alerts": []
     },
     {
@@ -60054,8 +60054,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 1.3,
       "pct_change": 7.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.19,
+      "dev_30d": 36.9,
       "anomaly_alerts": []
     },
     {
@@ -60093,8 +60093,8 @@
       "rps_120d_delta": 1.6,
       "rps_250d_delta": 3.6,
       "pct_change": 20.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.04,
+      "dev_30d": 20.2,
       "anomaly_alerts": []
     },
     {
@@ -60132,8 +60132,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 0.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.43,
+      "dev_30d": 109.78,
       "anomaly_alerts": []
     },
     {
@@ -60173,8 +60173,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.4,
       "pct_change": 4.86,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.67,
+      "dev_30d": 78.52,
       "anomaly_alerts": []
     },
     {
@@ -60220,8 +60220,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.5,
       "pct_change": -3.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.44,
+      "dev_30d": 40.0,
       "anomaly_alerts": []
     },
     {
@@ -60260,8 +60260,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 4.37,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 29.6,
+      "dev_30d": 53.41,
       "anomaly_alerts": []
     },
     {
@@ -60300,8 +60300,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.6,
       "pct_change": -0.62,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.66,
+      "dev_30d": 28.85,
       "anomaly_alerts": []
     },
     {
@@ -60341,8 +60341,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 1.8,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.92,
+      "dev_30d": 22.48,
       "anomaly_alerts": []
     },
     {
@@ -60384,8 +60384,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 1.6,
       "pct_change": 3.51,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.21,
+      "dev_30d": 14.91,
       "anomaly_alerts": []
     },
     {
@@ -60421,8 +60421,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.9,
       "pct_change": 6.97,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.64,
+      "dev_30d": -3.89,
       "anomaly_alerts": []
     },
     {
@@ -60458,8 +60458,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 0.6,
       "pct_change": 7.1,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.32,
+      "dev_30d": 13.13,
       "anomaly_alerts": []
     },
     {
@@ -60501,8 +60501,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.3,
       "pct_change": 2.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.57,
+      "dev_30d": 34.64,
       "anomaly_alerts": []
     },
     {
@@ -60539,8 +60539,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.9,
       "pct_change": -1.89,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.25,
+      "dev_30d": 2.89,
       "anomaly_alerts": []
     },
     {
@@ -60577,8 +60577,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 1.25,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.88,
+      "dev_30d": 39.02,
       "anomaly_alerts": []
     },
     {
@@ -60616,8 +60616,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -2.3,
       "pct_change": -6.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -12.93,
+      "dev_30d": 30.26,
       "anomaly_alerts": []
     },
     {
@@ -60653,8 +60653,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": -5.72,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.86,
+      "dev_30d": 98.85,
       "anomaly_alerts": []
     },
     {
@@ -60692,8 +60692,8 @@
       "rps_120d_delta": -2.2,
       "rps_250d_delta": -1.9,
       "pct_change": -11.38,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.67,
+      "dev_30d": 11.04,
       "anomaly_alerts": []
     },
     {
@@ -60734,8 +60734,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 1.0,
       "pct_change": 4.28,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.93,
+      "dev_30d": 39.73,
       "anomaly_alerts": []
     },
     {
@@ -60774,8 +60774,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 2.46,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.16,
+      "dev_30d": 7.65,
       "anomaly_alerts": []
     },
     {
@@ -60818,8 +60818,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.3,
       "pct_change": 3.93,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.34,
+      "dev_30d": 22.9,
       "anomaly_alerts": []
     },
     {
@@ -60859,8 +60859,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.4,
       "pct_change": -1.8,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.21,
+      "dev_30d": -0.67,
       "anomaly_alerts": []
     },
     {
@@ -60894,8 +60894,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.5,
       "pct_change": 3.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.29,
+      "dev_30d": -2.33,
       "anomaly_alerts": []
     },
     {
@@ -60932,8 +60932,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.4,
       "pct_change": -2.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.68,
+      "dev_30d": 23.74,
       "anomaly_alerts": []
     },
     {
@@ -60976,8 +60976,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 0.1,
       "pct_change": 2.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.11,
+      "dev_30d": 28.39,
       "anomaly_alerts": []
     },
     {
@@ -61020,8 +61020,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": 0.9,
       "pct_change": 0.93,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.79,
+      "dev_30d": 31.54,
       "anomaly_alerts": []
     },
     {
@@ -61062,8 +61062,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 2.9,
       "pct_change": 0.68,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.2,
+      "dev_30d": 17.57,
       "anomaly_alerts": []
     },
     {
@@ -61099,8 +61099,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 6.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.79,
+      "dev_30d": 6.85,
       "anomaly_alerts": []
     },
     {
@@ -61143,8 +61143,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.6,
       "pct_change": -2.11,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.27,
+      "dev_30d": 11.09,
       "anomaly_alerts": []
     },
     {
@@ -61188,8 +61188,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 1.2,
       "pct_change": 10.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 39.47,
+      "dev_30d": 20.96,
       "anomaly_alerts": []
     },
     {
@@ -61230,8 +61230,8 @@
       "rps_120d_delta": 1.3,
       "rps_250d_delta": 0.1,
       "pct_change": 4.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.09,
+      "dev_30d": -2.84,
       "anomaly_alerts": []
     },
     {
@@ -61269,8 +61269,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.2,
       "pct_change": 4.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.58,
+      "dev_30d": 21.61,
       "anomaly_alerts": []
     },
     {
@@ -61306,8 +61306,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.2,
       "pct_change": 1.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.14,
+      "dev_30d": 41.17,
       "anomaly_alerts": []
     },
     {
@@ -61351,8 +61351,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 1.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.12,
+      "dev_30d": 22.91,
       "anomaly_alerts": []
     },
     {
@@ -61391,8 +61391,8 @@
       "rps_120d_delta": 2.2,
       "rps_250d_delta": 0.3,
       "pct_change": 2.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.43,
+      "dev_30d": 17.36,
       "anomaly_alerts": []
     },
     {
@@ -61434,8 +61434,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 0.88,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.58,
+      "dev_30d": 19.16,
       "anomaly_alerts": []
     },
     {
@@ -61478,8 +61478,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": -0.1,
       "pct_change": 6.13,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.54,
+      "dev_30d": 42.77,
       "anomaly_alerts": []
     },
     {
@@ -61515,8 +61515,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.7,
       "pct_change": 0.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -20.98,
+      "dev_30d": 28.29,
       "anomaly_alerts": []
     },
     {
@@ -61557,8 +61557,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": 0.1,
       "pct_change": 1.17,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.23,
+      "dev_30d": 40.52,
       "anomaly_alerts": []
     },
     {
@@ -61606,8 +61606,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 1.55,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.13,
+      "dev_30d": 60.06,
       "anomaly_alerts": []
     },
     {
@@ -61644,8 +61644,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.2,
       "pct_change": 3.51,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.75,
+      "dev_30d": 38.78,
       "anomaly_alerts": []
     },
     {
@@ -61682,8 +61682,8 @@
       "rps_120d_delta": 2.8,
       "rps_250d_delta": 2.6,
       "pct_change": 20.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 47.73,
+      "dev_30d": 8.14,
       "anomaly_alerts": []
     },
     {
@@ -61730,8 +61730,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 6.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.69,
+      "dev_30d": 26.71,
       "anomaly_alerts": []
     },
     {
@@ -61771,8 +61771,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 2.8,
       "pct_change": 8.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.23,
+      "dev_30d": 28.52,
       "anomaly_alerts": []
     },
     {
@@ -61813,8 +61813,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.2,
       "pct_change": 2.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.1,
+      "dev_30d": 35.39,
       "anomaly_alerts": []
     },
     {
@@ -61853,8 +61853,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 3.14,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.77,
+      "dev_30d": 11.31,
       "anomaly_alerts": []
     },
     {
@@ -61896,8 +61896,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 0.48,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.46,
+      "dev_30d": 31.85,
       "anomaly_alerts": []
     },
     {
@@ -61934,8 +61934,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.7,
       "pct_change": 3.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.2,
+      "dev_30d": -12.98,
       "anomaly_alerts": []
     },
     {
@@ -61971,8 +61971,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 5.7,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.55,
+      "dev_30d": 31.27,
       "anomaly_alerts": []
     },
     {
@@ -62016,8 +62016,8 @@
       "rps_120d_delta": 2.6,
       "rps_250d_delta": 0.8,
       "pct_change": 1.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.87,
+      "dev_30d": -13.06,
       "anomaly_alerts": []
     },
     {
@@ -62059,8 +62059,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.6,
       "pct_change": 5.77,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 41.71,
+      "dev_30d": 62.92,
       "anomaly_alerts": []
     },
     {
@@ -62100,8 +62100,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": -0.8,
       "pct_change": -4.31,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.76,
+      "dev_30d": 12.22,
       "anomaly_alerts": []
     },
     {
@@ -62138,8 +62138,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 4.5,
       "pct_change": 3.33,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.06,
+      "dev_30d": 15.36,
       "anomaly_alerts": []
     },
     {
@@ -62179,8 +62179,8 @@
       "rps_120d_delta": 2.7,
       "rps_250d_delta": 0.6,
       "pct_change": 5.23,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.46,
+      "dev_30d": 20.12,
       "anomaly_alerts": []
     },
     {
@@ -62214,8 +62214,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.3,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.13,
+      "dev_30d": 20.97,
       "anomaly_alerts": []
     },
     {
@@ -62253,8 +62253,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 2.75,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.32,
+      "dev_30d": 26.12,
       "anomaly_alerts": []
     },
     {
@@ -62291,8 +62291,8 @@
       "rps_120d_delta": -5.0,
       "rps_250d_delta": -6.0,
       "pct_change": -13.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.48,
+      "dev_30d": 12.93,
       "anomaly_alerts": []
     },
     {
@@ -62331,8 +62331,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 0.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.2,
+      "dev_30d": 40.07,
       "anomaly_alerts": []
     },
     {
@@ -62370,8 +62370,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 2.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.07,
+      "dev_30d": 34.0,
       "anomaly_alerts": []
     },
     {
@@ -62407,8 +62407,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.7,
       "pct_change": 5.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.01,
+      "dev_30d": 16.83,
       "anomaly_alerts": []
     },
     {
@@ -62448,8 +62448,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.0,
       "pct_change": 8.16,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -8.43,
+      "dev_30d": 12.78,
       "anomaly_alerts": []
     },
     {
@@ -62489,8 +62489,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.4,
       "pct_change": 0.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -18.13,
+      "dev_30d": 25.26,
       "anomaly_alerts": []
     },
     {
@@ -62532,8 +62532,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 0.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.89,
+      "dev_30d": 8.47,
       "anomaly_alerts": []
     },
     {
@@ -62571,8 +62571,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 1.6,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.13,
+      "dev_30d": 76.09,
       "anomaly_alerts": []
     },
     {
@@ -62615,8 +62615,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.5,
       "pct_change": -0.73,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.26,
+      "dev_30d": 42.97,
       "anomaly_alerts": []
     },
     {
@@ -62658,8 +62658,8 @@
       "rps_120d_delta": 1.6,
       "rps_250d_delta": 1.2,
       "pct_change": 7.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.27,
+      "dev_30d": 28.06,
       "anomaly_alerts": []
     },
     {
@@ -62699,8 +62699,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.2,
       "pct_change": -1.7,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 46.18,
+      "dev_30d": 71.27,
       "anomaly_alerts": []
     },
     {
@@ -62747,8 +62747,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 1.8,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.59,
+      "dev_30d": 23.83,
       "anomaly_alerts": []
     },
     {
@@ -62792,8 +62792,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 0.7,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.31,
+      "dev_30d": 29.5,
       "anomaly_alerts": []
     },
     {
@@ -62831,8 +62831,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.1,
       "pct_change": 5.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 65.88,
+      "dev_30d": 86.02,
       "anomaly_alerts": []
     },
     {
@@ -62876,8 +62876,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.1,
       "pct_change": 0.75,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.03,
+      "dev_30d": 19.8,
       "anomaly_alerts": []
     },
     {
@@ -62925,8 +62925,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 2.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.11,
+      "dev_30d": 44.82,
       "anomaly_alerts": []
     },
     {
@@ -62978,8 +62978,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.1,
       "pct_change": -0.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.45,
+      "dev_30d": 18.61,
       "anomaly_alerts": []
     },
     {
@@ -63025,8 +63025,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 6.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.03,
+      "dev_30d": 18.11,
       "anomaly_alerts": []
     },
     {
@@ -63063,8 +63063,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.2,
       "pct_change": 0.76,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.89,
+      "dev_30d": 29.35,
       "anomaly_alerts": []
     },
     {
@@ -63102,8 +63102,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.0,
       "pct_change": 4.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 39.88,
+      "dev_30d": 15.24,
       "anomaly_alerts": []
     },
     {
@@ -63139,8 +63139,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.2,
       "pct_change": 4.17,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.47,
+      "dev_30d": 16.65,
       "anomaly_alerts": []
     },
     {
@@ -63178,8 +63178,8 @@
       "rps_120d_delta": 1.9,
       "rps_250d_delta": 1.2,
       "pct_change": 10.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 58.98,
+      "dev_30d": 79.47,
       "anomaly_alerts": []
     },
     {
@@ -63216,8 +63216,8 @@
       "rps_120d_delta": -1.3,
       "rps_250d_delta": -3.6,
       "pct_change": -6.24,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.99,
+      "dev_30d": -3.16,
       "anomaly_alerts": []
     },
     {
@@ -63255,8 +63255,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 0.0,
       "pct_change": 2.19,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.03,
+      "dev_30d": 30.79,
       "anomaly_alerts": []
     },
     {
@@ -63298,8 +63298,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 5.51,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.1,
+      "dev_30d": 51.66,
       "anomaly_alerts": []
     },
     {
@@ -63335,8 +63335,8 @@
       "rps_120d_delta": -1.7,
       "rps_250d_delta": -1.2,
       "pct_change": -3.44,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -13.41,
+      "dev_30d": 11.51,
       "anomaly_alerts": []
     },
     {
@@ -63378,8 +63378,8 @@
       "rps_120d_delta": -3.2,
       "rps_250d_delta": -2.2,
       "pct_change": -2.83,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.57,
+      "dev_30d": 28.09,
       "anomaly_alerts": []
     },
     {
@@ -63418,8 +63418,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.5,
       "pct_change": 0.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.0,
+      "dev_30d": 8.92,
       "anomaly_alerts": []
     },
     {
@@ -63460,8 +63460,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.3,
       "pct_change": 7.33,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.04,
+      "dev_30d": 65.28,
       "anomaly_alerts": []
     },
     {
@@ -63505,8 +63505,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 1.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.67,
+      "dev_30d": 10.7,
       "anomaly_alerts": []
     },
     {
@@ -63544,8 +63544,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 2.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 43.45,
+      "dev_30d": 50.81,
       "anomaly_alerts": []
     },
     {
@@ -63587,8 +63587,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.91,
+      "dev_30d": 50.13,
       "anomaly_alerts": []
     },
     {
@@ -63628,8 +63628,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 0.5,
       "pct_change": 5.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.75,
+      "dev_30d": 22.38,
       "anomaly_alerts": []
     },
     {
@@ -63669,8 +63669,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.3,
       "pct_change": -3.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.82,
+      "dev_30d": -31.2,
       "anomaly_alerts": []
     },
     {
@@ -63708,8 +63708,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 2.72,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.15,
+      "dev_30d": 48.81,
       "anomaly_alerts": []
     },
     {
@@ -63747,8 +63747,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 4.78,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.39,
+      "dev_30d": 46.74,
       "anomaly_alerts": []
     },
     {
@@ -63790,8 +63790,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.6,
       "pct_change": 2.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.99,
+      "dev_30d": 25.58,
       "anomaly_alerts": []
     },
     {
@@ -63832,8 +63832,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 2.4,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.43,
+      "dev_30d": 24.67,
       "anomaly_alerts": []
     },
     {
@@ -63871,8 +63871,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.9,
       "pct_change": 4.04,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 33.15,
+      "dev_30d": 44.26,
       "anomaly_alerts": []
     },
     {
@@ -63912,8 +63912,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 1.62,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.27,
+      "dev_30d": 25.09,
       "anomaly_alerts": []
     },
     {
@@ -63951,8 +63951,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 0.5,
       "pct_change": 4.8,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.45,
+      "dev_30d": 53.83,
       "anomaly_alerts": []
     },
     {
@@ -63988,8 +63988,8 @@
       "rps_120d_delta": 2.0,
       "rps_250d_delta": 2.4,
       "pct_change": 10.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.8,
+      "dev_30d": 44.94,
       "anomaly_alerts": []
     },
     {
@@ -64031,8 +64031,8 @@
       "rps_120d_delta": 1.6,
       "rps_250d_delta": 0.4,
       "pct_change": 7.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.14,
+      "dev_30d": -7.31,
       "anomaly_alerts": []
     },
     {
@@ -64071,8 +64071,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.5,
       "pct_change": 2.33,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.79,
+      "dev_30d": 33.34,
       "anomaly_alerts": []
     },
     {
@@ -64108,8 +64108,8 @@
       "rps_120d_delta": -2.0,
       "rps_250d_delta": -0.5,
       "pct_change": -5.3,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.88,
+      "dev_30d": -27.3,
       "anomaly_alerts": []
     },
     {
@@ -64145,8 +64145,8 @@
       "rps_120d_delta": -4.3,
       "rps_250d_delta": -0.8,
       "pct_change": -5.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -13.95,
+      "dev_30d": -43.77,
       "anomaly_alerts": []
     },
     {
@@ -64189,8 +64189,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.23,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.45,
+      "dev_30d": 57.16,
       "anomaly_alerts": []
     },
     {
@@ -64226,8 +64226,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.2,
       "pct_change": 0.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.05,
+      "dev_30d": 20.54,
       "anomaly_alerts": []
     },
     {
@@ -64265,8 +64265,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.7,
       "pct_change": -0.37,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.99,
+      "dev_30d": 32.14,
       "anomaly_alerts": []
     },
     {
@@ -64309,8 +64309,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.8,
       "pct_change": -4.72,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.63,
+      "dev_30d": 23.63,
       "anomaly_alerts": []
     },
     {
@@ -64355,8 +64355,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 3.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.12,
+      "dev_30d": 63.42,
       "anomaly_alerts": []
     },
     {
@@ -64401,8 +64401,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.6,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.73,
+      "dev_30d": 18.5,
       "anomaly_alerts": []
     },
     {
@@ -64441,8 +64441,8 @@
       "rps_120d_delta": 7.2,
       "rps_250d_delta": 10.5,
       "pct_change": 19.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 51.46,
+      "dev_30d": 29.72,
       "anomaly_alerts": []
     },
     {
@@ -64479,8 +64479,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.7,
       "pct_change": 10.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 38.5,
+      "dev_30d": 58.4,
       "anomaly_alerts": []
     },
     {
@@ -64516,8 +64516,8 @@
       "rps_120d_delta": 2.7,
       "rps_250d_delta": 2.9,
       "pct_change": 15.77,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.77,
+      "dev_30d": 63.77,
       "anomaly_alerts": []
     },
     {
@@ -64553,8 +64553,8 @@
       "rps_120d_delta": -1.0,
       "rps_250d_delta": -0.6,
       "pct_change": -2.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.25,
+      "dev_30d": -10.01,
       "anomaly_alerts": []
     },
     {
@@ -64593,8 +64593,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.3,
       "pct_change": -2.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.97,
+      "dev_30d": 26.43,
       "anomaly_alerts": []
     },
     {
@@ -64643,8 +64643,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.1,
       "pct_change": -0.86,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.61,
+      "dev_30d": 97.57,
       "anomaly_alerts": []
     },
     {
@@ -64684,8 +64684,8 @@
       "rps_120d_delta": -1.5,
       "rps_250d_delta": -0.6,
       "pct_change": -2.78,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.09,
+      "dev_30d": 6.61,
       "anomaly_alerts": []
     },
     {
@@ -64721,8 +64721,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": -0.4,
       "pct_change": 1.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.07,
+      "dev_30d": -5.93,
       "anomaly_alerts": []
     },
     {
@@ -64758,8 +64758,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.1,
       "pct_change": -0.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -12.18,
+      "dev_30d": 7.95,
       "anomaly_alerts": []
     },
     {
@@ -64806,8 +64806,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -0.4,
       "pct_change": -1.59,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.66,
+      "dev_30d": 23.65,
       "anomaly_alerts": []
     },
     {
@@ -64850,8 +64850,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": -0.2,
       "pct_change": 0.37,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.76,
+      "dev_30d": -0.74,
       "anomaly_alerts": []
     },
     {
@@ -64891,8 +64891,8 @@
       "rps_120d_delta": -1.4,
       "rps_250d_delta": -0.3,
       "pct_change": -1.82,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.31,
+      "dev_30d": 16.86,
       "anomaly_alerts": []
     },
     {
@@ -64930,8 +64930,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.3,
       "pct_change": 0.65,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.47,
+      "dev_30d": 51.07,
       "anomaly_alerts": []
     },
     {
@@ -64969,8 +64969,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.35,
+      "dev_30d": 93.83,
       "anomaly_alerts": []
     },
     {
@@ -65013,8 +65013,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.9,
       "pct_change": -0.89,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.45,
+      "dev_30d": 40.96,
       "anomaly_alerts": []
     },
     {
@@ -65064,8 +65064,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.2,
       "pct_change": 1.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.92,
+      "dev_30d": 6.9,
       "anomaly_alerts": []
     },
     {
@@ -65102,8 +65102,8 @@
       "rps_120d_delta": 1.8,
       "rps_250d_delta": 0.3,
       "pct_change": 4.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.74,
+      "dev_30d": 4.66,
       "anomaly_alerts": []
     },
     {
@@ -65140,8 +65140,8 @@
       "rps_120d_delta": 3.2,
       "rps_250d_delta": 0.1,
       "pct_change": 8.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.94,
+      "dev_30d": -22.04,
       "anomaly_alerts": []
     },
     {
@@ -65193,8 +65193,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 1.2,
       "pct_change": 6.97,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.23,
+      "dev_30d": 20.5,
       "anomaly_alerts": []
     },
     {
@@ -65245,8 +65245,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": -0.1,
       "pct_change": 1.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.72,
+      "dev_30d": -0.29,
       "anomaly_alerts": []
     },
     {
@@ -65289,8 +65289,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.4,
       "pct_change": -0.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.9,
+      "dev_30d": 5.09,
       "anomaly_alerts": []
     },
     {
@@ -65328,8 +65328,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": 0.0,
       "pct_change": -0.75,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.87,
+      "dev_30d": 57.03,
       "anomaly_alerts": []
     },
     {
@@ -65369,8 +65369,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 1.68,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.69,
+      "dev_30d": 37.47,
       "anomaly_alerts": []
     },
     {
@@ -65408,8 +65408,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.5,
       "pct_change": 1.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.0,
+      "dev_30d": 29.72,
       "anomaly_alerts": []
     },
     {
@@ -65455,8 +65455,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.6,
       "pct_change": 2.94,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.64,
+      "dev_30d": 35.49,
       "anomaly_alerts": []
     },
     {
@@ -65494,8 +65494,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.0,
       "pct_change": 3.91,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 30.97,
+      "dev_30d": 24.12,
       "anomaly_alerts": []
     },
     {
@@ -65541,8 +65541,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 1.0,
       "pct_change": 2.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.75,
+      "dev_30d": 40.04,
       "anomaly_alerts": []
     },
     {
@@ -65581,8 +65581,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 1.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.76,
+      "dev_30d": 55.08,
       "anomaly_alerts": []
     },
     {
@@ -65619,8 +65619,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.8,
       "pct_change": -3.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.71,
+      "dev_30d": 18.09,
       "anomaly_alerts": []
     },
     {
@@ -65660,8 +65660,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -0.2,
       "pct_change": 2.21,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.67,
+      "dev_30d": 29.57,
       "anomaly_alerts": []
     },
     {
@@ -65700,8 +65700,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.2,
       "pct_change": -0.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.21,
+      "dev_30d": 66.16,
       "anomaly_alerts": []
     },
     {
@@ -65741,8 +65741,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 2.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.85,
+      "dev_30d": -9.52,
       "anomaly_alerts": []
     },
     {
@@ -65780,8 +65780,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.2,
       "pct_change": -1.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 65.45,
+      "dev_30d": 64.05,
       "anomaly_alerts": []
     },
     {
@@ -65821,8 +65821,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 1.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.98,
+      "dev_30d": 22.24,
       "anomaly_alerts": []
     },
     {
@@ -65864,8 +65864,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 0.73,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.02,
+      "dev_30d": 112.61,
       "anomaly_alerts": []
     },
     {
@@ -65902,8 +65902,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.2,
       "pct_change": 3.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.04,
+      "dev_30d": -3.34,
       "anomaly_alerts": []
     },
     {
@@ -65948,8 +65948,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.6,
       "pct_change": 6.84,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 38.24,
+      "dev_30d": 43.64,
       "anomaly_alerts": []
     },
     {
@@ -65985,8 +65985,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 1.0,
       "pct_change": 9.3,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.39,
+      "dev_30d": 33.57,
       "anomaly_alerts": []
     },
     {
@@ -66023,8 +66023,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.2,
       "pct_change": -0.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 56.6,
+      "dev_30d": 104.98,
       "anomaly_alerts": []
     },
     {
@@ -66061,8 +66061,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.3,
       "pct_change": 20.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.65,
+      "dev_30d": 5.45,
       "anomaly_alerts": []
     },
     {
@@ -66098,8 +66098,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": -0.4,
       "pct_change": -2.18,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.12,
+      "dev_30d": 37.09,
       "anomaly_alerts": []
     },
     {
@@ -66137,8 +66137,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 1.2,
       "pct_change": 7.41,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.8,
+      "dev_30d": 14.56,
       "anomaly_alerts": []
     },
     {
@@ -66178,8 +66178,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.0,
       "pct_change": 0.82,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -18.99,
+      "dev_30d": -30.51,
       "anomaly_alerts": []
     },
     {
@@ -66221,8 +66221,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 2.1,
       "pct_change": 2.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 33.39,
+      "dev_30d": 16.19,
       "anomaly_alerts": []
     },
     {
@@ -66266,8 +66266,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": 0.1,
       "pct_change": 2.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.56,
+      "dev_30d": 87.39,
       "anomaly_alerts": []
     },
     {
@@ -66304,8 +66304,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 2.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.96,
+      "dev_30d": 33.84,
       "anomaly_alerts": []
     },
     {
@@ -66343,8 +66343,8 @@
       "rps_120d_delta": -1.7,
       "rps_250d_delta": 0.1,
       "pct_change": 2.88,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.03,
+      "dev_30d": 16.4,
       "anomaly_alerts": []
     },
     {
@@ -66382,8 +66382,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.7,
       "pct_change": -2.4,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.92,
+      "dev_30d": 49.02,
       "anomaly_alerts": []
     },
     {
@@ -66426,8 +66426,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.3,
       "pct_change": 7.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.71,
+      "dev_30d": 62.99,
       "anomaly_alerts": []
     },
     {
@@ -66464,8 +66464,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": -0.1,
       "pct_change": 5.71,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.3,
+      "dev_30d": 4.0,
       "anomaly_alerts": []
     },
     {
@@ -66503,8 +66503,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.9,
       "pct_change": -3.12,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.99,
+      "dev_30d": 32.21,
       "anomaly_alerts": []
     },
     {
@@ -66542,8 +66542,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 2.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.01,
+      "dev_30d": 31.35,
       "anomaly_alerts": []
     },
     {
@@ -66580,8 +66580,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -2.7,
       "pct_change": -0.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.25,
+      "dev_30d": -15.89,
       "anomaly_alerts": []
     },
     {
@@ -66623,8 +66623,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -0.1,
       "pct_change": 0.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.31,
+      "dev_30d": 15.4,
       "anomaly_alerts": []
     },
     {
@@ -66667,8 +66667,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": -1.3,
       "pct_change": -3.17,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.56,
+      "dev_30d": 10.19,
       "anomaly_alerts": []
     },
     {
@@ -66711,8 +66711,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.9,
       "pct_change": 6.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.15,
+      "dev_30d": -10.52,
       "anomaly_alerts": []
     },
     {
@@ -66750,8 +66750,8 @@
       "rps_120d_delta": -1.5,
       "rps_250d_delta": -0.4,
       "pct_change": -2.04,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.18,
+      "dev_30d": -32.39,
       "anomaly_alerts": []
     },
     {
@@ -66790,8 +66790,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.2,
       "pct_change": -3.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.68,
+      "dev_30d": 46.64,
       "anomaly_alerts": []
     },
     {
@@ -66827,8 +66827,8 @@
       "rps_120d_delta": 3.7,
       "rps_250d_delta": 1.8,
       "pct_change": 10.14,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.41,
+      "dev_30d": 26.59,
       "anomaly_alerts": []
     },
     {
@@ -66869,8 +66869,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.7,
       "pct_change": -1.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -17.14,
+      "dev_30d": -37.11,
       "anomaly_alerts": []
     },
     {
@@ -66910,8 +66910,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.7,
       "pct_change": 4.43,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.54,
+      "dev_30d": 64.04,
       "anomaly_alerts": []
     },
     {
@@ -66947,8 +66947,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.7,
       "pct_change": 6.23,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.52,
+      "dev_30d": 30.76,
       "anomaly_alerts": []
     },
     {
@@ -66986,8 +66986,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.7,
       "pct_change": -1.31,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.9,
+      "dev_30d": 29.79,
       "anomaly_alerts": []
     },
     {
@@ -67032,8 +67032,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.5,
       "pct_change": -1.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 36.73,
+      "dev_30d": 43.62,
       "anomaly_alerts": []
     },
     {
@@ -67078,8 +67078,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.8,
       "pct_change": -1.89,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.64,
+      "dev_30d": 30.48,
       "anomaly_alerts": []
     },
     {
@@ -67118,8 +67118,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 1.19,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.86,
+      "dev_30d": 24.77,
       "anomaly_alerts": []
     },
     {
@@ -67153,8 +67153,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.5,
       "pct_change": 5.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.4,
+      "dev_30d": 11.97,
       "anomaly_alerts": []
     },
     {
@@ -67192,8 +67192,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.4,
       "pct_change": -2.44,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.51,
+      "dev_30d": 29.46,
       "anomaly_alerts": []
     },
     {
@@ -67232,8 +67232,8 @@
       "rps_120d_delta": 1.4,
       "rps_250d_delta": 0.2,
       "pct_change": 2.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.09,
+      "dev_30d": 28.29,
       "anomaly_alerts": []
     },
     {
@@ -67269,8 +67269,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.9,
       "pct_change": 5.1,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.78,
+      "dev_30d": 9.17,
       "anomaly_alerts": []
     },
     {
@@ -67309,8 +67309,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 8.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.96,
+      "dev_30d": 52.83,
       "anomaly_alerts": []
     },
     {
@@ -67347,8 +67347,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -1.3,
       "pct_change": -3.75,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.51,
+      "dev_30d": 36.74,
       "anomaly_alerts": []
     },
     {
@@ -67384,8 +67384,8 @@
       "rps_120d_delta": 1.7,
       "rps_250d_delta": 2.7,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.92,
+      "dev_30d": 32.79,
       "anomaly_alerts": []
     },
     {
@@ -67425,8 +67425,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 5.14,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.06,
+      "dev_30d": 31.98,
       "anomaly_alerts": []
     },
     {
@@ -67464,8 +67464,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 3.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.34,
+      "dev_30d": 102.66,
       "anomaly_alerts": []
     },
     {
@@ -67503,8 +67503,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": 0.0,
       "pct_change": 2.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.03,
+      "dev_30d": -26.88,
       "anomaly_alerts": []
     },
     {
@@ -67540,8 +67540,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -1.1,
       "pct_change": -2.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.03,
+      "dev_30d": 39.37,
       "anomaly_alerts": []
     },
     {
@@ -67582,8 +67582,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.5,
       "pct_change": 4.47,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.37,
+      "dev_30d": 31.06,
       "anomaly_alerts": []
     },
     {
@@ -67621,8 +67621,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": -1.4,
       "pct_change": -0.1,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.22,
+      "dev_30d": 29.87,
       "anomaly_alerts": []
     },
     {
@@ -67658,8 +67658,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.7,
       "pct_change": -0.52,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.06,
+      "dev_30d": -26.74,
       "anomaly_alerts": []
     },
     {
@@ -67701,8 +67701,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 7.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 45.74,
+      "dev_30d": 155.81,
       "anomaly_alerts": []
     },
     {
@@ -67740,8 +67740,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 5.55,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -9.38,
+      "dev_30d": 46.06,
       "anomaly_alerts": []
     },
     {
@@ -67782,8 +67782,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": -1.11,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.19,
+      "dev_30d": 36.49,
       "anomaly_alerts": []
     },
     {
@@ -67826,8 +67826,8 @@
       "rps_120d_delta": 1.4,
       "rps_250d_delta": 1.3,
       "pct_change": 3.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.55,
+      "dev_30d": 30.51,
       "anomaly_alerts": []
     },
     {
@@ -67868,8 +67868,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 2.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 76.32,
+      "dev_30d": 102.99,
       "anomaly_alerts": []
     },
     {
@@ -67915,8 +67915,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 1.1,
       "pct_change": 6.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 33.77,
+      "dev_30d": 67.69,
       "anomaly_alerts": []
     },
     {
@@ -67952,8 +67952,8 @@
       "rps_120d_delta": 9.6,
       "rps_250d_delta": 3.2,
       "pct_change": 20.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.11,
+      "dev_30d": -38.92,
       "anomaly_alerts": []
     },
     {
@@ -68004,8 +68004,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.3,
       "pct_change": -2.28,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.69,
+      "dev_30d": 56.32,
       "anomaly_alerts": []
     },
     {
@@ -68039,8 +68039,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": -2.0,
       "pct_change": -7.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -16.99,
+      "dev_30d": 16.73,
       "anomaly_alerts": []
     },
     {
@@ -68081,8 +68081,8 @@
       "rps_120d_delta": -1.8,
       "rps_250d_delta": -0.1,
       "pct_change": -7.18,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.09,
+      "dev_30d": 11.3,
       "anomaly_alerts": []
     },
     {
@@ -68120,8 +68120,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 6.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.6,
+      "dev_30d": 61.13,
       "anomaly_alerts": []
     },
     {
@@ -68157,8 +68157,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 3.1,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.04,
+      "dev_30d": 33.39,
       "anomaly_alerts": []
     },
     {
@@ -68194,8 +68194,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.7,
       "pct_change": 5.3,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.73,
+      "dev_30d": 50.76,
       "anomaly_alerts": []
     },
     {
@@ -68231,8 +68231,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 1.3,
       "pct_change": 3.58,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.46,
+      "dev_30d": 19.77,
       "anomaly_alerts": []
     },
     {
@@ -68275,8 +68275,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.9,
       "pct_change": -2.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.25,
+      "dev_30d": 58.66,
       "anomaly_alerts": []
     },
     {
@@ -68316,8 +68316,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 7.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.69,
+      "dev_30d": 19.01,
       "anomaly_alerts": []
     },
     {
@@ -68355,8 +68355,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 4.62,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.91,
+      "dev_30d": 48.07,
       "anomaly_alerts": []
     },
     {
@@ -68397,8 +68397,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.2,
       "pct_change": -1.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.2,
+      "dev_30d": 32.22,
       "anomaly_alerts": []
     },
     {
@@ -68437,8 +68437,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 0.7,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.67,
+      "dev_30d": 73.04,
       "anomaly_alerts": []
     },
     {
@@ -68475,8 +68475,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.2,
       "pct_change": 1.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.56,
+      "dev_30d": 32.23,
       "anomaly_alerts": []
     },
     {
@@ -68518,8 +68518,8 @@
       "rps_120d_delta": 2.3,
       "rps_250d_delta": 2.2,
       "pct_change": 4.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.19,
+      "dev_30d": 4.11,
       "anomaly_alerts": []
     },
     {
@@ -68559,8 +68559,8 @@
       "rps_120d_delta": 1.2,
       "rps_250d_delta": 4.1,
       "pct_change": 7.96,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.71,
+      "dev_30d": 28.88,
       "anomaly_alerts": []
     },
     {
@@ -68608,8 +68608,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": -0.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.12,
+      "dev_30d": 38.53,
       "anomaly_alerts": []
     },
     {
@@ -68650,8 +68650,8 @@
       "rps_120d_delta": 1.3,
       "rps_250d_delta": -0.1,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 48.4,
+      "dev_30d": 93.91,
       "anomaly_alerts": []
     },
     {
@@ -68693,8 +68693,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.3,
       "pct_change": 4.46,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.74,
+      "dev_30d": 16.16,
       "anomaly_alerts": []
     },
     {
@@ -68730,8 +68730,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -1.9,
       "pct_change": -2.35,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.77,
+      "dev_30d": 51.66,
       "anomaly_alerts": []
     },
     {
@@ -68774,8 +68774,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": 2.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.11,
+      "dev_30d": -0.83,
       "anomaly_alerts": []
     },
     {
@@ -68815,8 +68815,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.5,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.19,
+      "dev_30d": 45.37,
       "anomaly_alerts": []
     },
     {
@@ -68854,8 +68854,8 @@
       "rps_120d_delta": 2.3,
       "rps_250d_delta": -0.1,
       "pct_change": 2.11,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 30.4,
+      "dev_30d": -3.1,
       "anomaly_alerts": []
     },
     {
@@ -68893,8 +68893,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.7,
       "pct_change": 2.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.49,
+      "dev_30d": 21.47,
       "anomaly_alerts": []
     },
     {
@@ -68935,8 +68935,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.2,
       "pct_change": 0.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.52,
+      "dev_30d": 42.78,
       "anomaly_alerts": []
     },
     {
@@ -68977,8 +68977,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": -0.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.96,
+      "dev_30d": 65.16,
       "anomaly_alerts": []
     },
     {
@@ -69016,8 +69016,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.6,
       "pct_change": 0.89,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.15,
+      "dev_30d": 11.57,
       "anomaly_alerts": []
     },
     {
@@ -69058,8 +69058,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.4,
       "pct_change": 2.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.95,
+      "dev_30d": 22.19,
       "anomaly_alerts": []
     },
     {
@@ -69095,8 +69095,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.1,
       "pct_change": -0.95,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.88,
+      "dev_30d": 94.03,
       "anomaly_alerts": []
     },
     {
@@ -69135,8 +69135,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 0.5,
       "pct_change": 8.31,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.64,
+      "dev_30d": 15.4,
       "anomaly_alerts": []
     },
     {
@@ -69176,8 +69176,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 3.6,
       "pct_change": 4.23,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.26,
+      "dev_30d": -0.61,
       "anomaly_alerts": []
     },
     {
@@ -69213,8 +69213,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": 0.0,
       "pct_change": -0.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.65,
+      "dev_30d": -16.34,
       "anomaly_alerts": []
     },
     {
@@ -69254,8 +69254,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 3.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.5,
+      "dev_30d": -6.19,
       "anomaly_alerts": []
     },
     {
@@ -69294,8 +69294,8 @@
       "rps_120d_delta": 1.3,
       "rps_250d_delta": 0.5,
       "pct_change": 5.91,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.65,
+      "dev_30d": 48.35,
       "anomaly_alerts": []
     },
     {
@@ -69331,8 +69331,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 1.1,
       "pct_change": 1.62,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.0,
+      "dev_30d": -9.72,
       "anomaly_alerts": []
     },
     {
@@ -69368,8 +69368,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.81,
+      "dev_30d": 23.73,
       "anomaly_alerts": []
     },
     {
@@ -69407,8 +69407,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": -2.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.35,
+      "dev_30d": 41.02,
       "anomaly_alerts": []
     },
     {
@@ -69445,8 +69445,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.4,
       "pct_change": 1.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.11,
+      "dev_30d": 50.89,
       "anomaly_alerts": []
     },
     {
@@ -69484,8 +69484,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.6,
       "pct_change": 5.51,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.95,
+      "dev_30d": 33.28,
       "anomaly_alerts": []
     },
     {
@@ -69521,8 +69521,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -1.6,
       "pct_change": 1.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.82,
+      "dev_30d": 7.05,
       "anomaly_alerts": []
     },
     {
@@ -69565,8 +69565,8 @@
       "rps_120d_delta": 3.0,
       "rps_250d_delta": 0.5,
       "pct_change": 7.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.46,
+      "dev_30d": 24.19,
       "anomaly_alerts": []
     },
     {
@@ -69603,8 +69603,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": -0.25,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.23,
+      "dev_30d": 38.93,
       "anomaly_alerts": []
     },
     {
@@ -69642,8 +69642,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 1.7,
       "pct_change": 3.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.48,
+      "dev_30d": 14.88,
       "anomaly_alerts": []
     },
     {
@@ -69686,8 +69686,8 @@
       "rps_120d_delta": -1.4,
       "rps_250d_delta": -1.1,
       "pct_change": -4.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.66,
+      "dev_30d": 23.24,
       "anomaly_alerts": []
     },
     {
@@ -69723,8 +69723,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 3.2,
       "pct_change": 6.4,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.17,
+      "dev_30d": 6.43,
       "anomaly_alerts": []
     },
     {
@@ -69761,8 +69761,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.9,
       "pct_change": 1.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.05,
+      "dev_30d": 24.92,
       "anomaly_alerts": []
     },
     {
@@ -69799,8 +69799,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.6,
       "pct_change": 4.68,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.09,
+      "dev_30d": 19.68,
       "anomaly_alerts": []
     },
     {
@@ -69842,8 +69842,8 @@
       "rps_120d_delta": 3.5,
       "rps_250d_delta": 0.0,
       "pct_change": 10.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.93,
+      "dev_30d": 68.4,
       "anomaly_alerts": []
     },
     {
@@ -69887,8 +69887,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.6,
       "pct_change": -1.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.75,
+      "dev_30d": 29.76,
       "anomaly_alerts": []
     },
     {
@@ -69927,8 +69927,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 1.4,
       "pct_change": 8.25,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.09,
+      "dev_30d": 21.27,
       "anomaly_alerts": []
     },
     {
@@ -69970,8 +69970,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -0.9,
       "pct_change": 0.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.85,
+      "dev_30d": 40.41,
       "anomaly_alerts": []
     },
     {
@@ -70013,8 +70013,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.2,
       "pct_change": 0.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.9,
+      "dev_30d": -8.75,
       "anomaly_alerts": []
     },
     {
@@ -70051,8 +70051,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 1.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 36.47,
+      "dev_30d": 88.97,
       "anomaly_alerts": []
     },
     {
@@ -70095,8 +70095,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.6,
       "pct_change": -2.31,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.79,
+      "dev_30d": 23.29,
       "anomaly_alerts": []
     },
     {
@@ -70136,8 +70136,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.5,
       "pct_change": 3.77,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.94,
+      "dev_30d": 19.39,
       "anomaly_alerts": []
     },
     {
@@ -70183,8 +70183,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.3,
       "pct_change": 5.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.76,
+      "dev_30d": 29.98,
       "anomaly_alerts": []
     },
     {
@@ -70220,8 +70220,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.3,
       "pct_change": 2.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.26,
+      "dev_30d": -32.25,
       "anomaly_alerts": []
     },
     {
@@ -70264,8 +70264,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.4,
       "pct_change": -1.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.67,
+      "dev_30d": 49.6,
       "anomaly_alerts": []
     },
     {
@@ -70304,8 +70304,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.6,
       "pct_change": -2.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.35,
+      "dev_30d": 79.83,
       "anomaly_alerts": []
     },
     {
@@ -70344,8 +70344,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 1.0,
       "pct_change": 12.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.28,
+      "dev_30d": 36.25,
       "anomaly_alerts": []
     },
     {
@@ -70384,8 +70384,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.6,
       "pct_change": -1.46,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.01,
+      "dev_30d": 14.45,
       "anomaly_alerts": []
     },
     {
@@ -70425,8 +70425,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 1.1,
       "pct_change": 4.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.93,
+      "dev_30d": 17.74,
       "anomaly_alerts": []
     },
     {
@@ -70462,8 +70462,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -1.0,
       "pct_change": -10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.07,
+      "dev_30d": 64.16,
       "anomaly_alerts": []
     },
     {
@@ -70499,8 +70499,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 1.0,
       "pct_change": 2.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.67,
+      "dev_30d": -4.99,
       "anomaly_alerts": []
     },
     {
@@ -70547,8 +70547,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 3.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -9.82,
+      "dev_30d": 5.98,
       "anomaly_alerts": []
     },
     {
@@ -70598,8 +70598,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 1.3,
       "pct_change": 8.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.2,
+      "dev_30d": 63.51,
       "anomaly_alerts": []
     },
     {
@@ -70645,8 +70645,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -1.0,
       "pct_change": -7.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -13.0,
+      "dev_30d": 56.85,
       "anomaly_alerts": []
     },
     {
@@ -70692,8 +70692,8 @@
       "rps_120d_delta": 1.4,
       "rps_250d_delta": 1.7,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.06,
+      "dev_30d": 44.43,
       "anomaly_alerts": []
     },
     {
@@ -70733,8 +70733,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 0.0,
       "pct_change": 2.71,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.78,
+      "dev_30d": 13.57,
       "anomaly_alerts": []
     },
     {
@@ -70771,8 +70771,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": 2.8,
       "pct_change": 5.41,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.41,
+      "dev_30d": 32.4,
       "anomaly_alerts": []
     },
     {
@@ -70815,8 +70815,8 @@
       "rps_120d_delta": -1.4,
       "rps_250d_delta": -0.9,
       "pct_change": -1.77,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.03,
+      "dev_30d": 18.44,
       "anomaly_alerts": []
     },
     {
@@ -70860,8 +70860,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 0.0,
       "pct_change": 1.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.11,
+      "dev_30d": 12.2,
       "anomaly_alerts": []
     },
     {
@@ -70897,8 +70897,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 1.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.46,
+      "dev_30d": 17.64,
       "anomaly_alerts": []
     },
     {
@@ -70937,8 +70937,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 0.7,
       "pct_change": 9.76,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.96,
+      "dev_30d": 32.78,
       "anomaly_alerts": []
     },
     {
@@ -70980,8 +70980,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 1.8,
       "pct_change": 1.86,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.6,
+      "dev_30d": 4.99,
       "anomaly_alerts": []
     },
     {
@@ -71021,8 +71021,8 @@
       "rps_120d_delta": -1.6,
       "rps_250d_delta": -0.3,
       "pct_change": -5.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.75,
+      "dev_30d": -25.12,
       "anomaly_alerts": []
     },
     {
@@ -71058,8 +71058,8 @@
       "rps_120d_delta": 1.2,
       "rps_250d_delta": null,
       "pct_change": 6.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.78,
+      "dev_30d": -15.48,
       "anomaly_alerts": []
     },
     {
@@ -71101,8 +71101,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.2,
       "pct_change": 8.82,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.81,
+      "dev_30d": 53.09,
       "anomaly_alerts": []
     },
     {
@@ -71142,8 +71142,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.4,
       "pct_change": 1.61,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.96,
+      "dev_30d": 43.58,
       "anomaly_alerts": []
     },
     {
@@ -71184,8 +71184,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 5.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.75,
+      "dev_30d": -9.32,
       "anomaly_alerts": []
     },
     {
@@ -71223,8 +71223,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.7,
       "pct_change": 4.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.45,
+      "dev_30d": -2.24,
       "anomaly_alerts": []
     },
     {
@@ -71263,8 +71263,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 2.82,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.97,
+      "dev_30d": 15.09,
       "anomaly_alerts": []
     },
     {
@@ -71301,8 +71301,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 1.2,
       "pct_change": 8.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.28,
+      "dev_30d": 8.54,
       "anomaly_alerts": []
     },
     {
@@ -71340,8 +71340,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.6,
       "pct_change": -0.31,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.8,
+      "dev_30d": 23.07,
       "anomaly_alerts": []
     },
     {
@@ -71385,8 +71385,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.1,
       "pct_change": 5.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 67.7,
+      "dev_30d": 108.86,
       "anomaly_alerts": []
     },
     {
@@ -71425,8 +71425,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.2,
       "pct_change": 0.46,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.45,
+      "dev_30d": 22.95,
       "anomaly_alerts": []
     },
     {
@@ -71462,8 +71462,8 @@
       "rps_120d_delta": -1.2,
       "rps_250d_delta": 0.7,
       "pct_change": 5.52,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.39,
+      "dev_30d": -3.9,
       "anomaly_alerts": []
     },
     {
@@ -71502,8 +71502,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.5,
       "pct_change": -2.92,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.46,
+      "dev_30d": 58.18,
       "anomaly_alerts": []
     },
     {
@@ -71554,8 +71554,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.3,
       "pct_change": -4.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.53,
+      "dev_30d": 38.26,
       "anomaly_alerts": []
     },
     {
@@ -71595,8 +71595,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.34,
+      "dev_30d": 45.65,
       "anomaly_alerts": []
     },
     {
@@ -71634,8 +71634,8 @@
       "rps_120d_delta": -1.8,
       "rps_250d_delta": -1.1,
       "pct_change": -2.76,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 33.36,
+      "dev_30d": 20.77,
       "anomaly_alerts": []
     },
     {
@@ -71684,8 +71684,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.1,
       "pct_change": -0.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.6,
+      "dev_30d": 20.32,
       "anomaly_alerts": []
     },
     {
@@ -71722,8 +71722,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": 0.0,
       "pct_change": -0.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.27,
+      "dev_30d": 8.55,
       "anomaly_alerts": []
     },
     {
@@ -71763,8 +71763,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.4,
       "pct_change": 4.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.39,
+      "dev_30d": 38.17,
       "anomaly_alerts": []
     },
     {
@@ -71801,8 +71801,8 @@
       "rps_120d_delta": 3.3,
       "rps_250d_delta": 2.6,
       "pct_change": 20.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 51.78,
+      "dev_30d": 79.12,
       "anomaly_alerts": []
     },
     {
@@ -71838,8 +71838,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.4,
       "pct_change": -0.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.54,
+      "dev_30d": -24.67,
       "anomaly_alerts": []
     },
     {
@@ -71892,8 +71892,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.2,
       "pct_change": 4.13,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.77,
+      "dev_30d": 29.41,
       "anomaly_alerts": []
     },
     {
@@ -71939,8 +71939,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.1,
       "pct_change": -0.88,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.5,
+      "dev_30d": 29.58,
       "anomaly_alerts": []
     },
     {
@@ -71980,8 +71980,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.5,
       "pct_change": 1.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -20.66,
+      "dev_30d": 28.31,
       "anomaly_alerts": []
     },
     {
@@ -72017,8 +72017,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 3.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.16,
+      "dev_30d": 30.64,
       "anomaly_alerts": []
     },
     {
@@ -72061,8 +72061,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.4,
       "pct_change": 8.91,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.42,
+      "dev_30d": 48.23,
       "anomaly_alerts": []
     },
     {
@@ -72103,8 +72103,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": -0.1,
       "pct_change": 1.74,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.7,
+      "dev_30d": 18.37,
       "anomaly_alerts": []
     },
     {
@@ -72144,8 +72144,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 3.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.73,
+      "dev_30d": 29.83,
       "anomaly_alerts": []
     },
     {
@@ -72182,8 +72182,8 @@
       "rps_120d_delta": 1.2,
       "rps_250d_delta": 0.4,
       "pct_change": 5.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.05,
+      "dev_30d": 53.57,
       "anomaly_alerts": []
     },
     {
@@ -72227,8 +72227,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.1,
       "pct_change": 4.72,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 37.42,
+      "dev_30d": 63.43,
       "anomaly_alerts": []
     },
     {
@@ -72267,8 +72267,8 @@
       "rps_120d_delta": 2.7,
       "rps_250d_delta": 2.5,
       "pct_change": 20.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.88,
+      "dev_30d": 49.64,
       "anomaly_alerts": []
     },
     {
@@ -72304,8 +72304,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.9,
       "pct_change": -4.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 45.57,
+      "dev_30d": 68.32,
       "anomaly_alerts": []
     },
     {
@@ -72345,8 +72345,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.4,
       "pct_change": -1.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.74,
+      "dev_30d": 2.66,
       "anomaly_alerts": []
     },
     {
@@ -72387,8 +72387,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.8,
       "pct_change": 4.64,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.41,
+      "dev_30d": 18.07,
       "anomaly_alerts": []
     },
     {
@@ -72427,8 +72427,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.3,
       "pct_change": 0.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 36.01,
+      "dev_30d": 46.57,
       "anomaly_alerts": []
     },
     {
@@ -72469,8 +72469,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.3,
       "pct_change": 0.17,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.93,
+      "dev_30d": 27.42,
       "anomaly_alerts": []
     },
     {
@@ -72510,8 +72510,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.3,
       "pct_change": 0.64,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.48,
+      "dev_30d": 11.09,
       "anomaly_alerts": []
     },
     {
@@ -72547,8 +72547,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.7,
       "pct_change": -2.65,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.11,
+      "dev_30d": -16.86,
       "anomaly_alerts": []
     },
     {
@@ -72587,8 +72587,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.5,
       "pct_change": 4.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.13,
+      "dev_30d": 52.96,
       "anomaly_alerts": []
     },
     {
@@ -72624,8 +72624,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.17,
+      "dev_30d": 64.81,
       "anomaly_alerts": []
     },
     {
@@ -72668,8 +72668,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.3,
       "pct_change": -1.85,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.12,
+      "dev_30d": 34.91,
       "anomaly_alerts": []
     },
     {
@@ -72709,8 +72709,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.3,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.71,
+      "dev_30d": 71.76,
       "anomaly_alerts": []
     },
     {
@@ -72748,8 +72748,8 @@
       "rps_120d_delta": -1.3,
       "rps_250d_delta": -0.6,
       "pct_change": -3.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.58,
+      "dev_30d": 23.36,
       "anomaly_alerts": []
     },
     {
@@ -72786,8 +72786,8 @@
       "rps_120d_delta": -1.3,
       "rps_250d_delta": -0.4,
       "pct_change": -1.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.63,
+      "dev_30d": -36.89,
       "anomaly_alerts": []
     },
     {
@@ -72827,8 +72827,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": 0.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.68,
+      "dev_30d": 36.81,
       "anomaly_alerts": []
     },
     {
@@ -72876,8 +72876,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 1.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.35,
+      "dev_30d": 15.62,
       "anomaly_alerts": []
     },
     {
@@ -72913,8 +72913,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 0.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.77,
+      "dev_30d": 31.13,
       "anomaly_alerts": []
     },
     {
@@ -72959,8 +72959,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 1.9,
       "pct_change": 3.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.46,
+      "dev_30d": 29.7,
       "anomaly_alerts": []
     },
     {
@@ -73017,8 +73017,8 @@
       "rps_120d_delta": 1.9,
       "rps_250d_delta": 1.6,
       "pct_change": 10.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.46,
+      "dev_30d": 45.67,
       "anomaly_alerts": []
     },
     {
@@ -73054,8 +73054,8 @@
       "rps_120d_delta": 1.3,
       "rps_250d_delta": 0.1,
       "pct_change": 2.89,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.5,
+      "dev_30d": 16.69,
       "anomaly_alerts": []
     },
     {
@@ -73093,8 +73093,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 0.7,
       "pct_change": 5.44,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -7.16,
+      "dev_30d": 34.72,
       "anomaly_alerts": []
     },
     {
@@ -73134,8 +73134,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.8,
       "pct_change": -2.3,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -4.64,
+      "dev_30d": -2.6,
       "anomaly_alerts": []
     },
     {
@@ -73172,8 +73172,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.1,
       "pct_change": 6.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 24.91,
+      "dev_30d": 29.91,
       "anomaly_alerts": []
     },
     {
@@ -73223,8 +73223,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.4,
       "pct_change": -0.56,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.52,
+      "dev_30d": 10.81,
       "anomaly_alerts": []
     },
     {
@@ -73264,8 +73264,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.2,
       "pct_change": 4.18,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.85,
+      "dev_30d": 17.21,
       "anomaly_alerts": []
     },
     {
@@ -73304,8 +73304,8 @@
       "rps_120d_delta": -3.1,
       "rps_250d_delta": 0.0,
       "pct_change": 0.22,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.75,
+      "dev_30d": -17.14,
       "anomaly_alerts": []
     },
     {
@@ -73341,8 +73341,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -1.1,
       "pct_change": 0.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.34,
+      "dev_30d": 36.78,
       "anomaly_alerts": []
     },
     {
@@ -73378,8 +73378,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": 0.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.79,
+      "dev_30d": 21.91,
       "anomaly_alerts": []
     },
     {
@@ -73419,8 +73419,8 @@
       "rps_120d_delta": 2.1,
       "rps_250d_delta": 1.1,
       "pct_change": 14.13,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.87,
+      "dev_30d": 32.42,
       "anomaly_alerts": []
     },
     {
@@ -73457,8 +73457,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": -0.1,
       "pct_change": 1.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.19,
+      "dev_30d": -0.04,
       "anomaly_alerts": []
     },
     {
@@ -73494,8 +73494,8 @@
       "rps_120d_delta": -2.6,
       "rps_250d_delta": -1.3,
       "pct_change": -9.78,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -26.34,
+      "dev_30d": -9.01,
       "anomaly_alerts": []
     },
     {
@@ -73534,8 +73534,8 @@
       "rps_120d_delta": -2.5,
       "rps_250d_delta": -3.2,
       "pct_change": -7.24,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.14,
+      "dev_30d": 25.41,
       "anomaly_alerts": []
     },
     {
@@ -73573,8 +73573,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 3.47,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.48,
+      "dev_30d": 3.06,
       "anomaly_alerts": []
     },
     {
@@ -73616,8 +73616,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": 0.3,
       "pct_change": 0.28,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.8,
+      "dev_30d": 3.26,
       "anomaly_alerts": []
     },
     {
@@ -73657,8 +73657,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.2,
       "pct_change": -0.57,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.14,
+      "dev_30d": 17.25,
       "anomaly_alerts": []
     },
     {
@@ -73694,8 +73694,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 9.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 66.63,
+      "dev_30d": 77.03,
       "anomaly_alerts": []
     },
     {
@@ -73732,8 +73732,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": -0.6,
       "pct_change": -1.62,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.84,
+      "dev_30d": 17.34,
       "anomaly_alerts": []
     },
     {
@@ -73769,8 +73769,8 @@
       "rps_120d_delta": 1.0,
       "rps_250d_delta": 1.4,
       "pct_change": 7.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 18.21,
+      "dev_30d": 26.76,
       "anomaly_alerts": []
     },
     {
@@ -73811,8 +73811,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 5.28,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.32,
+      "dev_30d": 57.15,
       "anomaly_alerts": []
     },
     {
@@ -73848,8 +73848,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.8,
       "pct_change": 2.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.03,
+      "dev_30d": 17.08,
       "anomaly_alerts": []
     },
     {
@@ -73883,8 +73883,8 @@
       "rps_120d_delta": -1.0,
       "rps_250d_delta": -3.5,
       "pct_change": -6.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.3,
+      "dev_30d": 5.1,
       "anomaly_alerts": []
     },
     {
@@ -73921,8 +73921,8 @@
       "rps_120d_delta": 4.0,
       "rps_250d_delta": 0.9,
       "pct_change": 8.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.17,
+      "dev_30d": -32.78,
       "anomaly_alerts": []
     },
     {
@@ -73958,8 +73958,8 @@
       "rps_120d_delta": 2.7,
       "rps_250d_delta": 1.5,
       "pct_change": 9.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.99,
+      "dev_30d": 9.1,
       "anomaly_alerts": []
     },
     {
@@ -73998,8 +73998,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": 0.2,
       "pct_change": 5.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.83,
+      "dev_30d": -3.79,
       "anomaly_alerts": []
     },
     {
@@ -74045,8 +74045,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.3,
       "pct_change": 5.05,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.12,
+      "dev_30d": 90.3,
       "anomaly_alerts": []
     },
     {
@@ -74087,8 +74087,8 @@
       "rps_120d_delta": 1.4,
       "rps_250d_delta": -0.1,
       "pct_change": 0.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.95,
+      "dev_30d": 3.93,
       "anomaly_alerts": []
     },
     {
@@ -74127,8 +74127,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 1.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.52,
+      "dev_30d": 55.89,
       "anomaly_alerts": []
     },
     {
@@ -74166,8 +74166,8 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.4,
       "pct_change": 3.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.12,
+      "dev_30d": 26.02,
       "anomaly_alerts": []
     },
     {
@@ -74204,8 +74204,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 5.37,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 55.66,
+      "dev_30d": 65.83,
       "anomaly_alerts": []
     },
     {
@@ -74241,8 +74241,8 @@
       "rps_120d_delta": -7.8,
       "rps_250d_delta": -0.8,
       "pct_change": -9.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -17.38,
+      "dev_30d": -46.93,
       "anomaly_alerts": []
     },
     {
@@ -74284,8 +74284,8 @@
       "rps_120d_delta": -1.0,
       "rps_250d_delta": -1.0,
       "pct_change": -2.79,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.92,
+      "dev_30d": 14.3,
       "anomaly_alerts": []
     },
     {
@@ -74323,8 +74323,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": -0.2,
       "pct_change": -0.82,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.26,
+      "dev_30d": 20.21,
       "anomaly_alerts": []
     },
     {
@@ -74364,8 +74364,8 @@
       "rps_120d_delta": 1.4,
       "rps_250d_delta": 0.6,
       "pct_change": 4.09,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.94,
+      "dev_30d": -1.57,
       "anomaly_alerts": []
     },
     {
@@ -74407,8 +74407,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.3,
       "pct_change": 1.41,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.09,
+      "dev_30d": 28.17,
       "anomaly_alerts": []
     },
     {
@@ -74447,8 +74447,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.2,
       "pct_change": -0.81,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.78,
+      "dev_30d": 34.23,
       "anomaly_alerts": []
     },
     {
@@ -74490,8 +74490,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.2,
       "pct_change": 0.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -13.92,
+      "dev_30d": 7.61,
       "anomaly_alerts": []
     },
     {
@@ -74535,8 +74535,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 2.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.49,
+      "dev_30d": 1.06,
       "anomaly_alerts": []
     },
     {
@@ -74573,8 +74573,8 @@
       "rps_120d_delta": -3.5,
       "rps_250d_delta": -0.4,
       "pct_change": -0.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.63,
+      "dev_30d": -5.88,
       "anomaly_alerts": []
     },
     {
@@ -74617,8 +74617,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.5,
       "pct_change": -2.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.82,
+      "dev_30d": 14.1,
       "anomaly_alerts": []
     },
     {
@@ -74654,8 +74654,8 @@
       "rps_120d_delta": -2.4,
       "rps_250d_delta": -1.9,
       "pct_change": -7.5,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.57,
+      "dev_30d": 33.22,
       "anomaly_alerts": []
     },
     {
@@ -74693,8 +74693,8 @@
       "rps_120d_delta": 1.6,
       "rps_250d_delta": 0.0,
       "pct_change": 7.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.24,
+      "dev_30d": 22.11,
       "anomaly_alerts": []
     },
     {
@@ -74730,8 +74730,8 @@
       "rps_120d_delta": 1.2,
       "rps_250d_delta": 0.2,
       "pct_change": 3.19,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.18,
+      "dev_30d": 40.62,
       "anomaly_alerts": []
     },
     {
@@ -74767,8 +74767,8 @@
       "rps_120d_delta": 9.5,
       "rps_250d_delta": 5.3,
       "pct_change": 6.39,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.85,
+      "dev_30d": 1.36,
       "anomaly_alerts": []
     },
     {
@@ -74804,8 +74804,8 @@
       "rps_120d_delta": -1.6,
       "rps_250d_delta": -0.3,
       "pct_change": -3.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.31,
+      "dev_30d": -24.13,
       "anomaly_alerts": []
     },
     {
@@ -74843,8 +74843,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.44,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 29.5,
+      "dev_30d": 39.28,
       "anomaly_alerts": []
     },
     {
@@ -74884,8 +74884,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 2.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.23,
+      "dev_30d": 11.55,
       "anomaly_alerts": []
     },
     {
@@ -74931,8 +74931,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.3,
       "pct_change": 3.48,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -2.02,
+      "dev_30d": 20.62,
       "anomaly_alerts": []
     },
     {
@@ -74969,8 +74969,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 1.3,
       "pct_change": 3.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -23.79,
+      "dev_30d": -18.66,
       "anomaly_alerts": []
     },
     {
@@ -75008,8 +75008,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.0,
       "pct_change": 4.23,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.55,
+      "dev_30d": 28.85,
       "anomaly_alerts": []
     },
     {
@@ -75045,8 +75045,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 0.91,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 10.91,
+      "dev_30d": 36.79,
       "anomaly_alerts": []
     },
     {
@@ -75085,8 +75085,8 @@
       "rps_120d_delta": -0.4,
       "rps_250d_delta": -0.5,
       "pct_change": 0.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.88,
+      "dev_30d": 43.67,
       "anomaly_alerts": []
     },
     {
@@ -75123,8 +75123,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.2,
       "pct_change": -1.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -13.54,
+      "dev_30d": -12.75,
       "anomaly_alerts": []
     },
     {
@@ -75165,8 +75165,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.1,
       "pct_change": 3.19,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 38.71,
+      "dev_30d": 47.85,
       "anomaly_alerts": []
     },
     {
@@ -75204,8 +75204,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 4.38,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.86,
+      "dev_30d": 124.14,
       "anomaly_alerts": []
     },
     {
@@ -75247,8 +75247,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 0.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.89,
+      "dev_30d": 43.77,
       "anomaly_alerts": []
     },
     {
@@ -75285,8 +75285,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.8,
       "pct_change": -2.94,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.05,
+      "dev_30d": -34.22,
       "anomaly_alerts": []
     },
     {
@@ -75327,8 +75327,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": -0.2,
       "pct_change": 0.92,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.36,
+      "dev_30d": 32.55,
       "anomaly_alerts": []
     },
     {
@@ -75368,8 +75368,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 1.64,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 58.78,
+      "dev_30d": 73.67,
       "anomaly_alerts": []
     },
     {
@@ -75407,8 +75407,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 0.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.86,
+      "dev_30d": 29.29,
       "anomaly_alerts": []
     },
     {
@@ -75445,8 +75445,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 2.2,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 21.81,
+      "dev_30d": 21.97,
       "anomaly_alerts": []
     },
     {
@@ -75486,8 +75486,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 3.22,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 23.54,
+      "dev_30d": 28.3,
       "anomaly_alerts": []
     },
     {
@@ -75534,8 +75534,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 1.0,
       "pct_change": 8.36,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.23,
+      "dev_30d": 23.72,
       "anomaly_alerts": []
     },
     {
@@ -75579,8 +75579,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": -1.17,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 25.27,
+      "dev_30d": 49.78,
       "anomaly_alerts": []
     },
     {
@@ -75617,8 +75617,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.3,
       "pct_change": -0.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.44,
+      "dev_30d": 38.94,
       "anomaly_alerts": []
     },
     {
@@ -75658,8 +75658,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": 0.6,
       "pct_change": 0.12,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.73,
+      "dev_30d": 15.82,
       "anomaly_alerts": []
     },
     {
@@ -75697,8 +75697,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.4,
       "pct_change": 10.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 29.68,
+      "dev_30d": 15.63,
       "anomaly_alerts": []
     },
     {
@@ -75735,8 +75735,8 @@
       "rps_120d_delta": -2.1,
       "rps_250d_delta": -0.4,
       "pct_change": -5.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.24,
+      "dev_30d": -6.65,
       "anomaly_alerts": []
     },
     {
@@ -75778,8 +75778,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": 1.59,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 41.61,
+      "dev_30d": 28.44,
       "anomaly_alerts": []
     },
     {
@@ -75820,8 +75820,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.2,
       "pct_change": 4.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 0.68,
+      "dev_30d": -0.56,
       "anomaly_alerts": []
     },
     {
@@ -75866,8 +75866,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 4.38,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.81,
+      "dev_30d": 14.64,
       "anomaly_alerts": []
     },
     {
@@ -75909,8 +75909,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.9,
       "pct_change": 1.13,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -10.45,
+      "dev_30d": 6.44,
       "anomaly_alerts": []
     },
     {
@@ -75950,8 +75950,8 @@
       "rps_120d_delta": 2.7,
       "rps_250d_delta": 0.4,
       "pct_change": 6.48,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.56,
+      "dev_30d": -11.5,
       "anomaly_alerts": []
     },
     {
@@ -75990,8 +75990,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 10.08,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 59.03,
+      "dev_30d": 80.1,
       "anomaly_alerts": []
     },
     {
@@ -76029,8 +76029,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 0.5,
       "pct_change": 11.22,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.06,
+      "dev_30d": -2.09,
       "anomaly_alerts": []
     },
     {
@@ -76071,8 +76071,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.4,
       "pct_change": 0.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 46.0,
+      "dev_30d": 55.99,
       "anomaly_alerts": []
     },
     {
@@ -76109,8 +76109,8 @@
       "rps_120d_delta": 2.8,
       "rps_250d_delta": 5.3,
       "pct_change": 3.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.97,
+      "dev_30d": 32.75,
       "anomaly_alerts": []
     },
     {
@@ -76146,8 +76146,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 3.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.95,
+      "dev_30d": -1.92,
       "anomaly_alerts": []
     },
     {
@@ -76188,8 +76188,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.6,
       "pct_change": -1.5,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.82,
+      "dev_30d": 24.26,
       "anomaly_alerts": []
     },
     {
@@ -76227,8 +76227,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.21,
+      "dev_30d": 56.51,
       "anomaly_alerts": []
     },
     {
@@ -76265,8 +76265,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 2.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -11.73,
+      "dev_30d": 18.82,
       "anomaly_alerts": []
     },
     {
@@ -76307,8 +76307,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.0,
       "pct_change": 2.48,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.73,
+      "dev_30d": 22.81,
       "anomaly_alerts": []
     },
     {
@@ -76353,8 +76353,8 @@
       "rps_120d_delta": -1.0,
       "rps_250d_delta": 0.2,
       "pct_change": -0.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.68,
+      "dev_30d": 14.88,
       "anomaly_alerts": []
     },
     {
@@ -76394,8 +76394,8 @@
       "rps_120d_delta": 1.8,
       "rps_250d_delta": 3.4,
       "pct_change": 10.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 32.63,
+      "dev_30d": 55.54,
       "anomaly_alerts": []
     },
     {
@@ -76431,8 +76431,8 @@
       "rps_120d_delta": -1.4,
       "rps_250d_delta": null,
       "pct_change": -1.63,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -3.05,
+      "dev_30d": 23.58,
       "anomaly_alerts": []
     },
     {
@@ -76470,8 +76470,8 @@
       "rps_120d_delta": 0.2,
       "rps_250d_delta": 0.0,
       "pct_change": 5.95,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 11.9,
+      "dev_30d": 48.72,
       "anomaly_alerts": []
     },
     {
@@ -76509,8 +76509,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.3,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 27.9,
+      "dev_30d": 71.61,
       "anomaly_alerts": []
     },
     {
@@ -76553,8 +76553,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": 0.0,
       "pct_change": 1.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 64.5,
+      "dev_30d": 72.87,
       "anomaly_alerts": []
     },
     {
@@ -76602,8 +76602,8 @@
       "rps_120d_delta": 0.8,
       "rps_250d_delta": 0.9,
       "pct_change": 6.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.47,
+      "dev_30d": 16.58,
       "anomaly_alerts": []
     },
     {
@@ -76639,8 +76639,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.1,
       "pct_change": -4.37,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.89,
+      "dev_30d": 67.11,
       "anomaly_alerts": []
     },
     {
@@ -76676,8 +76676,8 @@
       "rps_120d_delta": 3.2,
       "rps_250d_delta": 2.8,
       "pct_change": 20.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.32,
+      "dev_30d": 22.12,
       "anomaly_alerts": []
     },
     {
@@ -76719,8 +76719,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.5,
       "pct_change": 6.87,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 28.98,
+      "dev_30d": 54.2,
       "anomaly_alerts": []
     },
     {
@@ -76764,8 +76764,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": -0.9,
       "pct_change": -3.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -14.35,
+      "dev_30d": 16.83,
       "anomaly_alerts": []
     },
     {
@@ -76807,8 +76807,8 @@
       "rps_120d_delta": 2.6,
       "rps_250d_delta": 2.4,
       "pct_change": 4.45,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.21,
+      "dev_30d": 1.19,
       "anomaly_alerts": []
     },
     {
@@ -76847,8 +76847,8 @@
       "rps_120d_delta": -0.5,
       "rps_250d_delta": 0.2,
       "pct_change": -0.26,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -18.4,
+      "dev_30d": 24.97,
       "anomaly_alerts": []
     },
     {
@@ -76888,8 +76888,8 @@
       "rps_120d_delta": -0.9,
       "rps_250d_delta": 0.0,
       "pct_change": 0.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 8.61,
+      "dev_30d": 13.56,
       "anomaly_alerts": []
     },
     {
@@ -76934,8 +76934,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 0.6,
       "pct_change": 6.71,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.5,
+      "dev_30d": 5.51,
       "anomaly_alerts": []
     },
     {
@@ -76971,8 +76971,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 0.68,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.35,
+      "dev_30d": 12.62,
       "anomaly_alerts": []
     },
     {
@@ -77009,8 +77009,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.2,
       "pct_change": 3.07,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.73,
+      "dev_30d": 36.87,
       "anomaly_alerts": []
     },
     {
@@ -77052,8 +77052,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 0.34,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.08,
+      "dev_30d": 15.04,
       "anomaly_alerts": []
     },
     {
@@ -77095,8 +77095,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": -0.2,
       "pct_change": -1.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 22.3,
+      "dev_30d": 58.27,
       "anomaly_alerts": []
     },
     {
@@ -77139,8 +77139,8 @@
       "rps_120d_delta": 3.3,
       "rps_250d_delta": 2.3,
       "pct_change": 14.1,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.16,
+      "dev_30d": -7.88,
       "anomaly_alerts": []
     },
     {
@@ -77183,8 +77183,8 @@
       "rps_120d_delta": 0.9,
       "rps_250d_delta": 1.6,
       "pct_change": 7.91,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.56,
+      "dev_30d": 39.57,
       "anomaly_alerts": []
     },
     {
@@ -77225,8 +77225,8 @@
       "rps_120d_delta": 0.7,
       "rps_250d_delta": 0.0,
       "pct_change": 7.19,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.35,
+      "dev_30d": 36.04,
       "anomaly_alerts": []
     },
     {
@@ -77270,8 +77270,8 @@
       "rps_120d_delta": -0.3,
       "rps_250d_delta": -0.2,
       "pct_change": 2.15,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.82,
+      "dev_30d": 34.74,
       "anomaly_alerts": []
     },
     {
@@ -77316,8 +77316,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.0,
       "pct_change": 3.48,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.81,
+      "dev_30d": 51.6,
       "anomaly_alerts": []
     },
     {
@@ -77355,8 +77355,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 3.98,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 17.36,
+      "dev_30d": 16.18,
       "anomaly_alerts": []
     },
     {
@@ -77394,8 +77394,8 @@
       "rps_120d_delta": 3.6,
       "rps_250d_delta": 1.0,
       "pct_change": 14.2,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 1.77,
+      "dev_30d": 7.89,
       "anomaly_alerts": []
     },
     {
@@ -77433,8 +77433,8 @@
       "rps_120d_delta": 3.5,
       "rps_250d_delta": 2.3,
       "pct_change": 9.99,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 16.0,
+      "dev_30d": 8.97,
       "anomaly_alerts": []
     },
     {
@@ -77473,8 +77473,8 @@
       "rps_120d_delta": 0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 0.6,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.79,
+      "dev_30d": 0.42,
       "anomaly_alerts": []
     },
     {
@@ -77518,8 +77518,8 @@
       "rps_120d_delta": 2.4,
       "rps_250d_delta": 3.2,
       "pct_change": 20.02,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 35.89,
+      "dev_30d": 70.69,
       "anomaly_alerts": []
     },
     {
@@ -77556,8 +77556,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": 0.0,
       "pct_change": 2.59,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -1.7,
+      "dev_30d": -0.58,
       "anomaly_alerts": []
     },
     {
@@ -77599,8 +77599,8 @@
       "rps_120d_delta": -2.2,
       "rps_250d_delta": -1.5,
       "pct_change": -5.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.92,
+      "dev_30d": 28.27,
       "anomaly_alerts": []
     },
     {
@@ -77639,8 +77639,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.1,
       "pct_change": 0.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 20.56,
+      "dev_30d": 110.48,
       "anomaly_alerts": []
     },
     {
@@ -77674,8 +77674,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.6,
       "pct_change": 6.92,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.58,
+      "dev_30d": 49.52,
       "anomaly_alerts": []
     },
     {
@@ -77715,8 +77715,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.3,
       "pct_change": -1.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 12.4,
+      "dev_30d": 32.18,
       "anomaly_alerts": []
     },
     {
@@ -77754,8 +77754,8 @@
       "rps_120d_delta": -2.6,
       "rps_250d_delta": -0.8,
       "pct_change": -3.03,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.34,
+      "dev_30d": 15.87,
       "anomaly_alerts": []
     },
     {
@@ -77797,8 +77797,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.8,
       "pct_change": -2.32,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.47,
+      "dev_30d": 4.95,
       "anomaly_alerts": []
     },
     {
@@ -77835,8 +77835,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": -0.2,
       "pct_change": 0.06,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 6.29,
+      "dev_30d": -5.85,
       "anomaly_alerts": []
     },
     {
@@ -77873,8 +77873,8 @@
       "rps_120d_delta": -1.1,
       "rps_250d_delta": -1.0,
       "pct_change": -9.33,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 15.59,
+      "dev_30d": 49.5,
       "anomaly_alerts": []
     },
     {
@@ -77914,8 +77914,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.0,
       "pct_change": 1.04,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 5.63,
+      "dev_30d": 26.12,
       "anomaly_alerts": []
     },
     {
@@ -77951,8 +77951,8 @@
       "rps_120d_delta": 0.0,
       "rps_250d_delta": 0.1,
       "pct_change": 2.9,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 19.1,
+      "dev_30d": 68.65,
       "anomaly_alerts": []
     },
     {
@@ -77994,8 +77994,8 @@
       "rps_120d_delta": -0.2,
       "rps_250d_delta": -0.3,
       "pct_change": -2.69,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 14.31,
+      "dev_30d": 23.27,
       "anomaly_alerts": []
     },
     {
@@ -78035,8 +78035,8 @@
       "rps_120d_delta": 2.0,
       "rps_250d_delta": 0.9,
       "pct_change": 3.54,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.77,
+      "dev_30d": -8.96,
       "anomaly_alerts": []
     },
     {
@@ -78076,8 +78076,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -1.5,
       "pct_change": -2.01,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -9.21,
+      "dev_30d": 18.06,
       "anomaly_alerts": []
     },
     {
@@ -78116,8 +78116,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": 0.2,
       "pct_change": 6.27,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.5,
+      "dev_30d": 42.19,
       "anomaly_alerts": []
     },
     {
@@ -78158,8 +78158,8 @@
       "rps_120d_delta": -0.8,
       "rps_250d_delta": 0.0,
       "pct_change": 2.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 3.47,
+      "dev_30d": 10.34,
       "anomaly_alerts": []
     },
     {
@@ -78200,8 +78200,8 @@
       "rps_120d_delta": -0.6,
       "rps_250d_delta": -0.6,
       "pct_change": -2.42,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.04,
+      "dev_30d": 34.79,
       "anomaly_alerts": []
     },
     {
@@ -78246,8 +78246,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.8,
       "pct_change": 10.04,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -0.06,
+      "dev_30d": 27.39,
       "anomaly_alerts": []
     },
     {
@@ -78286,8 +78286,8 @@
       "rps_120d_delta": 1.1,
       "rps_250d_delta": 1.7,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 26.5,
+      "dev_30d": 21.09,
       "anomaly_alerts": []
     },
     {
@@ -78328,8 +78328,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.0,
       "pct_change": 1.64,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 31.68,
+      "dev_30d": 50.19,
       "anomaly_alerts": []
     },
     {
@@ -78367,8 +78367,8 @@
       "rps_120d_delta": 0.3,
       "rps_250d_delta": -0.3,
       "pct_change": 4.49,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 2.6,
+      "dev_30d": 6.51,
       "anomaly_alerts": []
     },
     {
@@ -78407,8 +78407,8 @@
       "rps_120d_delta": -0.1,
       "rps_250d_delta": 0.2,
       "pct_change": 0.97,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -5.34,
+      "dev_30d": 15.08,
       "anomaly_alerts": []
     },
     {
@@ -78447,8 +78447,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.9,
       "pct_change": 4.83,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 4.88,
+      "dev_30d": 30.51,
       "anomaly_alerts": []
     },
     {
@@ -78489,8 +78489,8 @@
       "rps_120d_delta": -0.7,
       "rps_250d_delta": -0.4,
       "pct_change": -3.72,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 13.03,
+      "dev_30d": 56.11,
       "anomaly_alerts": []
     },
     {
@@ -78526,8 +78526,8 @@
       "rps_120d_delta": 1.5,
       "rps_250d_delta": -0.3,
       "pct_change": 1.53,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": -6.92,
+      "dev_30d": -3.99,
       "anomaly_alerts": []
     },
     {
@@ -78566,8 +78566,8 @@
       "rps_120d_delta": 0.5,
       "rps_250d_delta": 0.4,
       "pct_change": 10.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 34.39,
+      "dev_30d": 54.73,
       "anomaly_alerts": []
     },
     {
@@ -78604,8 +78604,8 @@
       "rps_120d_delta": -1.8,
       "rps_250d_delta": -1.1,
       "pct_change": 0.0,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 7.25,
+      "dev_30d": 12.8,
       "anomaly_alerts": []
     },
     {
@@ -78645,8 +78645,8 @@
       "rps_120d_delta": 0.6,
       "rps_250d_delta": 0.6,
       "pct_change": 7.04,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 45.79,
+      "dev_30d": 68.92,
       "anomaly_alerts": []
     },
     {
@@ -78683,193 +78683,193 @@
       "rps_120d_delta": 0.4,
       "rps_250d_delta": 0.2,
       "pct_change": 2.73,
-      "dev_10d": null,
-      "dev_30d": null,
+      "dev_10d": 9.16,
+      "dev_30d": -24.9,
       "anomaly_alerts": []
     }
   ],
   "highlights": {
     "new_one_red_sectors": [
-      "锂电专用设备",
-      "消费电子零部件及组装"
+      "消费电子零部件及组装",
+      "锂电专用设备"
     ],
     "new_three_red_sectors": [
-      "改性塑料",
-      "其他自动化设备",
       "模拟芯片设计",
-      "通信网络设备及器件"
+      "通信网络设备及器件",
+      "改性塑料",
+      "其他自动化设备"
     ],
     "new_one_red_concepts": [
-      "英伟达概念",
-      "牙科医疗",
       "智能穿戴",
-      "航空发动机",
       "无线耳机",
-      "无线充电",
+      "牙科医疗",
       "智能音箱",
-      "3D打印"
+      "无线充电",
+      "3D打印",
+      "航空发动机",
+      "英伟达概念"
     ],
     "new_three_red_concepts": [
+      "AI手机",
       "同花顺果指数",
+      "汽车芯片",
+      "新型烟草(电子烟)",
       "液冷服务器",
       "5G",
-      "MCU芯片",
-      "新型烟草(电子烟)",
-      "AI手机",
-      "汽车芯片"
+      "MCU芯片"
     ],
     "new_one_red_stocks": [
-      "300943",
+      "688258",
+      "301580",
+      "603211",
+      "002805",
+      "688227",
+      "300671",
+      "002056",
       "001314",
+      "688981",
+      "301005",
+      "002913",
+      "002803",
+      "301310",
       "300001",
       "002158",
-      "688258",
-      "688227",
+      "300943",
       "688041",
-      "002056",
-      "301310",
-      "002803",
-      "301005",
-      "300671",
-      "688981",
-      "300522",
       "688290",
-      "002913",
-      "002805",
-      "301580",
-      "603211"
+      "300522"
     ],
     "new_three_red_stocks": [
       "600667",
-      "300811",
+      "002842",
+      "688233",
       "002655",
       "603083",
-      "603052",
-      "002842",
       "603936",
       "600226",
-      "688233"
+      "300811",
+      "603052"
     ],
     "new_100d_high_stocks": [
-      "000668",
-      "301123",
-      "002371",
-      "300174",
-      "300373",
-      "688146",
-      "920491",
-      "600246",
-      "300319",
-      "300726",
-      "688257",
-      "001339",
-      "688120",
-      "688131",
-      "603500",
       "603001",
-      "300671",
-      "300558",
-      "300508",
-      "600345",
-      "688112",
-      "688729",
-      "688671",
-      "002141",
-      "603269",
-      "688448",
       "688786",
-      "002046",
-      "002353",
-      "000811",
+      "300221",
+      "000668",
+      "688485",
+      "603679",
+      "000100",
+      "688257",
+      "300319",
+      "688610",
+      "301018",
+      "603995",
+      "603929",
+      "688249",
+      "000032",
+      "688536",
+      "603115",
+      "688530",
+      "301280",
+      "001339",
+      "301123",
+      "301566",
+      "002938",
+      "000988",
+      "301070",
+      "688671",
+      "301687",
+      "600345",
+      "301200",
+      "688498",
+      "300558",
+      "003031",
+      "300671",
+      "300373",
+      "603201",
       "688600",
       "002119",
-      "002281",
-      "688012",
-      "603995",
-      "003031",
-      "301528",
-      "688249",
-      "002636",
-      "920045",
-      "688535",
-      "000032",
-      "002989",
-      "002203",
-      "300221",
-      "000100",
-      "301045",
-      "301041",
-      "688809",
-      "688396",
-      "688485",
-      "300811",
-      "301285",
-      "688536",
-      "688141",
-      "000657",
-      "688059",
-      "603989",
-      "301280",
-      "301566",
-      "300308",
-      "688478",
-      "300861",
-      "300223",
-      "300321",
-      "301018",
-      "002072",
-      "002980",
       "002803",
-      "688530",
-      "300491",
-      "300786",
-      "301070",
-      "688498",
-      "002937",
-      "300700",
-      "300502",
-      "003026",
-      "002577",
-      "603688",
-      "300607",
-      "000725",
-      "688610",
-      "002859",
-      "301200",
-      "000988",
+      "688120",
+      "600246",
+      "002636",
       "301111",
-      "600259",
-      "603201",
-      "002938",
-      "300260",
-      "603115",
-      "603679",
-      "688662",
-      "301687",
-      "688605",
-      "603929",
+      "301528",
+      "002859",
+      "688809",
+      "000811",
+      "002046",
+      "603989",
+      "002353",
+      "301041",
+      "300223",
+      "002989",
       "301217",
-      "688168",
-      "688256",
-      "300689",
-      "002718",
+      "002203",
+      "300508",
+      "688112",
+      "688141",
+      "688059",
+      "300786",
+      "920491",
+      "688662",
+      "300811",
+      "300861",
+      "002980",
+      "603500",
+      "300502",
+      "300491",
+      "300174",
+      "688131",
       "688629",
+      "688729",
+      "603688",
+      "002937",
+      "300689",
+      "688478",
+      "000725",
+      "688256",
+      "688396",
+      "003026",
+      "688146",
+      "300951",
+      "600259",
+      "688012",
+      "300308",
+      "000657",
+      "301045",
       "000679",
-      "300951"
+      "301285",
+      "002141",
+      "300607",
+      "300321",
+      "002718",
+      "688448",
+      "688535",
+      "300700",
+      "002371",
+      "300260",
+      "300726",
+      "688168",
+      "688605",
+      "920045",
+      "002281",
+      "603269",
+      "002577",
+      "002072"
     ],
     "board12_new_one_red": [
-      "300943",
-      "688227",
-      "002805",
       "002158",
+      "300943",
+      "300522",
       "301310",
       "603211",
-      "300522"
+      "002805",
+      "688227"
     ],
     "board12_new_three_red": [
       "600667",
-      "002655",
       "002842",
+      "002655",
       "603936",
       "600226"
     ],

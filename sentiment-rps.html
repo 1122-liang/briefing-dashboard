@@ -925,6 +925,12 @@ function filterTable(bodyId, query) {
   const rows = tbody.rows;
   const q = query.toLowerCase();
   
+  // 个股搜索：支持全量搜索
+  if (bodyId === 'stockBody' && q.length > 0) {
+    filterStocksWithAllStocks(query);
+    return;
+  }
+  
   for (let i = 0; i < rows.length; i++) {
     const searchText = (rows[i].getAttribute('data-search') || '').toLowerCase();
     const visible = q === '' || searchText.includes(q);
@@ -995,6 +1001,60 @@ function filterTable(bodyId, query) {
   }
 }
 
+// 全量股票搜索功能
+function filterStocksWithAllStocks(query) {
+  const q = query.toLowerCase().trim();
+  const allStocks = currentData.all_stocks || [];
+  
+  // 精准匹配：代码或名称
+  const matchedStocks = allStocks.filter(s => {
+    const code = (s.code || '').toLowerCase();
+    const name = (s.name || '').toLowerCase();
+    return code === q || name === q || code.includes(q) || name.includes(q);
+  }).slice(0, 50); // 限制最多显示50条
+  
+  // 临时替换表格内容
+  const tbody = document.getElementById('stockBody');
+  const originalStocks = currentData.stocks || [];
+  
+  if (matchedStocks.length > 0) {
+    // 显示搜索结果
+    tbody.innerHTML = matchedStocks.map(s => {
+      const url = xueqiuUrl(s.code, s.market);
+      const pct = s.pct_change;
+      const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+      const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+      
+      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" class="search-result-row">
+        <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
+        <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
+        <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
+        <td class="${pctClass}">${pctStr}</td>
+        <td class="rps-default">—</td>
+        <td class="rps-default">—</td>
+        <td class="rps-default">—</td>
+        <td>—</td>
+        <td><span class="rps-default">—</span></td>
+        <td><span class="rps-default">—</span></td>
+        <td><span class="rps-default">—</span></td>
+        <td>—</td>
+        <td>${s.sector_l1 || '-'}</td>
+        <td>${s.sector_l2 || '-'}</td>
+        <td>${s.sector_l3 ? `<span class="sector-link" data-sector-name="${s.sector_l3}">${s.sector_l3}</span>` : '-'}</td>
+        <td>0</td>
+        <td>—</td>
+        <td>0</td>
+      </tr>`;
+    }).join('');
+    
+    // 更新计数显示
+    document.getElementById('stockCount').textContent = `搜索结果: ${matchedStocks.length} 只（全量搜索）`;
+  } else {
+    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:20px;color:#999;">未找到匹配的股票</td></tr>';
+    document.getElementById('stockCount').textContent = '搜索结果: 0 只';
+  }
+}
+
 function applySectorFilter() {
   filterTable('sectorBody', document.getElementById('sectorSearch').value);
 }
@@ -1004,7 +1064,13 @@ function applyConceptFilter() {
 }
 
 function applyStockFilter() {
-  filterTable('stockBody', document.getElementById('stockSearch').value);
+  const query = document.getElementById('stockSearch').value;
+  // 如果搜索框为空，恢复原始列表
+  if (query.trim() === '') {
+    renderStocks(currentData.stocks || []);
+  } else {
+    filterTable('stockBody', query);
+  }
 }
 
 // 星标功能

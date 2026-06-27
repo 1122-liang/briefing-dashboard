@@ -799,7 +799,11 @@ function renderStocks(stocks) {
     </tr>`;
   }).join('');
   
-  applyStockFilter();
+  // 应用当前筛选状态（不调用applyStockFilter避免递归）
+  const searchQuery = document.getElementById('stockSearch').value;
+  if (searchQuery.trim() !== '') {
+    filterStocksWithAllStocks(searchQuery);
+  }
 }
 
 // ---- 卡片渲染 ----

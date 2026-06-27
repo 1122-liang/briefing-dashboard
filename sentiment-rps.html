@@ -982,8 +982,13 @@ function filterTable(bodyId, query) {
   const q = query.toLowerCase();
   
   // 个股搜索：支持全量搜索
-  if (bodyId === 'stockBody' && q.length > 0) {
-    filterStocksWithAllStocks(query);
+  if (bodyId === 'stockBody') {
+    if (q.length > 0) {
+      filterStocksWithAllStocks(query);
+    } else {
+      // 搜索框为空，恢复原始列表
+      renderStocks(currentData.stocks || []);
+    }
     return;
   }
   
@@ -1084,6 +1089,12 @@ function filterStocksWithAllStocks(query) {
   const q = query.toLowerCase().trim();
   const allStocks = currentData.all_stocks || [];
   
+  // 如果搜索框为空，恢复原始列表
+  if (q === '') {
+    renderStocks(currentData.stocks || []);
+    return;
+  }
+  
   // 精准匹配：代码或名称
   const matchedStocks = allStocks.filter(s => {
     const code = (s.code || '').toLowerCase();
@@ -1096,6 +1107,10 @@ function filterStocksWithAllStocks(query) {
   const originalStocks = currentData.stocks || [];
   
   if (matchedStocks.length > 0) {
+    // 从historyData获取RPS数据
+    const historyStocks = historyData?.stocks || {};
+    const latestDate = historyData?.dates?.[historyData.dates.length - 1];
+    
     // 显示搜索结果
     tbody.innerHTML = matchedStocks.map(s => {
       const url = xueqiuUrl(s.code, s.market);
@@ -1103,19 +1118,30 @@ function filterStocksWithAllStocks(query) {
       const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
       const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
       
+      // 从historyData获取RPS数据
+      const stockHistory = historyStocks[s.code];
+      let rps50 = '—', rps120 = '—', rps250 = '—';
+      if (stockHistory && stockHistory.data && latestDate) {
+        const latestData = stockHistory.data[latestDate];
+        if (latestData) {
+          rps50 = latestData.rps_50d != null ? latestData.rps_50d.toFixed(1) : '—';
+          rps120 = latestData.rps_120d != null ? latestData.rps_120d.toFixed(1) : '—';
+          rps250 = latestData.rps_250d != null ? latestData.rps_250d.toFixed(1) : '—';
+        }
+      }
+      
       return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" class="search-result-row">
         <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
         <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
         <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
         <td class="${pctClass}">${pctStr}</td>
-        <td class="rps-default">—</td>
-        <td class="rps-default">—</td>
-        <td class="rps-default">—</td>
+        <td class="rps-default">${rps50}</td>
+        <td class="rps-default">${rps120}</td>
+        <td class="rps-default">${rps250}</td>
         <td>—</td>
         <td><span class="rps-default">—</span></td>
         <td><span class="rps-default">—</span></td>
         <td><span class="rps-default">—</span></td>
-        <td>—</td>
         <td>${s.sector_l1 || '-'}</td>
         <td>${s.sector_l2 || '-'}</td>
         <td>${s.sector_l3 ? `<span class="sector-link" data-sector-name="${s.sector_l3}">${s.sector_l3}</span>` : '-'}</td>
@@ -1156,11 +1182,11 @@ function findStockSectorsAndConcepts(stockQuery) {
   const q = stockQuery.toLowerCase().trim();
   const allStocks = currentData.all_stocks || [];
   
-  // 精确匹配个股
+  // 模糊匹配个股（支持代码或名称）
   const matchedStock = allStocks.find(s => {
     const code = (s.code || '').toLowerCase();
     const name = (s.name || '').toLowerCase();
-    return code === q || name === q;
+    return code === q || name === q || code.includes(q) || name.includes(q);
   });
   
   if (!matchedStock) return null;

@@ -484,7 +484,9 @@ function setupClickHandlers() {
     const td = e.target.closest('td[data-code]');
     if (td) {
       const code = td.getAttribute('data-code');
-      const stock = (currentData.stocks || []).find(s => s.code === code);
+      // 优先在 stocks 中查找，其次在 all_stocks 中查找
+      const stock = (currentData.stocks || []).find(s => s.code === code)
+                 || (currentData.all_stocks || []).find(s => s.code === code);
       const displayName = stock ? `${stock.name || code}（${code}）` : code;
       showOverlayChart(code, '个股RPS趋势: ' + displayName, 'stocks', ['rps_50d', 'rps_120d', 'rps_250d']);
     }
@@ -1182,27 +1184,27 @@ function findStockSectorsAndConcepts(stockQuery) {
   const q = stockQuery.toLowerCase().trim();
   const allStocks = currentData.all_stocks || [];
   
-  // 模糊匹配个股（支持代码或名称）
+  // 精确匹配个股（代码或名称）
   const matchedStock = allStocks.find(s => {
     const code = (s.code || '').toLowerCase();
     const name = (s.name || '').toLowerCase();
-    return code === q || name === q || code.includes(q) || name.includes(q);
+    return code === q || name === q;
   });
   
   if (!matchedStock) return null;
   
-  // 获取该个股所属的板块和概念
   const stockCode = matchedStock.code;
-  const sectors = currentData.sectors || [];
-  const concepts = currentData.concepts || [];
+  const stockSectorL3 = matchedStock.sector_l3;  // 申万三级行业
   
-  // 查找包含该个股的板块
+  // 用 all_stocks 的 sector_l3 字段查找板块
+  const sectors = currentData.sectors || [];
   const matchedSectors = sectors.filter(s => {
-    const memberStocks = s.member_stocks || [];
-    return memberStocks.some(m => m.code === stockCode);
+    return s.sector_name === stockSectorL3;
   }).map(s => s.sector_name);
   
-  // 查找包含该个股的概念
+  // 用 all_stocks 中同名股票的概念数据查找概念
+  // 遍历 concepts，检查 member_stocks 是否包含该股票代码
+  const concepts = currentData.concepts || [];
   const matchedConcepts = concepts.filter(c => {
     const memberStocks = c.member_stocks || [];
     return memberStocks.some(m => m.code === stockCode);

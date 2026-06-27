@@ -126,6 +126,8 @@ tbody tr.selected { background: #e8ecff !important; }
 .filter-bar { padding: 10px 20px; background: #fafbfc; border-bottom: 1px solid #eee; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .filter-bar input[type="text"] { padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 200px; }
 .filter-bar label { font-size: 12px; color: #666; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.reset-btn { margin-left: auto; padding: 4px 8px; border: 1px solid #ddd; border-radius: 4px; background: #fff; cursor: pointer; font-size: 14px; line-height: 1; opacity: 0.7; transition: opacity 0.2s; }
+.reset-btn:hover { opacity: 1; background: #f0f0f0; }
 </style>
 </head>
 <body>
@@ -195,6 +197,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="sectorNewOneRedOnly" onclick="applySectorFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="sectorNewThreeRedOnly" onclick="applySectorFilter()"> 当日新进三线红</label>
+      <button class="reset-btn" onclick="resetSectorFilter()" title="重置筛选">🔄</button>
     </div>
 
     <div class="module-body" id="sectorBody-wrap">
@@ -243,6 +246,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="conceptNewOneRedOnly" onclick="applyConceptFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="conceptNewThreeRedOnly" onclick="applyConceptFilter()"> 当日新进三线红</label>
+      <button class="reset-btn" onclick="resetConceptFilter()" title="重置筛选">🔄</button>
     </div>
 
     <div class="module-body" id="conceptBody-wrap">
@@ -308,6 +312,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="stockNewOneRedOnly" onclick="applyStockFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="stockNewThreeRedOnly" onclick="applyStockFilter()"> 当日新进三线红</label>
       <label><input type="checkbox" id="stockStarredOnly" onclick="applyStockFilter()"> 仅筛选星标个股</label>
+      <button class="reset-btn" onclick="resetStockFilter()" title="重置筛选">🔄</button>
     </div>
 
     <div class="module-body" id="stockBody-wrap">
@@ -990,6 +995,8 @@ function filterTable(bodyId, query) {
     } else {
       // 搜索框为空，恢复原始列表
       renderStocks(currentData.stocks || []);
+      // 渲染后应用checkbox筛选
+      applyStockCheckboxFilters();
     }
     return;
   }
@@ -1183,13 +1190,74 @@ function applyConceptFilter() {
 }
 
 function applyStockFilter() {
-  const query = document.getElementById('stockSearch').value;
-  // 如果搜索框为空，恢复原始列表
-  if (query.trim() === '') {
-    renderStocks(currentData.stocks || []);
-  } else {
-    filterTable('stockBody', query);
+  // 始终通过 filterTable 应用筛选（包括搜索和checkbox筛选）
+  filterTable('stockBody', document.getElementById('stockSearch').value);
+}
+
+// 应用个股checkbox筛选（不重新渲染，只控制行的显示/隐藏）
+function applyStockCheckboxFilters() {
+  const tbody = document.getElementById('stockBody');
+  const rows = tbody.rows;
+  for (let i = 0; i < rows.length; i++) {
+    let visible = true;
+    if (document.getElementById('stockThreeRedOnly').checked && rows[i].getAttribute('data-three-red') !== 'true') visible = false;
+    if (visible && document.getElementById('stockBoard12Only').checked && rows[i].getAttribute('data-board12') !== 'true') visible = false;
+    if (visible && document.getElementById('stock100dOnly').checked && rows[i].getAttribute('data-100d') !== 'true') visible = false;
+    if (visible && document.getElementById('stockNear100dOnly').checked && rows[i].getAttribute('data-near100d') !== 'true') visible = false;
+    if (visible && document.getElementById('stockStrongNear100dOnly').checked && rows[i].getAttribute('data-strong-near100d') !== 'true') visible = false;
+    if (visible && document.getElementById('stockStrongThreeRedOnly').checked && rows[i].getAttribute('data-strong-three-red') !== 'true') visible = false;
+    if (visible && document.getElementById('stockSectorThreeOnly').checked && rows[i].getAttribute('data-sector-three') !== 'true') visible = false;
+    if (visible && document.getElementById('stockNewOneRedOnly').checked && rows[i].getAttribute('data-new-one-red') !== 'true') visible = false;
+    if (visible && document.getElementById('stockNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') visible = false;
+    if (visible && document.getElementById('stockStarredOnly').checked && rows[i].getAttribute('data-starred') !== 'true') visible = false;
+    rows[i].style.display = visible ? '' : 'none';
   }
+}
+
+// 重置板块筛选
+function resetSectorFilter() {
+  document.getElementById('sectorSearch').value = '';
+  document.getElementById('sectorOneRedOnly').checked = false;
+  document.getElementById('sectorThreeRedOnly').checked = false;
+  document.getElementById('sectorNewOneRedOnly').checked = false;
+  document.getElementById('sectorNewThreeRedOnly').checked = false;
+  // 恢复默认排序
+  const table = document.getElementById('sectorTable');
+  const ths = table.querySelectorAll('th');
+  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  renderSectors();
+}
+
+// 重置概念筛选
+function resetConceptFilter() {
+  document.getElementById('conceptSearch').value = '';
+  document.getElementById('conceptThreeRedOnly').checked = false;
+  document.getElementById('conceptNewOneRedOnly').checked = false;
+  document.getElementById('conceptNewThreeRedOnly').checked = false;
+  const table = document.getElementById('conceptTable');
+  const ths = table.querySelectorAll('th');
+  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  renderConcepts();
+}
+
+// 重置个股筛选
+function resetStockFilter() {
+  document.getElementById('stockSearch').value = '';
+  document.getElementById('stockThreeRedOnly').checked = false;
+  document.getElementById('stockBoard12Only').checked = false;
+  document.getElementById('stock100dOnly').checked = false;
+  document.getElementById('stockNear100dOnly').checked = false;
+  document.getElementById('stockStrongNear100dOnly').checked = false;
+  document.getElementById('stockStrongThreeRedOnly').checked = false;
+  document.getElementById('stockSectorThreeOnly').checked = false;
+  document.getElementById('stockNewOneRedOnly').checked = false;
+  document.getElementById('stockNewThreeRedOnly').checked = false;
+  document.getElementById('stockStarredOnly').checked = false;
+  const table = document.getElementById('stockTable');
+  const ths = table.querySelectorAll('th');
+  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  renderStocks(currentData.stocks || []);
+  document.getElementById('stockCount').textContent = `共 ${(currentData.stocks || []).length} 只个股`;
 }
 
 // 根据个股代码/名称查找所属板块/概念
@@ -1239,16 +1307,34 @@ function findStockSectorsAndConcepts(stockQuery) {
 // 星标功能
 let starredStocks = new Set();
 
-// 加载星标状态
+// 加载星标状态（localStorage优先，后端文件补充）
 async function loadStarredStocks() {
+  // 1. 先从localStorage加载（用户最新操作）
+  const localSaved = localStorage.getItem('starred_stocks');
+  let localStars = [];
+  if (localSaved) {
+    try { localStars = JSON.parse(localSaved); } catch(e) {}
+  }
+  
+  // 2. 尝试从后端文件加载（脚本自动同步的星标）
+  let backendStars = [];
   try {
     const resp = await fetch('data/sentiment-rps/.starred_stocks.json');
     if (resp.ok) {
       const data = await resp.json();
-      starredStocks = new Set(data.starred || []);
+      backendStars = data.starred || [];
     }
   } catch (e) {
-    console.log('加载星标状态失败:', e);
+    // standalone模式下fetch会失败，忽略
+  }
+  
+  // 3. 合并：localStorage + 后端（去重）
+  const merged = new Set([...localStars, ...backendStars]);
+  starredStocks = merged;
+  
+  // 4. 同步回localStorage（确保后端新增的星标也持久化）
+  if (merged.size > 0) {
+    localStorage.setItem('starred_stocks', JSON.stringify(Array.from(merged)));
   }
 }
 
@@ -1272,6 +1358,8 @@ function toggleStar(code) {
   }
   saveStarredStocks();
   renderStocks(currentData.stocks || []);
+  // 应用当前checkbox筛选（包括星标筛选）
+  applyStockCheckboxFilters();
 }
 
 // 从localStorage恢复星标状态

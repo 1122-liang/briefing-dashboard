@@ -1016,6 +1016,18 @@ function filterTable(bodyId, query) {
     }
   }
   
+  // 搜索为空时，恢复原始计数
+  if (q === '' && (bodyId === 'sectorBody' || bodyId === 'conceptBody')) {
+    const countEl = document.getElementById(bodyId === 'sectorBody' ? 'sectorCount' : 'conceptCount');
+    if (countEl) {
+      const totalCount = bodyId === 'sectorBody' 
+        ? (currentData.sectors || []).length 
+        : (currentData.concepts || []).length;
+      const label = bodyId === 'sectorBody' ? '细分行业' : '概念';
+      countEl.textContent = `共 ${totalCount} 个${label}`;
+    }
+  }
+  
   for (let i = 0; i < rows.length; i++) {
     const searchText = rows[i].getAttribute('data-search') || '';
     const visible = q === '' || matchesPinyin(searchText, query);
@@ -1182,32 +1194,42 @@ function applyStockFilter() {
 // 根据个股代码/名称查找所属板块/概念
 function findStockSectorsAndConcepts(stockQuery) {
   const q = stockQuery.toLowerCase().trim();
+  if (!q) return null;
+  
   const allStocks = currentData.all_stocks || [];
   
-  // 精确匹配个股（代码或名称）
-  const matchedStock = allStocks.find(s => {
+  // 优先精确匹配，其次模糊匹配
+  let matchedStock = allStocks.find(s => {
     const code = (s.code || '').toLowerCase();
     const name = (s.name || '').toLowerCase();
     return code === q || name === q;
   });
   
+  if (!matchedStock) {
+    // 模糊匹配：输入内容是名称或代码的子串
+    matchedStock = allStocks.find(s => {
+      const code = (s.code || '').toLowerCase();
+      const name = (s.name || '').toLowerCase();
+      return name.includes(q) || code.includes(q);
+    });
+  }
+  
   if (!matchedStock) return null;
   
   const stockCode = matchedStock.code;
-  const stockSectorL3 = matchedStock.sector_l3;  // 申万三级行业
+  const stockSectorL3 = matchedStock.sector_l3;
   
-  // 用 all_stocks 的 sector_l3 字段查找板块
+  // 板块：用 all_stocks 的 sector_l3 字段查找
   const sectors = currentData.sectors || [];
   const matchedSectors = sectors.filter(s => {
     return s.sector_name === stockSectorL3;
   }).map(s => s.sector_name);
   
-  // 用 all_stocks 中同名股票的概念数据查找概念
-  // 遍历 concepts，检查 member_stocks 是否包含该股票代码
+  // 概念：遍历 concepts 的 member_stocks 查找
   const concepts = currentData.concepts || [];
   const matchedConcepts = concepts.filter(c => {
     const memberStocks = c.member_stocks || [];
-    return memberStocks.some(m => m.code === stockCode);
+    return memberStocks.some(m => String(m.code) === String(stockCode));
   }).map(c => c.concept_name);
   
   return {

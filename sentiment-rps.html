@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>情绪周期 RPS 选股</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.19.6/dist/pinyin.min.js"></script>
 <script>
 // ============================================================
 // 内嵌当日数据（由脚本自动生成，避免 fetch 跨域问题）
@@ -189,7 +190,7 @@ tbody tr.selected { background: #e8ecff !important; }
     </div>
 
     <div class="filter-bar">
-      <input type="text" id="sectorSearch" placeholder="搜索板块名称..." oninput="filterTable('sectorBody', this.value)">
+      <input type="text" id="sectorSearch" placeholder="搜索板块名称或个股代码/名称..." oninput="filterTable('sectorBody', this.value)">
       <label><input type="checkbox" id="sectorOneRedOnly" onclick="applySectorFilter()"> 仅显示一线红+</label>
       <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="sectorNewOneRedOnly" onclick="applySectorFilter()"> 当日新进一线红</label>
@@ -238,7 +239,7 @@ tbody tr.selected { background: #e8ecff !important; }
     </div>
 
     <div class="filter-bar">
-      <input type="text" id="conceptSearch" placeholder="搜索概念名称..." oninput="filterTable('conceptBody', this.value)">
+      <input type="text" id="conceptSearch" placeholder="搜索概念名称或个股代码/名称..." oninput="filterTable('conceptBody', this.value)">
       <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="conceptNewOneRedOnly" onclick="applyConceptFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="conceptNewThreeRedOnly" onclick="applyConceptFilter()"> 当日新进三线红</label>
@@ -922,6 +923,57 @@ function sortTable(tableId, colIndex, thEl) {
 }
 
 // ============================================================
+// 拼音匹配工具
+// ============================================================
+function getPinyinInitials(text) {
+  if (!text) return '';
+  try {
+    // 获取拼音首字母（支持多音字）
+    const result = pinyinPro.pinyin(text, { 
+      pattern: 'first', 
+      type: 'array',
+      multiple: true  // 支持多音字
+    });
+    // 返回所有可能的首字母组合
+    if (Array.isArray(result) && result.length > 0) {
+      return result.map(arr => arr.join('')).join(',');
+    }
+    return '';
+  } catch (e) {
+    return '';
+  }
+}
+
+function matchesPinyin(text, query) {
+  if (!text || !query) return false;
+  const q = query.toLowerCase();
+  
+  // 1. 直接文本匹配
+  if (text.toLowerCase().includes(q)) return true;
+  
+  // 2. 拼音首字母匹配
+  try {
+    const initials = getPinyinInitials(text);
+    if (initials && initials.includes(q)) return true;
+    
+    // 3. 全拼匹配
+    const fullPinyin = pinyinPro.pinyin(text, { 
+      type: 'array',
+      multiple: true
+    });
+    if (Array.isArray(fullPinyin)) {
+      for (const py of fullPinyin) {
+        if (py.join('').toLowerCase().includes(q)) return true;
+      }
+    }
+  } catch (e) {
+    // 忽略拼音错误
+  }
+  
+  return false;
+}
+
+// ============================================================
 // 过滤器
 // ============================================================
 function filterTable(bodyId, query) {
@@ -935,9 +987,31 @@ function filterTable(bodyId, query) {
     return;
   }
   
+  // 板块/概念搜索：支持搜索个股所属的板块/概念
+  if ((bodyId === 'sectorBody' || bodyId === 'conceptBody') && q.length > 0) {
+    const result = findStockSectorsAndConcepts(query);
+    if (result) {
+      // 找到匹配的个股，显示其所属的板块/概念
+      const matchedNames = bodyId === 'sectorBody' ? result.sectors : result.concepts;
+      
+      for (let i = 0; i < rows.length; i++) {
+        const name = rows[i].getAttribute('data-search') || '';
+        const isMatched = matchedNames.includes(name);
+        rows[i].style.display = isMatched ? '' : 'none';
+      }
+      
+      // 更新计数显示
+      const countEl = document.getElementById(bodyId === 'sectorBody' ? 'sectorCount' : 'conceptCount');
+      if (countEl) {
+        countEl.textContent = `显示 ${result.stock.name} 所属的 ${matchedNames.length} 个${bodyId === 'sectorBody' ? '板块' : '概念'}`;
+      }
+      return;
+    }
+  }
+  
   for (let i = 0; i < rows.length; i++) {
-    const searchText = (rows[i].getAttribute('data-search') || '').toLowerCase();
-    const visible = q === '' || searchText.includes(q);
+    const searchText = rows[i].getAttribute('data-search') || '';
+    const visible = q === '' || matchesPinyin(searchText, query);
     
     // 额外检查模块特定过滤
     if (bodyId === 'sectorBody') {
@@ -1075,6 +1149,44 @@ function applyStockFilter() {
   } else {
     filterTable('stockBody', query);
   }
+}
+
+// 根据个股代码/名称查找所属板块/概念
+function findStockSectorsAndConcepts(stockQuery) {
+  const q = stockQuery.toLowerCase().trim();
+  const allStocks = currentData.all_stocks || [];
+  
+  // 精确匹配个股
+  const matchedStock = allStocks.find(s => {
+    const code = (s.code || '').toLowerCase();
+    const name = (s.name || '').toLowerCase();
+    return code === q || name === q;
+  });
+  
+  if (!matchedStock) return null;
+  
+  // 获取该个股所属的板块和概念
+  const stockCode = matchedStock.code;
+  const sectors = currentData.sectors || [];
+  const concepts = currentData.concepts || [];
+  
+  // 查找包含该个股的板块
+  const matchedSectors = sectors.filter(s => {
+    const memberStocks = s.member_stocks || [];
+    return memberStocks.some(m => m.code === stockCode);
+  }).map(s => s.sector_name);
+  
+  // 查找包含该个股的概念
+  const matchedConcepts = concepts.filter(c => {
+    const memberStocks = c.member_stocks || [];
+    return memberStocks.some(m => m.code === stockCode);
+  }).map(c => c.concept_name);
+  
+  return {
+    stock: matchedStock,
+    sectors: matchedSectors,
+    concepts: matchedConcepts
+  };
 }
 
 // 星标功能

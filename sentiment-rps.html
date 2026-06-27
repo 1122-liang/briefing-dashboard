@@ -1002,8 +1002,9 @@ function filterTable(bodyId, query) {
       const matchedNames = bodyId === 'sectorBody' ? result.sectors : result.concepts;
       
       for (let i = 0; i < rows.length; i++) {
-        const name = rows[i].getAttribute('data-search') || '';
-        const isMatched = matchedNames.includes(name);
+        const searchText = rows[i].getAttribute('data-search') || '';
+        // data-search 格式："板块名称 其他文本"，用startsWith或includes匹配
+        const isMatched = matchedNames.some(n => searchText.startsWith(n) || searchText.includes(n));
         rows[i].style.display = isMatched ? '' : 'none';
       }
       
@@ -1225,12 +1226,8 @@ function findStockSectorsAndConcepts(stockQuery) {
     return s.sector_name === stockSectorL3;
   }).map(s => s.sector_name);
   
-  // 概念：遍历 concepts 的 member_stocks 查找
-  const concepts = currentData.concepts || [];
-  const matchedConcepts = concepts.filter(c => {
-    const memberStocks = c.member_stocks || [];
-    return memberStocks.some(m => String(m.code) === String(stockCode));
-  }).map(c => c.concept_name);
+  // 概念：直接从 all_stocks 的 concepts 字段获取
+  const matchedConcepts = matchedStock.concepts || [];
   
   return {
     stock: matchedStock,

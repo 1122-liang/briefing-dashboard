@@ -1096,12 +1096,17 @@ function filterTable(bodyId, query) {
 function filterStocksWithAllStocks(query) {
   const q = query.toLowerCase().trim();
   const allStocks = currentData.all_stocks || [];
+  const rpsStocks = currentData.stocks || [];
   
   // 如果搜索框为空，恢复原始列表
   if (q === '') {
-    renderStocks(currentData.stocks || []);
+    renderStocks(rpsStocks);
     return;
   }
+  
+  // 建立 RPS 股票的 code→data 映射（完整数据）
+  const rpsStockMap = {};
+  rpsStocks.forEach(s => { rpsStockMap[s.code] = s; });
   
   // 匹配：代码、名称、拼音首字母
   const matchedStocks = allStocks.filter(s => {
@@ -1112,40 +1117,129 @@ function filterStocksWithAllStocks(query) {
   
   // 临时替换表格内容
   const tbody = document.getElementById('stockBody');
-  const originalStocks = currentData.stocks || [];
   
   if (matchedStocks.length > 0) {
-    // 从historyData获取RPS数据
+    // 从historyData获取RPS数据（用于不在RPS筛选列表中的股票）
     const historyStocks = historyData?.stocks || {};
     const latestDate = historyData?.dates?.[historyData.dates.length - 1];
+    const prevDate = historyData?.dates?.[historyData.dates.length - 2];
     
     // 显示搜索结果
     tbody.innerHTML = matchedStocks.map(s => {
+      // 优先使用 RPS 筛选列表中的完整数据（包含新高/三线红/RPS delta等）
+      const fullStock = rpsStockMap[s.code];
+      if (fullStock) {
+        // 复用 renderStocks 的完整渲染逻辑
+        const isThreeRed = (fullStock.rps_50d > 90 && fullStock.rps_120d > 93 && fullStock.rps_250d > 95);
+        let nameClass = isThreeRed ? 'name-red' : 'name-yellow';
+        
+        const thresholds = [90, 93, 95];
+        const rpsCols = ['rps_50d', 'rps_120d', 'rps_250d'];
+        const rpsCellsHtml = rpsCols.map((col, i) => {
+          const v = fullStock[col] != null ? fullStock[col] : 0;
+          const cls = v >= thresholds[i] ? 'rps-red' : 'rps-default';
+          const delta = fullStock[col+'_delta'];
+          const deltaStr = delta != null ? ` (${delta >= 0 ? '+' : ''}${delta.toFixed(1)})` : '';
+          return `<td class="${cls}">${v.toFixed(1)}<span style="font-size:10px;color:#999">${deltaStr}</span></td>`;
+        }).join('');
+        
+        const pct = fullStock.pct_change;
+        const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+        const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+        
+        const url = xueqiuUrl(fullStock.code, fullStock.market);
+        
+        let high100Cell = '';
+        if (fullStock.is_100d_high) {
+          high100Cell = '<span class="badge badge-red">✅ 新高</span>';
+        } else if (fullStock.strong_near_100d_high) {
+          high100Cell = '<span class="badge badge-orange">🔥 强接近</span>';
+        } else if (fullStock.near_100d_high) {
+          high100Cell = '<span class="badge badge-blue">🔥 接近</span>';
+        } else {
+          high100Cell = '<span class="rps-default">—</span>';
+        }
+        
+        const conLimits = fullStock.consecutive_limits > 0 ? `<span class="badge badge-red">${fullStock.consecutive_limits}板</span>` : '—';
+        const anomalyAlerts = (fullStock.anomaly_alerts || []);
+        const anomalyCell = anomalyAlerts.length > 0 
+          ? anomalyAlerts.map(a => `<div style="font-size:11px;line-height:1.4;">${a}</div>`).join('')
+          : '<span class="rps-default">—</span>';
+        const sectorThree = fullStock.sector_three_red ? '<span class="badge badge-red">✅ 三线红</span>' : '<span class="rps-default">—</span>';
+        
+        const conceptDisplay = fullStock.top_concept 
+          ? `<span class="badge badge-blue">${fullStock.top_concept}</span> <span style="font-size:11px;color:#888">(${fullStock.top_concept_limit || 0}涨停)</span>`
+          : '—';
+        
+        return `<tr data-search="${fullStock.name||fullStock.code} ${fullStock.code} ${fullStock.sector_l1||''} ${fullStock.sector_l2||''} ${fullStock.sector_l3||''} ${(fullStock.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${fullStock.consecutive_limits >= 1 && fullStock.consecutive_limits <= 2}" data-100d="${fullStock.is_100d_high}" data-near100d="${fullStock.near_100d_high}" data-strong-near100d="${fullStock.strong_near_100d_high}" data-strong-three-red="${fullStock.strong_three_red}" data-sector-three="${fullStock.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(fullStock.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(fullStock.code)}" data-code="${fullStock.code}" data-starred="${starredStocks.has(fullStock.code)}" class="search-result-row">
+          <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${fullStock.code}')">${starredStocks.has(fullStock.code) ? '⭐' : '☆'}</td>
+          <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${fullStock.code}">${fullStock.name || fullStock.code}</td>
+          <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${fullStock.code}</a></td>
+          <td class="${pctClass}">${pctStr}</td>
+          ${rpsCellsHtml}
+          <td>${conLimits}</td>
+          <td>${high100Cell}</td>
+          <td>${anomalyCell}</td>
+          <td>${sectorThree}</td>
+          <td>${fullStock.sector_l1 || '-'}</td>
+          <td>${fullStock.sector_l2 || '-'}</td>
+          <td>${fullStock.sector_l3 ? `<span class="sector-link" data-sector-name="${fullStock.sector_l3}">${fullStock.sector_l3}</span>` : '-'}</td>
+          <td>${fullStock.sector_limit_count || 0}</td>
+          <td>${conceptDisplay}</td>
+          <td>${fullStock.top_concept_limit || 0}</td>
+        </tr>`;
+      }
+      
+      // 不在RPS筛选列表中，走简化路径（从historyData获取RPS）
       const url = xueqiuUrl(s.code, s.market);
       const pct = s.pct_change;
       const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
       const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
       
-      // 从historyData获取RPS数据
       const stockHistory = historyStocks[s.code];
       let rps50 = '—', rps120 = '—', rps250 = '—';
+      let rps50delta = '', rps120delta = '', rps250delta = '';
       if (stockHistory && stockHistory.data && latestDate) {
         const latestData = stockHistory.data[latestDate];
+        const prevData = prevDate ? stockHistory.data[prevDate] : null;
         if (latestData) {
-          rps50 = latestData.rps_50d != null ? latestData.rps_50d.toFixed(1) : '—';
-          rps120 = latestData.rps_120d != null ? latestData.rps_120d.toFixed(1) : '—';
-          rps250 = latestData.rps_250d != null ? latestData.rps_250d.toFixed(1) : '—';
+          if (latestData.rps_50d != null) {
+            rps50 = latestData.rps_50d.toFixed(1);
+            if (prevData && prevData.rps_50d != null) {
+              const d = latestData.rps_50d - prevData.rps_50d;
+              rps50delta = `<span style="font-size:10px;color:#999"> (${d >= 0 ? '+' : ''}${d.toFixed(1)})</span>`;
+            }
+          }
+          if (latestData.rps_120d != null) {
+            rps120 = latestData.rps_120d.toFixed(1);
+            if (prevData && prevData.rps_120d != null) {
+              const d = latestData.rps_120d - prevData.rps_120d;
+              rps120delta = `<span style="font-size:10px;color:#999"> (${d >= 0 ? '+' : ''}${d.toFixed(1)})</span>`;
+            }
+          }
+          if (latestData.rps_250d != null) {
+            rps250 = latestData.rps_250d.toFixed(1);
+            if (prevData && prevData.rps_250d != null) {
+              const d = latestData.rps_250d - prevData.rps_250d;
+              rps250delta = `<span style="font-size:10px;color:#999"> (${d >= 0 ? '+' : ''}${d.toFixed(1)})</span>`;
+            }
+          }
         }
       }
       
-      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" data-three-red="false" data-board12="false" data-100d="false" data-near100d="false" data-strong-near100d="false" data-strong-three-red="false" data-sector-three="false" data-new-one-red="false" data-new-three-red="false" data-starred="${starredStocks.has(s.code)}" class="search-result-row">
+      const thresholds = [90, 93, 95];
+      const rps50v = rps50 === '—' ? 0 : parseFloat(rps50);
+      const rps120v = rps120 === '—' ? 0 : parseFloat(rps120);
+      const rps250v = rps250 === '—' ? 0 : parseFloat(rps250);
+      
+      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" data-three-red="${rps50v > 90 && rps120v > 93 && rps250v > 95}" data-board12="false" data-100d="false" data-near100d="false" data-strong-near100d="false" data-strong-three-red="false" data-sector-three="false" data-new-one-red="false" data-new-three-red="false" data-starred="${starredStocks.has(s.code)}" class="search-result-row">
         <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
         <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
         <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
         <td class="${pctClass}">${pctStr}</td>
-        <td class="rps-default">${rps50}</td>
-        <td class="rps-default">${rps120}</td>
-        <td class="rps-default">${rps250}</td>
+        <td class="${rps50v >= 90 ? 'rps-red' : 'rps-default'}">${rps50}${rps50delta}</td>
+        <td class="${rps120v >= 93 ? 'rps-red' : 'rps-default'}">${rps120}${rps120delta}</td>
+        <td class="${rps250v >= 95 ? 'rps-red' : 'rps-default'}">${rps250}${rps250delta}</td>
         <td>—</td>
         <td><span class="rps-default">—</span></td>
         <td><span class="rps-default">—</span></td>

@@ -128,6 +128,9 @@ tbody tr.selected { background: #e8ecff !important; }
 .filter-bar label { font-size: 12px; color: #666; display: flex; align-items: center; gap: 4px; cursor: pointer; }
 .reset-btn { margin-left: auto; padding: 4px 8px; border: 1px solid #ddd; border-radius: 4px; background: #fff; cursor: pointer; font-size: 14px; line-height: 1; opacity: 0.7; transition: opacity 0.2s; }
 .reset-btn:hover { opacity: 1; background: #f0f0f0; }
+.stock-search-btn { padding: 4px 10px; border: 1px solid #4a6cf7; border-radius: 4px; background: #fff; color: #4a6cf7; cursor: pointer; font-size: 12px; font-weight: 500; transition: all 0.2s; white-space: nowrap; }
+.stock-search-btn:hover { background: #4a6cf7; color: #fff; }
+.stock-search-btn.active { background: #4a6cf7; color: #fff; }
 </style>
 </head>
 <body>
@@ -192,7 +195,8 @@ tbody tr.selected { background: #e8ecff !important; }
     </div>
 
     <div class="filter-bar">
-      <input type="text" id="sectorSearch" placeholder="搜索板块名称或个股代码/名称..." oninput="filterTable('sectorBody', this.value)">
+      <input type="text" id="sectorSearch" placeholder="搜索板块名称..." oninput="filterTable('sectorBody', this.value)">
+      <button class="stock-search-btn" id="sectorStockSearchBtn" onclick="searchStockInSector()" title="输入股票代码或名称后点击">个股搜索</button>
       <label><input type="checkbox" id="sectorOneRedOnly" onclick="applySectorFilter()"> 仅显示一线红+</label>
       <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="sectorNewOneRedOnly" onclick="applySectorFilter()"> 当日新进一线红</label>
@@ -242,7 +246,8 @@ tbody tr.selected { background: #e8ecff !important; }
     </div>
 
     <div class="filter-bar">
-      <input type="text" id="conceptSearch" placeholder="搜索概念名称或个股代码/名称..." oninput="filterTable('conceptBody', this.value)">
+      <input type="text" id="conceptSearch" placeholder="搜索概念名称..." oninput="filterTable('conceptBody', this.value)">
+      <button class="stock-search-btn" id="conceptStockSearchBtn" onclick="searchStockInConcept()" title="输入股票代码或名称后点击">个股搜索</button>
       <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="conceptNewOneRedOnly" onclick="applyConceptFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="conceptNewThreeRedOnly" onclick="applyConceptFilter()"> 当日新进三线红</label>
@@ -442,6 +447,9 @@ async function loadHistoryAsync() {
 // 事件绑定（使用 addEventListener，不依赖内联 onclick）
 // ============================================================
 function setupClickHandlers() {
+  // 防止重复绑定
+  if (clickHandlersBound) return;
+  clickHandlersBound = true;
   // 板块表格 - 名称点击→折线图，成分股数点击→成分股面板
   document.getElementById('sectorBody').addEventListener('click', function(e) {
     const tdMember = e.target.closest('td[data-member-key]');
@@ -1001,30 +1009,8 @@ function filterTable(bodyId, query) {
     return;
   }
   
-  // 板块/概念搜索：支持搜索个股所属的板块/概念
-  if ((bodyId === 'sectorBody' || bodyId === 'conceptBody') && q.length > 0) {
-    const result = findStockSectorsAndConcepts(query);
-    if (result) {
-      // 找到匹配的个股，显示其所属的板块/概念
-      const matchedNames = bodyId === 'sectorBody' ? result.sectors : result.concepts;
-      
-      for (let i = 0; i < rows.length; i++) {
-        const searchText = rows[i].getAttribute('data-search') || '';
-        // data-search 格式："板块名称 其他文本"，用startsWith或includes匹配
-        const isMatched = matchedNames.some(n => searchText.startsWith(n) || searchText.includes(n));
-        rows[i].style.display = isMatched ? '' : 'none';
-      }
-      
-      // 更新计数显示
-      const countEl = document.getElementById(bodyId === 'sectorBody' ? 'sectorCount' : 'conceptCount');
-      if (countEl) {
-        countEl.textContent = `显示 ${result.stock.name} 所属的 ${matchedNames.length} 个${bodyId === 'sectorBody' ? '板块' : '概念'}`;
-      }
-      return;
-    }
-  }
-  
-  // 搜索为空时，恢复原始计数
+  // 板块/概念搜索：仅按名称搜索（移除了个股搜素功能）
+  // 个股搜索通过"个股搜索"按钮单独触发
   if (q === '' && (bodyId === 'sectorBody' || bodyId === 'conceptBody')) {
     const countEl = document.getElementById(bodyId === 'sectorBody' ? 'sectorCount' : 'conceptCount');
     if (countEl) {
@@ -1117,11 +1103,11 @@ function filterStocksWithAllStocks(query) {
     return;
   }
   
-  // 精准匹配：代码或名称
+  // 匹配：代码、名称、拼音首字母
   const matchedStocks = allStocks.filter(s => {
     const code = (s.code || '').toLowerCase();
-    const name = (s.name || '').toLowerCase();
-    return code === q || name === q || code.includes(q) || name.includes(q);
+    const name = s.name || '';
+    return code === q || name.toLowerCase() === q || code.includes(q) || name.toLowerCase().includes(q) || matchesPinyin(name, query);
   }).slice(0, 50); // 限制最多显示50条
   
   // 临时替换表格内容
@@ -1152,7 +1138,7 @@ function filterStocksWithAllStocks(query) {
         }
       }
       
-      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" class="search-result-row">
+      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" data-three-red="false" data-board12="false" data-100d="false" data-near100d="false" data-strong-near100d="false" data-strong-three-red="false" data-sector-three="false" data-new-one-red="false" data-new-three-red="false" data-starred="${starredStocks.has(s.code)}" class="search-result-row">
         <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
         <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
         <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
@@ -1221,11 +1207,16 @@ function resetSectorFilter() {
   document.getElementById('sectorThreeRedOnly').checked = false;
   document.getElementById('sectorNewOneRedOnly').checked = false;
   document.getElementById('sectorNewThreeRedOnly').checked = false;
-  // 恢复默认排序
+  // 清除排序状态并恢复默认排序
+  Object.keys(sortState).forEach(k => { if (k.startsWith('sectorTable_')) delete sortState[k]; });
   const table = document.getElementById('sectorTable');
-  const ths = table.querySelectorAll('th');
-  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  table.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
   renderSectors();
+  // 恢复计数显示
+  const countEl = document.getElementById('sectorCount');
+  if (countEl) {
+    countEl.textContent = `共 ${(currentData.sectors || []).length} 个细分行业`;
+  }
 }
 
 // 重置概念筛选
@@ -1234,10 +1225,16 @@ function resetConceptFilter() {
   document.getElementById('conceptThreeRedOnly').checked = false;
   document.getElementById('conceptNewOneRedOnly').checked = false;
   document.getElementById('conceptNewThreeRedOnly').checked = false;
+  // 清除排序状态
+  Object.keys(sortState).forEach(k => { if (k.startsWith('conceptTable_')) delete sortState[k]; });
   const table = document.getElementById('conceptTable');
-  const ths = table.querySelectorAll('th');
-  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  table.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
   renderConcepts();
+  // 恢复计数显示
+  const countEl = document.getElementById('conceptCount');
+  if (countEl) {
+    countEl.textContent = `共 ${(currentData.concepts || []).length} 个概念`;
+  }
 }
 
 // 重置个股筛选
@@ -1253,9 +1250,10 @@ function resetStockFilter() {
   document.getElementById('stockNewOneRedOnly').checked = false;
   document.getElementById('stockNewThreeRedOnly').checked = false;
   document.getElementById('stockStarredOnly').checked = false;
+  // 清除排序状态
+  Object.keys(sortState).forEach(k => { if (k.startsWith('stockTable_')) delete sortState[k]; });
   const table = document.getElementById('stockTable');
-  const ths = table.querySelectorAll('th');
-  ths.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  table.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
   renderStocks(currentData.stocks || []);
   document.getElementById('stockCount').textContent = `共 ${(currentData.stocks || []).length} 只个股`;
 }
@@ -1275,11 +1273,11 @@ function findStockSectorsAndConcepts(stockQuery) {
   });
   
   if (!matchedStock) {
-    // 模糊匹配：输入内容是名称或代码的子串
+    // 模糊匹配：输入内容是名称或代码的子串，或拼音首字母匹配
     matchedStock = allStocks.find(s => {
       const code = (s.code || '').toLowerCase();
       const name = (s.name || '').toLowerCase();
-      return name.includes(q) || code.includes(q);
+      return name.includes(q) || code.includes(q) || matchesPinyin(s.name, stockQuery);
     });
   }
   
@@ -1302,6 +1300,78 @@ function findStockSectorsAndConcepts(stockQuery) {
     sectors: matchedSectors,
     concepts: matchedConcepts
   };
+}
+
+// 板块搜索栏的"个股搜索"按钮
+function searchStockInSector() {
+  const input = document.getElementById('sectorSearch');
+  const query = input.value.trim();
+  if (!query) return;
+  
+  // 高亮按钮
+  const btn = document.getElementById('sectorStockSearchBtn');
+  btn.classList.add('active');
+  setTimeout(() => btn.classList.remove('active'), 1500);
+  
+  const result = findStockSectorsAndConcepts(query);
+  const tbody = document.getElementById('sectorBody');
+  const rows = tbody.rows;
+  const countEl = document.getElementById('sectorCount');
+  
+  if (result && result.sectors.length > 0) {
+    const matchedNames = result.sectors;
+    for (let i = 0; i < rows.length; i++) {
+      const searchText = (rows[i].getAttribute('data-search') || '').toLowerCase();
+      const isMatched = matchedNames.some(n => searchText.includes(n.toLowerCase()));
+      rows[i].style.display = isMatched ? '' : 'none';
+    }
+    if (countEl) {
+      countEl.textContent = `显示 ${result.stock.name} 所属的 ${matchedNames.length} 个板块`;
+    }
+  } else {
+    // 没找到，清空列表
+    for (let i = 0; i < rows.length; i++) {
+      rows[i].style.display = 'none';
+    }
+    if (countEl) countEl.textContent = '未找到所属板块';
+  }
+}
+
+// 概念搜索栏的"个股搜索"按钮
+function searchStockInConcept() {
+  const input = document.getElementById('conceptSearch');
+  const query = input.value.trim();
+  if (!query) return;
+  
+  // 高亮按钮
+  const btn = document.getElementById('conceptStockSearchBtn');
+  btn.classList.add('active');
+  setTimeout(() => btn.classList.remove('active'), 1500);
+  
+  const result = findStockSectorsAndConcepts(query);
+  const tbody = document.getElementById('conceptBody');
+  const rows = tbody.rows;
+  const countEl = document.getElementById('conceptCount');
+  
+  if (result && result.concepts.length > 0) {
+    const matchedNames = result.concepts;
+    for (let i = 0; i < rows.length; i++) {
+      const searchText = (rows[i].getAttribute('data-search') || '').toLowerCase();
+      const isMatched = matchedNames.some(n => {
+        const nLower = n.toLowerCase();
+        return searchText.includes(nLower) || nLower.includes(searchText);
+      });
+      rows[i].style.display = isMatched ? '' : 'none';
+    }
+    if (countEl) {
+      countEl.textContent = `显示 ${result.stock.name} 所属的 ${matchedNames.length} 个概念`;
+    }
+  } else {
+    for (let i = 0; i < rows.length; i++) {
+      rows[i].style.display = 'none';
+    }
+    if (countEl) countEl.textContent = '未找到所属概念';
+  }
 }
 
 // 星标功能
@@ -1357,9 +1427,19 @@ function toggleStar(code) {
     starredStocks.add(code);
   }
   saveStarredStocks();
-  renderStocks(currentData.stocks || []);
-  // 应用当前checkbox筛选（包括星标筛选）
-  applyStockCheckboxFilters();
+  
+  // 检查是否处于个股搜索状态
+  const searchInput = document.getElementById('stockSearch');
+  const searchQuery = searchInput ? searchInput.value.trim() : '';
+  
+  if (searchQuery) {
+    // 搜索状态中：重新执行搜索以刷新星标显示
+    filterStocksWithAllStocks(searchQuery);
+  } else {
+    // 正常状态：重新渲染并应用筛选
+    renderStocks(currentData.stocks || []);
+    applyStockCheckboxFilters();
+  }
 }
 
 // 从localStorage恢复星标状态
@@ -1388,7 +1468,7 @@ function showMemberPanel(label, members) {
   titleEl.textContent = `${label} — 一线红及以上成分股（${members.length}只）`;
   
   // 按 red_lines 降序、rps_50d 降序排列
-  members.sort((a, b) => (b.red_lines - a.red_lines) || (b.rps_50d - a.rps_50d));
+  members.sort((a, b) => ((b.red_lines || 0) - (a.red_lines || 0)) || ((b.rps_50d || 0) - (a.rps_50d || 0)));
   
   const rows = members.map(m => {
     const pct = m.pct_change;
@@ -1416,10 +1496,10 @@ function showMemberPanel(label, members) {
       <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${m.code}">${m.name}</td>
       <td><a href="${xueqiuUrl(m.code)}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${m.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
-      <td class="${m.rps_50d >= 90 ? 'rps-red' : 'rps-default'}">${m.rps_50d.toFixed(1)}</td>
-      <td class="${m.rps_120d >= 93 ? 'rps-red' : 'rps-default'}">${m.rps_120d.toFixed(1)}</td>
-      <td class="${m.rps_250d >= 95 ? 'rps-red' : 'rps-default'}">${m.rps_250d.toFixed(1)}</td>
-      <td class="${rlClass}">${m.red_lines}线红</td>
+      <td class="${(m.rps_50d || 0) >= 90 ? 'rps-red' : 'rps-default'}">${m.rps_50d != null ? m.rps_50d.toFixed(1) : '—'}</td>
+      <td class="${(m.rps_120d || 0) >= 93 ? 'rps-red' : 'rps-default'}">${m.rps_120d != null ? m.rps_120d.toFixed(1) : '—'}</td>
+      <td class="${(m.rps_250d || 0) >= 95 ? 'rps-red' : 'rps-default'}">${m.rps_250d != null ? m.rps_250d.toFixed(1) : '—'}</td>
+      <td class="${rlClass}">${m.red_lines || 0}线红</td>
       <td>${board}</td>
       <td style="text-align:center;">${high100Cell}</td>
       <td>${anomalyCell}</td>
@@ -1454,6 +1534,7 @@ function showMemberPanel(label, members) {
 // 浮动折线图（事件委托已在上方 setupClickHandlers 绑定）
 // ============================================================
 let chartInstances = {};
+let clickHandlersBound = false;
 
 // ============================================================
 // 折线图（ECharts + dataZoom 滑动缩放）
@@ -1483,9 +1564,9 @@ function showOverlayChart(name, titleText, dataKey, periods) {
     return;
   }
 
-  // 确保 div 存在（ECharts 使用 div 而非 canvas）
-  container.innerHTML = '<div id="chartOverlayCanvas" style="width:100%;height:100%;"></div>';
-  const chartDom = document.getElementById('chartOverlayCanvas');
+  // 清空容器并重用（避免嵌套同ID div）
+  container.innerHTML = '';
+  const chartDom = container;
 
   if (typeof echarts === 'undefined') {
     chartDom.innerHTML = '<div style="text-align:center;padding:20px;color:#e53e3e;">⚠️ ECharts 未加载，请检查网络</div>';

@@ -1,0 +1,59 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T08:44:02.199302+08:00",
+  "data_source": "创弗化工 https://www.cfreon.cn/news/hangqing/2709.html",
+  "products": {
+    "R32": {
+      "price": 57080.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R125": {
+      "price": 49115.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R134a": {
+      "price": 53982.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R143a": {
+      "price": 44767.0,
+      "unit": "元/吨",
+      "change_pct": null
+    },
+    "R22": {
+      "price": 20133.0,
+      "unit": "元/吨",
+      "change_pct": null
+    }
+  },
+  "weighted_avg_price": 51036.0,
+  "profit_per_ton": 3.0,
+  "stock_price": 66.09,
+  "eps_annual": 5.73,
+  "valuation": {
+    "pessimistic": {
+      "pe": 12,
+      "target": 68.8
+    },
+    "neutral": {
+      "pe": 15,
+      "target": 86.0
+    },
+    "optimistic": {
+      "pe": 18,
+      "target": 103.2
+    }
+  },
+  "cookie_expired": true,
+  "cost_structure": {
+    "raw_material": 10823.4,
+    "energy": 3607.8,
+    "labor": 1803.9,
+    "other": 1803.9
+  },
+  "_filename": "2026-06-29.json",
+  "_saved_at": "2026-06-29T08:44:02.199434+08:00"
+}

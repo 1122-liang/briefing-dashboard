@@ -209,14 +209,15 @@ tbody tr.selected { background: #e8ecff !important; }
         <thead>
           <tr>
             <th onclick="sortTable('sectorTable', 0, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 1, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 2, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 3, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 4, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 8, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 1, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 2, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 3, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 4, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 8, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 9, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="sectorBody"></tbody>
@@ -259,12 +260,13 @@ tbody tr.selected { background: #e8ecff !important; }
         <thead>
           <tr>
             <th onclick="sortTable('conceptTable', 0, this)" data-type="string">概念名称 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 1, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 6, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 1, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 6, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 7, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="conceptBody"></tbody>
@@ -681,6 +683,7 @@ function renderSectors() {
     
     return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
+      <td>${(s.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td>${s['申万行业'] || '-'}</td>
       <td>${s['申万产业'] || '-'}</td>
@@ -730,6 +733,7 @@ function renderConcepts() {
     
     return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
+      <td>${(c.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}

@@ -307,7 +307,7 @@ tbody tr.selected { background: #e8ecff !important; }
       </div>
     </div>
 
-    <div class="filter-bar">
+    <div class="filter-bar" style="flex-wrap:wrap;">
       <input type="text" id="stockSearch" placeholder="搜索个股名称/代码..." oninput="filterTable('stockBody', this.value)">
       <label><input type="checkbox" id="stockThreeRedOnly" onclick="applyStockFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="stockBoard12Only" onclick="applyStockFilter()"> 仅显示首板/二板</label>
@@ -319,6 +319,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="stockNewOneRedOnly" onclick="applyStockFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="stockNewThreeRedOnly" onclick="applyStockFilter()"> 当日新进三线红</label>
       <label><input type="checkbox" id="stockStarredOnly" onclick="applyStockFilter()"> 仅筛选星标个股</label>
+      <label><input type="checkbox" id="stockMv100Only" onclick="applyStockFilter()"> 100亿市值以上</label>
       <button class="reset-btn" onclick="resetStockFilter()" title="重置筛选">🔄</button>
     </div>
 
@@ -800,7 +801,7 @@ function renderStocks(stocks) {
       ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
       : '—';
     
-    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-strong-near100d="${s.strong_near_100d_high}" data-strong-three-red="${s.strong_three_red}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}" data-code="${s.code}" data-starred="${starredStocks.has(s.code)}">
+    return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-strong-near100d="${s.strong_near_100d_high}" data-strong-three-red="${s.strong_three_red}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}" data-code="${s.code}" data-starred="${starredStocks.has(s.code)}" data-mv100="${(s.total_mv || 0) >= 100}">
       <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
@@ -1175,7 +1176,7 @@ function filterStocksWithAllStocks(query) {
           ? `<span class="badge badge-blue">${fullStock.top_concept}</span> <span style="font-size:11px;color:#888">(${fullStock.top_concept_limit || 0}涨停)</span>`
           : '—';
         
-        return `<tr data-search="${fullStock.name||fullStock.code} ${fullStock.code} ${fullStock.sector_l1||''} ${fullStock.sector_l2||''} ${fullStock.sector_l3||''} ${(fullStock.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${fullStock.consecutive_limits >= 1 && fullStock.consecutive_limits <= 2}" data-100d="${fullStock.is_100d_high}" data-near100d="${fullStock.near_100d_high}" data-strong-near100d="${fullStock.strong_near_100d_high}" data-strong-three-red="${fullStock.strong_three_red}" data-sector-three="${fullStock.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(fullStock.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(fullStock.code)}" data-code="${fullStock.code}" data-starred="${starredStocks.has(fullStock.code)}" class="search-result-row">
+        return `<tr data-search="${fullStock.name||fullStock.code} ${fullStock.code} ${fullStock.sector_l1||''} ${fullStock.sector_l2||''} ${fullStock.sector_l3||''} ${(fullStock.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${fullStock.consecutive_limits >= 1 && fullStock.consecutive_limits <= 2}" data-100d="${fullStock.is_100d_high}" data-near100d="${fullStock.near_100d_high}" data-strong-near100d="${fullStock.strong_near_100d_high}" data-strong-three-red="${fullStock.strong_three_red}" data-sector-three="${fullStock.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(fullStock.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(fullStock.code)}" data-code="${fullStock.code}" data-starred="${starredStocks.has(fullStock.code)}" data-mv100="${(fullStock.total_mv || 0) >= 100}" class="search-result-row">
           <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${fullStock.code}')">${starredStocks.has(fullStock.code) ? '⭐' : '☆'}</td>
           <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${fullStock.code}">${fullStock.name || fullStock.code}</td>
           <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${fullStock.code}</a></td>
@@ -1236,7 +1237,7 @@ function filterStocksWithAllStocks(query) {
       const rps120v = rps120 === '—' ? 0 : parseFloat(rps120);
       const rps250v = rps250 === '—' ? 0 : parseFloat(rps250);
       
-      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" data-three-red="${rps50v > 90 && rps120v > 93 && rps250v > 95}" data-board12="false" data-100d="false" data-near100d="false" data-strong-near100d="false" data-strong-three-red="false" data-sector-three="false" data-new-one-red="false" data-new-three-red="false" data-starred="${starredStocks.has(s.code)}" class="search-result-row">
+      return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''}" data-code="${s.code}" data-three-red="${rps50v > 90 && rps120v > 93 && rps250v > 95}" data-board12="false" data-100d="false" data-near100d="false" data-strong-near100d="false" data-strong-three-red="false" data-sector-three="false" data-new-one-red="false" data-new-three-red="false" data-starred="${starredStocks.has(s.code)}" data-mv100="${(s.total_mv || 0) >= 100}" class="search-result-row">
         <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
         <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
         <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
@@ -1294,6 +1295,7 @@ function applyStockCheckboxFilters() {
     if (visible && document.getElementById('stockNewOneRedOnly').checked && rows[i].getAttribute('data-new-one-red') !== 'true') visible = false;
     if (visible && document.getElementById('stockNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') visible = false;
     if (visible && document.getElementById('stockStarredOnly').checked && rows[i].getAttribute('data-starred') !== 'true') visible = false;
+    if (visible && document.getElementById('stockMv100Only').checked && rows[i].getAttribute('data-mv100') !== 'true') visible = false;
     rows[i].style.display = visible ? '' : 'none';
   }
 }
@@ -1348,6 +1350,7 @@ function resetStockFilter() {
   document.getElementById('stockNewOneRedOnly').checked = false;
   document.getElementById('stockNewThreeRedOnly').checked = false;
   document.getElementById('stockStarredOnly').checked = false;
+  document.getElementById('stockMv100Only').checked = false;
   // 清除排序状态
   Object.keys(sortState).forEach(k => { if (k.startsWith('stockTable_')) delete sortState[k]; });
   const table = document.getElementById('stockTable');

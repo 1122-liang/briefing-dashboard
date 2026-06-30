@@ -3,6 +3,13 @@
     "date": "2026-06-30",
     "changes": [
       {
+        "time": "13:58",
+        "action": "add",
+        "symbol": "SZ002409",
+        "name": "雅克科技",
+        "watched": "2026-06-30T13:55:00"
+      },
+      {
         "time": "13:53",
         "action": "add",
         "symbol": "SH688530",

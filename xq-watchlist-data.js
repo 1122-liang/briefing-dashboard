@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-06-30T13:53:17",
-  "count": 10,
+  "updated_at": "2026-06-30T14:43:32",
+  "count": 11,
   "stocks": [
+    {
+      "symbol": "SZ002409",
+      "name": "雅克科技",
+      "marketplace": "CN",
+      "watched": "2026-06-30T13:55:00"
+    },
     {
       "symbol": "SH688530",
       "name": "欧莱新材",
@@ -68,6 +74,13 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-06-30",
     "changes": [
+      {
+        "time": "13:58",
+        "action": "add",
+        "symbol": "SZ002409",
+        "name": "雅克科技",
+        "watched": "2026-06-30T13:55:00"
+      },
       {
         "time": "13:53",
         "action": "add",

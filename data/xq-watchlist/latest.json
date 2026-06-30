@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-06-30T13:43:15",
-  "count": 9,
+  "updated_at": "2026-06-30T13:53:17",
+  "count": 10,
   "stocks": [
+    {
+      "symbol": "SH688530",
+      "name": "欧莱新材",
+      "marketplace": "CN",
+      "watched": "2026-06-30T13:48:42"
+    },
     {
       "symbol": "SZ301396",
       "name": "宏景科技",

@@ -3,6 +3,13 @@
     "date": "2026-06-30",
     "changes": [
       {
+        "time": "13:53",
+        "action": "add",
+        "symbol": "SH688530",
+        "name": "欧莱新材",
+        "watched": "2026-06-30T13:48:42"
+      },
+      {
         "time": "09:52",
         "action": "add",
         "symbol": "SZ301396",

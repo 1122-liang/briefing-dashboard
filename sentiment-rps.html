@@ -201,6 +201,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="sectorThreeRedOnly" onclick="applySectorFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="sectorNewOneRedOnly" onclick="applySectorFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="sectorNewThreeRedOnly" onclick="applySectorFilter()"> 当日新进三线红</label>
+      <label><input type="checkbox" id="sectorStarredOnly" onclick="applySectorFilter()"> 仅保留星标板块</label>
       <button class="reset-btn" onclick="resetSectorFilter()" title="重置筛选">🔄</button>
     </div>
 
@@ -208,16 +209,17 @@ tbody tr.selected { background: #e8ecff !important; }
       <table id="sectorTable">
         <thead>
           <tr>
-            <th onclick="sortTable('sectorTable', 0, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 1, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 2, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 3, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 4, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 5, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 8, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('sectorTable', 9, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th style="width:30px;">⭐</th>
+            <th onclick="sortTable('sectorTable', 1, this)" data-type="string">板块名称(细分) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 2, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 3, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 4, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 5, this)" data-type="string">一级行业 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 6, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 7, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 8, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 9, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 10, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="sectorBody"></tbody>
@@ -252,6 +254,7 @@ tbody tr.selected { background: #e8ecff !important; }
       <label><input type="checkbox" id="conceptThreeRedOnly" onclick="applyConceptFilter()"> 仅显示三线红</label>
       <label><input type="checkbox" id="conceptNewOneRedOnly" onclick="applyConceptFilter()"> 当日新进一线红</label>
       <label><input type="checkbox" id="conceptNewThreeRedOnly" onclick="applyConceptFilter()"> 当日新进三线红</label>
+      <label><input type="checkbox" id="conceptStarredOnly" onclick="applyConceptFilter()"> 仅保留星标概念</label>
       <button class="reset-btn" onclick="resetConceptFilter()" title="重置筛选">🔄</button>
     </div>
 
@@ -259,14 +262,15 @@ tbody tr.selected { background: #e8ecff !important; }
       <table id="conceptTable">
         <thead>
           <tr>
-            <th onclick="sortTable('conceptTable', 0, this)" data-type="string">概念名称 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 1, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 6, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('conceptTable', 7, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th style="width:30px;">⭐</th>
+            <th onclick="sortTable('conceptTable', 1, this)" data-type="string">概念名称 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 2, this)" data-type="number">总市值(亿) <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 3, this)" data-type="number">成分股数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 4, this)" data-type="number">涨跌幅 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 5, this)" data-type="number">5日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 6, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 7, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 8, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="conceptBody"></tbody>
@@ -387,6 +391,8 @@ async function init() {
     // 初始化星标状态
     restoreStarredFromLocalStorage();
     loadStarredStocks();
+    loadStarredSectors();
+    loadStarredConcepts();
     
     // 优先使用内嵌数据（避免 fetch 跨域问题）
     if (typeof EMBEDDED_DATA === 'object' && EMBEDDED_DATA.date) {
@@ -682,7 +688,8 @@ function renderSectors() {
     const memberKey = 'sector:' + s.sector_name;
     if (s.member_stocks && s.member_stocks.length > 0) memberDataMap[memberKey] = s.member_stocks;
     
-    return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
+    return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}" data-starred="${starredSectors.has(s.sector_name)}">
+      <td style="cursor:pointer;font-size:16px;" onclick="toggleSectorStar('${s.sector_name.replace(/'/g, "\\'")}')">${starredSectors.has(s.sector_name) ? '⭐' : '☆'}</td>
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
       <td>${(s.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
@@ -732,7 +739,8 @@ function renderConcepts() {
     const memberKey = 'concept:' + c.concept_name;
     if (c.member_stocks && c.member_stocks.length > 0) memberDataMap[memberKey] = c.member_stocks;
     
-    return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}">
+    return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}" data-starred="${starredConcepts.has(c.concept_name)}">
+      <td style="cursor:pointer;font-size:16px;" onclick="toggleConceptStar('${c.concept_name.replace(/'/g, "\\'")}')">${starredConcepts.has(c.concept_name) ? '⭐' : '☆'}</td>
       <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
       <td>${(c.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
@@ -1047,6 +1055,9 @@ function filterTable(bodyId, query) {
       if (document.getElementById('sectorNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
+      if (document.getElementById('sectorStarredOnly').checked && rows[i].getAttribute('data-starred') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
     }
     if (bodyId === 'conceptBody') {
       if (document.getElementById('conceptThreeRedOnly').checked) {
@@ -1057,6 +1068,9 @@ function filterTable(bodyId, query) {
         rows[i].style.display = 'none'; continue;
       }
       if (document.getElementById('conceptNewThreeRedOnly').checked && rows[i].getAttribute('data-new-three-red') !== 'true') {
+        rows[i].style.display = 'none'; continue;
+      }
+      if (document.getElementById('conceptStarredOnly').checked && rows[i].getAttribute('data-starred') !== 'true') {
         rows[i].style.display = 'none'; continue;
       }
     }
@@ -1307,6 +1321,7 @@ function resetSectorFilter() {
   document.getElementById('sectorThreeRedOnly').checked = false;
   document.getElementById('sectorNewOneRedOnly').checked = false;
   document.getElementById('sectorNewThreeRedOnly').checked = false;
+  document.getElementById('sectorStarredOnly').checked = false;
   // 清除排序状态并恢复默认排序
   Object.keys(sortState).forEach(k => { if (k.startsWith('sectorTable_')) delete sortState[k]; });
   const table = document.getElementById('sectorTable');
@@ -1325,6 +1340,7 @@ function resetConceptFilter() {
   document.getElementById('conceptThreeRedOnly').checked = false;
   document.getElementById('conceptNewOneRedOnly').checked = false;
   document.getElementById('conceptNewThreeRedOnly').checked = false;
+  document.getElementById('conceptStarredOnly').checked = false;
   // 清除排序状态
   Object.keys(sortState).forEach(k => { if (k.startsWith('conceptTable_')) delete sortState[k]; });
   const table = document.getElementById('conceptTable');
@@ -1477,6 +1493,8 @@ function searchStockInConcept() {
 
 // 星标功能
 let starredStocks = new Set();
+let starredSectors = new Set();
+let starredConcepts = new Set();
 
 // 加载星标状态（localStorage优先，后端文件补充）
 async function loadStarredStocks() {
@@ -1553,6 +1571,40 @@ function restoreStarredFromLocalStorage() {
   } catch (e) {
     console.log('恢复星标状态失败:', e);
   }
+}
+
+// ---- 板块/概念星标功能 ----
+function loadStarredSectors() {
+  try {
+    const saved = localStorage.getItem('starred_sectors');
+    if (saved) { starredSectors = new Set(JSON.parse(saved)); }
+  } catch(e) {}
+}
+function loadStarredConcepts() {
+  try {
+    const saved = localStorage.getItem('starred_concepts');
+    if (saved) { starredConcepts = new Set(JSON.parse(saved)); }
+  } catch(e) {}
+}
+function saveStarredSectors() {
+  localStorage.setItem('starred_sectors', JSON.stringify(Array.from(starredSectors)));
+}
+function saveStarredConcepts() {
+  localStorage.setItem('starred_concepts', JSON.stringify(Array.from(starredConcepts)));
+}
+function toggleSectorStar(name) {
+  if (starredSectors.has(name)) { starredSectors.delete(name); }
+  else { starredSectors.add(name); }
+  saveStarredSectors();
+  renderSectors();
+  applySectorFilter();
+}
+function toggleConceptStar(name) {
+  if (starredConcepts.has(name)) { starredConcepts.delete(name); }
+  else { starredConcepts.add(name); }
+  saveStarredConcepts();
+  renderConcepts();
+  applyConceptFilter();
 }
 
 // ============================================================

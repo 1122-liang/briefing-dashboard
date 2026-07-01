@@ -577,3 +577,28 @@
 [ERROR] 登录态失效: 验证请求失败: <urlopen error _ssl.c:1015: The handshake operation timed out>
 [ERROR] 企微推送失败: <urlopen error _ssl.c:1015: The handshake operation timed out>
 [INFO] 持续运行模式已退出
+[INFO] 持续运行模式启动 (PID=6086)
+[INFO] 运行窗口: 9:00 - 16:00
+[INFO] 轮询间隔: 300s
+
+[13:39:02] 执行检测...
+[INFO] 当前自选股: 6 只
+[CHANGE] 新增=3 移除=6 (9 → 6)
+[OK] 企微推送成功
+[INFO] 下次检测: 13:44:02
+
+[INFO] 收到信号 15，正在退出...
+[INFO] 持续运行模式已退出
+[INFO] 持续运行模式启动 (PID=6137)
+[INFO] 运行窗口: 9:00 - 16:00
+[INFO] 轮询间隔: 300s
+
+[13:40:14] 执行检测...
+[INFO] 当前自选股: 6 只
+[INFO] 无变动
+[INFO] 下次检测: 13:45:14
+
+[13:45:15] 执行检测...
+[INFO] 当前自选股: 6 只
+[INFO] 无变动
+[INFO] 下次检测: 13:50:15

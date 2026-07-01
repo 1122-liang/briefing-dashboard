@@ -1,7 +1,25 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-01T10:58:45",
-  "count": 9,
+  "updated_at": "2026-07-01T13:45:15",
+  "count": 6,
   "stocks": [
+    {
+      "symbol": "SZ300872",
+      "name": "天阳科技",
+      "marketplace": "CN",
+      "watched": "2026-07-01T13:06:58"
+    },
+    {
+      "symbol": "SZ002407",
+      "name": "多氟多",
+      "marketplace": "CN",
+      "watched": "2026-07-01T12:04:03"
+    },
+    {
+      "symbol": "SH603379",
+      "name": "三美股份",
+      "marketplace": "CN",
+      "watched": "2026-07-01T12:03:56"
+    },
     {
       "symbol": "SH600961",
       "name": "株冶集团",
@@ -19,42 +37,6 @@ window.__SNAPSHOT__ = {
       "name": "江丰电子",
       "marketplace": "CN",
       "watched": "2026-07-01T09:56:22"
-    },
-    {
-      "symbol": "SZ002409",
-      "name": "雅克科技",
-      "marketplace": "CN",
-      "watched": "2026-06-30T13:55:00"
-    },
-    {
-      "symbol": "SH688530",
-      "name": "欧莱新材",
-      "marketplace": "CN",
-      "watched": "2026-06-30T13:48:42"
-    },
-    {
-      "symbol": "SZ301396",
-      "name": "宏景科技",
-      "marketplace": "CN",
-      "watched": "2026-06-30T09:52:12"
-    },
-    {
-      "symbol": "SZ300706",
-      "name": "阿石创",
-      "marketplace": "CN",
-      "watched": "2026-06-29T11:04:57"
-    },
-    {
-      "symbol": "SH600667",
-      "name": "太极实业",
-      "marketplace": "CN",
-      "watched": "2026-06-29T10:44:00"
-    },
-    {
-      "symbol": "SZ300604",
-      "name": "长川科技",
-      "marketplace": "CN",
-      "watched": "2026-06-26T10:01:42"
     }
   ]
 };
@@ -62,6 +44,63 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-01",
     "changes": [
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SH603379",
+        "name": "三美股份",
+        "watched": "2026-07-01T12:03:56"
+      },
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SZ002407",
+        "name": "多氟多",
+        "watched": "2026-07-01T12:04:03"
+      },
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SZ300872",
+        "name": "天阳科技",
+        "watched": "2026-07-01T13:06:58"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SH600667",
+        "name": "太极实业"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SH688530",
+        "name": "欧莱新材"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SZ002409",
+        "name": "雅克科技"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SZ300604",
+        "name": "长川科技"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SZ300706",
+        "name": "阿石创"
+      },
+      {
+        "time": "13:39",
+        "action": "remove",
+        "symbol": "SZ301396",
+        "name": "宏景科技"
+      },
       {
         "time": "10:48",
         "action": "remove",

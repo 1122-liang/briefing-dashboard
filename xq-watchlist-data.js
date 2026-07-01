@@ -1,7 +1,25 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-06-30T15:58:44",
-  "count": 11,
+  "updated_at": "2026-07-01T10:58:45",
+  "count": 9,
   "stocks": [
+    {
+      "symbol": "SH600961",
+      "name": "株冶集团",
+      "marketplace": "CN",
+      "watched": "2026-07-01T10:17:57"
+    },
+    {
+      "symbol": "SH688432",
+      "name": "有研硅",
+      "marketplace": "CN",
+      "watched": "2026-07-01T10:12:25"
+    },
+    {
+      "symbol": "SZ300666",
+      "name": "江丰电子",
+      "marketplace": "CN",
+      "watched": "2026-07-01T09:56:22"
+    },
     {
       "symbol": "SZ002409",
       "name": "雅克科技",
@@ -21,36 +39,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-06-30T09:52:12"
     },
     {
-      "symbol": "SZ000725",
-      "name": "京东方A",
-      "marketplace": "CN",
-      "watched": "2026-06-30T09:39:10"
-    },
-    {
-      "symbol": "SH603773",
-      "name": "沃格光电",
-      "marketplace": "CN",
-      "watched": "2026-06-30T09:39:00"
-    },
-    {
-      "symbol": "SZ300776",
-      "name": "帝尔激光",
-      "marketplace": "CN",
-      "watched": "2026-06-30T09:38:53"
-    },
-    {
-      "symbol": "SH603115",
-      "name": "海星股份",
-      "marketplace": "CN",
-      "watched": "2026-06-30T09:34:43"
-    },
-    {
-      "symbol": "SH603986",
-      "name": "兆易创新",
-      "marketplace": "CN",
-      "watched": "2026-06-29T13:24:25"
-    },
-    {
       "symbol": "SZ300706",
       "name": "阿石创",
       "marketplace": "CN",
@@ -58,7 +46,7 @@ window.__SNAPSHOT__ = {
     },
     {
       "symbol": "SH600667",
-      "name": "XD太极实",
+      "name": "太极实业",
       "marketplace": "CN",
       "watched": "2026-06-29T10:44:00"
     },
@@ -71,6 +59,62 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-01",
+    "changes": [
+      {
+        "time": "10:48",
+        "action": "remove",
+        "symbol": "SH603986",
+        "name": "兆易创新"
+      },
+      {
+        "time": "10:18",
+        "action": "add",
+        "symbol": "SH600961",
+        "name": "株冶集团",
+        "watched": "2026-07-01T10:17:57"
+      },
+      {
+        "time": "10:13",
+        "action": "add",
+        "symbol": "SH688432",
+        "name": "有研硅",
+        "watched": "2026-07-01T10:12:25"
+      },
+      {
+        "time": "10:13",
+        "action": "remove",
+        "symbol": "SH603115",
+        "name": "XD海星股"
+      },
+      {
+        "time": "10:13",
+        "action": "remove",
+        "symbol": "SH603773",
+        "name": "沃格光电"
+      },
+      {
+        "time": "10:13",
+        "action": "remove",
+        "symbol": "SZ000725",
+        "name": "京东方A"
+      },
+      {
+        "time": "10:13",
+        "action": "remove",
+        "symbol": "SZ300776",
+        "name": "帝尔激光"
+      },
+      {
+        "time": "09:58",
+        "action": "add",
+        "symbol": "SZ300666",
+        "name": "江丰电子",
+        "watched": "2026-07-01T09:56:22"
+      }
+    ]
+  },
   {
     "date": "2026-06-30",
     "changes": [

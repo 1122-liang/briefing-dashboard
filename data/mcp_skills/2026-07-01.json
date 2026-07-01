@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T08:48:04.053114+08:00",
+  "mcp_services": [
+    {
+      "name": "lexiang",
+      "type": "Remote MCP (streamable-http)",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本"
+    },
+    {
+      "name": "dayu-financials",
+      "type": "Local MCP (stdio)",
+      "current_version": "custom",
+      "latest_version": "custom",
+      "status": "up_to_date",
+      "note": "本地自定义服务，无版本号"
+    },
+    {
+      "name": "claude-memory-fts",
+      "type": "npm MCP (stdio)",
+      "current_version": "2.0.1",
+      "latest_version": "2.0.1",
+      "status": "up_to_date"
+    },
+    {
+      "name": "scrapling",
+      "type": "pip MCP (stdio)",
+      "current_version": "0.4.8",
+      "latest_version": "0.4.9",
+      "status": "needs_update",
+      "note": "pip install --upgrade scrapling 即可更新"
+    }
+  ],
+  "skills_summary": {
+    "total_count": 69,
+    "self_created": 8,
+    "builtin": 60,
+    "external": 1,
+    "external_with_source": 0,
+    "no_source": 1,
+    "updates_needed": 0
+  },
+  "python_packages": [
+    {
+      "name": "akshare",
+      "current_version": "1.18.63",
+      "latest_version": "1.18.64",
+      "status": "needs_update"
+    },
+    {
+      "name": "tushare",
+      "current_version": "1.4.29",
+      "latest_version": "1.4.29",
+      "status": "up_to_date"
+    },
+    {
+      "name": "pandas",
+      "current_version": "3.0.3",
+      "latest_version": "3.0.3",
+      "status": "up_to_date"
+    },
+    {
+      "name": "numpy",
+      "current_version": "2.4.6",
+      "latest_version": "2.5.0",
+      "status": "needs_update"
+    },
+    {
+      "name": "requests",
+      "current_version": "2.34.2",
+      "latest_version": "2.34.2",
+      "status": "up_to_date"
+    }
+  ],
+  "updates_available": 3,
+  "updates_details": {
+    "mcp": ["scrapling 0.4.8→0.4.9"],
+    "python_packages": ["akshare 1.18.63→1.18.64", "numpy 2.4.6→2.5.0"]
+  },
+  "aihot_api_status": "available (HTTP 200, 316KB)",
+  "_filename": "2026-07-01.json",
+  "_saved_at": "2026-07-01T08:48:04+08:00"
+}

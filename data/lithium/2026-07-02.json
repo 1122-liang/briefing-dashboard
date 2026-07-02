@@ -1,0 +1,146 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T08:45:47.448925+08:00",
+  "li_price": {
+    "close": 164560.0,
+    "open": 164000.0,
+    "high": 166500.0,
+    "low": 161500.0,
+    "change_pct": 0.0,
+    "source": "eastmoney"
+  },
+  "score": -2,
+  "score_level": "偏空",
+  "score_details": [
+    {
+      "dimension": "趋势",
+      "score": "-1",
+      "note": "偏空（MA20<MA60）"
+    },
+    {
+      "dimension": "量价",
+      "score": "0",
+      "note": "量价中性"
+    },
+    {
+      "dimension": "持仓",
+      "score": "0",
+      "note": "持仓423487手，方向不明确"
+    },
+    {
+      "dimension": "RSI",
+      "score": "0",
+      "note": "RSI=47.8"
+    },
+    {
+      "dimension": "仓单",
+      "score": "-1",
+      "note": "仓单增加1450手"
+    }
+  ],
+  "indicators": {
+    "futures": {
+      "latest": 164560.0,
+      "open": 164000.0,
+      "high": 166500.0,
+      "low": 161500.0,
+      "change_pct": 0.0,
+      "volume": 278547.0,
+      "amount_yi": null,
+      "volume_ratio": null,
+      "amplitude": null,
+      "source": "eastmoney"
+    },
+    "open_interest": {
+      "value": 423487.0,
+      "settle": 163760.0
+    },
+    "technical": {
+      "ma20": 164089.0,
+      "ma60": 174065.7,
+      "trend": "偏空（MA20<MA60）",
+      "rsi": 47.8,
+      "rsi_signal": "中性",
+      "data_points": 80
+    },
+    "cost": {
+      "salt_lake": 3.5,
+      "spodumene": 7.0,
+      "mica": 13.5,
+      "marginal": 21.0,
+      "price_wan": 16.5
+    },
+    "seasonal": {
+      "month": 7,
+      "index": 0.96,
+      "phase": "淡季"
+    },
+    "geo_risks": [
+      {
+        "name": "津巴布韦禁令",
+        "status": "有条件恢复",
+        "score": 6
+      },
+      {
+        "name": "江西宜春整治",
+        "status": "换证停产中",
+        "score": 5
+      }
+    ]
+  },
+  "alerts": [],
+  "companies": {
+    "ganfeng": {
+      "name": "赣锋锂业",
+      "code": "002460",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "yanhu": {
+      "name": "盐湖股份",
+      "code": "000792",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "zkcy": {
+      "name": "中矿资源",
+      "code": "002738",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    },
+    "tianqi": {
+      "name": "天齐锂业",
+      "code": "002466",
+      "price": null,
+      "ton_profit": null,
+      "gross_margin": null,
+      "quarterly_net": null,
+      "eps_annual": null,
+      "valuation": null,
+      "elasticity": null
+    }
+  },
+  "geo_risks": [],
+  "seasonal_index": 0.96,
+  "warehouse_data": {
+    "total": 49331,
+    "change": 1450
+  },
+  "_filename": "2026-07-02.json",
+  "_saved_at": "2026-07-02T08:45:47.449065+08:00"
+}

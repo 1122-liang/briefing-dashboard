@@ -1127,8 +1127,11 @@ function filterStocksWithAllStocks(query) {
   const rpsStockMap = {};
   rpsStocks.forEach(s => { rpsStockMap[s.code] = s; });
   
+  // 搜索数据源：优先全量股票，为空时回退到 RPS 股票列表
+  const searchSource = allStocks.length > 0 ? allStocks : rpsStocks;
+  
   // 匹配：代码、名称、拼音首字母
-  const matchedStocks = allStocks.filter(s => {
+  const matchedStocks = searchSource.filter(s => {
     const code = (s.code || '').toLowerCase();
     const name = s.name || '';
     return code === q || name.toLowerCase() === q || code.includes(q) || name.toLowerCase().includes(q) || matchesPinyin(name, query);

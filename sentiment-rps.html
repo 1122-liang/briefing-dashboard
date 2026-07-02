@@ -1383,10 +1383,13 @@ function findStockSectorsAndConcepts(stockQuery) {
   const q = stockQuery.toLowerCase().trim();
   if (!q) return null;
   
+  // 搜索数据源：优先全量股票，为空时回退到 RPS 股票列表
   const allStocks = currentData.all_stocks || [];
+  const rpsStocks = currentData.stocks || [];
+  const searchSource = allStocks.length > 0 ? allStocks : rpsStocks;
   
   // 优先精确匹配，其次模糊匹配
-  let matchedStock = allStocks.find(s => {
+  let matchedStock = searchSource.find(s => {
     const code = (s.code || '').toLowerCase();
     const name = (s.name || '').toLowerCase();
     return code === q || name === q;
@@ -1394,7 +1397,7 @@ function findStockSectorsAndConcepts(stockQuery) {
   
   if (!matchedStock) {
     // 模糊匹配：输入内容是名称或代码的子串，或拼音首字母匹配
-    matchedStock = allStocks.find(s => {
+    matchedStock = searchSource.find(s => {
       const code = (s.code || '').toLowerCase();
       const name = (s.name || '').toLowerCase();
       return name.includes(q) || code.includes(q) || matchesPinyin(s.name, stockQuery);
@@ -1406,13 +1409,13 @@ function findStockSectorsAndConcepts(stockQuery) {
   const stockCode = matchedStock.code;
   const stockSectorL3 = matchedStock.sector_l3;
   
-  // 板块：用 all_stocks 的 sector_l3 字段查找
+  // 板块：用 sector_l3 字段查找
   const sectors = currentData.sectors || [];
   const matchedSectors = sectors.filter(s => {
     return s.sector_name === stockSectorL3;
   }).map(s => s.sector_name);
   
-  // 概念：直接从 all_stocks 的 concepts 字段获取
+  // 获取 concepts 字段（rpsStocks 使用 top_concept/concepts，allStocks 使用 concepts）
   const matchedConcepts = matchedStock.concepts || [];
   
   return {

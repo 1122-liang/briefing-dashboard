@@ -1,42 +1,5 @@
 {
-  "updated_at": "2026-07-01T15:55:41",
-  "count": 6,
-  "stocks": [
-    {
-      "symbol": "SZ300872",
-      "name": "天阳科技",
-      "marketplace": "CN",
-      "watched": "2026-07-01T13:06:58"
-    },
-    {
-      "symbol": "SZ002407",
-      "name": "多氟多",
-      "marketplace": "CN",
-      "watched": "2026-07-01T12:04:03"
-    },
-    {
-      "symbol": "SH603379",
-      "name": "三美股份",
-      "marketplace": "CN",
-      "watched": "2026-07-01T12:03:56"
-    },
-    {
-      "symbol": "SH600961",
-      "name": "株冶集团",
-      "marketplace": "CN",
-      "watched": "2026-07-01T10:17:57"
-    },
-    {
-      "symbol": "SH688432",
-      "name": "有研硅",
-      "marketplace": "CN",
-      "watched": "2026-07-01T10:12:25"
-    },
-    {
-      "symbol": "SZ300666",
-      "name": "江丰电子",
-      "marketplace": "CN",
-      "watched": "2026-07-01T09:56:22"
-    }
-  ]
+  "updated_at": "2026-07-02T11:00:31",
+  "count": 0,
+  "stocks": []
 }

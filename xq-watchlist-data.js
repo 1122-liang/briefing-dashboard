@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-03T13:55:37",
-  "count": 4,
+  "updated_at": "2026-07-03T14:45:45",
+  "count": 5,
   "stocks": [
+    {
+      "symbol": "SZ301033",
+      "name": "迈普医学",
+      "marketplace": "CN",
+      "watched": "2026-07-03T14:06:10"
+    },
     {
       "symbol": "SZ000908",
       "name": "石药景峰",
@@ -29,6 +35,18 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-03",
+    "changes": [
+      {
+        "time": "14:10",
+        "action": "add",
+        "symbol": "SZ301033",
+        "name": "迈普医学",
+        "watched": "2026-07-03T14:06:10"
+      }
+    ]
+  },
   {
     "date": "2026-07-02",
     "changes": [

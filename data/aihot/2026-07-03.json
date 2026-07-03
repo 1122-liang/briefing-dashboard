@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T08:43:59.014602+08:00",
+  "window_hours": 24,
+  "total_opportunities": 7,
+  "opportunities": [
+    {
+      "id": 1,
+      "title": "证监会同意宇树科技科创板IPO注册",
+      "industry": "具身智能/人形机器人",
+      "type": "重大事件",
+      "summary": "证监会7月2日同意宇树科技科创板IPO注册申请。宇树科技是国内头部人形/四足机器人企业，核心零部件(关节电机、减速器、控制器)全栈自研，关键部件成本仅为进口1/3。批复12个月内有效。",
+      "investment_logic": "①宇树IPO标志人形机器人从实验室进入资本市场定价阶段，将带动整个产业链估值重估 ②核心零部件自研能力形成壁垒，成本优势显著 ③全球四足机器人销量领先，人形机器人产品即将量产",
+      "target_stocks": "A股\"绿的谐波(688017)\"、\"天奇股份(002009)\"、港股\"优必选(09880.HK)\"、美股\"特斯拉(TSLA)\"、\"英伟达(NVDA)\"",
+      "risk_note": "IPO估值可能偏高；人形机器人C端商业化仍处早期，短期内难以盈利",
+      "source": "IT之家, 证监会公告"
+    },
+    {
+      "id": 2,
+      "title": "Microsoft成立Frontier Company：25亿美元派驻6000名AI工程师到企业客户",
+      "industry": "AI企业服务",
+      "type": "行业新方向",
+      "summary": "Microsoft新设Frontier Company，拨款25亿美元，将6000名工程师派驻企业客户现场\"共同设计、部署并持续改进AI系统\"，定位为Platform Neutral替代方案，同时借助埃森哲、凯捷、安永等集成商扩大覆盖。",
+      "investment_logic": "①标志企业AI部署从\"卖工具\"升级为\"驻场深度集成\"，打开AI服务新市场 ②25亿美元投入+6000人规模体现微软对企业AI服务商业化的战略决心 ③带动AI咨询、系统集成商需求扩张",
+      "target_stocks": "美股\"微软(MSFT)\"、\"埃森哲(ACN)\"、\"ServiceNow(NOW)\"、A股\"汉得信息(300170)\"、\"中科创达(300496)\"",
+      "risk_note": "驻场模式人力成本高、ROI周期不确定；企业AI实施成功率待验证",
+      "source": "The Decoder"
+    },
+    {
+      "id": 3,
+      "title": "快手可灵AI获20亿美元注资，投后估值180亿美元",
+      "industry": "AI视频生成",
+      "type": "重大事件",
+      "summary": "快手公告21名投资者以20.28亿美元注资可灵AI，15名额外投资者追加7.66亿美元，总上限30亿美元。投后估值180亿美元，预计12个月内启动赴港上市，募资用于算力、数据中心及人才。",
+      "investment_logic": "①可灵AI独立融资+上市计划验证中国AI视频生成赛道商业化预期 ②$180亿估值标志AI视频从产品走向资本化 ③快手母体估值重塑，AI业务独立估值催化重估",
+      "target_stocks": "港股\"快手(01024.HK)\"、美股\"Adobe(ADBE)\"、\"Getty Images(GETY)\"",
+      "risk_note": "AI视频生成赛道竞争激烈(Sora/Veo/Runway)；可灵独立上市仍存在不确定性",
+      "source": "IT之家, 港交所公告"
+    },
+    {
+      "id": 4,
+      "title": "谷歌AI建设推动用电量激增37%，数据中心年耗电超4200万兆瓦时",
+      "industry": "AI能源/电力",
+      "type": "行业瓶颈变化",
+      "summary": "2025年谷歌用电量同比增37%创历史最大增幅，数据中心年耗电超4200万兆瓦时(超新西兰/丹麦/尼日利亚全国用电)。自2019年谷歌用电量增长超250%。AI基建速度已超电网脱碳速度。",
+      "investment_logic": "①AI数据中心已成为全球电力需求增长最大驱动力 ②电力瓶颈将成为AI扩张的硬约束，电网升级/备用电源/液冷等基础设施需求确定性增长 ③清洁电力供给缺口扩大利好核电/可再生能源",
+      "target_stocks": "美股\"Vertiv(VRT)\"、\"施耐德电气(SBGSY)\"、\"GE Vernova(GEV)\"、\"Constellation Energy(CEG)\"、A股\"科华数据(002335)\"、\"英维克(002837)\"",
+      "risk_note": "电力基础设施投资周期长；环保政策可能限制数据中心扩张",
+      "source": "Ars Technica"
+    },
+    {
+      "id": 5,
+      "title": "企业AI成本失控：花旗、Adobe限制员工使用AI旗舰模型",
+      "industry": "AI推理/高效算力",
+      "type": "行业瓶颈变化",
+      "summary": "Atlassian、Adobe、亚马逊等企业限制员工使用高端AI模型。花旗禁用Claude Opus 4.6/4.7及GPT-5.5；Adobe终止Claude无限制协议；Atlassian月AI支出从$500万飙至$1500万，年化超$1.2亿。",
+      "investment_logic": "①企业AI成本失控正在成为AI大规模部署的硬瓶颈，倒逼推理效率革命 ②开源低成本模型(DeepSeek/千问等)将受益于\"降本替代\"需求 ③推理芯片(ASIC/FPGA)和推理优化技术需求爆发",
+      "target_stocks": "美股\"英伟达(NVDA)\"、\"博通(AVGO)\"、\"Marvell Technology(MRVL)\"、A股\"寒武纪(688256)\"、\"海光信息(688041)\"",
+      "risk_note": "开源模型替代可能抑制高端芯片需求；企业可能整体收缩AI预算",
+      "source": "404 Media, IT之家"
+    },
+    {
+      "id": 6,
+      "title": "AI Agent自动化率8个月提升6倍至16.1%",
+      "industry": "AI Agent/自动化",
+      "type": "行业新方向",
+      "summary": "RLI基准评估240个付费自由职业项目(总值$14.4万)的专业质量完成率。Fable 5达16.1%，是8个月前最佳系统2.5%的6.4倍，超过Opus 4.8(8.3%)和GPT-5.5(6.3%)。测试覆盖Blender建模、专业软件开发等真实工作。",
+      "investment_logic": "①16.1%自动化率意味着自由职业市场约$1.5万亿规模中已有$2400亿可由AI完成 ②6倍增速表明AI Agent能力沿指数曲线提升，企业自动化投资ROI持续改善 ③AI Agent SaaS工具和RPA替代需求进入加速期",
+      "target_stocks": "美股\"微软(MSFT)\"、\"Salesforce(CRM)\"、\"UiPath(PATH)\"、\"ServiceNow(NOW)\"、A股\"金山办公(688111)\"、\"用友网络(600588)\"",
+      "risk_note": "自动化率绝对值仍低(84%任务未达标)，企业大规模部署信任度待建立",
+      "source": "The Decoder, RLI"
+    },
+    {
+      "id": 7,
+      "title": "Anthropic与五角大楼控权之争：Claude军事用途护栏分歧",
+      "industry": "AI军事/国防",
+      "type": "政策影响",
+      "summary": "WSJ法庭文件显示Anthropic拒绝五角大楼全自主武器及监控用途要求。五角大楼将Anthropic列为供应链风险，阻止合作伙伴使用其模型。原使用Anthropic的国防项目已有2/3切换至其他AI工具。",
+      "investment_logic": "①AI军事化已成不可逆趋势，五角大楼对AI的刚性需求不会因单一供应商争议而消退 ②Anthropic退出军需市场将加速Palantir等国防AI公司的市场份额扩张 ③自主武器系统AI监管将成为2026-2027年国防AI投资的核心政策变量",
+      "target_stocks": "美股\"Palantir(PLTR)\"、\"洛克希德马丁(LMT)\"、\"诺斯罗普格鲁曼(NOC)\"、A股\"航天彩虹(002389)\"、\"中无人机(688297)\"",
+      "risk_note": "国际AI武器监管框架尚未建立；AI军事化可能引发新的地缘冲突风险",
+      "source": "WSJ, X(Ethan Mollick)"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-07-03.json",
+  "_saved_at": "2026-07-03T08:43:59.015109+08:00"
+}

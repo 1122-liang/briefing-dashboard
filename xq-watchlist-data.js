@@ -1,7 +1,32 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-03T10:55:21",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-07-03T13:55:37",
+  "count": 4,
+  "stocks": [
+    {
+      "symbol": "SZ000908",
+      "name": "石药景峰",
+      "marketplace": "CN",
+      "watched": "2026-07-03T10:32:00"
+    },
+    {
+      "symbol": "SZ002294",
+      "name": "信立泰",
+      "marketplace": "CN",
+      "watched": "2026-07-03T10:25:29"
+    },
+    {
+      "symbol": "SZ002422",
+      "name": "科伦药业",
+      "marketplace": "CN",
+      "watched": "2026-07-02T13:58:55"
+    },
+    {
+      "symbol": "SZ002653",
+      "name": "海思科",
+      "marketplace": "CN",
+      "watched": "2026-07-02T13:54:31"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
   {

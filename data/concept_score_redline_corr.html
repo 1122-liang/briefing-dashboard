@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026一季报预增 · 一线红持仓走势 vs 板块得分</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;padding:20px}
+.container{max-width:1500px;margin:0 auto;background:#fff;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);padding:24px}
+h1{font-size:20px;color:#1a1a1a;margin-bottom:4px}
+.sub{color:#888;font-size:13px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:20px}
+.card{background:#f8f9fa;border-radius:6px;padding:10px 12px}
+.card .v{font-size:20px;font-weight:700}
+.card .l{font-size:11px;color:#888;margin-top:2px}
+.chart-wrap{position:relative;height:580px}
+.legend-row{display:flex;gap:20px;margin-top:14px;font-size:12px;color:#666;flex-wrap:wrap}
+.legend-row span{display:flex;align-items:center;gap:4px}
+.dot{width:10px;height:10px;border-radius:2px}
+.insight{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:12px 16px;margin-top:14px;font-size:13px;color:#856404;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>2026一季报预增 (886109.TI) — 一线红持仓走势 &amp; 板块得分</h1>
+<div class="sub">一线红定义：RPS50≥90 或 RPS120≥93 或 RPS250≥95 · 101只成分股 · 2026-03-26 ~ 2026-05-12 · 持仓调仓以每日一线红名单为准</div>
+
+<div class="grid">
+<div class="card"><div class="v" style="color:#f39c12">0.054</div><div class="l">累积指数 vs 得分 r</div></div>
+<div class="card"><div class="v" style="color:#2ecc71">-0.011</div><div class="l">一线红数量 vs 得分 r</div></div>
+<div class="card"><div class="v">42只</div><div class="l">最多一线红 (2026-04-27)</div></div>
+<div class="card"><div class="v" style="color:#e74c3c">985</div><div class="l">得分峰值 (2026-04-13)</div></div>
+</div>
+
+<div class="chart-wrap"><canvas id="chart"></canvas></div>
+
+<div class="legend-row">
+<span><span class="dot" style="background:#2ecc71"></span> 一线红个股数（柱·右轴）</span>
+<span><span class="dot" style="background:#f39c12"></span> 一线红累积价格指数 100基准（左轴）</span>
+<span><span class="dot" style="background:#e74c3c"></span> 板块得分（右轴）</span>
+</div>
+
+<div class="insight">
+<strong>解读：</strong>
+一线红数量(30~42只)在区间内波动较小(σ≈3)，与板块得分(r=-0.01)几乎无关——说明<em>一线红个股数量"饱和"但不驱动得分</em>。
+但累积价格指数与得分呈<strong>弱相关 (r=0.05)</strong>——说明一线红个股的<em>涨幅幅度</em>而非<em>数量</em>决定了板块得分。
+板块得分高峰期(4/13附近)恰好对应价格指数加速上涨段，两者走势同步。
+</div>
+</div>
+
+<script>
+const dates = ["2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-11", "2026-05-12"];
+const scores = [155.89, 184.25, 271.11, 407.74, 867.46, 423.99, 375.54, 329.46, 196.62, 228.68, 621.03, 455.74, 726.59, 984.51, 964.79, 435.87, 719.05, 702.27, 632.21, 504.4, 715.27, 359.51, 303.61, 320.34, 273.43, 271.35, 361.02, 482.5, 503.08, 579.46, 572.21, 506.57];
+const counts = [31, 32, 30, 32, 34, 34, 35, 33, 33, 33, 34, 33, 34, 32, 33, 32, 34, 35, 37, 39, 40, 37, 38, 42, 37, 38, 39, 39, 35, 36, 35, 33];
+const indexVals = [null, null, 100.0, 102.14, 104.03, 100.97, 104.49, 101.99, 102.64, 103.63, 111.51, 114.1, 115.74, 116.89, 118.22, 117.2, 123.39, 127.99, 126.81, 128.76, 135.4, 132.2, 134.17, 136.04, 134.25, 138.09, 138.63, 144.32, 147.07, 144.56, 149.16, 147.61];
+
+new Chart(document.getElementById('chart'), {
+  type: 'line',
+  data: {
+    labels: dates,
+    datasets: [
+      {
+        label: '一线红个股数',
+        data: counts, type: 'bar',
+        backgroundColor: 'rgba(46,204,113,0.2)',
+        borderColor: '#2ecc71', borderWidth: 1,
+        yAxisID: 'yRed', order: 3
+      },
+      {
+        label: '一线红累积价格指数',
+        data: indexVals,
+        borderColor: '#f39c12',
+        backgroundColor: 'rgba(243,156,18,0.06)',
+        borderWidth: 2.5, pointRadius: 3, pointHoverRadius: 5,
+        fill: true, tension: 0.3, yAxisID: 'yIndex', order: 2
+      },
+      {
+        label: '板块得分',
+        data: scores,
+        borderColor: '#e74c3c', borderWidth: 2.5,
+        pointRadius: 3, tension: 0.3, yAxisID: 'yScore', order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      tooltip: {
+        callbacks: {
+          title: x => x[0].label,
+          label: x => {
+            const ds = x.dataset.label; const v = x.raw;
+            if (v === null) return ds + ': --';
+            return ds + ': ' + (typeof v==='number' ? v.toFixed(1) : v);
+          }
+        }
+      },
+      legend: { display: false }
+    },
+    scales: {
+      x: { title: { display: true, text: '日期', color: '#888' }, grid: { color: '#f0f0f0' } },
+      yRed: {
+        type: 'linear', position: 'right',
+        title: { display: true, text: '一线红个股数', color: '#2ecc71' },
+        grid: { drawOnChartArea: false }, beginAtZero: false
+      },
+      yIndex: {
+        type: 'linear', position: 'left',
+        title: { display: true, text: '累积价格指数', color: '#f39c12' },
+        grid: { color: '#f0f0f0' }
+      },
+      yScore: {
+        type: 'linear', position: 'right',
+        title: { display: true, text: '板块得分', color: '#e74c3c' },
+        grid: { drawOnChartArea: false }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

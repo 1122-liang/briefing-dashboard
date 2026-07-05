@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026一季报预增 — 板块得分 &amp; 四线RPS</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;padding:20px}
+.container{max-width:1400px;margin:0 auto;background:#fff;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);padding:24px}
+h1{font-size:20px;color:#1a1a1a;margin-bottom:4px}
+.sub{color:#888;font-size:13px;margin-bottom:20px}
+.chart-wrap{position:relative;height:550px}
+.legend-note{display:flex;gap:24px;margin-top:16px;font-size:12px;color:#666;flex-wrap:wrap}
+.legend-note span{display:flex;align-items:center;gap:4px}
+.dot{width:10px;height:10px;border-radius:2px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:#f8f9fa;border-radius:6px;padding:12px;text-align:center}
+.stat-val{font-size:22px;font-weight:700;color:#1a1a1a}
+.stat-label{font-size:11px;color:#888;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>2026一季报预增 (886109.TI)</h1>
+<div class="sub">2026-03-26 ~ 2026-05-12 · 板块得分 &amp; 四线RPS · 数据源：本地 pivot 缓存（前复权）</div>
+<div class="stats" id="stats"></div>
+<div class="chart-wrap"><canvas id="chart"></canvas></div>
+<div class="legend-note">
+<span><span class="dot" style="background:#e74c3c"></span> 板块得分（左轴）</span>
+<span><span class="dot" style="background:#3498db"></span> RPS5日</span>
+<span><span class="dot" style="background:#27ae60"></span> RPS10日</span>
+<span><span class="dot" style="background:#f39c12"></span> RPS15日</span>
+<span><span class="dot" style="background:#9b59b6"></span> RPS20日</span>
+<span style="margin-left:auto;color:#aaa">RPS≥90 为强势区间（虚线标注）</span>
+</div>
+</div>
+<script>
+const dates = ["2026-03-26", "2026-03-27", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-11", "2026-05-12"];
+const scores = [271.11, 407.74, 867.46, 423.99, 375.54, 329.46, 196.62, 228.68, 621.03, 455.74, 726.59, 984.51, 964.79, 435.87, 719.05, 702.27, 632.21, 504.4, 715.27, 359.51, 303.61, 320.34, 273.43, 271.35, 361.02, 482.5, 503.08, 579.46, 572.21, 506.57];
+const rps5   = [97.2, 97.7, 92.9, 91.1, 92.4, 87.8, 87.3, 90.6, 89.9, 90.9, 90.9, 97.0, 90.9, 95.9, 99.5, 98.5, 94.4, 96.7, 96.5, 93.2, 96.2, 93.9, 92.2, 88.1, 88.4, 85.1, 77.0, 43.3, 40.0, 48.4];
+const rps10  = [81.0, 92.9, 96.2, 96.2, 95.2, 94.2, 94.4, 92.7, 97.0, 96.5, 96.7, 97.0, 94.4, 92.9, 98.0, 95.4, 97.2, 95.7, 97.5, 99.2, 99.0, 96.7, 98.0, 99.0, 93.9, 93.4, 89.1, 73.4, 58.7, 64.8];
+const rps15  = [91.4, 95.2, 94.2, 88.6, 91.1, 88.1, 92.4, 94.7, 98.0, 98.5, 99.0, 99.0, 98.2, 98.0, 99.2, 98.2, 96.7, 96.7, 95.4, 96.7, 97.2, 98.0, 97.5, 99.2, 98.5, 97.7, 92.7, 88.4, 86.1, 78.2];
+const rps20  = [91.4, 92.9, 86.6, 90.9, 92.7, 91.1, 93.9, 93.4, 96.5, 97.2, 97.5, 98.5, 98.7, 98.7, 98.7, 98.7, 98.5, 98.0, 97.7, 98.2, 99.0, 97.7, 98.0, 98.2, 97.2, 95.9, 94.2, 90.4, 90.1, 88.9];
+
+// Stats
+const validScores = scores.filter(v => v !== null);
+const maxScore = Math.max(...validScores);
+const minScore = Math.min(...validScores);
+const avgScore = (validScores.reduce((a,b)=>a+b,0)/validScores.length).toFixed(1);
+const lastScore = validScores[validScores.length-1];
+document.getElementById('stats').innerHTML = `
+<div class="stat-card"><div class="stat-val" style="color:#e74c3c">${maxScore.toFixed(0)}</div><div class="stat-label">最高得分</div></div>
+<div class="stat-card"><div class="stat-val" style="color:#888">${minScore.toFixed(0)}</div><div class="stat-label">最低得分</div></div>
+<div class="stat-card"><div class="stat-val">${avgScore}</div><div class="stat-label">平均得分</div></div>
+<div class="stat-card"><div class="stat-val">${lastScore.toFixed(0)}</div><div class="stat-label">期末得分</div></div>
+`;
+
+// Chart
+const ctx = document.getElementById('chart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: dates,
+    datasets: [
+      {
+        label: '板块得分',
+        data: scores,
+        borderColor: '#e74c3c',
+        backgroundColor: 'rgba(231,76,60,0.08)',
+        borderWidth: 2.5,
+        pointRadius: 3,
+        pointHoverRadius: 5,
+        fill: true,
+        tension: 0.3,
+        yAxisID: 'y',
+        order: 1
+      },
+      {
+        label: 'RPS 5日',
+        data: rps5,
+        borderColor: '#3498db',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'yRPS',
+        order: 2
+      },
+      {
+        label: 'RPS 10日',
+        data: rps10,
+        borderColor: '#27ae60',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'yRPS',
+        order: 3
+      },
+      {
+        label: 'RPS 15日',
+        data: rps15,
+        borderColor: '#f39c12',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'yRPS',
+        order: 4
+      },
+      {
+        label: 'RPS 20日',
+        data: rps20,
+        borderColor: '#9b59b6',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'yRPS',
+        order: 5
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: {
+      mode: 'index',
+      intersect: false
+    },
+    plugins: {
+      tooltip: {
+        callbacks: {
+          title: items => items[0].label,
+          label: ctx => {
+            const ds = ctx.dataset.label;
+            const v = ctx.raw;
+            if (v === null) return ds + ': --';
+            if (ds === '板块得分') return ds + ': ' + v.toFixed(1);
+            return ds + ': ' + v.toFixed(1);
+          }
+        }
+      },
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        title: { display: true, text: '日期', color: '#888' },
+        grid: { color: '#f0f0f0' }
+      },
+      y: {
+        type: 'linear',
+        position: 'left',
+        title: { display: true, text: '板块得分', color: '#e74c3c' },
+        min: 0,
+        grid: { color: '#f0f0f0' }
+      },
+      yRPS: {
+        type: 'linear',
+        position: 'right',
+        title: { display: true, text: 'RPS 排名', color: '#3498db' },
+        min: 0,
+        max: 100,
+        grid: { drawOnChartArea: false },
+        ticks: {
+          stepSize: 10,
+          callback: v => v + '%'
+        }
+      }
+    }
+  },
+  plugins: [{
+    id: 'rps90line',
+    afterDraw: chart => {
+      const yScale = chart.scales.yRPS;
+      const xScale = chart.scales.x;
+      const y = yScale.getPixelForValue(90);
+      const ctx = chart.ctx;
+      ctx.save();
+      ctx.beginPath();
+      ctx.setLineDash([4, 4]);
+      ctx.strokeStyle = 'rgba(0,0,0,0.2)';
+      ctx.lineWidth = 1;
+      ctx.moveTo(xScale.left, y);
+      ctx.lineTo(xScale.right, y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = 'rgba(0,0,0,0.25)';
+      ctx.font = '11px sans-serif';
+      ctx.textAlign = 'right';
+      ctx.fillText('RPS=90', xScale.right - 4, y - 4);
+      ctx.restore();
+    }
+  }]
+});
+</script>
+</body>
+</html>

@@ -1,12 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-03T15:56:05",
-  "count": 5,
+  "updated_at": "2026-07-06T10:55:33",
+  "count": 7,
   "stocks": [
     {
-      "symbol": "SZ301033",
-      "name": "迈普医学",
+      "symbol": "SH603127",
+      "name": "昭衍新药",
       "marketplace": "CN",
-      "watched": "2026-07-03T14:06:10"
+      "watched": "2026-07-06T09:37:49"
+    },
+    {
+      "symbol": "SH688068",
+      "name": "热景生物",
+      "marketplace": "CN",
+      "watched": "2026-07-06T09:34:43"
+    },
+    {
+      "symbol": "SZ300759",
+      "name": "康龙化成",
+      "marketplace": "CN",
+      "watched": "2026-07-06T09:31:26"
     },
     {
       "symbol": "SZ000908",
@@ -35,6 +47,38 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-06",
+    "changes": [
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-06T09:37:49"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ301033",
+        "name": "迈普医学"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH688068",
+        "name": "热景生物",
+        "watched": "2026-07-06T09:34:43"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-07-06T09:31:26"
+      }
+    ]
+  },
   {
     "date": "2026-07-03",
     "changes": [

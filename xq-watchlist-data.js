@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-06T10:55:33",
-  "count": 7,
+  "updated_at": "2026-07-06T11:09:08",
+  "count": 8,
   "stocks": [
+    {
+      "symbol": "SZ301520",
+      "name": "万邦医药",
+      "marketplace": "CN",
+      "watched": "2026-07-06T10:57:07"
+    },
     {
       "symbol": "SH603127",
       "name": "昭衍新药",
@@ -50,6 +56,13 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-06",
     "changes": [
+      {
+        "time": "11:00",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-06T10:57:07"
+      },
       {
         "time": "09:40",
         "action": "add",

@@ -3,6 +3,13 @@
     "date": "2026-07-06",
     "changes": [
       {
+        "time": "11:00",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-06T10:57:07"
+      },
+      {
         "time": "09:40",
         "action": "add",
         "symbol": "SH603127",

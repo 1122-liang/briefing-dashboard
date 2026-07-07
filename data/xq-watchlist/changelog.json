@@ -1,5 +1,54 @@
 [
   {
+    "date": "2026-07-07",
+    "changes": [
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SZ000908",
+        "name": "石药景峰"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH688068",
+        "name": "热景生物"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ000566",
+        "name": "海南海药"
+      },
+      {
+        "time": "09:00",
+        "action": "add",
+        "symbol": "SH600521",
+        "name": "华海药业",
+        "watched": "2026-07-06T15:09:13"
+      },
+      {
+        "time": "09:00",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-06T14:38:55"
+      },
+      {
+        "time": "09:00",
+        "action": "remove",
+        "symbol": "SZ002294",
+        "name": "信立泰"
+      },
+      {
+        "time": "09:00",
+        "action": "remove",
+        "symbol": "SZ002422",
+        "name": "科伦药业"
+      }
+    ]
+  },
+  {
     "date": "2026-07-06",
     "changes": [
       {

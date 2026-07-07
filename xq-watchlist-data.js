@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-06T11:09:08",
-  "count": 8,
+  "updated_at": "2026-07-07T10:55:18",
+  "count": 5,
   "stocks": [
+    {
+      "symbol": "SH600521",
+      "name": "华海药业",
+      "marketplace": "CN",
+      "watched": "2026-07-06T15:09:13"
+    },
     {
       "symbol": "SZ301520",
       "name": "万邦医药",
@@ -15,34 +21,10 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-06T09:37:49"
     },
     {
-      "symbol": "SH688068",
-      "name": "热景生物",
-      "marketplace": "CN",
-      "watched": "2026-07-06T09:34:43"
-    },
-    {
       "symbol": "SZ300759",
       "name": "康龙化成",
       "marketplace": "CN",
       "watched": "2026-07-06T09:31:26"
-    },
-    {
-      "symbol": "SZ000908",
-      "name": "石药景峰",
-      "marketplace": "CN",
-      "watched": "2026-07-03T10:32:00"
-    },
-    {
-      "symbol": "SZ002294",
-      "name": "信立泰",
-      "marketplace": "CN",
-      "watched": "2026-07-03T10:25:29"
-    },
-    {
-      "symbol": "SZ002422",
-      "name": "科伦药业",
-      "marketplace": "CN",
-      "watched": "2026-07-02T13:58:55"
     },
     {
       "symbol": "SZ002653",
@@ -53,6 +35,55 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-07",
+    "changes": [
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SZ000908",
+        "name": "石药景峰"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH688068",
+        "name": "热景生物"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ000566",
+        "name": "海南海药"
+      },
+      {
+        "time": "09:00",
+        "action": "add",
+        "symbol": "SH600521",
+        "name": "华海药业",
+        "watched": "2026-07-06T15:09:13"
+      },
+      {
+        "time": "09:00",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-06T14:38:55"
+      },
+      {
+        "time": "09:00",
+        "action": "remove",
+        "symbol": "SZ002294",
+        "name": "信立泰"
+      },
+      {
+        "time": "09:00",
+        "action": "remove",
+        "symbol": "SZ002422",
+        "name": "科伦药业"
+      }
+    ]
+  },
   {
     "date": "2026-07-06",
     "changes": [

@@ -1,18 +1,12 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-07T14:44:16",
-  "count": 4,
+  "updated_at": "2026-07-07T15:04:17",
+  "count": 3,
   "stocks": [
     {
       "symbol": "SH600521",
       "name": "华海药业",
       "marketplace": "CN",
       "watched": "2026-07-06T15:09:13"
-    },
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-06T10:57:07"
     },
     {
       "symbol": "SZ300759",
@@ -32,6 +26,12 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-07",
     "changes": [
+      {
+        "time": "14:49",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
       {
         "time": "14:19",
         "action": "remove",

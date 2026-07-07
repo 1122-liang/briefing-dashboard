@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-07T11:55:33",
-  "count": 5,
+  "updated_at": "2026-07-07T14:44:16",
+  "count": 4,
   "stocks": [
     {
       "symbol": "SH600521",
@@ -13,12 +13,6 @@
       "name": "万邦医药",
       "marketplace": "CN",
       "watched": "2026-07-06T10:57:07"
-    },
-    {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
-      "marketplace": "CN",
-      "watched": "2026-07-06T09:37:49"
     },
     {
       "symbol": "SZ300759",

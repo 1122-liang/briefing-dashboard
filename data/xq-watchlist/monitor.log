@@ -1920,3 +1920,37 @@
 [ERROR] 登录态失效: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>
 [ERROR] 企微推送失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>
 [INFO] 持续运行模式已退出
+[INFO] 持续运行模式启动 (PID=99776)
+[INFO] 运行窗口: 9:00 - 16:00
+[INFO] 轮询间隔: 300s
+
+[14:19:11] 执行检测...
+[INFO] 当前自选股: 4 只
+[CHANGE] 新增=0 移除=1 (5 → 4)
+[OK] 企微推送成功
+[INFO] 下次检测: 14:24:11
+
+[14:24:12] 执行检测...
+[INFO] 当前自选股: 4 只
+[INFO] 无变动
+[INFO] 下次检测: 14:29:12
+
+[14:29:12] 执行检测...
+[INFO] 当前自选股: 4 只
+[INFO] 无变动
+[INFO] 下次检测: 14:34:12
+
+[14:34:13] 执行检测...
+[INFO] 当前自选股: 4 只
+[INFO] 无变动
+[INFO] 下次检测: 14:39:13
+
+[14:39:14] 执行检测...
+[INFO] 当前自选股: 4 只
+[INFO] 无变动
+[INFO] 下次检测: 14:44:14
+
+[14:44:15] 执行检测...
+[INFO] 当前自选股: 4 只
+[INFO] 无变动
+[INFO] 下次检测: 14:49:15

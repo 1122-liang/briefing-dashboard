@@ -1,24 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-08T11:00:22",
+  "updated_at": "2026-07-08T14:00:54",
   "count": 7,
   "stocks": [
+    {
+      "symbol": "SH688347",
+      "name": "华虹宏力",
+      "marketplace": "CN",
+      "watched": "2026-07-08T11:21:16"
+    },
+    {
+      "symbol": "SZ300604",
+      "name": "长川科技",
+      "marketplace": "CN",
+      "watched": "2026-07-08T11:07:22"
+    },
     {
       "symbol": "SZ301369",
       "name": "联动科技",
       "marketplace": "CN",
       "watched": "2026-07-08T10:37:51"
-    },
-    {
-      "symbol": "SZ301018",
-      "name": "申菱环境",
-      "marketplace": "CN",
-      "watched": "2026-07-08T10:29:25"
-    },
-    {
-      "symbol": "SZ002384",
-      "name": "东山精密",
-      "marketplace": "CN",
-      "watched": "2026-07-08T10:23:12"
     },
     {
       "symbol": "SZ300308",
@@ -50,6 +50,32 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-08",
     "changes": [
+      {
+        "time": "13:10",
+        "action": "remove",
+        "symbol": "SZ002384",
+        "name": "东山精密"
+      },
+      {
+        "time": "13:10",
+        "action": "remove",
+        "symbol": "SZ301018",
+        "name": "申菱环境"
+      },
+      {
+        "time": "11:25",
+        "action": "add",
+        "symbol": "SH688347",
+        "name": "华虹宏力",
+        "watched": "2026-07-08T11:21:16"
+      },
+      {
+        "time": "11:10",
+        "action": "add",
+        "symbol": "SZ300604",
+        "name": "长川科技",
+        "watched": "2026-07-08T11:07:22"
+      },
       {
         "time": "10:40",
         "action": "add",

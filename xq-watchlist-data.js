@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-08T14:00:54",
-  "count": 7,
+  "updated_at": "2026-07-08T14:56:01",
+  "count": 8,
   "stocks": [
+    {
+      "symbol": "SZ002384",
+      "name": "东山精密",
+      "marketplace": "CN",
+      "watched": "2026-07-08T14:07:10"
+    },
     {
       "symbol": "SH688347",
       "name": "华虹宏力",
@@ -50,6 +56,13 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-08",
     "changes": [
+      {
+        "time": "14:10",
+        "action": "add",
+        "symbol": "SZ002384",
+        "name": "东山精密",
+        "watched": "2026-07-08T14:07:10"
+      },
       {
         "time": "13:10",
         "action": "remove",

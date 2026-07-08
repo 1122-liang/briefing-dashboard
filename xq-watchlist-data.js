@@ -1,28 +1,137 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-07T15:59:24",
-  "count": 3,
+  "updated_at": "2026-07-08T11:00:22",
+  "count": 7,
   "stocks": [
     {
-      "symbol": "SH600521",
-      "name": "华海药业",
+      "symbol": "SZ301369",
+      "name": "联动科技",
       "marketplace": "CN",
-      "watched": "2026-07-06T15:09:13"
+      "watched": "2026-07-08T10:37:51"
     },
     {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
+      "symbol": "SZ301018",
+      "name": "申菱环境",
       "marketplace": "CN",
-      "watched": "2026-07-06T09:31:26"
+      "watched": "2026-07-08T10:29:25"
     },
     {
-      "symbol": "SZ002653",
-      "name": "海思科",
+      "symbol": "SZ002384",
+      "name": "东山精密",
       "marketplace": "CN",
-      "watched": "2026-07-02T13:54:31"
+      "watched": "2026-07-08T10:23:12"
+    },
+    {
+      "symbol": "SZ300308",
+      "name": "中际旭创",
+      "marketplace": "CN",
+      "watched": "2026-07-08T10:23:03"
+    },
+    {
+      "symbol": "SZ301165",
+      "name": "锐捷网络",
+      "marketplace": "CN",
+      "watched": "2026-07-08T09:47:32"
+    },
+    {
+      "symbol": "SZ300821",
+      "name": "东岳硅材",
+      "marketplace": "CN",
+      "watched": "2026-07-08T09:47:23"
+    },
+    {
+      "symbol": "SH600129",
+      "name": "太极集团",
+      "marketplace": "CN",
+      "watched": "2026-07-08T09:42:19"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-08",
+    "changes": [
+      {
+        "time": "10:40",
+        "action": "add",
+        "symbol": "SZ301369",
+        "name": "联动科技",
+        "watched": "2026-07-08T10:37:51"
+      },
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ301018",
+        "name": "申菱环境",
+        "watched": "2026-07-08T10:29:25"
+      },
+      {
+        "time": "10:25",
+        "action": "add",
+        "symbol": "SZ002384",
+        "name": "东山精密",
+        "watched": "2026-07-08T10:23:12"
+      },
+      {
+        "time": "10:25",
+        "action": "add",
+        "symbol": "SZ300308",
+        "name": "中际旭创",
+        "watched": "2026-07-08T10:23:03"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
+        "time": "10:15",
+        "action": "remove",
+        "symbol": "SH600521",
+        "name": "华海药业"
+      },
+      {
+        "time": "10:00",
+        "action": "remove",
+        "symbol": "SZ300759",
+        "name": "康龙化成"
+      },
+      {
+        "time": "09:50",
+        "action": "add",
+        "symbol": "SZ300821",
+        "name": "东岳硅材",
+        "watched": "2026-07-08T09:47:23"
+      },
+      {
+        "time": "09:50",
+        "action": "add",
+        "symbol": "SZ301165",
+        "name": "锐捷网络",
+        "watched": "2026-07-08T09:47:32"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SH600129",
+        "name": "太极集团",
+        "watched": "2026-07-08T09:42:19"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-08T09:40:46"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ002653",
+        "name": "海思科"
+      }
+    ]
+  },
   {
     "date": "2026-07-07",
     "changes": [

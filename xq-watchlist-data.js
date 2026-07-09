@@ -1,12 +1,30 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-08T15:56:09",
-  "count": 8,
+  "updated_at": "2026-07-09T11:05:25",
+  "count": 6,
   "stocks": [
     {
-      "symbol": "SZ002384",
-      "name": "东山精密",
+      "symbol": "SH688206",
+      "name": "概伦电子",
       "marketplace": "CN",
-      "watched": "2026-07-08T14:07:10"
+      "watched": "2026-07-09T10:10:19"
+    },
+    {
+      "symbol": "SH688403",
+      "name": "汇成股份",
+      "marketplace": "CN",
+      "watched": "2026-07-09T09:48:25"
+    },
+    {
+      "symbol": "SH688432",
+      "name": "有研硅",
+      "marketplace": "CN",
+      "watched": "2026-07-09T09:43:05"
+    },
+    {
+      "symbol": "SH600909",
+      "name": "华安证券",
+      "marketplace": "CN",
+      "watched": "2026-07-09T09:31:07"
     },
     {
       "symbol": "SH688347",
@@ -15,44 +33,83 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-08T11:21:16"
     },
     {
-      "symbol": "SZ300604",
-      "name": "长川科技",
-      "marketplace": "CN",
-      "watched": "2026-07-08T11:07:22"
-    },
-    {
-      "symbol": "SZ301369",
-      "name": "联动科技",
-      "marketplace": "CN",
-      "watched": "2026-07-08T10:37:51"
-    },
-    {
-      "symbol": "SZ300308",
-      "name": "中际旭创",
-      "marketplace": "CN",
-      "watched": "2026-07-08T10:23:03"
-    },
-    {
-      "symbol": "SZ301165",
-      "name": "锐捷网络",
-      "marketplace": "CN",
-      "watched": "2026-07-08T09:47:32"
-    },
-    {
       "symbol": "SZ300821",
       "name": "东岳硅材",
       "marketplace": "CN",
       "watched": "2026-07-08T09:47:23"
-    },
-    {
-      "symbol": "SH600129",
-      "name": "太极集团",
-      "marketplace": "CN",
-      "watched": "2026-07-08T09:42:19"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-09",
+    "changes": [
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SZ300308",
+        "name": "中际旭创"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SZ300604",
+        "name": "长川科技"
+      },
+      {
+        "time": "10:15",
+        "action": "add",
+        "symbol": "SH688206",
+        "name": "概伦电子",
+        "watched": "2026-07-09T10:10:19"
+      },
+      {
+        "time": "09:50",
+        "action": "add",
+        "symbol": "SH688403",
+        "name": "汇成股份",
+        "watched": "2026-07-09T09:48:25"
+      },
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SZ002384",
+        "name": "东山精密"
+      },
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SZ301369",
+        "name": "联动科技"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SH688432",
+        "name": "有研硅",
+        "watched": "2026-07-09T09:43:05"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH600909",
+        "name": "华安证券",
+        "watched": "2026-07-09T09:31:07"
+      },
+      {
+        "time": "09:30",
+        "action": "remove",
+        "symbol": "SH600129",
+        "name": "太极集团"
+      },
+      {
+        "time": "09:30",
+        "action": "remove",
+        "symbol": "SZ301165",
+        "name": "锐捷网络"
+      }
+    ]
+  },
   {
     "date": "2026-07-08",
     "changes": [

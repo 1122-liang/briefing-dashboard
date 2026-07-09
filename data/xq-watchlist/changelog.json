@@ -3,6 +3,27 @@
     "date": "2026-07-09",
     "changes": [
       {
+        "time": "13:26",
+        "action": "add",
+        "symbol": "SZ300604",
+        "name": "长川科技",
+        "watched": "2026-07-09T13:24:17"
+      },
+      {
+        "time": "13:11",
+        "action": "add",
+        "symbol": "SH688328",
+        "name": "深科达",
+        "watched": "2026-07-09T13:06:26"
+      },
+      {
+        "time": "13:11",
+        "action": "add",
+        "symbol": "SZ002384",
+        "name": "东山精密",
+        "watched": "2026-07-09T13:10:08"
+      },
+      {
         "time": "10:20",
         "action": "remove",
         "symbol": "SZ300308",

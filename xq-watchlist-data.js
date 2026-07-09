@@ -1,7 +1,25 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-09T11:05:25",
-  "count": 6,
+  "updated_at": "2026-07-09T14:01:08",
+  "count": 9,
   "stocks": [
+    {
+      "symbol": "SZ300604",
+      "name": "长川科技",
+      "marketplace": "CN",
+      "watched": "2026-07-09T13:24:17"
+    },
+    {
+      "symbol": "SZ002384",
+      "name": "东山精密",
+      "marketplace": "CN",
+      "watched": "2026-07-09T13:10:08"
+    },
+    {
+      "symbol": "SH688328",
+      "name": "深科达",
+      "marketplace": "CN",
+      "watched": "2026-07-09T13:06:26"
+    },
     {
       "symbol": "SH688206",
       "name": "概伦电子",
@@ -44,6 +62,27 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-09",
     "changes": [
+      {
+        "time": "13:26",
+        "action": "add",
+        "symbol": "SZ300604",
+        "name": "长川科技",
+        "watched": "2026-07-09T13:24:17"
+      },
+      {
+        "time": "13:11",
+        "action": "add",
+        "symbol": "SH688328",
+        "name": "深科达",
+        "watched": "2026-07-09T13:06:26"
+      },
+      {
+        "time": "13:11",
+        "action": "add",
+        "symbol": "SZ002384",
+        "name": "东山精密",
+        "watched": "2026-07-09T13:10:08"
+      },
       {
         "time": "10:20",
         "action": "remove",

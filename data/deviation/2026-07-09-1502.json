@@ -1,0 +1,145 @@
+{
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T15:02:37.004886+08:00",
+  "runs": [
+    {
+      "time": "15:02",
+      "generated_at": "2026-07-09T15:02:37.004886+08:00",
+      "stocks": [
+        {
+          "name": "赣锋锂业",
+          "code": "002460",
+          "price": 55.99,
+          "deviation_pct": -22.3,
+          "threshold_pct": 65.4,
+          "trigger_price": 92.59,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 58.73,
+            "neutral": 73.41,
+            "optimistic": 88.09
+          }
+        },
+        {
+          "name": "天齐锂业",
+          "code": "002466",
+          "price": 49.79,
+          "deviation_pct": -20.5,
+          "threshold_pct": 68.5,
+          "trigger_price": 83.91,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 71.39,
+            "neutral": 89.23,
+            "optimistic": 107.08
+          }
+        },
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 27.62,
+          "deviation_pct": -7.3,
+          "threshold_pct": 43.7,
+          "trigger_price": 39.7,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "三美股份",
+          "code": "603379",
+          "price": 66.78,
+          "deviation_pct": 2.0,
+          "threshold_pct": 45.0,
+          "trigger_price": 96.85,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "ST人福",
+          "code": "600079",
+          "price": 17.26,
+          "deviation_pct": -2.8,
+          "threshold_pct": 44.9,
+          "trigger_price": 25.01,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 99.55,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "very_high",
+          "valuation": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 20.1,
+          "deviation_pct": -19.2,
+          "threshold_pct": 46.0,
+          "trigger_price": 29.36,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 9.4,
+          "deviation_pct": -11.7,
+          "threshold_pct": 29.5,
+          "trigger_price": 12.17,
+          "status": "normal",
+          "valuation": null
+        }
+      ],
+      "gold_rr": {
+        "spot": 4124.62,
+        "spot_change_pct": -0.12,
+        "data_time": "2026-07-08 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": -1.83,
+            "daily_change": -0.02,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "1M",
+            "rr": -1.67,
+            "daily_change": -0.01,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "3M",
+            "rr": -1.07,
+            "daily_change": 0.01,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "6M",
+            "rr": -0.43,
+            "daily_change": -0.01,
+            "signal": "中性偏空"
+          },
+          {
+            "period": "9M",
+            "rr": 0.01,
+            "daily_change": 0.0,
+            "signal": "中性偏多"
+          },
+          {
+            "period": "1Y",
+            "rr": 0.31,
+            "daily_change": 0.0,
+            "signal": "中性偏多"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-07-09-1502.json",
+  "_saved_at": "2026-07-09T15:02:37.005153+08:00"
+}

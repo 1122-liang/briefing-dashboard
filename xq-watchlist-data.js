@@ -1,19 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-09T15:56:23",
-  "count": 9,
+  "updated_at": "2026-07-10T11:00:18",
+  "count": 4,
   "stocks": [
-    {
-      "symbol": "SZ300604",
-      "name": "长川科技",
-      "marketplace": "CN",
-      "watched": "2026-07-09T13:24:17"
-    },
-    {
-      "symbol": "SZ002384",
-      "name": "东山精密",
-      "marketplace": "CN",
-      "watched": "2026-07-09T13:10:08"
-    },
     {
       "symbol": "SH688328",
       "name": "深科达",
@@ -21,28 +9,10 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-09T13:06:26"
     },
     {
-      "symbol": "SH688206",
-      "name": "概伦电子",
-      "marketplace": "CN",
-      "watched": "2026-07-09T10:10:19"
-    },
-    {
-      "symbol": "SH688403",
-      "name": "汇成股份",
-      "marketplace": "CN",
-      "watched": "2026-07-09T09:48:25"
-    },
-    {
       "symbol": "SH688432",
       "name": "有研硅",
       "marketplace": "CN",
       "watched": "2026-07-09T09:43:05"
-    },
-    {
-      "symbol": "SH600909",
-      "name": "华安证券",
-      "marketplace": "CN",
-      "watched": "2026-07-09T09:31:07"
     },
     {
       "symbol": "SH688347",
@@ -59,6 +29,80 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-10",
+    "changes": [
+      {
+        "time": "10:50",
+        "action": "remove",
+        "symbol": "SH688362",
+        "name": "甬矽电子"
+      },
+      {
+        "time": "10:50",
+        "action": "remove",
+        "symbol": "SZ002384",
+        "name": "东山精密"
+      },
+      {
+        "time": "10:50",
+        "action": "remove",
+        "symbol": "SZ003004",
+        "name": "声迅股份"
+      },
+      {
+        "time": "10:50",
+        "action": "remove",
+        "symbol": "SZ300604",
+        "name": "长川科技"
+      },
+      {
+        "time": "10:10",
+        "action": "remove",
+        "symbol": "SH688403",
+        "name": "汇成股份"
+      },
+      {
+        "time": "09:55",
+        "action": "remove",
+        "symbol": "SH603823",
+        "name": "百合花"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SZ003004",
+        "name": "声迅股份",
+        "watched": "2026-07-10T09:40:54"
+      },
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SH603823",
+        "name": "百合花",
+        "watched": "2026-07-10T09:37:45"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH688362",
+        "name": "甬矽电子",
+        "watched": "2026-07-10T09:31:12"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH600909",
+        "name": "华安证券"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH688206",
+        "name": "概伦电子"
+      }
+    ]
+  },
   {
     "date": "2026-07-09",
     "changes": [

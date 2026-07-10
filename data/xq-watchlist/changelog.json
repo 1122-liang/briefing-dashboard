@@ -3,6 +3,36 @@
     "date": "2026-07-10",
     "changes": [
       {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH600206",
+        "name": "有研新材"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH688146",
+        "name": "中船特气"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH688347",
+        "name": "华虹宏力"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SZ002185",
+        "name": "华天科技"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SZ300821",
+        "name": "东岳硅材"
+      },
+      {
         "time": "14:50",
         "action": "remove",
         "symbol": "SH688432",

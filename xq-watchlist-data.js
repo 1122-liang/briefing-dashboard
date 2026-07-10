@@ -1,43 +1,42 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-10T14:50:52",
-  "count": 5,
-  "stocks": [
-    {
-      "symbol": "SZ002185",
-      "name": "华天科技",
-      "marketplace": "CN",
-      "watched": "2026-07-10T14:23:35"
-    },
-    {
-      "symbol": "SH600206",
-      "name": "有研新材",
-      "marketplace": "CN",
-      "watched": "2026-07-10T12:04:20"
-    },
-    {
-      "symbol": "SH688146",
-      "name": "中船特气",
-      "marketplace": "CN",
-      "watched": "2026-07-10T11:10:26"
-    },
-    {
-      "symbol": "SH688347",
-      "name": "华虹宏力",
-      "marketplace": "CN",
-      "watched": "2026-07-08T11:21:16"
-    },
-    {
-      "symbol": "SZ300821",
-      "name": "东岳硅材",
-      "marketplace": "CN",
-      "watched": "2026-07-08T09:47:23"
-    }
-  ]
+  "updated_at": "2026-07-10T15:56:05",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
   {
     "date": "2026-07-10",
     "changes": [
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH600206",
+        "name": "有研新材"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH688146",
+        "name": "中船特气"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SH688347",
+        "name": "华虹宏力"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SZ002185",
+        "name": "华天科技"
+      },
+      {
+        "time": "15:00",
+        "action": "remove",
+        "symbol": "SZ300821",
+        "name": "东岳硅材"
+      },
       {
         "time": "14:50",
         "action": "remove",

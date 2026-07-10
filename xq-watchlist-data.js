@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-10T14:00:42",
-  "count": 6,
+  "updated_at": "2026-07-10T14:50:52",
+  "count": 5,
   "stocks": [
+    {
+      "symbol": "SZ002185",
+      "name": "华天科技",
+      "marketplace": "CN",
+      "watched": "2026-07-10T14:23:35"
+    },
     {
       "symbol": "SH600206",
       "name": "有研新材",
@@ -13,18 +19,6 @@ window.__SNAPSHOT__ = {
       "name": "中船特气",
       "marketplace": "CN",
       "watched": "2026-07-10T11:10:26"
-    },
-    {
-      "symbol": "SH688328",
-      "name": "深科达",
-      "marketplace": "CN",
-      "watched": "2026-07-09T13:06:26"
-    },
-    {
-      "symbol": "SH688432",
-      "name": "有研硅",
-      "marketplace": "CN",
-      "watched": "2026-07-09T09:43:05"
     },
     {
       "symbol": "SH688347",
@@ -44,6 +38,25 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-10",
     "changes": [
+      {
+        "time": "14:50",
+        "action": "remove",
+        "symbol": "SH688432",
+        "name": "有研硅"
+      },
+      {
+        "time": "14:30",
+        "action": "remove",
+        "symbol": "SH688328",
+        "name": "深科达"
+      },
+      {
+        "time": "14:25",
+        "action": "add",
+        "symbol": "SZ002185",
+        "name": "华天科技",
+        "watched": "2026-07-10T14:23:35"
+      },
       {
         "time": "12:05",
         "action": "add",

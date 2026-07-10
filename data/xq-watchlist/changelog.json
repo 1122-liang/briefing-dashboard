@@ -3,6 +3,20 @@
     "date": "2026-07-10",
     "changes": [
       {
+        "time": "12:05",
+        "action": "add",
+        "symbol": "SH600206",
+        "name": "有研新材",
+        "watched": "2026-07-10T12:04:20"
+      },
+      {
+        "time": "11:15",
+        "action": "add",
+        "symbol": "SH688146",
+        "name": "中船特气",
+        "watched": "2026-07-10T11:10:26"
+      },
+      {
         "time": "10:50",
         "action": "remove",
         "symbol": "SH688362",

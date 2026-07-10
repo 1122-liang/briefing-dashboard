@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-10T11:00:18",
-  "count": 4,
+  "updated_at": "2026-07-10T14:00:42",
+  "count": 6,
   "stocks": [
+    {
+      "symbol": "SH600206",
+      "name": "有研新材",
+      "marketplace": "CN",
+      "watched": "2026-07-10T12:04:20"
+    },
+    {
+      "symbol": "SH688146",
+      "name": "中船特气",
+      "marketplace": "CN",
+      "watched": "2026-07-10T11:10:26"
+    },
     {
       "symbol": "SH688328",
       "name": "深科达",
@@ -32,6 +44,20 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-10",
     "changes": [
+      {
+        "time": "12:05",
+        "action": "add",
+        "symbol": "SH600206",
+        "name": "有研新材",
+        "watched": "2026-07-10T12:04:20"
+      },
+      {
+        "time": "11:15",
+        "action": "add",
+        "symbol": "SH688146",
+        "name": "中船特气",
+        "watched": "2026-07-10T11:10:26"
+      },
       {
         "time": "10:50",
         "action": "remove",

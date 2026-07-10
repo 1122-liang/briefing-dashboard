@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-07-10T11:00:18",
-  "count": 4,
+  "updated_at": "2026-07-10T14:00:42",
+  "count": 6,
   "stocks": [
+    {
+      "symbol": "SH600206",
+      "name": "有研新材",
+      "marketplace": "CN",
+      "watched": "2026-07-10T12:04:20"
+    },
+    {
+      "symbol": "SH688146",
+      "name": "中船特气",
+      "marketplace": "CN",
+      "watched": "2026-07-10T11:10:26"
+    },
     {
       "symbol": "SH688328",
       "name": "深科达",

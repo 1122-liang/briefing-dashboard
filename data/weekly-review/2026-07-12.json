@@ -1,0 +1,52 @@
+{
+  "period": "07/06-07/12",
+  "total_hours": 30.5,
+  "projects": [
+    {
+      "name": "聚宽回测策略开发",
+      "hours": 18.0,
+      "files": 25,
+      "summary": "V8日线策略6项bug修复+V2信号分离+板块新红28变体回测+分钟线v9-v17迭代",
+      "efficiency": "low",
+      "issues": "聚宽API含当日数据导致多处分项错误；28变体跨3天密集迭代缺乏阶段性总结"
+    },
+    {
+      "name": "RPS情绪周期系统维护",
+      "hours": 8.0,
+      "files": 5,
+      "summary": "rt_k超时修复+收盘价校验daily API提速97%+stdout缓冲修复+tushare token恢复+概念缓存优化",
+      "efficiency": "medium",
+      "issues": "token过期无预警；stdout缓冲两次导致重跑；收盘价校验并发风暴"
+    },
+    {
+      "name": "日常自动化运维",
+      "hours": 3.0,
+      "files": 0,
+      "summary": "碳酸锂日报2次+新闻研报4次+AIHOT 4/5次+雪球摘要6次+偏离度预警2次+Token周报1次",
+      "efficiency": "high",
+      "issues": "AIHOT 07/09 DNS失败；东财API连续23天异常；雪球Playwright回退常态化"
+    },
+    {
+      "name": "彼岸自选股监控维护",
+      "hours": 1.5,
+      "files": 1,
+      "summary": "2次Cookie登录恢复+1次DNS瞬态关键词修复+捕获昭衍新药移除变动",
+      "efficiency": "medium",
+      "issues": "每周至少1次Cookie过期需手动扫码"
+    }
+  ],
+  "files_created": 33,
+  "automation_runs": 45,
+  "suggestions": [
+    "P0: tushare token冒烟测试+24h过期预警，避免全量API失败",
+    "P0: RPS脚本执行标准化模板(buffer+alarm+重试策略)",
+    "P1: 回测结果自动清理，保留最优N个变体",
+    "P1: 雪球Cookie自动保活/过期提前12h告警",
+    "P1: 回测变体元数据记录(目的/参数/结论YAML)",
+    "P2: AIHOT三级降级健康度监控",
+    "P2: 碳酸锂东财API长期异常告警(23天+)",
+    "P3: 自动化运行统计看板修复(SQLite查询异常)"
+  ],
+  "_filename": "2026-07-12.json",
+  "_saved_at": "2026-07-12T19:57:47.535041+08:00"
+}

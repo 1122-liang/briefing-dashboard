@@ -1012,10 +1012,20 @@ function filterTable(bodyId, query) {
   // 个股搜索：支持全量搜索
   if (bodyId === 'stockBody') {
     if (q.length > 0) {
+      // 搜索模式：移除星标额外行，走全量搜索
+      removeStarredExtraRows();
       filterStocksWithAllStocks(query);
     } else {
-      // 搜索框为空，恢复原始列表
-      renderStocks(currentData.stocks || []);
+      // 搜索框为空：检查是否需要注入星标额外行
+      const starredOnly = document.getElementById('stockStarredOnly').checked;
+      if (starredOnly) {
+        // 先恢复基础列表，再注入星标额外行
+        renderStocks(currentData.stocks || []);
+        injectStarredExtraRows();
+      } else {
+        removeStarredExtraRows();
+        renderStocks(currentData.stocks || []);
+      }
       // 渲染后应用checkbox筛选
       applyStockCheckboxFilters();
     }
@@ -1291,9 +1301,110 @@ function applyConceptFilter() {
   filterTable('conceptBody', document.getElementById('conceptSearch').value);
 }
 
+// ---- 星标额外行注入（非一线红个股星标后显示） ----
+function injectStarredExtraRows() {
+  const tbody = document.getElementById('stockBody');
+  const allStocks = currentData.all_stocks || [];
+  if (allStocks.length === 0) return;
+
+  // 收集当前表格行已有的代码
+  const existingCodes = new Set();
+  for (let i = 0; i < tbody.rows.length; i++) {
+    const code = tbody.rows[i].getAttribute('data-code');
+    if (code) existingCodes.add(code);
+  }
+
+  // 找出星标但不在表格中的股票
+  const starredNotShown = [];
+  starredStocks.forEach(code => {
+    if (!existingCodes.has(code)) {
+      const info = allStocks.find(s => s.code === code);
+      if (info) starredNotShown.push(info);
+    }
+  });
+
+  if (starredNotShown.length === 0) return;
+
+  // 为每只缺失的星标股构造简化行
+  starredNotShown.forEach(info => {
+    const pct = info.pct_change;
+    const pctStr = pct != null ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%` : '-';
+    const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
+    const url = xueqiuUrl(info.code, info.market);
+    const mv = info.total_mv != null ? `${info.total_mv.toFixed(0)}亿` : '-';
+
+    const tr = document.createElement('tr');
+    tr.className = 'starred-extra-row';
+    tr.setAttribute('data-search', `${info.name||info.code} ${info.code} ${info.sector_l1||''} ${info.sector_l2||''} ${info.sector_l3||''}`);
+    tr.setAttribute('data-code', info.code);
+    tr.setAttribute('data-starred', 'true');
+    tr.setAttribute('data-three-red', 'false');
+    tr.setAttribute('data-board12', 'false');
+    tr.setAttribute('data-100d', 'false');
+    tr.setAttribute('data-near100d', 'false');
+    tr.setAttribute('data-strong-near100d', 'false');
+    tr.setAttribute('data-strong-three-red', 'false');
+    tr.setAttribute('data-sector-three', 'false');
+    tr.setAttribute('data-new-one-red', 'false');
+    tr.setAttribute('data-new-three-red', 'false');
+    tr.setAttribute('data-mv100', `${(info.total_mv || 0) >= 100}`);
+    tr.innerHTML = `
+      <td style="cursor:pointer;font-size:16px;" onclick="event.stopPropagation(); toggleStar('${info.code}')">⭐</td>
+      <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${info.code}">${info.name || info.code}</td>
+      <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${info.code}</a></td>
+      <td class="${pctClass}">${pctStr}</td>
+      <td class="rps-default">—</td>
+      <td class="rps-default">—</td>
+      <td class="rps-default">—</td>
+      <td>—</td>
+      <td><span class="rps-default">—</span></td>
+      <td><span class="rps-default">—</span></td>
+      <td><span class="rps-default">—</span></td>
+      <td>${info.sector_l1 || '-'}</td>
+      <td>${info.sector_l2 || '-'}</td>
+      <td>${info.sector_l3 || '-'}</td>
+      <td>0</td>
+      <td>—</td>
+      <td>0</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  const countEl = document.getElementById('stockCount');
+  if (countEl) {
+    const base = (currentData.stocks || []).length;
+    countEl.textContent = `共 ${base} 只个股 + 星标 ${starredNotShown.length} 只`;
+  }
+}
+
+function removeStarredExtraRows() {
+  const extras = document.querySelectorAll('#stockBody .starred-extra-row');
+  extras.forEach(row => row.remove());
+  const countEl = document.getElementById('stockCount');
+  if (countEl) {
+    countEl.textContent = `共 ${(currentData.stocks || []).length} 只个股`;
+  }
+}
+
 function applyStockFilter() {
-  // 始终通过 filterTable 应用筛选（包括搜索和checkbox筛选）
-  filterTable('stockBody', document.getElementById('stockSearch').value);
+  const searchQuery = document.getElementById('stockSearch').value.trim();
+  const starredOnly = document.getElementById('stockStarredOnly').checked;
+  
+  // 搜索状态下不注入额外行（搜索模式走 filterStocksWithAllStocks）
+  if (searchQuery !== '') {
+    removeStarredExtraRows();
+    filterTable('stockBody', searchQuery);
+    return;
+  }
+  
+  // 无搜索：管理星标额外行
+  if (starredOnly) {
+    injectStarredExtraRows();
+  } else {
+    removeStarredExtraRows();
+  }
+  
+  filterTable('stockBody', searchQuery);
 }
 
 // 应用个股checkbox筛选（不重新渲染，只控制行的显示/隐藏）
@@ -1561,9 +1672,9 @@ function toggleStar(code) {
     // 搜索状态中：重新执行搜索以刷新星标显示
     filterStocksWithAllStocks(searchQuery);
   } else {
-    // 正常状态：重新渲染并应用筛选
+    // 正常状态：先重新渲染基础列表，再通过 applyStockFilter 处理星标额外行
     renderStocks(currentData.stocks || []);
-    applyStockCheckboxFilters();
+    applyStockFilter();
   }
 }
 

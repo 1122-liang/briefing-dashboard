@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-07-13",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ002185",
+        "name": "华天科技"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ002396",
+        "name": "星网锐捷"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      }
+    ]
+  },
+  {
     "date": "2026-07-10",
     "changes": [
       {

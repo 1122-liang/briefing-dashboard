@@ -1,9 +1,32 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-10T15:56:05",
+  "updated_at": "2026-07-13T11:05:17",
   "count": 0,
   "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-13",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ002185",
+        "name": "华天科技"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ002396",
+        "name": "星网锐捷"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      }
+    ]
+  },
   {
     "date": "2026-07-10",
     "changes": [

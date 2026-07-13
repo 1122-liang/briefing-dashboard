@@ -365,6 +365,26 @@ tbody tr.selected { background: #e8ecff !important; }
     </div>
   </div>
 
+  <!-- ==================== 市场主线报告 ==================== -->
+  <div class="module" id="moduleMainline" style="display:none;">
+    <div class="module-header" onclick="toggleModule('moduleMainline')">
+      <h2>📊 盘后市场主线分析</h2>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="module-body" id="mainlineBody" style="padding:20px;">
+      <div id="mainlineContent">加载中...</div>
+    </div>
+  </div>
+
+  <!-- 催化剂弹窗 -->
+  <div id="catalystModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+    <div style="background:white;border-radius:12px;max-width:600px;width:90%;max-height:80vh;overflow:auto;padding:24px;position:relative;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
+      <button onclick="closeCatalystModal()" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999;">✕</button>
+      <h3 id="catalystModalTitle" style="margin:0 0 12px 0;font-size:18px;"></h3>
+      <div id="catalystModalBody"></div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -391,6 +411,121 @@ function updateStatusWithIntraday(date_display, is_intraday, data_timestamp) {
   }
 }
 let memberDataMap = {}; // key: 'sector:名称' 或 'concept:名称' → member_stocks 数组
+
+// ============================================================
+// 催化弹窗 & 主线报告
+// ============================================================
+let mainlineData = null;
+let catalystMap = {};
+
+async function loadMainlineReport() {
+  try {
+    const date = (currentData && currentData.date) ? currentData.date : '20260713';
+    const resp = await fetch(`data/sentiment-rps/mainline_report_${date}.json`);
+    if (resp.ok) {
+      mainlineData = await resp.json();
+      buildCatalystMap();
+      renderMainlineReport();
+      document.getElementById('moduleMainline').style.display = '';
+    }
+  } catch(e) { /* 主线报告暂无数据，静默跳过 */ }
+}
+
+function buildCatalystMap() {
+  if (!mainlineData) return;
+  catalystMap = {};
+  const addToMap = (type, name, data) => {
+    catalystMap[`${type}:${name}`] = data;
+  };
+  
+  ['sector','concept'].forEach(t => {
+    ['new_sectors','new_concepts'].forEach(k => {
+      const list = (t === 'sector') ? (mainlineData.new_sectors || []) : (mainlineData.new_concepts || []);
+      list.forEach(item => addToMap(t, item.name, { catalyst: item.catalyst_summary, stocks: item.stocks, business: '' }));
+    });
+  });
+  
+  (mainlineData.new_stocks || []).forEach(s => {
+    addToMap('stock', s.code, { business: s.business, catalysts: s.catalysts, catalyst: '' });
+  });
+  
+  (mainlineData.main_themes || []).forEach(m => {
+    addToMap(m.entity_type, m.name, { 
+      catalyst: `连续在池${m.consecutive_days}天, 趋势${m.trend==='up'?'走强':'走弱'}`, stocks: m.key_stocks, business: '' 
+    });
+  });
+}
+
+function showCatalyst(type, name) {
+  const key = `${type}:${name}`;
+  const info = catalystMap[key];
+  const modal = document.getElementById('catalystModal');
+  const title = document.getElementById('catalystModalTitle');
+  const body = document.getElementById('catalystModalBody');
+  
+  let html = '';
+  if (info && info.business) {
+    html += `<div style="margin-bottom:8px;"><strong>业务:</strong> ${info.business}</div>`;
+  }
+  if (info && info.catalyst) {
+    html += `<div style="margin-bottom:8px;"><strong>催化:</strong> ${info.catalyst}</div>`;
+  }
+  if (info && info.catalysts && info.catalysts.length > 0) {
+    html += `<div style="margin-bottom:8px;"><strong>近三月事件:</strong><ul style="margin:4px 0;padding-left:20px;">`;
+    info.catalysts.forEach(c => { html += `<li>${c}</li>`; });
+    html += '</ul></div>';
+  }
+  if (info && info.stocks && info.stocks.length > 0) {
+    html += '<div><strong>关联个股:</strong><ul style="margin:4px 0;padding-left:20px;">';
+    info.stocks.forEach(s => {
+      html += `<li>${s.name || s.code} ${s.code||''}: ${s.catalyst||s.business||''}</li>`;
+    });
+    html += '</ul></div>';
+  }
+  if (!html) {
+    html = '<div style="color:#999;">暂无详细催化分析（该实体今日未被列入分析范围）</div>';
+  }
+  
+  title.textContent = `📋 ${name}`;
+  body.innerHTML = html;
+  modal.style.display = 'flex';
+}
+
+function closeCatalystModal() {
+  document.getElementById('catalystModal').style.display = 'none';
+}
+document.getElementById('catalystModal').addEventListener('click', function(e) {
+  if (e.target === this) closeCatalystModal();
+});
+
+function renderMainlineReport() {
+  if (!mainlineData) return;
+  const d = mainlineData;
+  let html = '';
+  
+  if (d.main_themes && d.main_themes.length > 0) {
+    html += '<h3 style="color:#e53e3e;">🔴 市场主线</h3><ul style="margin-top:4px;">';
+    d.main_themes.forEach(m => {
+      html += `<li><b>${m.name}</b>: 连续在池${m.consecutive_days}天 (${m.trend==='up'?'↑走强':'↓走弱'})</li>`;
+    });
+    html += '</ul>';
+  }
+  
+  if (d.declining && d.declining.length > 0) {
+    html += '<h3 style="color:#dd6b20;">⚠️ 退潮信号</h3><ul style="margin-top:4px;">';
+    d.declining.forEach(m => { html += `<li><b>${m.name}</b>: ${m.consecutive_days}天</li>`; });
+    html += '</ul>';
+  }
+  
+  if (d.emerging && d.emerging.length > 0) {
+    html += '<h3 style="color:#3182ce;">👀 弱转强关注</h3><ul style="margin-top:4px;">';
+    d.emerging.forEach(m => { html += `<li><b>${m.name}</b>: ${m.catalyst_summary || ''}</li>`; });
+    html += '</ul>';
+  }
+  
+  if (!html) html = '<div style="color:#999;">今日主线报告数据加载中，请明天20:00后查看</div>';
+  document.getElementById('mainlineContent').innerHTML = html;
+}
 
 // ============================================================
 // 初始化
@@ -420,6 +555,7 @@ async function init() {
       
       renderAll();
       setupClickHandlers();
+      loadMainlineReport();
       
       // 异步加载完整 history.json（用于补充日期选择器，本地可能失败但不影响）
       if (!historyData) loadHistoryAsync();
@@ -659,6 +795,7 @@ function renderAll() {
   renderConcepts();
   renderStocks();
   renderHighlights();
+  loadMainlineReport();
 }
 
 // ---- 板块渲染 ----
@@ -700,7 +837,7 @@ function renderSectors() {
     
     return `<tr data-search="${s.sector_name} ${s['申万行业']||''} ${s['申万产业']||''}" data-red-lines="${rl}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}" data-starred="${starredSectors.has(s.sector_name)}">
       <td style="cursor:pointer;font-size:16px;" onclick="toggleSectorStar('${s.sector_name.replace(/'/g, "\\'")}')">${starredSectors.has(s.sector_name) ? '⭐' : '☆'}</td>
-      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${s.sector_name}">${s.sector_name}<span onclick="event.stopPropagation();showCatalyst('sector','${s.sector_name.replace(/'/g, "\\'")}')" style="cursor:pointer;margin-left:4px;font-size:12px;" title="催化分析">📋</span></td>
       <td>${(s.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td>${s['申万行业'] || '-'}</td>
@@ -755,7 +892,7 @@ function renderConcepts() {
     
     return `<tr data-search="${c.concept_name}" data-red-lines="${c.red_lines||0}" data-new-one-red="${isNewOneRed}" data-new-three-red="${isNewThreeRed}" data-starred="${starredConcepts.has(c.concept_name)}">
       <td style="cursor:pointer;font-size:16px;" onclick="toggleConceptStar('${c.concept_name.replace(/'/g, "\\'")}')">${starredConcepts.has(c.concept_name) ? '⭐' : '☆'}</td>
-      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-name="${c.concept_name}">${c.concept_name}<span onclick="event.stopPropagation();showCatalyst('concept','${c.concept_name.replace(/'/g, "\\'")}')" style="cursor:pointer;margin-left:4px;font-size:12px;" title="催化分析">📋</span></td>
       <td>${(c.total_mv || 0).toFixed(1)}</td>
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td class="${pctClass}">${pctStr}</td>
@@ -826,7 +963,7 @@ function renderStocks(stocks) {
     
     return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-strong-near100d="${s.strong_near_100d_high}" data-strong-three-red="${s.strong_three_red}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}" data-code="${s.code}" data-starred="${starredStocks.has(s.code)}" data-mv100="${(s.total_mv || 0) >= 100}">
       <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
-      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}</td>
+      <td class="${nameClass}" style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${s.code}">${s.name || s.code}<span onclick="event.stopPropagation();showCatalyst('stock','${s.code}')" style="cursor:pointer;margin-left:4px;font-size:12px;" title="催化分析">📋</span></td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${s.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
@@ -1350,13 +1487,19 @@ function injectStarredExtraRows() {
     const pctClass = pct > 0 ? 'pct-up' : pct < 0 ? 'pct-down' : 'pct-flat';
     const url = xueqiuUrl(info.code, info.market);
     const mv = info.total_mv != null ? `${info.total_mv.toFixed(0)}亿` : '-';
+    const r50 = info.rps_50d != null ? info.rps_50d : 0;
+    const r120 = info.rps_120d != null ? info.rps_120d : 0;
+    const r250 = info.rps_250d != null ? info.rps_250d : 0;
+    const isThreeRed = r50 > 90 && r120 > 93 && r250 > 95;
+    const rpsCls = (v, t) => v >= t ? 'rps-red' : 'rps-default';
+    const rpsStr = v => v != null ? v.toFixed(1) : '—';
 
     const tr = document.createElement('tr');
     tr.className = 'starred-extra-row';
     tr.setAttribute('data-search', `${info.name||info.code} ${info.code} ${info.sector_l1||''} ${info.sector_l2||''} ${info.sector_l3||''}`);
     tr.setAttribute('data-code', info.code);
     tr.setAttribute('data-starred', 'true');
-    tr.setAttribute('data-three-red', 'false');
+    tr.setAttribute('data-three-red', `${isThreeRed}`);
     tr.setAttribute('data-board12', 'false');
     tr.setAttribute('data-100d', 'false');
     tr.setAttribute('data-near100d', 'false');
@@ -1371,9 +1514,9 @@ function injectStarredExtraRows() {
       <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${info.code}">${info.name || info.code}</td>
       <td><a href="${url}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${info.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
-      <td class="rps-default">—</td>
-      <td class="rps-default">—</td>
-      <td class="rps-default">—</td>
+      <td class="${rpsCls(r50, 90)}">${rpsStr(info.rps_50d)}</td>
+      <td class="${rpsCls(r120, 93)}">${rpsStr(info.rps_120d)}</td>
+      <td class="${rpsCls(r250, 95)}">${rpsStr(info.rps_250d)}</td>
       <td>—</td>
       <td><span class="rps-default">—</span></td>
       <td><span class="rps-default">—</span></td>

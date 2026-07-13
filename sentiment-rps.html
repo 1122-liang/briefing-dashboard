@@ -220,6 +220,10 @@ tbody tr.selected { background: #e8ecff !important; }
             <th onclick="sortTable('sectorTable', 8, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('sectorTable', 9, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('sectorTable', 10, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 11, this)" data-type="number" title="连续达成三线红的天数">连续<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 12, this)" data-type="number" title="最近30日在池天数（三线红）">30日<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 13, this)" data-type="number" title="最近120日在池天数（三线红）">120日<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('sectorTable', 14, this)" data-type="number" title="最近250日在池天数（三线红）">250日<span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="sectorBody"></tbody>
@@ -271,6 +275,10 @@ tbody tr.selected { background: #e8ecff !important; }
             <th onclick="sortTable('conceptTable', 6, this)" data-type="number">10日RPS <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('conceptTable', 7, this)" data-type="number">15日RPS <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('conceptTable', 8, this)" data-type="number">20日RPS <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 9, this)" data-type="number" title="连续达成三线红的天数">连续<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 10, this)" data-type="number" title="最近30日在池天数（三线红）">30日<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 11, this)" data-type="number" title="最近120日在池天数（三线红）">120日<span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('conceptTable', 12, this)" data-type="number" title="最近250日在池天数（三线红）">250日<span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="conceptBody"></tbody>
@@ -346,8 +354,10 @@ tbody tr.selected { background: #e8ecff !important; }
             <th onclick="sortTable('stockTable', 12, this)" data-type="string">二级行业 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 13, this)" data-type="string">细分行业 <span class="sort-icon">⇅</span></th>
             <th onclick="sortTable('stockTable', 14, this)" data-type="number">板块涨停数 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 15, this)" data-type="string">所属概念 <span class="sort-icon">⇅</span></th>
-            <th onclick="sortTable('stockTable', 16, this)" data-type="number">概念涨停数 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 15, this)" data-type="number" title="连续达成三线红的天数">连续在池 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 16, this)" data-type="number" title="最近30日在池天数（三线红）">30日在池 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 17, this)" data-type="number" title="最近120日在池天数（三线红）">120日在池 <span class="sort-icon">⇅</span></th>
+            <th onclick="sortTable('stockTable', 18, this)" data-type="number" title="最近250日在池天数（三线红）">250日在池 <span class="sort-icon">⇅</span></th>
           </tr>
         </thead>
         <tbody id="stockBody"></tbody>
@@ -697,6 +707,10 @@ function renderSectors() {
       <td>${s['申万产业'] || '-'}</td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
+      <td>${(s.pool_days && s.pool_days.consecutive) || 0}</td>
+      <td>${(s.pool_days && s.pool_days.d30) || 0}</td>
+      <td>${(s.pool_days && s.pool_days.d120) || 0}</td>
+      <td>${(s.pool_days && s.pool_days.d250) || 0}</td>
     </tr>`;
   }).join('');
   
@@ -746,6 +760,10 @@ function renderConcepts() {
       <td style="${mcStyle}" data-member-key="${memberKey}">${mc}</td>
       <td class="${pctClass}">${pctStr}</td>
       ${rpsCells}
+      <td>${(c.pool_days && c.pool_days.consecutive) || 0}</td>
+      <td>${(c.pool_days && c.pool_days.d30) || 0}</td>
+      <td>${(c.pool_days && c.pool_days.d120) || 0}</td>
+      <td>${(c.pool_days && c.pool_days.d250) || 0}</td>
     </tr>`;
   }).join('');
   
@@ -804,10 +822,7 @@ function renderStocks(stocks) {
       ? anomalyAlerts.map(a => `<div style="font-size:11px;line-height:1.4;">${a}</div>`).join('')
       : '<span class="rps-default">—</span>';
     const sectorThree = s.sector_three_red ? '<span class="badge badge-red">✅ 三线红</span>' : '<span class="rps-default">—</span>';
-    
-    const conceptDisplay = s.top_concept 
-      ? `<span class="badge badge-blue">${s.top_concept}</span> <span style="font-size:11px;color:#888">(${s.top_concept_limit || 0}涨停)</span>`
-      : '—';
+    const pd = s.pool_days || {};
     
     return `<tr data-search="${s.name||s.code} ${s.code} ${s.sector_l1||''} ${s.sector_l2||''} ${s.sector_l3||''} ${(s.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${s.consecutive_limits >= 1 && s.consecutive_limits <= 2}" data-100d="${s.is_100d_high}" data-near100d="${s.near_100d_high}" data-strong-near100d="${s.strong_near_100d_high}" data-strong-three-red="${s.strong_three_red}" data-sector-three="${s.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(s.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(s.code)}" data-code="${s.code}" data-starred="${starredStocks.has(s.code)}" data-mv100="${(s.total_mv || 0) >= 100}">
       <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${s.code}')">${starredStocks.has(s.code) ? '⭐' : '☆'}</td>
@@ -823,8 +838,10 @@ function renderStocks(stocks) {
       <td>${s.sector_l2 || '-'}</td>
       <td>${s.sector_l3 ? `<span class="sector-link" data-sector-name="${s.sector_l3}">${s.sector_l3}</span>` : '-'}</td>
       <td>${s.sector_limit_count || 0}</td>
-      <td>${conceptDisplay}</td>
-      <td>${s.top_concept_limit || 0}</td>
+      <td>${pd.consecutive || 0}</td>
+      <td>${pd.d30 || 0}</td>
+      <td>${pd.d120 || 0}</td>
+      <td>${pd.d250 || 0}</td>
     </tr>`;
   }).join('');
   
@@ -1198,10 +1215,7 @@ function filterStocksWithAllStocks(query) {
           ? anomalyAlerts.map(a => `<div style="font-size:11px;line-height:1.4;">${a}</div>`).join('')
           : '<span class="rps-default">—</span>';
         const sectorThree = fullStock.sector_three_red ? '<span class="badge badge-red">✅ 三线红</span>' : '<span class="rps-default">—</span>';
-        
-        const conceptDisplay = fullStock.top_concept 
-          ? `<span class="badge badge-blue">${fullStock.top_concept}</span> <span style="font-size:11px;color:#888">(${fullStock.top_concept_limit || 0}涨停)</span>`
-          : '—';
+        const pd = fullStock.pool_days || {};
         
         return `<tr data-search="${fullStock.name||fullStock.code} ${fullStock.code} ${fullStock.sector_l1||''} ${fullStock.sector_l2||''} ${fullStock.sector_l3||''} ${(fullStock.concepts||[]).join(' ')}" data-three-red="${isThreeRed}" data-board12="${fullStock.consecutive_limits >= 1 && fullStock.consecutive_limits <= 2}" data-100d="${fullStock.is_100d_high}" data-near100d="${fullStock.near_100d_high}" data-strong-near100d="${fullStock.strong_near_100d_high}" data-strong-three-red="${fullStock.strong_three_red}" data-sector-three="${fullStock.sector_three_red}" data-new-one-red="${(currentData.highlights?.new_one_red_stocks || []).includes(fullStock.code)}" data-new-three-red="${(currentData.highlights?.new_three_red_stocks || []).includes(fullStock.code)}" data-code="${fullStock.code}" data-starred="${starredStocks.has(fullStock.code)}" data-mv100="${(fullStock.total_mv || 0) >= 100}" class="search-result-row">
           <td style="cursor:pointer;font-size:16px;" onclick="toggleStar('${fullStock.code}')">${starredStocks.has(fullStock.code) ? '⭐' : '☆'}</td>
@@ -1217,8 +1231,10 @@ function filterStocksWithAllStocks(query) {
           <td>${fullStock.sector_l2 || '-'}</td>
           <td>${fullStock.sector_l3 ? `<span class="sector-link" data-sector-name="${fullStock.sector_l3}">${fullStock.sector_l3}</span>` : '-'}</td>
           <td>${fullStock.sector_limit_count || 0}</td>
-          <td>${conceptDisplay}</td>
-          <td>${fullStock.top_concept_limit || 0}</td>
+          <td>${pd.consecutive || 0}</td>
+          <td>${pd.d30 || 0}</td>
+          <td>${pd.d120 || 0}</td>
+          <td>${pd.d250 || 0}</td>
         </tr>`;
       }
       
@@ -1280,7 +1296,9 @@ function filterStocksWithAllStocks(query) {
         <td>${s.sector_l2 || '-'}</td>
         <td>${s.sector_l3 ? `<span class="sector-link" data-sector-name="${s.sector_l3}">${s.sector_l3}</span>` : '-'}</td>
         <td>0</td>
-        <td>—</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
         <td>0</td>
       </tr>`;
     }).join('');
@@ -1288,7 +1306,7 @@ function filterStocksWithAllStocks(query) {
     // 更新计数显示
     document.getElementById('stockCount').textContent = `搜索结果: ${matchedStocks.length} 只（全量搜索）`;
   } else {
-    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:20px;color:#999;">未找到匹配的股票</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="19" style="text-align:center;padding:20px;color:#999;">未找到匹配的股票</td></tr>';
     document.getElementById('stockCount').textContent = '搜索结果: 0 只';
   }
 }
@@ -1364,7 +1382,9 @@ function injectStarredExtraRows() {
       <td>${info.sector_l2 || '-'}</td>
       <td>${info.sector_l3 || '-'}</td>
       <td>0</td>
-      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
     `;
     tbody.appendChild(tr);

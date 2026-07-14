@@ -1,21 +1,41 @@
 {
   "date": "20260714",
+  "summary": "医药集群(CRO/创新药/生物制品)持续主导, 油服/炼化受伊朗冲突催化新晋三线红, 半导体设备从连续22天退潮值得警惕",
   "main_themes": [
     {
       "entity_type": "sector",
       "name": "医疗研发外包",
       "consecutive_days": 12,
+      "d30": 12,
+      "d120": 25,
+      "d250": 31,
       "trend": "up",
+      "analysis": "连续在池12天, 30日在池12天, 120日25天, 医药主线核心驱动(CRO/CXO景气反转+基药目录+创新药政策三重共振)",
       "key_stocks": [
         {
-          "code": "603259",
-          "name": "药明康德",
-          "catalyst": "CXO景气右侧反转，2026H1全球药融同比+95%"
+          "code": "688131",
+          "name": "皓元医药",
+          "rps_note": "一线红"
         },
         {
-          "code": "603127",
-          "name": "昭衍新药",
-          "catalyst": "港股单日涨超14%，基药目录+创新药政策红利"
+          "code": "688202",
+          "name": "美迪西",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688222",
+          "name": "成都先导",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "688046",
+          "name": "药康生物",
+          "rps_note": "一线红"
         }
       ]
     },
@@ -23,12 +43,36 @@
       "entity_type": "sector",
       "name": "其他生物制品",
       "consecutive_days": 10,
+      "d30": 11,
+      "d120": 24,
+      "d250": 24,
       "trend": "up",
+      "analysis": "连续在池10天, 30日在池11天, 120日24天, 生物制品紧随CXO走强, 减肥药/重组蛋白等概念联动",
       "key_stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "000518",
+          "name": "四环生物",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "688163",
+          "name": "赛伦生物",
+          "rps_note": "2线红"
+        },
         {
           "code": "603087",
           "name": "甘李药业",
-          "catalyst": "胰岛素龙头，基药目录调整利好"
+          "rps_note": "一线红"
         }
       ]
     },
@@ -36,254 +80,748 @@
       "entity_type": "sector",
       "name": "化学制剂",
       "consecutive_days": 9,
+      "d30": 9,
+      "d120": 18,
+      "d250": 18,
       "trend": "up",
+      "analysis": "连续在池9天, 30日在池9天, 120日18天, 化学制剂+创新药进入业绩兑现期",
       "key_stocks": [
         {
-          "code": "688221",
-          "name": "前沿生物",
-          "catalyst": "创新药概念，7月1日涨近19%"
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "688578",
+          "name": "艾力斯",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "300558",
+          "name": "贝达药业",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "688176",
+          "name": "亚虹医药",
+          "rps_note": "一线红"
+        },
+        {
+          "code": "002693",
+          "name": "双成药业",
+          "rps_note": "一线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 12,
+      "d30": 12,
+      "d120": 22,
+      "d250": 23,
+      "trend": "up",
+      "analysis": "连续在池12天, 30日在池12天, 医药主线最强概念(连续12天), 基药目录+创新药政策共振",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "创新药",
+      "consecutive_days": 9,
+      "d30": 9,
+      "d120": 19,
+      "d250": 19,
+      "trend": "up",
+      "analysis": "连续在池9天, 30日在池9天",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "减肥药",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 20,
+      "d250": 20,
+      "trend": "up",
+      "analysis": "连续在池10天, 30日在池10天, GLP-1/多肽产业链高景气延续",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "重组蛋白",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 18,
+      "d250": 18,
+      "trend": "up",
+      "analysis": "连续在池10天, 30日在池10天",
+      "key_stocks": []
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "半导体设备",
+      "consecutive_days": 0,
+      "prev_consecutive": 22,
+      "d30": 20,
+      "d120": 52,
+      "analysis": "昨日连续22天今日退出, 一键清仓信号——连续在池天数从高位骤降至0, 120日累计52天在池后首次退出, 关注是否为趋势性退潮",
+      "reason": "半导体板块整体调整, 主力资金流出"
+    },
+    {
+      "entity_type": "sector",
+      "name": "集成电路封测",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 18,
+      "d120": 45,
+      "analysis": "昨日连续3天今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "农商行Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 9,
+      "analysis": "昨日连续1天今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "半导体材料",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 18,
+      "d120": 46,
+      "analysis": "昨日连续1天今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "超级品牌",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 3,
+      "analysis": "昨日连续1天今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "预制菜",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 1,
+      "analysis": "昨日连续1天今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "高股息精选",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 11,
+      "analysis": "昨日连续1天今日退出",
+      "reason": "无新增催化/主线切换"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "原料药",
+      "consecutive_days": 1,
+      "d30": 4,
+      "d120": 14,
+      "d250": 14,
+      "analysis": "首次进池(连续1天), 120日累计14天。催化剂: 🔴 基药目录2026版(7.9实施)+原料药优先审评 ← 重点关注",
+      "catalyst_summary": "原料药优先审评通告发布, 缩短申报周期; 上游成本上涨或带动提价, 产能出清+盈利改善",
+      "key_stocks": [
+        {
+          "code": "301281",
+          "name": "科源制药",
+          "note": "2线红"
+        },
+        {
+          "code": "002821",
+          "name": "凯莱英",
+          "note": "2线红"
         }
       ]
     },
     {
       "entity_type": "sector",
-      "name": "生猪养殖",
-      "consecutive_days": 7,
-      "trend": "up",
-      "key_stocks": [
-        {
-          "code": "",
-          "name": "牧原股份",
-          "catalyst": "猪价反弹21%，产能加速去化，周期反转预期升温"
-        }
-      ]
-    }
-  ],
-  "declining": [
-    {
-      "name": "半导体设备",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池，前期涨幅回调消化"
+      "name": "油田服务",
+      "consecutive_days": 1,
+      "d30": 2,
+      "d120": 2,
+      "d250": 20,
+      "analysis": "首次进池(连续1天), 250日累计20天 ← 回池再启动。催化剂: 🔴 伊朗战事重燃(7.13) ← 重点关注",
+      "catalyst_summary": "🔴 🔴 伊朗战事重燃(7.13), 特朗普宣布重启对伊封锁, 油价中枢上移利好油服产业链",
+      "key_stocks": []
     },
     {
-      "name": "半导体材料",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池"
+      "entity_type": "sector",
+      "name": "炼油化工",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 3,
+      "d250": 12,
+      "analysis": "首次进池(连续1天), 120日仅3天 ← 弱转强。催化剂: 🔴 油价中枢上移+伊朗冲突 ← 重点关注",
+      "catalyst_summary": "🔴 🔴 Q2布油均价96.7美元(环比+23%), 申万预测中国石油Q2净利润550亿YoY+48%, 民营炼化受益化工品高价差盈利持续向上",
+      "key_stocks": []
     },
     {
-      "name": "国有大型银行Ⅲ",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池"
+      "entity_type": "sector",
+      "name": "血液制品",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 1,
+      "d250": 1,
+      "analysis": "首次进池(连续1天), 120日仅1天 ← 弱转强。催化剂: 万联证券: 行业供给收缩迎周期拐点, 十五五浆站规划有望落地, 血制品估值处历史低位(PE 17%分位) ← 重点关注",
+      "catalyst_summary": "万联证券: 行业供给收缩迎周期拐点, 十五五浆站规划有望落地, 血制品估值处历史低位(PE 17%分位)",
+      "key_stocks": []
     },
     {
-      "name": "城商行Ⅲ",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池"
+      "entity_type": "sector",
+      "name": "高速公路",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 6,
+      "d250": 6,
+      "analysis": "首次进池(连续1天), 120日累计6天。催化剂: 近90天暂无重大催化, 板块以高股息/红利稳定配置为主, 端午出行景气+全年业绩稳健",
+      "catalyst_summary": "近90天暂无重大催化, 板块以高股息/红利稳定配置为主, 端午出行景气+全年业绩稳健",
+      "key_stocks": []
     },
     {
-      "name": "快递",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池"
+      "entity_type": "concept",
+      "name": "人造肉",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 3,
+      "d250": 15,
+      "analysis": "首次进池(连续1天), 120日累计3天",
+      "catalyst_summary": "近90天暂无专属重大催化, 猪肉价格反弹+养殖业走强带动相关概念跟涨",
+      "key_stocks": []
     },
     {
-      "name": "集成电路封测",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池"
+      "entity_type": "concept",
+      "name": "医美概念",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 7,
+      "d250": 7,
+      "analysis": "首次进池(连续1天), 120日累计7天。催化剂: 四环医药冻妍临床登SCI+新品放量预期",
+      "catalyst_summary": "四环医药冻妍临床成果荣登国际SCI期刊, 童颜针/少女针/动能素等新品将迎首个完整销售年",
+      "key_stocks": []
     },
     {
-      "name": "超级品牌",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池概念"
+      "entity_type": "concept",
+      "name": "幽门螺杆菌概念",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 8,
+      "d250": 8,
+      "analysis": "首次进池(连续1天), 120日累计8天",
+      "catalyst_summary": "轩竹生物安奈拉唑钠新适应症III期临床完成首例入组, 中国Hp感染率44%, 治疗市场55亿元→68亿元",
+      "key_stocks": []
     },
     {
-      "name": "预制菜",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池概念"
+      "entity_type": "concept",
+      "name": "民营医院",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 7,
+      "d250": 13,
+      "analysis": "首次进池(连续1天), 120日累计7天",
+      "catalyst_summary": "近90天暂无专属重大催化, 随医药大板块受益基药目录+十五五规划+创新药政策共振",
+      "key_stocks": []
     },
     {
-      "name": "高股息精选",
-      "consecutive_days": 0,
-      "trend": "down",
-      "note": "退池概念"
-    }
-  ],
-  "emerging": [
-    {
-      "name": "摩托车",
-      "consecutive_days": 7,
-      "red_lines": 3,
-      "note": "连续在池7天，三线红"
-    },
-    {
-      "name": "生活用纸",
-      "consecutive_days": 6,
-      "red_lines": 3,
-      "note": "连续在池6天，三线红"
+      "entity_type": "concept",
+      "name": "辅助生殖",
+      "consecutive_days": 1,
+      "d30": 5,
+      "d120": 13,
+      "d250": 13,
+      "analysis": "首次进池(连续1天), 120日累计13天。催化剂: 🔴 国务院十五五规划明确加强辅助生殖保障(7.13) ← 重点关注",
+      "catalyst_summary": "🔴 国务院十五五规划明确加强辅助生殖医疗费用保障",
+      "key_stocks": []
     }
   ],
   "new_sectors": [
     {
       "name": "炼油化工",
-      "catalyst_summary": "🔴 Q2油价96.7美元同环比大涨，石化业绩高增，供需双支撑化工景气回暖",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 🔴 Q2布油均价96.7美元(环比+23%), 申万预测中国石油Q2净利润550亿YoY+48%, 民营炼化受益化工品高价差盈利持续向上",
+      "stocks": []
+    },
+    {
+      "name": "血液制品",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "万联证券: 行业供给收缩迎周期拐点, 十五五浆站规划有望落地, 血制品估值处历史低位(PE 17%分位)",
+      "stocks": []
+    },
+    {
+      "name": "原料药",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 4,
+      "catalyst_summary": "原料药优先审评通告发布, 缩短申报周期; 上游成本上涨或带动提价, 产能出清+盈利改善",
       "stocks": [
         {
-          "code": "002493",
-          "name": "荣盛石化",
-          "business": "民营大炼化龙头",
+          "code": "300765",
+          "name": "新诺威",
+          "business": "",
           "catalysts": [
-            "Q2净利润22亿YoY+15979%"
+            "近90天暂无重大催化"
+          ]
+        },
+        {
+          "code": "301281",
+          "name": "科源制药",
+          "business": "",
+          "catalysts": [
+            "近90天暂无重大催化"
+          ]
+        },
+        {
+          "code": "002821",
+          "name": "凯莱英",
+          "business": "",
+          "catalysts": [
+            "近90天暂无重大催化"
+          ]
+        },
+        {
+          "code": "603538",
+          "name": "美诺华",
+          "business": "",
+          "catalysts": [
+            "近90天暂无重大催化"
+          ]
+        },
+        {
+          "code": "300401",
+          "name": "花园生物",
+          "business": "",
+          "catalysts": [
+            "近90天暂无重大催化"
           ]
         }
       ]
     },
     {
       "name": "油田服务",
-      "catalyst_summary": "🔴 美军打击伊朗油价暴涨+瑞银看好中期前景，安东油田获管理层增持",
-      "stocks": [
-        {
-          "code": "300164",
-          "name": "通源石油",
-          "business": "北美射孔+油气田服务",
-          "catalysts": [
-            "美军对伊打击催化油价暴涨"
-          ]
-        }
-      ]
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "🔴 🔴 伊朗战事重燃(7.13), 特朗普宣布重启对伊封锁, 油价中枢上移利好油服产业链",
+      "stocks": []
     },
     {
       "name": "高速公路",
-      "catalyst_summary": "山东高速触涨停，央行1.4万亿逆回购净投放利好基建类",
-      "stocks": [
-        {
-          "code": "600350",
-          "name": "山东高速",
-          "business": "高速公路运营",
-          "catalysts": [
-            "7月8日触涨停板"
-          ]
-        }
-      ]
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无重大催化, 板块以高股息/红利稳定配置为主, 端午出行景气+全年业绩稳健",
+      "stocks": []
     },
     {
-      "name": "原料药",
-      "catalyst_summary": "🔴 基药目录2026版实施+集采豁免创新药，原料药涨价预期升温",
-      "stocks": [
-        {
-          "code": "603087",
-          "name": "甘李药业",
-          "business": "胰岛素原料药龙头",
-          "catalysts": [
-            "基药目录调整利好"
-          ]
-        }
-      ]
+      "name": "油气及炼化工程",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "油价中枢上移(申万预测Q2均价96.7美元), 海油工程承建垦利10-2浅层油田投产, 油服订单饱满",
+      "stocks": []
     },
     {
-      "name": "血液制品",
-      "catalyst_summary": "万联证券：供给收缩迎周期拐点，牌照壁垒+老龄化刚需，估值历史低位",
-      "stocks": [
-        {
-          "code": "300294",
-          "name": "博雅生物",
-          "business": "血液制品龙头",
-          "catalysts": [
-            "华润增持+新浆站建设"
-          ]
-        }
-      ]
+      "name": "种子",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "复合肥",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "超市",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "机场",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "资产管理",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 2,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "医院",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无专属重大催化, AI医疗运营(健康160首度扭亏)+创新药政策共振, 随医药大板块走强",
+      "stocks": []
+    },
+    {
+      "name": "保险Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "预加工食品",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "黄金",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴 🔴 美国6月非农仅增5.7万远低于预期, 加息推迟至12月, 金价从3955反弹至4208美元, Q2累计跌14%后超跌反弹",
+      "stocks": []
+    },
+    {
+      "name": "保健品",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
+    },
+    {
+      "name": "医疗耗材",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "国金证券: 聚焦创新+出海双主线, Q1收入同比+6.84%, 毛利率回升至42.7%, 集采影响边际减弱",
+      "stocks": []
+    },
+    {
+      "name": "焦炭Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化, 板块随市场轮动新进一线红",
+      "stocks": []
     }
   ],
   "new_concepts": [
     {
+      "name": "辅助生殖",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 5,
+      "catalyst_summary": "🔴 🔴 国务院十五五规划明确加强辅助生殖医疗费用保障(7.13), 规范技术管理应用, 纳入生育支持政策体系",
+      "stocks": []
+    },
+    {
       "name": "医美概念",
-      "catalyst_summary": "四环医药冻妍临床登SCI期刊，童颜针/少女针新品放量，行业渗透率提升",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "四环医药冻妍临床成果荣登国际SCI期刊, 童颜针/少女针/动能素等新品将迎首个完整销售年",
       "stocks": []
     },
     {
       "name": "民营医院",
-      "catalyst_summary": "🔴 医药板块政策密集利好：基药目录扩容+医保商保+创新药预申报",
-      "stocks": []
-    },
-    {
-      "name": "辅助生殖",
-      "catalyst_summary": "🔴 国务院国民健康十五五规划纳入辅助生殖保障，锦欣生殖业绩复苏",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无专属重大催化, 随医药大板块受益基药目录+十五五规划+创新药政策共振",
       "stocks": []
     },
     {
       "name": "幽门螺杆菌概念",
-      "catalyst_summary": "轩竹生物安奈拉唑钠III期临床入组，中国Hp市场55亿→2035年126亿",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "轩竹生物安奈拉唑钠新适应症III期临床完成首例入组, 中国Hp感染率44%, 治疗市场55亿元→68亿元",
       "stocks": []
     },
     {
       "name": "人造肉",
-      "catalyst_summary": "猪价反弹21%带动替代蛋白概念走强，农产品周期蓄势向上",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无专属重大催化, 猪肉价格反弹+养殖业走强带动相关概念跟涨",
       "stocks": []
     }
   ],
   "new_stocks": [
     {
-      "code": "603203",
-      "name": "快克智能",
-      "business": "电子装联设备龙头",
+      "code": "600353",
+      "name": "旭光电子",
+      "red_level": "三线红",
+      "business": "真空灭弧室龙头+核聚变DB967四极管+氮化铝AI散热全产业链量产。关联: 面板, AI算力, 可控核聚变",
       "catalysts": [
-        "三线红新进"
-      ]
-    },
-    {
-      "code": "300620",
-      "name": "光库科技",
-      "business": "光纤激光器件龙头",
-      "catalysts": [
-        "三线红新进"
-      ]
-    },
-    {
-      "code": "688535",
-      "name": "华海诚科",
-      "business": "环氧塑封料龙头",
-      "catalysts": [
-        "半导体材料三线红"
-      ]
-    },
-    {
-      "code": "688167",
-      "name": "炬光科技",
-      "business": "高功率半导体激光器",
-      "catalysts": [
-        "三线红新进"
-      ]
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "面板"
     },
     {
       "code": "688048",
       "name": "长光华芯",
-      "business": "高功率半导体激光芯片",
+      "red_level": "三线红",
+      "business": "光芯片龙头, 100G EML量产/200G送样, CW激光器受益CPO硅光。关联: 分立器件, CPO概念, 光通信",
       "catalysts": [
-        "三线红新进"
-      ]
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "分立器件"
+    },
+    {
+      "code": "688531",
+      "name": "日联科技",
+      "red_level": "三线红",
+      "business": "工业X射线检测设备龙头, 自产微焦点射线源打破外资垄断。关联: 其他专用设备, 半导体设备, AI PCB检测",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "003018",
+      "name": "金富科技",
+      "red_level": "三线红",
+      "business": "塑料瓶盖制造商, 国内领先的食品饮料包装解决方案商。关联: 塑料包装",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "塑料包装"
+    },
+    {
+      "code": "688535",
+      "name": "华海诚科",
+      "red_level": "三线红",
+      "business": "半导体环氧塑封料+电子胶黏剂, 先进封装上游材料。关联: 半导体材料, 先进封装",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "半导体材料"
+    },
+    {
+      "code": "603203",
+      "name": "快克智能",
+      "red_level": "三线红",
+      "business": "精密焊接+自动化设备, 服务3C/汽车电子/半导体封装。关联: 其他专用设备, 机器人概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "其他专用设备"
     },
     {
       "code": "688507",
       "name": "索辰科技",
-      "business": "CAE仿真软件龙头",
+      "red_level": "三线红",
+      "business": "CAE仿真软件龙头, 国产工业软件替代核心标的。关联: 垂直应用软件, 工业软件, 国产替代",
       "catalysts": [
-        "三线红新进"
-      ]
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "垂直应用软件"
+    },
+    {
+      "code": "300620",
+      "name": "光库科技",
+      "red_level": "三线红",
+      "business": "光器件(隔离器/调制器)龙头, 铌酸锂+薄膜铌酸锂受益CPO。关联: 通信网络设备及器件, CPO概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "688167",
+      "name": "炬光科技",
+      "red_level": "三线红",
+      "business": "高功率半导体激光器+微光学, CPO光引擎上游核心供应商。关联: 分立器件, CPO概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "分立器件"
+    },
+    {
+      "code": "688603",
+      "name": "天承科技",
+      "red_level": "三线红",
+      "business": "电子化学品(PCB水平沉铜/电镀), 受益AI PCB高景气。关联: 电子化学品Ⅲ, PCB概念, AI算力",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "电子化学品Ⅲ"
+    },
+    {
+      "code": "603002",
+      "name": "XD宏昌电",
+      "red_level": "三线红",
+      "business": "环氧树脂+电子级高频高速覆铜板。关联: 其他化学制品, PCB概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "其他化学制品"
     },
     {
       "code": "603083",
       "name": "剑桥科技",
-      "business": "光模块/通信设备",
+      "red_level": "三线红",
+      "business": "光模块/CPO设备商, Q1收入12.87亿+44%, 800G/1.6T高速光模块扩产。关联: 通信终端及配件, CPO概念",
       "catalysts": [
-        "三线红新进"
-      ]
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "通信终端及配件"
+    },
+    {
+      "code": "300938",
+      "name": "信测标准",
+      "red_level": "三线红",
+      "business": "第三方检测认证服务, 汽车/电子电器/食品检测。关联: 检测服务",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "检测服务"
+    },
+    {
+      "code": "300626",
+      "name": "华瑞股份",
+      "red_level": "三线红",
+      "business": "电机换向器制造商, 受益新能源汽车电机需求。关联: 电机Ⅲ, 新能源汽车",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "电机Ⅲ"
+    },
+    {
+      "code": "301205",
+      "name": "联特科技",
+      "red_level": "一线红",
+      "business": "光模块制造商, 800G/1.6T产品布局, 受益AI算力需求。关联: 通信网络设备及器件, CPO概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "688231",
+      "name": "隆达股份",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "其他金属新材料"
+    },
+    {
+      "code": "600428",
+      "name": "中远海特",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "航运"
+    },
+    {
+      "code": "300602",
+      "name": "飞荣达",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "601101",
+      "name": "昊华能源",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "动力煤"
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "red_level": "一线红",
+      "business": "CXO龙头, CRDMO一体化平台, 全球制药研发外包TOP, Q1 D&M增长强劲。关联: 医疗研发外包, 创新药概念",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "603127",
+      "name": "昭衍新药",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "301322",
+      "name": "绿通科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "其他运输设备"
+    },
+    {
+      "code": "603588",
+      "name": "高能环境",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "固废治理"
+    },
+    {
+      "code": "300959",
+      "name": "线上线下",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "近90天暂无重大催化"
+      ],
+      "sector_l3": "通信应用增值服务"
     }
   ]
 }

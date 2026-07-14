@@ -1926,7 +1926,7 @@ function showMemberPanel(label, members) {
       ? anomalyAlerts.map(a => `<div style="font-size:11px;line-height:1.4;">${a}</div>`).join('')
       : '—';
     return `<tr>
-      <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${m.code}">${m.name}</td>
+      <td style="cursor:pointer;color:#4a6cf7;text-decoration:underline;" data-code="${m.code}">${m.name}<span onclick="event.stopPropagation();showCatalyst('stock','${m.code}')" style="cursor:pointer;margin-left:4px;font-size:12px;" title="催化分析">📋</span></td>
       <td><a href="${xueqiuUrl(m.code)}" target="_blank" style="color:#4a6cf7;text-decoration:none;">${m.code}</a></td>
       <td class="${pctClass}">${pctStr}</td>
       <td class="${(m.rps_50d || 0) >= 90 ? 'rps-red' : 'rps-default'}">${m.rps_50d != null ? m.rps_50d.toFixed(1) : '—'}</td>

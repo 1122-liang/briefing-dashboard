@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-14T14:00:23",
-  "count": 9,
+  "updated_at": "2026-07-14T14:50:29",
+  "count": 10,
   "stocks": [
+    {
+      "symbol": "SZ002821",
+      "name": "凯莱英",
+      "marketplace": "CN",
+      "watched": "2026-07-14T14:23:10"
+    },
     {
       "symbol": "SH603127",
       "name": "昭衍新药",
@@ -62,6 +68,13 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-14",
     "changes": [
+      {
+        "time": "14:25",
+        "action": "add",
+        "symbol": "SZ002821",
+        "name": "凯莱英",
+        "watched": "2026-07-14T14:23:10"
+      },
       {
         "time": "14:00",
         "action": "add",

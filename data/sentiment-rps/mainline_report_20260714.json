@@ -1,0 +1,289 @@
+{
+  "date": "20260714",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 12,
+      "trend": "up",
+      "key_stocks": [
+        {
+          "code": "603259",
+          "name": "药明康德",
+          "catalyst": "CXO景气右侧反转，2026H1全球药融同比+95%"
+        },
+        {
+          "code": "603127",
+          "name": "昭衍新药",
+          "catalyst": "港股单日涨超14%，基药目录+创新药政策红利"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "其他生物制品",
+      "consecutive_days": 10,
+      "trend": "up",
+      "key_stocks": [
+        {
+          "code": "603087",
+          "name": "甘李药业",
+          "catalyst": "胰岛素龙头，基药目录调整利好"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "化学制剂",
+      "consecutive_days": 9,
+      "trend": "up",
+      "key_stocks": [
+        {
+          "code": "688221",
+          "name": "前沿生物",
+          "catalyst": "创新药概念，7月1日涨近19%"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "生猪养殖",
+      "consecutive_days": 7,
+      "trend": "up",
+      "key_stocks": [
+        {
+          "code": "",
+          "name": "牧原股份",
+          "catalyst": "猪价反弹21%，产能加速去化，周期反转预期升温"
+        }
+      ]
+    }
+  ],
+  "declining": [
+    {
+      "name": "半导体设备",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池，前期涨幅回调消化"
+    },
+    {
+      "name": "半导体材料",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池"
+    },
+    {
+      "name": "国有大型银行Ⅲ",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池"
+    },
+    {
+      "name": "城商行Ⅲ",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池"
+    },
+    {
+      "name": "快递",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池"
+    },
+    {
+      "name": "集成电路封测",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池"
+    },
+    {
+      "name": "超级品牌",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池概念"
+    },
+    {
+      "name": "预制菜",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池概念"
+    },
+    {
+      "name": "高股息精选",
+      "consecutive_days": 0,
+      "trend": "down",
+      "note": "退池概念"
+    }
+  ],
+  "emerging": [
+    {
+      "name": "摩托车",
+      "consecutive_days": 7,
+      "red_lines": 3,
+      "note": "连续在池7天，三线红"
+    },
+    {
+      "name": "生活用纸",
+      "consecutive_days": 6,
+      "red_lines": 3,
+      "note": "连续在池6天，三线红"
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "炼油化工",
+      "catalyst_summary": "🔴 Q2油价96.7美元同环比大涨，石化业绩高增，供需双支撑化工景气回暖",
+      "stocks": [
+        {
+          "code": "002493",
+          "name": "荣盛石化",
+          "business": "民营大炼化龙头",
+          "catalysts": [
+            "Q2净利润22亿YoY+15979%"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "油田服务",
+      "catalyst_summary": "🔴 美军打击伊朗油价暴涨+瑞银看好中期前景，安东油田获管理层增持",
+      "stocks": [
+        {
+          "code": "300164",
+          "name": "通源石油",
+          "business": "北美射孔+油气田服务",
+          "catalysts": [
+            "美军对伊打击催化油价暴涨"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "高速公路",
+      "catalyst_summary": "山东高速触涨停，央行1.4万亿逆回购净投放利好基建类",
+      "stocks": [
+        {
+          "code": "600350",
+          "name": "山东高速",
+          "business": "高速公路运营",
+          "catalysts": [
+            "7月8日触涨停板"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "原料药",
+      "catalyst_summary": "🔴 基药目录2026版实施+集采豁免创新药，原料药涨价预期升温",
+      "stocks": [
+        {
+          "code": "603087",
+          "name": "甘李药业",
+          "business": "胰岛素原料药龙头",
+          "catalysts": [
+            "基药目录调整利好"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "血液制品",
+      "catalyst_summary": "万联证券：供给收缩迎周期拐点，牌照壁垒+老龄化刚需，估值历史低位",
+      "stocks": [
+        {
+          "code": "300294",
+          "name": "博雅生物",
+          "business": "血液制品龙头",
+          "catalysts": [
+            "华润增持+新浆站建设"
+          ]
+        }
+      ]
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "医美概念",
+      "catalyst_summary": "四环医药冻妍临床登SCI期刊，童颜针/少女针新品放量，行业渗透率提升",
+      "stocks": []
+    },
+    {
+      "name": "民营医院",
+      "catalyst_summary": "🔴 医药板块政策密集利好：基药目录扩容+医保商保+创新药预申报",
+      "stocks": []
+    },
+    {
+      "name": "辅助生殖",
+      "catalyst_summary": "🔴 国务院国民健康十五五规划纳入辅助生殖保障，锦欣生殖业绩复苏",
+      "stocks": []
+    },
+    {
+      "name": "幽门螺杆菌概念",
+      "catalyst_summary": "轩竹生物安奈拉唑钠III期临床入组，中国Hp市场55亿→2035年126亿",
+      "stocks": []
+    },
+    {
+      "name": "人造肉",
+      "catalyst_summary": "猪价反弹21%带动替代蛋白概念走强，农产品周期蓄势向上",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "603203",
+      "name": "快克智能",
+      "business": "电子装联设备龙头",
+      "catalysts": [
+        "三线红新进"
+      ]
+    },
+    {
+      "code": "300620",
+      "name": "光库科技",
+      "business": "光纤激光器件龙头",
+      "catalysts": [
+        "三线红新进"
+      ]
+    },
+    {
+      "code": "688535",
+      "name": "华海诚科",
+      "business": "环氧塑封料龙头",
+      "catalysts": [
+        "半导体材料三线红"
+      ]
+    },
+    {
+      "code": "688167",
+      "name": "炬光科技",
+      "business": "高功率半导体激光器",
+      "catalysts": [
+        "三线红新进"
+      ]
+    },
+    {
+      "code": "688048",
+      "name": "长光华芯",
+      "business": "高功率半导体激光芯片",
+      "catalysts": [
+        "三线红新进"
+      ]
+    },
+    {
+      "code": "688507",
+      "name": "索辰科技",
+      "business": "CAE仿真软件龙头",
+      "catalysts": [
+        "三线红新进"
+      ]
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "business": "光模块/通信设备",
+      "catalysts": [
+        "三线红新进"
+      ]
+    }
+  ]
+}

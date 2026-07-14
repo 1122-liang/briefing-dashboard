@@ -1,0 +1,267 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T13:59:06.997972+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": "cmrj36yri059qbilk1n6jhqn1",
+      "title": "Meta路易斯安那数据中心扩至5GW，总投资超500亿美元",
+      "industry": "AI算力基础设施",
+      "type": "行业瓶颈变化",
+      "summary": "Meta将其路易斯安那州数据中心算力从原有规模扩至5GW，总投资超500亿美元，为全球最大AI基础设施单笔投资。Meta承诺承担全部能源及水资源费用，另投超10亿美元改善当地道路及供水系统，并与安特吉公司达成天然气发电厂、储能电池及核电增容项目协议。",
+      "investment_logic": "全球AI算力军备竞赛从MW级升级至GW级。5GW数据中心对应数百万GPU集群，光模块、交换机、液冷、电力设备全产业链需求暴增。Meta一家即500亿$，若Amazon/Google/Microsoft同步扩产，2026-2028年AI基础设施投资将突破万亿$。光模块需求从800G向1.6T/3.2T迭代加速。",
+      "target_stocks": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "reason": "全球光模块龙头，800G/1.6T核心供应商"
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "reason": "高速光模块黑马，北美大客户突破"
+        },
+        {
+          "code": "601138",
+          "name": "工业富联",
+          "reason": "AI服务器全球最大ODM"
+        },
+        {
+          "code": "002837",
+          "name": "英维克",
+          "reason": "数据中心精密温控龙头，液冷方案核心"
+        }
+      ],
+      "risk_note": "中美贸易摩擦可能导致光模块出口受限；Meta资本开支回调风险；AI芯片供应瓶颈持续",
+      "source": "IT之家 RSS"
+    },
+    {
+      "id": "cmrjw1gyj011bbiw2epuuumva",
+      "title": "PixVerse完成4.39亿美元C轮扩展融资，估值突破20亿美元",
+      "industry": "AI视频生成",
+      "type": "重大事件",
+      "summary": "新加坡视频生成初创公司PixVerse完成C轮扩展融资，共筹集4.39亿美元，估值突破20亿美元。公司提供V系列(消费者及API)、C系列(专业影视)及R系列世界模型(游戏开发)。消费端注册用户超1.5亿，月活超1500万，投资者包括阿里巴巴。",
+      "investment_logic": "AI视频生成赛道资本密集涌入验证商业化可行性。可灵AI估值180亿$、PixVerse超20亿$、Runway持续融资，三大玩家格局初成。1.5亿注册用户+1500万MAU表明消费级AI视频市场已具规模。阿里参投影射大厂在AI内容生态的防御性布局。",
+      "target_stocks": [
+        {
+          "code": "01024.HK",
+          "name": "快手-W",
+          "reason": "可灵AI估值180亿$，视频生成赛道头号玩家"
+        },
+        {
+          "code": "ADBE",
+          "name": "Adobe",
+          "reason": "Firefly视频生成整合创意工具生态"
+        },
+        {
+          "code": "300624",
+          "name": "万兴科技",
+          "reason": "万兴喵影集成AI视频能力，全球化布局"
+        },
+        {
+          "code": "GETY",
+          "name": "Getty Images",
+          "reason": "AI视频训练数据授权+版权变现"
+        }
+      ],
+      "risk_note": "AI视频版权争议未解决；Runway/可灵/PixVerse三强烧钱竞争；B端付费转化率待验证",
+      "source": "TechCrunch RSS"
+    },
+    {
+      "id": "cmrk1airt02fybiw2ou71j8uf",
+      "title": "面壁智能CTO专访：端侧模型+华为昇腾适配，知识密度每3.5月翻番",
+      "industry": "端侧AI",
+      "type": "行业新方向",
+      "summary": "面壁智能CTO曾国洋指出端侧模型是AI落地关键路径。'面壁定律'显示知识密度每3.5个月翻番，2B参数MiniCPM表现优于同期8B竞品。已完成高通、联发科、英特尔、英伟达、AMD芯片适配，新发布的BitCPM-CANN模型可在华为昇腾芯片上让同一内存多装约6倍模型。团队开发了全球首个完全由AI编写的生产级训练框架ForgeTrain。",
+      "investment_logic": "端侧AI从技术验证进入商用临界点。华为昇腾生态获BitCPM适配(内存效率6x)，端侧推理芯片需求将随AI手机/AI PC/AIoT爆发。面壁定律(知识密度3.5月翻番)意味着同等参数模型质量持续跃升，端侧芯片市场空间打开。高通/联发科/昇腾三足鼎立的端侧AI芯片格局成形。",
+      "target_stocks": [
+        {
+          "code": "688256",
+          "name": "寒武纪",
+          "reason": "国产AI推理芯片龙头，端侧思元系列"
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "reason": "端侧AI SoC芯片，AIoT场景广泛"
+        },
+        {
+          "code": "300458",
+          "name": "全志科技",
+          "reason": "智能终端SoC，AI视觉芯片布局"
+        },
+        {
+          "code": "000034",
+          "name": "神州数码",
+          "reason": "华为昇腾核心分销商，AI算力渠道受益"
+        }
+      ],
+      "risk_note": "端侧AI应用生态尚未成熟；国际市场华为受制裁限制；消费电子需求波动影响芯片出货",
+      "source": "公众号：面壁智能（MiniCPM）"
+    },
+    {
+      "id": "cmrj4s89p05nhbilkljqel2d5",
+      "title": "腾讯混元发布HyOCR-1.5：端到端OCR大模型全栈开源，推理提速6.37倍",
+      "industry": "AI文档处理",
+      "type": "行业新方向",
+      "summary": "腾讯混元发布HyOCR-1.5，端到端OCR大模型领域首个训练/推理/模型权重完整开源模型。仅1B参数，覆盖8种以上text-centric任务，引入DFlash投机解码框架实现6.37x推理加速。支持4K分辨率与128K上下文窗口，可处理331种语言OCR及古文字识别。在OmniDocBench v1.6以94.74分居端到端第一。",
+      "investment_logic": "OCR是AI企业落地最高频场景之一(合同/票据/档案数字化)。1B参数+6.37x加速意味着OCR成本骤降至可大规模部署的水平。331种语言支持打开一带一路企业出海文档处理市场。全栈开源降低企业采用门槛，文档AI SaaS市场有望加速渗透。",
+      "target_stocks": [
+        {
+          "code": "688615",
+          "name": "合合信息",
+          "reason": "OCR/文档识别龙头，扫描全能王母公司"
+        },
+        {
+          "code": "688111",
+          "name": "金山办公",
+          "reason": "WPS AI集成OCR能力，办公场景全覆盖"
+        },
+        {
+          "code": "688095",
+          "name": "福昕软件",
+          "reason": "PDF+文档AI全球化布局"
+        },
+        {
+          "code": "00700.HK",
+          "name": "腾讯控股",
+          "reason": "混元大模型底层能力外溢，企业服务增长"
+        }
+      ],
+      "risk_note": "开源模型可能压低商业化价格；传统OCR厂商面临降维打击；文档数据隐私合规风险",
+      "source": "公众号：腾讯混元"
+    },
+    {
+      "id": "cmrjy99kt01nvbiw22bwjsvnv",
+      "title": "商汤开源SenseNova-Vision-7B-MoT：统一检测/OCR/GUI/深度/分割多任务视觉模型",
+      "industry": "计算机视觉",
+      "type": "行业新方向",
+      "summary": "商汤发布并完全开源SenseNova-Vision-7B-MoT，统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务。支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及SenseNova-Vision Corpus(含5000万示例子集)。",
+      "investment_logic": "传统计算机视觉由多个独立专用模型组成，部署成本高、维护复杂。统一视觉模型将多个任务融合入单一模型，大幅降低企业AI视觉部署门槛。7B参数在端/云均可部署，覆盖安防、工业检测、自动驾驶、医疗影像等核心场景。商汤从亏损走向开源生态转型，成本结构改善信号。",
+      "target_stocks": [
+        {
+          "code": "00020.HK",
+          "name": "商汤-W",
+          "reason": "视觉AI龙头，开源战略降低获客成本"
+        },
+        {
+          "code": "002415",
+          "name": "海康威视",
+          "reason": "安防视觉AI最大应用场景，端侧部署领先"
+        },
+        {
+          "code": "002236",
+          "name": "大华股份",
+          "reason": "安防+工业视觉AI化转型"
+        },
+        {
+          "code": "688012",
+          "name": "中微公司",
+          "reason": "半导体检测视觉AI需求增长"
+        }
+      ],
+      "risk_note": "开源策略盈利模式不清晰；视觉AI市场竞争激烈；地缘政治影响商汤海外业务",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)"
+    },
+    {
+      "id": "cmrj2yiav054pbilkyf6ufbw2",
+      "title": "字节Seedream 5.0 Pro发布：图像编辑门槛爆降，API全量上线",
+      "industry": "AI创意工具",
+      "type": "行业新方向",
+      "summary": "字节跳动发布Seedream 5.0 Pro，图像质量与提示词理解追平GPT-Image 2.0。核心亮点是可编辑交互：用户在图上打点/画框/涂鸦，提示词中直接@标记实现精准局部编辑。实测案例涵盖家装改造(一次替换六件家具)、商品图制作(爆炸拆解图)、海报排版等场景。火山引擎已全量上线API。",
+      "investment_logic": "AI图像编辑从专业工具(P图门槛)向全民化(点点画画即可)跃迁。火山引擎API全量上线意味着字节将Seedream作为企业级产品变现，直接对标Adobe Firefly。家装/电商/广告三大万亿级市场均可被AI图像编辑重构。字节生态(抖音/即梦/豆包)为Seedream提供天然分发渠道。",
+      "target_stocks": [
+        {
+          "code": "01357.HK",
+          "name": "美图公司",
+          "reason": "AI图像编辑C端第一品牌，设计室月活破亿"
+        },
+        {
+          "code": "ADBE",
+          "name": "Adobe",
+          "reason": "Firefly GenAI面临字节/OpenAI双面夹击"
+        },
+        {
+          "code": "300624",
+          "name": "万兴科技",
+          "reason": "Filmora/喵影AI图像+视频编辑工具链"
+        },
+        {
+          "code": "002803",
+          "name": "吉宏股份",
+          "reason": "跨境电商AI商品图/广告素材自动化受益"
+        }
+      ],
+      "risk_note": "字节产品未上市无法直接投资；图像版权/肖像权合规风险；大厂免费策略压制工具类商业变现",
+      "source": "X：歸藏 (@op7418)"
+    },
+    {
+      "id": "cmrj6actv0651bilkm5pfz6ub",
+      "title": "德国AI协会发布Soofi S开源模型，30B MoE架构在英德双语领先",
+      "industry": "欧洲AI自主化",
+      "type": "政策影响",
+      "summary": "德国AI协会协调研究联盟发布开源大语言模型Soofi S 30B-A3B，采用Mamba-2与标准注意力混合MoE架构，完全在德国电信慕尼黑工业AI云上训练。在完全开源模型中英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。上下文窗口100万token，4万token长度下生成吞吐量为同规模稠密模型8倍。",
+      "investment_logic": "欧洲AI主权化从政策口号进入技术落地。Soofi S完全在德国本土训练(非美国云)，代表了欧盟技术主权计划的阶段性成果。欧洲企业(汽车/制造/金融)对非美AI方案需求强烈，本土模型将推动欧洲AI基础设施(算力/数据/芯片)独立生态建设。德电信+工业4.0场景为本土AI提供独特市场。",
+      "target_stocks": [
+        {
+          "code": "688041",
+          "name": "海光信息",
+          "reason": "国产GPU对标路线：非美AI芯片全球需求上升"
+        },
+        {
+          "code": "000063",
+          "name": "中兴通讯",
+          "reason": "欧洲5G+AI基础设施布局，受益欧洲数字化"
+        },
+        {
+          "code": "ASML",
+          "name": "阿斯麦",
+          "reason": "欧洲AI芯片制造链核心，本土化受益"
+        },
+        {
+          "code": "SAP",
+          "name": "SAP",
+          "reason": "欧洲企业软件龙头，AI集成德国本土模型"
+        }
+      ],
+      "risk_note": "欧洲AI投资规模远小于中美；开源模型商业化路径不清晰；地缘政治可能促使中美欧三套AI体系分裂",
+      "source": "The Decoder：AI News（RSS）"
+    },
+    {
+      "id": "cmrjrg5aj0202bis4f9pzo8d3",
+      "title": "前沿模型实际成本分析：Tokenizer差异导致Claude隐性涨价73%",
+      "industry": "AI推理成本",
+      "type": "行业瓶颈变化",
+      "summary": "同一TypeScript文件在GPT-5.x上为681 token，在Claude新tokenizer下为1178 token，相差1.73倍。Anthropic新tokenizer比旧版多产生约30%token，标价不变构成隐性涨价。Claude Sonnet 5促销价$2/$10将于2026年8月31日后恢复$3/$15，届时相同代码成本将比Sonnet 4.6高出约32%。",
+      "investment_logic": "AI推理成本正经历结构性上涨周期。大厂通过tokenizer变更、促销到期等方式隐性提价，企业AI总拥有成本(TCO)面临重估。这将催生三个投资方向：(1)推理效率优化工具/芯片需求暴增；(2)企业多模型比价/切换平台崛起；(3)自建推理基础设施(国产GPU)经济性改善。AI成本从'持续下降'叙事转向'隐性上涨'现实。",
+      "target_stocks": [
+        {
+          "code": "688256",
+          "name": "寒武纪",
+          "reason": "推理芯片成本优势凸显，企业自建推理需求上升"
+        },
+        {
+          "code": "688111",
+          "name": "金山办公",
+          "reason": "AI推理成本敏感型应用，成本优化工具受益"
+        },
+        {
+          "code": "MSFT",
+          "name": "微软",
+          "reason": "Azure OpenAI/MAI多模型比价平台优势"
+        },
+        {
+          "code": "AMZN",
+          "name": "亚马逊",
+          "reason": "AWS Bedrock多模型网关，成本优化定位"
+        }
+      ],
+      "risk_note": "大厂可能通过规模效应重新降价；tokenizer差异对非代码场景影响较小；企业切换模型成本高",
+      "source": "Hacker News 热门"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-07-14.json",
+  "_saved_at": "2026-07-14T13:59:06.998729+08:00"
+}

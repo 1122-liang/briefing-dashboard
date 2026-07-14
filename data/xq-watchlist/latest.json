@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-07-14T13:55:22",
-  "count": 8,
+  "updated_at": "2026-07-14T14:00:23",
+  "count": 9,
   "stocks": [
+    {
+      "symbol": "SH603127",
+      "name": "昭衍新药",
+      "marketplace": "CN",
+      "watched": "2026-07-14T13:58:38"
+    },
     {
       "symbol": "SZ300209",
       "name": "行云科技",

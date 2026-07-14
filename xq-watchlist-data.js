@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-14T13:55:22",
-  "count": 8,
+  "updated_at": "2026-07-14T14:00:23",
+  "count": 9,
   "stocks": [
+    {
+      "symbol": "SH603127",
+      "name": "昭衍新药",
+      "marketplace": "CN",
+      "watched": "2026-07-14T13:58:38"
+    },
     {
       "symbol": "SZ300209",
       "name": "行云科技",
@@ -53,6 +59,18 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-14",
+    "changes": [
+      {
+        "time": "14:00",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-14T13:58:38"
+      }
+    ]
+  },
   {
     "date": "2026-07-13",
     "changes": [

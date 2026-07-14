@@ -440,59 +440,63 @@ async function loadMainlineReport() {
 function buildCatalystMap() {
   if (!mainlineData) return;
   catalystMap = {};
-  const addToMap = (type, name, data) => {
-    catalystMap[`${type}:${name}`] = data;
-  };
+  const add = (type, name, data) => { catalystMap[`${type}:${name}`] = data; };
   
-  ['sector','concept'].forEach(t => {
-    ['new_sectors','new_concepts'].forEach(k => {
-      const list = (t === 'sector') ? (mainlineData.new_sectors || []) : (mainlineData.new_concepts || []);
-      list.forEach(item => addToMap(t, item.name, { catalyst: item.catalyst_summary, stocks: item.stocks, business: '' }));
-    });
+  // 新进板块：含 catalyst_summary + 成分股列表
+  (mainlineData.new_sectors || []).forEach(item => {
+    add('sector', item.name, { catalyst: item.catalyst_summary, stocks: item.stocks, business: '' });
   });
-  
+  // 新进概念
+  (mainlineData.new_concepts || []).forEach(item => {
+    add('concept', item.name, { catalyst: item.catalyst_summary, stocks: item.stocks, business: '' });
+  });
+  // 新进个股
   (mainlineData.new_stocks || []).forEach(s => {
-    addToMap('stock', s.code, { business: s.business, catalysts: s.catalysts, catalyst: '' });
+    add('stock', s.code, { business: s.business, catalysts: s.catalysts, catalyst: '' });
   });
-  
+  // 主线板块/概念
   (mainlineData.main_themes || []).forEach(m => {
-    addToMap(m.entity_type, m.name, { 
-      catalyst: `连续在池${m.consecutive_days}天, 趋势${m.trend==='up'?'走强':'走弱'}`, stocks: m.key_stocks, business: '' 
-    });
+    add(m.entity_type, m.name, { catalyst: m.analysis, stocks: m.key_stocks, business: '' });
+  });
+  // 退潮
+  (mainlineData.declining || []).forEach(m => {
+    add(m.entity_type, m.name, { catalyst: m.analysis || m.reason, stocks: [], business: '' });
+  });
+  // 弱转强
+  (mainlineData.emerging || []).forEach(m => {
+    add(m.entity_type, m.name, { catalyst: m.analysis, stocks: m.key_stocks, business: '' });
   });
 }
 
 function showCatalyst(type, name) {
-  const key = `${type}:${name}`;
-  const info = catalystMap[key];
+  const info = catalystMap[`${type}:${name}`];
   const modal = document.getElementById('catalystModal');
-  const title = document.getElementById('catalystModalTitle');
-  const body = document.getElementById('catalystModalBody');
+  modal.querySelector('h3').textContent = `📋 ${name}`;
+  const body = modal.querySelector('#catalystModalBody');
   
   let html = '';
   if (info && info.business) {
-    html += `<div style="margin-bottom:8px;"><strong>业务:</strong> ${info.business}</div>`;
+    html += `<div style="margin-bottom:10px;"><strong>🏢 业务:</strong> ${info.business}</div>`;
   }
   if (info && info.catalyst) {
-    html += `<div style="margin-bottom:8px;"><strong>催化:</strong> ${info.catalyst}</div>`;
+    html += `<div style="margin-bottom:10px;"><strong>📰 分析:</strong> ${info.catalyst}</div>`;
   }
   if (info && info.catalysts && info.catalysts.length > 0) {
-    html += `<div style="margin-bottom:8px;"><strong>近三月事件:</strong><ul style="margin:4px 0;padding-left:20px;">`;
+    html += '<div style="margin-bottom:10px;"><strong>📅 近三月催化:</strong><ul style="margin:4px 0;padding-left:20px;">';
     info.catalysts.forEach(c => { html += `<li>${c}</li>`; });
     html += '</ul></div>';
   }
   if (info && info.stocks && info.stocks.length > 0) {
-    html += '<div><strong>关联个股:</strong><ul style="margin:4px 0;padding-left:20px;">';
+    html += '<div><strong>🔗 关联个股:</strong><div style="margin:4px 0;padding-left:16px;">';
     info.stocks.forEach(s => {
-      html += `<li>${s.name || s.code} ${s.code||''}: ${s.catalyst||s.business||''}</li>`;
+      html += `<div style="margin:2px 0;">· ${s.name||s.code} ${s.code ? '('+s.code+')' : ''}: ${s.catalyst||s.business||s.rps_note||s.note||''}</div>`;
     });
-    html += '</ul></div>';
+    html += '</div></div>';
   }
   if (!html) {
-    html = '<div style="color:#999;">暂无详细催化分析（该实体今日未被列入分析范围）</div>';
+    html = '<div style="color:#999;">暂无详细催化分析（明晚20:00自动更新后将展示）</div>';
   }
   
-  title.textContent = `📋 ${name}`;
   body.innerHTML = html;
   modal.style.display = 'flex';
 }
@@ -509,24 +513,44 @@ function renderMainlineReport() {
   const d = mainlineData;
   let html = '';
   
+  if (d.summary) {
+    html += `<div style="background:#f0f7ff;padding:8px 12px;border-radius:6px;margin-bottom:12px;font-size:14px;color:#2d3748;">📌 ${d.summary}</div>`;
+  }
+  
   if (d.main_themes && d.main_themes.length > 0) {
-    html += '<h3 style="color:#e53e3e;">🔴 市场主线</h3><ul style="margin-top:4px;">';
+    html += '<h3 style="color:#e53e3e;">🔴 市场主线</h3>';
     d.main_themes.forEach(m => {
-      html += `<li><b>${m.name}</b>: 连续在池${m.consecutive_days}天 (${m.trend==='up'?'↑走强':'↓走弱'})</li>`;
+      html += `<div style="margin:6px 0;padding:8px 12px;background:#fff5f5;border-left:3px solid #e53e3e;border-radius:4px;">`;
+      html += `<b>${m.name}</b> · 连续${m.consecutive_days}天 · 30日/120日/250日: ${m.d30||0}/${m.d120||0}/${m.d250||0}天`;
+      html += `<div style="color:#666;font-size:13px;margin-top:2px;">${m.analysis || ''}</div>`;
+      if (m.key_stocks && m.key_stocks.length > 0) {
+        html += `<div style="font-size:12px;color:#999;margin-top:2px;">关联个股: ${m.key_stocks.map(s => `${s.name||s.code}(${s.rps_note||s.note||''})`).join(', ')}</div>`;
+      }
+      html += '</div>';
     });
-    html += '</ul>';
   }
   
   if (d.declining && d.declining.length > 0) {
-    html += '<h3 style="color:#dd6b20;">⚠️ 退潮信号</h3><ul style="margin-top:4px;">';
-    d.declining.forEach(m => { html += `<li><b>${m.name}</b>: ${m.consecutive_days}天</li>`; });
-    html += '</ul>';
+    html += '<h3 style="color:#dd6b20;margin-top:12px;">⚠️ 退潮信号</h3>';
+    d.declining.forEach(m => {
+      html += `<div style="margin:6px 0;padding:8px 12px;background:#fffaf0;border-left:3px solid #dd6b20;border-radius:4px;">`;
+      html += `<b>${m.name}</b> · 昨日连续${m.prev_consecutive||m.consecutive_days}天 → 今日${m.consecutive_days}天 · 30日/120日: ${m.d30||0}/${m.d120||0}天`;
+      html += `<div style="color:#666;font-size:13px;margin-top:2px;">${m.analysis || m.reason || ''}</div>`;
+      html += '</div>';
+    });
   }
   
   if (d.emerging && d.emerging.length > 0) {
-    html += '<h3 style="color:#3182ce;">👀 弱转强关注</h3><ul style="margin-top:4px;">';
-    d.emerging.forEach(m => { html += `<li><b>${m.name}</b>: ${m.catalyst_summary || ''}</li>`; });
-    html += '</ul>';
+    html += '<h3 style="color:#3182ce;margin-top:12px;">👀 弱转强关注</h3>';
+    d.emerging.forEach(m => {
+      html += `<div style="margin:6px 0;padding:8px 12px;background:#ebf8ff;border-left:3px solid #3182ce;border-radius:4px;">`;
+      html += `<b>${m.name}</b> · 连续${m.consecutive_days}天 · 30日/120日/250日: ${m.d30||0}/${m.d120||0}/${m.d250||0}天`;
+      html += `<div style="color:#666;font-size:13px;margin-top:2px;">${m.analysis || ''}</div>`;
+      if (m.key_stocks && m.key_stocks.length > 0) {
+        html += `<div style="font-size:12px;color:#999;margin-top:2px;">${m.key_stocks.map(s => `${s.name||s.code}(${s.note||''})`).join(', ')}</div>`;
+      }
+      html += '</div>';
+    });
   }
   
   if (!html) html = '<div style="color:#999;">今日主线报告数据加载中，请明天20:00后查看</div>';

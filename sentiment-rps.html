@@ -13,6 +13,7 @@
 const EMBEDDED_DATA = '__EMBEDDED_DATA_PLACEHOLDER__';
 const EMBEDDED_HISTORY = '__EMBEDDED_HISTORY_PLACEHOLDER__';
 const EMBEDDED_SNAPSHOTS = '__EMBEDDED_SNAPSHOTS_PLACEHOLDER__';
+const EMBEDDED_MAINLINE = '__EMBEDDED_MAINLINE_PLACEHOLDER__';
 </script>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -421,9 +422,14 @@ let catalystMap = {};
 async function loadMainlineReport() {
   try {
     const date = (currentData && currentData.date) ? currentData.date : '20260713';
-    const resp = await fetch(`data/sentiment-rps/mainline_report_${date}.json`);
-    if (resp.ok) {
-      mainlineData = await resp.json();
+    // 优先读取嵌入数据（适用于 standalone HTML / file:// 协议）
+    if (typeof EMBEDDED_MAINLINE === 'object' && EMBEDDED_MAINLINE.date) {
+      mainlineData = EMBEDDED_MAINLINE;
+    } else {
+      const resp = await fetch(`data/sentiment-rps/mainline_report_${date}.json`);
+      if (resp.ok) mainlineData = await resp.json();
+    }
+    if (mainlineData) {
       buildCatalystMap();
       renderMainlineReport();
       document.getElementById('moduleMainline').style.display = '';

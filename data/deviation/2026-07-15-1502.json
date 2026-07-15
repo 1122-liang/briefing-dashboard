@@ -1,0 +1,97 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T15:02:02.609172+08:00",
+  "runs": [
+    {
+      "time": "15:02",
+      "generated_at": "2026-07-15T15:02:02.609172+08:00",
+      "stocks": [
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 28.83,
+          "deviation_pct": -4.3,
+          "threshold_pct": 43.7,
+          "trigger_price": 41.43,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 99.4,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "very_high",
+          "valuation": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 22.07,
+          "deviation_pct": -12.5,
+          "threshold_pct": 46.0,
+          "trigger_price": 32.23,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 10.02,
+          "deviation_pct": -7.2,
+          "threshold_pct": 29.5,
+          "trigger_price": 12.97,
+          "status": "normal",
+          "valuation": null
+        }
+      ],
+      "gold_rr": {
+        "spot": 4031.98,
+        "spot_change_pct": 0.24,
+        "data_time": "2026-07-15 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": -3.52,
+            "daily_change": 0.43,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "1M",
+            "rr": -2.89,
+            "daily_change": 0.24,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "3M",
+            "rr": -1.79,
+            "daily_change": 0.11,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "6M",
+            "rr": -0.82,
+            "daily_change": 0.05,
+            "signal": "偏空📉"
+          },
+          {
+            "period": "9M",
+            "rr": -0.23,
+            "daily_change": 0.05,
+            "signal": "中性偏空"
+          },
+          {
+            "period": "1Y",
+            "rr": 0.14,
+            "daily_change": 0.04,
+            "signal": "中性偏多"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-07-15-1502.json",
+  "_saved_at": "2026-07-15T15:02:02.609327+08:00"
+}

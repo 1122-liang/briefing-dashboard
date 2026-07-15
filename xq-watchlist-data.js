@@ -1,7 +1,31 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-14T15:55:38",
-  "count": 10,
+  "updated_at": "2026-07-15T13:59:04",
+  "count": 9,
   "stocks": [
+    {
+      "symbol": "SZ002422",
+      "name": "科伦药业",
+      "marketplace": "CN",
+      "watched": "2026-07-15T12:47:36"
+    },
+    {
+      "symbol": "SZ300765",
+      "name": "石药创新",
+      "marketplace": "CN",
+      "watched": "2026-07-15T10:12:14"
+    },
+    {
+      "symbol": "SZ300149",
+      "name": "睿智医药",
+      "marketplace": "CN",
+      "watched": "2026-07-15T09:52:13"
+    },
+    {
+      "symbol": "SH688192",
+      "name": "迪哲医药-U",
+      "marketplace": "CN",
+      "watched": "2026-07-15T09:38:11"
+    },
     {
       "symbol": "SZ002821",
       "name": "凯莱英",
@@ -13,12 +37,6 @@ window.__SNAPSHOT__ = {
       "name": "昭衍新药",
       "marketplace": "CN",
       "watched": "2026-07-14T13:58:38"
-    },
-    {
-      "symbol": "SZ300209",
-      "name": "行云科技",
-      "marketplace": "CN",
-      "watched": "2026-07-14T13:08:05"
     },
     {
       "symbol": "SH603538",
@@ -37,34 +55,73 @@ window.__SNAPSHOT__ = {
       "name": "万邦医药",
       "marketplace": "CN",
       "watched": "2026-07-14T10:54:07"
-    },
-    {
-      "symbol": "SH600183",
-      "name": "生益科技",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:32:32"
-    },
-    {
-      "symbol": "SZ300308",
-      "name": "中际旭创",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:32:29"
-    },
-    {
-      "symbol": "SZ002384",
-      "name": "东山精密",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:13:20"
-    },
-    {
-      "symbol": "SZ002636",
-      "name": "金安国纪",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:13:11"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-15",
+    "changes": [
+      {
+        "time": "13:38",
+        "action": "add",
+        "symbol": "SH688192",
+        "name": "迪哲医药-U",
+        "watched": "2026-07-15T09:38:11"
+      },
+      {
+        "time": "13:38",
+        "action": "add",
+        "symbol": "SZ002422",
+        "name": "科伦药业",
+        "watched": "2026-07-15T12:47:36"
+      },
+      {
+        "time": "13:38",
+        "action": "add",
+        "symbol": "SZ300149",
+        "name": "睿智医药",
+        "watched": "2026-07-15T09:52:13"
+      },
+      {
+        "time": "13:38",
+        "action": "add",
+        "symbol": "SZ300765",
+        "name": "石药创新",
+        "watched": "2026-07-15T10:12:14"
+      },
+      {
+        "time": "13:38",
+        "action": "remove",
+        "symbol": "SH600183",
+        "name": "生益科技"
+      },
+      {
+        "time": "13:38",
+        "action": "remove",
+        "symbol": "SZ002384",
+        "name": "东山精密"
+      },
+      {
+        "time": "13:38",
+        "action": "remove",
+        "symbol": "SZ002636",
+        "name": "金安国纪"
+      },
+      {
+        "time": "13:38",
+        "action": "remove",
+        "symbol": "SZ300209",
+        "name": "行云科技"
+      },
+      {
+        "time": "13:38",
+        "action": "remove",
+        "symbol": "SZ300308",
+        "name": "中际旭创"
+      }
+    ]
+  },
   {
     "date": "2026-07-14",
     "changes": [

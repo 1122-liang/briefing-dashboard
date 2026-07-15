@@ -1,0 +1,431 @@
+{
+  "date": "20260715",
+  "summary": "医药集群主导(医疗研发外包13d/化学制剂10d/CRO13d),创新药出海H1突破1100亿美元刷新纪录;油田服务/炼油化工/生猪养殖/高速公路退池;中特估/消费/煤炭/养殖多线轮动;13只新进三线红个股集中于光纤/激光/PCB/AI算力方向",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 13,
+      "d30": 13,
+      "d120": 29,
+      "d250": 55,
+      "trend": "up",
+      "analysis": "连续在池13天,d30达13天↑。催化:🔴昭衍新药H1净利+884-1377%(实验猴价格暴涨溢价),创新药出海H1达成81笔交易约1100亿美元(已达2025年全年80%),新版基药目录794种药品9月1日实施首次纳入创新药遴选。CXO景气右侧反转已确认。",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 13,
+      "d30": 13,
+      "d120": 23,
+      "d250": 42,
+      "trend": "up",
+      "analysis": "连续在池13天↑。催化:同医疗研发外包,新增全球药品融资H1同比+95%,CDMO多肽/小核酸新分子需求旺盛,CRO量增价稳收入利润触底改善。",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "其他生物制品",
+      "consecutive_days": 11,
+      "d30": 12,
+      "d120": 25,
+      "d250": 39,
+      "trend": "up",
+      "analysis": "连续在池11天↑。催化:🔴脑机接口首例植入手术(华山医院),基药目录新增生物制品59种,十五五规划全链条支持创新药,创新药BD出海H1再创新高。血液制品需求刚性持续。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "化学制剂",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 19,
+      "d250": 37,
+      "trend": "up",
+      "analysis": "连续在池10天。催化:🔴迪哲医药与阿斯利康签署授权协议获6亿美元首付款,基药目录首次将创新药纳入遴选,创新药H1获批27款(22款国产),出海H1突破997亿美元。创新药实现从'中国制造'到'全球授权'的范式跃迁。",
+      "key_stocks": [
+        {
+          "code": "688192",
+          "name": "迪哲医药",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "创新药",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 20,
+      "d250": 37,
+      "trend": "up",
+      "analysis": "连续在池10天↑。催化:创新药BD出海H1再创新高(突破997亿美元),ASCO年会中国研究口头报告创新高,基药目录2026版16款创新药首入。国产创新药全球竞争力持续验证。",
+      "key_stocks": []
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "油田服务",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 19,
+      "prev_d120": 19,
+      "analysis": "昨日在池今日退出。虽🔴伊朗战事重燃(7.13)油价暴涨9%回80美元,但IEA预计2026年石油日均需求同比萎缩110万桶,供给过剩预期下板块退池。地缘风险短多长空。",
+      "reason": "无新增催化/油价脉冲后回落"
+    },
+    {
+      "entity_type": "sector",
+      "name": "炼油化工",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 9,
+      "prev_d120": 9,
+      "analysis": "昨日在池连续3天,今日退出。Q2油价中枢上移但成品油价下调3次累计750-780元/吨,税费侵蚀利润,中国石化Q2预计净利-70.6%QoQ。",
+      "reason": "成品油价下调压缩利润"
+    },
+    {
+      "entity_type": "sector",
+      "name": "生猪养殖",
+      "consecutive_days": 0,
+      "prev_consecutive": 7,
+      "d30": 7,
+      "d120": 9,
+      "prev_d120": 9,
+      "analysis": "昨日在池连续7天,今日退出。猪价反弹乏力,6月能繁母猪存栏环比+0.8%供应压力不减。",
+      "reason": "供给端压力无缓解/无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "高速公路",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 6,
+      "prev_d120": 6,
+      "analysis": "昨日在池今日退出,近90天暂无重大催化,防御属性在科技资金跷跷板中暂时失宠。",
+      "reason": "无新增催化/资金轮动"
+    },
+    {
+      "entity_type": "concept",
+      "name": "中国AI 50",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 0,
+      "d120": 0,
+      "prev_d120": 0,
+      "analysis": "昨日在池(3线红)今日退出。AI板块高位调整,科技资金向医药消费切换,概念股全线退潮。",
+      "reason": "AI板块高位获利了结/风格切换"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "保险Ⅲ",
+      "consecutive_days": 1,
+      "d30": 3,
+      "d120": 3,
+      "d250": 25,
+      "analysis": "首次进池(连续1天),d250达25天→回池再启动。催化:🔴六大行H1分红超4200亿股息率4.6%,陆家嘴论坛保险政策红利+Q2盈利高增预期+权益市场回暖。",
+      "catalyst_summary": "六大行高分红+保险政策红利+权益市场回暖",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "疫苗",
+      "consecutive_days": 1,
+      "d30": 2,
+      "d120": 2,
+      "d250": 15,
+      "analysis": "首次进池(连续1天),d250=15天→回池再启。催化:🔴无血清狂苗获批实现零突破,石药带状疱疹疫苗获批临床,康希诺百白破即将批签发。两款疫苗同日拿证。",
+      "catalyst_summary": "无血清狂苗获批+带状疱疹疫苗临床",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "体外诊断",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 1,
+      "d250": 6,
+      "analysis": "首次进池(1天)。催化:🔴九安医疗涨停封板+十五五规划全链条支持创新医疗器械,医疗器械ETF年内份额扩容9%。",
+      "catalyst_summary": "九安医疗涨停+十五五规划全链条支持创新器械",
+      "key_stocks": [
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "note": "H1净利+204-270%"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "合成生物",
+      "consecutive_days": 1,
+      "d30": 2,
+      "d120": 6,
+      "d250": 6,
+      "analysis": "首次进池。催化:🔴十五五规划首次将合成生物列入未来产业,华熙生物合成生物学研发管线进展。",
+      "catalyst_summary": "十五五规划首次列入未来产业",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "农业种植",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 2,
+      "d250": 2,
+      "analysis": "首次进池(1天)。催化:🔴厄尔尼诺气候扰动+全球粮食减产预期,转基因商业化种植面积扩大+粮食安全估值重估。",
+      "catalyst_summary": "厄尔尼诺+粮食安全+转基因扩大",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "保险Ⅲ",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 3,
+      "catalyst_summary": "六大行高分红4200亿股息率4.6%+保险政策红利+权益市场回暖",
+      "stocks": []
+    },
+    {
+      "name": "疫苗",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "无血清狂苗获批+带状疱疹疫苗临床+百白破即将批签发",
+      "stocks": []
+    },
+    {
+      "name": "体外诊断",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "九安医疗涨停+H1净利+204%,十五五规划全链条支持创新器械",
+      "stocks": [
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "business": "IVD龙头,家用医疗器械,H1净利28-34亿。关联:医疗设备,IVD",
+          "catalysts": [
+            "🔴H1净利预盈28-34亿同比+204-270%"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "国有大型银行Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 6,
+      "catalyst_summary": "六大行H1分红超4200亿股息率4.6%,券商看好下半年估值修复与高股息防御价值",
+      "stocks": []
+    },
+    {
+      "name": "动力煤",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 8,
+      "catalyst_summary": "H1动力煤均价770元/吨十年最强,美伊冲突推升能源替代需求,煤价易涨难跌",
+      "stocks": []
+    },
+    {
+      "name": "白酒Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴国务院批复《扩大消费十五五规划》首份消费领域国家顶层规划,2030社零目标60万亿,白酒去库出清接近尾声",
+      "stocks": []
+    },
+    {
+      "name": "商业物业经营",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "商业不动产REITs市场爆发式升温,首批4单已上市涵盖写字楼/购物中心等业态",
+      "stocks": []
+    },
+    {
+      "name": "火电设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "全球燃气轮机巨头排单至2030年,AIDC扩张驱动结构性上升周期,国产自主燃机出海加速",
+      "stocks": []
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "农业种植",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "厄尔尼诺气候扰动+全球粮食减产,转基因商业化种植面积扩大",
+      "stocks": []
+    },
+    {
+      "name": "合成生物",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "十五五规划首次列入未来产业,华熙生物研发管线进展",
+      "stocks": []
+    },
+    {
+      "name": "超级品牌",
+      "red_level": "四线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "消费白马估值修复+外资回流,类债属性受防御资金青睐,《扩大消费十五五规划》催化",
+      "stocks": []
+    },
+    {
+      "name": "预制菜",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "预制菜国家标准2026版将出台,B端餐饮+团餐需求驱动,安井食品H1预增20%+",
+      "stocks": []
+    },
+    {
+      "name": "同花顺中特估100",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "大金融全线爆发,保险券商龙头批量涨停,券商估值处历史低位",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "001389",
+      "name": "广合科技",
+      "red_level": "三线红",
+      "business": "AI算力PCB龙头,H1预增85-95%。关联:印制电路板,AI硬件",
+      "sector_l3": "印制电路板",
+      "catalysts": [
+        "🔴H1预增85%-95%净利9.1-9.6亿",
+        "🔴拟60亿投建东莞智造总部"
+      ]
+    },
+    {
+      "code": "601869",
+      "name": "长飞光纤",
+      "red_level": "三线红",
+      "business": "光纤光缆龙头,H1预增711-914%。关联:通信线缆,5G,AI算力",
+      "sector_l3": "通信线缆及配套",
+      "catalysts": [
+        "🔴H1预增711%-914%净利24-30亿",
+        "🔴光纤价格飙涨650%"
+      ]
+    },
+    {
+      "code": "002008",
+      "name": "大族激光",
+      "red_level": "三线红",
+      "business": "激光设备龙头,H1预增156-177%。关联:激光设备,AI硬件,3D打印",
+      "sector_l3": "激光设备",
+      "catalysts": [
+        "🔴H1预增156%-177%净利12.5-13.5亿",
+        "Q1收入历史新高51.3亿+74%"
+      ]
+    },
+    {
+      "code": "603618",
+      "name": "杭电股份",
+      "red_level": "三线红",
+      "business": "电线电缆制造商,光纤量价齐升。关联:线缆部件,特高压",
+      "sector_l3": "线缆部件及其他",
+      "catalysts": [
+        "🔴H1预增852%-958%净利3.6-4亿"
+      ]
+    },
+    {
+      "code": "603950",
+      "name": "长源东谷",
+      "red_level": "三线红",
+      "business": "燃机零部件,首笔订单签约xAI数据中心。关联:底盘与发动机",
+      "sector_l3": "底盘与发动机系统",
+      "catalysts": [
+        "🔴首笔燃机订单签约xAI数据中心超1亿美金"
+      ]
+    },
+    {
+      "code": "688192",
+      "name": "迪哲医药",
+      "red_level": "一线红",
+      "business": "创新药企,舒沃哲全球授权。关联:化学制剂,创新药",
+      "sector_l3": "化学制剂",
+      "catalysts": [
+        "🔴与阿斯利康签署许可协议获6亿美元首付款"
+      ]
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "red_level": "一线红",
+      "business": "IVD龙头,家用医疗器械。关联:医疗设备,IVD",
+      "sector_l3": "医疗设备",
+      "catalysts": [
+        "🔴H1净利预盈28-34亿同比+204-270%"
+      ]
+    },
+    {
+      "code": "688183",
+      "name": "生益电子",
+      "red_level": "一线红",
+      "business": "PCB龙头,AI服务器/交换机电路板。关联:印制电路板,AI硬件",
+      "sector_l3": "印制电路板",
+      "catalysts": [
+        "🔴26H1预增104%-114%"
+      ]
+    },
+    {
+      "code": "002980",
+      "name": "华盛昌",
+      "red_level": "三线红",
+      "business": "仪器仪表企业,收购光模块测试龙头。关联:仪器仪表,光通信",
+      "sector_l3": "仪器仪表",
+      "catalysts": [
+        "🔴4.6亿收购伽蓝特,光模块厂商全覆盖"
+      ]
+    },
+    {
+      "code": "600396",
+      "name": "华电辽能",
+      "red_level": "三线红",
+      "business": "绿电运营商,14天9板。关联:火力发电,新能源,算电协同",
+      "sector_l3": "火力发电",
+      "catalysts": [
+        "🔴14天9板最大涨近600%,太空光伏概念"
+      ]
+    },
+    {
+      "code": "688456",
+      "name": "有研粉材",
+      "red_level": "三线红",
+      "business": "金属粉材龙头,锡基焊粉市占15%第一。关联:其他金属新材料,3D打印",
+      "sector_l3": "其他金属新材料",
+      "catalysts": [
+        "🔴电子浆料高速放量,焊粉T7量产"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,12 @@
     "date": "2026-07-15",
     "changes": [
       {
+        "time": "14:19",
+        "action": "remove",
+        "symbol": "SZ002422",
+        "name": "科伦药业"
+      },
+      {
         "time": "13:38",
         "action": "add",
         "symbol": "SH688192",

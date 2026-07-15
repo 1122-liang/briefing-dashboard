@@ -1,13 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-15T13:59:04",
-  "count": 9,
+  "updated_at": "2026-07-15T14:49:14",
+  "count": 8,
   "stocks": [
-    {
-      "symbol": "SZ002422",
-      "name": "科伦药业",
-      "marketplace": "CN",
-      "watched": "2026-07-15T12:47:36"
-    },
     {
       "symbol": "SZ300765",
       "name": "石药创新",
@@ -62,6 +56,12 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-15",
     "changes": [
+      {
+        "time": "14:19",
+        "action": "remove",
+        "symbol": "SZ002422",
+        "name": "科伦药业"
+      },
       {
         "time": "13:38",
         "action": "add",

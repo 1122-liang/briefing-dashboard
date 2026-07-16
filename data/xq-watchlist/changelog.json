@@ -3,6 +3,13 @@
     "date": "2026-07-16",
     "changes": [
       {
+        "time": "13:07",
+        "action": "add",
+        "symbol": "BJ920367",
+        "name": "新赣江",
+        "watched": "2026-07-16T13:05:36"
+      },
+      {
         "time": "11:02",
         "action": "add",
         "symbol": "SZ000566",

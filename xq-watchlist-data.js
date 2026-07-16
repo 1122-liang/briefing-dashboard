@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-16T11:02:10",
-  "count": 6,
+  "updated_at": "2026-07-16T14:02:38",
+  "count": 7,
   "stocks": [
+    {
+      "symbol": "BJ920367",
+      "name": "新赣江",
+      "marketplace": "CN",
+      "watched": "2026-07-16T13:05:36"
+    },
     {
       "symbol": "SZ000566",
       "name": "海南海药",
@@ -44,6 +50,13 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-16",
     "changes": [
+      {
+        "time": "13:07",
+        "action": "add",
+        "symbol": "BJ920367",
+        "name": "新赣江",
+        "watched": "2026-07-16T13:05:36"
+      },
       {
         "time": "11:02",
         "action": "add",

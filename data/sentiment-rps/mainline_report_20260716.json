@@ -1,0 +1,1337 @@
+{
+  "date": "20260716",
+  "summary": "医药集群主导(医疗研发外包14d/CRO14d)，退潮4个板块/概念，弱转强8个。新进三线红板块3个/概念5个/个股7只。",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "其他生物制品",
+      "consecutive_days": 12,
+      "d30": 13,
+      "d120": 26,
+      "d250": 40,
+      "trend": "down",
+      "analysis": "连续在池12天↑, d30=13d, d120=26d。 催化: 🔴 🔴脑机接口首例植入手术(华山医院),基药目录新增生物制品59种,十五五规划全链条支持创新药,创新药BD出海H1再创新高",
+      "key_stocks": [
+        {
+          "code": "000518",
+          "name": "四环生物",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688163",
+          "name": "赛伦生物",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "化学制剂",
+      "consecutive_days": 11,
+      "d30": 11,
+      "d120": 20,
+      "d250": 37,
+      "trend": "down",
+      "analysis": "连续在池11天↑, d30=11d, d120=20d。 催化: 🔴 🔴迪哲医药与阿斯利康签署授权协议获6亿美元首付款,基药目录首次纳入创新药遴选,创新药H1获批27款(22款国产),出海H1突破997亿美元",
+      "key_stocks": [
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002653",
+          "name": "海思科",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603669",
+          "name": "灵康药业",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 14,
+      "d30": 14,
+      "d120": 29,
+      "d250": 56,
+      "trend": "stable",
+      "analysis": "连续在池14天↑, d30=14d, d120=29d。 催化: 🔴 🔴昭衍新药H1净利+884-1377%(实验猴涨价),创新药出海H1达成81笔交易1100亿美元,新版基药目录794种药品9月实施",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688046",
+          "name": "药康生物",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688131",
+          "name": "皓元医药",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 14,
+      "d30": 14,
+      "d120": 24,
+      "d250": 43,
+      "trend": "stable",
+      "analysis": "连续在池14天↑, d30=14d, d120=24d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "301021",
+          "name": "英诺激光",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "605589",
+          "name": "XD圣泉集",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "仿制药一致性评价",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 20,
+      "d250": 36,
+      "trend": "up",
+      "analysis": "连续在池10天↑, d30=10d, d120=20d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301281",
+          "name": "科源制药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "减肥药",
+      "consecutive_days": 12,
+      "d30": 12,
+      "d120": 22,
+      "d250": 38,
+      "trend": "stable",
+      "analysis": "连续在池12天↑, d30=12d, d120=22d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "301092",
+          "name": "争光股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002821",
+          "name": "凯莱英",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "创新药",
+      "consecutive_days": 11,
+      "d30": 11,
+      "d120": 21,
+      "d250": 38,
+      "trend": "stable",
+      "analysis": "连续在池11天↑, d30=11d, d120=21d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "605589",
+          "name": "XD圣泉集",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688163",
+          "name": "赛伦生物",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "眼科医疗",
+      "consecutive_days": 10,
+      "d30": 10,
+      "d120": 18,
+      "d250": 30,
+      "trend": "stable",
+      "analysis": "连续在池10天↑, d30=10d, d120=18d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "603087",
+          "name": "甘李药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300558",
+          "name": "贝达药业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "细胞免疫治疗",
+      "consecutive_days": 11,
+      "d30": 11,
+      "d120": 21,
+      "d250": 39,
+      "trend": "stable",
+      "analysis": "连续在池11天↑, d30=11d, d120=21d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "688266",
+          "name": "泽璟制药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300199",
+          "name": "翰宇药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300149",
+          "name": "睿智医药",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "重组蛋白",
+      "consecutive_days": 12,
+      "d30": 12,
+      "d120": 20,
+      "d250": 36,
+      "trend": "stable",
+      "analysis": "连续在池12天↑, d30=12d, d120=20d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "688179",
+          "name": "阿拉丁",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688253",
+          "name": "英诺特",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688266",
+          "name": "泽璟制药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "阿尔茨海默概念",
+      "consecutive_days": 11,
+      "d30": 11,
+      "d120": 20,
+      "d250": 25,
+      "trend": "stable",
+      "analysis": "连续在池11天↑, d30=11d, d120=20d。 催化: 暂无新增催化",
+      "key_stocks": [
+        {
+          "code": "688253",
+          "name": "英诺特",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603669",
+          "name": "灵康药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "1线红"
+        }
+      ]
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "资产管理",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 18,
+      "analysis": "昨日在池(连续1天)今日退出。成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "辅料",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 15,
+      "d120": 15,
+      "analysis": "昨日在池(连续3天)今日退出。成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "concept",
+      "name": "人造肉",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 4,
+      "analysis": "昨日在池(连续2天)今日退出。",
+      "reason": "医药主线轮动/个股分化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "租售同权",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 4,
+      "d120": 5,
+      "analysis": "昨日在池(连续4天)今日退出。",
+      "reason": "医药主线轮动/个股分化"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "海洋捕捞",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 3,
+      "d250": 16,
+      "analysis": "首次进池(连续1天), d120=3d。催化: 🔴 秘鲁超级鱼粉FOB出口报价飙至2900美元/吨历史新高,极端供应紧缩",
+      "catalyst_summary": "🔴 秘鲁超级鱼粉FOB出口报价飙至2900美元/吨历史新高,极端供应紧缩",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "医院",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 2,
+      "d250": 4,
+      "analysis": "首次进池(连续1天), d120=2d。催化: 🔴 6月29日国家医保局公示2026医保目录初审结果，557个药品通过初审，54个纳入商保创新药目录；创新药纳入医保路径明确",
+      "catalyst_summary": "🔴 6月29日国家医保局公示2026医保目录初审结果，557个药品通过初审，54个纳入商保创新药目录；创新药纳入医保路径明确",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "畜禽饲料",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 1,
+      "d250": 4,
+      "analysis": "首次进池(连续1天), d120=1d。催化: 🔴 7月猪价强势反弹，全国外三元生猪均价10.62元/公斤单周涨12.74%；政策加码推动生猪产能压减，促进猪价合理回升",
+      "catalyst_summary": "🔴 7月猪价强势反弹，全国外三元生猪均价10.62元/公斤单周涨12.74%；政策加码推动生猪产能压减，促进猪价合理回升",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "粮食概念",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 6,
+      "d250": 8,
+      "analysis": "首次进池(连续1天), d120=6d。催化: 🔴 4-5月公募密集发行粮食ETF(华夏/易方达/博时等)，中东冲突推升全球粮价CBOT小麦涨12%，粮食安全保障法执法检查强化政策托底",
+      "catalyst_summary": "🔴 4-5月公募密集发行粮食ETF(华夏/易方达/博时等)，中东冲突推升全球粮价CBOT小麦涨12%，粮食安全保障法执法检查强化政策托底",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "乳业",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 3,
+      "d250": 10,
+      "analysis": "首次进池(连续1天), d120=3d。催化: 🔴 5月12日新乳业26Q1净利增40%超预期，低温鲜奶/酸奶双位数增长；机构预计原奶2026H2迎供需平衡拐点，上游牧场利润弹性可期",
+      "catalyst_summary": "🔴 5月12日新乳业26Q1净利增40%超预期，低温鲜奶/酸奶双位数增长；机构预计原奶2026H2迎供需平衡拐点，上游牧场利润弹性可期",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "三胎概念",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 1,
+      "d250": 1,
+      "analysis": "首次进池(连续1天), d120=1d。催化: 暂无明确催化",
+      "catalyst_summary": "暂无明确催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "高压氧舱",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 2,
+      "d250": 18,
+      "analysis": "首次进池(连续1天), d120=2d。催化: 🔴 7月16日高压氧舱概念涨2.84%居概念板块涨幅第1，创新医疗涨停，主力资金净流入2.33亿元",
+      "catalyst_summary": "🔴 7月16日高压氧舱概念涨2.84%居概念板块涨幅第1，创新医疗涨停，主力资金净流入2.33亿元",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "宠物经济",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 3,
+      "d250": 3,
+      "analysis": "首次进池(连续1天), d120=3d。催化: 江西省印发提振消费措施积极培育宠物消费新热点,中宠股份全球化产能扩张",
+      "catalyst_summary": "江西省印发提振消费措施积极培育宠物消费新热点,中宠股份全球化产能扩张",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "畜禽饲料",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 7月猪价强势反弹，全国外三元生猪均价10.62元/公斤单周涨12.74%；政策加码推动生猪产能压减，促进猪价合理回升",
+      "stocks": []
+    },
+    {
+      "name": "医院",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 6月29日国家医保局公示2026医保目录初审结果，557个药品通过初审，54个纳入商保创新药目录；创新药纳入医保路径明确",
+      "stocks": []
+    },
+    {
+      "name": "海洋捕捞",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 秘鲁超级鱼粉FOB出口报价飙至2900美元/吨历史新高,极端供应紧缩",
+      "stocks": []
+    },
+    {
+      "name": "其他农产品加工",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "暂无重大催化",
+      "stocks": [
+        {
+          "code": "003030",
+          "name": "祖名股份",
+          "business": "",
+          "catalysts": [
+            "玉米汁爆款+豆制品龙头, 2025营收首破20亿+21.7%, 宠物猫砂原料新增长"
+          ]
+        },
+        {
+          "code": "300149",
+          "name": "睿智医药",
+          "business": "",
+          "catalysts": [
+            "CRO概念活跃,7月15日20%涨停,板块资金净流入36亿"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "游戏Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "🔴 2025年国内游戏销售收入超3500亿元同比增7.68%，用户规模6.83亿创新高；版号月发放量升至150个，暑假消费旺季临近",
+      "stocks": [
+        {
+          "code": "002174",
+          "name": "游族网络",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002354",
+          "name": "天娱数科",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "汽车经销商",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴 7月16日国家多部门密集释放汽车政策利好，重启新能源汽车下乡、多地加码购车补贴；6月新能源车市占率达58.5%",
+      "stocks": []
+    },
+    {
+      "name": "专业连锁Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴 7月14日国务院批复扩大消费十五五规划，强化零售药店专业服务与健康促进功能，建设一批健康驿站；药店零售概念大涨",
+      "stocks": []
+    },
+    {
+      "name": "水产养殖",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "鱼粉价格创历史新高，秘鲁超级鱼粉FOB报价2900美元/吨较去年5月飙涨77%；百洋股份等水产加工企业受益",
+      "stocks": []
+    },
+    {
+      "name": "人工景区",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴 景区行业政策与经营周期共振，全年法定假期新增2天、入境游客2025年达1.55亿人次；6-8月暑期旺季窗口开启",
+      "stocks": [
+        {
+          "code": "600593",
+          "name": "大连圣亚",
+          "business": "",
+          "catalysts": [
+            "🔴 H1扭亏预盈1300-1950万, 暑期出行旺季催化涨停, Q1净利+292%"
+          ]
+        }
+      ]
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "粮食概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 4-5月公募密集发行粮食ETF(华夏/易方达/博时等)，中东冲突推升全球粮价CBOT小麦涨12%，粮食安全保障法执法检查强化政策托底",
+      "stocks": [
+        {
+          "code": "600186",
+          "name": "莲花控股",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "高压氧舱",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 7月16日高压氧舱概念涨2.84%居概念板块涨幅第1，创新医疗涨停，主力资金净流入2.33亿元",
+      "stocks": []
+    },
+    {
+      "name": "网络游戏",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "🔴 7月7日6月版号171款(含163国产+8进口)创近年新高，暑期腾讯网易哔哩哔哩多款重磅新品集中上线",
+      "stocks": [
+        {
+          "code": "300857",
+          "name": "协创数据",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "600576",
+          "name": "祥源文旅",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002174",
+          "name": "游族网络",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002354",
+          "name": "天娱数科",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "国资云",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴 6月29日国常会部署加快超大规模智算集群建设+AI+行动；浪潮信息H1净利预增226-288%；云赛智联7月16日涨停",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "business": "",
+          "catalysts": [
+            "🔴 半年度业绩预告归母净利6-7.5亿(+33%-66%)，面向互联网客户的数据中心交换机业务大幅增长"
+          ]
+        },
+        {
+          "code": "000938",
+          "name": "紫光股份",
+          "business": "",
+          "catalysts": [
+            "🔴 Q1净利+126%超预期;UniPoD超节点在多个大型项目落地;参与华为NPO光互连项目;CPO交换机出海突破"
+          ]
+        },
+        {
+          "code": "000977",
+          "name": "浪潮信息",
+          "business": "",
+          "catalysts": [
+            "🔴 H1预盈26-31亿+226-288%,Q2单季超20亿创历史新高,AI服务器供不应求,合同负债195亿,算力出海放量"
+          ]
+        },
+        {
+          "code": "000779",
+          "name": "甘咨询",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "三胎概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "暂无重大催化",
+      "stocks": [
+        {
+          "code": "300005",
+          "name": "探路者",
+          "business": "",
+          "catalysts": [
+            "🔴 定增10亿获审通过,外骨骼Crest C3单日销量破百台,芯片Q1收入1.79亿+207%,与地平线战略合作"
+          ]
+        },
+        {
+          "code": "603139",
+          "name": "康惠股份",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "301196",
+          "name": "唯科科技",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002348",
+          "name": "高乐股份",
+          "business": "",
+          "catalysts": [
+            "🔴 签35.57亿算力服务大单(5年),实控人变更为黎曼云图(芯片背景),布局AI玩具+算力投建"
+          ]
+        },
+        {
+          "code": "300199",
+          "name": "翰宇药业",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "手机游戏",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 2,
+      "catalyst_summary": "🔴 6月版号171款创近年新高，暑期腾讯《失控进化》网易《遗忘之海》等重磅新品密集上线，行业Q2业绩有望爆发",
+      "stocks": [
+        {
+          "code": "600576",
+          "name": "祥源文旅",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002174",
+          "name": "游族网络",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "603466",
+          "name": "风语筑",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "002354",
+          "name": "天娱数科",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "乳业",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "🔴 5月12日新乳业26Q1净利增40%超预期，低温鲜奶/酸奶双位数增长；机构预计原奶2026H2迎供需平衡拐点，上游牧场利润弹性可期",
+      "stocks": [
+        {
+          "code": "600882",
+          "name": "妙可蓝多",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    },
+    {
+      "name": "宠物经济",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "江西省印发提振消费措施积极培育宠物消费新热点,中宠股份全球化产能扩张",
+      "stocks": [
+        {
+          "code": "000811",
+          "name": "冰轮环境",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "301189",
+          "name": "奥尼电子",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "301196",
+          "name": "唯科科技",
+          "business": "",
+          "catalysts": []
+        },
+        {
+          "code": "003030",
+          "name": "祖名股份",
+          "business": "",
+          "catalysts": [
+            "玉米汁爆款+豆制品龙头, 2025营收首破20亿+21.7%, 宠物猫砂原料新增长"
+          ]
+        },
+        {
+          "code": "600539",
+          "name": "狮头股份",
+          "business": "",
+          "catalysts": []
+        }
+      ]
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "600246",
+      "name": "万通发展",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "开源证券首次覆盖买入，PCIe5.0交换芯片量产，与头部客户签框架协议，从PCIe向CXL/UaLink拓展"
+      ],
+      "sector_l3": "住宅开发"
+    },
+    {
+      "code": "688167",
+      "name": "炬光科技",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "🔴 子公司瑞士炬光向全球领先代工企业许可微棱镜透镜阵列+垂直光学耦合器技术，获1300万美元一次性许可费"
+      ],
+      "sector_l3": "分立器件"
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "🔴 机构一致预期今明两年净利增速超100%，12.8T/25.6T芯片受益国产算力加码和国产替代双重驱动"
+      ],
+      "sector_l3": "数字芯片设计"
+    },
+    {
+      "code": "301165",
+      "name": "锐捷网络",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "🔴 半年度业绩预告归母净利6-7.5亿(+33%-66%)，面向互联网客户的数据中心交换机业务大幅增长"
+      ],
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "拟收购上海精测半导体41.17%股权使成全资子公司，在手订单42亿中半导体占60%，先进制程占比提升",
+        "🔴 在手订单42亿,拟收购上海精测41%股权,先进制程设备批量交付"
+      ],
+      "sector_l3": "仪器仪表"
+    },
+    {
+      "code": "002937",
+      "name": "兴瑞科技",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "688625",
+      "name": "呈和科技",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "🔴 全资子公司呈和电子拟投不超13亿建高频高速电子材料项目，规划PPO树脂2500吨+阻燃剂2500吨+水滑石2万吨"
+      ],
+      "sector_l3": "其他化学制品"
+    },
+    {
+      "code": "002440",
+      "name": "闰土股份",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 H1预增254-334%,分散染料两度提价至年内高点,印度减产利好出口替代"
+      ],
+      "sector_l3": "纺织化学制品"
+    },
+    {
+      "code": "600285",
+      "name": "羚锐制药",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "银谷制药并表增厚业绩,贴剂毛利率提升至84%,分红率82%"
+      ],
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "300819",
+      "name": "聚杰微纤",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 定增11亿投向高端电子布,AI驱动电子布需求爆发,年内已五轮提价"
+      ],
+      "sector_l3": "其他纺织"
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "red_level": "三线红",
+      "business": "",
+      "catalysts": [
+        "拟收购上海精测半导体41.17%股权使成全资子公司，在手订单42亿中半导体占60%，先进制程占比提升",
+        "🔴 在手订单42亿,拟收购上海精测41%股权,先进制程设备批量交付"
+      ],
+      "sector_l3": "仪器仪表"
+    },
+    {
+      "code": "300149",
+      "name": "睿智医药",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "CRO概念活跃,7月15日20%涨停,板块资金净流入36亿"
+      ],
+      "sector_l3": "其他农产品加工"
+    },
+    {
+      "code": "600851",
+      "name": "海欣股份",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 创新药概念活跃,曾4连板,国务院定调生物医药为支柱产业"
+      ],
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688213",
+      "name": "思特威",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "H1预增29-34%,3+AI战略推进,MicroLED光互连方案有望2027年商用"
+      ],
+      "sector_l3": "数字芯片设计"
+    },
+    {
+      "code": "300225",
+      "name": "金力泰",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 6/11摘星摘帽,Q1净利+155%,乘用车涂料导入零跑等新客户"
+      ],
+      "sector_l3": "涂料油墨"
+    },
+    {
+      "code": "688117",
+      "name": "圣诺生物",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 H1预增43-65%,GLP-1多肽放量,控股股东拟增持4000-5000万"
+      ],
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "601199",
+      "name": "江南水务",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "688205",
+      "name": "德科立",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 DCI订单爆发,400G/800G相干模块交付,OCS获海外订单,泰国工厂将投产"
+      ],
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "301047",
+      "name": "义翘神州",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "Q1净利+42%,生物试剂龙头,分红大方每10股派12元"
+      ],
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "688036",
+      "name": "传音控股",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "AI手机概念活跃,养老金一季度持有,社保基金持仓16亿"
+      ],
+      "sector_l3": "品牌消费电子"
+    },
+    {
+      "code": "688278",
+      "name": "特宝生物",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 派格宾乙肝治愈独家品种,益佩生医保落地放量,拟回购3-5亿"
+      ],
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "600012",
+      "name": "皖通高速",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "Q1扣非+16%,收购山东高速7%股权,承诺分红比例不低于60%"
+      ],
+      "sector_l3": "公交"
+    },
+    {
+      "code": "002127",
+      "name": "南极电商",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 H1扭亏预增208-326%,拟回购1-2亿,GMV回升至日销1800万"
+      ],
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "603685",
+      "name": "晨丰科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 签7亿储能总承包合同,拟投13亿建两个储能项目,布局算电协同"
+      ],
+      "sector_l3": "LED"
+    },
+    {
+      "code": "601168",
+      "name": "西部矿业",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 Q1净利创历史新高+96%,铜价上涨,玉龙铜矿三期预计2027年初投产"
+      ],
+      "sector_l3": "铜"
+    },
+    {
+      "code": "300528",
+      "name": "幸福蓝海",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 暑期档票房破33亿,公司涨停;与捷成华视网聚战略合作推进AI影视项目;微短剧+IMAX影城双线驱动"
+      ],
+      "sector_l3": null
+    },
+    {
+      "code": "688428",
+      "name": "诺诚健华",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 25年营收23.7亿+135%首次扭亏盈利;奥布替尼获澳大利亚批准上市;首批科创板成长层出层企业"
+      ],
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "603099",
+      "name": "长白山",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 H1预计盈利105-145万,采购38辆大巴提升运力至4万人次/日;Q1净利增84.23%;暑期避暑旺季来临"
+      ],
+      "sector_l3": "自然景区"
+    },
+    {
+      "code": "300197",
+      "name": "节能铁汉",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 筹划重大资产重组,拟收购晶和科技+启源装备控股权,连收3涨停累计涨72%;央企改革+资产注入预期"
+      ],
+      "sector_l3": "园林工程"
+    },
+    {
+      "code": "000429",
+      "name": "粤高速Ａ",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "公交"
+    },
+    {
+      "code": "000566",
+      "name": "海南海药",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 创新药概念爆发两涨停;2025临床试验突破5000项利好多药企;创新药板块底部反弹,跟涨概念"
+      ],
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "301111",
+      "name": "粤万年青",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "300334",
+      "name": "津膜科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "300679",
+      "name": "电连技术",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "汽车连接器营收+40.7%国产替代突破,AI算力+5G毫米波前瞻布局;25年净利承压,开源维持买入"
+      ],
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "300929",
+      "name": "华骐环保",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 知名投资人王根九4个月增持超14%股份,月涨超40%;转型新能源储能+氢能,催化剂达DOE指标"
+      ],
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "002687",
+      "name": "乔治白",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "非运动服装"
+    },
+    {
+      "code": "300244",
+      "name": "迪安诊断",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 6月大涨18%突破年线;东吴3月首覆买入评级,看好业绩拐点至;医学诊断智能化推动估值修复"
+      ],
+      "sector_l3": null
+    },
+    {
+      "code": "600906",
+      "name": "财达证券",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 H1净利预增90-116%,6月券商板块爆发时触涨停;牛市旗手行情,券商板块估值修复预期中"
+      ],
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "000938",
+      "name": "紫光股份",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "🔴 Q1净利+126%超预期;UniPoD超节点在多个大型项目落地;参与华为NPO光互连项目;CPO交换机出海突破"
+      ],
+      "sector_l3": "IT服务Ⅲ"
+    },
+    {
+      "code": "600521",
+      "name": "华海药业",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "002606",
+      "name": "大连电瓷",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "线缆部件及其他"
+    },
+    {
+      "code": "600750",
+      "name": "华润江中",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "000739",
+      "name": "普洛药业",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "301376",
+      "name": "致欧科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [
+        "VC模式切换加速,25年收入87亿+7%,26年净利预增48%至4.98亿,15机构(11买入4增持)看好,目标价23.13元"
+      ],
+      "sector_l3": "成品家居"
+    },
+    {
+      "code": "688331",
+      "name": "荣昌生物",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301033",
+      "name": "迈普医学",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "300779",
+      "name": "惠城环保",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "固废治理"
+    },
+    {
+      "code": "600882",
+      "name": "妙可蓝多",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "农药"
+    },
+    {
+      "code": "001395",
+      "name": "亚联机械",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "688325",
+      "name": "赛微微电",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "603590",
+      "name": "康辰药业",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301257",
+      "name": "普蕊斯",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "603201",
+      "name": "常润股份",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "301448",
+      "name": "开创电气",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "600576",
+      "name": "祥源文旅",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "棉纺"
+    },
+    {
+      "code": "603341",
+      "name": "龙旗科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "002901",
+      "name": "大博医疗",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "002828",
+      "name": "贝肯能源",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "油田服务"
+    },
+    {
+      "code": "301486",
+      "name": "致尚科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "301211",
+      "name": "亨迪药业",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "000920",
+      "name": "沃顿科技",
+      "red_level": "一线红",
+      "business": "",
+      "catalysts": [],
+      "sector_l3": "膜材料"
+    }
+  ]
+}

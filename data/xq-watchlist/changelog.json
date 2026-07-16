@@ -3,6 +3,18 @@
     "date": "2026-07-16",
     "changes": [
       {
+        "time": "14:37",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "14:27",
+        "action": "remove",
+        "symbol": "SH603538",
+        "name": "美诺华"
+      },
+      {
         "time": "13:07",
         "action": "add",
         "symbol": "BJ920367",

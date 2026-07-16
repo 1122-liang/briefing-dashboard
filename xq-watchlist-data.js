@@ -1,6 +1,6 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-16T14:02:38",
-  "count": 7,
+  "updated_at": "2026-07-16T14:52:50",
+  "count": 5,
   "stocks": [
     {
       "symbol": "BJ920367",
@@ -21,18 +21,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-15T09:52:13"
     },
     {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
-      "marketplace": "CN",
-      "watched": "2026-07-14T13:58:38"
-    },
-    {
-      "symbol": "SH603538",
-      "name": "美诺华",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:54:25"
-    },
-    {
       "symbol": "SZ300759",
       "name": "康龙化成",
       "marketplace": "CN",
@@ -50,6 +38,18 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-16",
     "changes": [
+      {
+        "time": "14:37",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "14:27",
+        "action": "remove",
+        "symbol": "SH603538",
+        "name": "美诺华"
+      },
       {
         "time": "13:07",
         "action": "add",

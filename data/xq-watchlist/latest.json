@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-16T14:02:38",
-  "count": 7,
+  "updated_at": "2026-07-16T14:52:50",
+  "count": 5,
   "stocks": [
     {
       "symbol": "BJ920367",
@@ -19,18 +19,6 @@
       "name": "睿智医药",
       "marketplace": "CN",
       "watched": "2026-07-15T09:52:13"
-    },
-    {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
-      "marketplace": "CN",
-      "watched": "2026-07-14T13:58:38"
-    },
-    {
-      "symbol": "SH603538",
-      "name": "美诺华",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:54:25"
     },
     {
       "symbol": "SZ300759",

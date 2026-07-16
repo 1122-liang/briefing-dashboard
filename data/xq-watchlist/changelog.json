@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-07-16",
+    "changes": [
+      {
+        "time": "11:02",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-16T11:01:20"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ300765",
+        "name": "石药创新"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SH688192",
+        "name": "迪哲医药-U"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ002821",
+        "name": "凯莱英"
+      }
+    ]
+  },
+  {
     "date": "2026-07-15",
     "changes": [
       {

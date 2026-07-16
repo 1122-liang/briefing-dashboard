@@ -1,30 +1,18 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-15T15:59:20",
-  "count": 8,
+  "updated_at": "2026-07-16T11:02:10",
+  "count": 6,
   "stocks": [
     {
-      "symbol": "SZ300765",
-      "name": "石药创新",
+      "symbol": "SZ000566",
+      "name": "海南海药",
       "marketplace": "CN",
-      "watched": "2026-07-15T10:12:14"
+      "watched": "2026-07-16T11:01:20"
     },
     {
       "symbol": "SZ300149",
       "name": "睿智医药",
       "marketplace": "CN",
       "watched": "2026-07-15T09:52:13"
-    },
-    {
-      "symbol": "SH688192",
-      "name": "迪哲医药-U",
-      "marketplace": "CN",
-      "watched": "2026-07-15T09:38:11"
-    },
-    {
-      "symbol": "SZ002821",
-      "name": "凯莱英",
-      "marketplace": "CN",
-      "watched": "2026-07-14T14:23:10"
     },
     {
       "symbol": "SH603127",
@@ -53,6 +41,36 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-16",
+    "changes": [
+      {
+        "time": "11:02",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-16T11:01:20"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ300765",
+        "name": "石药创新"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SH688192",
+        "name": "迪哲医药-U"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ002821",
+        "name": "凯莱英"
+      }
+    ]
+  },
   {
     "date": "2026-07-15",
     "changes": [

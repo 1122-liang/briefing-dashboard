@@ -3,6 +3,20 @@
     "date": "2026-07-17",
     "changes": [
       {
+        "time": "14:01",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-07-17T13:59:09"
+      },
+      {
+        "time": "13:46",
+        "action": "add",
+        "symbol": "SH600664",
+        "name": "哈药股份",
+        "watched": "2026-07-17T13:43:38"
+      },
+      {
         "time": "09:50",
         "action": "remove",
         "symbol": "SZ301520",

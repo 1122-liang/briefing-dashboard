@@ -1,12 +1,51 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-17T11:00:47",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-07-17T14:01:31",
+  "count": 4,
+  "stocks": [
+    {
+      "symbol": "SZ300759",
+      "name": "康龙化成",
+      "marketplace": "CN",
+      "watched": "2026-07-17T13:59:09"
+    },
+    {
+      "symbol": "SH600664",
+      "name": "哈药股份",
+      "marketplace": "CN",
+      "watched": "2026-07-17T13:43:38"
+    },
+    {
+      "symbol": "SZ301520",
+      "name": "万邦医药",
+      "marketplace": "CN",
+      "watched": "2026-07-17T13:33:30"
+    },
+    {
+      "symbol": "SZ300534",
+      "name": "陇神戎发",
+      "marketplace": "CN",
+      "watched": "2026-07-17T13:33:27"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
   {
     "date": "2026-07-17",
     "changes": [
+      {
+        "time": "14:01",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-07-17T13:59:09"
+      },
+      {
+        "time": "13:46",
+        "action": "add",
+        "symbol": "SH600664",
+        "name": "哈药股份",
+        "watched": "2026-07-17T13:43:38"
+      },
       {
         "time": "09:50",
         "action": "remove",

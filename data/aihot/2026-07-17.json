@@ -1,0 +1,99 @@
+{
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T08:42:52.675113+08:00",
+  "window_hours": 24,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": "tsmc-capex-2026",
+      "title": "台积电上调2026年资本支出至600~640亿美元，A14制程2028年量产在即",
+      "industry": "半导体/AI芯片",
+      "type": "重大事件",
+      "summary": "台积电2026Q2财报说明会将资本支出预测从接近560亿上调至600~640亿美元，预计2026全年美元收入增幅超40%。董事长魏哲家表示1.4nm A14制程开发顺利，移动和HPC客户兴趣强烈，将成为比2nm更大更持久的工艺节点。",
+      "investment_logic": "AI芯片需求持续爆发驱动台积电资本支出不断上调，收入增速超40%验证AI算力超级周期延续。A14(1.4nm)作为比2nm更大的工艺节点，锁定未来3-5年先进制程增长。产业链受益顺序：先进制程设备→材料→封装测试→IP授权。",
+      "target_stocks": "台积电(TSM/2330.TW)、ASML(ASML)、应用材料(AMAT)、中芯国际(688981)、北方华创(002371)、中微公司(688012)",
+      "risk_note": "资本支出上调反映的是长期AI需求，短期股价可能已部分定价；地缘政治风险可能影响台积电全球扩产节奏",
+      "source": "IT之家, 台积电2026Q2财报说明会"
+    },
+    {
+      "id": "waico-shanghai",
+      "title": "世界人工智能合作组织(Waico)成立，总部设中国上海，29国创始",
+      "industry": "AI治理/政策",
+      "type": "政策影响",
+      "summary": "7月16日，成立世界人工智能合作组织(Waico)协定签署仪式在上海举行，外长王毅代表中国签署。该组织是独立政府间国际组织，总部设上海，哈萨克斯坦、老挝、巴基斯坦等29国创始成员，旨在促进AI国际合作与全球治理。",
+      "investment_logic": "中国主导建立全球AI治理框架(Waico)，标志AI治理从西方主导走向多极化。上海作为全球AI治理总部，将吸引AI国际组织、标准制定机构集聚，利好中国AI标准输出和国产AI生态建设。重点利好AI安全、AI基础设施、政务AI赛道。",
+      "target_stocks": "商汤-W(00020)、科大讯飞(002230)、海光信息(688041)、中科曙光(603019)、云从科技(688327)、寒武纪(688256)",
+      "risk_note": "Waico目前以发展中国家为主，西方大国参与度有限，实际影响力有待验证；AI治理标准的强制执行力和落地节奏不确定",
+      "source": "IT之家"
+    },
+    {
+      "id": "eu-dma-google",
+      "title": "欧盟DMA裁定Google开放Android/Search，AI竞争格局重塑",
+      "industry": "AI平台/监管",
+      "type": "政策影响",
+      "summary": "欧盟依据《数字市场法案》(DMA)裁定Google必须向竞争对手开放Android和Google Search关键部分，包括允许第三方AI助手和搜索引擎获得更大访问权限。将削弱Google对两大核心平台的控制，为AI竞争创造新格局。",
+      "investment_logic": "欧盟DMA强制开放Android和Search，打破Google移动生态垄断，为非Google AI助手(Claude/Grok/ChatGPT等)在Android设备上获得系统级访问权铺平道路。直接利好独立AI助手提供商、第三方搜索引擎、以及欧洲AI生态企业。",
+      "target_stocks": "Anthropic(未上市)、xAI(未上市)、OpenAI(未上市)、微软(MSFT)、百度(9888.HK/BIDU)、SAP(SAP)",
+      "risk_note": "DMA执行面临Google法律挑战和时间拖延；开放范围和实际效果取决于欧盟执法力度和美国政治反应",
+      "source": "The Verge, 欧盟DMA裁定"
+    },
+    {
+      "id": "claude-fable5",
+      "title": "Claude Fable 5发布：Anthropic最强通用模型，专攻长程异步Agent工作",
+      "industry": "AI大模型",
+      "type": "行业新方向",
+      "summary": "Anthropic发布Claude Fable 5，专为长时间、多步骤复杂异步工作设计，可在Claude Cowork中自主执行深度研究、尽职调查等任务。代表AI从对话助手向自主工作伙伴的范式跃迁。",
+      "investment_logic": "Claude Fable 5定位长程异步工作，是AI Agent从实时对话迈向深度自主工作的关键一步。深度研究、尽职调查等场景涉及金融、法律、咨询等高端服务行业，AI替代效应将从低端任务延伸至高端知识工作。",
+      "target_stocks": "Anthropic(未上市)、微软(MSFT)、亚马逊(AMZN)、Palantir(PLTR)、汤森路透(TRI)",
+      "risk_note": "Fable 5手动选择模式限制了爆发式增长；长程Agent可靠性仍有待大规模验证(参考50%企业Agent部署致客户故障的数据)",
+      "source": "Claude Blog"
+    },
+    {
+      "id": "ai-agent-security-gap",
+      "title": "54%企业遭AI智能体安全事件+50%部署致客户故障：AI Agent安全与评估双缺口",
+      "industry": "AI安全/企业级AI",
+      "type": "行业瓶颈变化",
+      "summary": "两项调查揭示AI Agent部署核心瓶颈：(1) 107家企业中54%已遭遇AI智能体安全事件，仅32%为每个智能体分配独立凭证；(2) 157家企业中50%部署通过内部评估的Agent后导致客户故障，66%计划12个月内实现低风险Agent全自动无人干预部署。",
+      "investment_logic": "54%安全事件率+50%客户故障率说明当前AI Agent可靠性严重不足。催生两大投资赛道：AI Agent安全工具(凭证管理、沙箱隔离)和AI Agent评估/测试平台。66%企业计划无人干预部署，缺口填补后将迎来Agent渗透率爆发。",
+      "target_stocks": "CrowdStrike(CRWD)、Palo Alto Networks(PANW)、Zscaler(ZS)、Cloudflare(NET)、Datadog(DDOG)、微软(MSFT)、Palantir(PLTR)",
+      "risk_note": "AI Agent安全市场尚在早期，产品标准化程度低；企业付费意愿取决于安全事件的损失程度",
+      "source": "VentureBeat(两篇调查)"
+    },
+    {
+      "id": "grok-automations",
+      "title": "xAI Grok推出Automations定时/邮件触发自动任务，Agent自动化竞争白热化",
+      "industry": "AI Agent平台",
+      "type": "行业新方向",
+      "summary": "xAI为Grok引入Automations功能：用户可描述一次任务让Grok按计划(每日/工作日/每周等)或邮件触发自动运行。每次执行保存完整对话历史。定时自动化对所有用户开放，邮件触发需SuperGrok订阅。",
+      "investment_logic": "Grok Automations标志AI Agent从响应式对话向主动式自动化工作流进化。定时触发=AI Agent替代cron job/脚本，邮件触发=AI Agent替代客服/运营流程。是AI Agent消费化的关键里程碑。",
+      "target_stocks": "xAI(未上市)、ServiceNow(NOW)、UiPath(PATH)、Salesforce(CRM)、微软(MSFT)、字节跳动(未上市)",
+      "risk_note": "Grok市场份额远小于ChatGPT/Claude，功能创新不一定转化为商业优势；Agent编排和可靠性仍是痛点",
+      "source": "xAI News"
+    },
+    {
+      "id": "claude-code-migration",
+      "title": "Anthropic用Claude Code两周完成百万行代码跨语言迁移，编译快240倍",
+      "industry": "AI开发工具",
+      "type": "行业新方向",
+      "summary": "Anthropic工程师用Claude Code在两周内将Bun百万行Zig代码迁移至Rust，100%现有测试通过，编译时间从8分钟降至2秒，二进制启动快6倍。API成本16.5万美元。",
+      "investment_logic": "百万行跨语言迁移证明AI代码工程已从辅助补全进化至大规模重构/迁移能力级。16.5万美元成本vs传统人工数月甚至数年工作量ROI极高。这意味着遗留系统现代化成本骤降、编程语言选择壁垒降低。",
+      "target_stocks": "微软(MSFT, GitHub Copilot)、GitLab(GTLB)、Anthropic(未上市)、Oracle(ORCL)、Datadog(DDOG)、JetBrains(未上市)",
+      "risk_note": "代码迁移质量依赖100%现有测试覆盖，缺乏测试的遗留系统仍存风险；16.5万美元API成本对企业级迁移仍偏高",
+      "source": "Claude Blog"
+    },
+    {
+      "id": "openbmb-staffdeck",
+      "title": "面壁智能开源StaffDeck数字员工平台：企业AI从Chatbot到Digital Workforce",
+      "industry": "企业AI/Agent平台",
+      "type": "行业新方向",
+      "summary": "面壁智能联合多团队开源StaffDeck数字员工平台，将专业知识、SOP和决策规则转化为持续工作的数字员工，而非传统聊天机器人。旨在构建可保留组织知识的数字劳动力，代码已开源至GitHub。",
+      "investment_logic": "StaffDeck将AI从问答工具重新定位为数字员工/劳动力，是企业AI Agent从浅层应用到深度集成的标志性转变。开源策略降低企业采用门槛，类似Kubernetes之于容器编排的开源渗透路径。",
+      "target_stocks": "并行科技(839493.BJ)、科大讯飞(002230)、海光信息(688041)、寒武纪(688256)、深信服(300454)、用友网络(600588)、金蝶国际(00268.HK)",
+      "risk_note": "开源模式商业化路径不清晰；企业数字员工涉及决策权和责任归属等法律问题；面壁智能规模较小生态建设长期",
+      "source": "面壁智能OpenBMB(X)"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-07-17.json",
+  "_saved_at": "2026-07-17T08:42:52.675152+08:00"
+}

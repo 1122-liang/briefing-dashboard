@@ -1,40 +1,70 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-16T15:58:04",
-  "count": 5,
-  "stocks": [
-    {
-      "symbol": "BJ920367",
-      "name": "新赣江",
-      "marketplace": "CN",
-      "watched": "2026-07-16T13:05:36"
-    },
-    {
-      "symbol": "SZ000566",
-      "name": "海南海药",
-      "marketplace": "CN",
-      "watched": "2026-07-16T11:01:20"
-    },
-    {
-      "symbol": "SZ300149",
-      "name": "睿智医药",
-      "marketplace": "CN",
-      "watched": "2026-07-15T09:52:13"
-    },
-    {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:54:20"
-    },
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-14T10:54:07"
-    }
-  ]
+  "updated_at": "2026-07-17T11:00:47",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-17",
+    "changes": [
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "BJ920367",
+        "name": "新赣江"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SH688578",
+        "name": "艾力斯"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ000566",
+        "name": "海南海药"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ300149",
+        "name": "睿智医药"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ300759",
+        "name": "康龙化成"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-17T09:34:35"
+      },
+      {
+        "time": "09:30",
+        "action": "add",
+        "symbol": "SH688578",
+        "name": "艾力斯",
+        "watched": "2026-07-17T09:27:06"
+      }
+    ]
+  },
   {
     "date": "2026-07-16",
     "changes": [

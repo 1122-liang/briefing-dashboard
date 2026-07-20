@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-07-20T14:50:24",
-  "count": 4,
+  "updated_at": "2026-07-20T15:55:34",
+  "count": 6,
   "stocks": [
+    {
+      "symbol": "SH688578",
+      "name": "艾力斯",
+      "marketplace": "CN",
+      "watched": "2026-07-20T14:51:36"
+    },
+    {
+      "symbol": "SZ300765",
+      "name": "石药创新",
+      "marketplace": "CN",
+      "watched": "2026-07-20T14:51:31"
+    },
     {
       "symbol": "SZ300759",
       "name": "康龙化成",

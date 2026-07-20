@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-20T14:50:24",
-  "count": 4,
+  "updated_at": "2026-07-20T15:55:34",
+  "count": 6,
   "stocks": [
+    {
+      "symbol": "SH688578",
+      "name": "艾力斯",
+      "marketplace": "CN",
+      "watched": "2026-07-20T14:51:36"
+    },
+    {
+      "symbol": "SZ300765",
+      "name": "石药创新",
+      "marketplace": "CN",
+      "watched": "2026-07-20T14:51:31"
+    },
     {
       "symbol": "SZ300759",
       "name": "康龙化成",
@@ -32,6 +44,20 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-20",
     "changes": [
+      {
+        "time": "14:55",
+        "action": "add",
+        "symbol": "SH688578",
+        "name": "艾力斯",
+        "watched": "2026-07-20T14:51:36"
+      },
+      {
+        "time": "14:55",
+        "action": "add",
+        "symbol": "SZ300765",
+        "name": "石药创新",
+        "watched": "2026-07-20T14:51:31"
+      },
       {
         "time": "14:50",
         "action": "remove",

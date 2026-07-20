@@ -1,6 +1,6 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-20T14:00:17",
-  "count": 5,
+  "updated_at": "2026-07-20T14:50:24",
+  "count": 4,
   "stocks": [
     {
       "symbol": "SZ300759",
@@ -21,12 +21,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-20T09:54:24"
     },
     {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-20T09:54:15"
-    },
-    {
       "symbol": "SH600664",
       "name": "哈药股份",
       "marketplace": "CN",
@@ -38,6 +32,12 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-20",
     "changes": [
+      {
+        "time": "14:50",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
       {
         "time": "10:05",
         "action": "add",

@@ -3,6 +3,12 @@
     "date": "2026-07-20",
     "changes": [
       {
+        "time": "14:50",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
         "time": "10:05",
         "action": "add",
         "symbol": "SZ300759",

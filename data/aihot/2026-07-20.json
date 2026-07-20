@@ -1,0 +1,99 @@
+{
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T08:44:31.469296+08:00",
+  "window_hours": 72,
+  "total_opportunities": 8,
+  "opportunities": [
+    {
+      "id": "nvidia-japan-ai-factory",
+      "title": "黄仁勋访日：NVIDIA联手日本打造Vera Rubin主权AI工厂与Cosmos机器人联盟",
+      "industry": "AI算力基础设施/物理AI",
+      "type": "重大事件",
+      "summary": "NVIDIA CEO黄仁勋7月15-16日访日，宣布建设日本Vera Rubin AI工厂（13,750颗Vera CPU + 27,500颗Rubin GPU，2028投运），并启动Cosmos物理AI机器人联盟，标志着AI算力主权化从芯片制造延伸至机器人产业化落地。",
+      "investment_logic": "日本作为全球半导体材料与设备强国，此次合作将加速NVIDIA在亚洲的AI主权化布局。Vera Rubin工厂规模远超此前主权AI项目，叠加Cosmos机器人联盟落地，形成算力+物理AI双轮驱动。日本半导体设备和AI基建直接受益，NVIDIA Blackwell/Rubin产业链持续高景气。",
+      "target_stocks": "英伟达(NVDA)、东京电子(8035.T)、爱德万测试(6857.T)、软银(9984.T)、SK海力士(000660.KS)、中际旭创(300308)",
+      "risk_note": "2028年投运时间远，短期业绩贡献有限；主权AI项目存在地缘政策变动风险；日本基建成本高企可能影响投资回报率",
+      "source": "TechCrunch: cmrsbql4401gxbiuaj7s1567n"
+    },
+    {
+      "id": "qwen-3.8-plus-wan-streamer",
+      "title": "阿里Qwen3.8发布2.4T参数开源模型+Wan-Streamer v0.2实现550ms端到端全模态实时交互",
+      "industry": "中国AI大模型/全模态交互",
+      "type": "行业新方向",
+      "summary": "阿里通义千问发布Qwen3.8（2.4T参数），声称仅次于Anthropic Fable 5，已在Token Plan/Qoder/CodeWork上线；同期通义实验室发布Wan-Streamer v0.2，统一听看说演单Transformer架构，端到端延迟仅550ms，分辨率提升至640x368@25FPS。",
+      "investment_logic": "Qwen3.8标志着中国开源大模型首次明确对标全球第二梯队（仅次于Fable 5），Wan-Streamer的全模态实时交互在视频/直播/客服场景有巨大应用空间。阿里云作为中国最大公有云，模型能力跃升将加速企业AI adoption，带动算力需求增长。",
+      "target_stocks": "阿里巴巴(9988.HK/BABA)、中际旭创(300308)、新易盛(300502)、寒武纪(688256)、海光信息(688041)",
+      "risk_note": "开源模型变现路径尚不明朗；2.4T参数推理成本极高，大规模商用需降本；全模态实时交互的杀手级应用尚未出现",
+      "source": "X/Twitter @Alibaba_Qwen: cmrrjaxlv030jbihklywu3xy6; 通义实验室公众号: cmrolz26304oqbito42v7oeaz"
+    },
+    {
+      "id": "kimi-k3-frontend-first",
+      "title": "Kimi K3登顶前端编码全球第一+K2.5重构AI训练三大基础组件",
+      "industry": "中国AI大模型/AI训练基础设施",
+      "type": "重大事件",
+      "summary": "月之暗面Kimi K3（2.8T MoE）在Frontend Code Arena以1679分登顶，7个前端细分赛道6个第一，力压Claude Fable 5与GPT-5.6 Sol，7月27日开放权重。同时CEO杨植麟在GTC 2026披露K2.5技术路线：MuonClip优化器替代Adam（数据效率翻倍）、Kimi Linear线性注意力（百万Token全面超越）、Agent Swarm 300并行。",
+      "investment_logic": "K3登顶前端编码标志着中国AI在工程能力维度首次全面超越OpenAI和Anthropic。K2.5三大组件重构（优化器、注意力、Agent集群）是从底层颠覆AI训练范式的尝试，若成功将大幅降低大模型训练成本。7月27日开放权重将引发新一轮AI应用开发热潮。前沿模型从2家变为6家，格局多极化利好AI算力总需求增长。",
+      "target_stocks": "阿里(9988.HK，月之暗面投资方)、寒武纪(688256)、海光信息(688041)、浪潮信息(000977)、中际旭创(300308)",
+      "risk_note": "月之暗面非上市公司，投资标的间接；2.8T MoE推理成本高企；技术路线（MuonClip替代Adam）未经大规模验证；开源后商业化前景不确定",
+      "source": "X/Twitter @AYi_AInotes: cmroipdr803rvbito8t018vr1; X/Twitter @dotey: cmrp8wsr10bhobitotnd5hzeq"
+    },
+    {
+      "id": "minicpm-robot-embodied",
+      "title": "面壁智能MiniCPM双连发：具身VLA模型开源+端侧2B模型适配9芯片Day0",
+      "industry": "具身智能/端侧AI",
+      "type": "行业新方向",
+      "summary": "面壁智能同步发布MiniCPM-Robot（1.5B VLA具身模型+PhyAI推理框架）和MiniCPM5-2B端侧模型（4B以下全球性能第一，原生支持混合思考与512K上下文）。MiniCPM5-2B已完成华为昇腾、英伟达等9款芯片Day0适配。",
+      "investment_logic": "面壁智能在具身智能与端侧AI两大前沿方向同步突破。MiniCPM-Robot是国内首个开源的VLA（视觉-语言-动作）模型，配合PhyAI高性能推理框架，有望成为机器人领域的LLaMA时刻。MiniCPM5-2B适配9芯片Day0意味着端侧AI已进入芯片百花齐放的产业化阶段，边缘计算+端侧推理的商业化门槛大幅降低。",
+      "target_stocks": "绿的谐波(688017)、埃斯顿(002747)、乐鑫科技(688018)、瑞芯微(603893)、全志科技(300458)、拓维信息(002261，华为昇腾产业链)",
+      "risk_note": "面壁智能非上市公司，投资标的为产业链间接受益；具身智能商业化仍在早期，VLA模型实际部署效果待验证；端侧AI竞争激烈，芯片适配不等于商用落地",
+      "source": "X/Twitter @OpenBMB: cmrrvig4h01ctbi5qyidwptd7; 面壁智能公众号: cmrru2n5x00vzbi5qea6youod"
+    },
+    {
+      "id": "schema-harness-arc-agi3",
+      "title": "Schema Harness在ARC-AGI-3公开集达99%：不修改模型权重的AGI推理范式突破",
+      "industry": "AI推理/AGI",
+      "type": "行业瓶颈变化",
+      "summary": "Schema框架不修改模型权重，将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。在ARC-AGI-3公开集上，Claude Opus 4.8+Fable 5达99% RHAE分数，GPT-5.6 Sol达95.35%。此前最强模型GPT-5.6 Sol在半私有集上仅得7.78%。",
+      "investment_logic": "Schema Harness证明不依赖更大模型也能实现AGI级推理——这是一个范式级突破，意味着AI推理能力的天花板不再由模型规模决定，而可以通过框架工程大幅提升。这对AI应用层是重大利好：企业无需等待下一代万亿参数模型，就能用现有模型+框架实现复杂推理。AI Agent平台、企业AI部署、自动化编程都将受益。",
+      "target_stocks": "第四范式(6682.HK)、金山办公(688111)、商汤-W(0020.HK)、Palantir(PLTR)、微软(MSFT)",
+      "risk_note": "Schema框架开源后商业化路径不清晰；当前仅在ARC-AGI-3公开集验证，真实场景泛化能力未知；框架+大模型组合的推理成本尚未披露",
+      "source": "Hacker News: cmropqooe05tqbitodvnqnc6u"
+    },
+    {
+      "id": "apple-openai-legal-escalation",
+      "title": "Apple vs OpenAI法律战升级：400+前员工在OpenAI，40人收到律师函",
+      "industry": "AI硬件/产业竞争格局",
+      "type": "重大事件",
+      "summary": "继Apple起诉OpenAI窃取商业机密后，Apple已向约40名就职于OpenAI的前员工发出律师函要求保存文件。Apple称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用Apple信息并要求归还机密。",
+      "investment_logic": "400+前Apple员工在OpenAI工作意味着人才流动规模远超此前认知（此前报道为数十人）。Apple寻求禁令可能影响OpenAI的硬件研发进度，间接利好Apple在端侧AI硬件领域的竞争地位。若禁令获批，OpenAI的AI硬件路线图将受重创，Apple Intelligence有望加速。",
+      "target_stocks": "苹果(AAPL)、微软(MSFT)、高通(QCOM)、立讯精密(002475)、歌尔股份(002241)",
+      "risk_note": "诉讼走向高度不确定，禁令是否获批未知；若Apple败诉，前期法律成本拖累股价；中美AI脱钩背景下，此案可能波及中国果链企业",
+      "source": "The Verge: cmrp97h7o0020biuxh7pzewro; IT之家: cmrove64p07imbitof1v9rzwz"
+    },
+    {
+      "id": "kunlun-world-model-2026",
+      "title": "昆仑万维宣布2026为世界模型元年：Matrix-Game 3.5实现20FPS实时生成",
+      "industry": "AI世界模型/游戏",
+      "type": "行业新方向",
+      "summary": "昆仑万维董事长方汉在WAIC宣布2026年为世界模型元年，发布Matrix-Game 3.5世界模型（5B参数，720p@20FPS实时生成，Patch级记忆注入）、Mureka v9.5与O3音乐模型。核心架构已开源。",
+      "investment_logic": "5B参数实现720p@20FPS实时生成意味着世界模型已突破实时可交互的关键阈值——这是从生成式AI到世界模型的质变。5B小参数意味着推理成本可控，具备商业化条件。世界模型一旦成熟，将重塑游戏开发（AI实时生成游戏世界）、影视制作、元宇宙、自动驾驶仿真等万亿级市场。昆仑万维是国内唯一将世界模型作为核心战略的上市公司。",
+      "target_stocks": "昆仑万维(300418)、三七互娱(002555)、完美世界(002624)、Unity(U)、Roblox(RBLX)",
+      "risk_note": "世界模型商业化路径尚在早期，从20FPS demo到可玩游戏差距巨大；5B模型画质有限，与3A游戏视觉效果不匹配；昆仑万维主力业务（Opera浏览器）与AI协同度待验证",
+      "source": "昆仑万维公众号: cmrrt03gx00mkbi5qtoim4wvo"
+    },
+    {
+      "id": "nvidia-nemotron-3-embed",
+      "title": "NVIDIA Nemotron 3 Embed登顶RTEB：Embedding模型新范式+Blackwell端2x吞吐",
+      "industry": "AI基础设施/RAG",
+      "type": "行业新方向",
+      "summary": "NVIDIA发布Nemotron 3 Embed系列（3个开源checkpoint），8B-BF16在RTEB基准以78.46 NDCG@10排名第一，1B-NVFP4版本在Blackwell上吞吐比BF16高2倍、精度保留99.5%，最大序列长度32,768 tokens。",
+      "investment_logic": "Embedding模型是RAG（检索增强生成）和大模型应用的核心基础设施。NVIDIA将Embedding模型与Blackwell硬件联合优化（2x吞吐+99.5%精度保留），意味着其AI软件栈正从芯片+框架向芯片+框架+模型全栈闭环演进。这对NVIDIA生态护城河是重大加固，同时也打开Embedding-as-a-Service的新商业化空间。",
+      "target_stocks": "英伟达(NVDA)、星环科技(688031)、第四范式(6682.HK)、MongoDB(MDB)、Elastic(ESTC)",
+      "risk_note": "Embedding模型竞争激烈（OpenAI/Cohere均有布局），NVIDIA刚入局；8B模型推理成本高于现有主流Embedding模型；RAG市场规模目前有限",
+      "source": "MarkTechPost: cmronvv4105bdbitohe86a4un"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-07-20.json",
+  "_saved_at": "2026-07-20T08:44:31.469332+08:00"
+}

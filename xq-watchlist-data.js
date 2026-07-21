@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-21T11:00:22",
-  "count": 2,
+  "updated_at": "2026-07-21T14:00:47",
+  "count": 4,
   "stocks": [
+    {
+      "symbol": "SH603127",
+      "name": "昭衍新药",
+      "marketplace": "CN",
+      "watched": "2026-07-21T11:30:00"
+    },
+    {
+      "symbol": "SH600664",
+      "name": "哈药股份",
+      "marketplace": "CN",
+      "watched": "2026-07-21T11:24:35"
+    },
     {
       "symbol": "SZ300759",
       "name": "康龙化成",
@@ -20,6 +32,20 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-21",
     "changes": [
+      {
+        "time": "11:30",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-21T11:30:00"
+      },
+      {
+        "time": "11:25",
+        "action": "add",
+        "symbol": "SH600664",
+        "name": "哈药股份",
+        "watched": "2026-07-21T11:24:35"
+      },
       {
         "time": "10:55",
         "action": "remove",

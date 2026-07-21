@@ -1,19 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-20T15:55:34",
-  "count": 6,
+  "updated_at": "2026-07-21T11:00:22",
+  "count": 2,
   "stocks": [
-    {
-      "symbol": "SH688578",
-      "name": "艾力斯",
-      "marketplace": "CN",
-      "watched": "2026-07-20T14:51:36"
-    },
-    {
-      "symbol": "SZ300765",
-      "name": "石药创新",
-      "marketplace": "CN",
-      "watched": "2026-07-20T14:51:31"
-    },
     {
       "symbol": "SZ300759",
       "name": "康龙化成",
@@ -21,26 +9,69 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-20T10:00:54"
     },
     {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
-      "marketplace": "CN",
-      "watched": "2026-07-20T09:55:04"
-    },
-    {
       "symbol": "SZ300534",
       "name": "陇神戎发",
       "marketplace": "CN",
       "watched": "2026-07-20T09:54:24"
-    },
-    {
-      "symbol": "SH600664",
-      "name": "哈药股份",
-      "marketplace": "CN",
-      "watched": "2026-07-20T09:54:10"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-21",
+    "changes": [
+      {
+        "time": "10:55",
+        "action": "remove",
+        "symbol": "SZ000596",
+        "name": "古井贡酒"
+      },
+      {
+        "time": "10:55",
+        "action": "remove",
+        "symbol": "SZ001206",
+        "name": "依依股份"
+      },
+      {
+        "time": "10:35",
+        "action": "remove",
+        "symbol": "SH600664",
+        "name": "哈药股份"
+      },
+      {
+        "time": "10:00",
+        "action": "add",
+        "symbol": "SZ000596",
+        "name": "古井贡酒",
+        "watched": "2026-07-21T09:59:33"
+      },
+      {
+        "time": "10:00",
+        "action": "add",
+        "symbol": "SZ001206",
+        "name": "依依股份",
+        "watched": "2026-07-21T09:59:28"
+      },
+      {
+        "time": "10:00",
+        "action": "remove",
+        "symbol": "SH688578",
+        "name": "艾力斯"
+      },
+      {
+        "time": "09:55",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SZ300765",
+        "name": "石药创新"
+      }
+    ]
+  },
   {
     "date": "2026-07-20",
     "changes": [

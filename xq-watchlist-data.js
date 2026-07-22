@@ -1,7 +1,43 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-22T09:09:07",
-  "count": 4,
+  "updated_at": "2026-07-22T13:59:16",
+  "count": 10,
   "stocks": [
+    {
+      "symbol": "SH688710",
+      "name": "益诺思",
+      "marketplace": "CN",
+      "watched": "2026-07-22T13:35:47"
+    },
+    {
+      "symbol": "SZ002653",
+      "name": "海思科",
+      "marketplace": "CN",
+      "watched": "2026-07-22T13:35:34"
+    },
+    {
+      "symbol": "SZ002422",
+      "name": "科伦药业",
+      "marketplace": "CN",
+      "watched": "2026-07-22T13:35:28"
+    },
+    {
+      "symbol": "SH688202",
+      "name": "美迪西",
+      "marketplace": "CN",
+      "watched": "2026-07-22T09:48:27"
+    },
+    {
+      "symbol": "SZ301520",
+      "name": "万邦医药",
+      "marketplace": "CN",
+      "watched": "2026-07-22T09:37:45"
+    },
+    {
+      "symbol": "SH688192",
+      "name": "迪哲医药-U",
+      "marketplace": "CN",
+      "watched": "2026-07-22T09:32:19"
+    },
     {
       "symbol": "SH603127",
       "name": "昭衍新药",
@@ -29,6 +65,53 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-22",
+    "changes": [
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SH688710",
+        "name": "益诺思",
+        "watched": "2026-07-22T13:35:47"
+      },
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SZ002422",
+        "name": "科伦药业",
+        "watched": "2026-07-22T13:35:28"
+      },
+      {
+        "time": "13:39",
+        "action": "add",
+        "symbol": "SZ002653",
+        "name": "海思科",
+        "watched": "2026-07-22T13:35:34"
+      },
+      {
+        "time": "11:08",
+        "action": "add",
+        "symbol": "SH688192",
+        "name": "迪哲医药-U",
+        "watched": "2026-07-22T09:32:19"
+      },
+      {
+        "time": "11:08",
+        "action": "add",
+        "symbol": "SH688202",
+        "name": "美迪西",
+        "watched": "2026-07-22T09:48:27"
+      },
+      {
+        "time": "11:08",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-22T09:37:45"
+      }
+    ]
+  },
   {
     "date": "2026-07-21",
     "changes": [

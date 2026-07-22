@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T22:25:32.156251+08:00",
+  "total_following": 0,
+  "total_users": 0,
+  "active_users": 0,
+  "total_posts": 0,
+  "filtered_posts": 0,
+  "categories": {},
+  "top_posts": [],
+  "analysis": null,
+  "posts_analysis": "⚠️ 今日数据异常：关注人Feed抓取返回0条帖子（HTTP+Playwright双路均为空），0人活跃。疑似雪球反爬限流或Cookie失效，非真实零活跃。今日话题4篇均无完整文章内容（Playwright exit=9，回退IM仅获元数据），预获取脚本未运行或产出为空。请检查：1）脚本登录态是否正常；2）Playwright Chromium环境是否可用（exit=9通常为浏览器启动失败）；3）cron是否正常触发预获取脚本。建议尽快手动 login 恢复登录态并重新运行脚本。",
+  "time_range": {
+    "from": "2026-07-21 22:25",
+    "to": "2026-07-22 22:25"
+  },
+  "today_topics_count": 4,
+  "today_topics": [
+    {
+      "id": "401516498",
+      "title": "对今晚谷歌财报关注点及其意义的思考",
+      "url": "https://xueqiu.com/5332385101/401516498",
+      "image": "https://xqimg.imedao.com/145fe14d17d153fc7b287f0c.jpg!540x280.png",
+      "created_at_str": "2026-07-22 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "401576402",
+      "title": "你的资金量，就是你的投资物种",
+      "url": "https://xueqiu.com/7271353740/401576402",
+      "image": "https://xqimg.imedao.com/147afbb5abfb3fd2341c29a6.jpg!160x120.png",
+      "created_at_str": "2026-07-22 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "401567557",
+      "title": "26Q2光模块产业观察：1.6T放量开启，硅光与国产替代重塑竞争格局",
+      "url": "https://xueqiu.com/3196557688/401567557",
+      "image": "https://xqimg.imedao.com/147374352981b13fd3c35f79.jpg!160x120.png",
+      "created_at_str": "2026-07-22 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "401497755",
+      "title": "算力租赁：一门「简单暴利」却被A股低估的生意",
+      "url": "https://xueqiu.com/7093340612/401497755",
+      "image": "https://xqimg.imedao.com/1484d99ba7e163fe11202f6b.jpg!160x120.png",
+      "created_at_str": "2026-07-22 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    }
+  ],
+  "_filename": "2026-07-22.json",
+  "_saved_at": "2026-07-22T22:25:32.156453+08:00"
+}

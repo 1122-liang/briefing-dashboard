@@ -1,0 +1,1429 @@
+{
+  "date": "20260722",
+  "summary": "医疗研发外包领衔主线(连续22天)；退潮13板块(医院, 印刷, 原料药等)；弱转强7个",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 22,
+      "d30": 13,
+      "d120": 95,
+      "d250": 83,
+      "trend": "down",
+      "analysis": "连续在池22天。RPS开始回落。催化: 🔴🔴昭衍新药H1净利+884-1377%(实验猴涨价),创新药出海H1达成81笔交易1100亿美元,新版基药目录794种药品9月实施",
+      "key_stocks": [
+        {
+          "code": "603127",
+          "name": "昭衍新药",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603259",
+          "name": "药明康德",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "其他生物制品",
+      "consecutive_days": 18,
+      "d30": 42,
+      "d120": 84,
+      "d250": 74,
+      "trend": "down",
+      "analysis": "连续在池18天。RPS开始回落。催化: 🔴🔴脑机接口首例植入手术(华山医院),基药目录新增生物制品59种,十五五规划全链条支持创新药,创新药BD出海H1再创新高",
+      "key_stocks": [
+        {
+          "code": "000518",
+          "name": "四环生物",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603087",
+          "name": "甘李药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "688278",
+          "name": "特宝生物",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "生猪养殖",
+      "consecutive_days": 16,
+      "d30": 67,
+      "d120": 72,
+      "d250": 75,
+      "trend": "stable",
+      "analysis": "连续在池16天。RPS维持高位。催化: 猪价反弹乏力,6月能繁母猪存栏环比+0.8%供应压力不减,板块退池",
+      "key_stocks": [
+        {
+          "code": "000048",
+          "name": "京基智农",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "605296",
+          "name": "神农集团",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "肉鸡养殖",
+      "consecutive_days": 16,
+      "d30": 61,
+      "d120": 75,
+      "d250": 81,
+      "trend": "stable",
+      "analysis": "连续在池16天。RPS维持高位",
+      "key_stocks": [
+        {
+          "code": "002746",
+          "name": "仙坛股份",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "化学制剂",
+      "consecutive_days": 16,
+      "d30": 35,
+      "d120": 80,
+      "d250": 77,
+      "trend": "down",
+      "analysis": "连续在池16天。RPS开始回落。催化: 🔴🔴迪哲医药与阿斯利康签署授权协议获6亿美元首付款,基药目录首次纳入创新药遴选,创新药H1获批27款(22款国产),出海H1突破997亿美元",
+      "key_stocks": [
+        {
+          "code": "000513",
+          "name": "丽珠集团",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000566",
+          "name": "海南海药",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "摩托车",
+      "consecutive_days": 14,
+      "d30": 61,
+      "d120": 54,
+      "d250": 92,
+      "trend": "stable",
+      "analysis": "连续在池14天。RPS维持高位",
+      "key_stocks": [
+        {
+          "code": "003033",
+          "name": "征和工业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "炼油化工",
+      "consecutive_days": 11,
+      "d30": 97,
+      "d120": 97,
+      "d250": 99,
+      "trend": "up",
+      "analysis": "连续在池11天。RPS持续走强。催化: 🔴荣盛石化196亿投炼化一体化改造；超六成深市化工企业H1业绩预增，行业景气持续向好；美伊摩擦旺季需求支撑油价; Q2油价中枢上移但成品油价下调,炼油价差环比扩大但税费侵蚀利润,板块退池",
+      "key_stocks": [
+        {
+          "code": "600028",
+          "name": "中国石化",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "601857",
+          "name": "中国石油",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "股份制银行Ⅲ",
+      "consecutive_days": 11,
+      "d30": 92,
+      "d120": 91,
+      "d250": 97,
+      "trend": "up",
+      "analysis": "连续在池11天。RPS持续走强。催化: 🔴增持潮提振银行板块信心，国寿资产单日净买入权益资产超百亿，兴业含权产品扩容超40%，机构认为银行估值洼地+基本面稳健错配期; 银行股息率5.16%超国债收益率，低利率时代类固收属性凸显，估值修复窗口打开",
+      "key_stocks": [
+        {
+          "code": "000001",
+          "name": "平安银行",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600000",
+          "name": "浦发银行",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600015",
+          "name": "华夏银行",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 22,
+      "d30": 7,
+      "d120": 89,
+      "d250": 85,
+      "trend": "down",
+      "analysis": "连续在池22天",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "减肥药",
+      "consecutive_days": 18,
+      "d30": 22,
+      "d120": 94,
+      "d250": 94,
+      "trend": "down",
+      "analysis": "连续在池18天。催化: 🔴新版基药目录利好医药板块，减肥药概念多次大涨，07.15日涨4.37%主力资金净流入超35亿",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "猪肉",
+      "consecutive_days": 16,
+      "d30": 83,
+      "d120": 95,
+      "d250": 97,
+      "trend": "up",
+      "analysis": "连续在池16天。催化: 猪价触底反弹，7月初外三元生猪均价突破10元/公斤较低点涨近21%，两部委召开产能调控座谈会压减产能，机构判断周期拐点临近。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "养鸡",
+      "consecutive_days": 16,
+      "d30": 78,
+      "d120": 88,
+      "d250": 93,
+      "trend": "up",
+      "analysis": "连续在池16天",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "生物疫苗",
+      "consecutive_days": 16,
+      "d30": 63,
+      "d120": 97,
+      "d250": 95,
+      "trend": "stable",
+      "analysis": "连续在池16天",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "重组蛋白",
+      "consecutive_days": 16,
+      "d30": 55,
+      "d120": 96,
+      "d250": 94,
+      "trend": "stable",
+      "analysis": "连续在池16天。催化: 🔴创新药赛道景气上行：上半年批准38个I类新药上市，新版基药目录首次纳入16种创新药",
+      "key_stocks": []
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "医院",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "印刷",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "原料药",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "商用载客车",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "旅游综合",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "水泥制造",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "生活用纸",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "电视广播Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "肉制品",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "证券Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "辅料",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "金融控股",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "门户网站",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化/主线切换/获利了结"
+    },
+    {
+      "entity_type": "concept",
+      "name": "NFT概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "上海国企改革",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "互联网金融",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "医美概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "土地流转",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "工业大麻",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "快手概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "手机游戏",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "拼多多概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "期货概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "电子竞技",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "网约车",
+      "consecutive_days": 0,
+      "prev_consecutive": 0,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池(连续0天)今日退出",
+      "reason": "无新增催化/主线切换"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "热力服务",
+      "consecutive_days": 1,
+      "d30": 91,
+      "d120": 90,
+      "d250": 75,
+      "analysis": "回池再启动(连续1天), 催化: 近90天暂无重大催化; 全国持续极端高温用电负荷连创新高，厄尔尼诺催化供热及电力服务需求超预期增长",
+      "catalyst_summary": "近90天暂无重大催化; 全国持续极端高温用电负荷连创新高，厄尔尼诺催化供热及电力服务需求超预期增长",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "焦炭Ⅲ",
+      "consecutive_days": 1,
+      "d30": 87,
+      "d120": 93,
+      "d250": 84,
+      "analysis": "回池再启动(连续1天), 催化: 🔴焦炭启动第十轮提价，3月至今累计涨幅逼近500元/吨，准一干熄焦达2135元/吨。焦煤价同比涨超50%成本推动，焦企盈利修复。半数焦炭股破净，估值历史低位",
+      "catalyst_summary": "🔴焦炭启动第十轮提价，3月至今累计涨幅逼近500元/吨，准一干熄焦达2135元/吨。焦煤价同比涨超50%成本推动，焦企盈利修复。半数焦炭股破净，估值历史低位",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "原材料供应链服务",
+      "consecutive_days": 1,
+      "d30": 79,
+      "d120": 79,
+      "d250": 90,
+      "analysis": "回池再启动(连续1天), 催化: 近90天暂无重大催化; 近90天暂无重大催化",
+      "catalyst_summary": "近90天暂无重大催化; 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "黄金",
+      "consecutive_days": 1,
+      "d30": 97,
+      "d120": 96,
+      "d250": 99,
+      "analysis": "回池再启动(连续1天), 催化: 🔴COMEX黄金突破4190美元，央行持续购金。板块中报预喜率超9成，SPDR持仓结束连续流出。黄金股经近半年调整估值历史低位，配置性价比凸显",
+      "catalyst_summary": "🔴COMEX黄金突破4190美元，央行持续购金。板块中报预喜率超9成，SPDR持仓结束连续流出。黄金股经近半年调整估值历史低位，配置性价比凸显",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "纯碱",
+      "consecutive_days": 1,
+      "d30": 91,
+      "d120": 81,
+      "d250": 77,
+      "analysis": "回池再启动(连续1天), 催化: 近90天暂无重大催化; 纯碱行业周期触底近一年，价格低于成本线，中盐化工投252亿建500万吨天然碱项目扩产",
+      "catalyst_summary": "近90天暂无重大催化; 纯碱行业周期触底近一年，价格低于成本线，中盐化工投252亿建500万吨天然碱项目扩产",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "航空运输",
+      "consecutive_days": 1,
+      "d30": 91,
+      "d120": 73,
+      "d250": 61,
+      "analysis": "回池再启动(连续1天), 催化: 🔴航司供给持续收缩，波音空客交付量不足疫情前。5月淡季票价同比涨16%，26Q1航司实现疫后首次集体盈利，下半年航空煤油价有望回落，盈利弹性待释放",
+      "catalyst_summary": "🔴航司供给持续收缩，波音空客交付量不足疫情前。5月淡季票价同比涨16%，26Q1航司实现疫后首次集体盈利，下半年航空煤油价有望回落，盈利弹性待释放",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "钾肥",
+      "consecutive_days": 1,
+      "d30": 98,
+      "d120": 94,
+      "d250": 86,
+      "analysis": "回池再启动(连续1天), 催化: 🔴印度钾肥大合同涨至383美元/吨，国内氯化钾同比涨11%。Canpotex Q2售罄，全球钾肥供需缺口34万吨。亚钾国际第三个百万吨项目投产，产能稳步扩张",
+      "catalyst_summary": "🔴印度钾肥大合同涨至383美元/吨，国内氯化钾同比涨11%。Canpotex Q2售罄，全球钾肥供需缺口34万吨。亚钾国际第三个百万吨项目投产，产能稳步扩张",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "可燃冰",
+      "consecutive_days": 1,
+      "d30": 98,
+      "d120": 93,
+      "d250": 92,
+      "analysis": "回池再启动(连续1天), 催化: 今日可燃冰概念涨1.31%，潜能恒信涨7.84%、石化油服涨5.63%、中曼石油涨停，9股获主力资金净流入。; 概念板块涨幅第1涨3.14%，主力净流入3.67亿，潜能恒信涨11.68%，中国石化涨4.17%，能源安全主题持续",
+      "catalyst_summary": "今日可燃冰概念涨1.31%，潜能恒信涨7.84%、石化油服涨5.63%、中曼石油涨停，9股获主力资金净流入。; 概念板块涨幅第1涨3.14%，主力净流入3.67亿，潜能恒信涨11.68%，中国石化涨4.17%，能源安全主题持续",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "大豆",
+      "consecutive_days": 1,
+      "d30": 72,
+      "d120": 84,
+      "d250": 90,
+      "analysis": "回池再启动(连续1天), 催化: 美豆价格涨至12.26美元/蒲式耳接近2年新高，中国4月大豆进口同比增40%，中美关系回暖预期达成新一轮采购协议，厄尔尼诺或致供给收紧。",
+      "catalyst_summary": "美豆价格涨至12.26美元/蒲式耳接近2年新高，中国4月大豆进口同比增40%，中美关系回暖预期达成新一轮采购协议，厄尔尼诺或致供给收紧。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "黄金概念",
+      "consecutive_days": 1,
+      "d30": 94,
+      "d120": 75,
+      "d250": 81,
+      "analysis": "回池再启动(连续1天), 催化: 🔴国际金价突破4120美元，央行连续20个月增持黄金创最长纪录，黄金股ETF涨超7%，金饰单日涨27元/克，中信预计Q3金价4000-4500美元。",
+      "catalyst_summary": "🔴国际金价突破4120美元，央行连续20个月增持黄金创最长纪录，黄金股ETF涨超7%，金饰单日涨27元/克，中信预计Q3金价4000-4500美元。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "生物质能发电",
+      "consecutive_days": 1,
+      "d30": 91,
+      "d120": 83,
+      "d250": 78,
+      "analysis": "回池再启动(连续1天), 催化: 近90天暂无重大催化; 近90天暂无重大催化",
+      "catalyst_summary": "近90天暂无重大催化; 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "抽水蓄能",
+      "consecutive_days": 1,
+      "d30": 93,
+      "d120": 73,
+      "d250": 66,
+      "analysis": "回池再启动(连续1天), 催化: 十五五碳达峰行动方案明确到2030年抽水蓄能装机达1.6亿千瓦，政策要求因地制宜加快建设，电力板块整体走强。",
+      "catalyst_summary": "十五五碳达峰行动方案明确到2030年抽水蓄能装机达1.6亿千瓦，政策要求因地制宜加快建设，电力板块整体走强。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "中字头股票",
+      "consecutive_days": 1,
+      "d30": 92,
+      "d120": 86,
+      "d250": 84,
+      "analysis": "回池再启动(连续1天), 催化: 7月20日中字头板块走强，红利国企ETF涨超3%，有关部门召开资本市场座谈会，机构看好央企高股息+稳市逻辑三重共振。",
+      "catalyst_summary": "7月20日中字头板块走强，红利国企ETF涨超3%，有关部门召开资本市场座谈会，机构看好央企高股息+稳市逻辑三重共振。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "国产操作系统",
+      "consecutive_days": 1,
+      "d30": 90,
+      "d120": 63,
+      "d250": 68,
+      "analysis": "回池再启动(连续1天), 催化: 信创替代加速，2027年央企100%替代节点倒逼2026订单释放，信创ETF涨超7%，赛迪预计2026年信创产业规模破1.8万亿。",
+      "catalyst_summary": "信创替代加速，2027年央企100%替代节点倒逼2026订单释放，信创ETF涨超7%，赛迪预计2026年信创产业规模破1.8万亿。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "碳交易",
+      "consecutive_days": 1,
+      "d30": 93,
+      "d120": 87,
+      "d250": 77,
+      "analysis": "回池再启动(连续1天), 催化: 双碳考核办法出台标志碳治理进入刚性考核阶段，碳中和ETF涨超2%，电-证-碳联动利好绿电运营商，碳排放管控有望持续收紧。",
+      "catalyst_summary": "双碳考核办法出台标志碳治理进入刚性考核阶段，碳中和ETF涨超2%，电-证-碳联动利好绿电运营商，碳排放管控有望持续收紧。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "绿色电力",
+      "consecutive_days": 1,
+      "d30": 90,
+      "d120": 80,
+      "d250": 71,
+      "analysis": "回池再启动(连续1天), 催化: 电力板块掀涨停潮，7月20日绿电指数涨3.5%，十五五电网投资预计破5万亿，今夏用电负荷或超13亿千瓦，AI算力+迎峰度夏双驱动。",
+      "catalyst_summary": "电力板块掀涨停潮，7月20日绿电指数涨3.5%，十五五电网投资预计破5万亿，今夏用电负荷或超13亿千瓦，AI算力+迎峰度夏双驱动。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "转基因",
+      "consecutive_days": 1,
+      "d30": 80,
+      "d120": 90,
+      "d250": 87,
+      "analysis": "回池再启动(连续1天), 催化: 转基因玉米大豆全国常态化种植，隆平高科19个次转基因品种通过审定推广面积国内第一，种业振兴进入深化期政策加码。",
+      "catalyst_summary": "转基因玉米大豆全国常态化种植，隆平高科19个次转基因品种通过审定推广面积国内第一，种业振兴进入深化期政策加码。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属铅",
+      "consecutive_days": 1,
+      "d30": 95,
+      "d120": 72,
+      "d250": 64,
+      "analysis": "回池再启动(连续1天), 催化: 金属铅概念今日涨2.54%居概念涨幅第1，主力净流入33.72亿，山金国际、盛达资源涨停，紫金矿业涨6.59%。",
+      "catalyst_summary": "金属铅概念今日涨2.54%居概念涨幅第1，主力净流入33.72亿，山金国际、盛达资源涨停，紫金矿业涨6.59%。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "煤化工概念",
+      "consecutive_days": 1,
+      "d30": 91,
+      "d120": 87,
+      "d250": 85,
+      "analysis": "回池再启动(连续1天), 催化: 煤炭概念涨1.52%主力净流入近8亿，美伊冲突推高油价布油重回90美元，煤化工迎盈利修复机遇，华泰证券强调其能源安全战略地位。; 🔴兖矿能源/赤天化/中煤能源涨停，主力净流入10.31亿，油价高位煤化工高利润周期延续，煤制烯烃盈利优势显著",
+      "catalyst_summary": "煤炭概念涨1.52%主力净流入近8亿，美伊冲突推高油价布油重回90美元，煤化工迎盈利修复机遇，华泰证券强调其能源安全战略地位。; 🔴兖矿能源/赤天化/中煤能源涨停，主力净流入10.31亿，油价高位煤化工高利润周期延续，煤制烯烃盈利优势显著",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "央企国企改革",
+      "consecutive_days": 1,
+      "d30": 90,
+      "d120": 80,
+      "d250": 75,
+      "analysis": "回池再启动(连续1天), 催化: 🔴国家队百亿增持+六大央企集体回购增持，中国国新已用500亿再贷款增持，中国诚通近百亿买入，红利国企ETF涨超3%，央企稳市信号明确。",
+      "catalyst_summary": "🔴国家队百亿增持+六大央企集体回购增持，中国国新已用500亿再贷款增持，中国诚通近百亿买入，红利国企ETF涨超3%，央企稳市信号明确。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属锌",
+      "consecutive_days": 1,
+      "d30": 95,
+      "d120": 69,
+      "d250": 61,
+      "analysis": "回池再启动(连续1天), 催化: 金属锌概念今日涨2.43%位居涨幅第2，主力净流入30.5亿，山金国际、盛达资源涨停，紫金矿业涨6.59%净流入14.78亿。",
+      "catalyst_summary": "金属锌概念今日涨2.43%位居涨幅第2，主力净流入30.5亿，山金国际、盛达资源涨停，紫金矿业涨6.59%净流入14.78亿。",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "股份制银行Ⅲ",
+      "red_level": "三线红",
+      "consecutive_days": 11,
+      "d30": 92,
+      "catalyst_summary": "🔴增持潮提振银行板块信心，国寿资产单日净买入权益资产超百亿，兴业含权产品扩容超40%，机构认为银行估值洼地+基本面稳健错配期; 银行股息率5.16%超国债收益率，低利率时代类固收属性凸显，估值修复窗口打开",
+      "stocks": []
+    },
+    {
+      "name": "动力煤",
+      "red_level": "三线红",
+      "consecutive_days": 3,
+      "d30": 89,
+      "catalyst_summary": "🔴6月原煤产量同比降9.7%创近十年最大降幅，秦港5500大卡煤价同比涨13.88%，机构看好三季度供需格局继续改善; 🔴动力煤Q2市场均价环比+14%同比+28%，高温+安监+进口收缩推动煤价中枢持续抬升",
+      "stocks": []
+    },
+    {
+      "name": "城商行Ⅲ",
+      "red_level": "三线红",
+      "consecutive_days": 4,
+      "d30": 90,
+      "catalyst_summary": "🔴北向资金逆势加仓优质城商行，机构扎堆调研。国家队增持+保险机构力挺资本市场，板块估值修复持续，优质城商行业绩确定性高; 🔴Q1上市银行营收同比增7.6%，净息差降幅收窄利息净收入转正；机构推荐区域优势城农商行，江苏、成渝等区域行景气度领先",
+      "stocks": []
+    },
+    {
+      "name": "焦煤",
+      "red_level": "三线红",
+      "consecutive_days": 4,
+      "d30": 94,
+      "catalyst_summary": "🔴煤炭板块强势反弹涨2.43%，兖煤澳大利亚Q2冶金煤售价环比涨3%，原煤产量同比降9.7%创十年最大降幅，供需格局持续改善; 🔴焦炭第十轮提价累计涨500元/吨，焦煤价同比涨超50%成本推动供给收缩持续",
+      "stocks": []
+    },
+    {
+      "name": "黄金",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 97,
+      "catalyst_summary": "🔴COMEX黄金突破4190美元，央行持续购金。板块中报预喜率超9成，SPDR持仓结束连续流出。黄金股经近半年调整估值历史低位，配置性价比凸显",
+      "stocks": []
+    },
+    {
+      "name": "航空运输",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 91,
+      "catalyst_summary": "🔴航司供给持续收缩，波音空客交付量不足疫情前。5月淡季票价同比涨16%，26Q1航司实现疫后首次集体盈利，下半年航空煤油价有望回落，盈利弹性待释放",
+      "stocks": []
+    },
+    {
+      "name": "焦炭Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 87,
+      "catalyst_summary": "🔴焦炭启动第十轮提价，3月至今累计涨幅逼近500元/吨，准一干熄焦达2135元/吨。焦煤价同比涨超50%成本推动，焦企盈利修复。半数焦炭股破净，估值历史低位",
+      "stocks": []
+    },
+    {
+      "name": "纯碱",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 91,
+      "catalyst_summary": "近90天暂无重大催化; 纯碱行业周期触底近一年，价格低于成本线，中盐化工投252亿建500万吨天然碱项目扩产",
+      "stocks": []
+    },
+    {
+      "name": "热力服务",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 91,
+      "catalyst_summary": "近90天暂无重大催化; 全国持续极端高温用电负荷连创新高，厄尔尼诺催化供热及电力服务需求超预期增长",
+      "stocks": []
+    },
+    {
+      "name": "原材料供应链服务",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 79,
+      "catalyst_summary": "近90天暂无重大催化; 近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "大宗用纸",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "🔴理文造纸中期盈利预增64%-71%，玖龙获20亿授信+提价。造纸业纳入碳排放交易市场，箱板纸同比涨6.66%，机构判断造纸周期磨底接近尾声",
+      "stocks": []
+    },
+    {
+      "name": "黄金",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 97,
+      "catalyst_summary": "🔴COMEX黄金突破4190美元，央行持续购金。板块中报预喜率超9成，SPDR持仓结束连续流出。黄金股经近半年调整估值历史低位，配置性价比凸显",
+      "stocks": []
+    },
+    {
+      "name": "钾肥",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 98,
+      "catalyst_summary": "🔴印度钾肥大合同涨至383美元/吨，国内氯化钾同比涨11%。Canpotex Q2售罄，全球钾肥供需缺口34万吨。亚钾国际第三个百万吨项目投产，产能稳步扩张",
+      "stocks": []
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "可燃冰",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 98,
+      "catalyst_summary": "今日可燃冰概念涨1.31%，潜能恒信涨7.84%、石化油服涨5.63%、中曼石油涨停，9股获主力资金净流入。; 概念板块涨幅第1涨3.14%，主力净流入3.67亿，潜能恒信涨11.68%，中国石化涨4.17%，能源安全主题持续",
+      "stocks": []
+    },
+    {
+      "name": "毛发医疗",
+      "red_level": "三线红",
+      "consecutive_days": 11,
+      "d30": 49,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "中国AI 50",
+      "red_level": "三线红",
+      "consecutive_days": 2,
+      "d30": 97,
+      "catalyst_summary": "🔴AI基建订单密集落地，工业富联H1净利增93%-101%、浪潮信息增226%-288%，世界AI合作组织成立，科创50ETF涨9.04%，超微电脑积压订单创新高。; 🔴科创50指数大涨超10%，华夏科创50ETF单日吸金138亿创新高；WAIC大会在沪举办，华为展出昇腾950超节点真机",
+      "stocks": []
+    },
+    {
+      "name": "猪肉",
+      "red_level": "三线红",
+      "consecutive_days": 16,
+      "d30": 83,
+      "catalyst_summary": "猪价触底反弹，7月初外三元生猪均价突破10元/公斤较低点涨近21%，两部委召开产能调控座谈会压减产能，机构判断周期拐点临近。",
+      "stocks": []
+    },
+    {
+      "name": "中字头股票",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 92,
+      "catalyst_summary": "7月20日中字头板块走强，红利国企ETF涨超3%，有关部门召开资本市场座谈会，机构看好央企高股息+稳市逻辑三重共振。",
+      "stocks": []
+    },
+    {
+      "name": "碳交易",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 93,
+      "catalyst_summary": "双碳考核办法出台标志碳治理进入刚性考核阶段，碳中和ETF涨超2%，电-证-碳联动利好绿电运营商，碳排放管控有望持续收紧。",
+      "stocks": []
+    },
+    {
+      "name": "煤化工概念",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 91,
+      "catalyst_summary": "煤炭概念涨1.52%主力净流入近8亿，美伊冲突推高油价布油重回90美元，煤化工迎盈利修复机遇，华泰证券强调其能源安全战略地位。; 🔴兖矿能源/赤天化/中煤能源涨停，主力净流入10.31亿，油价高位煤化工高利润周期延续，煤制烯烃盈利优势显著",
+      "stocks": []
+    },
+    {
+      "name": "金属锌",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 95,
+      "catalyst_summary": "金属锌概念今日涨2.43%位居涨幅第2，主力净流入30.5亿，山金国际、盛达资源涨停，紫金矿业涨6.59%净流入14.78亿。",
+      "stocks": []
+    },
+    {
+      "name": "大豆",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 72,
+      "catalyst_summary": "美豆价格涨至12.26美元/蒲式耳接近2年新高，中国4月大豆进口同比增40%，中美关系回暖预期达成新一轮采购协议，厄尔尼诺或致供给收紧。",
+      "stocks": []
+    },
+    {
+      "name": "黄金概念",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 94,
+      "catalyst_summary": "🔴国际金价突破4120美元，央行连续20个月增持黄金创最长纪录，黄金股ETF涨超7%，金饰单日涨27元/克，中信预计Q3金价4000-4500美元。",
+      "stocks": []
+    },
+    {
+      "name": "绿色电力",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 90,
+      "catalyst_summary": "电力板块掀涨停潮，7月20日绿电指数涨3.5%，十五五电网投资预计破5万亿，今夏用电负荷或超13亿千瓦，AI算力+迎峰度夏双驱动。",
+      "stocks": []
+    },
+    {
+      "name": "央企国企改革",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 90,
+      "catalyst_summary": "🔴国家队百亿增持+六大央企集体回购增持，中国国新已用500亿再贷款增持，中国诚通近百亿买入，红利国企ETF涨超3%，央企稳市信号明确。",
+      "stocks": []
+    },
+    {
+      "name": "金属铅",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 95,
+      "catalyst_summary": "金属铅概念今日涨2.54%居概念涨幅第1，主力净流入33.72亿，山金国际、盛达资源涨停，紫金矿业涨6.59%。",
+      "stocks": []
+    },
+    {
+      "name": "生物质能发电",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 91,
+      "catalyst_summary": "近90天暂无重大催化; 近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "抽水蓄能",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 93,
+      "catalyst_summary": "十五五碳达峰行动方案明确到2030年抽水蓄能装机达1.6亿千瓦，政策要求因地制宜加快建设，电力板块整体走强。",
+      "stocks": []
+    },
+    {
+      "name": "国产操作系统",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 90,
+      "catalyst_summary": "信创替代加速，2027年央企100%替代节点倒逼2026订单释放，信创ETF涨超7%，赛迪预计2026年信创产业规模破1.8万亿。",
+      "stocks": []
+    },
+    {
+      "name": "可燃冰",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 98,
+      "catalyst_summary": "今日可燃冰概念涨1.31%，潜能恒信涨7.84%、石化油服涨5.63%、中曼石油涨停，9股获主力资金净流入。; 概念板块涨幅第1涨3.14%，主力净流入3.67亿，潜能恒信涨11.68%，中国石化涨4.17%，能源安全主题持续",
+      "stocks": []
+    },
+    {
+      "name": "转基因",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 80,
+      "catalyst_summary": "转基因玉米大豆全国常态化种植，隆平高科19个次转基因品种通过审定推广面积国内第一，种业振兴进入深化期政策加码。",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "688368",
+      "name": "晶丰明源",
+      "red_level": "三线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "688530",
+      "name": "欧莱新材",
+      "red_level": "三线红",
+      "sector_l3": "半导体材料"
+    },
+    {
+      "code": "300671",
+      "name": "富满微",
+      "red_level": "三线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "301228",
+      "name": "实朴检测",
+      "red_level": "三线红",
+      "sector_l3": "检测服务"
+    },
+    {
+      "code": "301536",
+      "name": "星宸科技",
+      "red_level": "三线红",
+      "sector_l3": "数字芯片设计"
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "red_level": "三线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "002768",
+      "name": "国恩股份",
+      "red_level": "三线红",
+      "sector_l3": "改性塑料"
+    },
+    {
+      "code": "688679",
+      "name": "通源环境",
+      "red_level": "一线红",
+      "sector_l3": "固废治理"
+    },
+    {
+      "code": "301015",
+      "name": "百洋医药",
+      "red_level": "一线红",
+      "sector_l3": "医药流通"
+    },
+    {
+      "code": "002972",
+      "name": "科安达",
+      "red_level": "一线红",
+      "sector_l3": "轨交设备Ⅲ"
+    },
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "red_level": "一线红",
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "301033",
+      "name": "迈普医学",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "000538",
+      "name": "云南白药",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "603296",
+      "name": "华勤技术",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "000815",
+      "name": "美利云",
+      "red_level": "一线红",
+      "sector_l3": "大宗用纸"
+    },
+    {
+      "code": "002025",
+      "name": "航天电器",
+      "red_level": "一线红",
+      "sector_l3": "其他电子Ⅲ"
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "red_level": "一线红",
+      "sector_l3": "港口"
+    },
+    {
+      "code": "688515",
+      "name": "裕太微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "603871",
+      "name": "嘉友国际",
+      "red_level": "一线红",
+      "sector_l3": "跨境物流"
+    },
+    {
+      "code": "603162",
+      "name": "海通发展",
+      "red_level": "一线红",
+      "sector_l3": "航运"
+    },
+    {
+      "code": "301285",
+      "name": "鸿日达",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "603288",
+      "name": "海天味业",
+      "red_level": "一线红",
+      "sector_l3": "调味发酵品Ⅲ"
+    },
+    {
+      "code": "002515",
+      "name": "金字火腿",
+      "red_level": "一线红",
+      "sector_l3": "肉制品"
+    },
+    {
+      "code": "000989",
+      "name": "九芝堂",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "600095",
+      "name": "湘财股份",
+      "red_level": "一线红",
+      "sector_l3": "住宅开发"
+    },
+    {
+      "code": "603040",
+      "name": "新坐标",
+      "red_level": "一线红",
+      "sector_l3": "底盘与发动机系统"
+    },
+    {
+      "code": "002127",
+      "name": "南极电商",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "000566",
+      "name": "海南海药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "300039",
+      "name": "上海凯宝",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "000722",
+      "name": "湖南发展",
+      "red_level": "一线红",
+      "sector_l3": "粮食种植"
+    },
+    {
+      "code": "601666",
+      "name": "平煤股份",
+      "red_level": "一线红",
+      "sector_l3": "焦煤"
+    },
+    {
+      "code": "000063",
+      "name": "中兴通讯",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "300990",
+      "name": "同飞股份",
+      "red_level": "一线红",
+      "sector_l3": "制冷空调设备"
+    },
+    {
+      "code": "688061",
+      "name": "灿瑞科技",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "red_level": "一线红",
+      "sector_l3": "氮肥"
+    },
+    {
+      "code": "601336",
+      "name": "新华保险",
+      "red_level": "一线红",
+      "sector_l3": "保险Ⅲ"
+    },
+    {
+      "code": "603019",
+      "name": "中科曙光",
+      "red_level": "一线红",
+      "sector_l3": "其他计算机设备"
+    },
+    {
+      "code": "601233",
+      "name": "桐昆股份",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "300602",
+      "name": "飞荣达",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "red_level": "一线红",
+      "sector_l3": "白酒Ⅲ"
+    },
+    {
+      "code": "300725",
+      "name": "药石科技",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "301367",
+      "name": "瑞迈特",
+      "red_level": "一线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "688271",
+      "name": "联影医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "002142",
+      "name": "宁波银行",
+      "red_level": "一线红",
+      "sector_l3": "城商行Ⅲ"
+    },
+    {
+      "code": "002064",
+      "name": "华峰化学",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "002032",
+      "name": "苏 泊 尔",
+      "red_level": "一线红",
+      "sector_l3": "厨房小家电"
+    },
+    {
+      "code": "301500",
+      "name": "飞南资源",
+      "red_level": "一线红",
+      "sector_l3": "铜"
+    },
+    {
+      "code": "600351",
+      "name": "亚宝药业",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "688663",
+      "name": "新风光",
+      "red_level": "一线红",
+      "sector_l3": "电网自动化设备"
+    },
+    {
+      "code": "603118",
+      "name": "共进股份",
+      "red_level": "一线红",
+      "sector_l3": "通信终端及配件"
+    },
+    {
+      "code": "603882",
+      "name": "金域医学",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "002925",
+      "name": "盈趣科技",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "601139",
+      "name": "深圳燃气",
+      "red_level": "一线红",
+      "sector_l3": "燃气Ⅲ"
+    },
+    {
+      "code": "002746",
+      "name": "仙坛股份",
+      "red_level": "一线红",
+      "sector_l3": "肉鸡养殖"
+    },
+    {
+      "code": "301047",
+      "name": "义翘神州",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "688381",
+      "name": "帝奥微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "603605",
+      "name": "珀莱雅",
+      "red_level": "一线红",
+      "sector_l3": "品牌化妆品"
+    },
+    {
+      "code": "301234",
+      "name": "五洲医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "603890",
+      "name": "春秋电子",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "002020",
+      "name": "京新药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "601699",
+      "name": "潞安环能",
+      "red_level": "一线红",
+      "sector_l3": "焦煤"
+    },
+    {
+      "code": "600129",
+      "name": "太极集团",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "600521",
+      "name": "华海药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "300149",
+      "name": "睿智医药",
+      "red_level": "一线红",
+      "sector_l3": "其他农产品加工"
+    },
+    {
+      "code": "688071",
+      "name": "华依科技",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "603198",
+      "name": "XD迎驾贡",
+      "red_level": "一线红",
+      "sector_l3": "白酒Ⅲ"
+    },
+    {
+      "code": "300832",
+      "name": "新产业",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "600000",
+      "name": "浦发银行",
+      "red_level": "一线红",
+      "sector_l3": "股份制银行Ⅲ"
+    },
+    {
+      "code": "601077",
+      "name": "渝农商行",
+      "red_level": "一线红",
+      "sector_l3": "农商行Ⅲ"
+    },
+    {
+      "code": "600403",
+      "name": "大有能源",
+      "red_level": "一线红",
+      "sector_l3": "动力煤"
+    },
+    {
+      "code": "603679",
+      "name": "华体科技",
+      "red_level": "一线红",
+      "sector_l3": "LED"
+    }
+  ]
+}

@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-22T15:59:34",
-  "count": 9,
+  "updated_at": "2026-07-23T11:00:21",
+  "count": 10,
   "stocks": [
+    {
+      "symbol": "SH688068",
+      "name": "热景生物",
+      "marketplace": "CN",
+      "watched": "2026-07-23T09:38:39"
+    },
     {
       "symbol": "SH688710",
       "name": "益诺思",
@@ -59,6 +65,18 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-23",
+    "changes": [
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SH688068",
+        "name": "热景生物",
+        "watched": "2026-07-23T09:38:39"
+      }
+    ]
+  },
   {
     "date": "2026-07-22",
     "changes": [

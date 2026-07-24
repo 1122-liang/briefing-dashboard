@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-07-24",
+    "changes": [
+      {
+        "time": "10:08",
+        "action": "remove",
+        "symbol": "SH688068",
+        "name": "热景生物"
+      },
+      {
+        "time": "10:03",
+        "action": "add",
+        "symbol": "SZ001258",
+        "name": "立新能源",
+        "watched": "2026-07-24T10:01:32"
+      },
+      {
+        "time": "09:53",
+        "action": "remove",
+        "symbol": "SZ002653",
+        "name": "海思科"
+      },
+      {
+        "time": "09:27",
+        "action": "add",
+        "symbol": "SH603259",
+        "name": "药明康德",
+        "watched": "2026-07-23T19:45:01"
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "changes": [
       {

@@ -1,24 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-23T15:56:07",
+  "updated_at": "2026-07-24T11:03:12",
   "count": 10,
   "stocks": [
     {
-      "symbol": "SH688068",
-      "name": "热景生物",
+      "symbol": "SZ001258",
+      "name": "立新能源",
       "marketplace": "CN",
-      "watched": "2026-07-23T09:38:39"
+      "watched": "2026-07-24T10:01:32"
+    },
+    {
+      "symbol": "SH603259",
+      "name": "药明康德",
+      "marketplace": "CN",
+      "watched": "2026-07-23T19:45:01"
     },
     {
       "symbol": "SH688710",
       "name": "益诺思",
       "marketplace": "CN",
       "watched": "2026-07-22T13:35:47"
-    },
-    {
-      "symbol": "SZ002653",
-      "name": "海思科",
-      "marketplace": "CN",
-      "watched": "2026-07-22T13:35:34"
     },
     {
       "symbol": "SZ002422",
@@ -65,6 +65,37 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-24",
+    "changes": [
+      {
+        "time": "10:08",
+        "action": "remove",
+        "symbol": "SH688068",
+        "name": "热景生物"
+      },
+      {
+        "time": "10:03",
+        "action": "add",
+        "symbol": "SZ001258",
+        "name": "立新能源",
+        "watched": "2026-07-24T10:01:32"
+      },
+      {
+        "time": "09:53",
+        "action": "remove",
+        "symbol": "SZ002653",
+        "name": "海思科"
+      },
+      {
+        "time": "09:27",
+        "action": "add",
+        "symbol": "SH603259",
+        "name": "药明康德",
+        "watched": "2026-07-23T19:45:01"
+      }
+    ]
+  },
   {
     "date": "2026-07-23",
     "changes": [

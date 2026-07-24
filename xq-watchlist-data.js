@@ -1,6 +1,6 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-24T11:03:12",
-  "count": 10,
+  "updated_at": "2026-07-24T14:03:40",
+  "count": 5,
   "stocks": [
     {
       "symbol": "SZ001258",
@@ -15,40 +15,10 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-23T19:45:01"
     },
     {
-      "symbol": "SH688710",
-      "name": "益诺思",
-      "marketplace": "CN",
-      "watched": "2026-07-22T13:35:47"
-    },
-    {
-      "symbol": "SZ002422",
-      "name": "科伦药业",
-      "marketplace": "CN",
-      "watched": "2026-07-22T13:35:28"
-    },
-    {
-      "symbol": "SH688202",
-      "name": "美迪西",
-      "marketplace": "CN",
-      "watched": "2026-07-22T09:48:27"
-    },
-    {
       "symbol": "SZ301520",
       "name": "万邦医药",
       "marketplace": "CN",
       "watched": "2026-07-22T09:37:45"
-    },
-    {
-      "symbol": "SH688192",
-      "name": "迪哲医药-U",
-      "marketplace": "CN",
-      "watched": "2026-07-22T09:32:19"
-    },
-    {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
-      "marketplace": "CN",
-      "watched": "2026-07-21T11:30:00"
     },
     {
       "symbol": "SZ300759",
@@ -68,6 +38,36 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-24",
     "changes": [
+      {
+        "time": "11:28",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "11:28",
+        "action": "remove",
+        "symbol": "SH688192",
+        "name": "迪哲医药-U"
+      },
+      {
+        "time": "11:28",
+        "action": "remove",
+        "symbol": "SH688202",
+        "name": "美迪西"
+      },
+      {
+        "time": "11:28",
+        "action": "remove",
+        "symbol": "SH688710",
+        "name": "益诺思"
+      },
+      {
+        "time": "11:28",
+        "action": "remove",
+        "symbol": "SZ002422",
+        "name": "科伦药业"
+      },
       {
         "time": "10:08",
         "action": "remove",

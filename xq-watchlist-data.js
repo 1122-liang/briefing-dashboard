@@ -1,43 +1,42 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-24T14:03:40",
-  "count": 5,
-  "stocks": [
-    {
-      "symbol": "SZ001258",
-      "name": "立新能源",
-      "marketplace": "CN",
-      "watched": "2026-07-24T10:01:32"
-    },
-    {
-      "symbol": "SH603259",
-      "name": "药明康德",
-      "marketplace": "CN",
-      "watched": "2026-07-23T19:45:01"
-    },
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-22T09:37:45"
-    },
-    {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
-      "marketplace": "CN",
-      "watched": "2026-07-20T10:00:54"
-    },
-    {
-      "symbol": "SZ300534",
-      "name": "陇神戎发",
-      "marketplace": "CN",
-      "watched": "2026-07-20T09:54:24"
-    }
-  ]
+  "updated_at": "2026-07-24T15:55:53",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
   {
     "date": "2026-07-24",
     "changes": [
+      {
+        "time": "15:45",
+        "action": "remove",
+        "symbol": "SH603259",
+        "name": "药明康德"
+      },
+      {
+        "time": "15:45",
+        "action": "remove",
+        "symbol": "SZ001258",
+        "name": "立新能源"
+      },
+      {
+        "time": "15:45",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "15:45",
+        "action": "remove",
+        "symbol": "SZ300759",
+        "name": "康龙化成"
+      },
+      {
+        "time": "15:45",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
       {
         "time": "11:28",
         "action": "remove",

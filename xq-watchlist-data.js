@@ -1,9 +1,66 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-24T15:55:53",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-07-27T11:00:21",
+  "count": 5,
+  "stocks": [
+    {
+      "symbol": "SZ300759",
+      "name": "康龙化成",
+      "marketplace": "CN",
+      "watched": "2026-07-27T09:44:01"
+    },
+    {
+      "symbol": "SH603127",
+      "name": "昭衍新药",
+      "marketplace": "CN",
+      "watched": "2026-07-27T09:42:49"
+    },
+    {
+      "symbol": "SZ301520",
+      "name": "万邦医药",
+      "marketplace": "CN",
+      "watched": "2026-07-27T09:38:07"
+    },
+    {
+      "symbol": "SZ001258",
+      "name": "立新能源",
+      "marketplace": "CN",
+      "watched": "2026-07-27T09:34:18"
+    },
+    {
+      "symbol": "SZ300534",
+      "name": "陇神戎发",
+      "marketplace": "CN",
+      "watched": "2026-07-27T09:31:46"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-27",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-27T09:42:49"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-07-27T09:44:01"
+      },
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-27T09:38:07"
+      }
+    ]
+  },
   {
     "date": "2026-07-24",
     "changes": [

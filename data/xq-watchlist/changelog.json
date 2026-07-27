@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-07-27",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SH603127",
+        "name": "昭衍新药",
+        "watched": "2026-07-27T09:42:49"
+      },
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-07-27T09:44:01"
+      },
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-27T09:38:07"
+      }
+    ]
+  },
+  {
     "date": "2026-07-24",
     "changes": [
       {

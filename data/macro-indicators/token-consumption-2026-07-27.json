@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-27",
+  "record": {
+    "date": "2026-07-20",
+    "total_weekly_tokens_t": 28.0,
+    "models": [
+      {
+        "rank": 1,
+        "name": "MiMo-V2-Pro",
+        "vendor": "Xiaomi",
+        "weekly_tokens_t": 4.92
+      },
+      {
+        "rank": 2,
+        "name": "Qwen 3.6 Plus",
+        "vendor": "Alibaba",
+        "weekly_tokens_t": 3.25
+      },
+      {
+        "rank": 3,
+        "name": "Claude Sonnet 4.6",
+        "vendor": "Anthropic",
+        "weekly_tokens_t": 3.09
+      },
+      {
+        "rank": 4,
+        "name": "MiniMax M2.5/M2.7",
+        "vendor": "MiniMax",
+        "weekly_tokens_t": 3.02
+      },
+      {
+        "rank": 5,
+        "name": "StepFun Step 3.5 Flash",
+        "vendor": "StepFun",
+        "weekly_tokens_t": 2.73
+      },
+      {
+        "rank": 6,
+        "name": "Hy3",
+        "vendor": "-",
+        "weekly_tokens_t": 2.76
+      },
+      {
+        "rank": 7,
+        "name": "Claude Opus 4.6/4.7",
+        "vendor": "Anthropic",
+        "weekly_tokens_t": 2.13
+      },
+      {
+        "rank": 8,
+        "name": "GPT-5.4/5.5 Pro",
+        "vendor": "OpenAI",
+        "weekly_tokens_t": 0.9
+      },
+      {
+        "rank": 9,
+        "name": "Gemini 3.1 Pro/3.5 Flash",
+        "vendor": "Google",
+        "weekly_tokens_t": 2.1
+      },
+      {
+        "rank": 10,
+        "name": "DeepSeek V3.2/V4 Flash",
+        "vendor": "DeepSeek",
+        "weekly_tokens_t": 1.23
+      }
+    ],
+    "data_source": "baseline (2026-05-25)",
+    "openrouter_models_count": 338
+  },
+  "growth": {
+    "has_growth_data": true,
+    "week_change_t": 0.0,
+    "week_growth_pct": 0.0,
+    "ma4_growth_pct": 0.0,
+    "growth_trend": "波动",
+    "trend_icon": "📊",
+    "total_records": 4
+  },
+  "vendor_share": {
+    "Anthropic": 20.0,
+    "Xiaomi": 18.8,
+    "Alibaba": 12.4,
+    "MiniMax": 11.6,
+    "-": 10.6,
+    "StepFun": 10.4,
+    "Google": 8.0,
+    "DeepSeek": 4.7,
+    "OpenAI": 3.4
+  },
+  "data_source": "OpenRouter Rankings",
+  "generated_at": "2026-07-27T09:50:51.860049+08:00"
+}

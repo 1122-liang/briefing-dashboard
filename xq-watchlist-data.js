@@ -1,12 +1,12 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-27T11:00:21",
+  "updated_at": "2026-07-27T13:55:45",
   "count": 5,
   "stocks": [
     {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
+      "symbol": "SZ300214",
+      "name": "日科化学",
       "marketplace": "CN",
-      "watched": "2026-07-27T09:44:01"
+      "watched": "2026-07-27T13:12:56"
     },
     {
       "symbol": "SH603127",
@@ -38,6 +38,19 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-27",
     "changes": [
+      {
+        "time": "13:15",
+        "action": "add",
+        "symbol": "SZ300214",
+        "name": "日科化学",
+        "watched": "2026-07-27T13:12:56"
+      },
+      {
+        "time": "13:15",
+        "action": "remove",
+        "symbol": "SZ300759",
+        "name": "康龙化成"
+      },
       {
         "time": "09:45",
         "action": "add",

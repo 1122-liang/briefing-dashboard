@@ -1,72 +1,141 @@
 {
   "date": "2026-07-27",
   "record": {
-    "date": "2026-07-20",
-    "total_weekly_tokens_t": 28.0,
+    "date": "2026-07-27",
+    "total_weekly_tokens_t": 58.04,
     "models": [
       {
         "rank": 1,
-        "name": "MiMo-V2-Pro",
+        "name": "Mimo V2.5",
         "vendor": "Xiaomi",
-        "weekly_tokens_t": 4.92
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "weekly_tokens_t": 10.46
       },
       {
         "rank": 2,
-        "name": "Qwen 3.6 Plus",
-        "vendor": "Alibaba",
-        "weekly_tokens_t": 3.25
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "weekly_tokens_t": 6.37
       },
       {
         "rank": 3,
-        "name": "Claude Sonnet 4.6",
-        "vendor": "Anthropic",
-        "weekly_tokens_t": 3.09
+        "name": "Hy3",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy3-20260706",
+        "weekly_tokens_t": 5.7
       },
       {
         "rank": 4,
-        "name": "MiniMax M2.5/M2.7",
-        "vendor": "MiniMax",
-        "weekly_tokens_t": 3.02
+        "name": "Glm 5.2",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.2-20260616",
+        "weekly_tokens_t": 3.29
       },
       {
         "rank": 5,
-        "name": "StepFun Step 3.5 Flash",
-        "vendor": "StepFun",
-        "weekly_tokens_t": 2.73
+        "name": "Deepseek V4 Pro",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-pro-20260423",
+        "weekly_tokens_t": 3.17
       },
       {
         "rank": 6,
-        "name": "Hy3",
-        "vendor": "-",
-        "weekly_tokens_t": 2.76
+        "name": "Nemotron 3 Ultra 550B A55B",
+        "vendor": "Nvidia",
+        "vendor_slug": "nvidia",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "weekly_tokens_t": 2.37
       },
       {
         "rank": 7,
-        "name": "Claude Opus 4.6/4.7",
-        "vendor": "Anthropic",
-        "weekly_tokens_t": 2.13
+        "name": "Minimax M3",
+        "vendor": "MiniMax",
+        "vendor_slug": "minimax",
+        "slug": "minimax/minimax-m3-20260531",
+        "weekly_tokens_t": 2.05
       },
       {
         "rank": 8,
-        "name": "GPT-5.4/5.5 Pro",
-        "vendor": "OpenAI",
-        "weekly_tokens_t": 0.9
+        "name": "Step 3.7 Flash",
+        "vendor": "StepFun",
+        "vendor_slug": "stepfun",
+        "slug": "stepfun/step-3.7-flash-20260528",
+        "weekly_tokens_t": 1.92
       },
       {
         "rank": 9,
-        "name": "Gemini 3.1 Pro/3.5 Flash",
-        "vendor": "Google",
-        "weekly_tokens_t": 2.1
+        "name": "Claude 4.8 Opus",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-4.8-opus-20260528",
+        "weekly_tokens_t": 1.44
       },
       {
         "rank": 10,
-        "name": "DeepSeek V3.2/V4 Flash",
-        "vendor": "DeepSeek",
+        "name": "Kimi K3",
+        "vendor": "MoonshotAI",
+        "vendor_slug": "moonshotai",
+        "slug": "moonshotai/kimi-k3-20260715",
         "weekly_tokens_t": 1.23
+      },
+      {
+        "rank": 11,
+        "name": "Claude Sonnet 5",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-sonnet-5-20260630",
+        "weekly_tokens_t": 1.04
+      },
+      {
+        "rank": 12,
+        "name": "Gemini 3 Flash Preview",
+        "vendor": "Google",
+        "vendor_slug": "google",
+        "slug": "google/gemini-3-flash-preview-20251217",
+        "weekly_tokens_t": 0.97
+      },
+      {
+        "rank": 13,
+        "name": "Claude 4.7 Opus",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-4.7-opus-20260416",
+        "weekly_tokens_t": 0.93
+      },
+      {
+        "rank": 14,
+        "name": "Claude 4.6 Sonnet",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-4.6-sonnet-20260217",
+        "weekly_tokens_t": 0.78
+      },
+      {
+        "rank": 15,
+        "name": "Gemini 2.5 Flash Lite",
+        "vendor": "Google",
+        "vendor_slug": "google",
+        "slug": "google/gemini-2.5-flash-lite",
+        "weekly_tokens_t": 0.67
       }
     ],
-    "data_source": "baseline (2026-05-25)",
-    "openrouter_models_count": 338
+    "data_source": "openrouter-api",
+    "openrouter_models_count": 342,
+    "data_dates": [
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26"
+    ]
   },
   "growth": {
     "has_growth_data": true,
@@ -75,19 +144,20 @@
     "ma4_growth_pct": 0.0,
     "growth_trend": "波动",
     "trend_icon": "📊",
-    "total_records": 4
+    "total_records": 5
   },
   "vendor_share": {
-    "Anthropic": 20.0,
-    "Xiaomi": 18.8,
-    "Alibaba": 12.4,
-    "MiniMax": 11.6,
-    "-": 10.6,
-    "StepFun": 10.4,
-    "Google": 8.0,
-    "DeepSeek": 4.7,
-    "OpenAI": 3.4
+    "Xiaomi": 24.7,
+    "DeepSeek": 22.5,
+    "Tencent": 13.4,
+    "Anthropic": 9.9,
+    "Z-AI": 7.8,
+    "Nvidia": 5.6,
+    "MiniMax": 4.8,
+    "StepFun": 4.5,
+    "Google": 3.9,
+    "MoonshotAI": 2.9
   },
   "data_source": "OpenRouter Rankings",
-  "generated_at": "2026-07-27T09:50:51.860049+08:00"
+  "generated_at": "2026-07-27T11:09:15.884941+08:00"
 }

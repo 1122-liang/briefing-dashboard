@@ -1,6 +1,6 @@
 {
   "date": "20260727",
-  "summary": "🔴 大面积退潮日: 26实体退出(银行/电力/高速/医药全线退潮)。主线切换: 黄金避险+水产涨价接棒, 半导体催化密集。弱转强7个(水产养殖/黄金/航运/自贸区)",
+  "summary": "🔴 大面积退潮日: 26实体退出。医药主线禽流感/芬太尼11d+医药电商/青蒿素10d同步退潮。银行/保险/电力/高速防御线集体退场。主线切换: 黄金避险+水产涨价+半导体催化接棒。弱转强7个。",
   "main_themes": [
     {
       "entity_type": "sector",
@@ -257,263 +257,263 @@
   "declining": [
     {
       "entity_type": "sector",
-      "name": "会展服务",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "保险Ⅲ",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "农商行Ⅲ",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
       "name": "商业地产",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 8,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "国有大型银行Ⅲ",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "城商行Ⅲ",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "教育出版",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "水力发电",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续8天，今日退出。",
+      "reason": "长周期退潮，核心驱动逻辑消退，一键清仓信号"
     },
     {
       "entity_type": "sector",
       "name": "港口",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 6,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续6天，今日退出。",
+      "reason": "中周期退池，RPS持续回落"
     },
     {
       "entity_type": "sector",
-      "name": "股份制银行Ⅲ",
+      "name": "会展服务",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 6,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续6天，今日退出。",
+      "reason": "中周期退池，RPS持续回落"
     },
     {
       "entity_type": "sector",
-      "name": "航运",
+      "name": "水力发电",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 5,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
-    },
-    {
-      "entity_type": "sector",
-      "name": "铁路运输",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续5天，今日退出。",
+      "reason": "中周期退池，RPS持续回落"
     },
     {
       "entity_type": "sector",
       "name": "风力发电",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 5,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续5天，今日退出。",
+      "reason": "中周期退池，RPS持续回落"
+    },
+    {
+      "entity_type": "sector",
+      "name": "保险Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 5,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续5天，今日退出。",
+      "reason": "中周期退池，RPS持续回落"
+    },
+    {
+      "entity_type": "sector",
+      "name": "铁路运输",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续2天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
+    },
+    {
+      "entity_type": "sector",
+      "name": "教育出版",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
+    },
+    {
+      "entity_type": "sector",
+      "name": "航运",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
+    },
+    {
+      "entity_type": "sector",
+      "name": "农商行Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
+    },
+    {
+      "entity_type": "sector",
+      "name": "股份制银行Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
+    },
+    {
+      "entity_type": "sector",
+      "name": "国有大型银行Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
     },
     {
       "entity_type": "sector",
       "name": "高速公路",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 1,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池(0724)今日退出, RPS全面回落",
-      "reason": "防御红利线(银行/电力/高速)集体退潮"
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
     },
     {
-      "entity_type": "concept",
-      "name": "上证180成份股",
+      "entity_type": "sector",
+      "name": "城商行Ⅲ",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 1,
       "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "俄乌冲突概念",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "医药电商",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "同花顺出海50",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "同花顺漂亮100",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "国资云",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "沪深300样本股",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "煤化工概念",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
-    },
-    {
-      "entity_type": "concept",
-      "name": "禽流感",
-      "consecutive_days": 0,
-      "prev_consecutive": 0,
-      "d30": 0,
-      "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
+      "d120": NaN,
+      "analysis": "昨日在池连续1天，今日退出。",
+      "reason": "短期轮动退池，一日游/短线资金撤离"
     },
     {
       "entity_type": "concept",
       "name": "芬太尼",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 11,
       "d30": 0,
       "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
+      "analysis": "昨日在池连续11天，今日退出",
+      "reason": "🔴 长周期退潮(医药主线)，一键清仓信号"
     },
     {
       "entity_type": "concept",
-      "name": "草甘膦",
+      "name": "禽流感",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 11,
       "d30": 0,
       "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
+      "analysis": "昨日在池连续11天，今日退出",
+      "reason": "🔴 长周期退潮(医药主线)，一键清仓信号"
+    },
+    {
+      "entity_type": "concept",
+      "name": "医药电商",
+      "consecutive_days": 0,
+      "prev_consecutive": 10,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续10天，今日退出",
+      "reason": "🔴 长周期退潮(医药主线)，一键清仓信号"
     },
     {
       "entity_type": "concept",
       "name": "青蒿素",
       "consecutive_days": 0,
-      "prev_consecutive": 0,
+      "prev_consecutive": 10,
       "d30": 0,
       "d120": 0,
-      "analysis": "昨日在池今日退出",
-      "reason": "退池信号"
+      "analysis": "昨日在池连续10天，今日退出",
+      "reason": "🔴 长周期退潮(医药主线)，一键清仓信号"
+    },
+    {
+      "entity_type": "concept",
+      "name": "同花顺漂亮100",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续4天，今日退出",
+      "reason": "中周期退池，RPS回落"
+    },
+    {
+      "entity_type": "concept",
+      "name": "国资云",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续4天，今日退出",
+      "reason": "中周期退池，RPS回落"
+    },
+    {
+      "entity_type": "concept",
+      "name": "煤化工概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续2天，今日退出",
+      "reason": "短期轮动退池"
+    },
+    {
+      "entity_type": "concept",
+      "name": "俄乌冲突概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续1天，今日退出",
+      "reason": "短期轮动退池"
+    },
+    {
+      "entity_type": "concept",
+      "name": "同花顺出海50",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续1天，今日退出",
+      "reason": "短期轮动退池"
+    },
+    {
+      "entity_type": "concept",
+      "name": "沪深300样本股",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续1天，今日退出",
+      "reason": "短期轮动退池"
+    },
+    {
+      "entity_type": "concept",
+      "name": "上证180成份股",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续1天，今日退出",
+      "reason": "短期轮动退池"
+    },
+    {
+      "entity_type": "concept",
+      "name": "草甘膦",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 0,
+      "d120": 0,
+      "analysis": "昨日在池连续1天，今日退出",
+      "reason": "短期轮动退池"
     }
   ],
   "emerging": [

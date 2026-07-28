@@ -3,6 +3,12 @@
     "date": "2026-07-28",
     "changes": [
       {
+        "time": "13:23",
+        "action": "remove",
+        "symbol": "SZ001258",
+        "name": "立新能源"
+      },
+      {
         "time": "10:30",
         "action": "add",
         "symbol": "SZ002173",

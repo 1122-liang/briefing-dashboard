@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-28T11:00:21",
-  "count": 6,
+  "updated_at": "2026-07-28T13:58:18",
+  "count": 5,
   "stocks": [
     {
       "symbol": "SZ002173",
@@ -25,12 +25,6 @@
       "name": "万邦医药",
       "marketplace": "CN",
       "watched": "2026-07-27T09:38:07"
-    },
-    {
-      "symbol": "SZ001258",
-      "name": "立新能源",
-      "marketplace": "CN",
-      "watched": "2026-07-27T09:34:18"
     },
     {
       "symbol": "SZ300534",

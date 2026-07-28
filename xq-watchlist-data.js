@@ -1,6 +1,6 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-28T11:00:21",
-  "count": 6,
+  "updated_at": "2026-07-28T13:58:18",
+  "count": 5,
   "stocks": [
     {
       "symbol": "SZ002173",
@@ -27,12 +27,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-27T09:38:07"
     },
     {
-      "symbol": "SZ001258",
-      "name": "立新能源",
-      "marketplace": "CN",
-      "watched": "2026-07-27T09:34:18"
-    },
-    {
       "symbol": "SZ300534",
       "name": "陇神戎发",
       "marketplace": "CN",
@@ -44,6 +38,12 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-28",
     "changes": [
+      {
+        "time": "13:23",
+        "action": "remove",
+        "symbol": "SZ001258",
+        "name": "立新能源"
+      },
       {
         "time": "10:30",
         "action": "add",

@@ -3,6 +3,18 @@
     "date": "2026-07-28",
     "changes": [
       {
+        "time": "14:33",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "14:13",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
         "time": "13:23",
         "action": "remove",
         "symbol": "SZ001258",

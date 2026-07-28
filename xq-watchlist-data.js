@@ -1,6 +1,6 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-28T13:58:18",
-  "count": 5,
+  "updated_at": "2026-07-28T14:48:27",
+  "count": 3,
   "stocks": [
     {
       "symbol": "SZ002173",
@@ -19,18 +19,6 @@ window.__SNAPSHOT__ = {
       "name": "海南海药",
       "marketplace": "CN",
       "watched": "2026-07-28T09:31:42"
-    },
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-27T09:38:07"
-    },
-    {
-      "symbol": "SZ300534",
-      "name": "陇神戎发",
-      "marketplace": "CN",
-      "watched": "2026-07-27T09:31:46"
     }
   ]
 };
@@ -38,6 +26,18 @@ window.__CHANGELOG__ = [
   {
     "date": "2026-07-28",
     "changes": [
+      {
+        "time": "14:33",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "14:13",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
       {
         "time": "13:23",
         "action": "remove",

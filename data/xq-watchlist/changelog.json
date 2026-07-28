@@ -1,5 +1,43 @@
 [
   {
+    "date": "2026-07-28",
+    "changes": [
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ002173",
+        "name": "创新医疗",
+        "watched": "2026-07-28T10:28:02"
+      },
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ300753",
+        "name": "爱朋医疗",
+        "watched": "2026-07-28T10:27:44"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-28T09:31:42"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ300214",
+        "name": "日科化学"
+      }
+    ]
+  },
+  {
     "date": "2026-07-27",
     "changes": [
       {

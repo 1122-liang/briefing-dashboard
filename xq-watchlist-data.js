@@ -1,18 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-27T15:56:02",
-  "count": 5,
+  "updated_at": "2026-07-28T11:00:21",
+  "count": 6,
   "stocks": [
     {
-      "symbol": "SZ300214",
-      "name": "日科化学",
+      "symbol": "SZ002173",
+      "name": "创新医疗",
       "marketplace": "CN",
-      "watched": "2026-07-27T13:12:56"
+      "watched": "2026-07-28T10:28:02"
     },
     {
-      "symbol": "SH603127",
-      "name": "昭衍新药",
+      "symbol": "SZ300753",
+      "name": "爱朋医疗",
       "marketplace": "CN",
-      "watched": "2026-07-27T09:42:49"
+      "watched": "2026-07-28T10:27:44"
+    },
+    {
+      "symbol": "SZ000566",
+      "name": "海南海药",
+      "marketplace": "CN",
+      "watched": "2026-07-28T09:31:42"
     },
     {
       "symbol": "SZ301520",
@@ -35,6 +41,44 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-28",
+    "changes": [
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ002173",
+        "name": "创新医疗",
+        "watched": "2026-07-28T10:28:02"
+      },
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ300753",
+        "name": "爱朋医疗",
+        "watched": "2026-07-28T10:27:44"
+      },
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SH603127",
+        "name": "昭衍新药"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SZ000566",
+        "name": "海南海药",
+        "watched": "2026-07-28T09:31:42"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ300214",
+        "name": "日科化学"
+      }
+    ]
+  },
   {
     "date": "2026-07-27",
     "changes": [

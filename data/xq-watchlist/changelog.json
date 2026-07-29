@@ -1,5 +1,49 @@
 [
   {
+    "date": "2026-07-29",
+    "changes": [
+      {
+        "time": "10:35",
+        "action": "add",
+        "symbol": "SZ301583",
+        "name": "托伦斯",
+        "watched": "2026-07-29T10:33:38"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ300795",
+        "name": "米奥会展",
+        "watched": "2026-07-29T10:03:33"
+      },
+      {
+        "time": "09:50",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-07-29T09:49:37"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ002173",
+        "name": "创新医疗"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ300753",
+        "name": "爱朋医疗"
+      },
+      {
+        "time": "09:30",
+        "action": "remove",
+        "symbol": "SZ000566",
+        "name": "海南海药"
+      }
+    ]
+  },
+  {
     "date": "2026-07-28",
     "changes": [
       {

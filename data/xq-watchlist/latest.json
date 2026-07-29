@@ -1,24 +1,30 @@
 {
-  "updated_at": "2026-07-28T15:58:37",
-  "count": 3,
+  "updated_at": "2026-07-29T11:00:19",
+  "count": 4,
   "stocks": [
     {
-      "symbol": "SZ002173",
-      "name": "创新医疗",
+      "symbol": "SZ301583",
+      "name": "托伦斯",
       "marketplace": "CN",
-      "watched": "2026-07-28T10:28:02"
+      "watched": "2026-07-29T10:33:38"
     },
     {
-      "symbol": "SZ300753",
-      "name": "爱朋医疗",
+      "symbol": "SZ300795",
+      "name": "米奥会展",
       "marketplace": "CN",
-      "watched": "2026-07-28T10:27:44"
+      "watched": "2026-07-29T10:03:33"
     },
     {
-      "symbol": "SZ000566",
-      "name": "海南海药",
+      "symbol": "SZ301520",
+      "name": "万邦医药",
       "marketplace": "CN",
-      "watched": "2026-07-28T09:31:42"
+      "watched": "2026-07-29T09:49:37"
+    },
+    {
+      "symbol": "SH600664",
+      "name": "哈药股份",
+      "marketplace": "CN",
+      "watched": "2026-07-29T09:42:35"
     }
   ]
 }

@@ -1,0 +1,1137 @@
+{
+  "date": "20260729",
+  "summary": "超级品牌、复合肥、信托概念、同花顺中特估100、证金持股持续领涨, 5个板块弱转强",
+  "main_themes": [
+    {
+      "entity_type": "concept",
+      "name": "超级品牌",
+      "consecutive_days": 11,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池11天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "复合肥",
+      "consecutive_days": 9,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池9天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "信托概念",
+      "consecutive_days": 9,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池9天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "同花顺中特估100",
+      "consecutive_days": 9,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池9天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "证金持股",
+      "consecutive_days": 9,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池9天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "高股息精选",
+      "consecutive_days": 9,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池9天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "钾肥",
+      "consecutive_days": 5,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池5天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "高压氧舱",
+      "consecutive_days": 5,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "trend": "down",
+      "analysis": "连续在池5天。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    }
+  ],
+  "declining": [],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "工程机械整机",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 上半年挖机销量增26.4%连续4月破2万台，三一徐工柳工集体涨价5%，雅江水电站等大型基建拉动，出口增33.5%，行业量价齐升",
+      "catalyst_summary": "上半年挖机销量增26.4%连续4月破2万台，三一徐工柳工集体涨价5%，雅江水电站等大型基建拉动，出口增33.5%，行业量价齐升",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "水力发电",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 电投水电重组后上半年净利预增7673%，算电协同政策落地+厄尔尼诺来水改善，水电量价齐升，电力板块年内涨12.5%",
+      "catalyst_summary": "电投水电重组后上半年净利预增7673%，算电协同政策落地+厄尔尼诺来水改善，水电量价齐升，电力板块年内涨12.5%",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "煤化工",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 油价高位+印尼限产推升煤价，地缘冲突下煤化工成本剪刀差持续扩大，煤化工高利润周期延续，券商看好煤制烯烃盈利弹性",
+      "catalyst_summary": "油价高位+印尼限产推升煤价，地缘冲突下煤化工成本剪刀差持续扩大，煤化工高利润周期延续，券商看好煤制烯烃盈利弹性",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "综合乘用车",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 上半年乘用车出口443万辆同比增72%，新能源出口增130%；但内需疲软6月零售同比降23%，车企开启增配提价策略",
+      "catalyst_summary": "上半年乘用车出口443万辆同比增72%，新能源出口增130%；但内需疲软6月零售同比降23%，车企开启增配提价策略",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "黄金",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 金价Q2跌14%后反弹至4200美元以上，美国6月非农仅增5.7万人远低预期，加息预期降温推动黄金反弹，黄金股业绩高增",
+      "catalyst_summary": "金价Q2跌14%后反弹至4200美元以上，美国6月非农仅增5.7万人远低预期，加息预期降温推动黄金反弹，黄金股业绩高增",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "中韩自贸区",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 韩国推出史上最大半导体投资方案，5月出口增速突破50%，AI需求驱动硬科技产业链快速扩张，日韩股市大幅反弹",
+      "catalyst_summary": "韩国推出史上最大半导体投资方案，5月出口增速突破50%，AI需求驱动硬科技产业链快速扩张，日韩股市大幅反弹",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "乳业",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 天润乳业半年度预盈4300万-6000万扭亏为盈，券商预计2026H2原奶迎来向上周期，龙头乳企份额提升价盘企稳，乳业概念板块涨2.66%",
+      "catalyst_summary": "天润乳业半年度预盈4300万-6000万扭亏为盈，券商预计2026H2原奶迎来向上周期，龙头乳企份额提升价盘企稳，乳业概念板块涨2.66%",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "农村电商",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 6月中国电商物流指数111.4点连续4个月回升，农村业务量指数同步回升，电商物流服务体系品质升级，智能技术广泛应用",
+      "catalyst_summary": "6月中国电商物流指数111.4点连续4个月回升，农村业务量指数同步回升，电商物流服务体系品质升级，智能技术广泛应用",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "参股保险",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 保险板块二季度盈利有望高增，负债端延续高景气，陆家嘴论坛带来政策红利，多家券商看好保险估值修复与翻倍增长空间",
+      "catalyst_summary": "保险板块二季度盈利有望高增，负债端延续高景气，陆家嘴论坛带来政策红利，多家券商看好保险估值修复与翻倍增长空间",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "可燃冰",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 地缘局势推动布伦特原油突破90美元/桶，可燃冰概念近期多次领涨，中国石化、中集集团等获主力资金大幅流入，板块活跃度提升",
+      "catalyst_summary": "地缘局势推动布伦特原油突破90美元/桶，可燃冰概念近期多次领涨，中国石化、中集集团等获主力资金大幅流入，板块活跃度提升",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "托育服务",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 近90天暂无重大催化",
+      "catalyst_summary": "近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "草甘膦",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 和邦生物半年度预盈3.7亿-4.3亿同比增长614%-731%，双甘膦/草甘膦板块利润上升，草甘膦概念板块涨2.48%，兴发集团产能国内第一",
+      "catalyst_summary": "和邦生物半年度预盈3.7亿-4.3亿同比增长614%-731%，双甘膦/草甘膦板块利润上升，草甘膦概念板块涨2.48%，兴发集团产能国内第一",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "预制菜",
+      "consecutive_days": 1,
+      "d50": 0,
+      "d120": 0,
+      "d250": 0,
+      "analysis": "首次进池(连续1天)。催化: 预制菜概念今日涨2.48%，主力��金净流入2.99亿元，安井食品、国光连锁等获资金青睐，紫燕食品涨停，华天酒店涨停",
+      "catalyst_summary": "预制菜概念今日涨2.48%，主力��金净流入2.99亿元，安井食品、国光连锁等获资金青睐，紫燕食品涨停，华天酒店涨停",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "煤化工",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "油价高位+印尼限产推升煤价，地缘冲突下煤化工成本剪刀差持续扩大，煤化工高利润周期延续，券商看好煤制烯烃盈利弹性",
+      "stocks": [
+        {
+          "code": "600844",
+          "name": "金煤科技"
+        }
+      ]
+    },
+    {
+      "name": "综合乘用车",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "上半年乘用车出口443万辆同比增72%，新能源出口增130%；但内需疲软6月零售同比降23%，车企开启增配提价策略",
+      "stocks": []
+    },
+    {
+      "name": "水力发电",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "电投水电重组后上半年净利预增7673%，算电协同政策落地+厄尔尼诺来水改善，水电量价齐升，电力板块年内涨12.5%",
+      "stocks": [
+        {
+          "code": "600236",
+          "name": "桂冠电力"
+        },
+        {
+          "code": "600025",
+          "name": "华能水电"
+        },
+        {
+          "code": "600900",
+          "name": "长江电力"
+        }
+      ]
+    },
+    {
+      "name": "工程机械整机",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "上半年挖机销量增26.4%连续4月破2万台，三一徐工柳工集体涨价5%，雅江水电站等大型基建拉动，出口增33.5%，行业量价齐升",
+      "stocks": [
+        {
+          "code": "603298",
+          "name": "杭叉集团"
+        },
+        {
+          "code": "000680",
+          "name": "山推股份"
+        },
+        {
+          "code": "600031",
+          "name": "三一重工"
+        },
+        {
+          "code": "000157",
+          "name": "中联重科"
+        },
+        {
+          "code": "600761",
+          "name": "安徽合力"
+        }
+      ]
+    },
+    {
+      "name": "黄金",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "金价Q2跌14%后反弹至4200美元以上，美国6月非农仅增5.7万人远低预期，加息预期降温推动黄金反弹，黄金股业绩高增",
+      "stocks": [
+        {
+          "code": "600988",
+          "name": "赤峰黄金"
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业"
+        }
+      ]
+    },
+    {
+      "name": "大众出版",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "中信出版推动AI数智出版平台及图书智能体Agent商业化，华鑫证券给予买入评级，但板块层面近90天缺乏重大行业催化",
+      "stocks": []
+    },
+    {
+      "name": "光伏发电",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "光伏能效国标即将发布，组件效率门槛大幅提升加速产能出清；SNEC展会签下3.75GW海外大单，山东2030年装机目标1.15亿千瓦，户用光伏同比增89%",
+      "stocks": []
+    },
+    {
+      "name": "配电设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "十五五规划明确电网适度超前建设，国网投资突破8000亿增15%+，第四周期输配电价落地配网涨幅明显，电网设备板块单日涨6.57%多股涨停",
+      "stocks": [
+        {
+          "code": "002350",
+          "name": "北京科锐"
+        },
+        {
+          "code": "300283",
+          "name": "温州宏丰"
+        }
+      ]
+    },
+    {
+      "name": "贸易Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "600857",
+          "name": "宁波中百"
+        }
+      ]
+    },
+    {
+      "name": "啤酒",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "Q1产量同比增6%改善明显，厄尔尼诺+美加墨世界杯共振拉动旺季消费，高端化下半场8-10元价格带扩容，成本红利下利润弹性释放，估值处历史低位",
+      "stocks": [
+        {
+          "code": "000729",
+          "name": "燕京啤酒"
+        }
+      ]
+    },
+    {
+      "name": "工程咨询服务Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "301365",
+          "name": "矩阵股份"
+        },
+        {
+          "code": "003013",
+          "name": "地铁设计"
+        },
+        {
+          "code": "000779",
+          "name": "甘咨询"
+        }
+      ]
+    },
+    {
+      "name": "纯碱",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "纯碱行业处周期底部近一年，中盐化工拟投252亿建500万吨天然碱项目，博源化工二期全面投产成本全球最低，纯碱价格下跌空间有限",
+      "stocks": [
+        {
+          "code": "002061",
+          "name": "浙江交科"
+        }
+      ]
+    },
+    {
+      "name": "蓄电池及其他电池",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "上半年储能电池销量318GWh同比增83.4%，电解液行业签超200亿长协订单，锂电产业链Q1营收增43%净利增36%，储能成核心增长极",
+      "stocks": [
+        {
+          "code": "002580",
+          "name": "圣阳股份"
+        }
+      ]
+    },
+    {
+      "name": "农用机械",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "一拖股份Q1营收转正净利增6.2%拐点确认，Q1拖拉机出口增18.5%非洲中亚东南亚需求旺盛，政策向高端农机倾斜补贴，内外需共振驱动增长",
+      "stocks": [
+        {
+          "code": "601038",
+          "name": "一拖股份"
+        }
+      ]
+    },
+    {
+      "name": "印刷包装机械",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "炜冈科技1-4月订单增30%，全轮转印刷机WGQ920十月首发进军全域包装印刷；亚联机械上半年净利预增59.6%；造纸提价周期支撑包装需求",
+      "stocks": []
+    },
+    {
+      "name": "水泥制造",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "五部门联合开展水泥节能降碳攻坚加速行业出清，十五五23项重大工程拉动需求，水泥企业涨价意愿强烈，中国建材新材料业务受益AI玻纤需求",
+      "stocks": [
+        {
+          "code": "600801",
+          "name": "华新建材"
+        }
+      ]
+    },
+    {
+      "name": "民爆制品",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "高争民爆控股股东拟变更(西藏国资无偿划转)，保利联合涨停，美伊军事紧张升级提振军工情绪，民爆概念当日净流入1.39亿，雅化集团等受益",
+      "stocks": [
+        {
+          "code": "600985",
+          "name": "淮北矿业"
+        }
+      ]
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "中韩自贸区",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "韩国推出史上最大半导体投资方案，5月出口增速突破50%，AI需求驱动硬科技产业链快速扩张，日韩股市大幅反弹",
+      "stocks": []
+    },
+    {
+      "name": "乳业",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "天润乳业半年度预盈4300万-6000万扭亏为盈，券商预计2026H2原奶迎来向上周期，龙头乳企份额提升价盘企稳，乳业概念板块涨2.66%",
+      "stocks": []
+    },
+    {
+      "name": "参股保险",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "保险板块二季度盈利有望高增，负债端延续高景气，陆家嘴论坛带来政策红利，多家券商看好保险估值修复与翻倍增长空间",
+      "stocks": []
+    },
+    {
+      "name": "农村电商",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "6月中国电商物流指数111.4点连续4个月回升，农村业务量指数同步回升，电商物流服务体系品质升级，智能技术广泛应用",
+      "stocks": []
+    },
+    {
+      "name": "草甘膦",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "和邦生物半年度预盈3.7亿-4.3亿同比增长614%-731%，双甘膦/草甘膦板块利润上升，草甘膦概念板块涨2.48%，兴发集团产能国内第一",
+      "stocks": []
+    },
+    {
+      "name": "预制菜",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "预制菜概念今日涨2.48%，主力��金净流入2.99亿元，安井食品、国光连锁等获资金青睐，紫燕食品涨停，华天酒店涨停",
+      "stocks": []
+    },
+    {
+      "name": "托育服务",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "可燃冰",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d50": 0,
+      "catalyst_summary": "地缘局势推动布伦特原油突破90美元/桶，可燃冰概念近期多次领涨，中国石化、中集集团等获主力资金大幅流入，板块活跃度提升",
+      "stocks": []
+    },
+    {
+      "name": "煤化工概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "煤化工概念主力资金净流入10.31亿，兖矿能源、万华化学等7股净流入超亿元，券商看好地缘油价推升煤化工盈利弹性，盈利周期有望延续",
+      "stocks": []
+    },
+    {
+      "name": "钠离子电池",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "宁德时代签3年60GWh钠电池订单，2026Q4量产在即，券商预计2026年出货超20GWh，锂铜涨价推动钠电经济性凸显，产业奇点到来",
+      "stocks": []
+    },
+    {
+      "name": "农机",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "拖拉机龙头一拖股份26Q1营收转正，归母净利同比+6.2%，拖拉机出口同比+18.5%，政策加大对高端农机补贴倾斜，内需回暖+出海扩张驱动",
+      "stocks": []
+    },
+    {
+      "name": "三胎概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "同花顺出海50",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "统一大市场",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "露营经济",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "户外露营赛道纳入体验经济新增长极，利仁科技露营产品一季报净利增148%，五一出行客流创新高，文旅消费周发放2.84亿消费券",
+      "stocks": []
+    },
+    {
+      "name": "大豆",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "厄尔尼诺2026年高概率形成，美豆产量低于预期库存降至5年低位，中美大豆采购预期升温，4月中国大豆进口848万吨同比增40%，资金全面做多",
+      "stocks": []
+    },
+    {
+      "name": "黄金概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "国际金价突破4100美元，央行连续20个月增持黄金创最长纪录，6月增持48万盎司创新高，黄金股弹性显著，机构看三季金价4000-4500美元",
+      "stocks": []
+    },
+    {
+      "name": "横琴新区",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "动力电池回收",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "新型城镇化",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "装配式建筑",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "染料",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "分散染料两度提价至年内高点，还原物涨至10万/吨，吉华集团半年度预盈4700万同比+1259%，浙江龙盛提价落地迈入上涨周期，行业库存极低8月补库预期",
+      "stocks": []
+    },
+    {
+      "name": "抽水蓄能",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "国务院碳达峰方案明确2030年抽水蓄能装机1.6亿千瓦，发改委十五五规划提出新型储能装3亿千瓦，迎峰度夏用电负荷16亿千瓦创新高",
+      "stocks": []
+    },
+    {
+      "name": "IP经济(谷子经济)",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "两轮车",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d50": 0,
+      "catalyst_summary": "油价高企催化电动两轮出海新周期，越南河内2026年7月推禁燃油摩托政策，欧洲需求回暖，雅迪爱玛东南亚工厂投产，中国电动两轮出口预计增70%",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "red_level": "三��红",
+      "sector_l3": "其他电子Ⅲ"
+    },
+    {
+      "code": "688002",
+      "name": "睿创微纳",
+      "red_level": "三��红",
+      "sector_l3": "军工电子Ⅲ"
+    },
+    {
+      "code": "002353",
+      "name": "杰瑞股份",
+      "red_level": "三��红",
+      "sector_l3": "能源及重型设备"
+    },
+    {
+      "code": "301013",
+      "name": "利和兴",
+      "red_level": "三��红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "301310",
+      "name": "鑫宏业",
+      "red_level": "三��红",
+      "sector_l3": "汽车电子电气系统"
+    },
+    {
+      "code": "301273",
+      "name": "瑞晨环保",
+      "red_level": "三��红",
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "301536",
+      "name": "星宸科技",
+      "red_level": "三��红",
+      "sector_l3": "数字芯片设计"
+    },
+    {
+      "code": "300357",
+      "name": "我武生物",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "603099",
+      "name": "长白山",
+      "red_level": "一线红",
+      "sector_l3": "自然景区"
+    },
+    {
+      "code": "003032",
+      "name": "传智教育",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "600761",
+      "name": "安徽合力",
+      "red_level": "一线红",
+      "sector_l3": "工程机械整机"
+    },
+    {
+      "code": "300181",
+      "name": "佐力药业",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "000690",
+      "name": "宝新能源",
+      "red_level": "一线红",
+      "sector_l3": "火力发电"
+    },
+    {
+      "code": "603195",
+      "name": "公牛集团",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "603317",
+      "name": "天味食品",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "688087",
+      "name": "英科再生",
+      "red_level": "一线红",
+      "sector_l3": "其他塑料制品"
+    },
+    {
+      "code": "301500",
+      "name": "飞南资源",
+      "red_level": "一线红",
+      "sector_l3": "铜"
+    },
+    {
+      "code": "002332",
+      "name": "仙琚制药",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "002043",
+      "name": "兔 宝 宝",
+      "red_level": "一线红",
+      "sector_l3": "其他建材"
+    },
+    {
+      "code": "600782",
+      "name": "新钢股份",
+      "red_level": "一线红",
+      "sector_l3": "板材"
+    },
+    {
+      "code": "002028",
+      "name": "思源电气",
+      "red_level": "一线红",
+      "sector_l3": "电网自动化设备"
+    },
+    {
+      "code": "300483",
+      "name": "首华燃气",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "002061",
+      "name": "浙江交科",
+      "red_level": "一线红",
+      "sector_l3": "纯碱"
+    },
+    {
+      "code": "600499",
+      "name": "科达制造",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "002223",
+      "name": "鱼跃医疗",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "red_level": "一线红",
+      "sector_l3": "综合Ⅲ"
+    },
+    {
+      "code": "002458",
+      "name": "益生股份",
+      "red_level": "一线红",
+      "sector_l3": "肉鸡养殖"
+    },
+    {
+      "code": "301358",
+      "name": "湖南裕能",
+      "red_level": "一线红",
+      "sector_l3": "电池化学品"
+    },
+    {
+      "code": "600179",
+      "name": "安通控股",
+      "red_level": "一线红",
+      "sector_l3": "航运"
+    },
+    {
+      "code": "000959",
+      "name": "首钢股份",
+      "red_level": "一线红",
+      "sector_l3": "板材"
+    },
+    {
+      "code": "688411",
+      "name": "海博思创",
+      "red_level": "一线红",
+      "sector_l3": "其他电源设备Ⅲ"
+    },
+    {
+      "code": "603156",
+      "name": "养元饮品",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "601958",
+      "name": "金钼股份",
+      "red_level": "一线红",
+      "sector_l3": "其他小金属"
+    },
+    {
+      "code": "300146",
+      "name": "汤臣倍健",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "688387",
+      "name": "信科移动",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "601699",
+      "name": "潞安环能",
+      "red_level": "一线红",
+      "sector_l3": "焦煤"
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "red_level": "一线红",
+      "sector_l3": "城商行Ⅲ"
+    },
+    {
+      "code": "600228",
+      "name": "返利科技",
+      "red_level": "一线红",
+      "sector_l3": "氮肥"
+    },
+    {
+      "code": "300888",
+      "name": "稳健医疗",
+      "red_level": "一线红",
+      "sector_l3": "生活用纸"
+    },
+    {
+      "code": "689009",
+      "name": "九号公司",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "601083",
+      "name": "锦江航运",
+      "red_level": "一线红",
+      "sector_l3": "航运"
+    },
+    {
+      "code": "300059",
+      "name": "东方财富",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "600323",
+      "name": "瀚蓝环境",
+      "red_level": "一线红",
+      "sector_l3": "固废治理"
+    },
+    {
+      "code": "600120",
+      "name": "浙江东方",
+      "red_level": "一线红",
+      "sector_l3": "金融控股"
+    },
+    {
+      "code": "603318",
+      "name": "水发燃气",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "603778",
+      "name": "国晟科技",
+      "red_level": "一线红",
+      "sector_l3": "园林工程"
+    },
+    {
+      "code": "603444",
+      "name": "吉比特",
+      "red_level": "一线红",
+      "sector_l3": "游戏Ⅲ"
+    },
+    {
+      "code": "600663",
+      "name": "陆家嘴",
+      "red_level": "一线红",
+      "sector_l3": "商业地产"
+    },
+    {
+      "code": "601236",
+      "name": "红塔证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "002793",
+      "name": "罗欣药业",
+      "red_level": "一线红",
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "600064",
+      "name": "南京高科",
+      "red_level": "一线红",
+      "sector_l3": "住宅开发"
+    },
+    {
+      "code": "600844",
+      "name": "金煤科技",
+      "red_level": "一线红",
+      "sector_l3": "煤化工"
+    },
+    {
+      "code": "300677",
+      "name": "英科医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "000680",
+      "name": "山推股份",
+      "red_level": "一线红",
+      "sector_l3": "工程机械整机"
+    },
+    {
+      "code": "300009",
+      "name": "安科生物",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "000089",
+      "name": "深圳机场",
+      "red_level": "一线红",
+      "sector_l3": "机场"
+    },
+    {
+      "code": "002493",
+      "name": "荣盛石化",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "605179",
+      "name": "一鸣食品",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "600123",
+      "name": "兰花科创",
+      "red_level": "一线红",
+      "sector_l3": "焦煤"
+    },
+    {
+      "code": "002333",
+      "name": "罗普斯金",
+      "red_level": "一线红",
+      "sector_l3": "其他建材"
+    },
+    {
+      "code": "600704",
+      "name": "物产中大",
+      "red_level": "一线红",
+      "sector_l3": "原材料供应链服务"
+    },
+    {
+      "code": "600557",
+      "name": "康缘药业",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "002601",
+      "name": "龙佰集团",
+      "red_level": "一线红",
+      "sector_l3": "钛白粉"
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "red_level": "一线红",
+      "sector_l3": "氮肥"
+    },
+    {
+      "code": "605507",
+      "name": "国邦医药",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "603068",
+      "name": "博通集成",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "600936",
+      "name": "北投科技",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "300001",
+      "name": "特锐德",
+      "red_level": "一线红",
+      "sector_l3": "输变电设备"
+    },
+    {
+      "code": "002926",
+      "name": "华西证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "600867",
+      "name": "通化东宝",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "601528",
+      "name": "瑞丰银行",
+      "red_level": "一线红",
+      "sector_l3": "农商行Ⅲ"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "red_level": "一线红",
+      "sector_l3": "锂电池"
+    },
+    {
+      "code": "688131",
+      "name": "皓元医药",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "002498",
+      "name": "汉缆股份",
+      "red_level": "一线红",
+      "sector_l3": "线缆部件及其他"
+    },
+    {
+      "code": "603889",
+      "name": "新澳股份",
+      "red_level": "一线红",
+      "sector_l3": null
+    }
+  ]
+}

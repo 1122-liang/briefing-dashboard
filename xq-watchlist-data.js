@@ -1,37 +1,36 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-29T11:00:19",
-  "count": 4,
-  "stocks": [
-    {
-      "symbol": "SZ301583",
-      "name": "托伦斯",
-      "marketplace": "CN",
-      "watched": "2026-07-29T10:33:38"
-    },
-    {
-      "symbol": "SZ300795",
-      "name": "米奥会展",
-      "marketplace": "CN",
-      "watched": "2026-07-29T10:03:33"
-    },
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-07-29T09:49:37"
-    },
-    {
-      "symbol": "SH600664",
-      "name": "哈药股份",
-      "marketplace": "CN",
-      "watched": "2026-07-29T09:42:35"
-    }
-  ]
+  "updated_at": "2026-07-29T13:57:10",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
   {
     "date": "2026-07-29",
     "changes": [
+      {
+        "time": "11:25",
+        "action": "remove",
+        "symbol": "SH600664",
+        "name": "哈药股份"
+      },
+      {
+        "time": "11:25",
+        "action": "remove",
+        "symbol": "SZ300795",
+        "name": "米奥会展"
+      },
+      {
+        "time": "11:25",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
+        "time": "11:25",
+        "action": "remove",
+        "symbol": "SZ301583",
+        "name": "托伦斯"
+      },
       {
         "time": "10:35",
         "action": "add",

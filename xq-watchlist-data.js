@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-30T11:00:30",
-  "count": 2,
+  "updated_at": "2026-07-30T13:56:01",
+  "count": 4,
   "stocks": [
+    {
+      "symbol": "SH600629",
+      "name": "华建集团",
+      "marketplace": "CN",
+      "watched": "2026-07-30T13:05:32"
+    },
+    {
+      "symbol": "SZ000859",
+      "name": "国风新材",
+      "marketplace": "CN",
+      "watched": "2026-07-30T11:09:41"
+    },
     {
       "symbol": "SH600895",
       "name": "张江高科",
@@ -17,6 +29,25 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-30",
+    "changes": [
+      {
+        "time": "13:05",
+        "action": "add",
+        "symbol": "SH600629",
+        "name": "华建集团",
+        "watched": "2026-07-30T13:05:32"
+      },
+      {
+        "time": "11:10",
+        "action": "add",
+        "symbol": "SZ000859",
+        "name": "国风新材",
+        "watched": "2026-07-30T11:09:41"
+      }
+    ]
+  },
   {
     "date": "2026-07-29",
     "changes": [

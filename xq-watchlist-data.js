@@ -1,5 +1,5 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-31T13:57:29",
+  "updated_at": "2026-07-31T15:07:38",
   "count": 5,
   "stocks": [
     {
@@ -15,16 +15,16 @@ window.__SNAPSHOT__ = {
       "watched": "2026-07-31T10:30:11"
     },
     {
-      "symbol": "SZ300663",
-      "name": "科蓝软件",
-      "marketplace": "CN",
-      "watched": "2026-07-31T10:18:07"
-    },
-    {
       "symbol": "SZ300996",
       "name": "普联软件",
       "marketplace": "CN",
       "watched": "2026-07-31T10:03:38"
+    },
+    {
+      "symbol": "SZ300663",
+      "name": "科蓝软件",
+      "marketplace": "CN",
+      "watched": "2026-07-31T10:18:07"
     },
     {
       "symbol": "SZ003032",

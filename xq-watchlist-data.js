@@ -1,34 +1,104 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-30T15:56:31",
-  "count": 4,
+  "updated_at": "2026-07-31T11:00:17",
+  "count": 5,
   "stocks": [
     {
-      "symbol": "SH600629",
-      "name": "华建集团",
+      "symbol": "SZ300058",
+      "name": "蓝色光标",
       "marketplace": "CN",
-      "watched": "2026-07-30T13:05:32"
+      "watched": "2026-07-31T10:41:50"
     },
     {
-      "symbol": "SZ000859",
-      "name": "国风新材",
+      "symbol": "SZ300795",
+      "name": "米奥会展",
       "marketplace": "CN",
-      "watched": "2026-07-30T11:09:41"
+      "watched": "2026-07-31T10:30:11"
     },
     {
-      "symbol": "SH600895",
-      "name": "张江高科",
+      "symbol": "SZ300663",
+      "name": "科蓝软件",
       "marketplace": "CN",
-      "watched": "2026-07-30T10:29:00"
+      "watched": "2026-07-31T10:18:07"
     },
     {
-      "symbol": "SH600619",
-      "name": "海立股份",
+      "symbol": "SZ300996",
+      "name": "普联软件",
       "marketplace": "CN",
-      "watched": "2026-07-30T10:28:28"
+      "watched": "2026-07-31T10:03:38"
+    },
+    {
+      "symbol": "SZ003032",
+      "name": "传智教育",
+      "marketplace": "CN",
+      "watched": "2026-07-31T10:03:31"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-07-31",
+    "changes": [
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ300058",
+        "name": "蓝色光标",
+        "watched": "2026-07-31T10:41:50"
+      },
+      {
+        "time": "10:35",
+        "action": "remove",
+        "symbol": "SH600629",
+        "name": "华建集团"
+      },
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ300795",
+        "name": "米奥会展",
+        "watched": "2026-07-31T10:30:11"
+      },
+      {
+        "time": "10:25",
+        "action": "remove",
+        "symbol": "SZ000859",
+        "name": "国风新材"
+      },
+      {
+        "time": "10:20",
+        "action": "add",
+        "symbol": "SZ300663",
+        "name": "科蓝软件",
+        "watched": "2026-07-31T10:18:07"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SH600619",
+        "name": "海立股份"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SH600895",
+        "name": "张江高科"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ003032",
+        "name": "传智教育",
+        "watched": "2026-07-31T10:03:31"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ300996",
+        "name": "普联软件",
+        "watched": "2026-07-31T10:03:38"
+      }
+    ]
+  },
   {
     "date": "2026-07-30",
     "changes": [

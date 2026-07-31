@@ -1,5 +1,69 @@
 [
   {
+    "date": "2026-07-31",
+    "changes": [
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ300058",
+        "name": "蓝色光标",
+        "watched": "2026-07-31T10:41:50"
+      },
+      {
+        "time": "10:35",
+        "action": "remove",
+        "symbol": "SH600629",
+        "name": "华建集团"
+      },
+      {
+        "time": "10:30",
+        "action": "add",
+        "symbol": "SZ300795",
+        "name": "米奥会展",
+        "watched": "2026-07-31T10:30:11"
+      },
+      {
+        "time": "10:25",
+        "action": "remove",
+        "symbol": "SZ000859",
+        "name": "国风新材"
+      },
+      {
+        "time": "10:20",
+        "action": "add",
+        "symbol": "SZ300663",
+        "name": "科蓝软件",
+        "watched": "2026-07-31T10:18:07"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SH600619",
+        "name": "海立股份"
+      },
+      {
+        "time": "10:20",
+        "action": "remove",
+        "symbol": "SH600895",
+        "name": "张江高科"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ003032",
+        "name": "传智教育",
+        "watched": "2026-07-31T10:03:31"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ300996",
+        "name": "普联软件",
+        "watched": "2026-07-31T10:03:38"
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "changes": [
       {

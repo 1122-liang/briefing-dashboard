@@ -2,28 +2,28 @@
   "date": "2026-08-01",
   "quarter": "2026Q3",
   "record": {
-    "quarter": "2026Q3",
-    "date": "2026-07-01",
+    "quarter": "2026Q2",
+    "date": "2026-08-01",
     "companies": {
       "MSFT": {
-        "capex_usd_b": 34.9,
-        "yoy_pct": 75,
-        "qoq_pct": 44
+        "capex_usd_b": 35.8,
+        "yoy_pct": 110,
+        "qoq_pct": 16
       },
       "AMZN": {
-        "capex_usd_b": 36.07,
-        "yoy_pct": 83,
-        "qoq_pct": 7
+        "capex_usd_b": 54.21,
+        "yoy_pct": 69,
+        "qoq_pct": 23
       },
       "GOOGL": {
-        "capex_usd_b": 23.95,
-        "yoy_pct": 83,
-        "qoq_pct": 7
+        "capex_usd_b": 44.92,
+        "yoy_pct": 101,
+        "qoq_pct": 22
       },
       "META": {
-        "capex_usd_b": 19.37,
-        "yoy_pct": 111,
-        "qoq_pct": 14
+        "capex_usd_b": 30.12,
+        "yoy_pct": 83,
+        "qoq_pct": 25
       },
       "ORCL": {
         "capex_usd_b": null,
@@ -36,57 +36,39 @@
         "qoq_pct": null
       }
     },
-    "total_capex_usd_b": 114.34,
-    "total_yoy_pct": 76,
-    "data_source": "platformonomics + 公开财报",
-    "fy2025_outlook": {
+    "total_capex_usd_b": 165.05,
+    "total_yoy_pct": 87,
+    "source": "基准数据",
+    "fy2026_outlook": {
       "AMZN": {
-        "capex_usd_b": 125.0,
-        "note": "预计约1250亿美元"
+        "capex_usd_b": 220.0,
+        "note": "上调至2200亿美元（原2000亿）"
       },
       "GOOGL": {
-        "capex_usd_b": 92.0,
-        "note": "910-930亿美元"
-      },
-      "META": {
-        "capex_usd_b": 71.0,
-        "note": "700-720亿美元"
+        "capex_usd_b": 200.0,
+        "note": "上调至1950-2050亿美元"
       },
       "MSFT": {
+        "capex_usd_b": 190.0,
+        "note": "维持1900亿美元（实际节奏未放缓）"
+      },
+      "META": {
+        "capex_usd_b": 137.5,
+        "note": "上调至1300-1450亿美元"
+      },
+      "ORCL": {
         "capex_usd_b": null,
-        "note": "2026财年增长率将高于2025财年"
+        "note": "暂无全年指引"
+      },
+      "NVDA": {
+        "capex_usd_b": null,
+        "note": "暂无全年指引"
       }
     }
   },
   "trends": {
-    "has_trend_data": true,
-    "total_change_b": null,
-    "total_change_pct": null,
-    "company_changes": {
-      "MSFT": {
-        "change_b": 0.0,
-        "change_pct": 0.0
-      },
-      "AMZN": {
-        "change_b": 0.0,
-        "change_pct": 0.0
-      },
-      "GOOGL": {
-        "change_b": 0.0,
-        "change_pct": 0.0
-      },
-      "META": {
-        "change_b": 0.0,
-        "change_pct": 0.0
-      }
-    }
+    "has_trend_data": false
   },
-  "intensity": {
-    "top_spender": "AMZN",
-    "top_spending_b": 36.07,
-    "total_b": 114.34,
-    "company_count": 4
-  },
-  "data_source": "platformonomics + 公开财报",
-  "generated_at": "2026-08-01T10:20:22.042219+08:00"
+  "source": "基准数据",
+  "generated_at": "2026-08-01T10:35:46.965240+08:00"
 }

@@ -1,0 +1,164 @@
+{
+  "date": "2026-08-03",
+  "record": {
+    "date": "2026-08-03",
+    "total_weekly_tokens_t": 56.79,
+    "models": [
+      {
+        "rank": 1,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "weekly_tokens_t": 7.22
+      },
+      {
+        "rank": 2,
+        "name": "Mimo V2.5",
+        "vendor": "Xiaomi",
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "weekly_tokens_t": 6.3
+      },
+      {
+        "rank": 3,
+        "name": "Hy3",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy3-20260706",
+        "weekly_tokens_t": 4.82
+      },
+      {
+        "rank": 4,
+        "name": "Deepseek V4 Pro",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-pro-20260423",
+        "weekly_tokens_t": 3.28
+      },
+      {
+        "rank": 5,
+        "name": "Glm 5.2",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.2-20260616",
+        "weekly_tokens_t": 2.89
+      },
+      {
+        "rank": 6,
+        "name": "Nemotron 3 Ultra 550B A55B",
+        "vendor": "Nvidia",
+        "vendor_slug": "nvidia",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "weekly_tokens_t": 2.46
+      },
+      {
+        "rank": 7,
+        "name": "Minimax M3",
+        "vendor": "MiniMax",
+        "vendor_slug": "minimax",
+        "slug": "minimax/minimax-m3-20260531",
+        "weekly_tokens_t": 1.96
+      },
+      {
+        "rank": 8,
+        "name": "Gpt 5.6 Luna",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-luna-20260709",
+        "weekly_tokens_t": 1.95
+      },
+      {
+        "rank": 9,
+        "name": "Step 3.7 Flash",
+        "vendor": "StepFun",
+        "vendor_slug": "stepfun",
+        "slug": "stepfun/step-3.7-flash-20260528",
+        "weekly_tokens_t": 1.66
+      },
+      {
+        "rank": 10,
+        "name": "Kimi K3",
+        "vendor": "MoonshotAI",
+        "vendor_slug": "moonshotai",
+        "slug": "moonshotai/kimi-k3-20260715",
+        "weekly_tokens_t": 1.42
+      },
+      {
+        "rank": 11,
+        "name": "Ling 3.0 Flash",
+        "vendor": "InclusionAI",
+        "vendor_slug": "inclusionai",
+        "slug": "inclusionai/ling-3.0-flash-20260723",
+        "weekly_tokens_t": 1.39
+      },
+      {
+        "rank": 12,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260731",
+        "weekly_tokens_t": 1.32
+      },
+      {
+        "rank": 13,
+        "name": "Claude Sonnet 5",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-sonnet-5-20260630",
+        "weekly_tokens_t": 1.01
+      },
+      {
+        "rank": 14,
+        "name": "Claude 4.6 Sonnet",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-4.6-sonnet-20260217",
+        "weekly_tokens_t": 1.0
+      },
+      {
+        "rank": 15,
+        "name": "Laguna S 2.1",
+        "vendor": "Poolside",
+        "vendor_slug": "poolside",
+        "slug": "poolside/laguna-s-2.1-20260720",
+        "weekly_tokens_t": 0.98
+      }
+    ],
+    "data_source": "openrouter-api",
+    "openrouter_models_count": 337,
+    "data_dates": [
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02"
+    ]
+  },
+  "growth": {
+    "has_growth_data": true,
+    "week_change_t": 28.79,
+    "week_growth_pct": 102.82,
+    "ma4_growth_pct": 25.71,
+    "growth_trend": "波动",
+    "trend_icon": "📊",
+    "total_records": 6
+  },
+  "vendor_share": {
+    "DeepSeek": 29.8,
+    "Xiaomi": 15.9,
+    "Tencent": 12.2,
+    "Z-AI": 7.3,
+    "Nvidia": 6.2,
+    "Anthropic": 5.1,
+    "MiniMax": 4.9,
+    "OpenAI": 4.9,
+    "StepFun": 4.2,
+    "MoonshotAI": 3.6,
+    "InclusionAI": 3.5,
+    "Poolside": 2.5
+  },
+  "data_source": "OpenRouter Rankings",
+  "generated_at": "2026-08-03T09:51:26.668003+08:00"
+}

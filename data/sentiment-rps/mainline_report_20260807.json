@@ -1,0 +1,1260 @@
+{
+  "date": "20260807",
+  "summary": "🔴 战略金属全线爆发(金铜钨稀土小金属)叠加CXO医药回池，AI软件应用概念退潮，市场主线从科技轮动至有色资源+医药双主线",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 1,
+      "d30": 16,
+      "d120": 29,
+      "d250": 44,
+      "trend": "up",
+      "analysis": "连续在池1d↑。催化: 十五五创新药全链条扶持政策落地，H1创新药BD出海1026亿美元，CXO市场规模突破2700亿元增速12.4%，新版药品管理法实施条例5.15施行打通数据互认。方向形成中",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "横向通用软件",
+      "consecutive_days": 5,
+      "d30": 5,
+      "d120": 5,
+      "d250": 19,
+      "trend": "down",
+      "analysis": "连续在池5d↓。方向形成中",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "民爆制品",
+      "consecutive_days": 5,
+      "d30": 5,
+      "d120": 5,
+      "d250": 9,
+      "trend": "down",
+      "analysis": "连续在池5d↓。方向形成中",
+      "key_stocks": []
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "门户网站",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 9,
+      "analysis": "昨日在池(连续3d)今日退出, AI应用概念退潮，门户网站板块走弱",
+      "reason": "无新增催化/AI主线向硬件切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "云办公",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "AI语料",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "数字水印",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "智谱AI",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "在线教育",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "小红书概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "ERP概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "数字货币",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    },
+    {
+      "entity_type": "concept",
+      "name": "华为欧拉",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池今日退出，AI应用/互联网概念全线退潮",
+      "reason": "主线切换：AI行情从软件应用转向有色/医药"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "其他小金属",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 17,
+      "d250": 49,
+      "analysis": "今日新进三线红池(连续1d)，回池再启动。← 重点关注",
+      "catalyst_summary": "",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "钨",
+      "consecutive_days": 1,
+      "d30": 4,
+      "d120": 41,
+      "d250": 110,
+      "analysis": "今日新进三线红池(连续1d)，长周期回池再启动。← 重点关注",
+      "catalyst_summary": "",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "黄金",
+      "consecutive_days": 1,
+      "d30": 5,
+      "d120": 7,
+      "d250": 42,
+      "analysis": "今日新进三线红池(连续1d)，首次走强。← 重点关注",
+      "catalyst_summary": "",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "铜",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 15,
+      "d250": 47,
+      "analysis": "今日新进三线红池(连续1d)，回池再启动。← 重点关注",
+      "catalyst_summary": "",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 1,
+      "d30": 16,
+      "d120": 29,
+      "d250": 44,
+      "analysis": "今日新进三线红池(连续1d)，回池再启动。← 重点关注",
+      "catalyst_summary": "",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "其他小金属",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "002167",
+          "name": "东方锆业"
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业"
+        },
+        {
+          "code": "603993",
+          "name": "洛阳钼业"
+        }
+      ]
+    },
+    {
+      "name": "医疗研发外包",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 16,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药"
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成"
+        },
+        {
+          "code": "688046",
+          "name": "药康生物"
+        }
+      ]
+    },
+    {
+      "name": "钨",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 4,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "002842",
+          "name": "翔鹭钨业"
+        },
+        {
+          "code": "600549",
+          "name": "厦门钨业"
+        },
+        {
+          "code": "000657",
+          "name": "中钨高新"
+        }
+      ]
+    },
+    {
+      "name": "铜",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "601168",
+          "name": "西部矿业"
+        },
+        {
+          "code": "600362",
+          "name": "江西铜业"
+        },
+        {
+          "code": "603979",
+          "name": "金诚信"
+        }
+      ]
+    },
+    {
+      "name": "黄金",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 5,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "600988",
+          "name": "赤峰黄金"
+        },
+        {
+          "code": "600489",
+          "name": "中金黄金"
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业"
+        }
+      ]
+    },
+    {
+      "name": "其他生物制品",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 13,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "其他金属新材料",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "化妆品制造及其他",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "医药流通",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 5,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "半导体设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 11,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "厨房电器",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "炼油化工",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 6,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "稀土",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "非金属材料Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "",
+      "stocks": []
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "CRO概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 16,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药"
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州"
+        }
+      ]
+    },
+    {
+      "name": "细胞免疫治疗",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 13,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "301047",
+          "name": "义翘神州"
+        },
+        {
+          "code": "301080",
+          "name": "百普赛斯"
+        },
+        {
+          "code": "300558",
+          "name": "贝达药业"
+        }
+      ]
+    },
+    {
+      "name": "金属铅",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "601168",
+          "name": "西部矿业"
+        },
+        {
+          "code": "600988",
+          "name": "赤峰黄金"
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业"
+        }
+      ]
+    },
+    {
+      "name": "金属锌",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "601168",
+          "name": "西部矿业"
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业"
+        },
+        {
+          "code": "000975",
+          "name": "山金国际"
+        }
+      ]
+    },
+    {
+      "name": "黄金概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "",
+      "stocks": [
+        {
+          "code": "601168",
+          "name": "西部矿业"
+        },
+        {
+          "code": "600857",
+          "name": "宁波中百"
+        },
+        {
+          "code": "000506",
+          "name": "招金黄金"
+        }
+      ]
+    },
+    {
+      "name": "BC电池",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "MicroLED概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "信托概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 10,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "减肥药",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 15,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "化肥",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "华为手机",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "小金属概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "托育服务",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "新型烟草(电子烟)",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "毛发医疗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 8,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "毫米波雷达",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "民爆概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "汽车芯片",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 6,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "流感",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 11,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "消费电子概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 2,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "禽流感",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 12,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "算力租赁",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "重组蛋白",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 15,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "金属回收",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "金属钴",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "",
+      "stocks": []
+    },
+    {
+      "name": "黑龙江自贸区",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "603156",
+      "name": "养元饮品",
+      "red_level": "三线红",
+      "sector_l3": null
+    },
+    {
+      "code": "688479",
+      "name": "友车科技",
+      "red_level": "三线红",
+      "sector_l3": "垂直应用软件"
+    },
+    {
+      "code": "688485",
+      "name": "九州一轨",
+      "red_level": "三线红",
+      "sector_l3": "轨交设备Ⅲ"
+    },
+    {
+      "code": "001359",
+      "name": "平安电工",
+      "red_level": "三线红",
+      "sector_l3": "膜材料"
+    },
+    {
+      "code": "600961",
+      "name": "株冶集团",
+      "red_level": "三线红",
+      "sector_l3": "铅锌"
+    },
+    {
+      "code": "000593",
+      "name": "德龙汇能",
+      "red_level": "三线红",
+      "sector_l3": "燃气Ⅲ"
+    },
+    {
+      "code": "603186",
+      "name": "华正新材",
+      "red_level": "三线红",
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "red_level": "三线红",
+      "sector_l3": "机器人"
+    },
+    {
+      "code": "688147",
+      "name": "微导纳米",
+      "red_level": "三线红",
+      "sector_l3": "光伏加工设备"
+    },
+    {
+      "code": "002568",
+      "name": "百润股份",
+      "red_level": "一线红",
+      "sector_l3": "其他酒类"
+    },
+    {
+      "code": "600272",
+      "name": "开开实业",
+      "red_level": "一线红",
+      "sector_l3": "医药流通"
+    },
+    {
+      "code": "301015",
+      "name": "百洋医药",
+      "red_level": "一线红",
+      "sector_l3": "医药流通"
+    },
+    {
+      "code": "300400",
+      "name": "劲拓股份",
+      "red_level": "一线红",
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "002294",
+      "name": "信立泰",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "688073",
+      "name": "毕得医药",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "688131",
+      "name": "皓元医药",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "002901",
+      "name": "大博医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "600867",
+      "name": "通化东宝",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301277",
+      "name": "新天地",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "300307",
+      "name": "慈星股份",
+      "red_level": "一线红",
+      "sector_l3": "纺织服装设备"
+    },
+    {
+      "code": "688265",
+      "name": "南模生物",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "688600",
+      "name": "皖仪科技",
+      "red_level": "一线红",
+      "sector_l3": "仪器仪表"
+    },
+    {
+      "code": "002127",
+      "name": "南极电商",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "002913",
+      "name": "奥士康",
+      "red_level": "一线红",
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "301393",
+      "name": "昊帆生物",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301509",
+      "name": "金凯生科",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "600629",
+      "name": "华建集团",
+      "red_level": "一线红",
+      "sector_l3": "其他建材"
+    },
+    {
+      "code": "603387",
+      "name": "基蛋生物",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "688220",
+      "name": "翱捷科技",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "000301",
+      "name": "东方盛虹",
+      "red_level": "一线红",
+      "sector_l3": "涤纶"
+    },
+    {
+      "code": "000831",
+      "name": "中国稀土",
+      "red_level": "一线红",
+      "sector_l3": "稀土"
+    },
+    {
+      "code": "300357",
+      "name": "我武生物",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301312",
+      "name": "智立方",
+      "red_level": "一线红",
+      "sector_l3": "其他自动化设备"
+    },
+    {
+      "code": "000661",
+      "name": "长春高新",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "301333",
+      "name": "诺思格",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "301127",
+      "name": "武汉天源",
+      "red_level": "一线红",
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "688238",
+      "name": "和元生物",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "300171",
+      "name": "东富龙",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "688381",
+      "name": "帝奥微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "600226",
+      "name": "亨通股份",
+      "red_level": "一线红",
+      "sector_l3": "动物保健Ⅲ"
+    },
+    {
+      "code": "688222",
+      "name": "成都先导",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "002080",
+      "name": "中材科技",
+      "red_level": "一线红",
+      "sector_l3": "玻纤制造"
+    },
+    {
+      "code": "603858",
+      "name": "步长制药",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "300485",
+      "name": "赛升药业",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "603337",
+      "name": "杰克科技",
+      "red_level": "一线红",
+      "sector_l3": "纺织服装设备"
+    },
+    {
+      "code": "003010",
+      "name": "若羽臣",
+      "red_level": "一线红",
+      "sector_l3": "电商服务"
+    },
+    {
+      "code": "600529",
+      "name": "山东药玻",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "001328",
+      "name": "登康口腔",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "688363",
+      "name": "华熙生物",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "301021",
+      "name": "英诺激光",
+      "red_level": "一线红",
+      "sector_l3": "激光设备"
+    },
+    {
+      "code": "002020",
+      "name": "京新药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "688373",
+      "name": "盟科药业",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688117",
+      "name": "圣诺生物",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "300358",
+      "name": "楚天科技",
+      "red_level": "一线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "red_level": "一线红",
+      "sector_l3": "面板"
+    },
+    {
+      "code": "600521",
+      "name": "华海药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "000009",
+      "name": "中国宝安",
+      "red_level": "一线红",
+      "sector_l3": "住宅开发"
+    },
+    {
+      "code": "688505",
+      "name": "复旦张江",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "601688",
+      "name": "华泰证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "688321",
+      "name": "微芯生物",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688098",
+      "name": "申联生物",
+      "red_level": "一线红",
+      "sector_l3": "动物保健Ⅲ"
+    },
+    {
+      "code": "301366",
+      "name": "一博科技",
+      "red_level": "一线红",
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "301201",
+      "name": "诚达药业",
+      "red_level": "一线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "688336",
+      "name": "三生国健",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "688697",
+      "name": "纽威数控",
+      "red_level": "一线红",
+      "sector_l3": "机床工具"
+    },
+    {
+      "code": "688382",
+      "name": "益方生物",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688338",
+      "name": "赛科希德",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "300398",
+      "name": "飞凯材料",
+      "red_level": "一线红",
+      "sector_l3": "涂料油墨"
+    },
+    {
+      "code": "688247",
+      "name": "宣泰医药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "000429",
+      "name": "粤高速Ａ",
+      "red_level": "一线红",
+      "sector_l3": "公交"
+    },
+    {
+      "code": "600276",
+      "name": "恒瑞医药",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "688087",
+      "name": "英科再生",
+      "red_level": "一线红",
+      "sector_l3": "其他塑料制品"
+    },
+    {
+      "code": "002792",
+      "name": "通宇通讯",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "300009",
+      "name": "安科生物",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "300003",
+      "name": "乐普医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "002192",
+      "name": "融捷股份",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "600362",
+      "name": "江西铜业",
+      "red_level": "一线红",
+      "sector_l3": "铜"
+    },
+    {
+      "code": "688019",
+      "name": "安集科技",
+      "red_level": "一线红",
+      "sector_l3": "电子化学品Ⅲ"
+    },
+    {
+      "code": "300776",
+      "name": "帝尔激光",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "300643",
+      "name": "万通智控",
+      "red_level": "一线红",
+      "sector_l3": "其他汽车零部件"
+    },
+    {
+      "code": "300692",
+      "name": "中赋科技",
+      "red_level": "一线红",
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "603004",
+      "name": "鼎龙科技",
+      "red_level": "一线红",
+      "sector_l3": "其他化学制品"
+    },
+    {
+      "code": "002202",
+      "name": "金风科技",
+      "red_level": "一线红",
+      "sector_l3": "电机Ⅲ"
+    },
+    {
+      "code": "300871",
+      "name": "回盛生物",
+      "red_level": "一线红",
+      "sector_l3": "动物保健Ⅲ"
+    },
+    {
+      "code": "600572",
+      "name": "康恩贝",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "605507",
+      "name": "国邦医药",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "002262",
+      "name": "恩华药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "688359",
+      "name": "三孚新科",
+      "red_level": "一线红",
+      "sector_l3": "电子化学品Ⅲ"
+    },
+    {
+      "code": "002773",
+      "name": "康弘药业",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "300676",
+      "name": "华大基因",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "300026",
+      "name": "红日药业",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "603819",
+      "name": "XD神力股",
+      "red_level": "一线红",
+      "sector_l3": "电机Ⅲ"
+    },
+    {
+      "code": "300573",
+      "name": "兴齐眼药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "000513",
+      "name": "丽珠集团",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "000603",
+      "name": "盛达资源",
+      "red_level": "一线红",
+      "sector_l3": "铅锌"
+    },
+    {
+      "code": "002603",
+      "name": "以岭药业",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "000623",
+      "name": "吉林敖东",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688551",
+      "name": "科威尔",
+      "red_level": "一线红",
+      "sector_l3": "其他电源设备Ⅲ"
+    },
+    {
+      "code": "603198",
+      "name": "XD迎驾贡",
+      "red_level": "一线红",
+      "sector_l3": null
+    },
+    {
+      "code": "301571",
+      "name": "国科天成",
+      "red_level": "一线红",
+      "sector_l3": "军工电子Ⅲ"
+    },
+    {
+      "code": "301626",
+      "name": "苏州天脉",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    }
+  ]
+}

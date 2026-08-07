@@ -1,0 +1,117 @@
+{
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T15:01:53.608910+08:00",
+  "runs": [
+    {
+      "time": "15:01",
+      "generated_at": "2026-08-07T15:01:53.608910+08:00",
+      "stocks": [
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 35.15,
+          "deviation_pct": 12.4,
+          "threshold_pct": 43.7,
+          "trigger_price": 50.52,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 139.2,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "very_high",
+          "valuation": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 23.67,
+          "deviation_pct": -2.8,
+          "threshold_pct": 46.0,
+          "trigger_price": 34.57,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 10.77,
+          "deviation_pct": 0.6,
+          "threshold_pct": 29.5,
+          "trigger_price": 13.95,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "巨化股份",
+          "code": "600160",
+          "price": 43.29,
+          "deviation_pct": 5.1,
+          "threshold_pct": 46.3,
+          "trigger_price": 63.35,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "川恒股份",
+          "code": "002895",
+          "price": 35.1,
+          "deviation_pct": 3.7,
+          "threshold_pct": 75.4,
+          "trigger_price": 61.58,
+          "status": "normal",
+          "valuation": null
+        }
+      ],
+      "gold_rr": {
+        "spot": 4297.63,
+        "spot_change_pct": 0.99,
+        "data_time": "2026-08-07 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": 1.63,
+            "daily_change": -0.41,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "1M",
+            "rr": 0.97,
+            "daily_change": 0.11,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "3M",
+            "rr": 0.72,
+            "daily_change": 0.34,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "6M",
+            "rr": 0.71,
+            "daily_change": 0.29,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "9M",
+            "rr": 0.75,
+            "daily_change": 0.21,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "1Y",
+            "rr": 0.79,
+            "daily_change": 0.13,
+            "signal": "偏多📈"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-08-07-1501.json",
+  "_saved_at": "2026-08-07T15:01:53.609734+08:00"
+}

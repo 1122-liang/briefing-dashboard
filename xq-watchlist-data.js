@@ -1,40 +1,227 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-07-31T15:57:44",
-  "count": 5,
+  "updated_at": "2026-08-10T15:59:10",
+  "count": 10,
   "stocks": [
     {
-      "symbol": "SZ300058",
-      "name": "蓝色光标",
+      "symbol": "SH601168",
+      "name": "西部矿业",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:41:50"
+      "watched": "2026-08-10T13:58:06"
     },
     {
-      "symbol": "SZ300795",
-      "name": "米奥会展",
+      "symbol": "SZ000506",
+      "name": "招金黄金",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:30:11"
+      "watched": "2026-08-10T13:37:22"
     },
     {
-      "symbol": "SZ300996",
-      "name": "普联软件",
+      "symbol": "SZ002141",
+      "name": "贤丰控股",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:03:38"
+      "watched": "2026-08-10T10:32:04"
     },
     {
-      "symbol": "SZ300663",
-      "name": "科蓝软件",
+      "symbol": "SH605179",
+      "name": "一鸣食品",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:18:07"
+      "watched": "2026-08-10T10:08:39"
     },
     {
-      "symbol": "SZ003032",
-      "name": "传智教育",
+      "symbol": "SH600721",
+      "name": "百花医药",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:03:31"
+      "watched": "2026-08-10T09:30:34"
+    },
+    {
+      "symbol": "SZ301080",
+      "name": "百普赛斯",
+      "marketplace": "CN",
+      "watched": "2026-08-10T09:30:26"
+    },
+    {
+      "symbol": "SZ300759",
+      "name": "康龙化成",
+      "marketplace": "CN",
+      "watched": "2026-08-07T09:40:12"
+    },
+    {
+      "symbol": "SH603259",
+      "name": "药明康德",
+      "marketplace": "CN",
+      "watched": "2026-08-07T09:39:44"
+    },
+    {
+      "symbol": "SZ300534",
+      "name": "陇神戎发",
+      "marketplace": "CN",
+      "watched": "2026-08-06T11:05:26"
+    },
+    {
+      "symbol": "SH600664",
+      "name": "哈药股份",
+      "marketplace": "CN",
+      "watched": "2026-08-06T11:05:18"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-10",
+    "changes": [
+      {
+        "time": "14:01",
+        "action": "add",
+        "symbol": "SH601168",
+        "name": "西部矿业",
+        "watched": "2026-08-10T13:58:06"
+      },
+      {
+        "time": "13:40",
+        "action": "add",
+        "symbol": "SZ000506",
+        "name": "招金黄金",
+        "watched": "2026-08-10T13:37:22"
+      },
+      {
+        "time": "13:35",
+        "action": "remove",
+        "symbol": "SZ002900",
+        "name": "哈三联"
+      },
+      {
+        "time": "11:11",
+        "action": "remove",
+        "symbol": "SH688046",
+        "name": "药康生物"
+      },
+      {
+        "time": "10:36",
+        "action": "add",
+        "symbol": "SZ002141",
+        "name": "贤丰控股",
+        "watched": "2026-08-10T10:32:04"
+      },
+      {
+        "time": "10:21",
+        "action": "add",
+        "symbol": "SZ002900",
+        "name": "哈三联",
+        "watched": "2026-08-10T10:20:23"
+      },
+      {
+        "time": "10:21",
+        "action": "remove",
+        "symbol": "SZ000739",
+        "name": "普洛药业"
+      },
+      {
+        "time": "10:11",
+        "action": "add",
+        "symbol": "SH605179",
+        "name": "一鸣食品",
+        "watched": "2026-08-10T10:08:39"
+      },
+      {
+        "time": "09:36",
+        "action": "remove",
+        "symbol": "SZ300986",
+        "name": "志特新材"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SH600664",
+        "name": "哈药股份",
+        "watched": "2026-08-06T11:05:18"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SH600721",
+        "name": "百花医药",
+        "watched": "2026-08-10T09:30:34"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SH603259",
+        "name": "药明康德",
+        "watched": "2026-08-07T09:39:44"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SH688046",
+        "name": "药康生物",
+        "watched": "2026-08-07T10:04:18"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SZ000739",
+        "name": "普洛药业",
+        "watched": "2026-08-10T09:30:18"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SZ300534",
+        "name": "陇神戎发",
+        "watched": "2026-08-06T11:05:26"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SZ300759",
+        "name": "康龙化成",
+        "watched": "2026-08-07T09:40:12"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SZ300986",
+        "name": "志特新材",
+        "watched": "2026-08-07T11:28:58"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SZ301080",
+        "name": "百普赛斯",
+        "watched": "2026-08-10T09:30:26"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ003032",
+        "name": "传智教育"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ300058",
+        "name": "蓝色光标"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ300663",
+        "name": "科蓝软件"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ300795",
+        "name": "米奥会展"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ300996",
+        "name": "普联软件"
+      }
+    ]
+  },
   {
     "date": "2026-07-31",
     "changes": [

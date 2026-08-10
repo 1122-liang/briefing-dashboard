@@ -1,36 +1,66 @@
 {
-  "updated_at": "2026-07-31T15:57:44",
-  "count": 5,
+  "updated_at": "2026-08-10T15:59:10",
+  "count": 10,
   "stocks": [
     {
-      "symbol": "SZ300058",
-      "name": "蓝色光标",
+      "symbol": "SH601168",
+      "name": "西部矿业",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:41:50"
+      "watched": "2026-08-10T13:58:06"
     },
     {
-      "symbol": "SZ300795",
-      "name": "米奥会展",
+      "symbol": "SZ000506",
+      "name": "招金黄金",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:30:11"
+      "watched": "2026-08-10T13:37:22"
     },
     {
-      "symbol": "SZ300996",
-      "name": "普联软件",
+      "symbol": "SZ002141",
+      "name": "贤丰控股",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:03:38"
+      "watched": "2026-08-10T10:32:04"
     },
     {
-      "symbol": "SZ300663",
-      "name": "科蓝软件",
+      "symbol": "SH605179",
+      "name": "一鸣食品",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:18:07"
+      "watched": "2026-08-10T10:08:39"
     },
     {
-      "symbol": "SZ003032",
-      "name": "传智教育",
+      "symbol": "SH600721",
+      "name": "百花医药",
       "marketplace": "CN",
-      "watched": "2026-07-31T10:03:31"
+      "watched": "2026-08-10T09:30:34"
+    },
+    {
+      "symbol": "SZ301080",
+      "name": "百普赛斯",
+      "marketplace": "CN",
+      "watched": "2026-08-10T09:30:26"
+    },
+    {
+      "symbol": "SZ300759",
+      "name": "康龙化成",
+      "marketplace": "CN",
+      "watched": "2026-08-07T09:40:12"
+    },
+    {
+      "symbol": "SH603259",
+      "name": "药明康德",
+      "marketplace": "CN",
+      "watched": "2026-08-07T09:39:44"
+    },
+    {
+      "symbol": "SZ300534",
+      "name": "陇神戎发",
+      "marketplace": "CN",
+      "watched": "2026-08-06T11:05:26"
+    },
+    {
+      "symbol": "SH600664",
+      "name": "哈药股份",
+      "marketplace": "CN",
+      "watched": "2026-08-06T11:05:18"
     }
   ]
 }

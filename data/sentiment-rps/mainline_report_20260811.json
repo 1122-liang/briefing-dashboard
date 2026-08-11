@@ -1,0 +1,1109 @@
+{
+  "date": "20260811",
+  "summary": "8条主线确认/形成中；7个新进方向，机床工具等首次走强；21个方向退潮",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "其他小金属",
+      "consecutive_days": 3,
+      "d30": 3,
+      "d120": 19,
+      "d250": 51,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=3/19。催化: 🔴 刚果(金)钴精矿出口禁令+美国金属关税拟扩大化，锗/镓/锑出口管制加码，中重稀土出口管制8.1落地，小金属战略属性全面强化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "钨",
+      "consecutive_days": 3,
+      "d30": 4,
+      "d120": 41,
+      "d250": 110,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=4/41。催化: 🔴 章源钨业上调8月长单采购价(黑钨41.2万/APT60.6万)，美国月底禁止钨废料出口，江钨装备3连板，厦门钨业/翔鹭钨业(H1预增2347%)全线爆发，AI/光伏/军工需求共振",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "铅锌",
+      "consecutive_days": 5,
+      "d30": 5,
+      "d120": 18,
+      "d250": 62,
+      "trend": "stable",
+      "analysis": "连续在池5天，d30/d120=5/18。催化: 近90天暂无重大催化",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "黄金",
+      "consecutive_days": 3,
+      "d30": 7,
+      "d120": 9,
+      "d250": 44,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=7/9。催化: COMEX黄金突破4190美元，央行持续购金。板块中报预喜率超9成，SPDR持仓结束连续流出。黄金股经近半年调整估值历史低位，配置性价比凸显",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 3,
+      "d30": 16,
+      "d120": 28,
+      "d250": 33,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=16/28。催化: 十五五创新药全链条扶持+新版药品管理法实施条例落地，H1创新药BD出海1026亿美元，CXO市场规模突破2700亿元增速12.4%，数据互认机制打通吸引海外药企订单回流",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属铅",
+      "consecutive_days": 3,
+      "d30": 4,
+      "d120": 9,
+      "d250": 58,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=4/9。催化: 金属铅概念今日涨2.54%居概念涨幅第1，主力净流入33.72亿，山金国际、盛达资源涨停，紫金矿业涨6.59%。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属锌",
+      "consecutive_days": 3,
+      "d30": 4,
+      "d120": 11,
+      "d250": 57,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=4/11。催化: 金属锌概念今日涨2.43%位居涨幅第2，主力净流入30.5亿，山金国际、盛达资源涨停，紫金矿业涨6.59%净流入14.78亿。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "黄金概念",
+      "consecutive_days": 3,
+      "d30": 3,
+      "d120": 4,
+      "d250": 36,
+      "trend": "stable",
+      "analysis": "连续在池3天，d30/d120=3/4。催化: 国际金价突破4120美元，央行连续20个月增持黄金创最长纪录，黄金股ETF涨超7%，金饰单日涨27元/克，中信预计Q3金价4000-4500美元。",
+      "key_stocks": []
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "会展服务",
+      "consecutive_days": 0,
+      "prev_consecutive": 5,
+      "d30": 12,
+      "d120": 12,
+      "analysis": "昨日在池(连续5天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 16,
+      "d120": 30,
+      "analysis": "昨日在池(连续2天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "商业地产",
+      "consecutive_days": 0,
+      "prev_consecutive": 5,
+      "d30": 15,
+      "d120": 15,
+      "analysis": "昨日在池(连续5天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "瓷砖地板",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "sector",
+      "name": "稀土",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 17,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "sector",
+      "name": "营销代理",
+      "consecutive_days": 0,
+      "prev_consecutive": 5,
+      "d30": 5,
+      "d120": 5,
+      "analysis": "昨日在池(连续5天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "在线教育",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 5,
+      "d120": 5,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "小金属概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 13,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "concept",
+      "name": "职业教育",
+      "consecutive_days": 0,
+      "prev_consecutive": 6,
+      "d30": 6,
+      "d120": 6,
+      "analysis": "昨日在池(连续6天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属钴",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 10,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属铜",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 7,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属镍",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 7,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "stock",
+      "name": "688652",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 13,
+      "d120": 13,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "300716",
+      "consecutive_days": 0,
+      "prev_consecutive": 10,
+      "d30": 18,
+      "d120": 18,
+      "analysis": "昨日在池(连续10天)今日退出",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "stock",
+      "name": "002842",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 7,
+      "d120": 59,
+      "analysis": "昨日在池(连续3天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "003004",
+      "consecutive_days": 0,
+      "prev_consecutive": 8,
+      "d30": 29,
+      "d120": 50,
+      "analysis": "昨日在池(连续8天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "688233",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 18,
+      "d120": 28,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "600641",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 17,
+      "d120": 17,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "603221",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续1天)今日退出",
+      "reason": "短期脉冲式走强后自然回落"
+    },
+    {
+      "entity_type": "stock",
+      "name": "601872",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 4,
+      "d120": 48,
+      "analysis": "昨日在池(连续4天)今日退出",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "stock",
+      "name": "603757",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 16,
+      "d120": 16,
+      "analysis": "昨日在池(连续4天)今日退出",
+      "reason": "无新增催化"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "机床工具",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 10,
+      "d250": 12,
+      "analysis": "回池再启动(连续1天, d120=10), 催化: 8月11日 上半年机床利润总额同比增89.2%，规模以上企业增加值稳步增长。十五五规划列工业母机为最优先级。日本对华机床订单6月创历史新高，同比+53%。",
+      "catalyst_summary": "8月11日 上半年机床利润总额同比增89.2%，规模以上企业增加值稳步增长。十五五规划列工业母机为最优先级。日本对华机床订单6月创历史新高，同比+53%。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "sector",
+      "name": "横向通用软件",
+      "consecutive_days": 1,
+      "d30": 6,
+      "d120": 6,
+      "d250": 20,
+      "analysis": "回池再启动(连续1天, d120=6), 催化: 8月11日 H1软件业务收入77182亿同比+9.5%。工信部将出台AI+软件行动方案，信创三期全面铺开。全球云厂商资本开支预计突破8867亿美元同比+90%。",
+      "catalyst_summary": "8月11日 H1软件业务收入77182亿同比+9.5%。工信部将出台AI+软件行动方案，信创三期全面铺开。全球云厂商资本开支预计突破8867亿美元同比+90%。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "云办公",
+      "consecutive_days": 1,
+      "d30": 4,
+      "d120": 4,
+      "d250": 16,
+      "analysis": "首次走强(连续1天), 催化: 金山办公预计H1净利23-27亿同比增209%-264%，推出灵犀专业版和WPS Comate推动AI办公。行云科技在手算力订单超154亿。",
+      "catalyst_summary": "金山办公预计H1净利23-27亿同比增209%-264%，推出灵犀专业版和WPS Comate推动AI办公。行云科技在手算力订单超154亿。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "短剧游戏",
+      "consecutive_days": 1,
+      "d30": 3,
+      "d120": 7,
+      "d250": 27,
+      "analysis": "回池再启动(连续1天, d120=7), 催化: 广电总局发布微短剧管理办法9月1日施行。上半年AI短剧市场规模破220亿，全年冲击400亿同比增138%。7月版号197款创新高。",
+      "catalyst_summary": "广电总局发布微短剧管理办法9月1日施行。上半年AI短剧市场规模破220亿，全年冲击400亿同比增138%。7月版号197款创新高。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "拼多多概念",
+      "consecutive_days": 1,
+      "d30": 3,
+      "d120": 3,
+      "d250": 21,
+      "analysis": "首次走强(连续1天), 催化: 7月13日扩大消费十五五规划培育跨境电商。拼多多推新拼姆自营，三年投1000亿买断包销。7月26日Shein通过港交所聆讯。",
+      "catalyst_summary": "7月13日扩大消费十五五规划培育跨境电商。拼多多推新拼姆自营，三年投1000亿买断包销。7月26日Shein通过港交所聆讯。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "乳业",
+      "consecutive_days": 1,
+      "d30": 9,
+      "d120": 11,
+      "d250": 18,
+      "analysis": "回池再启动(连续1天, d120=11), 催化: 7月13日国务院发布扩大消费十五五规划，锚定2030年社零60万亿。原奶周期触底反弹，散奶价涨24%。天润、澳亚等多企扭亏为盈。",
+      "catalyst_summary": "7月13日国务院发布扩大消费十五五规划，锚定2030年社零60万亿。原奶周期触底反弹，散奶价涨24%。天润、澳亚等多企扭亏为盈。",
+      "key_stocks": []
+    },
+    {
+      "entity_type": "concept",
+      "name": "细胞免疫治疗",
+      "consecutive_days": 1,
+      "d30": 14,
+      "d120": 24,
+      "d250": 28,
+      "analysis": "回池再启动(连续1天, d120=24), 催化: 7月13日国务院印发十五五规划，全链条支持创新药械，CGT为重点攻坚方向。6月22日全球首款实体瘤CAR-T获批。7月3日药监局发布CGT审评优化征求意见稿。",
+      "catalyst_summary": "7月13日国务院印发十五五规划，全链条支持创新药械，CGT为重点攻坚方向。6月22日全球首款实体瘤CAR-T获批。7月3日药监局发布CGT审评优化征求意见稿。",
+      "key_stocks": []
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "机床工具",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "8月11日 上半年机床利润总额同比增89.2%，规模以上企业增加值稳步增长。十五五规划列工业母机为最优先级。日本对华机床订单6月创历史新高，同比+53%。",
+      "stocks": []
+    },
+    {
+      "name": "横向通用软件",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 6,
+      "catalyst_summary": "8月11日 H1软件业务收入77182亿同比+9.5%。工信部将出台AI+软件行动方案，信创三期全面铺开。全球云厂商资本开支预计突破8867亿美元同比+90%。",
+      "stocks": []
+    },
+    {
+      "name": "林业Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "门户网站",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "涂料油墨",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8月11日 立邦三棵树等头部涂企密集提价5-15%，丙烯酸等原材料涨价推动价格传导。住房消费首登十五五规划C位。湘江关西中标岚图汽车四大直采项目。",
+      "stocks": []
+    },
+    {
+      "name": "其他自动化设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8月11日 2026年工业自动化渗透率同比暴涨42%，龙头市占率从53%升至71%。全国多省市出台智能制造补贴10-15%。伺服系统国产突破加速，出口同比+18.6%。",
+      "stocks": []
+    },
+    {
+      "name": "机器人",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "8月11日 机器人板块批量预增，埃斯顿净利预增2143-2593%。国家电网68亿集采订单落地。工信部联合国资委启动万台级人形机器人实训。产业正式从概念期迈入量产兑现元年。",
+      "stocks": []
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "云办公",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 4,
+      "catalyst_summary": "金山办公预计H1净利23-27亿同比增209%-264%，推出灵犀专业版和WPS Comate推动AI办公。行云科技在手算力订单超154亿。",
+      "stocks": []
+    },
+    {
+      "name": "短剧游戏",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 3,
+      "catalyst_summary": "广电总局发布微短剧管理办法9月1日施行。上半年AI短剧市场规模破220亿，全年冲击400亿同比增138%。7月版号197款创新高。",
+      "stocks": []
+    },
+    {
+      "name": "拼多多概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 3,
+      "catalyst_summary": "7月13日扩大消费十五五规划培育跨境电商。拼多多推新拼姆自营，三年投1000亿买断包销。7月26日Shein通过港交所聆讯。",
+      "stocks": []
+    },
+    {
+      "name": "乳业",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 9,
+      "catalyst_summary": "7月13日国务院发布扩大消费十五五规划，锚定2030年社零60万亿。原奶周期触底反弹，散奶价涨24%。天润、澳亚等多企扭亏为盈。",
+      "stocks": []
+    },
+    {
+      "name": "细胞免疫治疗",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 14,
+      "catalyst_summary": "7月13日国务院印发十五五规划，全链条支持创新药械，CGT为重点攻坚方向。6月22日全球首款实体瘤CAR-T获批。7月3日药监局发布CGT审评优化征求意见稿。",
+      "stocks": []
+    },
+    {
+      "name": "毫米波雷达",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "工信部发布L3/L4自动驾驶强制国标GB44721，多传感器融合成刚需。福瑞泰克单芯片4D雷达量产获近百万件订单。雷电微力签4.43亿订单。",
+      "stocks": []
+    },
+    {
+      "name": "数字货币",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "央行要求完善数字人民币跨境基础设施。九部门推消费券全流程接入数币智能合约。广东拟拓展数币跨境支付试点。累计交易额16.7万亿。",
+      "stocks": []
+    },
+    {
+      "name": "MLOps概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "新型工业化",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8月6日七部门印发金融支持新型工业化指导意见，多维度支持高端制造硬科技。2000亿超长期特别国债支持设备更新。工业机器人产量增28%。",
+      "stocks": []
+    },
+    {
+      "name": "AI手机",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "7月15日网信办首次公布7款手机端侧AI备案，苹果华为小米等获批。中国AI手机出货量预计1.47亿台同比增31.6%，渗透率破53%。",
+      "stocks": []
+    },
+    {
+      "name": "特色小镇",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": []
+    },
+    {
+      "name": "文化传媒概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "暑期档票房突破60亿年度破217亿。中文在线AI短剧产能爆发年化千部，与腾讯系追加采购。文旅部发放4.5亿消费券覆盖观影。",
+      "stocks": []
+    },
+    {
+      "name": "减速器",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "中大力德与宇树签32亿长期供货协议。绿的谐波绑定特斯拉订单排至2027年。特斯拉Optimus产能目标上调至1000万台。人形机器人量产元年。",
+      "stocks": []
+    },
+    {
+      "name": "太赫兹",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "广东将太赫兹列为6G首位攻关方向。6G技术试验第一阶段完成，全面启动第二阶段。盛路通信太赫兹天线全球首家量产，获软银1.2亿订单。",
+      "stocks": []
+    },
+    {
+      "name": "物业管理",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "扩大消费十五五规划点名物业服务质量提升。物业管理条例将修订为物业服务条例。11部门推物业+互助养老。老旧连片托管成增量赛道。",
+      "stocks": []
+    },
+    {
+      "name": "蚂蚁集团概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "6月16日支付宝推出AI版阿宝，成全球首个全端AI化超级应用。蚂蚁灵波启动15亿首轮融资聚焦具身智能。板块连续多日走强。",
+      "stocks": []
+    },
+    {
+      "name": "ST板块",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "7月6日A股交易新规落地，主板ST股涨跌幅放宽至10%。年内已有58家ST摘帽创近五年新高。新规运行首月成交总额约3178亿。",
+      "stocks": []
+    },
+    {
+      "name": "露营经济",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "6月18日商务部等9部门发文培育房车露营产业，完善通行环境与营地配套。4月国务院提培育房车露营新业态。露营经济核心市场规模超2139亿。",
+      "stocks": []
+    },
+    {
+      "name": "创新药",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 16,
+      "catalyst_summary": "政府工作报告首提生物医药为支柱产业。H1 BD交易近千亿美元同比翻倍。H1 38款创新药获批国产占80%+。百济神州H1净利增627%。",
+      "stocks": []
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "301217",
+      "name": "铜冠铜箔",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600162",
+      "name": "香江控股",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688362",
+      "name": "甬矽电子",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688309",
+      "name": "恒誉环保",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300903",
+      "name": "科翔股份",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600353",
+      "name": "旭光电子",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "001359",
+      "name": "平安电工",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603061",
+      "name": "金海通",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600176",
+      "name": "中国巨石",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688046",
+      "name": "药康生物",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002859",
+      "name": "洁美科技",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "001258",
+      "name": "立新能源",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "red_level": "三线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300862",
+      "name": "蓝盾光电",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688512",
+      "name": "慧智微",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002963",
+      "name": "豪尔赛",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "000691",
+      "name": "亚太实业",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300733",
+      "name": "西菱动力",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "301182",
+      "name": "凯旺科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688382",
+      "name": "益方生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603391",
+      "name": "力聚热能",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300811",
+      "name": "铂科新材",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "000011",
+      "name": "深物业A",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300163",
+      "name": "先锋新材",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688192",
+      "name": "迪哲医药",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300606",
+      "name": "金太阳",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603758",
+      "name": "秦安股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "601199",
+      "name": "江南水务",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688469",
+      "name": "芯联集成",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300909",
+      "name": "汇创达",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "605178",
+      "name": "时空科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300878",
+      "name": "维康药业",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002850",
+      "name": "科达利",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002896",
+      "name": "中大力德",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688062",
+      "name": "迈威生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603883",
+      "name": "老百姓",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300870",
+      "name": "欧陆通",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688321",
+      "name": "微芯生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "003010",
+      "name": "若羽臣",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002246",
+      "name": "北化股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603797",
+      "name": "联泰环保",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300199",
+      "name": "翰宇药业",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "301303",
+      "name": "真兰仪表",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "301281",
+      "name": "科源制药",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002745",
+      "name": "木林森",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300158",
+      "name": "振东制药",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688371",
+      "name": "XD菲沃泰",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603538",
+      "name": "美诺华",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300331",
+      "name": "苏大维格",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300345",
+      "name": "华民股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300607",
+      "name": "拓斯达",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688031",
+      "name": "星环科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "301529",
+      "name": "福赛科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002779",
+      "name": "中坚科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688117",
+      "name": "圣诺生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002020",
+      "name": "京新药业",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688183",
+      "name": "生益电子",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "603132",
+      "name": "金徽股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002248",
+      "name": "华东数控",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688160",
+      "name": "步科股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688221",
+      "name": "前沿生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002603",
+      "name": "以岭药业",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002294",
+      "name": "信立泰",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600400",
+      "name": "红豆股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688729",
+      "name": "屹唐股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600698",
+      "name": "湖南天雁",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300039",
+      "name": "上海凯宝",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300683",
+      "name": "海特生物",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "301312",
+      "name": "智立方",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688138",
+      "name": "清溢光电",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300561",
+      "name": "汇金科技",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002901",
+      "name": "大博医疗",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600833",
+      "name": "第一医药",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002119",
+      "name": "康强电子",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "002721",
+      "name": "金一文化",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300632",
+      "name": "光莆股份",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688322",
+      "name": "奥比中光",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "688305",
+      "name": "科德数控",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "600276",
+      "name": "恒瑞医药",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300164",
+      "name": "通源石油",
+      "red_level": "一线红",
+      "sector_l3": ""
+    },
+    {
+      "code": "300426",
+      "name": "华智数媒",
+      "red_level": "一线红",
+      "sector_l3": ""
+    }
+  ]
+}

@@ -1,42 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-10T15:59:10",
-  "count": 10,
+  "updated_at": "2026-08-11T15:41:01",
+  "count": 6,
   "stocks": [
     {
-      "symbol": "SH601168",
-      "name": "西部矿业",
+      "symbol": "SZ301520",
+      "name": "万邦医药",
       "marketplace": "CN",
-      "watched": "2026-08-10T13:58:06"
+      "watched": "2026-08-11T09:35:10"
     },
     {
-      "symbol": "SZ000506",
-      "name": "招金黄金",
+      "symbol": "SH603087",
+      "name": "甘李药业",
       "marketplace": "CN",
-      "watched": "2026-08-10T13:37:22"
-    },
-    {
-      "symbol": "SZ002141",
-      "name": "贤丰控股",
-      "marketplace": "CN",
-      "watched": "2026-08-10T10:32:04"
-    },
-    {
-      "symbol": "SH605179",
-      "name": "一鸣食品",
-      "marketplace": "CN",
-      "watched": "2026-08-10T10:08:39"
+      "watched": "2026-08-11T09:26:17"
     },
     {
       "symbol": "SH600721",
       "name": "百花医药",
       "marketplace": "CN",
       "watched": "2026-08-10T09:30:34"
-    },
-    {
-      "symbol": "SZ301080",
-      "name": "百普赛斯",
-      "marketplace": "CN",
-      "watched": "2026-08-10T09:30:26"
     },
     {
       "symbol": "SZ300759",
@@ -51,12 +33,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-08-07T09:39:44"
     },
     {
-      "symbol": "SZ300534",
-      "name": "陇神戎发",
-      "marketplace": "CN",
-      "watched": "2026-08-06T11:05:26"
-    },
-    {
       "symbol": "SH600664",
       "name": "哈药股份",
       "marketplace": "CN",
@@ -65,6 +41,61 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-11",
+    "changes": [
+      {
+        "time": "13:34",
+        "action": "remove",
+        "symbol": "SZ301080",
+        "name": "百普赛斯"
+      },
+      {
+        "time": "11:07",
+        "action": "remove",
+        "symbol": "SZ002141",
+        "name": "贤丰控股"
+      },
+      {
+        "time": "10:47",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "10:00",
+        "action": "remove",
+        "symbol": "SH601168",
+        "name": "西部矿业"
+      },
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-08-11T09:35:10"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH605179",
+        "name": "一鸣食品"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "09:30",
+        "action": "add",
+        "symbol": "SH603087",
+        "name": "甘李药业",
+        "watched": "2026-08-11T09:26:17"
+      }
+    ]
+  },
   {
     "date": "2026-08-10",
     "changes": [

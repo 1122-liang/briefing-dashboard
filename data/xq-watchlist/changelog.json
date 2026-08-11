@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-08-11",
+    "changes": [
+      {
+        "time": "13:34",
+        "action": "remove",
+        "symbol": "SZ301080",
+        "name": "百普赛斯"
+      },
+      {
+        "time": "11:07",
+        "action": "remove",
+        "symbol": "SZ002141",
+        "name": "贤丰控股"
+      },
+      {
+        "time": "10:47",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "10:00",
+        "action": "remove",
+        "symbol": "SH601168",
+        "name": "西部矿业"
+      },
+      {
+        "time": "09:40",
+        "action": "add",
+        "symbol": "SZ301520",
+        "name": "万邦医药",
+        "watched": "2026-08-11T09:35:10"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH605179",
+        "name": "一鸣食品"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "09:30",
+        "action": "add",
+        "symbol": "SH603087",
+        "name": "甘李药业",
+        "watched": "2026-08-11T09:26:17"
+      }
+    ]
+  },
+  {
     "date": "2026-08-10",
     "changes": [
       {

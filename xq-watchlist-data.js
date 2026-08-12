@@ -1,18 +1,36 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-11T15:41:01",
-  "count": 6,
+  "updated_at": "2026-08-12T15:55:23",
+  "count": 9,
   "stocks": [
-    {
-      "symbol": "SZ301520",
-      "name": "万邦医药",
-      "marketplace": "CN",
-      "watched": "2026-08-11T09:35:10"
-    },
     {
       "symbol": "SH603087",
       "name": "甘李药业",
       "marketplace": "CN",
-      "watched": "2026-08-11T09:26:17"
+      "watched": "2026-08-12T13:22:57"
+    },
+    {
+      "symbol": "SH688073",
+      "name": "毕得医药",
+      "marketplace": "CN",
+      "watched": "2026-08-12T11:23:21"
+    },
+    {
+      "symbol": "SZ300753",
+      "name": "爱朋医疗",
+      "marketplace": "CN",
+      "watched": "2026-08-12T11:14:40"
+    },
+    {
+      "symbol": "SZ301230",
+      "name": "泓博医药",
+      "marketplace": "CN",
+      "watched": "2026-08-12T10:22:29"
+    },
+    {
+      "symbol": "SH603538",
+      "name": "美诺华",
+      "marketplace": "CN",
+      "watched": "2026-08-12T09:46:23"
     },
     {
       "symbol": "SH600721",
@@ -41,6 +59,58 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-12",
+    "changes": [
+      {
+        "time": "13:42",
+        "action": "add",
+        "symbol": "SH603087",
+        "name": "甘李药业",
+        "watched": "2026-08-12T13:22:57"
+      },
+      {
+        "time": "13:42",
+        "action": "add",
+        "symbol": "SH688073",
+        "name": "毕得医药",
+        "watched": "2026-08-12T11:23:21"
+      },
+      {
+        "time": "11:16",
+        "action": "add",
+        "symbol": "SZ300753",
+        "name": "爱朋医疗",
+        "watched": "2026-08-12T11:14:40"
+      },
+      {
+        "time": "11:16",
+        "action": "remove",
+        "symbol": "SZ301520",
+        "name": "万邦医药"
+      },
+      {
+        "time": "10:25",
+        "action": "add",
+        "symbol": "SZ301230",
+        "name": "泓博医药",
+        "watched": "2026-08-12T10:22:29"
+      },
+      {
+        "time": "09:50",
+        "action": "add",
+        "symbol": "SH603538",
+        "name": "美诺华",
+        "watched": "2026-08-12T09:46:23"
+      },
+      {
+        "time": "09:50",
+        "action": "remove",
+        "symbol": "SH603087",
+        "name": "甘李药业"
+      }
+    ]
+  },
   {
     "date": "2026-08-11",
     "changes": [

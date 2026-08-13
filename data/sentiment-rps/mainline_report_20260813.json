@@ -1,0 +1,2750 @@
+{
+  "date": "20260813",
+  "summary": "医药主线全面爆发(医疗研发外包/CRO确认5天,减肥药/细胞免疫/民营医院回池),电子PCB回池再启动,硅料硅片/机床工具延续;退潮涂料油墨/纺织/贵金属/Web3.0共17条",
+  "main_themes": [
+    {
+      "entity_type": "sector",
+      "name": "医疗研发外包",
+      "consecutive_days": 5,
+      "d30": 16,
+      "d120": 33,
+      "d250": 44,
+      "trend": "up",
+      "analysis": "连续在池5天↑, d30=16。催化: 十五五创新药全链条扶持政策落地，H1创新药BD出海1026亿美元，CXO市场规模突破2700亿元增速12.4%，新版药品管理法实施条例5.15施行打通数据互认。主线已确立",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688046",
+          "name": "药康生物",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "CRO概念",
+      "consecutive_days": 5,
+      "d30": 16,
+      "d120": 30,
+      "d250": 33,
+      "trend": "up",
+      "analysis": "连续在池5天↑, d30=16。催化: 十五五创新药全链条扶持+新版药品管理法实施条例落地，H1创新药BD出海1026亿美元，CXO市场规模突破2700亿元增速12.4%，数据互认机制打通吸引海外药企订单回流。主线已确立",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688202",
+          "name": "美迪西",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "青蒿素",
+      "consecutive_days": 4,
+      "d30": 17,
+      "d120": 30,
+      "d250": 36,
+      "trend": "up",
+      "analysis": "连续在池4天↑, d30=17。催化: 8月7日青蒿素概念涨3.92%，百花医药、海正药业涨停，主力净流入2.09亿；医药板块整体走强联动创新药CRO。主线形成中",
+      "key_stocks": [
+        {
+          "code": "000593",
+          "name": "德龙汇能",
+          "rps_note": "3线红/2板"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600267",
+          "name": "海正药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002923",
+          "name": "润都股份",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "小红书概念",
+      "consecutive_days": 4,
+      "d30": 7,
+      "d120": 8,
+      "d250": 34,
+      "trend": "stable",
+      "analysis": "连续在池4天↑, d30=7。催化: 8月4日遥望科技、返利科技涨停，小红书概念涨超3%；板块暂无重大政策或业绩催化，跟随传媒/AI概念联动。主线形成中",
+      "key_stocks": [
+        {
+          "code": "603682",
+          "name": "锦和商管",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600228",
+          "name": "返利科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002354",
+          "name": "天娱数科",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000676",
+          "name": "智度股份",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "摘帽",
+      "consecutive_days": 4,
+      "d30": 4,
+      "d120": 8,
+      "d250": 27,
+      "trend": "stable",
+      "analysis": "连续在池4天↑, d30=4。催化: 多只ST股成功摘帽：金科股份7月2日、艾艾精工7月1日摘帽；交投生态摘帽后H1营收增209%扭亏；地产政策松绑叠加摘帽概念升温。主线形成中",
+      "key_stocks": [
+        {
+          "code": "000668",
+          "name": "荣丰控股",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603268",
+          "name": "松发股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "003004",
+          "name": "声迅股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000608",
+          "name": "阳光股份",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "机床工具",
+      "consecutive_days": 3,
+      "d30": 3,
+      "d120": 12,
+      "d250": 14,
+      "trend": "up",
+      "analysis": "连续在池3天↑, d30=3。催化: 🔴 8月11日 上半年机床利润总额同比增89.2%，规模以上企业增加值稳步增长。十五五规划列工业母机为最优先级。日本对华机床订单6月创历史新高，同比+53%。主线形成中",
+      "key_stocks": [
+        {
+          "code": "300083",
+          "name": "创世纪",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002248",
+          "name": "华东数控",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002520",
+          "name": "日发精机",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "301603",
+          "name": "乔锋智能",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "硅料硅片",
+      "consecutive_days": 2,
+      "d30": 2,
+      "d120": 2,
+      "d250": 2,
+      "trend": "up",
+      "analysis": "连续在池2天↑, d30=2。催化: 🔴 八大硅料龙头签署反内卷倡议,承诺售价不低于完全成本,硅片报价涨0.1元/片,多晶硅期货暴涨,政策+行业自律共振驱动价格修复。主线形成中",
+      "key_stocks": [
+        {
+          "code": "300345",
+          "name": "华民股份",
+          "rps_note": "1线红"
+        }
+      ]
+    }
+  ],
+  "declining": [
+    {
+      "entity_type": "sector",
+      "name": "广告营销",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续2天)今日退出, 成分股全线退潮",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "教育Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续2天)今日退出, 成分股全线退潮",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "民爆用品",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续2天)今日退出, 成分股全线退潮",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "涂料油墨",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 1,
+      "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "纺织化学用品",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 1,
+      "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "sector",
+      "name": "贵金属Ⅲ",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 2,
+      "d120": 2,
+      "analysis": "昨日在池(连续2天)今日退出, 成分股全线退潮",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "sector",
+      "name": "钨",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 4,
+      "d120": 40,
+      "analysis": "昨日在池(连续4天)今日退出, 成分股全线退潮",
+      "reason": "主线切换"
+    },
+    {
+      "entity_type": "sector",
+      "name": "铅锌",
+      "consecutive_days": 0,
+      "prev_consecutive": 6,
+      "d30": 6,
+      "d120": 19,
+      "analysis": "昨日在池(连续6天)今日退出, 成分股全线退潮",
+      "reason": "一键清仓信号"
+    },
+    {
+      "entity_type": "concept",
+      "name": "Sora概念(文生视频)",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 5,
+      "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "Web3.0",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 3,
+      "d120": 3,
+      "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "云办公",
+      "consecutive_days": 0,
+      "prev_consecutive": 2,
+      "d30": 5,
+      "d120": 5,
+      "analysis": "昨日在池(连续2天)今日退出, 成分股全线退潮",
+      "reason": "获利了结"
+    },
+    {
+      "entity_type": "concept",
+      "name": "华为盘古",
+      "consecutive_days": 0,
+      "prev_consecutive": 7,
+      "d30": 7,
+      "d120": 7,
+      "analysis": "昨日在池(连续7天)今日退出, 成分股全线退潮",
+      "reason": "一键清仓信号"
+    },
+    {
+      "entity_type": "concept",
+      "name": "工业母机",
+      "consecutive_days": 0,
+      "prev_consecutive": 1,
+      "d30": 1,
+      "d120": 9,
+      "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+      "reason": "无新增催化"
+    },
+    {
+      "entity_type": "concept",
+      "name": "快手概念",
+      "consecutive_days": 0,
+      "prev_consecutive": 8,
+      "d30": 8,
+      "d120": 9,
+      "analysis": "昨日在池(连续8天)今日退出, 成分股全线退潮",
+      "reason": "一键清仓信号"
+    },
+    {
+      "entity_type": "concept",
+      "name": "智谱AI",
+      "consecutive_days": 0,
+      "prev_consecutive": 3,
+      "d30": 6,
+      "d120": 6,
+      "analysis": "昨日在池(连续3天)今日退出, 成分股全线退潮",
+      "reason": "主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属铅",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 5,
+      "d120": 10,
+      "analysis": "昨日在池(连续4天)今日退出, 成分股全线退潮",
+      "reason": "主线切换"
+    },
+    {
+      "entity_type": "concept",
+      "name": "金属锌",
+      "consecutive_days": 0,
+      "prev_consecutive": 4,
+      "d30": 5,
+      "d120": 12,
+      "analysis": "昨日在池(连续4天)今日退出, 成分股全线退潮",
+      "reason": "主线切换"
+    }
+  ],
+  "emerging": [
+    {
+      "entity_type": "sector",
+      "name": "其他生物制品",
+      "consecutive_days": 1,
+      "d30": 11,
+      "d120": 27,
+      "d250": 28,
+      "analysis": "首次进池(连续1天), 催化: 🔴 7月9日三部门公布《国家基本药物目录(2026版)》首次将创新药纳入遴选范围 ← 回池再启动",
+      "catalyst_summary": "7月9日三部门公布《国家基本药物目录(2026版)》首次将创新药纳入遴选范围",
+      "key_stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688137",
+          "name": "近岸蛋白",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "其他医疗服务",
+      "consecutive_days": 1,
+      "d30": 2,
+      "d120": 2,
+      "d250": 2,
+      "analysis": "首次进池(连续1天), 催化: 🔴 6月底增值税法实施，各级医院等医疗机构提供医疗服务免征增值税 ← 首次走强",
+      "catalyst_summary": "6月底增值税法实施，各级医院等医疗机构提供医疗服务免征增值税",
+      "key_stocks": [
+        {
+          "code": "301060",
+          "name": "兰卫医学",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300244",
+          "name": "迪安诊断",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "603882",
+          "name": "金域医学",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "688315",
+          "name": "诺禾致源",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "印制电路板",
+      "consecutive_days": 1,
+      "d30": 1,
+      "d120": 59,
+      "d250": 79,
+      "analysis": "首次进池(连续1天), 催化: 🔴 AI需求驱动PCB涨价，8月电子布单月涨17-18%，头部厂商订单锁定至2027 ← 回池再启动",
+      "catalyst_summary": "AI需求驱动PCB涨价，8月电子布单月涨17-18%，头部厂商订单锁定至2027",
+      "key_stocks": [
+        {
+          "code": "688519",
+          "name": "南亚新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300903",
+          "name": "科翔股份",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "sector",
+      "name": "乳品",
+      "consecutive_days": 1,
+      "d30": 3,
+      "d120": 3,
+      "d250": 3,
+      "analysis": "首次进池(连续1天), 催化: 优然牧业H1预盈7.39-9.03亿同比转盈，原奶周期有望26H2反转 ← 首次走强",
+      "catalyst_summary": "优然牧业H1预盈7.39-9.03亿同比转盈，原奶周期有望26H2反转",
+      "key_stocks": [
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "rps_note": "2线红/4板"
+        },
+        {
+          "code": "600882",
+          "name": "妙可蓝多",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002329",
+          "name": "皇氏集团",
+          "rps_note": "1线红/4板"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "减肥药",
+      "consecutive_days": 1,
+      "d30": 14,
+      "d120": 26,
+      "d250": 27,
+      "analysis": "首次进池(连续1天), 催化: 🔴 7/10海正药业中报预增, H1归母净利6-6.5亿同比+100.62%-117.34% ← 回池再启动",
+      "catalyst_summary": "7/10海正药业中报预增, H1归母净利6-6.5亿同比+100.62%-117.34%",
+      "key_stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688202",
+          "name": "美迪西",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "民营医院",
+      "consecutive_days": 1,
+      "d30": 12,
+      "d120": 18,
+      "d250": 28,
+      "analysis": "首次进池(连续1天), 催化: 🔴 国务院《国民健康\"十五五\"规划》推动民营医院专科化品牌化连锁化发展 ← 回池再启动",
+      "catalyst_summary": "国务院《国民健康\"十五五\"规划》推动民营医院专科化品牌化连锁化发展",
+      "key_stocks": [
+        {
+          "code": "601886",
+          "name": "江河集团",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002437",
+          "name": "誉衡药业",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "600162",
+          "name": "香江控股",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "乳业",
+      "consecutive_days": 1,
+      "d30": 10,
+      "d120": 12,
+      "d250": 19,
+      "analysis": "首次进池(连续1天), 催化: 优然牧业1H26预盈7.39-9.03亿同比转盈, 原奶周期26H2迎反转 ← 首次走强",
+      "catalyst_summary": "优然牧业1H26预盈7.39-9.03亿同比转盈, 原奶周期26H2迎反转",
+      "key_stocks": [
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "rps_note": "2线红/4板"
+        },
+        {
+          "code": "002458",
+          "name": "益生股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600882",
+          "name": "妙可蓝多",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "605388",
+          "name": "均瑶健康",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "兵装重组概念",
+      "consecutive_days": 1,
+      "d30": 10,
+      "d120": 10,
+      "d250": 23,
+      "analysis": "首次进池(连续1天), 催化: 兵器装备集团分立重组持续发酵, 建军节+美伊局势催化军工走强 ← 首次走强",
+      "catalyst_summary": "兵器装备集团分立重组持续发酵, 建军节+美伊局势催化军工走强",
+      "key_stocks": [
+        {
+          "code": "600698",
+          "name": "湖南天雁",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "细胞免疫治疗",
+      "consecutive_days": 1,
+      "d30": 14,
+      "d120": 25,
+      "d250": 27,
+      "analysis": "首次进池(连续1天), 催化: 🔴 科济药业舒瑞基奥仑赛(全球首款实体瘤CAR-T)获批上市 ← 回池再启动",
+      "catalyst_summary": "科济药业舒瑞基奥仑赛(全球首款实体瘤CAR-T)获批上市",
+      "key_stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688710",
+          "name": "益诺思",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "entity_type": "concept",
+      "name": "重组蛋白",
+      "consecutive_days": 1,
+      "d30": 14,
+      "d120": 24,
+      "d250": 26,
+      "analysis": "首次进池(连续1天), 催化: 跟随创新药CXO行情走强, 百普赛斯25年净利1.66亿+33.7% ← 回池再启动",
+      "catalyst_summary": "跟随创新药CXO行情走强, 百普赛斯25年净利1.66亿+33.7%",
+      "key_stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688137",
+          "name": "近岸蛋白",
+          "rps_note": "2线红"
+        }
+      ]
+    }
+  ],
+  "new_sectors": [
+    {
+      "name": "其他生物制品",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 11,
+      "catalyst_summary": "7月9日三部门公布《国家基本药物目录(2026版)》首次将创新药纳入遴选范围",
+      "stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688137",
+          "name": "近岸蛋白",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "其他医疗服务",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "6月底增值税法实施，各级医院等医疗机构提供医疗服务免征增值税",
+      "stocks": [
+        {
+          "code": "301060",
+          "name": "兰卫医学",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300244",
+          "name": "迪安诊断",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "603882",
+          "name": "金域医学",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "688315",
+          "name": "诺禾致源",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "印制电路板",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "AI需求驱动PCB涨价，8月电子布单月涨17-18%，头部厂商订单锁定至2027",
+      "stocks": [
+        {
+          "code": "688519",
+          "name": "南亚新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300903",
+          "name": "科翔股份",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "乳品",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 3,
+      "catalyst_summary": "优然牧业H1预盈7.39-9.03亿同比转盈，原奶周期有望26H2反转",
+      "stocks": [
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "rps_note": "2线红/4板"
+        },
+        {
+          "code": "600882",
+          "name": "妙可蓝多",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002329",
+          "name": "皇氏集团",
+          "rps_note": "1线红/4板"
+        }
+      ]
+    },
+    {
+      "name": "输变电设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "国网第三批特高压招标108.72亿，前三批采购超2025全年，国网年投资破8000亿",
+      "stocks": [
+        {
+          "code": "603045",
+          "name": "福达合金",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002346",
+          "name": "柘中股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "301295",
+          "name": "美硕科技",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002350",
+          "name": "北京科锐",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "血液制品",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 7,
+      "catalyst_summary": "7月20日博雅生物人血管性血友病因子工艺升级后重新获批临床试验",
+      "stocks": []
+    },
+    {
+      "name": "数字媒体",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8月13日DeepSeek V4-Pro上线，AI应用加速商业化带动传媒内容供给修复",
+      "stocks": [
+        {
+          "code": "600228",
+          "name": "返利科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603466",
+          "name": "风语筑",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "医院",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "7月9日《国家基本药物目录(2026版)》发布，创新药首次纳入利好医院终端放量",
+      "stocks": [
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002173",
+          "name": "创新医疗",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002219",
+          "name": "新里程",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600327",
+          "name": "大东方",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "原料药",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 6,
+      "catalyst_summary": "7月10日原料药优先审评通告发布，缩短申报周期提升上游运转效率",
+      "stocks": [
+        {
+          "code": "688758",
+          "name": "赛分科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300199",
+          "name": "翰宇药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300765",
+          "name": "新诺威",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000739",
+          "name": "普洛药业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "疫苗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "8月10日智飞生物鼻喷重组RSV疫苗临床试验申请获受理，国内尚无RSV疫苗获批",
+      "stocks": [
+        {
+          "code": "300142",
+          "name": "沃森生物",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "消费电子零部件及组装",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "Q2 Mobile DRAM合约价季增70-75%，英伟达新服务器MLCC用量增30%缺货延续",
+      "stocks": [
+        {
+          "code": "300843",
+          "name": "胜蓝股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300843",
+          "name": "胜蓝股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688260",
+          "name": "昀冢科技",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "油气开采",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "中东局势升级霍尔木兹海峡告急，布油周涨9.85%，Q2布油均价同比+44.9%",
+      "stocks": [
+        {
+          "code": "300483",
+          "name": "首华燃气",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "化学制剂",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 10,
+      "catalyst_summary": "8月7日百济神州H1营收222亿+26.8%，归母净利32.71亿同比+627%",
+      "stocks": [
+        {
+          "code": "600664",
+          "name": "哈药股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300558",
+          "name": "贝达药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002653",
+          "name": "海思科",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "体外诊断",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 2,
+      "catalyst_summary": "迈瑞医疗IVD免疫/生化/凝血市占率升至13%，海外收入占比突破53%",
+      "stocks": [
+        {
+          "code": "688253",
+          "name": "英诺特",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688068",
+          "name": "热景生物",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "688338",
+          "name": "赛科希德",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300639",
+          "name": "凯普生物",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "医疗耗材",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "《国民健康十五五规划》首次将医疗器械创新提升至国家战略高度",
+      "stocks": [
+        {
+          "code": "301234",
+          "name": "五洲医疗",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603976",
+          "name": "正川股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301580",
+          "name": "爱迪特",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688026",
+          "name": "洁特生物",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "中药Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 7,
+      "catalyst_summary": "7月10日国务院批复《中医药振兴发展十五五规划》，基药目录新纳入48种中成药",
+      "stocks": [
+        {
+          "code": "300534",
+          "name": "陇神戎发",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600671",
+          "name": "天目药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300878",
+          "name": "维康药业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "煤化工",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 4,
+      "catalyst_summary": "7月20日油价上涨煤油比下降，煤制烯烃盈利超40%，煤化工盈利弹性凸显",
+      "stocks": [
+        {
+          "code": "600722",
+          "name": "金牛化工",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600844",
+          "name": "金煤科技",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "楼宇设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "002774",
+          "name": "快意电梯",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "机器人",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "特斯拉Optimus V3年内量产、远期产能1000万台，宇树等降价至2.99万",
+      "stocks": [
+        {
+          "code": "002747",
+          "name": "埃斯顿",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002979",
+          "name": "雷赛智能",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688017",
+          "name": "绿的谐波",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688090",
+          "name": "瑞松科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "果蔬加工",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "安德利竞拍海升果业资产扩产，浓缩果汁双龙头格局加速集中",
+      "stocks": []
+    },
+    {
+      "name": "其他电子Ⅲ",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "华强北1TB固态硬盘涨132%，MLCC供应紧俏涨价，高端高容下半年续涨",
+      "stocks": [
+        {
+          "code": "688662",
+          "name": "富信科技",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600353",
+          "name": "旭光电子",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300736",
+          "name": "百邦科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002859",
+          "name": "洁美科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "火电",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "2026年煤电容量电价补偿比例从30%升至50%以上，度电增厚近2分钱",
+      "stocks": [
+        {
+          "code": "600396",
+          "name": "华电辽能",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "001896",
+          "name": "豫能控股",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "601991",
+          "name": "大唐发电",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "医疗设备",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "7月大型医疗设备招采回暖，CT中标+43.2%、MR+65.1%，国产厂商快增",
+      "stocks": [
+        {
+          "code": "688114",
+          "name": "华大智造",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300562",
+          "name": "乐心医疗",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "301602",
+          "name": "超研股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300171",
+          "name": "东富龙",
+          "rps_note": "1线红"
+        }
+      ]
+    }
+  ],
+  "new_concepts": [
+    {
+      "name": "减肥药",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 14,
+      "catalyst_summary": "7/10海正药业中报预增, H1归母净利6-6.5亿同比+100.62%-117.34%",
+      "stocks": [
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688202",
+          "name": "美迪西",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "民营医院",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 12,
+      "catalyst_summary": "国务院《国民健康\"十五五\"规划》推动民营医院专科化品牌化连锁化发展",
+      "stocks": [
+        {
+          "code": "601886",
+          "name": "江河集团",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002437",
+          "name": "誉衡药业",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "600162",
+          "name": "香江控股",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "兵装重组概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 10,
+      "catalyst_summary": "兵器装备集团分立重组持续发酵, 建军节+美伊局势催化军工走强",
+      "stocks": [
+        {
+          "code": "600698",
+          "name": "湖南天雁",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "乳业",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 10,
+      "catalyst_summary": "优然牧业1H26预盈7.39-9.03亿同比转盈, 原奶周期26H2迎反转",
+      "stocks": [
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "rps_note": "2线红/4板"
+        },
+        {
+          "code": "002458",
+          "name": "益生股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600882",
+          "name": "妙可蓝多",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "605388",
+          "name": "均瑶健康",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "细胞免疫治疗",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 14,
+      "catalyst_summary": "科济药业舒瑞基奥仑赛(全球首款实体瘤CAR-T)获批上市",
+      "stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600721",
+          "name": "百花医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688710",
+          "name": "益诺思",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "重组蛋白",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 14,
+      "catalyst_summary": "跟随创新药CXO行情走强, 百普赛斯25年净利1.66亿+33.7%",
+      "stocks": [
+        {
+          "code": "301080",
+          "name": "百普赛斯",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301047",
+          "name": "义翘神州",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688105",
+          "name": "诺唯赞",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688137",
+          "name": "近岸蛋白",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "国资云",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 5,
+      "catalyst_summary": "6/22云赛智联拟出资0.85亿参设10亿上海仪电智算生态基金, 松江智算中心二期投产",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000938",
+          "name": "紫光股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "000779",
+          "name": "甘咨询",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000977",
+          "name": "浪潮信息",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "生物疫苗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 13,
+      "catalyst_summary": "智飞生物鼻喷重组RSV疫苗获药监局临床试验受理, 填补国内RSV疫苗空白",
+      "stocks": [
+        {
+          "code": "603127",
+          "name": "昭衍新药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300765",
+          "name": "新诺威",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600881",
+          "name": "亚泰集团",
+          "rps_note": "1线红/3板"
+        },
+        {
+          "code": "300347",
+          "name": "泰格医药",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "医药电商",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 11,
+      "catalyst_summary": "国务院批复《扩大消费\"十五五\"规划》促健康消费, 强化零售药店功能建健康驿站",
+      "stocks": [
+        {
+          "code": "600664",
+          "name": "哈药股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300534",
+          "name": "陇神戎发",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "AI PC",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "6/1英伟达GTC联合微软首发Arm芯片Windows PC, 联想6日股价翻番",
+      "stocks": [
+        {
+          "code": "603228",
+          "name": "景旺电子",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "001389",
+          "name": "广合科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688525",
+          "name": "佰维存储",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301308",
+          "name": "江波龙",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "虚拟电厂",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8/3两部门《新型电力系统\"十五五\"规划》力促虚拟电厂, 2030年调节能力超5000万千瓦",
+      "stocks": [
+        {
+          "code": "603679",
+          "name": "华体科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600353",
+          "name": "旭光电子",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300438",
+          "name": "鹏辉能源",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002364",
+          "name": "中恒电气",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "小金属概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "小金属Q1板块净利同比+93.45%, 美国钨废料出口禁令+国内出口管制收紧",
+      "stocks": [
+        {
+          "code": "688530",
+          "name": "欧莱新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "NMN概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 6,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600298",
+          "name": "安琪酵母",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "603102",
+          "name": "百合股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000813",
+          "name": "德展健康",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "WiFi6",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002396",
+          "name": "星网锐捷",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "000938",
+          "name": "紫光股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "培育钻石",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 2,
+      "catalyst_summary": "英特尔转向人工合成钻石等新材料, 惠丰钻石金刚石散热与台半导体企达成批量供应意向",
+      "stocks": [
+        {
+          "code": "600172",
+          "name": "黄河旋风",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300179",
+          "name": "四方达",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688103",
+          "name": "国力电子",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002345",
+          "name": "潮宏基",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "智能医疗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "医保将AI辅助诊断纳入乙类医保价格项目, 打通AI医疗收费路径",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "003004",
+          "name": "声迅股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301396",
+          "name": "宏景科技",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "天津自贸区",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "天津普林H1净利预增435.64%-673.71%, 在手订单充足",
+      "stocks": [
+        {
+          "code": "300119",
+          "name": "瑞普生物",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "603106",
+          "name": "恒银科技",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "苹果概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "苹果智能国行版获批备案, 首款折叠iPhone年内生产目标上调至1000万台",
+      "stocks": [
+        {
+          "code": "300567",
+          "name": "精测电子",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300951",
+          "name": "博硕科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300083",
+          "name": "创世纪",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600228",
+          "name": "返利科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "医疗器械概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600881",
+          "name": "亚泰集团",
+          "rps_note": "1线红/3板"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000887",
+          "name": "中鼎股份",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "毛发医疗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 8,
+      "catalyst_summary": "雍禾医疗H1净利预增超150.9%至7000万, 植发+医疗养固双增",
+      "stocks": [
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002612",
+          "name": "朗姿股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000989",
+          "name": "九芝堂",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "禽流感",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 12,
+      "catalyst_summary": "法国禽流感致祖代鸡引种中断, 益生股份H1净利预增4286%-4774%",
+      "stocks": [
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600881",
+          "name": "亚泰集团",
+          "rps_note": "1线红/3板"
+        },
+        {
+          "code": "300119",
+          "name": "瑞普生物",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300039",
+          "name": "上海凯宝",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "三胎概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "002329",
+          "name": "皇氏集团",
+          "rps_note": "1线红/4板"
+        },
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "605179",
+          "name": "一鸣食品",
+          "rps_note": "2线红/4板"
+        }
+      ]
+    },
+    {
+      "name": "医美概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "6/24华东医药医美能量源设备V30获批上市, 同步推进ADC管线",
+      "stocks": [
+        {
+          "code": "601886",
+          "name": "江河集团",
+          "rps_note": "1线红/2板"
+        },
+        {
+          "code": "002768",
+          "name": "国恩股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002172",
+          "name": "澳洋健康",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "消费电子概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "苹果WWDC发布Apple Intelligence系统级AI Agent, 推动iPhone换机周期",
+      "stocks": [
+        {
+          "code": "300285",
+          "name": "国瓷材料",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688347",
+          "name": "华虹宏力",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300843",
+          "name": "胜蓝股份",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "专精特新",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "002409",
+          "name": "雅克科技",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688519",
+          "name": "南亚新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688627",
+          "name": "精智达",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "AIGC概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "8/13 DeepSeek V4-Pro正式版上线, 100万Token上下文+Agent对标Claude",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603466",
+          "name": "风语筑",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "宠物经济",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "中宠股份美国第二工厂Q3投产, 绑定北美大型商超长期订单",
+      "stocks": [
+        {
+          "code": "000811",
+          "name": "冰轮环境",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301189",
+          "name": "奥尼电子",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "301108",
+          "name": "洁雅股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600267",
+          "name": "海正药业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "眼科医疗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 10,
+      "catalyst_summary": "爱尔眼科6.96亿认购巴西眼科集团60.57%股权, 布局拉美市场",
+      "stocks": [
+        {
+          "code": "300558",
+          "name": "贝达药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603087",
+          "name": "甘李药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "601886",
+          "name": "江河集团",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "多模态AI",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "8/12荣耀发布全球首款机器人手机Robot Phone, 多模态具身交互, 预定超40万台",
+      "stocks": [
+        {
+          "code": "301396",
+          "name": "宏景科技",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "003004",
+          "name": "声迅股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301536",
+          "name": "星宸科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002990",
+          "name": "盛视科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "电子纸",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "688328",
+          "name": "深科达",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "000725",
+          "name": "京东方Ａ",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300939",
+          "name": "秋田微",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300331",
+          "name": "苏大维格",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "金属镍",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 1,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "605376",
+          "name": "博迁新材",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300487",
+          "name": "蓝晓科技",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "000009",
+          "name": "中国宝安",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "601168",
+          "name": "西部矿业",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "液冷服务器",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "浪潮信息H1净利预增226%-288%, 英伟达Rubin全球首个100%液冷平台发布",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300843",
+          "name": "胜蓝股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000811",
+          "name": "冰轮环境",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000887",
+          "name": "中鼎股份",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "幽门螺杆菌概念",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 3,
+      "catalyst_summary": "丹诺医药全球首个幽门螺杆菌新分子实体利福特尼唑上市在即, 港股首日涨178%",
+      "stocks": [
+        {
+          "code": "300404",
+          "name": "博济医药",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002422",
+          "name": "科伦药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "002317",
+          "name": "众生药业",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "300199",
+          "name": "翰宇药业",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "数据要素",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "003004",
+          "name": "声迅股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301396",
+          "name": "宏景科技",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603466",
+          "name": "风语筑",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "动物疫苗",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 10,
+      "catalyst_summary": "7/21普莱柯获农业农村部批文, 南非1型口蹄疫二价/三价灭活疫苗获批",
+      "stocks": [
+        {
+          "code": "002141",
+          "name": "贤丰控股",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600267",
+          "name": "海正药业",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "300119",
+          "name": "瑞普生物",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600201",
+          "name": "生物股份",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "毫米波雷达",
+      "red_level": "一线红",
+      "consecutive_days": 0,
+      "d30": 0,
+      "catalyst_summary": "近90天暂无重大催化",
+      "stocks": [
+        {
+          "code": "300862",
+          "name": "蓝盾光电",
+          "rps_note": "2线红/3板"
+        },
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688002",
+          "name": "睿创微纳",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "000887",
+          "name": "中鼎股份",
+          "rps_note": "1线红/2板"
+        }
+      ]
+    }
+  ],
+  "new_stocks": [
+    {
+      "code": "603682",
+      "name": "锦和商管",
+      "red_level": "三线红",
+      "sector_l3": "商业物业经营"
+    },
+    {
+      "code": "601872",
+      "name": "招商轮船",
+      "red_level": "三线红",
+      "sector_l3": "航运"
+    },
+    {
+      "code": "003004",
+      "name": "声迅股份",
+      "red_level": "三线红",
+      "sector_l3": "安防设备"
+    },
+    {
+      "code": "000668",
+      "name": "荣丰控股",
+      "red_level": "三线红",
+      "sector_l3": "住宅开发"
+    },
+    {
+      "code": "688362",
+      "name": "甬矽电子",
+      "red_level": "三线红",
+      "sector_l3": "集成电路封测"
+    },
+    {
+      "code": "301520",
+      "name": "万邦医药",
+      "red_level": "三线红",
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "603890",
+      "name": "春秋电子",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "301060",
+      "name": "兰卫医学",
+      "red_level": "一线红",
+      "sector_l3": "其他医疗服务"
+    },
+    {
+      "code": "002850",
+      "name": "科达利",
+      "red_level": "一线红",
+      "sector_l3": "锂电池"
+    },
+    {
+      "code": "600301",
+      "name": "华锡有色",
+      "red_level": "一线红",
+      "sector_l3": "其他小金属"
+    },
+    {
+      "code": "300453",
+      "name": "三鑫医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗耗材"
+    },
+    {
+      "code": "688553",
+      "name": "汇宇制药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688767",
+      "name": "博拓生物",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "300357",
+      "name": "我武生物",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "603277",
+      "name": "银都股份",
+      "red_level": "一线红",
+      "sector_l3": "制冷空调设备"
+    },
+    {
+      "code": "000597",
+      "name": "东北制药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688687",
+      "name": "凯因科技",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688520",
+      "name": "神州细胞",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "688551",
+      "name": "科威尔",
+      "red_level": "一线红",
+      "sector_l3": "其他电源设备Ⅲ"
+    },
+    {
+      "code": "300833",
+      "name": "浩洋股份",
+      "red_level": "一线红",
+      "sector_l3": "其他专用设备"
+    },
+    {
+      "code": "002728",
+      "name": "特一药业",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "688177",
+      "name": "百奥泰",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "red_level": "一线红",
+      "sector_l3": "生猪养殖"
+    },
+    {
+      "code": "300142",
+      "name": "沃森生物",
+      "red_level": "一线红",
+      "sector_l3": "疫苗"
+    },
+    {
+      "code": "300233",
+      "name": "金城医药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "301227",
+      "name": "森鹰窗业",
+      "red_level": "一线红",
+      "sector_l3": "定制家居"
+    },
+    {
+      "code": "301282",
+      "name": "金禄电子",
+      "red_level": "一线红",
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "300246",
+      "name": "宝莱特",
+      "red_level": "一线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "605007",
+      "name": "五洲特纸",
+      "red_level": "一线红",
+      "sector_l3": "造纸Ⅲ"
+    },
+    {
+      "code": "603387",
+      "name": "基蛋生物",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "002550",
+      "name": "千红制药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688179",
+      "name": "阿拉丁",
+      "red_level": "一线红",
+      "sector_l3": "其他化学制品"
+    },
+    {
+      "code": "600613",
+      "name": "神奇制药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "600196",
+      "name": "复星医药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "002294",
+      "name": "信立泰",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "002603",
+      "name": "以岭药业",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "red_level": "一线红",
+      "sector_l3": "LED"
+    },
+    {
+      "code": "002329",
+      "name": "皇氏集团",
+      "red_level": "一线红",
+      "sector_l3": "乳品"
+    },
+    {
+      "code": "002644",
+      "name": "佛慈制药",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "688443",
+      "name": "智翔金泰",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "001260",
+      "name": "坤泰股份",
+      "red_level": "一线红",
+      "sector_l3": "车身附件及饰件"
+    },
+    {
+      "code": "601999",
+      "name": "出版传媒",
+      "red_level": "一线红",
+      "sector_l3": "出版"
+    },
+    {
+      "code": "002219",
+      "name": "新里程",
+      "red_level": "一线红",
+      "sector_l3": "医院"
+    },
+    {
+      "code": "002923",
+      "name": "润都股份",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "002986",
+      "name": "宇新股份",
+      "red_level": "一线红",
+      "sector_l3": "石油加工"
+    },
+    {
+      "code": "002262",
+      "name": "恩华药业",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "300884",
+      "name": "狄耐克",
+      "red_level": "一线红",
+      "sector_l3": "安防设备"
+    },
+    {
+      "code": "000710",
+      "name": "贝瑞基因",
+      "red_level": "一线红",
+      "sector_l3": "其他医疗服务"
+    },
+    {
+      "code": "600594",
+      "name": "益佰制药",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "red_level": "一线红",
+      "sector_l3": "航天装备"
+    },
+    {
+      "code": "603039",
+      "name": "泛微网络",
+      "red_level": "一线红",
+      "sector_l3": "横向通用软件"
+    },
+    {
+      "code": "000887",
+      "name": "中鼎股份",
+      "red_level": "一线红",
+      "sector_l3": "其他汽车零部件"
+    },
+    {
+      "code": "301529",
+      "name": "福赛科技",
+      "red_level": "一线红",
+      "sector_l3": "车身附件及饰件"
+    },
+    {
+      "code": "301277",
+      "name": "新天地",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "300093",
+      "name": "金刚光伏",
+      "red_level": "一线红",
+      "sector_l3": "光伏电池组件"
+    },
+    {
+      "code": "605388",
+      "name": "均瑶健康",
+      "red_level": "一线红",
+      "sector_l3": "软饮料"
+    },
+    {
+      "code": "000788",
+      "name": "北大医药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "688278",
+      "name": "特宝生物",
+      "red_level": "一线红",
+      "sector_l3": "其他生物制品"
+    },
+    {
+      "code": "688098",
+      "name": "申联生物",
+      "red_level": "一线红",
+      "sector_l3": "动物保健"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "red_level": "一线红",
+      "sector_l3": "集成电路封测"
+    },
+    {
+      "code": "301021",
+      "name": "英诺激光",
+      "red_level": "一线红",
+      "sector_l3": "激光设备"
+    },
+    {
+      "code": "605116",
+      "name": "奥锐特",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "300039",
+      "name": "上海凯宝",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "688205",
+      "name": "德科立",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "688356",
+      "name": "键凯科技",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "601108",
+      "name": "财通证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
+    },
+    {
+      "code": "000596",
+      "name": "古井贡酒",
+      "red_level": "一线红",
+      "sector_l3": "白酒Ⅲ"
+    },
+    {
+      "code": "688392",
+      "name": "骄成超声",
+      "red_level": "一线红",
+      "sector_l3": "锂电专用设备"
+    },
+    {
+      "code": "301089",
+      "name": "拓新药业",
+      "red_level": "一线红",
+      "sector_l3": "原料药"
+    },
+    {
+      "code": "601918",
+      "name": "新集能源",
+      "red_level": "一线红",
+      "sector_l3": "煤炭开采"
+    },
+    {
+      "code": "603296",
+      "name": "华勤技术",
+      "red_level": "一线红",
+      "sector_l3": "消费电子零部件及组装"
+    },
+    {
+      "code": "300026",
+      "name": "红日药业",
+      "red_level": "一线红",
+      "sector_l3": "中药Ⅲ"
+    },
+    {
+      "code": "601579",
+      "name": "会稽山",
+      "red_level": "一线红",
+      "sector_l3": "其他酒类"
+    },
+    {
+      "code": "688359",
+      "name": "三孚新科",
+      "red_level": "一线红",
+      "sector_l3": "电子化学品Ⅲ"
+    },
+    {
+      "code": "300832",
+      "name": "新产业",
+      "red_level": "一线红",
+      "sector_l3": "体外诊断"
+    },
+    {
+      "code": "300909",
+      "name": "汇创达",
+      "red_level": "一线红",
+      "sector_l3": "面板"
+    },
+    {
+      "code": "600327",
+      "name": "大东方",
+      "red_level": "一线红",
+      "sector_l3": "医院"
+    },
+    {
+      "code": "300577",
+      "name": "开润股份",
+      "red_level": "一线红",
+      "sector_l3": "鞋帽及其他"
+    },
+    {
+      "code": "300314",
+      "name": "戴维医疗",
+      "red_level": "一线红",
+      "sector_l3": "医疗设备"
+    },
+    {
+      "code": "000026",
+      "name": "飞亚达",
+      "red_level": "一线红",
+      "sector_l3": "饰品"
+    },
+    {
+      "code": "000802",
+      "name": "北京文化",
+      "red_level": "一线红",
+      "sector_l3": "影视院线Ⅲ"
+    },
+    {
+      "code": "002885",
+      "name": "京泉华",
+      "red_level": "一线红",
+      "sector_l3": "其他电子Ⅲ"
+    },
+    {
+      "code": "001210",
+      "name": "金房能源",
+      "red_level": "一线红",
+      "sector_l3": "热力"
+    },
+    {
+      "code": "300573",
+      "name": "兴齐眼药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    }
+  ]
+}

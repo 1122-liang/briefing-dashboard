@@ -1,42 +1,48 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-12T15:55:23",
-  "count": 9,
+  "updated_at": "2026-08-14T15:57:54",
+  "count": 10,
   "stocks": [
     {
-      "symbol": "SH603087",
-      "name": "甘李药业",
+      "symbol": "SZ301047",
+      "name": "义翘神州",
       "marketplace": "CN",
-      "watched": "2026-08-12T13:22:57"
+      "watched": "2026-08-14T10:08:52"
     },
     {
-      "symbol": "SH688073",
-      "name": "毕得医药",
+      "symbol": "SH600186",
+      "name": "莲花控股",
       "marketplace": "CN",
-      "watched": "2026-08-12T11:23:21"
+      "watched": "2026-08-14T10:03:34"
     },
     {
-      "symbol": "SZ300753",
-      "name": "爱朋医疗",
+      "symbol": "SZ300404",
+      "name": "博济医药",
       "marketplace": "CN",
-      "watched": "2026-08-12T11:14:40"
+      "watched": "2026-08-14T09:35:07"
     },
     {
-      "symbol": "SZ301230",
-      "name": "泓博医药",
+      "symbol": "SZ300857",
+      "name": "协创数据",
       "marketplace": "CN",
-      "watched": "2026-08-12T10:22:29"
+      "watched": "2026-08-14T09:27:35"
     },
     {
-      "symbol": "SH603538",
-      "name": "美诺华",
+      "symbol": "SZ301396",
+      "name": "宏景科技",
       "marketplace": "CN",
-      "watched": "2026-08-12T09:46:23"
+      "watched": "2026-08-13T10:00:07"
     },
     {
-      "symbol": "SH600721",
-      "name": "百花医药",
+      "symbol": "SZ300209",
+      "name": "行云科技",
       "marketplace": "CN",
-      "watched": "2026-08-10T09:30:34"
+      "watched": "2026-08-13T10:00:01"
+    },
+    {
+      "symbol": "SZ301080",
+      "name": "百普赛斯",
+      "marketplace": "CN",
+      "watched": "2026-08-13T09:59:52"
     },
     {
       "symbol": "SZ300759",
@@ -59,6 +65,96 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-14",
+    "changes": [
+      {
+        "time": "10:13",
+        "action": "add",
+        "symbol": "SZ301047",
+        "name": "义翘神州",
+        "watched": "2026-08-14T10:08:52"
+      },
+      {
+        "time": "10:08",
+        "action": "add",
+        "symbol": "SH600186",
+        "name": "莲花控股",
+        "watched": "2026-08-14T10:03:34"
+      },
+      {
+        "time": "10:08",
+        "action": "remove",
+        "symbol": "SH688073",
+        "name": "毕得医药"
+      },
+      {
+        "time": "09:47",
+        "action": "add",
+        "symbol": "SZ300209",
+        "name": "行云科技",
+        "watched": "2026-08-13T10:00:01"
+      },
+      {
+        "time": "09:47",
+        "action": "add",
+        "symbol": "SZ300404",
+        "name": "博济医药",
+        "watched": "2026-08-14T09:35:07"
+      },
+      {
+        "time": "09:47",
+        "action": "add",
+        "symbol": "SZ300857",
+        "name": "协创数据",
+        "watched": "2026-08-14T09:27:35"
+      },
+      {
+        "time": "09:47",
+        "action": "add",
+        "symbol": "SZ301080",
+        "name": "百普赛斯",
+        "watched": "2026-08-13T09:59:52"
+      },
+      {
+        "time": "09:47",
+        "action": "add",
+        "symbol": "SZ301396",
+        "name": "宏景科技",
+        "watched": "2026-08-13T10:00:07"
+      },
+      {
+        "time": "09:47",
+        "action": "remove",
+        "symbol": "SH600721",
+        "name": "百花医药"
+      },
+      {
+        "time": "09:47",
+        "action": "remove",
+        "symbol": "SH603087",
+        "name": "甘李药业"
+      },
+      {
+        "time": "09:47",
+        "action": "remove",
+        "symbol": "SH603538",
+        "name": "美诺华"
+      },
+      {
+        "time": "09:47",
+        "action": "remove",
+        "symbol": "SZ300753",
+        "name": "爱朋医疗"
+      },
+      {
+        "time": "09:47",
+        "action": "remove",
+        "symbol": "SZ301230",
+        "name": "泓博医药"
+      }
+    ]
+  },
   {
     "date": "2026-08-12",
     "changes": [

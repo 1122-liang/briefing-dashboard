@@ -1,0 +1,50 @@
+{
+  "period": "08/10-08/16",
+  "total_hours": 19.0,
+  "projects": [
+    {
+      "name": "日常自动化运维",
+      "hours": 9.0,
+      "files": 0,
+      "summary": "5交易日RPS+盘后主线+雪球摘要+新闻研报+AIHOT+双站点部署全链路运转",
+      "efficiency": "high",
+      "issues": "08-13 RPS快照缺失补跑;08-10股票池新闻首次归零;08-15雪球登录态失效"
+    },
+    {
+      "name": "智汇研研报日报自动化",
+      "hours": 5.0,
+      "files": 7,
+      "summary": "新建每日00:05研报总结自动化,方案4次迭代从全量翻页收敛到中金天风精准搜索",
+      "efficiency": "medium",
+      "issues": "方案反复(320篇→1400篇→search_knowledge→中金天风);试运行擅自提前停止违背全量指令"
+    },
+    {
+      "name": "雪球生态维护",
+      "hours": 3.0,
+      "files": 6,
+      "summary": "400016登录态失效识别修复(5脚本7处)+扫码重登+关注人摘要6/6成功",
+      "efficiency": "high",
+      "issues": "登录态检测遗漏400016错误码导致08-15摘要首跑失败"
+    },
+    {
+      "name": "IMA个人知识库转存链路",
+      "hours": 2.0,
+      "files": 3,
+      "summary": "打通fetch_media_content→COS V5签名上传→add_knowledge全文闭环,固化ima_cos_upload.py",
+      "efficiency": "medium",
+      "issues": "MCP无PDF下载/删除接口;跨库转存权限不足code 220030"
+    }
+  ],
+  "files_created": 12,
+  "automation_runs": 57,
+  "suggestions": [
+    "P0: 统一自动化成功判定,弃用result_success改用文件产出+退出码校验",
+    "P1: 翻页类自动化prompt模板化,内置终止条件=唯一停止标准硬约束",
+    "P1: 雪球登录态错误码集中管理(10022/400016/AUTH/重新登录)+新错误码告警",
+    "P1: 研报自动化成本监控,首日记录token消耗并设阈值告警",
+    "P2: RPS快照缺失自动检测+补跑提醒",
+    "P2: ima知识库测试文件清理清单固化(无删除接口)"
+  ],
+  "_filename": "2026-08-16.json",
+  "_saved_at": "2026-08-16T19:57:16.005572+08:00"
+}

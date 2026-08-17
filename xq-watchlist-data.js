@@ -1,24 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-14T15:57:54",
-  "count": 10,
+  "updated_at": "2026-08-17T15:55:35",
+  "count": 9,
   "stocks": [
     {
-      "symbol": "SZ301047",
-      "name": "义翘神州",
+      "symbol": "SZ300534",
+      "name": "陇神戎发",
       "marketplace": "CN",
-      "watched": "2026-08-14T10:08:52"
+      "watched": "2026-08-17T09:44:46"
     },
     {
-      "symbol": "SH600186",
-      "name": "莲花控股",
+      "symbol": "SH603629",
+      "name": "利通电子",
       "marketplace": "CN",
-      "watched": "2026-08-14T10:03:34"
+      "watched": "2026-08-17T09:33:32"
     },
     {
-      "symbol": "SZ300404",
-      "name": "博济医药",
+      "symbol": "SH605179",
+      "name": "一鸣食品",
       "marketplace": "CN",
-      "watched": "2026-08-14T09:35:07"
+      "watched": "2026-08-17T09:33:26"
     },
     {
       "symbol": "SZ300857",
@@ -37,12 +37,6 @@ window.__SNAPSHOT__ = {
       "name": "行云科技",
       "marketplace": "CN",
       "watched": "2026-08-13T10:00:01"
-    },
-    {
-      "symbol": "SZ301080",
-      "name": "百普赛斯",
-      "marketplace": "CN",
-      "watched": "2026-08-13T09:59:52"
     },
     {
       "symbol": "SZ300759",
@@ -65,6 +59,56 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-17",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "add",
+        "symbol": "SZ300534",
+        "name": "陇神戎发",
+        "watched": "2026-08-17T09:44:46"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH603629",
+        "name": "利通电子",
+        "watched": "2026-08-17T09:33:32"
+      },
+      {
+        "time": "09:35",
+        "action": "add",
+        "symbol": "SH605179",
+        "name": "一鸣食品",
+        "watched": "2026-08-17T09:33:26"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SH600186",
+        "name": "莲花控股"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ300404",
+        "name": "博济医药"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ301047",
+        "name": "义翘神州"
+      },
+      {
+        "time": "09:35",
+        "action": "remove",
+        "symbol": "SZ301080",
+        "name": "百普赛斯"
+      }
+    ]
+  },
   {
     "date": "2026-08-14",
     "changes": [

@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T08:43:06.676438+08:00",
+  "window_hours": 24,
+  "total_opportunities": 5,
+  "opportunities": [
+    {
+      "id": "cmsx9jy2a05yerommy1e0jc6t",
+      "title": "A股“人形机器人第一股”宇树科技8月19日科创板上市",
+      "industry": "人形机器人",
+      "type": "重大事件",
+      "summary": "宇树科技8月19日登陆科创板，发行价150.80元/股，市值约609.93亿元，募资约60.99亿元。2023-2025年营收1.59/3.93/16.99亿元，净利润-1114.51万/9547.47万/2.78亿元，为全球少数实现盈利的高性能通用机器人公司。",
+      "investment_logic": "宇树作为全球少数盈利的人形机器人公司，上市后将成为A股机器人板块的估值锚，带动产业链重估。人形机器人正从样机走向量产，核心零部件（谐波减速器、行星滚柱丝杠、无框电机、六维力传感器）需求有望随量产放量。",
+      "target_stocks": "宇树科技(科创板新股)、绿的谐波(688017)、鸣志电器(603728)、拓普集团(601689)、三花智控(002050)、恒立液压(601100)",
+      "risk_note": "发行价对应估值偏高（约609亿元 vs 2025年净利润2.78亿元，静态PE超200倍），新股上市初期波动剧烈；人形机器人商业化仍处早期，量产与订单兑现节奏存在不确定性。",
+      "source": "IT之家（RSS）"
+    },
+    {
+      "id": "cmsx8zij405t2rommm4gwgzjh",
+      "title": "NVIDIA联手SB Energy锁定俄亥俄州4.25吉瓦电力，为OpenAI建AI工厂",
+      "industry": "AI算力基础设施",
+      "type": "重大事件",
+      "summary": "黄仁勋宣布NVIDIA与SB Energy合作，锁定俄亥俄州PORTS-Pike科技园区电力容量专供NVIDIA AI工厂，OpenAI作为租户。初始部署4.25吉瓦，每代约150万块NVIDIA GPU，对应1500-2000亿美元收入；OpenAI承诺至2030年部署约12吉瓦（可扩展至16吉瓦）NVIDIA算力，总机会约6000亿美元。",
+      "investment_logic": "AI算力需求从“建数据中心”升级为“电力+算力一体化AI工厂”，电力成为新的关键瓶颈。4.25吉瓦初始容量、12-16吉瓦远期规划，将推动GPU、电力基础设施、电网设备、液冷、储能全链条资本开支大幅扩张，6000亿美元总机会对应未来5-7年持续投入。",
+      "target_stocks": "英伟达(NVDA)、Constellation Energy(CEG)、Vistra(VST)、Vertiv(VRT)、台积电(TSM)",
+      "risk_note": "电力审批与电网接入存在政策与建设周期风险；OpenAI资本开支承诺若因资金或技术路线变化调整，将影响产业链订单节奏；美国变压器等关键电力设备产能受限。",
+      "source": "X：Jensen Huang / NVIDIA Blog"
+    },
+    {
+      "id": "cmsxsvb5s0a4troz0z2q2nu3h",
+      "title": "Cursor推出Origin代码托管服务，挑战GitHub垄断地位",
+      "industry": "开发工具/代码托管",
+      "type": "重大事件",
+      "summary": "Cursor向所有付费用户开放Origin代码托管早期测试版，提供仓库、PR、代码浏览及GitHub双向同步，Vercel、Depot、Buildkite集成已可用，智能体功能即将推出。",
+      "investment_logic": "Cursor（已被SpaceX收购）推出Origin，标志着AI原生开发工具从“编辑器”向“代码托管+协作”全链路闭环延伸，直接冲击微软GitHub的垄断地位。代码托管是高粘性、高壁垒的入口级业务，若AI原生托管以智能体原生协作体验吸引开发者，将重构开发工具链价值分配。",
+      "target_stocks": "微软(MSFT，GitHub母公司)、GitLab(GTLB)、Atlassian(TEAM)",
+      "risk_note": "Origin尚处早期测试，GitHub拥有超1亿开发者生态与Actions/CI粘性，迁移成本高；Cursor母公司为SpaceX非上市公司，投资者只能通过受冲击/受益的上市标的间接参与。",
+      "source": "Hacker News 热门"
+    },
+    {
+      "id": "cmsxv0p3v0bntroz0227a6b3j",
+      "title": "AI安全从软约束走向硬性机制：Google零信任ADK与OpenAI前沿防御",
+      "industry": "AI安全",
+      "type": "行业新方向",
+      "summary": "Google开源基于ADK与Gemini的零信任智能体示例，在LLM上下文之外用三层硬性机制（硬件加密签名、gVisor沙箱、确定性语义网关）防御提示注入；OpenAI在Hugging Face事件后反思低估模型网络攻击能力，通过四大支柱（Codex验证漏洞、智能体分流告警、持续枚举攻击路径、仅向可信防御者开放网络能力）加固自身防御。",
+      "investment_logic": "随着AI Agent进入企业生产环境，提示注入、越权操作等攻击从理论风险转化为实际威胁。安全边界从“系统提示词软约束”转向“加密、沙箱、语义网关等硬性机制”，催生AI安全这一独立增量市场，企业级AI部署的安全合规需求将驱动安全工具与平台开支增长。",
+      "target_stocks": "CrowdStrike(CRWD)、Palo Alto Networks(PANW)、Zscaler(ZS)、Cloudflare(NET)",
+      "risk_note": "AI安全目前多由大厂内部方案主导，独立商业化产品尚在早期，第三方AI安全公司收入贡献有限；传统安全厂商与AI原生安全创业公司的竞争格局未定。",
+      "source": "Google Developers Blog / OpenAI 官网"
+    },
+    {
+      "id": "cmsxld6es03o8roz0jblf3ii9",
+      "title": "亚马逊被曝批量购书扫描训练AI后销毁，训练数据版权风险升级",
+      "industry": "AI训练数据/版权",
+      "type": "行业瓶颈变化",
+      "summary": "404 Media通过在珍本图书中放置追踪设备，首次揭露亚马逊未公开的购书行动：批量购入大量书籍、扫描用于AI训练、随后销毁，书籍最终被送往亚马逊AI训练中心。",
+      "investment_logic": "高质量训练数据日益稀缺，大模型厂商转向书籍等受版权保护内容，版权诉讼与监管风险上升，推高“合法授权数据”的溢价。拥有规模化授权内容的数据平台（图库、社交媒体、出版）将受益；亚马逊等大厂则面临版权合规与声誉风险。",
+      "target_stocks": "Shutterstock(SSTK)、Reddit(RDDT)、新闻集团(NWS)、Getty Images(GETY)",
+      "risk_note": "版权诉讼结果存在高度不确定性，“合理使用”抗辩的司法边界未明；若法院普遍支持版权方，大模型训练成本将上升，反向压制数据授权平台的议价空间。",
+      "source": "Hacker News 热门"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-08-18.json",
+  "_saved_at": "2026-08-18T08:43:06.676737+08:00"
+}

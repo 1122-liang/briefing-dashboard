@@ -1200,30 +1200,6 @@
   ],
   "new_sectors": [
     {
-      "name": "被动元件",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "8月三星电机MLCC涨价30%, 太阳诱电9月跟调, 村田MLCC在手订单环比+49%景气延至2028年",
-      "stocks": [
-        {
-          "code": "603738",
-          "name": "泰晶科技",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "000636",
-          "name": "风华高科",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "300408",
-          "name": "三环集团",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
       "name": "其他养殖",
       "red_level": "三线红",
       "consecutive_days": 1,
@@ -1232,73 +1208,25 @@
       "stocks": []
     },
     {
-      "name": "模拟芯片设计",
+      "name": "电子化学品Ⅲ",
       "red_level": "三线红",
       "consecutive_days": 1,
       "d30": 2,
-      "catalyst_summary": "9月13日ADI年内第二轮全产品涨价, 工业级与军规器件最高涨30%, 国内模拟芯片跟随涨价潮",
+      "catalyst_summary": "8月六氟化钨电子特气同比+230%, 7N级国产量产破垄断, 华谊18.42亿控股江化微",
       "stocks": [
         {
-          "code": "688141",
-          "name": "杰华特",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "300661",
-          "name": "圣邦股份",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "688508",
-          "name": "芯朋微",
-          "rps_note": "1线红"
-        }
-      ]
-    },
-    {
-      "name": "其他电子Ⅲ",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "1-5月电子专用材料制造利润同比+665%, 长川科技H1净利预增110-134%, 长电科技上调资本开支至100亿",
-      "stocks": [
-        {
-          "code": "600353",
-          "name": "旭光电子",
+          "code": "300684",
+          "name": "中石科技",
           "rps_note": "3线红/2板"
         },
         {
-          "code": "688662",
-          "name": "富信科技",
+          "code": "300054",
+          "name": "鼎龙股份",
           "rps_note": "3线红"
         },
         {
-          "code": "300975",
-          "name": "商络电子",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "印制电路板",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 2,
-      "catalyst_summary": "8月电子布涨价17-18%年内累计165%, 高端PCB订单排至2027年, 扩产投资累计超700亿",
-      "stocks": [
-        {
-          "code": "603186",
-          "name": "华正新材",
-          "rps_note": "3线红/2板"
-        },
-        {
-          "code": "300903",
-          "name": "科翔股份",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "002636",
-          "name": "金安国纪",
+          "code": "688548",
+          "name": "广钢气体",
           "rps_note": "3线红"
         }
       ]
@@ -1328,50 +1256,98 @@
       ]
     },
     {
-      "name": "电子化学品Ⅲ",
+      "name": "被动元件",
       "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 2,
-      "catalyst_summary": "8月六氟化钨电子特气同比+230%, 7N级国产量产破垄断, 华谊18.42亿控股江化微",
+      "d30": 1,
+      "catalyst_summary": "8月三星电机MLCC涨价30%, 太阳诱电9月跟调, 村田MLCC在手订单环比+49%景气延至2028年",
       "stocks": [
         {
-          "code": "300684",
-          "name": "中石科技",
-          "rps_note": "3线红/2板"
+          "code": "603738",
+          "name": "泰晶科技",
+          "rps_note": "2线红"
         },
         {
-          "code": "300054",
-          "name": "鼎龙股份",
-          "rps_note": "3线红"
+          "code": "000636",
+          "name": "风华高科",
+          "rps_note": "2线红"
         },
         {
-          "code": "688548",
-          "name": "广钢气体",
-          "rps_note": "3线红"
+          "code": "300408",
+          "name": "三环集团",
+          "rps_note": "2线红"
         }
       ]
     },
     {
-      "name": "通信终端及配件",
-      "red_level": "一线红",
+      "name": "其他电子Ⅲ",
+      "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "8月16日盛科通信获中电港5.75亿+以太网交换芯片大单, 补国产AI算力网络短板",
+      "d30": 1,
+      "catalyst_summary": "1-5月电子专用材料制造利润同比+665%, 长川科技H1净利预增110-134%, 长电科技上调资本开支至100亿",
       "stocks": [
         {
-          "code": "603118",
-          "name": "共进股份",
-          "rps_note": "2线红/3板"
+          "code": "600353",
+          "name": "旭光电子",
+          "rps_note": "3线红/2板"
         },
         {
-          "code": "003031",
-          "name": "中瓷电子",
-          "rps_note": "2线红/2板"
+          "code": "688662",
+          "name": "富信科技",
+          "rps_note": "3线红"
         },
         {
-          "code": "603083",
-          "name": "剑桥科技",
+          "code": "300975",
+          "name": "商络电子",
           "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "模拟芯片设计",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "9月13日ADI年内第二轮全产品涨价, 工业级与军规器件最高涨30%, 国内模拟芯片跟随涨价潮",
+      "stocks": [
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300661",
+          "name": "圣邦股份",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "688508",
+          "name": "芯朋微",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "印制电路板",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 2,
+      "catalyst_summary": "8月电子布涨价17-18%年内累计165%, 高端PCB订单排至2027年, 扩产投资累计超700亿",
+      "stocks": [
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红/2板"
+        },
+        {
+          "code": "300903",
+          "name": "科翔股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪",
+          "rps_note": "3线红"
         }
       ]
     },
@@ -1491,6 +1467,30 @@
       ]
     },
     {
+      "name": "通信终端及配件",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "8月16日盛科通信获中电港5.75亿+以太网交换芯片大单, 补国产AI算力网络短板",
+      "stocks": [
+        {
+          "code": "603118",
+          "name": "共进股份",
+          "rps_note": "2线红/3板"
+        },
+        {
+          "code": "003031",
+          "name": "中瓷电子",
+          "rps_note": "2线红/2板"
+        },
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
       "name": "玻璃玻纤",
       "red_level": "一线红",
       "consecutive_days": 1,
@@ -1517,6 +1517,126 @@
   ],
   "new_concepts": [
     {
+      "name": "中芯国际概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 4,
+      "catalyst_summary": "中芯国际Q2营收首破30亿美元同比增36%,净利同比增262%,订单排至年底年内不降价",
+      "stocks": [
+        {
+          "code": "688361",
+          "name": "中科飞测",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "rps_note": "3线红/1板"
+        },
+        {
+          "code": "000811",
+          "name": "冰轮环境",
+          "rps_note": "3线红/1板"
+        }
+      ]
+    },
+    {
+      "name": "芯片概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "7月七部委印发2026-2028算力基建行动方案,长鑫一季度营收508亿同比增719%,DRAM价格创历史新高",
+      "stocks": [
+        {
+          "code": "688361",
+          "name": "中科飞测",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688766",
+          "name": "普冉股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688485",
+          "name": "九州一轨",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "光纤概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "7月中国移动光缆集采6922万芯公里年内最大,光纤价格创7年新高涨幅144%,长飞H1净利预增711%",
+      "stocks": [
+        {
+          "code": "688485",
+          "name": "九州一轨",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "rps_note": "3线红/1板"
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "OLED",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "6月京东方成都8.6代AMOLED量产反超三星,奥来德中标6.6亿蒸发源项目,上半年净利预增492%",
+      "stocks": [
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "rps_note": "3线红/1板"
+        },
+        {
+          "code": "688627",
+          "name": "精智达",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300567",
+          "name": "精测电子",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "BC电池",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "7月光伏能效强制国标发布,央国企集采BC需求攀升中标占比升至22%,TCL中环26亿技改45GW",
+      "stocks": [
+        {
+          "code": "688630",
+          "name": "芯碁微装",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688147",
+          "name": "微导纳米",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603045",
+          "name": "福达合金",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
       "name": "6G概念",
       "red_level": "三线红",
       "consecutive_days": 1,
@@ -1541,11 +1661,83 @@
       ]
     },
     {
-      "name": "富士康概念",
+      "name": "先进封装",
       "red_level": "三线红",
       "consecutive_days": 1,
       "d30": 1,
-      "catalyst_summary": "富士康获SpaceX 520亿美元AI服务器订单,上半年净利同比增96%,AI服务器市占超40%",
+      "catalyst_summary": "台积电CoWoS订单排至2027末,大陆封测跟进涨价,汇成股份代工费统一提价10%,长电通富净利预告三位数",
+      "stocks": [
+        {
+          "code": "688361",
+          "name": "中科飞测",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "rps_note": "3线红/1板"
+        },
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红/2板"
+        }
+      ]
+    },
+    {
+      "name": "F5G概念",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "十五五规划明确全面推进万兆光网F5G-A商用,上海电信推全国首个万兆宽带套餐,光纤价格创7年新高",
+      "stocks": [
+        {
+          "code": "688313",
+          "name": "仕佳光子",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603118",
+          "name": "共进股份",
+          "rps_note": "2线红/3板"
+        },
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "MiniLED",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "4月Mini LED背光显示模组技术规范落地,聚灿光电红黄光业务收入暴增1764%,RGB-MiniLED量产元年",
+      "stocks": [
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红/2板"
+        },
+        {
+          "code": "300567",
+          "name": "精测电子",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688530",
+          "name": "欧莱新材",
+          "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "汽车电子",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "均胜电子一季度新获全球订单约275亿元同比增75%,车规存储芯片3个月暴涨180%",
       "stocks": [
         {
           "code": "300684",
@@ -1553,14 +1745,38 @@
           "rps_note": "3线红/2板"
         },
         {
-          "code": "002768",
-          "name": "国恩股份",
+          "code": "688766",
+          "name": "普冉股份",
           "rps_note": "3线红"
         },
         {
-          "code": "300567",
-          "name": "精测电子",
+          "code": "600584",
+          "name": "长电科技",
           "rps_note": "3线红"
+        }
+      ]
+    },
+    {
+      "name": "WiFi6",
+      "red_level": "三线红",
+      "consecutive_days": 1,
+      "d30": 1,
+      "catalyst_summary": "7月中国电信启动3000万套FTTR集采约35亿元,WiFi6设备2000万套,华为中兴领衔中标",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603118",
+          "name": "共进股份",
+          "rps_note": "2线红/3板"
+        },
+        {
+          "code": "603738",
+          "name": "泰晶科技",
+          "rps_note": "2线红"
         }
       ]
     },
@@ -1613,78 +1829,6 @@
       ]
     },
     {
-      "name": "汽车电子",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "均胜电子一季度新获全球订单约275亿元同比增75%,车规存储芯片3个月暴涨180%",
-      "stocks": [
-        {
-          "code": "300684",
-          "name": "中石科技",
-          "rps_note": "3线红/2板"
-        },
-        {
-          "code": "688766",
-          "name": "普冉股份",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "600584",
-          "name": "长电科技",
-          "rps_note": "3线红"
-        }
-      ]
-    },
-    {
-      "name": "先进封装",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "台积电CoWoS订单排至2027末,大陆封测跟进涨价,汇成股份代工费统一提价10%,长电通富净利预告三位数",
-      "stocks": [
-        {
-          "code": "688361",
-          "name": "中科飞测",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "rps_note": "3线红/1板"
-        },
-        {
-          "code": "603186",
-          "name": "华正新材",
-          "rps_note": "3线红/2板"
-        }
-      ]
-    },
-    {
-      "name": "苹果概念",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "苹果iPhone18系列7月量产爬坡,第三财季营收1094亿美元净利同比增27%创同期新高",
-      "stocks": [
-        {
-          "code": "300684",
-          "name": "中石科技",
-          "rps_note": "3线红/2板"
-        },
-        {
-          "code": "600584",
-          "name": "长电科技",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "300567",
-          "name": "精测电子",
-          "rps_note": "3线红"
-        }
-      ]
-    },
-    {
       "name": "5G",
       "red_level": "三线红",
       "consecutive_days": 1,
@@ -1709,98 +1853,50 @@
       ]
     },
     {
-      "name": "PET铜箔",
+      "name": "PCB概念",
       "red_level": "三线红",
       "consecutive_days": 1,
       "d30": 1,
-      "catalyst_summary": "7月动力电池新国标GB38031落地强制不起火不爆炸,宝明科技锁定宁德56.8亿长单,十五五规划首次提及复合集流体攻关",
+      "catalyst_summary": "AI服务器驱动PCB量价齐升,电子布年内涨165%,生益科技净利增130%,英伟达Rubin平台PCB价值增233%",
       "stocks": [
+        {
+          "code": "603186",
+          "name": "华正新材",
+          "rps_note": "3线红/2板"
+        },
         {
           "code": "301217",
           "name": "铜冠铜箔",
           "rps_note": "3线红"
         },
         {
-          "code": "688530",
-          "name": "欧莱新材",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "603773",
-          "name": "沃格光电",
-          "rps_note": "2线红/1板"
-        }
-      ]
-    },
-    {
-      "name": "芯片概念",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "7月七部委印发2026-2028算力基建行动方案,长鑫一季度营收508亿同比增719%,DRAM价格创历史新高",
-      "stocks": [
-        {
-          "code": "688361",
-          "name": "中科飞测",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688766",
-          "name": "普冉股份",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688485",
-          "name": "九州一轨",
+          "code": "688630",
+          "name": "芯碁微装",
           "rps_note": "3线红"
         }
       ]
     },
     {
-      "name": "WiFi6",
+      "name": "光刻胶",
       "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "7月中国电信启动3000万套FTTR集采约35亿元,WiFi6设备2000万套,华为中兴领衔中标",
+      "d30": 2,
+      "catalyst_summary": "鼎龙KrF/ArF光刻胶新增近1000加仑订单,南大光电ArF通过中芯7nm验证,全球龙头JSR涨价15%",
       "stocks": [
         {
-          "code": "301165",
-          "name": "锐捷网络",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "603118",
-          "name": "共进股份",
-          "rps_note": "2线红/3板"
-        },
-        {
-          "code": "603738",
-          "name": "泰晶科技",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "存储芯片",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 3,
-      "catalyst_summary": "三星Q3通用DRAM再涨20%连续三季提价,7月全球存储销售额746亿美元创新高,长鑫上半年净利超500亿",
-      "stocks": [
-        {
-          "code": "688361",
-          "name": "中科飞测",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688766",
-          "name": "普冉股份",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
+          "code": "603823",
+          "name": "百合花",
           "rps_note": "3线红/1板"
+        },
+        {
+          "code": "002768",
+          "name": "国恩股份",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688630",
+          "name": "芯碁微装",
+          "rps_note": "3线红"
         }
       ]
     },
@@ -1853,83 +1949,11 @@
       ]
     },
     {
-      "name": "OLED",
+      "name": "存储芯片",
       "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "6月京东方成都8.6代AMOLED量产反超三星,奥来德中标6.6亿蒸发源项目,上半年净利预增492%",
-      "stocks": [
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "rps_note": "3线红/1板"
-        },
-        {
-          "code": "688627",
-          "name": "精智达",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "300567",
-          "name": "精测电子",
-          "rps_note": "3线红"
-        }
-      ]
-    },
-    {
-      "name": "F5G概念",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "十五五规划明确全面推进万兆光网F5G-A商用,上海电信推全国首个万兆宽带套餐,光纤价格创7年新高",
-      "stocks": [
-        {
-          "code": "688313",
-          "name": "仕佳光子",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "603118",
-          "name": "共进股份",
-          "rps_note": "2线红/3板"
-        },
-        {
-          "code": "300308",
-          "name": "中际旭创",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "BC电池",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "7月光伏能效强制国标发布,央国企集采BC需求攀升中标占比升至22%,TCL中环26亿技改45GW",
-      "stocks": [
-        {
-          "code": "688630",
-          "name": "芯碁微装",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688147",
-          "name": "微导纳米",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "603045",
-          "name": "福达合金",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "中芯国际概念",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 4,
-      "catalyst_summary": "中芯国际Q2营收首破30亿美元同比增36%,净利同比增262%,订单排至年底年内不降价",
+      "d30": 3,
+      "catalyst_summary": "三星Q3通用DRAM再涨20%连续三季提价,7月全球存储销售额746亿美元创新高,长鑫上半年净利超500亿",
       "stocks": [
         {
           "code": "688361",
@@ -1937,37 +1961,37 @@
           "rps_note": "3线红"
         },
         {
-          "code": "600206",
-          "name": "有研新材",
-          "rps_note": "3线红/1板"
+          "code": "688766",
+          "name": "普冉股份",
+          "rps_note": "3线红"
         },
         {
-          "code": "000811",
-          "name": "冰轮环境",
+          "code": "600206",
+          "name": "有研新材",
           "rps_note": "3线红/1板"
         }
       ]
     },
     {
-      "name": "MiniLED",
+      "name": "第三代半导体",
       "red_level": "三线红",
       "consecutive_days": 1,
       "d30": 1,
-      "catalyst_summary": "4月Mini LED背光显示模组技术规范落地,聚灿光电红黄光业务收入暴增1764%,RGB-MiniLED量产元年",
+      "catalyst_summary": "5月税收新政将SiC/GaN纳入十年免税范围,英飞凌碳化硅7月涨价10-20%,天岳衬底全球市占第一",
       "stocks": [
         {
-          "code": "603186",
-          "name": "华正新材",
+          "code": "600353",
+          "name": "旭光电子",
           "rps_note": "3线红/2板"
         },
         {
-          "code": "300567",
-          "name": "精测电子",
+          "code": "600584",
+          "name": "长电科技",
           "rps_note": "3线红"
         },
         {
-          "code": "688530",
-          "name": "欧莱新材",
+          "code": "002428",
+          "name": "云南锗业",
           "rps_note": "3线红"
         }
       ]
@@ -1997,63 +2021,15 @@
       ]
     },
     {
-      "name": "光纤概念",
+      "name": "苹果概念",
       "red_level": "三线红",
       "consecutive_days": 1,
       "d30": 1,
-      "catalyst_summary": "7月中国移动光缆集采6922万芯公里年内最大,光纤价格创7年新高涨幅144%,长飞H1净利预增711%",
+      "catalyst_summary": "苹果iPhone18系列7月量产爬坡,第三财季营收1094亿美元净利同比增27%创同期新高",
       "stocks": [
         {
-          "code": "688485",
-          "name": "九州一轨",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "rps_note": "3线红/1板"
-        },
-        {
-          "code": "002428",
-          "name": "云南锗业",
-          "rps_note": "3线红"
-        }
-      ]
-    },
-    {
-      "name": "PCB概念",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "AI服务器驱动PCB量价齐升,电子布年内涨165%,生益科技净利增130%,英伟达Rubin平台PCB价值增233%",
-      "stocks": [
-        {
-          "code": "603186",
-          "name": "华正新材",
-          "rps_note": "3线红/2板"
-        },
-        {
-          "code": "301217",
-          "name": "铜冠铜箔",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688630",
-          "name": "芯碁微装",
-          "rps_note": "3线红"
-        }
-      ]
-    },
-    {
-      "name": "第三代半导体",
-      "red_level": "三线红",
-      "consecutive_days": 1,
-      "d30": 1,
-      "catalyst_summary": "5月税收新政将SiC/GaN纳入十年免税范围,英飞凌碳化硅7月涨价10-20%,天岳衬底全球市占第一",
-      "stocks": [
-        {
-          "code": "600353",
-          "name": "旭光电子",
+          "code": "300684",
+          "name": "中石科技",
           "rps_note": "3线红/2板"
         },
         {
@@ -2062,23 +2038,23 @@
           "rps_note": "3线红"
         },
         {
-          "code": "002428",
-          "name": "云南锗业",
+          "code": "300567",
+          "name": "精测电子",
           "rps_note": "3线红"
         }
       ]
     },
     {
-      "name": "光刻胶",
+      "name": "富士康概念",
       "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 2,
-      "catalyst_summary": "鼎龙KrF/ArF光刻胶新增近1000加仑订单,南大光电ArF通过中芯7nm验证,全球龙头JSR涨价15%",
+      "d30": 1,
+      "catalyst_summary": "富士康获SpaceX 520亿美元AI服务器订单,上半年净利同比增96%,AI服务器市占超40%",
       "stocks": [
         {
-          "code": "603823",
-          "name": "百合花",
-          "rps_note": "3线红/1板"
+          "code": "300684",
+          "name": "中石科技",
+          "rps_note": "3线红/2板"
         },
         {
           "code": "002768",
@@ -2086,33 +2062,81 @@
           "rps_note": "3线红"
         },
         {
-          "code": "688630",
-          "name": "芯碁微装",
+          "code": "300567",
+          "name": "精测电子",
           "rps_note": "3线红"
         }
       ]
     },
     {
-      "name": "华为海思概念股",
-      "red_level": "一线红",
+      "name": "PET铜箔",
+      "red_level": "三线红",
       "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "华为发布韬定律,秋季麒麟芯片采用逻辑折叠技术性能大增,海思部分芯片涨价",
+      "d30": 1,
+      "catalyst_summary": "7月动力电池新国标GB38031落地强制不起火不爆炸,宝明科技锁定宁德56.8亿长单,十五五规划首次提及复合集流体攻关",
       "stocks": [
         {
-          "code": "688037",
-          "name": "芯源微",
+          "code": "301217",
+          "name": "铜冠铜箔",
           "rps_note": "3线红"
         },
         {
-          "code": "603118",
-          "name": "共进股份",
-          "rps_note": "2线红/3板"
+          "code": "688530",
+          "name": "欧莱新材",
+          "rps_note": "3线红"
         },
         {
-          "code": "002156",
-          "name": "通富微电",
+          "code": "603773",
+          "name": "沃格光电",
           "rps_note": "2线红/1板"
+        }
+      ]
+    },
+    {
+      "name": "智慧灯杆",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "6月交通部首次将智慧路灯杆定义为智能交通感知底座,多功能杆国标实施,呼和浩特1.58亿能源托管落地",
+      "stocks": [
+        {
+          "code": "300540",
+          "name": "蜀道装备",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "603679",
+          "name": "华体科技",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "605289",
+          "name": "罗曼股份",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "TOPCON电池",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "八大硅料龙头签反内卷倡议书承诺不低于成本销售,TOPCon电池片价格企稳回升,2027年4月起征2%消费税",
+      "stocks": [
+        {
+          "code": "688630",
+          "name": "芯碁微装",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "300566",
+          "name": "激智科技",
+          "rps_note": "2线红"
         }
       ]
     },
@@ -2141,25 +2165,121 @@
       ]
     },
     {
-      "name": "智慧灯杆",
+      "name": "华为手机",
       "red_level": "一线红",
       "consecutive_days": 1,
       "d30": 0,
-      "catalyst_summary": "6月交通部首次将智慧路灯杆定义为智能交通感知底座,多功能杆国标实施,呼和浩特1.58亿能源托管落地",
+      "catalyst_summary": "华为Mate90系列9月23日定档首发韬定律麒麟芯片,Mate80累计销量超827万台,国产化率超90%",
       "stocks": [
         {
-          "code": "300540",
-          "name": "蜀道装备",
+          "code": "301526",
+          "name": "国际复材",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688020",
+          "name": "方邦股份",
           "rps_note": "2线红"
         },
         {
-          "code": "603679",
-          "name": "华体科技",
+          "code": "603256",
+          "name": "宏和科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "染料",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "还原物年内涨380%分散染料三度提价创新高,闰土H1净利预增254%,印度高温减产出口替代",
+      "stocks": [
+        {
+          "code": "300721",
+          "name": "怡达股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "002440",
+          "name": "闰土股份",
+          "rps_note": "1线红"
+        },
+        {
+          "code": "600352",
+          "name": "浙江龙盛",
+          "rps_note": "1线红"
+        }
+      ]
+    },
+    {
+      "name": "超级电容",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "江海股份6月全线提价,四部门要求新建智算中心配套功率储能首选超级电容,上游碳粉涨30%",
+      "stocks": [
+        {
+          "code": "600673",
+          "name": "东阳光",
           "rps_note": "2线红"
         },
         {
-          "code": "605289",
-          "name": "罗曼股份",
+          "code": "000636",
+          "name": "风华高科",
+          "rps_note": "2线红"
+        },
+        {
+          "code": "600522",
+          "name": "中天科技",
+          "rps_note": "2线红"
+        }
+      ]
+    },
+    {
+      "name": "华为海思概念股",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "华为发布韬定律,秋季麒麟芯片采用逻辑折叠技术性能大增,海思部分芯片涨价",
+      "stocks": [
+        {
+          "code": "688037",
+          "name": "芯源微",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "603118",
+          "name": "共进股份",
+          "rps_note": "2线红/3板"
+        },
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "rps_note": "2线红/1板"
+        }
+      ]
+    },
+    {
+      "name": "新型工业化",
+      "red_level": "一线红",
+      "consecutive_days": 1,
+      "d30": 0,
+      "catalyst_summary": "6月国常会定调新型工业化长期战略,以新一代智能制造为主攻方向,十五五列牵引性重点",
+      "stocks": [
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "688328",
+          "name": "深科达",
+          "rps_note": "3线红"
+        },
+        {
+          "code": "301273",
+          "name": "瑞晨环保",
           "rps_note": "2线红"
         }
       ]
@@ -2189,26 +2309,26 @@
       ]
     },
     {
-      "name": "染料",
+      "name": "HJT电池",
       "red_level": "一线红",
       "consecutive_days": 1,
       "d30": 0,
-      "catalyst_summary": "还原物年内涨380%分散染料三度提价创新高,闰土H1净利预增254%,印度高温减产出口替代",
+      "catalyst_summary": "电投新能中标大唐1GW HJT独立标段,东方日升异质结组件出货同比增超100%,市监总局开展光伏价格合规指导",
       "stocks": [
         {
-          "code": "300721",
-          "name": "怡达股份",
-          "rps_note": "1线红"
+          "code": "688530",
+          "name": "欧莱新材",
+          "rps_note": "3线红"
         },
         {
-          "code": "002440",
-          "name": "闰土股份",
-          "rps_note": "1线红"
+          "code": "688147",
+          "name": "微导纳米",
+          "rps_note": "2线红"
         },
         {
-          "code": "600352",
-          "name": "浙江龙盛",
-          "rps_note": "1线红"
+          "code": "603045",
+          "name": "福达合金",
+          "rps_note": "2线红"
         }
       ]
     },
@@ -2259,152 +2379,32 @@
           "rps_note": "2线红"
         }
       ]
-    },
-    {
-      "name": "超级电容",
-      "red_level": "一线红",
-      "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "江海股份6月全线提价,四部门要求新建智算中心配套功率储能首选超级电容,上游碳粉涨30%",
-      "stocks": [
-        {
-          "code": "600673",
-          "name": "东阳光",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "000636",
-          "name": "风华高科",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "600522",
-          "name": "中天科技",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "新型工业化",
-      "red_level": "一线红",
-      "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "6月国常会定调新型工业化长期战略,以新一代智能制造为主攻方向,十五五列牵引性重点",
-      "stocks": [
-        {
-          "code": "301165",
-          "name": "锐捷网络",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688328",
-          "name": "深科达",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "301273",
-          "name": "瑞晨环保",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "HJT电池",
-      "red_level": "一线红",
-      "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "电投新能中标大唐1GW HJT独立标段,东方日升异质结组件出货同比增超100%,市监总局开展光伏价格合规指导",
-      "stocks": [
-        {
-          "code": "688530",
-          "name": "欧莱新材",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688147",
-          "name": "微导纳米",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "603045",
-          "name": "福达合金",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "华为手机",
-      "red_level": "一线红",
-      "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "华为Mate90系列9月23日定档首发韬定律麒麟芯片,Mate80累计销量超827万台,国产化率超90%",
-      "stocks": [
-        {
-          "code": "301526",
-          "name": "国际复材",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "688020",
-          "name": "方邦股份",
-          "rps_note": "2线红"
-        },
-        {
-          "code": "603256",
-          "name": "宏和科技",
-          "rps_note": "2线红"
-        }
-      ]
-    },
-    {
-      "name": "TOPCON电池",
-      "red_level": "一线红",
-      "consecutive_days": 1,
-      "d30": 0,
-      "catalyst_summary": "八大硅料龙头签反内卷倡议书承诺不低于成本销售,TOPCon电池片价格企稳回升,2027年4月起征2%消费税",
-      "stocks": [
-        {
-          "code": "688630",
-          "name": "芯碁微装",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "600641",
-          "name": "先导基电",
-          "rps_note": "3线红"
-        },
-        {
-          "code": "300566",
-          "name": "激智科技",
-          "rps_note": "2线红"
-        }
-      ]
     }
   ],
   "new_stocks": [
     {
-      "code": "601872",
-      "name": "招商轮船",
+      "code": "300684",
+      "name": "中石科技",
       "red_level": "三线红",
-      "sector_l3": "航运"
+      "sector_l3": "电子化学品Ⅲ"
     },
     {
-      "code": "688710",
-      "name": "益诺思",
+      "code": "603757",
+      "name": "大元泵业",
       "red_level": "三线红",
-      "sector_l3": "医疗研发外包"
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "688630",
+      "name": "芯碁微装",
+      "red_level": "三线红",
+      "sector_l3": "其他专用设备"
     },
     {
       "code": "688072",
       "name": "拓荆科技",
       "red_level": "三线红",
       "sector_l3": "半导体设备"
-    },
-    {
-      "code": "300857",
-      "name": "协创数据",
-      "red_level": "三线红",
-      "sector_l3": "其他计算机设备"
     },
     {
       "code": "600584",
@@ -2419,34 +2419,22 @@
       "sector_l3": "集成电路制造"
     },
     {
+      "code": "300567",
+      "name": "精测电子",
+      "red_level": "三线红",
+      "sector_l3": "仪器仪表"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "red_level": "三线红",
+      "sector_l3": "其他计算机设备"
+    },
+    {
       "code": "300054",
       "name": "鼎龙股份",
       "red_level": "三线红",
       "sector_l3": "电子化学品Ⅲ"
-    },
-    {
-      "code": "300903",
-      "name": "科翔股份",
-      "red_level": "三线红",
-      "sector_l3": "印制电路板"
-    },
-    {
-      "code": "301377",
-      "name": "鼎泰高科",
-      "red_level": "三线红",
-      "sector_l3": "金属制品"
-    },
-    {
-      "code": "002536",
-      "name": "飞龙股份",
-      "red_level": "三线红",
-      "sector_l3": "底盘与发动机系统"
-    },
-    {
-      "code": "603757",
-      "name": "大元泵业",
-      "red_level": "三线红",
-      "sector_l3": "其他通用设备"
     },
     {
       "code": "603061",
@@ -2461,22 +2449,34 @@
       "sector_l3": "电子化学品Ⅲ"
     },
     {
+      "code": "601872",
+      "name": "招商轮船",
+      "red_level": "三线红",
+      "sector_l3": "航运"
+    },
+    {
       "code": "688766",
       "name": "普冉股份",
       "red_level": "三线红",
       "sector_l3": "数字芯片设计"
     },
     {
-      "code": "688630",
-      "name": "芯碁微装",
+      "code": "002536",
+      "name": "飞龙股份",
       "red_level": "三线红",
-      "sector_l3": "其他专用设备"
+      "sector_l3": "底盘与发动机系统"
     },
     {
-      "code": "300567",
-      "name": "精测电子",
+      "code": "688710",
+      "name": "益诺思",
       "red_level": "三线红",
-      "sector_l3": "仪器仪表"
+      "sector_l3": "医疗研发外包"
+    },
+    {
+      "code": "301377",
+      "name": "鼎泰高科",
+      "red_level": "三线红",
+      "sector_l3": "金属制品"
     },
     {
       "code": "688498",
@@ -2485,52 +2485,34 @@
       "sector_l3": "分立器件"
     },
     {
-      "code": "300684",
-      "name": "中石科技",
+      "code": "300903",
+      "name": "科翔股份",
       "red_level": "三线红",
-      "sector_l3": "电子化学品Ⅲ"
+      "sector_l3": "印制电路板"
     },
     {
-      "code": "002515",
-      "name": "金字火腿",
+      "code": "688679",
+      "name": "通源环境",
       "red_level": "一线红",
-      "sector_l3": "肉制品"
+      "sector_l3": "固废治理"
     },
     {
-      "code": "002651",
-      "name": "利君股份",
+      "code": "301021",
+      "name": "英诺激光",
       "red_level": "一线红",
-      "sector_l3": "航空装备"
+      "sector_l3": "激光设备"
     },
     {
-      "code": "002820",
-      "name": "桂发祥",
+      "code": "688419",
+      "name": "耐科装备",
       "red_level": "一线红",
-      "sector_l3": "休闲食品"
+      "sector_l3": "其他专用设备"
     },
     {
-      "code": "688061",
-      "name": "灿瑞科技",
+      "code": "002601",
+      "name": "龙佰集团",
       "red_level": "一线红",
-      "sector_l3": "模拟芯片设计"
-    },
-    {
-      "code": "600489",
-      "name": "中金黄金",
-      "red_level": "一线红",
-      "sector_l3": "贵金属Ⅲ"
-    },
-    {
-      "code": "600545",
-      "name": "卓郎智能",
-      "red_level": "一线红",
-      "sector_l3": "纺织服装设备"
-    },
-    {
-      "code": "688381",
-      "name": "帝奥微",
-      "red_level": "一线红",
-      "sector_l3": "模拟芯片设计"
+      "sector_l3": "钛白粉"
     },
     {
       "code": "300154",
@@ -2539,70 +2521,22 @@
       "sector_l3": "其他通用设备"
     },
     {
-      "code": "300932",
-      "name": "三友联众",
+      "code": "688767",
+      "name": "博拓生物",
       "red_level": "一线红",
-      "sector_l3": "输变电设备"
-    },
-    {
-      "code": "688456",
-      "name": "有研粉材",
-      "red_level": "一线红",
-      "sector_l3": "其他金属新材料"
+      "sector_l3": "体外诊断"
     },
     {
       "code": "002086",
       "name": "东方海洋",
       "red_level": "一线红",
-      "sector_l3": "其他农产品加工"
+      "sector_l3": "体外诊断"
     },
     {
-      "code": "600497",
-      "name": "驰宏锌锗",
+      "code": "300566",
+      "name": "激智科技",
       "red_level": "一线红",
-      "sector_l3": "铅锌"
-    },
-    {
-      "code": "000603",
-      "name": "盛达资源",
-      "red_level": "一线红",
-      "sector_l3": "铅锌"
-    },
-    {
-      "code": "603657",
-      "name": "春光科技",
-      "red_level": "一线红",
-      "sector_l3": "家电零部件"
-    },
-    {
-      "code": "003033",
-      "name": "征和工业",
-      "red_level": "一线红",
-      "sector_l3": "其他运输设备"
-    },
-    {
-      "code": "301419",
-      "name": "阿莱德",
-      "red_level": "一线红",
-      "sector_l3": "通信网络设备及器件"
-    },
-    {
-      "code": "688584",
-      "name": "上海合晶",
-      "red_level": "一线红",
-      "sector_l3": "半导体材料"
-    },
-    {
-      "code": "688729",
-      "name": "屹唐股份",
-      "red_level": "一线红",
-      "sector_l3": "半导体设备"
-    },
-    {
-      "code": "002329",
-      "name": "皇氏集团",
-      "red_level": "一线红",
-      "sector_l3": "乳品"
+      "sector_l3": "光学元件"
     },
     {
       "code": "605589",
@@ -2611,46 +2545,16 @@
       "sector_l3": "合成树脂"
     },
     {
-      "code": "300508",
-      "name": "维宏股份",
+      "code": "688332",
+      "name": "中科蓝讯",
       "red_level": "一线红",
-      "sector_l3": "其他计算机设备"
+      "sector_l3": "数字芯片设计"
     },
     {
-      "code": "301349",
-      "name": "信德新材",
+      "code": "002651",
+      "name": "利君股份",
       "red_level": "一线红",
-      "sector_l3": "电池化学品"
-    },
-    {
-      "code": "601156",
-      "name": "东航物流",
-      "red_level": "一线红",
-      "sector_l3": "物流Ⅲ"
-    },
-    {
-      "code": "002414",
-      "name": "高德红外",
-      "red_level": "一线红",
-      "sector_l3": "军工电子Ⅲ"
-    },
-    {
-      "code": "688767",
-      "name": "博拓生物",
-      "red_level": "一线红",
-      "sector_l3": "体外诊断"
-    },
-    {
-      "code": "002963",
-      "name": "豪尔赛",
-      "red_level": "一线红",
-      "sector_l3": "装饰园林"
-    },
-    {
-      "code": "600141",
-      "name": "兴发集团",
-      "red_level": "一线红",
-      "sector_l3": "磷肥及磷化工"
+      "sector_l3": "航空装备"
     },
     {
       "code": "301227",
@@ -2659,14 +2563,32 @@
       "sector_l3": "定制家居"
     },
     {
-      "code": "603797",
-      "name": "联泰环保",
+      "code": "603657",
+      "name": "春光科技",
       "red_level": "一线红",
-      "sector_l3": "水务及水治理"
+      "sector_l3": "家电零部件"
     },
     {
-      "code": "688332",
-      "name": "中科蓝讯",
+      "code": "601156",
+      "name": "东航物流",
+      "red_level": "一线红",
+      "sector_l3": "物流Ⅲ"
+    },
+    {
+      "code": "600497",
+      "name": "驰宏锌锗",
+      "red_level": "一线红",
+      "sector_l3": "铅锌"
+    },
+    {
+      "code": "688456",
+      "name": "有研粉材",
+      "red_level": "一线红",
+      "sector_l3": "其他金属新材料"
+    },
+    {
+      "code": "300672",
+      "name": "国科微",
       "red_level": "一线红",
       "sector_l3": "数字芯片设计"
     },
@@ -2675,6 +2597,180 @@
       "name": "紫金矿业",
       "red_level": "一线红",
       "sector_l3": "贵金属Ⅲ"
+    },
+    {
+      "code": "002258",
+      "name": "利尔化学",
+      "red_level": "一线红",
+      "sector_l3": "农药"
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "red_level": "一线红",
+      "sector_l3": "煤化工"
+    },
+    {
+      "code": "688508",
+      "name": "芯朋微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "002329",
+      "name": "皇氏集团",
+      "red_level": "一线红",
+      "sector_l3": "乳品"
+    },
+    {
+      "code": "002820",
+      "name": "桂发祥",
+      "red_level": "一线红",
+      "sector_l3": "休闲食品"
+    },
+    {
+      "code": "600141",
+      "name": "兴发集团",
+      "red_level": "一线红",
+      "sector_l3": "磷肥及磷化工"
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "red_level": "一线红",
+      "sector_l3": "军工电子Ⅲ"
+    },
+    {
+      "code": "300932",
+      "name": "三友联众",
+      "red_level": "一线红",
+      "sector_l3": "输变电设备"
+    },
+    {
+      "code": "301419",
+      "name": "阿莱德",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "300508",
+      "name": "维宏股份",
+      "red_level": "一线红",
+      "sector_l3": "其他计算机设备"
+    },
+    {
+      "code": "688061",
+      "name": "灿瑞科技",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "301358",
+      "name": "湖南裕能",
+      "red_level": "一线红",
+      "sector_l3": "电池化学品"
+    },
+    {
+      "code": "688729",
+      "name": "屹唐股份",
+      "red_level": "一线红",
+      "sector_l3": "半导体设备"
+    },
+    {
+      "code": "301127",
+      "name": "武汉天源",
+      "red_level": "一线红",
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "603082",
+      "name": "北自科技",
+      "red_level": "一线红",
+      "sector_l3": "其他通用设备"
+    },
+    {
+      "code": "002742",
+      "name": "冀衡医药",
+      "red_level": "一线红",
+      "sector_l3": "化学制剂"
+    },
+    {
+      "code": "002668",
+      "name": "TCL智家",
+      "red_level": "一线红",
+      "sector_l3": "冰洗"
+    },
+    {
+      "code": "300570",
+      "name": "太辰光",
+      "red_level": "一线红",
+      "sector_l3": "通信网络设备及器件"
+    },
+    {
+      "code": "603797",
+      "name": "联泰环保",
+      "red_level": "一线红",
+      "sector_l3": "水务及水治理"
+    },
+    {
+      "code": "605028",
+      "name": "世茂能源",
+      "red_level": "一线红",
+      "sector_l3": "热力"
+    },
+    {
+      "code": "600545",
+      "name": "卓郎智能",
+      "red_level": "一线红",
+      "sector_l3": "纺织服装设备"
+    },
+    {
+      "code": "688106",
+      "name": "金宏气体",
+      "red_level": "一线红",
+      "sector_l3": "电子化学品Ⅲ"
+    },
+    {
+      "code": "002028",
+      "name": "思源电气",
+      "red_level": "一线红",
+      "sector_l3": "输变电设备"
+    },
+    {
+      "code": "688381",
+      "name": "帝奥微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "301349",
+      "name": "信德新材",
+      "red_level": "一线红",
+      "sector_l3": "电池化学品"
+    },
+    {
+      "code": "688512",
+      "name": "慧智微",
+      "red_level": "一线红",
+      "sector_l3": "模拟芯片设计"
+    },
+    {
+      "code": "300175",
+      "name": "朗源股份",
+      "red_level": "一线红",
+      "sector_l3": "果蔬加工"
+    },
+    {
+      "code": "301196",
+      "name": "唯科科技",
+      "red_level": "一线红",
+      "sector_l3": "其他塑料制品"
+    },
+    {
+      "code": "600909",
+      "name": "华安证券",
+      "red_level": "一线红",
+      "sector_l3": "证券Ⅲ"
     },
     {
       "code": "603936",
@@ -2689,148 +2785,10 @@
       "sector_l3": "其他家居用品"
     },
     {
-      "code": "000776",
-      "name": "广发证券",
+      "code": "002963",
+      "name": "豪尔赛",
       "red_level": "一线红",
-      "sector_l3": "证券Ⅲ"
-    },
-    {
-      "code": "603132",
-      "name": "金徽股份",
-      "red_level": "一线红",
-      "sector_l3": "铅锌"
-    },
-    {
-      "code": "002742",
-      "name": "冀衡医药",
-      "red_level": "一线红",
-      "sector_l3": "化学制剂"
-    },
-    {
-      "code": "301358",
-      "name": "湖南裕能",
-      "red_level": "一线红",
-      "sector_l3": "电池化学品"
-    },
-    {
-      "code": "300672",
-      "name": "国科微",
-      "red_level": "一线红",
-      "sector_l3": "数字芯片设计"
-    },
-    {
-      "code": "301196",
-      "name": "唯科科技",
-      "red_level": "一线红",
-      "sector_l3": "其他塑料制品"
-    },
-    {
-      "code": "688598",
-      "name": "金博股份",
-      "red_level": "一线红",
-      "sector_l3": "非金属材料Ⅲ"
-    },
-    {
-      "code": "301127",
-      "name": "武汉天源",
-      "red_level": "一线红",
-      "sector_l3": "水务及水治理"
-    },
-    {
-      "code": "002601",
-      "name": "龙佰集团",
-      "red_level": "一线红",
-      "sector_l3": "钛白粉"
-    },
-    {
-      "code": "603369",
-      "name": "今世缘",
-      "red_level": "一线红",
-      "sector_l3": "白酒Ⅲ"
-    },
-    {
-      "code": "688106",
-      "name": "金宏气体",
-      "red_level": "一线红",
-      "sector_l3": "电子化学品Ⅲ"
-    },
-    {
-      "code": "688512",
-      "name": "慧智微",
-      "red_level": "一线红",
-      "sector_l3": "模拟芯片设计"
-    },
-    {
-      "code": "002913",
-      "name": "奥士康",
-      "red_level": "一线红",
-      "sector_l3": "印制电路板"
-    },
-    {
-      "code": "002258",
-      "name": "利尔化学",
-      "red_level": "一线红",
-      "sector_l3": "农药"
-    },
-    {
-      "code": "300566",
-      "name": "激智科技",
-      "red_level": "一线红",
-      "sector_l3": "光学元件"
-    },
-    {
-      "code": "688793",
-      "name": "倍轻松",
-      "red_level": "一线红",
-      "sector_l3": "小家电Ⅲ"
-    },
-    {
-      "code": "300175",
-      "name": "朗源股份",
-      "red_level": "一线红",
-      "sector_l3": "果蔬加工"
-    },
-    {
-      "code": "002668",
-      "name": "TCL智家",
-      "red_level": "一线红",
-      "sector_l3": "冰洗"
-    },
-    {
-      "code": "605028",
-      "name": "世茂能源",
-      "red_level": "一线红",
-      "sector_l3": "热力"
-    },
-    {
-      "code": "301516",
-      "name": "中远通",
-      "red_level": "一线红",
-      "sector_l3": "其他电源设备Ⅲ"
-    },
-    {
-      "code": "688679",
-      "name": "通源环境",
-      "red_level": "一线红",
-      "sector_l3": "固废治理"
-    },
-    {
-      "code": "688419",
-      "name": "耐科装备",
-      "red_level": "一线红",
-      "sector_l3": "其他专用设备"
-    },
-    {
-      "code": "301021",
-      "name": "英诺激光",
-      "red_level": "一线红",
-      "sector_l3": "激光设备"
-    },
-    {
-      "code": "603082",
-      "name": "北自科技",
-      "red_level": "一线红",
-      "sector_l3": "其他通用设备"
+      "sector_l3": "装饰园林"
     },
     {
       "code": "300776",
@@ -2839,34 +2797,76 @@
       "sector_l3": "光伏加工设备"
     },
     {
-      "code": "600722",
-      "name": "金牛化工",
+      "code": "688793",
+      "name": "倍轻松",
       "red_level": "一线红",
-      "sector_l3": "煤化工"
+      "sector_l3": "小家电Ⅲ"
     },
     {
-      "code": "300570",
-      "name": "太辰光",
+      "code": "002515",
+      "name": "金字火腿",
       "red_level": "一线红",
-      "sector_l3": "通信网络设备及器件"
+      "sector_l3": "肉制品"
     },
     {
-      "code": "600909",
-      "name": "华安证券",
+      "code": "603369",
+      "name": "今世缘",
+      "red_level": "一线红",
+      "sector_l3": "白酒Ⅲ"
+    },
+    {
+      "code": "301516",
+      "name": "中远通",
+      "red_level": "一线红",
+      "sector_l3": "其他电源设备Ⅲ"
+    },
+    {
+      "code": "000776",
+      "name": "广发证券",
       "red_level": "一线红",
       "sector_l3": "证券Ⅲ"
     },
     {
-      "code": "002028",
-      "name": "思源电气",
+      "code": "600489",
+      "name": "中金黄金",
       "red_level": "一线红",
-      "sector_l3": "输变电设备"
+      "sector_l3": "贵金属Ⅲ"
     },
     {
-      "code": "688508",
-      "name": "芯朋微",
+      "code": "002913",
+      "name": "奥士康",
       "red_level": "一线红",
-      "sector_l3": "模拟芯片设计"
+      "sector_l3": "印制电路板"
+    },
+    {
+      "code": "603132",
+      "name": "金徽股份",
+      "red_level": "一线红",
+      "sector_l3": "铅锌"
+    },
+    {
+      "code": "003033",
+      "name": "征和工业",
+      "red_level": "一线红",
+      "sector_l3": "其他运输设备"
+    },
+    {
+      "code": "000603",
+      "name": "盛达资源",
+      "red_level": "一线红",
+      "sector_l3": "铅锌"
+    },
+    {
+      "code": "688598",
+      "name": "金博股份",
+      "red_level": "一线红",
+      "sector_l3": "光伏辅材"
+    },
+    {
+      "code": "688584",
+      "name": "上海合晶",
+      "red_level": "一线红",
+      "sector_l3": "半导体材料"
     }
   ]
 }

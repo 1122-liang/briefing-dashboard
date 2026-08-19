@@ -1,24 +1,18 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-17T15:55:35",
-  "count": 9,
+  "updated_at": "2026-08-18T15:58:35",
+  "count": 8,
   "stocks": [
     {
-      "symbol": "SZ300534",
-      "name": "陇神戎发",
+      "symbol": "SZ300313",
+      "name": "天山生物",
       "marketplace": "CN",
-      "watched": "2026-08-17T09:44:46"
+      "watched": "2026-08-18T09:53:41"
     },
     {
       "symbol": "SH603629",
       "name": "利通电子",
       "marketplace": "CN",
       "watched": "2026-08-17T09:33:32"
-    },
-    {
-      "symbol": "SH605179",
-      "name": "一鸣食品",
-      "marketplace": "CN",
-      "watched": "2026-08-17T09:33:26"
     },
     {
       "symbol": "SZ300857",
@@ -59,6 +53,30 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-18",
+    "changes": [
+      {
+        "time": "13:31",
+        "action": "add",
+        "symbol": "SZ300313",
+        "name": "天山生物",
+        "watched": "2026-08-18T09:53:41"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SH605179",
+        "name": "一鸣食品"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      }
+    ]
+  },
   {
     "date": "2026-08-17",
     "changes": [

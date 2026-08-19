@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-18",
+    "changes": [
+      {
+        "time": "13:31",
+        "action": "add",
+        "symbol": "SZ300313",
+        "name": "天山生物",
+        "watched": "2026-08-18T09:53:41"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SH605179",
+        "name": "一鸣食品"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      }
+    ]
+  },
+  {
     "date": "2026-08-17",
     "changes": [
       {

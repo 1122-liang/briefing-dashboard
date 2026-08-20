@@ -1,48 +1,24 @@
 {
-  "updated_at": "2026-08-19T09:10:01",
-  "count": 8,
+  "updated_at": "2026-08-19T15:21:59",
+  "count": 4,
   "stocks": [
     {
-      "symbol": "SZ300313",
-      "name": "天山生物",
+      "symbol": "SZ000703",
+      "name": "恒逸石化",
       "marketplace": "CN",
-      "watched": "2026-08-18T09:53:41"
+      "watched": "2026-08-19T11:24:11"
     },
     {
-      "symbol": "SH603629",
-      "name": "利通电子",
+      "symbol": "SZ002165",
+      "name": "红宝丽",
       "marketplace": "CN",
-      "watched": "2026-08-17T09:33:32"
+      "watched": "2026-08-19T11:05:50"
     },
     {
-      "symbol": "SZ300857",
-      "name": "协创数据",
+      "symbol": "SH600722",
+      "name": "金牛化工",
       "marketplace": "CN",
-      "watched": "2026-08-14T09:27:35"
-    },
-    {
-      "symbol": "SZ301396",
-      "name": "宏景科技",
-      "marketplace": "CN",
-      "watched": "2026-08-13T10:00:07"
-    },
-    {
-      "symbol": "SZ300209",
-      "name": "行云科技",
-      "marketplace": "CN",
-      "watched": "2026-08-13T10:00:01"
-    },
-    {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
-      "marketplace": "CN",
-      "watched": "2026-08-07T09:40:12"
-    },
-    {
-      "symbol": "SH603259",
-      "name": "药明康德",
-      "marketplace": "CN",
-      "watched": "2026-08-07T09:39:44"
+      "watched": "2026-08-19T10:35:24"
     },
     {
       "symbol": "SH600664",

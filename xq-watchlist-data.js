@@ -1,48 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-19T09:10:01",
-  "count": 8,
+  "updated_at": "2026-08-19T15:21:59",
+  "count": 4,
   "stocks": [
     {
-      "symbol": "SZ300313",
-      "name": "天山生物",
+      "symbol": "SZ000703",
+      "name": "恒逸石化",
       "marketplace": "CN",
-      "watched": "2026-08-18T09:53:41"
+      "watched": "2026-08-19T11:24:11"
     },
     {
-      "symbol": "SH603629",
-      "name": "利通电子",
+      "symbol": "SZ002165",
+      "name": "红宝丽",
       "marketplace": "CN",
-      "watched": "2026-08-17T09:33:32"
+      "watched": "2026-08-19T11:05:50"
     },
     {
-      "symbol": "SZ300857",
-      "name": "协创数据",
+      "symbol": "SH600722",
+      "name": "金牛化工",
       "marketplace": "CN",
-      "watched": "2026-08-14T09:27:35"
-    },
-    {
-      "symbol": "SZ301396",
-      "name": "宏景科技",
-      "marketplace": "CN",
-      "watched": "2026-08-13T10:00:07"
-    },
-    {
-      "symbol": "SZ300209",
-      "name": "行云科技",
-      "marketplace": "CN",
-      "watched": "2026-08-13T10:00:01"
-    },
-    {
-      "symbol": "SZ300759",
-      "name": "康龙化成",
-      "marketplace": "CN",
-      "watched": "2026-08-07T09:40:12"
-    },
-    {
-      "symbol": "SH603259",
-      "name": "药明康德",
-      "marketplace": "CN",
-      "watched": "2026-08-07T09:39:44"
+      "watched": "2026-08-19T10:35:24"
     },
     {
       "symbol": "SH600664",
@@ -53,6 +29,87 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-19",
+    "changes": [
+      {
+        "time": "14:46",
+        "action": "remove",
+        "symbol": "SH603629",
+        "name": "利通电子"
+      },
+      {
+        "time": "13:26",
+        "action": "add",
+        "symbol": "SH600722",
+        "name": "金牛化工",
+        "watched": "2026-08-19T10:35:24"
+      },
+      {
+        "time": "13:26",
+        "action": "add",
+        "symbol": "SZ000703",
+        "name": "恒逸石化",
+        "watched": "2026-08-19T11:24:11"
+      },
+      {
+        "time": "13:26",
+        "action": "add",
+        "symbol": "SZ002165",
+        "name": "红宝丽",
+        "watched": "2026-08-19T11:05:50"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SH603259",
+        "name": "药明康德"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SZ300209",
+        "name": "行云科技"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SZ300534",
+        "name": "陇神戎发"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SZ300759",
+        "name": "康龙化成"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SZ300857",
+        "name": "协创数据"
+      },
+      {
+        "time": "13:26",
+        "action": "remove",
+        "symbol": "SZ301396",
+        "name": "宏景科技"
+      },
+      {
+        "time": "09:55",
+        "action": "add",
+        "symbol": "SZ300534",
+        "name": "陇神戎发",
+        "watched": "2026-08-19T09:53:55"
+      },
+      {
+        "time": "09:40",
+        "action": "remove",
+        "symbol": "SZ300313",
+        "name": "天山生物"
+      }
+    ]
+  },
   {
     "date": "2026-08-18",
     "changes": [

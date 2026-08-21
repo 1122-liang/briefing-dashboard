@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T08:42:54.054097+08:00",
+  "window_hours": 24,
+  "total_opportunities": 5,
+  "opportunities": [
+    {
+      "id": "cmt1di48c04vuro1q95i06dby",
+      "title": "阿里发布 Qwen-UI-Agent，让模型真正\"会用\"屏幕",
+      "industry": "AI Agent / 智能体",
+      "type": "行业新方向",
+      "summary": "阿里巴巴推出以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境，目标是让模型真正看懂并操作每一块屏幕。",
+      "investment_logic": "GUI Agent 是智能体从对话交互走向真实任务执行（操作系统/软件/网页）的关键跃迁，代表 Agent 从\"能说\"到\"会做\"的质变。阿里以开源基座模型切入，抢占 Agent 操作系统层的生态入口，将直接拉动云算力消耗与企业自动化（替代 RPA 人工操作）需求。本条 AIHOT 评分最高（72），市场关注度领先。",
+      "target_stocks": "阿里巴巴（BABA/9988.HK）、微软（MSFT）、UiPath（PATH，RPA 向 Agent 转型）、Salesforce（CRM，Agentforce 自动化）",
+      "risk_note": "GUI Agent 尚处早期，商业化落地与安全（误操作/越权）仍待验证；开源竞争激烈（Claude Computer Use、GPT 系列等）。",
+      "source": "IT之家（RSS）"
+    },
+    {
+      "id": "cmt1z1q5n0c93roovlvh40tew",
+      "title": "Claude Platform 上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
+      "industry": "AI Agent 基础设施",
+      "type": "行业新方向",
+      "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
+      "investment_logic": "Agent 工具能力从\"模型层能力\"演进为\"平台化 API\"，标志生产级 Agent 开发进入标准化阶段。Skills/Files API 大幅降低企业构建 Agent 的门槛，直接拉动云计算推理需求与企业软件自动化改造投入。",
+      "target_stocks": "亚马逊（AMZN，AWS 为 Anthropic 核心算力底座与最大投资方）、微软（MSFT）、ServiceNow（NOW，企业 Agent 编排）、Salesforce（CRM）",
+      "risk_note": "Anthropic 未独立上市，投资暴露需经 AWS/云厂商传导；Computer Use 的安全与权限管控是规模化落地的主要障碍。",
+      "source": "Claude：Blog（网页）"
+    },
+    {
+      "id": "cmt1rv5n8066iroovaxgoej1b",
+      "title": "Hugging Face 发布 LFM2.5 DSpark 草稿模型，推理速度最高提升 3.18 倍",
+      "industry": "AI 推理基础设施",
+      "type": "行业瓶颈变化",
+      "summary": "Liquid AI 的 LFM2.5 DSpark 草稿模型通过投机解码，在不改变输出质量下 GPU 吞吐最高提升 3.18 倍、端侧 2.87 倍；2.6B 函数调用延迟平均降低 57%，已开源支持 llama.cpp 与 SGLang。",
+      "investment_logic": "推理效率是 AI 应用放量的核心成本瓶颈。投机解码等加速技术使同等硬件承载更多推理请求、单位 token 成本持续下探，利好推理侧需求爆发与端侧 AI 部署。开源（llama.cpp/SGLang）将加速该技术的生态扩散。",
+      "target_stocks": "英伟达（NVDA）、AMD（AMD）、博通（AVGO，定制推理芯片）、台积电（TSM）",
+      "risk_note": "单 token 成本下降可能短期抑制增量硬件采购预期；投机解码对长尾/复杂推理任务的加速幅度存在差异。",
+      "source": "Hugging Face：Blog（RSS）"
+    },
+    {
+      "id": "cmt1pkwbj04bxroovzkfca5c7",
+      "title": "Mistral 推出 Agentic Search：多步检索提升复杂文档查询准确率",
+      "industry": "企业搜索 / RAG",
+      "type": "行业新方向",
+      "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
+      "investment_logic": "Agentic Search 代表企业知识检索从\"单次向量召回\"升级为\"多步自主检索\"，是 RAG 迈向 Agentic RAG 的产业信号，将推动企业数据基础设施（向量库、搜索、数据接入）的升级需求。",
+      "target_stocks": "Elastic（ESTC）、MongoDB（MDB，向量检索）、Snowflake（SNOW，数据云）、Alphabet（GOOGL）",
+      "risk_note": "Mistral 未上市，需通过可比标的暴露；Agentic Search 对传统搜索/RAG 厂商形成替代压力，并非纯利好。",
+      "source": "Mistral AI：News（网页）"
+    },
+    {
+      "id": "cmt1r7jjh05lgroovc4zwypj6",
+      "title": "AlloyDB ScaNN 将向量搜索扩展到 100 亿向量",
+      "industry": "向量数据库",
+      "type": "行业瓶颈变化",
+      "summary": "Google Cloud AlloyDB 的 ScaNN 索引支持超 100 亿向量，四层树架构将查询复杂度从 O(N^1/2) 降至 O(N^1/4)，内部测试 p95 延迟 ≤51ms、召回率 95%。",
+      "investment_logic": "向量检索规模化（100 亿级）是 RAG 与 Agent 记忆/知识库落地的核心基础设施瓶颈。谷歌将自研 ScaNN 与 AlloyDB 融合，强化云上向量检索的规模-成本优势，对专业向量数据库厂商形成直接竞争压力，利好云原生数据平台整体需求。",
+      "target_stocks": "Alphabet（GOOGL）、MongoDB（MDB）、Elastic（ESTC）、Couchbase（BASE）",
+      "risk_note": "云厂商一体化整合对独立向量数据库（Pinecone/Weaviate）形成挤压；ScaNN 四层树为预览版，生产稳定性待观察。",
+      "source": "Google Cloud：Databases（RSS）"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-08-21.json",
+  "_saved_at": "2026-08-21T08:42:54.054132+08:00"
+}

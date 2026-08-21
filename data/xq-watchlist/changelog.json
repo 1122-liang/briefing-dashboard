@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-08-21",
+    "changes": [
+      {
+        "time": "13:40",
+        "action": "add",
+        "symbol": "SZ301190",
+        "name": "善水科技",
+        "watched": "2026-08-21T13:37:24"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ000603",
+        "name": "盛达资源",
+        "watched": "2026-08-21T10:00:31"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ300214",
+        "name": "日科化学",
+        "watched": "2026-08-21T10:00:25"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ301212",
+        "name": "联盛化学",
+        "watched": "2026-08-20T14:36:44"
+      },
+      {
+        "time": "13:30",
+        "action": "remove",
+        "symbol": "SH600664",
+        "name": "哈药股份"
+      }
+    ]
+  },
+  {
     "date": "2026-08-19",
     "changes": [
       {

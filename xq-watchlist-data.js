@@ -1,7 +1,37 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-19T15:21:59",
-  "count": 4,
+  "updated_at": "2026-08-21T15:59:05",
+  "count": 7,
   "stocks": [
+    {
+      "symbol": "SZ301190",
+      "name": "善水科技",
+      "marketplace": "CN",
+      "watched": "2026-08-21T13:37:24"
+    },
+    {
+      "symbol": "SZ002165",
+      "name": "红宝丽",
+      "marketplace": "CN",
+      "watched": "2026-08-21T11:04:38"
+    },
+    {
+      "symbol": "SZ000603",
+      "name": "盛达资源",
+      "marketplace": "CN",
+      "watched": "2026-08-21T10:00:31"
+    },
+    {
+      "symbol": "SZ300214",
+      "name": "日科化学",
+      "marketplace": "CN",
+      "watched": "2026-08-21T10:00:25"
+    },
+    {
+      "symbol": "SZ301212",
+      "name": "联盛化学",
+      "marketplace": "CN",
+      "watched": "2026-08-20T14:36:44"
+    },
     {
       "symbol": "SZ000703",
       "name": "恒逸石化",
@@ -9,26 +39,53 @@ window.__SNAPSHOT__ = {
       "watched": "2026-08-19T11:24:11"
     },
     {
-      "symbol": "SZ002165",
-      "name": "红宝丽",
-      "marketplace": "CN",
-      "watched": "2026-08-19T11:05:50"
-    },
-    {
       "symbol": "SH600722",
       "name": "金牛化工",
       "marketplace": "CN",
       "watched": "2026-08-19T10:35:24"
-    },
-    {
-      "symbol": "SH600664",
-      "name": "哈药股份",
-      "marketplace": "CN",
-      "watched": "2026-08-06T11:05:18"
     }
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-21",
+    "changes": [
+      {
+        "time": "13:40",
+        "action": "add",
+        "symbol": "SZ301190",
+        "name": "善水科技",
+        "watched": "2026-08-21T13:37:24"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ000603",
+        "name": "盛达资源",
+        "watched": "2026-08-21T10:00:31"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ300214",
+        "name": "日科化学",
+        "watched": "2026-08-21T10:00:25"
+      },
+      {
+        "time": "13:30",
+        "action": "add",
+        "symbol": "SZ301212",
+        "name": "联盛化学",
+        "watched": "2026-08-20T14:36:44"
+      },
+      {
+        "time": "13:30",
+        "action": "remove",
+        "symbol": "SH600664",
+        "name": "哈药股份"
+      }
+    ]
+  },
   {
     "date": "2026-08-19",
     "changes": [

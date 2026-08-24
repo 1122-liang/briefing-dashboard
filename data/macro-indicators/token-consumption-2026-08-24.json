@@ -1,0 +1,164 @@
+{
+  "date": "2026-08-24",
+  "record": {
+    "date": "2026-08-24",
+    "total_weekly_tokens_t": 93.38,
+    "models": [
+      {
+        "rank": 1,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260731",
+        "weekly_tokens_t": 11.58
+      },
+      {
+        "rank": 2,
+        "name": "Ox Alpha",
+        "vendor": "Stealth",
+        "vendor_slug": "stealth",
+        "slug": "stealth/ox-alpha",
+        "weekly_tokens_t": 11.57
+      },
+      {
+        "rank": 3,
+        "name": "Mimo V2.5",
+        "vendor": "Xiaomi",
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "weekly_tokens_t": 9.94
+      },
+      {
+        "rank": 4,
+        "name": "Hy3",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy3-20260706",
+        "weekly_tokens_t": 8.21
+      },
+      {
+        "rank": 5,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "weekly_tokens_t": 5.46
+      },
+      {
+        "rank": 6,
+        "name": "Gpt 5.6 Luna",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-luna-20260709",
+        "weekly_tokens_t": 4.92
+      },
+      {
+        "rank": 7,
+        "name": "Nemotron 3 Ultra 550B A55B",
+        "vendor": "Nvidia",
+        "vendor_slug": "nvidia",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "weekly_tokens_t": 4.79
+      },
+      {
+        "rank": 8,
+        "name": "Glm 5.2",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.2-20260616",
+        "weekly_tokens_t": 3.43
+      },
+      {
+        "rank": 9,
+        "name": "Deepseek V4 Pro",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-pro-20260423",
+        "weekly_tokens_t": 1.85
+      },
+      {
+        "rank": 10,
+        "name": "Gemini 3.7 Flash",
+        "vendor": "Google",
+        "vendor_slug": "google",
+        "slug": "google/gemini-3.7-flash-20260813",
+        "weekly_tokens_t": 1.81
+      },
+      {
+        "rank": 11,
+        "name": "Minimax M3",
+        "vendor": "MiniMax",
+        "vendor_slug": "minimax",
+        "slug": "minimax/minimax-m3-20260531",
+        "weekly_tokens_t": 1.7
+      },
+      {
+        "rank": 12,
+        "name": "Laguna S 2.1",
+        "vendor": "Poolside",
+        "vendor_slug": "poolside",
+        "slug": "poolside/laguna-s-2.1-20260720",
+        "weekly_tokens_t": 1.66
+      },
+      {
+        "rank": 13,
+        "name": "Claude Opus 5",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-opus-5-20260723",
+        "weekly_tokens_t": 1.46
+      },
+      {
+        "rank": 14,
+        "name": "Kimi K3",
+        "vendor": "MoonshotAI",
+        "vendor_slug": "moonshotai",
+        "slug": "moonshotai/kimi-k3-20260715",
+        "weekly_tokens_t": 1.32
+      },
+      {
+        "rank": 15,
+        "name": "Gpt 5.6 Sol",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-sol-20260709",
+        "weekly_tokens_t": 1.32
+      }
+    ],
+    "data_source": "openrouter-api",
+    "openrouter_models_count": 422,
+    "data_dates": [
+      "2026-08-17",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23"
+    ]
+  },
+  "growth": {
+    "has_growth_data": true,
+    "week_change_t": 24.33,
+    "week_growth_pct": 35.24,
+    "ma4_growth_pct": 39.91,
+    "growth_trend": "波动",
+    "trend_icon": "📊",
+    "total_records": 8
+  },
+  "vendor_share": {
+    "DeepSeek": 26.6,
+    "Stealth": 16.3,
+    "Xiaomi": 14.0,
+    "Tencent": 11.6,
+    "OpenAI": 8.8,
+    "Nvidia": 6.7,
+    "Z-AI": 4.8,
+    "Google": 2.5,
+    "MiniMax": 2.4,
+    "Poolside": 2.3,
+    "Anthropic": 2.1,
+    "MoonshotAI": 1.9
+  },
+  "data_source": "OpenRouter Rankings",
+  "generated_at": "2026-08-24T10:06:48.237132+08:00"
+}

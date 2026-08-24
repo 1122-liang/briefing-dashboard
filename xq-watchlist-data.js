@@ -1,42 +1,48 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-24T09:11:06",
-  "count": 7,
+  "updated_at": "2026-08-24T14:29:56",
+  "count": 8,
   "stocks": [
     {
-      "symbol": "SZ301190",
-      "name": "善水科技",
+      "symbol": "SZ000603",
+      "name": "盛达资源",
       "marketplace": "CN",
-      "watched": "2026-08-21T13:37:24"
+      "watched": "2026-08-24T14:04:27"
     },
     {
       "symbol": "SZ002165",
       "name": "红宝丽",
       "marketplace": "CN",
-      "watched": "2026-08-21T11:04:38"
+      "watched": "2026-08-24T13:17:20"
     },
     {
-      "symbol": "SZ000603",
-      "name": "盛达资源",
+      "symbol": "SZ300313",
+      "name": "天山生物",
       "marketplace": "CN",
-      "watched": "2026-08-21T10:00:31"
+      "watched": "2026-08-24T10:36:59"
     },
     {
-      "symbol": "SZ300214",
-      "name": "日科化学",
+      "symbol": "SZ300139",
+      "name": "晓程科技",
       "marketplace": "CN",
-      "watched": "2026-08-21T10:00:25"
+      "watched": "2026-08-24T09:58:34"
     },
     {
-      "symbol": "SZ301212",
-      "name": "联盛化学",
+      "symbol": "SZ000723",
+      "name": "美锦能源",
       "marketplace": "CN",
-      "watched": "2026-08-20T14:36:44"
+      "watched": "2026-08-24T09:53:59"
     },
     {
-      "symbol": "SZ000703",
-      "name": "恒逸石化",
+      "symbol": "SZ000506",
+      "name": "招金黄金",
       "marketplace": "CN",
-      "watched": "2026-08-19T11:24:11"
+      "watched": "2026-08-24T09:52:47"
+    },
+    {
+      "symbol": "SH600403",
+      "name": "大有能源",
+      "marketplace": "CN",
+      "watched": "2026-08-24T09:40:55"
     },
     {
       "symbol": "SH600722",
@@ -47,6 +53,109 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-24",
+    "changes": [
+      {
+        "time": "14:04",
+        "action": "add",
+        "symbol": "SZ000603",
+        "name": "盛达资源",
+        "watched": "2026-08-24T14:04:27"
+      },
+      {
+        "time": "13:34",
+        "action": "add",
+        "symbol": "SZ002165",
+        "name": "红宝丽",
+        "watched": "2026-08-24T13:17:20"
+      },
+      {
+        "time": "13:34",
+        "action": "remove",
+        "symbol": "SZ000603",
+        "name": "盛达资源"
+      },
+      {
+        "time": "13:34",
+        "action": "remove",
+        "symbol": "SZ301190",
+        "name": "善水科技"
+      },
+      {
+        "time": "10:41",
+        "action": "add",
+        "symbol": "SZ300313",
+        "name": "天山生物",
+        "watched": "2026-08-24T10:36:59"
+      },
+      {
+        "time": "10:36",
+        "action": "remove",
+        "symbol": "SH600506",
+        "name": "统一股份"
+      },
+      {
+        "time": "10:01",
+        "action": "add",
+        "symbol": "SZ300139",
+        "name": "晓程科技",
+        "watched": "2026-08-24T09:58:34"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SZ301212",
+        "name": "联盛化学"
+      },
+      {
+        "time": "09:56",
+        "action": "add",
+        "symbol": "SZ000506",
+        "name": "招金黄金",
+        "watched": "2026-08-24T09:52:47"
+      },
+      {
+        "time": "09:56",
+        "action": "add",
+        "symbol": "SZ000723",
+        "name": "美锦能源",
+        "watched": "2026-08-24T09:53:59"
+      },
+      {
+        "time": "09:56",
+        "action": "remove",
+        "symbol": "SZ000703",
+        "name": "恒逸石化"
+      },
+      {
+        "time": "09:56",
+        "action": "remove",
+        "symbol": "SZ002165",
+        "name": "红宝丽"
+      },
+      {
+        "time": "09:41",
+        "action": "add",
+        "symbol": "SH600403",
+        "name": "大有能源",
+        "watched": "2026-08-24T09:40:55"
+      },
+      {
+        "time": "09:41",
+        "action": "add",
+        "symbol": "SH600506",
+        "name": "统一股份",
+        "watched": "2026-08-24T09:39:31"
+      },
+      {
+        "time": "09:26",
+        "action": "remove",
+        "symbol": "SZ300214",
+        "name": "日科化学"
+      }
+    ]
+  },
   {
     "date": "2026-08-21",
     "changes": [

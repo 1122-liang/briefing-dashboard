@@ -1,0 +1,147 @@
+{
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T15:00:44.286141+08:00",
+  "runs": [
+    {
+      "time": "15:00",
+      "generated_at": "2026-08-25T15:00:44.286141+08:00",
+      "stocks": [
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 33.68,
+          "deviation_pct": 7.7,
+          "threshold_pct": 43.7,
+          "trigger_price": 48.4,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 158.6,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "very_high",
+          "valuation": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 23.24,
+          "deviation_pct": -4.4,
+          "threshold_pct": 46.0,
+          "trigger_price": 33.94,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 11.19,
+          "deviation_pct": 3.6,
+          "threshold_pct": 29.5,
+          "trigger_price": 14.49,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "巨化股份",
+          "code": "600160",
+          "price": 37.92,
+          "deviation_pct": -5.2,
+          "threshold_pct": 46.3,
+          "trigger_price": 55.49,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "川恒股份",
+          "code": "002895",
+          "price": 32.1,
+          "deviation_pct": -4.1,
+          "threshold_pct": 75.4,
+          "trigger_price": 56.31,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "三美股份",
+          "code": "603379",
+          "price": 59.52,
+          "deviation_pct": -6.7,
+          "threshold_pct": 45.0,
+          "trigger_price": 86.32,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "云天化",
+          "code": "600096",
+          "price": 29.78,
+          "deviation_pct": -5.2,
+          "threshold_pct": 66.3,
+          "trigger_price": 49.52,
+          "status": "normal",
+          "valuation": null
+        },
+        {
+          "name": "药明康德",
+          "code": "603259",
+          "price": 161.0,
+          "deviation_pct": 29.9,
+          "threshold_pct": 42.2,
+          "trigger_price": 228.89,
+          "status": "normal",
+          "valuation": null
+        }
+      ],
+      "gold_rr": {
+        "spot": 4639.5,
+        "spot_change_pct": -0.28,
+        "data_time": "2026-08-25 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": 1.03,
+            "daily_change": -1.13,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "1M",
+            "rr": 1.33,
+            "daily_change": -0.59,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "3M",
+            "rr": 1.43,
+            "daily_change": -0.23,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "6M",
+            "rr": 1.36,
+            "daily_change": -0.11,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "9M",
+            "rr": 1.29,
+            "daily_change": -0.08,
+            "signal": "偏多📈"
+          },
+          {
+            "period": "1Y",
+            "rr": 1.24,
+            "daily_change": -0.06,
+            "signal": "偏多📈"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-08-25-1500.json",
+  "_saved_at": "2026-08-25T15:00:44.286568+08:00"
+}

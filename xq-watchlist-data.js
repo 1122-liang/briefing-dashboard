@@ -1,48 +1,78 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-24T14:29:56",
-  "count": 8,
+  "updated_at": "2026-08-27T15:57:54",
+  "count": 13,
   "stocks": [
     {
-      "symbol": "SZ000603",
-      "name": "盛达资源",
+      "symbol": "SZ000703",
+      "name": "恒逸石化",
       "marketplace": "CN",
-      "watched": "2026-08-24T14:04:27"
+      "watched": "2026-08-27T13:27:16"
     },
     {
-      "symbol": "SZ002165",
-      "name": "红宝丽",
+      "symbol": "SH603395",
+      "name": "红四方",
       "marketplace": "CN",
-      "watched": "2026-08-24T13:17:20"
+      "watched": "2026-08-27T13:19:24"
     },
     {
       "symbol": "SZ300313",
       "name": "天山生物",
       "marketplace": "CN",
-      "watched": "2026-08-24T10:36:59"
+      "watched": "2026-08-27T13:14:14"
     },
     {
-      "symbol": "SZ300139",
-      "name": "晓程科技",
+      "symbol": "SZ002165",
+      "name": "红宝丽",
       "marketplace": "CN",
-      "watched": "2026-08-24T09:58:34"
+      "watched": "2026-08-27T11:08:20"
     },
     {
-      "symbol": "SZ000723",
-      "name": "美锦能源",
+      "symbol": "SZ300927",
+      "name": "江天化学",
       "marketplace": "CN",
-      "watched": "2026-08-24T09:53:59"
+      "watched": "2026-08-27T10:02:52"
     },
     {
       "symbol": "SZ000506",
       "name": "招金黄金",
       "marketplace": "CN",
-      "watched": "2026-08-24T09:52:47"
+      "watched": "2026-08-27T10:01:58"
     },
     {
-      "symbol": "SH600403",
-      "name": "大有能源",
+      "symbol": "SZ300333",
+      "name": "兆日科技",
       "marketplace": "CN",
-      "watched": "2026-08-24T09:40:55"
+      "watched": "2026-08-27T09:47:29"
+    },
+    {
+      "symbol": "SH600127",
+      "name": "金健米业",
+      "marketplace": "CN",
+      "watched": "2026-08-27T09:41:08"
+    },
+    {
+      "symbol": "SH601118",
+      "name": "海南橡胶",
+      "marketplace": "CN",
+      "watched": "2026-08-26T14:25:47"
+    },
+    {
+      "symbol": "SH600362",
+      "name": "江西铜业",
+      "marketplace": "CN",
+      "watched": "2026-08-26T10:25:13"
+    },
+    {
+      "symbol": "SZ000603",
+      "name": "盛达资源",
+      "marketplace": "CN",
+      "watched": "2026-08-26T10:08:35"
+    },
+    {
+      "symbol": "SZ003040",
+      "name": "楚天龙",
+      "marketplace": "CN",
+      "watched": "2026-08-25T09:43:58"
     },
     {
       "symbol": "SH600722",
@@ -53,6 +83,176 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-27",
+    "changes": [
+      {
+        "time": "13:35",
+        "action": "add",
+        "symbol": "SH603395",
+        "name": "红四方",
+        "watched": "2026-08-27T13:19:24"
+      },
+      {
+        "time": "13:35",
+        "action": "add",
+        "symbol": "SZ000703",
+        "name": "恒逸石化",
+        "watched": "2026-08-27T13:27:16"
+      },
+      {
+        "time": "13:35",
+        "action": "add",
+        "symbol": "SZ300313",
+        "name": "天山生物",
+        "watched": "2026-08-27T13:14:14"
+      },
+      {
+        "time": "13:35",
+        "action": "remove",
+        "symbol": "SH600610",
+        "name": "中毅达"
+      },
+      {
+        "time": "13:35",
+        "action": "remove",
+        "symbol": "SH601899",
+        "name": "紫金矿业"
+      },
+      {
+        "time": "13:35",
+        "action": "remove",
+        "symbol": "SH603993",
+        "name": "洛阳钼业"
+      },
+      {
+        "time": "11:11",
+        "action": "add",
+        "symbol": "SZ002165",
+        "name": "红宝丽",
+        "watched": "2026-08-27T11:08:20"
+      },
+      {
+        "time": "10:36",
+        "action": "remove",
+        "symbol": "SH600227",
+        "name": "赤天化"
+      },
+      {
+        "time": "10:06",
+        "action": "add",
+        "symbol": "SZ000506",
+        "name": "招金黄金",
+        "watched": "2026-08-27T10:01:58"
+      },
+      {
+        "time": "10:06",
+        "action": "add",
+        "symbol": "SZ300927",
+        "name": "江天化学",
+        "watched": "2026-08-27T10:02:52"
+      },
+      {
+        "time": "09:51",
+        "action": "add",
+        "symbol": "SZ300333",
+        "name": "兆日科技",
+        "watched": "2026-08-27T09:47:29"
+      },
+      {
+        "time": "09:46",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-08-27T09:41:08"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH600227",
+        "name": "赤天化",
+        "watched": "2026-08-26T09:50:47"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH600362",
+        "name": "江西铜业",
+        "watched": "2026-08-26T10:25:13"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH600610",
+        "name": "中毅达",
+        "watched": "2026-08-26T14:14:53"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH601118",
+        "name": "海南橡胶",
+        "watched": "2026-08-26T14:25:47"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH601899",
+        "name": "紫金矿业",
+        "watched": "2026-08-26T10:23:55"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SH603993",
+        "name": "洛阳钼业",
+        "watched": "2026-08-26T14:00:35"
+      },
+      {
+        "time": "09:15",
+        "action": "add",
+        "symbol": "SZ003040",
+        "name": "楚天龙",
+        "watched": "2026-08-25T09:43:58"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SH600403",
+        "name": "大有能源"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SZ000723",
+        "name": "美锦能源"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SZ002165",
+        "name": "红宝丽"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SZ300139",
+        "name": "晓程科技"
+      },
+      {
+        "time": "09:15",
+        "action": "remove",
+        "symbol": "SZ300313",
+        "name": "天山生物"
+      }
+    ]
+  },
   {
     "date": "2026-08-24",
     "changes": [

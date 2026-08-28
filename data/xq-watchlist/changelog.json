@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-08-28",
+    "changes": [
+      {
+        "time": "10:42",
+        "action": "add",
+        "symbol": "SH600354",
+        "name": "敦煌种业",
+        "watched": "2026-08-28T10:41:06"
+      },
+      {
+        "time": "10:42",
+        "action": "add",
+        "symbol": "SZ000713",
+        "name": "国投丰乐",
+        "watched": "2026-08-28T10:41:13"
+      },
+      {
+        "time": "10:37",
+        "action": "add",
+        "symbol": "SH601212",
+        "name": "白银有色",
+        "watched": "2026-08-28T10:35:33"
+      },
+      {
+        "time": "10:32",
+        "action": "add",
+        "symbol": "SZ000506",
+        "name": "招金黄金",
+        "watched": "2026-08-28T10:30:59"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ003040",
+        "name": "楚天龙"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ000059",
+        "name": "华锦股份",
+        "watched": "2026-08-28T09:33:46"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SZ300333",
+        "name": "兆日科技"
+      }
+    ]
+  },
+  {
     "date": "2026-08-27",
     "changes": [
       {

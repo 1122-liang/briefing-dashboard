@@ -1,7 +1,37 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-28T09:09:14",
-  "count": 13,
+  "updated_at": "2026-08-28T15:02:22",
+  "count": 15,
   "stocks": [
+    {
+      "symbol": "SZ000713",
+      "name": "国投丰乐",
+      "marketplace": "CN",
+      "watched": "2026-08-28T10:41:13"
+    },
+    {
+      "symbol": "SH600354",
+      "name": "敦煌种业",
+      "marketplace": "CN",
+      "watched": "2026-08-28T10:41:06"
+    },
+    {
+      "symbol": "SH601212",
+      "name": "白银有色",
+      "marketplace": "CN",
+      "watched": "2026-08-28T10:35:33"
+    },
+    {
+      "symbol": "SZ000506",
+      "name": "招金黄金",
+      "marketplace": "CN",
+      "watched": "2026-08-28T10:30:59"
+    },
+    {
+      "symbol": "SZ000059",
+      "name": "华锦股份",
+      "marketplace": "CN",
+      "watched": "2026-08-28T09:33:46"
+    },
     {
       "symbol": "SZ000703",
       "name": "恒逸石化",
@@ -33,18 +63,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-08-27T10:02:52"
     },
     {
-      "symbol": "SZ000506",
-      "name": "招金黄金",
-      "marketplace": "CN",
-      "watched": "2026-08-27T10:01:58"
-    },
-    {
-      "symbol": "SZ300333",
-      "name": "兆日科技",
-      "marketplace": "CN",
-      "watched": "2026-08-27T09:47:29"
-    },
-    {
       "symbol": "SH600127",
       "name": "金健米业",
       "marketplace": "CN",
@@ -69,12 +87,6 @@ window.__SNAPSHOT__ = {
       "watched": "2026-08-26T10:08:35"
     },
     {
-      "symbol": "SZ003040",
-      "name": "楚天龙",
-      "marketplace": "CN",
-      "watched": "2026-08-25T09:43:58"
-    },
-    {
       "symbol": "SH600722",
       "name": "金牛化工",
       "marketplace": "CN",
@@ -83,6 +95,64 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-28",
+    "changes": [
+      {
+        "time": "10:42",
+        "action": "add",
+        "symbol": "SH600354",
+        "name": "敦煌种业",
+        "watched": "2026-08-28T10:41:06"
+      },
+      {
+        "time": "10:42",
+        "action": "add",
+        "symbol": "SZ000713",
+        "name": "国投丰乐",
+        "watched": "2026-08-28T10:41:13"
+      },
+      {
+        "time": "10:37",
+        "action": "add",
+        "symbol": "SH601212",
+        "name": "白银有色",
+        "watched": "2026-08-28T10:35:33"
+      },
+      {
+        "time": "10:32",
+        "action": "add",
+        "symbol": "SZ000506",
+        "name": "招金黄金",
+        "watched": "2026-08-28T10:30:59"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ003040",
+        "name": "楚天龙"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ000059",
+        "name": "华锦股份",
+        "watched": "2026-08-28T09:33:46"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SZ300333",
+        "name": "兆日科技"
+      }
+    ]
+  },
   {
     "date": "2026-08-27",
     "changes": [

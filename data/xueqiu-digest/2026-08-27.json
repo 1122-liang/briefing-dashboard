@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-27",
+  "generated_at": "2026-08-28T00:55:12.092618+08:00",
+  "total_following": 0,
+  "total_users": 0,
+  "active_users": 0,
+  "total_posts": 0,
+  "filtered_posts": 0,
+  "categories": {},
+  "top_posts": [],
+  "analysis": null,
+  "posts_analysis": null,
+  "time_range": {
+    "from": "2026-08-26 23:06",
+    "to": "2026-08-28 00:55"
+  },
+  "today_topics_count": 4,
+  "today_topics": [
+    {
+      "id": "406908824",
+      "title": "中报雷声里，如何分辨“主动摔跤”与“被动挨打”",
+      "url": "https://xueqiu.com/7271353740/406908824",
+      "image": "https://xqimg.imedao.com/14a051dd37d123fe9af00adc.jpg!540x280.png",
+      "created_at_str": "2026-08-27 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "406902072",
+      "title": "2026年→2027年黄金股选股逻辑（简要版）",
+      "url": "https://xueqiu.com/7448161277/406902072",
+      "image": "https://xqimg.imedao.com/14657b8f0b44b3fe20cc0c90.jpg!160x120.png",
+      "created_at_str": "2026-08-27 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "406774837",
+      "title": "VLCC队伍中200条黑船去哪儿了？",
+      "url": "https://www.xueqiu.com/7630243390/406774837",
+      "image": "https://xqimg.imedao.com/14a2d41cfc2103fc0252be45.jpg!160x120.png",
+      "created_at_str": "2026-08-27 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "406775326",
+      "title": "伊利正在尝试用一种新的方式获得增长：2026H2伊利财报解读",
+      "url": "https://www.xueqiu.com/5690576263/406775326",
+      "image": "https://xqimg.imedao.com/14acc15bf61113fece7427a1.jpg!160x120.png",
+      "created_at_str": "2026-08-27 21:05",
+      "source": "今日话题",
+      "content": "",
+      "summary": "",
+      "content_available": false,
+      "user_name": "",
+      "like_count": 0,
+      "reply_count": 0
+    }
+  ],
+  "_filename": "2026-08-27.json",
+  "_saved_at": "2026-08-28T00:55:12.092895+08:00"
+}

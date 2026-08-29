@@ -1,5 +1,18 @@
 {
-  "records": [
+  "date": "2026-08-29",
+  "analysis": {
+    "latest_date": "2026-07-01",
+    "latest_value": 55.2,
+    "prev_date": "2026-06-01",
+    "prev_value": 49.5,
+    "change": 5.7,
+    "change_pct": 11.52,
+    "trend": "上升",
+    "trend_icon": "📈",
+    "level": "悲观",
+    "level_icon": "😟"
+  },
+  "data": [
     {
       "date": "2025-08-01",
       "value": 58.2
@@ -49,5 +62,6 @@
       "value": 55.2
     }
   ],
-  "last_checked": "2026-08-29T00:30:25.891137+08:00"
+  "data_source": "FRED (UMCSENT)",
+  "generated_at": "2026-08-29T00:30:25.888204+08:00"
 }

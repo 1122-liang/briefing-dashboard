@@ -11,6 +11,7 @@
     "token-consumption-2026-06-22.json",
     "token-consumption-2026-06-15.json",
     "token-consumption-2026-06-08.json",
+    "michigan-sentiment-2026-08-29.json",
     "michigan-sentiment-2026-08-11.json",
     "michigan-sentiment-2026-06-27.json",
     "michigan-sentiment-2026-06-08.json",
@@ -20,5 +21,5 @@
     "ai-capex-2026-07-01.json",
     "ai-capex-2026-06-08.json"
   ],
-  "last_updated": "2026-08-24T09:50:43.068530+08:00"
+  "last_updated": "2026-08-29T00:30:25.894589+08:00"
 }

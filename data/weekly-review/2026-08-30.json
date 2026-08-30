@@ -1,0 +1,57 @@
+{
+  "period": "08/24-08/30",
+  "total_hours": 16.0,
+  "projects": [
+    {
+      "name": "日常自动化运维",
+      "hours": 7.0,
+      "files": 0,
+      "summary": "12个自动化全链路运转:RPS+盘后主线+雪球摘要+新闻研报+AIHOT+偏离度+双站点部署",
+      "efficiency": "high",
+      "issues": "RPS快照08-24/25缺失;雪球cookie08-30过期"
+    },
+    {
+      "name": "智汇研研报总结+详细摘要",
+      "hours": 4.0,
+      "files": 6,
+      "summary": "连续4天处理入库研报输出日报,3天点名详细摘要(27篇/13篇/6只)",
+      "efficiency": "medium",
+      "issues": "每日需用户点名详细摘要,存在重复交互"
+    },
+    {
+      "name": "RPS故障修复与数据补算",
+      "hours": 2.5,
+      "files": 1,
+      "summary": "修复tushare token过期+UnboundLocalError,补齐08-24/25/26三日数据",
+      "efficiency": "medium",
+      "issues": "token硬编码无过期预警;脚本分支变量未初始化"
+    },
+    {
+      "name": "雪球生态维护",
+      "hours": 1.5,
+      "files": 0,
+      "summary": "关注人摘要6/6成功;自选股监控cookie过期告警",
+      "efficiency": "high",
+      "issues": "08-26登录态失效与08-30 cookie过期分散处理"
+    },
+    {
+      "name": "股票池扩展",
+      "hours": 1.0,
+      "files": 2,
+      "summary": "新增赣锋锂业/天华新能/中矿资源,股票池9→12只",
+      "efficiency": "medium",
+      "issues": "LI_MODEL_MAP映射遗漏中矿资源(三处联动缺checklist)"
+    }
+  ],
+  "files_created": 15,
+  "automation_runs": 63,
+  "suggestions": [
+    "P0: tushare token冒烟测试+过期告警,运行前验证一次API",
+    "P0: 自动化健康监控,每日校验RPS快照连续性,缺失即企微告警",
+    "P1: 股票池扩展checklist化,新增标的自动校验LI_MODEL_MAP映射完整性",
+    "P1: 雪球登录态统一管理,关注人摘要+自选股监控共享cookie状态",
+    "P2: 研报详细摘要点名流程模板化,减少每日重复交互"
+  ],
+  "_filename": "2026-08-30.json",
+  "_saved_at": "2026-08-30T20:03:26.945820+08:00"
+}

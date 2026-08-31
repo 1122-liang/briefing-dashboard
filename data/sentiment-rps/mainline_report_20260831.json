@@ -1,0 +1,3279 @@
+{
+ "date": "20260831",
+ "summary": "农业/粮食安全主线延续但边际降温(其他养殖11天/玉米·粮食概念·转基因·种子生产10天/粮油加工9天)，有色金属全线退潮(贵金属Ⅲ7天/金属铅锌6天=一键清仓信号)；科技电子强势回归(CPO/PCB/富士康/液冷/AI手机等13个弱转强回池)，英伟达Q2业绩+AI终端补贴双催化；地产链(828新政)与AI应用(智谱/AIGC)新方向崛起",
+ "main_themes": [
+  {
+   "entity_type": "sector",
+   "name": "其他养殖",
+   "consecutive_days": 11,
+   "d30": 11,
+   "d120": 11,
+   "d250": 11,
+   "trend": "up",
+   "analysis": "连续在池11天↑，主线已确立。催化: 8月10日鸡猪共振爆发, 白羽鸡祖代引种断档+生猪产能去化近政策目标, 畜牧养殖指数涨3.19%",
+   "key_stocks": [
+    {
+     "code": "002321",
+     "name": "华英农业",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "种子生产",
+   "consecutive_days": 10,
+   "d30": 10,
+   "d120": 10,
+   "d250": 10,
+   "trend": "up",
+   "analysis": "连续在池10天↑，主线已确立。催化: 🔴 8/18种业板块涨13.5%, 超强厄尔尼诺叠加粮食危机预警, 转基因玉米种植2026年有望破8000万亩",
+   "key_stocks": [
+    {
+     "code": "600371",
+     "name": "万向德农",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600354",
+     "name": "敦煌种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "300189",
+     "name": "神农种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600313",
+     "name": "农发种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "002041",
+     "name": "登海种业",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "玉米",
+   "consecutive_days": 10,
+   "d30": 14,
+   "d120": 18,
+   "d250": 25,
+   "trend": "up",
+   "analysis": "连续在池10天↑，主线已确立。催化: 🔴 全球玉米产需缺口扩大至1941万吨，USDA下调产量预期，国内玉米价格创近年新高",
+   "key_stocks": [
+    {
+     "code": "600127",
+     "name": "金健米业",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "600371",
+     "name": "万向德农",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600354",
+     "name": "敦煌种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "300189",
+     "name": "神农种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "002100",
+     "name": "天康生物",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "粮食概念",
+   "consecutive_days": 10,
+   "d30": 12,
+   "d120": 15,
+   "d250": 20,
+   "trend": "up",
+   "analysis": "连续在池10天↑，主线已确立。催化: 🔴 摩根大通预警粮食危机，FAO食品价格指数创三年新高，赣湘豫密集启动托市收购，四大主粮价格触底回升",
+   "key_stocks": [
+    {
+     "code": "600127",
+     "name": "金健米业",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "600371",
+     "name": "万向德农",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600354",
+     "name": "敦煌种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000716",
+     "name": "黑芝麻",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600540",
+     "name": "新赛股份",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "转基因",
+   "consecutive_days": 10,
+   "d30": 10,
+   "d120": 12,
+   "d250": 19,
+   "trend": "up",
+   "analysis": "连续在池10天↑，主线已确立。催化: 🔴 转基因商业化加速，2026年种植面积突破8000万亩扩展至13省，全国160个转基因玉米品种过审",
+   "key_stocks": [
+    {
+     "code": "600371",
+     "name": "万向德农",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600354",
+     "name": "敦煌种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "300189",
+     "name": "神农种业",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000505",
+     "name": "京粮控股",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600313",
+     "name": "农发种业",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "粮油加工",
+   "consecutive_days": 9,
+   "d30": 9,
+   "d120": 9,
+   "d250": 9,
+   "trend": "up",
+   "analysis": "连续在池9天↑，主线已确立。催化: 金龙鱼H1净利22.94亿同比增30.69%,粮油龙头量价齐升;粮食危机预期升温糖价上涨",
+   "key_stocks": [
+    {
+     "code": "600127",
+     "name": "金健米业",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000505",
+     "name": "京粮控股",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000019",
+     "name": "深粮控股",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "其他种植业",
+   "consecutive_days": 4,
+   "d30": 10,
+   "d120": 16,
+   "d250": 20,
+   "trend": "up",
+   "analysis": "连续在池4天↑，形成中。催化: 🔴 8/18种植业板块涨9.5%, 摩根大通预警全球粮食危机叠加超强厄尔尼诺, 粮价中枢抬升",
+   "key_stocks": [
+    {
+     "code": "600540",
+     "name": "新赛股份",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600359",
+     "name": "新农开发",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "603336",
+     "name": "宏辉果蔬",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "氮肥",
+   "consecutive_days": 4,
+   "d30": 6,
+   "d120": 14,
+   "d250": 30,
+   "trend": "up",
+   "analysis": "连续在池4天↑，形成中。催化: 🔴 4月中东尿素价从500涨至850美元+75%，6月回落36%，地缘冲突驱动化肥板块剧烈波动",
+   "key_stocks": [
+    {
+     "code": "600227",
+     "name": "赤天化",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000912",
+     "name": "泸天化",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600691",
+     "name": "潞化科技",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000731",
+     "name": "四川美丰",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "海洋捕捞",
+   "consecutive_days": 4,
+   "d30": 4,
+   "d120": 6,
+   "d250": 20,
+   "trend": "up",
+   "analysis": "连续在池4天↑，形成中。催化: 7-8月 四部门发文支持远洋渔业基地建设，中水渔业上半年净利增18.6%，海洋捕捞纳入十五五重点扶持清单",
+   "key_stocks": [
+    {
+     "code": "000798",
+     "name": "中水渔业",
+     "rps_note": "1线红"
+    }
+   ]
+  }
+ ],
+ "declining": [
+  {
+   "entity_type": "concept",
+   "name": "中韩自贸区",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 3,
+   "d120": 3,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "乡村振兴",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "乳业",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 13,
+   "d120": 18,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "俄乌冲突概念",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 2,
+   "d120": 6,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "养鸡",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 11,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "农村电商",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 3,
+   "d120": 3,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "土地流转",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 5,
+   "d120": 7,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "大豆",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 7,
+   "d120": 7,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "染料",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "水泥概念",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "煤化工概念",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 3,
+   "d120": 8,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "煤炭概念",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 7,
+   "d120": 28,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "物业管理",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "猪肉",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 3,
+   "d120": 17,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "生态农业",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 4,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "磷化工",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 11,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "草甘膦",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 5,
+   "d120": 7,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "金属铅",
+   "consecutive_days": 0,
+   "prev_consecutive": 6,
+   "d30": 11,
+   "d120": 11,
+   "analysis": "昨日在池(连续6天)今日退出, 成分股全线退潮",
+   "reason": "一键清仓信号"
+  },
+  {
+   "entity_type": "concept",
+   "name": "金属锌",
+   "consecutive_days": 0,
+   "prev_consecutive": 6,
+   "d30": 11,
+   "d120": 11,
+   "analysis": "昨日在池(连续6天)今日退出, 成分股全线退潮",
+   "reason": "一键清仓信号"
+  },
+  {
+   "entity_type": "concept",
+   "name": "预制菜",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 3,
+   "d120": 8,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "concept",
+   "name": "黄金概念",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 7,
+   "d120": 7,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "其他农产品加工",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 2,
+   "d120": 2,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "其他化学原料",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 4,
+   "d120": 6,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "农业综合",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "农用机械",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "水产养殖",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 4,
+   "d120": 4,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "焦炭加工",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "煤炭开采",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 1,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "粮食种植",
+   "consecutive_days": 0,
+   "prev_consecutive": 1,
+   "d30": 1,
+   "d120": 4,
+   "analysis": "昨日在池(连续1天)今日退出, 成分股全线退潮",
+   "reason": "主线切换/获利了结"
+  },
+  {
+   "entity_type": "sector",
+   "name": "贵金属Ⅲ",
+   "consecutive_days": 0,
+   "prev_consecutive": 7,
+   "d30": 11,
+   "d120": 11,
+   "analysis": "昨日在池(连续7天)今日退出, 成分股全线退潮",
+   "reason": "一键清仓信号"
+  }
+ ],
+ "emerging": [
+  {
+   "entity_type": "concept",
+   "name": "共封装光学(CPO)",
+   "consecutive_days": 1,
+   "d30": 6,
+   "d120": 66,
+   "d250": 113,
+   "analysis": "回池再启动(连续1天)。催化: 🔴 8.27 英伟达Q2营收962亿美元(+106%)超预期引爆CPO概念，Spectrum-X CPO交换机全面量产，Lumentum/Coherent订单能见度延伸至2028年 ← 重点关注",
+   "catalyst_summary": "🔴 8.27 英伟达Q2营收962亿美元(+106%)超预期引爆CPO概念，Spectrum-X CPO交换机全面量产，Lumentum/Coherent订单能见度延伸至2028年",
+   "key_stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "300684",
+     "name": "中石科技",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "富士康概念",
+   "consecutive_days": 1,
+   "d30": 7,
+   "d120": 61,
+   "d250": 93,
+   "analysis": "回池再启动(连续1天)。催化: 🔴 8.25 工业富联业绩会：上半年营收5578.6亿(+54.6%)、净利237.4亿(+95.99%)，AI服务器出货大幅上升 ← 重点关注",
+   "catalyst_summary": "🔴 8.25 工业富联业绩会：上半年营收5578.6亿(+54.6%)、净利237.4亿(+95.99%)，AI服务器出货大幅上升",
+   "key_stocks": [
+    {
+     "code": "300684",
+     "name": "中石科技",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "300951",
+     "name": "博硕科技",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "002768",
+     "name": "国恩股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "300843",
+     "name": "胜蓝股份",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "PCB概念",
+   "consecutive_days": 1,
+   "d30": 4,
+   "d120": 60,
+   "d250": 80,
+   "analysis": "回池再启动(连续1天)。催化: 🔴 8.27 英伟达Q2营收962亿美元(+106%)Vera Rubin全面量产，高盛上调2027 AI服务器PCB市场38%至375亿美元，CCL覆铜板涨价20%-25% ← 重点关注",
+   "catalyst_summary": "🔴 8.27 英伟达Q2营收962亿美元(+106%)Vera Rubin全面量产，高盛上调2027 AI服务器PCB市场38%至375亿美元，CCL覆铜板涨价20%-25%",
+   "key_stocks": [
+    {
+     "code": "002141",
+     "name": "贤丰控股",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301603",
+     "name": "乔锋智能",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "印制电路板",
+   "consecutive_days": 1,
+   "d30": 3,
+   "d120": 58,
+   "d250": 79,
+   "analysis": "回池再启动(连续1天)。催化: 🔴 8.28 覆铜板龙头建滔年内第七次涨价 FR-4覆铜板再涨10% 累计涨幅超100% ← 重点关注",
+   "catalyst_summary": "🔴 8.28 覆铜板龙头建滔年内第七次涨价 FR-4覆铜板再涨10% 累计涨幅超100%",
+   "key_stocks": [
+    {
+     "code": "002141",
+     "name": "贤丰控股",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "688183",
+     "name": "生益电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "002463",
+     "name": "沪电股份",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "F5G概念",
+   "consecutive_days": 1,
+   "d30": 6,
+   "d120": 50,
+   "d250": 95,
+   "analysis": "回池再启动(连续1天)。催化: 8.28 央视新闻联播聚焦新一代通信网建设，万兆光网、5G-A获政策加持，全国已建成136个万兆试点，上海万兆小区174个",
+   "catalyst_summary": "8.28 央视新闻联播聚焦新一代通信网建设，万兆光网、5G-A获政策加持，全国已建成136个万兆试点，上海万兆小区174个",
+   "key_stocks": [
+    {
+     "code": "002396",
+     "name": "星网锐捷",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301183",
+     "name": "东田微",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "688313",
+     "name": "仕佳光子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603083",
+     "name": "剑桥科技",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "AI PC",
+   "consecutive_days": 1,
+   "d30": 2,
+   "d120": 35,
+   "d250": 55,
+   "analysis": "首次走强(连续1天)。催化: 8.25 苹果发布M6芯片Mac mini/Mac Studio端侧AI新品，AI PC本地推理成主流，机构预计2026年AI PC出货占比55%",
+   "catalyst_summary": "8.25 苹果发布M6芯片Mac mini/Mac Studio端侧AI新品，AI PC本地推理成主流，机构预计2026年AI PC出货占比55%",
+   "key_stocks": [
+    {
+     "code": "300684",
+     "name": "中石科技",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "002156",
+     "name": "通富微电",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "001389",
+     "name": "广合科技",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "001309",
+     "name": "德明利",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "华为海思概念股",
+   "consecutive_days": 1,
+   "d30": 1,
+   "d120": 29,
+   "d250": 38,
+   "analysis": "首次走强(连续1天)。催化: 🔴 8.18 华为Mate90定档9月23日发布，Pro首发基于韬定律的逻辑折叠麒麟芯片，晶体管密度+53.5%、主频首破3GHz ← 重点关注",
+   "catalyst_summary": "🔴 8.18 华为Mate90定档9月23日发布，Pro首发基于韬定律的逻辑折叠麒麟芯片，晶体管密度+53.5%、主频首破3GHz",
+   "key_stocks": [
+    {
+     "code": "688037",
+     "name": "芯源微",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "300757",
+     "name": "罗博特科",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "002156",
+     "name": "通富微电",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "003031",
+     "name": "中瓷电子",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "AI手机",
+   "consecutive_days": 1,
+   "d30": 1,
+   "d120": 25,
+   "d250": 48,
+   "analysis": "首次走强(连续1天)。催化: 🔴 8.24 上海印发十五五规划，大力发展AI手机、AI电脑等新型智能终端，IDC预计2026年AI手机出货占比过半 ← 重点关注",
+   "catalyst_summary": "🔴 8.24 上海印发十五五规划，大力发展AI手机、AI电脑等新型智能终端，IDC预计2026年AI手机出货占比过半",
+   "key_stocks": [
+    {
+     "code": "002384",
+     "name": "东山精密",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "688381",
+     "name": "帝奥微",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "002938",
+     "name": "鹏鼎控股",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "301308",
+     "name": "江波龙",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "688525",
+     "name": "佰维存储",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "WiFi6",
+   "consecutive_days": 1,
+   "d30": 2,
+   "d120": 24,
+   "d250": 42,
+   "analysis": "首次走强(连续1天)。催化: 8.24 康希通信中报扭亏为盈，Wi-Fi7射频芯片销售额占比超50%持续放量，国产Wi-Fi芯片进入规模化收获期",
+   "catalyst_summary": "8.24 康希通信中报扭亏为盈，Wi-Fi7射频芯片销售额占比超50%持续放量，国产Wi-Fi芯片进入规模化收获期",
+   "key_stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "688115",
+     "name": "思林杰",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "液冷服务器",
+   "consecutive_days": 1,
+   "d30": 2,
+   "d120": 19,
+   "d250": 37,
+   "analysis": "首次走强(连续1天)。催化: 🔴 8.30 央视报道液冷订单排至年底，黄仁勋宣告AI算力全面迈入100%全液冷时代，液冷从可选变必选，产业链订单产值近翻倍 ← 重点关注",
+   "catalyst_summary": "🔴 8.30 央视报道液冷订单排至年底，黄仁勋宣告AI算力全面迈入100%全液冷时代，液冷从可选变必选，产业链订单产值近翻倍",
+   "key_stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "300684",
+     "name": "中石科技",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "001210",
+     "name": "金房能源",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "300420",
+     "name": "五洋自控",
+     "rps_note": "3线红"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份",
+     "rps_note": "2线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "制冷空调设备",
+   "consecutive_days": 1,
+   "d30": 1,
+   "d120": 1,
+   "d250": 6,
+   "analysis": "首次走强(连续1天)。催化: 🔴 6.30 发改委下达625亿以旧换新资金 一级能效中央空调享成交价15%直减 ← 重点关注",
+   "catalyst_summary": "🔴 6.30 发改委下达625亿以旧换新资金 一级能效中央空调享成交价15%直减",
+   "key_stocks": [
+    {
+     "code": "301018",
+     "name": "申菱环境",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000811",
+     "name": "冰轮环境",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301399",
+     "name": "英特科技",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "002686",
+     "name": "亿利达",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "603277",
+     "name": "银都股份",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "sector",
+   "name": "房地产服务",
+   "consecutive_days": 1,
+   "d30": 1,
+   "d120": 1,
+   "d250": 1,
+   "analysis": "首次走强(连续1天)。催化: 🔴 8.28 五部门发布房地产828新政 推行现房销售 房贷期限延至40年 支持房企再融资 ← 重点关注",
+   "catalyst_summary": "🔴 8.28 五部门发布房地产828新政 推行现房销售 房贷期限延至40年 支持房企再融资",
+   "key_stocks": [
+    {
+     "code": "000011",
+     "name": "深物业A",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000560",
+     "name": "我爱我家",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "000736",
+     "name": "中交地产",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "300917",
+     "name": "特发服务",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "600684",
+     "name": "珠江股份",
+     "rps_note": "1线红"
+    }
+   ]
+  },
+  {
+   "entity_type": "concept",
+   "name": "空气能热泵",
+   "consecutive_days": 1,
+   "d30": 1,
+   "d120": 1,
+   "d250": 2,
+   "analysis": "首次走强(连续1天)。催化: 🔴 7.4 财政部住建部城市更新专项将空气能列为供热改造首选方案，叠加2000亿国债设备更新资金，政策红利密集释放 ← 重点关注",
+   "catalyst_summary": "🔴 7.4 财政部住建部城市更新专项将空气能列为供热改造首选方案，叠加2000亿国债设备更新资金，政策红利密集释放",
+   "key_stocks": [
+    {
+     "code": "002084",
+     "name": "海鸥住工",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301018",
+     "name": "申菱环境",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "000811",
+     "name": "冰轮环境",
+     "rps_note": "2线红"
+    },
+    {
+     "code": "301399",
+     "name": "英特科技",
+     "rps_note": "1线红"
+    },
+    {
+     "code": "603366",
+     "name": "日出东方",
+     "rps_note": "1线红"
+    }
+   ]
+  }
+ ],
+ "new_sectors": [
+  {
+   "name": "房地产服务",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "000011",
+     "name": "深物业A"
+    },
+    {
+     "code": "000560",
+     "name": "我爱我家"
+    },
+    {
+     "code": "000736",
+     "name": "中交地产"
+    },
+    {
+     "code": "300917",
+     "name": "特发服务"
+    },
+    {
+     "code": "600684",
+     "name": "珠江股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.28 五部门发布房地产828新政 推行现房销售 房贷期限延至40年 支持房企再融资"
+  },
+  {
+   "name": "制冷空调设备",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "301018",
+     "name": "申菱环境"
+    },
+    {
+     "code": "000811",
+     "name": "冰轮环境"
+    },
+    {
+     "code": "301399",
+     "name": "英特科技"
+    },
+    {
+     "code": "002686",
+     "name": "亿利达"
+    },
+    {
+     "code": "603277",
+     "name": "银都股份"
+    }
+   ],
+   "catalyst_summary": "🔴 6.30 发改委下达625亿以旧换新资金 一级能效中央空调享成交价15%直减"
+  },
+  {
+   "name": "印制电路板",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 3,
+   "stocks": [
+    {
+     "code": "002141",
+     "name": "贤丰控股"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子"
+    },
+    {
+     "code": "688183",
+     "name": "生益电子"
+    },
+    {
+     "code": "002463",
+     "name": "沪电股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.28 覆铜板龙头建滔年内第七次涨价 FR-4覆铜板再涨10% 累计涨幅超100%"
+  },
+  {
+   "name": "油气开采",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "300191",
+     "name": "潜能恒信"
+    },
+    {
+     "code": "300483",
+     "name": "首华燃气"
+    }
+   ],
+   "catalyst_summary": "8.30 油价上行带动三桶油中报净利增长 中石油+22% 中海油+23% 增储上产推进"
+  },
+  {
+   "name": "国有大型银行",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [],
+   "catalyst_summary": "🔴 8.27 六大国有行落地贷款贴息新政 中小微流动资金贷款年化贴息1% 信贷需求受益"
+  },
+  {
+   "name": "管材",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [],
+   "catalyst_summary": "🔴 8.27 十五五规划投5万亿改造新建77万公里地下管网 管材需求爆发"
+  },
+  {
+   "name": "其他电子Ⅲ",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "300736",
+     "name": "百邦科技"
+    },
+    {
+     "code": "600353",
+     "name": "旭光电子"
+    },
+    {
+     "code": "300975",
+     "name": "商络电子"
+    },
+    {
+     "code": "688662",
+     "name": "富信科技"
+    },
+    {
+     "code": "002388",
+     "name": "新亚制程"
+    }
+   ],
+   "catalyst_summary": "🔴 8.28 覆铜板龙头建滔再涨价 FR-4涨10% 电子元件概念拉升 前7月集成电路出口+99.5%"
+  },
+  {
+   "name": "消费电子零部件及组装",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "300951",
+     "name": "博硕科技"
+    },
+    {
+     "code": "300843",
+     "name": "胜蓝股份"
+    },
+    {
+     "code": "002655",
+     "name": "共达电声"
+    },
+    {
+     "code": "688260",
+     "name": "昀冢科技"
+    },
+    {
+     "code": "301086",
+     "name": "鸿富瀚"
+    }
+   ],
+   "catalyst_summary": "🔴 8.26 苹果首款折叠屏iPhone将发布 首年备货约1000万台 华为三折叠同步登场"
+  },
+  {
+   "name": "鞋帽及其他",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "603608",
+     "name": "天创时尚"
+    },
+    {
+     "code": "300901",
+     "name": "中胤时尚"
+    },
+    {
+     "code": "300577",
+     "name": "开润股份"
+    },
+    {
+     "code": "603958",
+     "name": "哈森股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.25 三部委印发纺织工业优化升级行动方案 2028年前制修订国标300项以上"
+  },
+  {
+   "name": "装饰园林",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "601886",
+     "name": "江河集团"
+    },
+    {
+     "code": "002081",
+     "name": "金 螳 螂"
+    },
+    {
+     "code": "600234",
+     "name": "科新发展"
+    },
+    {
+     "code": "605178",
+     "name": "时空科技"
+    },
+    {
+     "code": "605287",
+     "name": "德才股份"
+    }
+   ],
+   "catalyst_summary": "8.25 多地园林绿化项目提速 园林股份涨停 城市更新存量改造需求释放"
+  },
+  {
+   "name": "教育Ⅲ",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "003032",
+     "name": "传智教育"
+    },
+    {
+     "code": "000526",
+     "name": "学大教育"
+    },
+    {
+     "code": "600661",
+     "name": "昂立教育"
+    },
+    {
+     "code": "002659",
+     "name": "凯文教育"
+    }
+   ],
+   "catalyst_summary": "🔴 8.10 国务院印发教育发展十五五规划 AI赋能教育上升为国家战略 经费占GDP超4%"
+  },
+  {
+   "name": "影视院线Ⅲ",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "002292",
+     "name": "奥飞娱乐"
+    },
+    {
+     "code": "300426",
+     "name": "华智数媒"
+    },
+    {
+     "code": "000892",
+     "name": "欢瑞世纪"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 暑期档收官总票房破124亿超去年 年内票房破280亿 板块多股涨停"
+  },
+  {
+   "name": "定制家居",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 3,
+   "stocks": [
+    {
+     "code": "300749",
+     "name": "顶固集创"
+    },
+    {
+     "code": "301227",
+     "name": "森鹰窗业"
+    }
+   ],
+   "catalyst_summary": "🔴 8.28 地产新政组合拳落地 现房销售缩短家居消费时滞 二手房回暖带动后周期需求"
+  },
+  {
+   "name": "数字芯片设计",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688702",
+     "name": "盛科通信"
+    },
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "688620",
+     "name": "安凯微"
+    },
+    {
+     "code": "300613",
+     "name": "富瀚微"
+    },
+    {
+     "code": "688008",
+     "name": "澜起科技"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 国产算力芯片爆单 交付排期延至一年后 智谱Ox Alpha全量国产芯片承载"
+  },
+  {
+   "name": "数字媒体",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "603466",
+     "name": "风语筑"
+    },
+    {
+     "code": "600228",
+     "name": "返利科技"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 首部全AI长剧上星开播 微短剧发展管理办法9.1施行 短剧板块多股涨停"
+  },
+  {
+   "name": "电视广播",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [],
+   "catalyst_summary": "🔴 8.18 中国广电发布国家文化大数据服务平台 广电规划院与超高清联盟战略签约"
+  },
+  {
+   "name": "集成电路封测",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "002156",
+     "name": "通富微电"
+    },
+    {
+     "code": "688362",
+     "name": "甬矽电子"
+    },
+    {
+     "code": "688403",
+     "name": "汇成股份"
+    },
+    {
+     "code": "600584",
+     "name": "长电科技"
+    }
+   ],
+   "catalyst_summary": "🔴 8.30 先进封装订单排至2028年 存储封装设备订单+500% 通富微电中报净利+330%"
+  },
+  {
+   "name": "其他黑色家电",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [],
+   "catalyst_summary": "🔴 8.27 第三批625亿以旧换新资金执行 家电最高享15%补贴 智能家居纳入补贴"
+  },
+  {
+   "name": "集成电路制造",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688347",
+     "name": "华虹宏力"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 中芯国际中报净利44.67亿+94% 晶圆涨价效应显现 海外订单回流"
+  },
+  {
+   "name": "半导体设备",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688361",
+     "name": "中科飞测"
+    },
+    {
+     "code": "688037",
+     "name": "芯源微"
+    },
+    {
+     "code": "688147",
+     "name": "微导纳米"
+    },
+    {
+     "code": "688120",
+     "name": "华海清科"
+    },
+    {
+     "code": "300604",
+     "name": "长川科技"
+    }
+   ],
+   "catalyst_summary": "🔴 8.5 三星SK海力士评估中微公司刻蚀设备 国产半导体设备出海预期升温"
+  },
+  {
+   "name": "辅料",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "002674",
+     "name": "兴业科技"
+    },
+    {
+     "code": "002003",
+     "name": "伟星股份"
+    },
+    {
+     "code": "002098",
+     "name": "浔兴股份"
+    }
+   ],
+   "catalyst_summary": "8.30 辅料龙头伟星股份中报净利+11.8% 拉链纽扣双增长 越南工业园扭亏为盈"
+  }
+ ],
+ "new_concepts": [
+  {
+   "name": "AI手机",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "002384",
+     "name": "东山精密"
+    },
+    {
+     "code": "688381",
+     "name": "帝奥微"
+    },
+    {
+     "code": "002938",
+     "name": "鹏鼎控股"
+    },
+    {
+     "code": "301308",
+     "name": "江波龙"
+    },
+    {
+     "code": "688525",
+     "name": "佰维存储"
+    }
+   ],
+   "catalyst_summary": "🔴 8.24 上海印发十五五规划，大力发展AI手机、AI电脑等新型智能终端，IDC预计2026年AI手机出货占比过半"
+  },
+  {
+   "name": "空气能热泵",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "002084",
+     "name": "海鸥住工"
+    },
+    {
+     "code": "301018",
+     "name": "申菱环境"
+    },
+    {
+     "code": "000811",
+     "name": "冰轮环境"
+    },
+    {
+     "code": "301399",
+     "name": "英特科技"
+    },
+    {
+     "code": "603366",
+     "name": "日出东方"
+    }
+   ],
+   "catalyst_summary": "🔴 7.4 财政部住建部城市更新专项将空气能列为供热改造首选方案，叠加2000亿国债设备更新资金，政策红利密集释放"
+  },
+  {
+   "name": "AI PC",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "300684",
+     "name": "中石科技"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子"
+    },
+    {
+     "code": "002156",
+     "name": "通富微电"
+    },
+    {
+     "code": "001389",
+     "name": "广合科技"
+    },
+    {
+     "code": "001309",
+     "name": "德明利"
+    }
+   ],
+   "catalyst_summary": "8.25 苹果发布M6芯片Mac mini/Mac Studio端侧AI新品，AI PC本地推理成主流，机构预计2026年AI PC出货占比55%"
+  },
+  {
+   "name": "PCB概念",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 4,
+   "stocks": [
+    {
+     "code": "002141",
+     "name": "贤丰控股"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子"
+    },
+    {
+     "code": "301603",
+     "name": "乔锋智能"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 英伟达Q2营收962亿美元(+106%)Vera Rubin全面量产，高盛上调2027 AI服务器PCB市场38%至375亿美元，CCL覆铜板涨价20%-25%"
+  },
+  {
+   "name": "富士康概念",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 7,
+   "stocks": [
+    {
+     "code": "300684",
+     "name": "中石科技"
+    },
+    {
+     "code": "300951",
+     "name": "博硕科技"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子"
+    },
+    {
+     "code": "002768",
+     "name": "国恩股份"
+    },
+    {
+     "code": "300843",
+     "name": "胜蓝股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.25 工业富联业绩会：上半年营收5578.6亿(+54.6%)、净利237.4亿(+95.99%)，AI服务器出货大幅上升"
+  },
+  {
+   "name": "华为海思概念股",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "688037",
+     "name": "芯源微"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "300757",
+     "name": "罗博特科"
+    },
+    {
+     "code": "002156",
+     "name": "通富微电"
+    },
+    {
+     "code": "003031",
+     "name": "中瓷电子"
+    }
+   ],
+   "catalyst_summary": "🔴 8.18 华为Mate90定档9月23日发布，Pro首发基于韬定律的逻辑折叠麒麟芯片，晶体管密度+53.5%、主频首破3GHz"
+  },
+  {
+   "name": "液冷服务器",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "300684",
+     "name": "中石科技"
+    },
+    {
+     "code": "001210",
+     "name": "金房能源"
+    },
+    {
+     "code": "300420",
+     "name": "五洋自控"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.30 央视报道液冷订单排至年底，黄仁勋宣告AI算力全面迈入100%全液冷时代，液冷从可选变必选，产业链订单产值近翻倍"
+  },
+  {
+   "name": "F5G概念",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 6,
+   "stocks": [
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "301183",
+     "name": "东田微"
+    },
+    {
+     "code": "688313",
+     "name": "仕佳光子"
+    },
+    {
+     "code": "603083",
+     "name": "剑桥科技"
+    }
+   ],
+   "catalyst_summary": "8.28 央视新闻联播聚焦新一代通信网建设，万兆光网、5G-A获政策加持，全国已建成136个万兆试点，上海万兆小区174个"
+  },
+  {
+   "name": "WiFi6",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    },
+    {
+     "code": "688115",
+     "name": "思林杰"
+    }
+   ],
+   "catalyst_summary": "8.24 康希通信中报扭亏为盈，Wi-Fi7射频芯片销售额占比超50%持续放量，国产Wi-Fi芯片进入规模化收获期"
+  },
+  {
+   "name": "共封装光学(CPO)",
+   "red_level": "三线红",
+   "consecutive_days": 1,
+   "d30": 6,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "300684",
+     "name": "中石科技"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 英伟达Q2营收962亿美元(+106%)超预期引爆CPO概念，Spectrum-X CPO交换机全面量产，Lumentum/Coherent订单能见度延伸至2028年"
+  },
+  {
+   "name": "语音技术",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "003004",
+     "name": "声迅股份"
+    },
+    {
+     "code": "300561",
+     "name": "汇金科技"
+    },
+    {
+     "code": "002990",
+     "name": "盛视科技"
+    },
+    {
+     "code": "301248",
+     "name": "杰创智能"
+    },
+    {
+     "code": "688416",
+     "name": "恒烁股份"
+    }
+   ],
+   "catalyst_summary": "8.2 端到端语音大模型加速落地，字节Seeduplex覆盖700万辆量产车，MiniMax Speech延迟压至250ms，科大讯飞星火X2、百度语音大模型同台竞技"
+  },
+  {
+   "name": "财税数字化",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 8,
+   "stocks": [
+    {
+     "code": "301396",
+     "name": "宏景科技"
+    },
+    {
+     "code": "300996",
+     "name": "普联软件"
+    },
+    {
+     "code": "000676",
+     "name": "智度股份"
+    },
+    {
+     "code": "300687",
+     "name": "赛意信息"
+    },
+    {
+     "code": "301248",
+     "name": "杰创智能"
+    }
+   ],
+   "catalyst_summary": "8.20 税友股份中报净利+32.38%、扣非+44%，AI产品回款占比达33%，支撑金税四期新电局全国推广上线"
+  },
+  {
+   "name": "小红书概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 7,
+   "stocks": [
+    {
+     "code": "603682",
+     "name": "锦和商管"
+    },
+    {
+     "code": "000676",
+     "name": "智度股份"
+    },
+    {
+     "code": "600228",
+     "name": "返利科技"
+    }
+   ],
+   "catalyst_summary": "8.24 小红书跨境平台RedShop启动第二轮定向邀约，覆盖美英澳等9大核心市场，跨境电商轻资产出海加速"
+  },
+  {
+   "name": "抖音概念(字节概念)",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    },
+    {
+     "code": "301018",
+     "name": "申菱环境"
+    },
+    {
+     "code": "601869",
+     "name": "长飞光纤"
+    }
+   ],
+   "catalyst_summary": "8.31 字节上调豆包虚拟股14.6%激励AI团队，整合TRAE/扣子发布'豆包工作'，TikTok欧洲拉美首次盈利"
+  },
+  {
+   "name": "在线教育",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 5,
+   "stocks": [
+    {
+     "code": "603268",
+     "name": "松发股份"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "003032",
+     "name": "传智教育"
+    },
+    {
+     "code": "001229",
+     "name": "魅视科技"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    }
+   ],
+   "catalyst_summary": "8.18 云南五部门印发'人工智能+教育'行动方案，全国三项教育大模型团体标准发布，新东方好未来业绩超预期，AI+教育政策加码"
+  },
+  {
+   "name": "托育服务",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "600551",
+     "name": "时代出版"
+    },
+    {
+     "code": "002083",
+     "name": "孚日股份"
+    }
+   ],
+   "catalyst_summary": "8.30 人民日报聚焦'一老一小'服务保障，国家卫健委今年新增15万个普惠托位，超长期特别国债重点支持托育基建"
+  },
+  {
+   "name": "智能穿戴",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "000017",
+     "name": "深中华A"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    },
+    {
+     "code": "300951",
+     "name": "博硕科技"
+    },
+    {
+     "code": "300083",
+     "name": "创世纪"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 雷鸟iO首销登顶京东天猫抖音三平台，Q2全球AI智能眼镜销量348万台同比增近200%，轻量化AI眼镜加速大众化"
+  },
+  {
+   "name": "无线耳机",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688620",
+     "name": "安凯微"
+    },
+    {
+     "code": "301189",
+     "name": "奥尼电子"
+    },
+    {
+     "code": "002655",
+     "name": "共达电声"
+    },
+    {
+     "code": "002957",
+     "name": "科瑞技术"
+    },
+    {
+     "code": "002975",
+     "name": "博杰股份"
+    }
+   ],
+   "catalyst_summary": "8.28 华为以42%份额首超苹果居国内高端TWS第一，FreeBuds 7系列开启预售，无线耳机加速向AI交互入口演进"
+  },
+  {
+   "name": "太赫兹",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "601869",
+     "name": "长飞光纤"
+    },
+    {
+     "code": "600487",
+     "name": "亨通光电"
+    },
+    {
+     "code": "300112",
+     "name": "万讯自控"
+    }
+   ],
+   "catalyst_summary": "🔴 8.20 国务院国资委召开中央企业6G未来产业推进会，部署补齐6G技术短板、突破太赫兹等关键器件，发布6G场景共创任务"
+  },
+  {
+   "name": "Sora概念(文生视频)",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 3,
+   "stocks": [
+    {
+     "code": "300857",
+     "name": "协创数据"
+    },
+    {
+     "code": "603466",
+     "name": "风语筑"
+    },
+    {
+     "code": "003005",
+     "name": "竞业达"
+    },
+    {
+     "code": "605287",
+     "name": "德才股份"
+    }
+   ],
+   "catalyst_summary": "8月 AI视频赛道近三月融资逼近300亿，可灵AI以180亿美元估值完成近30亿美元融资，生数科技获5亿美元领投"
+  },
+  {
+   "name": "ChatGPT概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "003032",
+     "name": "传智教育"
+    },
+    {
+     "code": "301396",
+     "name": "宏景科技"
+    },
+    {
+     "code": "301376",
+     "name": "致欧科技"
+    },
+    {
+     "code": "300454",
+     "name": "深信服"
+    },
+    {
+     "code": "000560",
+     "name": "我爱我家"
+    }
+   ],
+   "catalyst_summary": "🔴 8.12 OpenAI确认ChatGPT周活破10亿，8月连发GPT-5.6 Luna/Sol/Cyber多版本，AI应用商业化加速"
+  },
+  {
+   "name": "文化传媒概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "000603",
+     "name": "盛达资源"
+    },
+    {
+     "code": "600234",
+     "name": "科新发展"
+    },
+    {
+     "code": "002329",
+     "name": "皇氏集团"
+    },
+    {
+     "code": "300833",
+     "name": "浩洋股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.28 2026暑期档票房破百亿，2026电影经济促进年启动12亿补贴，影视院线板块迎政策+消费双催化"
+  },
+  {
+   "name": "智能家居",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "002631",
+     "name": "德尔未来"
+    },
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "002084",
+     "name": "海鸥住工"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 商务部等七部门发文加快智能家居互联互通标准制定，智能家居首入中央以旧换新补贴，625亿专项落地"
+  },
+  {
+   "name": "智谱AI",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 6,
+   "stocks": [
+    {
+     "code": "003032",
+     "name": "传智教育"
+    },
+    {
+     "code": "603956",
+     "name": "威派格"
+    },
+    {
+     "code": "002659",
+     "name": "凯文教育"
+    },
+    {
+     "code": "301248",
+     "name": "杰创智能"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 智谱中报收入9.54亿同比+400%，API收入增27倍，10万国产芯片集群投用单位Token成本降80%，纳入MSCI中国指数"
+  },
+  {
+   "name": "C2M概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "002631",
+     "name": "德尔未来"
+    },
+    {
+     "code": "603608",
+     "name": "天创时尚"
+    },
+    {
+     "code": "301362",
+     "name": "民爆光电"
+    },
+    {
+     "code": "002612",
+     "name": "朗姿股份"
+    },
+    {
+     "code": "603313",
+     "name": "梦百合"
+    }
+   ],
+   "catalyst_summary": "近90天暂无重大催化"
+  },
+  {
+   "name": "汽车芯片",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688002",
+     "name": "睿创微纳"
+    },
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "688147",
+     "name": "微导纳米"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "300613",
+     "name": "富瀚微"
+    }
+   ],
+   "catalyst_summary": "🔴 8月车规MCU国产替代加速：比亚迪第1000万颗MCU下线、芯驰E3获ASIL-D认证；行业年内第二轮涨价10-25%，交付周期拉长至30周"
+  },
+  {
+   "name": "智能音箱",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "300613",
+     "name": "富瀚微"
+    },
+    {
+     "code": "301189",
+     "name": "奥尼电子"
+    },
+    {
+     "code": "002655",
+     "name": "共达电声"
+    },
+    {
+     "code": "300857",
+     "name": "协创数据"
+    },
+    {
+     "code": "000676",
+     "name": "智度股份"
+    }
+   ],
+   "catalyst_summary": "近90天暂无重大催化"
+  },
+  {
+   "name": "毫米波雷达",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688002",
+     "name": "睿创微纳"
+    },
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "300862",
+     "name": "蓝盾光电"
+    },
+    {
+     "code": "603118",
+     "name": "共进股份"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子"
+    }
+   ],
+   "catalyst_summary": "🔴 8.14 加特兰(国内市占31%头部)递交科创板IPO、累计出货超3000万颗，中国牵头3项汽车雷达国际标准获重大进展，福瑞泰克4D成像雷达进入量产"
+  },
+  {
+   "name": "英伟达概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    },
+    {
+     "code": "603228",
+     "name": "景旺电子"
+    },
+    {
+     "code": "300757",
+     "name": "罗博特科"
+    },
+    {
+     "code": "301189",
+     "name": "奥尼电子"
+    },
+    {
+     "code": "300857",
+     "name": "协创数据"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 英伟达Q2营收962亿美元(+106%)，Q3指引1080亿首破千亿，2028财年预计+70%，Vera Rubin全面量产，AWS追加200万颗GPU"
+  },
+  {
+   "name": "芯片概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 2,
+   "stocks": [
+    {
+     "code": "688432",
+     "name": "有研硅"
+    },
+    {
+     "code": "688361",
+     "name": "中科飞测"
+    },
+    {
+     "code": "688037",
+     "name": "芯源微"
+    },
+    {
+     "code": "688002",
+     "name": "睿创微纳"
+    },
+    {
+     "code": "688485",
+     "name": "九州一轨"
+    }
+   ],
+   "catalyst_summary": "🔴 8.26-28 工信部/发改委明确'十五五'全链条攻坚集成电路，北京首发AI4Chip政策，半导体材料涨价(硅片+18-22%/靶材+70%)，1-7月行业利润增18.5倍"
+  },
+  {
+   "name": "科创次新股",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [],
+   "catalyst_summary": "近90天暂无重大催化"
+  },
+  {
+   "name": "PM2.5",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "300862",
+     "name": "蓝盾光电"
+    },
+    {
+     "code": "002980",
+     "name": "华盛昌"
+    },
+    {
+     "code": "688628",
+     "name": "优利德"
+    },
+    {
+     "code": "603311",
+     "name": "金海高科"
+    },
+    {
+     "code": "300884",
+     "name": "狄耐克"
+    }
+   ],
+   "catalyst_summary": "🔴 8.13 生态环境部披露正制定第四个'大气十条'，将收严PM2.5浓度限值并同步加严PM10/SO2/NOx限值，叠加《美丽中国建设'十五五'规划》"
+  },
+  {
+   "name": "跨境支付(CIPS)",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 3,
+   "stocks": [
+    {
+     "code": "003040",
+     "name": "楚天龙"
+    },
+    {
+     "code": "300996",
+     "name": "普联软件"
+    },
+    {
+     "code": "002098",
+     "name": "浔兴股份"
+    },
+    {
+     "code": "600415",
+     "name": "小商品城"
+    }
+   ],
+   "catalyst_summary": "🔴 8.10 央行授权德银任法兰克福人民币清算行(首家欧洲本土行)，纳米比亚/肯尼亚相继接入CIPS，央行下半年会议部署跨境支付系统建设"
+  },
+  {
+   "name": "数字水印",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "002491",
+     "name": "通鼎互联"
+    },
+    {
+     "code": "300369",
+     "name": "绿盟科技"
+    },
+    {
+     "code": "688031",
+     "name": "星环科技"
+    },
+    {
+     "code": "603687",
+     "name": "大胜达"
+    }
+   ],
+   "catalyst_summary": "🔴 8.11 Anthropic宣布Claude生成内容全球嵌入隐形水印，欧盟AI法案第50条8.2生效强制AI内容标记，全球溯源市场2033年预计达169亿美元"
+  },
+  {
+   "name": "广东自贸区",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "002141",
+     "name": "贤丰控股"
+    },
+    {
+     "code": "000523",
+     "name": "红棉股份"
+    },
+    {
+     "code": "002889",
+     "name": "东方嘉盛"
+    },
+    {
+     "code": "000524",
+     "name": "岭南控股"
+    }
+   ],
+   "catalyst_summary": "🔴 8.6 广东省商务厅发布广东自贸区'十五五'规划征求意见稿，加快大湾区国际商业银行落地；前海上半年外贸4641.5亿(+76%)、外资+114.5%"
+  },
+  {
+   "name": "AI眼镜",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    },
+    {
+     "code": "688620",
+     "name": "安凯微"
+    },
+    {
+     "code": "300613",
+     "name": "富瀚微"
+    },
+    {
+     "code": "688328",
+     "name": "深科达"
+    }
+   ],
+   "catalyst_summary": "🔴 智能眼镜首次纳入'两新'补贴(15%/上限500元)，IDC预计2026全球出货破2000万台，Q1出货356.6万(+130%)，雷鸟iO登顶三平台"
+  },
+  {
+   "name": "国家大基金持股",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "688361",
+     "name": "中科飞测"
+    },
+    {
+     "code": "688702",
+     "name": "盛科通信"
+    },
+    {
+     "code": "600206",
+     "name": "有研新材"
+    },
+    {
+     "code": "300604",
+     "name": "长川科技"
+    },
+    {
+     "code": "300567",
+     "name": "精测电子"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 大基金三期核心平台国投集新9.5亿入股EDA厂商概伦电子，三季度密集投资拓荆键科/南通晶体/长飞石英，万亿大基金投资提速"
+  },
+  {
+   "name": "星闪概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "301536",
+     "name": "星宸科技"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    },
+    {
+     "code": "301189",
+     "name": "奥尼电子"
+    },
+    {
+     "code": "603236",
+     "name": "移远通信"
+    }
+   ],
+   "catalyst_summary": "🔴 8.20 ICCE与星闪联盟发布数字车钥匙生态共建倡议，2026年星闪车钥匙量产预计破150万台，华为星闪核心协议栈开源，钱包车钥匙累计开通1900万"
+  },
+  {
+   "name": "云办公",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 5,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    },
+    {
+     "code": "300454",
+     "name": "深信服"
+    },
+    {
+     "code": "300628",
+     "name": "亿联网络"
+    },
+    {
+     "code": "688152",
+     "name": "麒麟信安"
+    }
+   ],
+   "catalyst_summary": "🔴 8.27 百度/字节/阿里/腾讯四巨头全入局AI办公(豆包工作/千问办公/WorkBuddy)，金山办公净利预增210-264%，企业AI Agent采纳率升至40.3%"
+  },
+  {
+   "name": "同花顺中特估100",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 8,
+   "stocks": [
+    {
+     "code": "600176",
+     "name": "中国巨石"
+    },
+    {
+     "code": "002541",
+     "name": "鸿路钢构"
+    },
+    {
+     "code": "601919",
+     "name": "中远海控"
+    },
+    {
+     "code": "601598",
+     "name": "中国外运"
+    },
+    {
+     "code": "002493",
+     "name": "荣盛石化"
+    }
+   ],
+   "catalyst_summary": "🔴 8.24 国务院国资委发布央企市值管理导向文件，推进常态化回购增持、强化市值管理考核，推动国有资本向战略新兴产业集中"
+  },
+  {
+   "name": "快手概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 8,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "000676",
+     "name": "智度股份"
+    },
+    {
+     "code": "002425",
+     "name": "凯撒文化"
+    },
+    {
+     "code": "002580",
+     "name": "圣阳股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.19 快手Q2营收355亿元，可灵AI收入超8.5亿元(+200%+)、全球用户破1亿，7月完成近30亿美元融资估值180亿美元，DAU创新高4.12亿"
+  },
+  {
+   "name": "短剧游戏",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 3,
+   "stocks": [
+    {
+     "code": "003032",
+     "name": "传智教育"
+    },
+    {
+     "code": "300857",
+     "name": "协创数据"
+    },
+    {
+     "code": "300426",
+     "name": "华智数媒"
+    },
+    {
+     "code": "000892",
+     "name": "欢瑞世纪"
+    },
+    {
+     "code": "605287",
+     "name": "德才股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 国内首部上星AIGC长剧《后西游记》开播(芒果TV边审边播)，9.1首部《微短剧发展管理办法》施行，AI短剧制作成本降80-90%，市场规模预计超200亿"
+  },
+  {
+   "name": "AIGC概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 1,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "301365",
+     "name": "矩阵股份"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷"
+    },
+    {
+     "code": "000938",
+     "name": "紫光股份"
+    },
+    {
+     "code": "002841",
+     "name": "视源股份"
+    }
+   ],
+   "catalyst_summary": "🔴 8.31 国家人工智能基金14亿入股快手可灵AIGC主体，首部上星AIGC长剧《后西游记》开播，昆仑万维AI短剧收入15.34亿(+163%)，微短剧新规9.1施行"
+  },
+  {
+   "name": "百度概念",
+   "red_level": "一线红",
+   "consecutive_days": 0,
+   "d30": 0,
+   "stocks": [
+    {
+     "code": "301165",
+     "name": "锐捷网络"
+    },
+    {
+     "code": "301018",
+     "name": "申菱环境"
+    },
+    {
+     "code": "002281",
+     "name": "光迅科技"
+    },
+    {
+     "code": "300975",
+     "name": "商络电子"
+    },
+    {
+     "code": "000977",
+     "name": "浪潮信息"
+    }
+   ],
+   "catalyst_summary": "🔴 8.18 百度Q2总营收313亿，AI业务收入占比50%连续两季过半，GPU云收入+283%；8.27 港股转双重主要上市9.1生效，有望纳入港股通"
+  }
+ ],
+ "new_stocks": [
+  {
+   "code": "300420",
+   "name": "五洋自控",
+   "red_level": "三线红",
+   "sector_l3": "其他通用设备"
+  },
+  {
+   "code": "688309",
+   "name": "恒誉环保",
+   "red_level": "三线红",
+   "sector_l3": "环保设备Ⅲ"
+  },
+  {
+   "code": "688702",
+   "name": "盛科通信",
+   "red_level": "三线红",
+   "sector_l3": "数字芯片设计"
+  },
+  {
+   "code": "688147",
+   "name": "微导纳米",
+   "red_level": "三线红",
+   "sector_l3": "半导体设备"
+  },
+  {
+   "code": "301536",
+   "name": "星宸科技",
+   "red_level": "三线红",
+   "sector_l3": "数字芯片设计"
+  },
+  {
+   "code": "301165",
+   "name": "锐捷网络",
+   "red_level": "三线红",
+   "sector_l3": "通信网络设备及器件"
+  },
+  {
+   "code": "301218",
+   "name": "华是科技",
+   "red_level": "三线红",
+   "sector_l3": "IT服务Ⅲ"
+  },
+  {
+   "code": "688002",
+   "name": "睿创微纳",
+   "red_level": "三线红",
+   "sector_l3": "军工电子Ⅲ"
+  },
+  {
+   "code": "600552",
+   "name": "凯盛科技",
+   "red_level": "一线红",
+   "sector_l3": "面板"
+  },
+  {
+   "code": "603139",
+   "name": "康惠股份",
+   "red_level": "一线红",
+   "sector_l3": "中药Ⅲ"
+  },
+  {
+   "code": "600551",
+   "name": "时代出版",
+   "red_level": "一线红",
+   "sector_l3": "出版"
+  },
+  {
+   "code": "300097",
+   "name": "智云股份",
+   "red_level": "一线红",
+   "sector_l3": "其他自动化设备"
+  },
+  {
+   "code": "002098",
+   "name": "浔兴股份",
+   "red_level": "一线红",
+   "sector_l3": "辅料"
+  },
+  {
+   "code": "688603",
+   "name": "天承科技",
+   "red_level": "一线红",
+   "sector_l3": "电子化学品Ⅲ"
+  },
+  {
+   "code": "300811",
+   "name": "铂科新材",
+   "red_level": "一线红",
+   "sector_l3": "磁性材料"
+  },
+  {
+   "code": "603236",
+   "name": "移远通信",
+   "red_level": "一线红",
+   "sector_l3": "通信终端及配件"
+  },
+  {
+   "code": "688031",
+   "name": "星环科技",
+   "red_level": "一线红",
+   "sector_l3": "横向通用软件"
+  },
+  {
+   "code": "000576",
+   "name": "甘化科工",
+   "red_level": "一线红",
+   "sector_l3": "地面兵装"
+  },
+  {
+   "code": "002660",
+   "name": "茂硕电源",
+   "red_level": "一线红",
+   "sector_l3": "消费电子零部件及组装"
+  },
+  {
+   "code": "600698",
+   "name": "湖南天雁",
+   "red_level": "一线红",
+   "sector_l3": "底盘与发动机系统"
+  },
+  {
+   "code": "301218",
+   "name": "华是科技",
+   "red_level": "一线红",
+   "sector_l3": "IT服务Ⅲ"
+  },
+  {
+   "code": "603408",
+   "name": "建霖家居",
+   "red_level": "一线红",
+   "sector_l3": "其他家居用品"
+  },
+  {
+   "code": "000998",
+   "name": "隆平高科",
+   "red_level": "一线红",
+   "sector_l3": "种子生产"
+  },
+  {
+   "code": "002162",
+   "name": "悦心健康",
+   "red_level": "一线红",
+   "sector_l3": "瓷砖地板"
+  },
+  {
+   "code": "002394",
+   "name": "联发股份",
+   "red_level": "一线红",
+   "sector_l3": "棉纺"
+  },
+  {
+   "code": "688478",
+   "name": "晶升股份",
+   "red_level": "一线红",
+   "sector_l3": "半导体设备"
+  },
+  {
+   "code": "688456",
+   "name": "有研粉材",
+   "red_level": "一线红",
+   "sector_l3": "其他金属新材料"
+  },
+  {
+   "code": "603366",
+   "name": "日出东方",
+   "red_level": "一线红",
+   "sector_l3": "厨卫电器Ⅲ"
+  },
+  {
+   "code": "002293",
+   "name": "罗莱生活",
+   "red_level": "一线红",
+   "sector_l3": "家纺"
+  },
+  {
+   "code": "301248",
+   "name": "杰创智能",
+   "red_level": "一线红",
+   "sector_l3": "IT服务Ⅲ"
+  },
+  {
+   "code": "601339",
+   "name": "百隆东方",
+   "red_level": "一线红",
+   "sector_l3": "棉纺"
+  },
+  {
+   "code": "002981",
+   "name": "朝阳科技",
+   "red_level": "一线红",
+   "sector_l3": "消费电子零部件及组装"
+  },
+  {
+   "code": "301056",
+   "name": "森赫股份",
+   "red_level": "一线红",
+   "sector_l3": "楼宇设备"
+  },
+  {
+   "code": "300901",
+   "name": "中胤时尚",
+   "red_level": "一线红",
+   "sector_l3": "鞋帽及其他"
+  },
+  {
+   "code": "601002",
+   "name": "晋亿实业",
+   "red_level": "一线红",
+   "sector_l3": "金属制品"
+  },
+  {
+   "code": "601898",
+   "name": "中煤能源",
+   "red_level": "一线红",
+   "sector_l3": "煤炭开采"
+  },
+  {
+   "code": "002418",
+   "name": "康盛股份",
+   "red_level": "一线红",
+   "sector_l3": "家电零部件"
+  },
+  {
+   "code": "002659",
+   "name": "凯文教育",
+   "red_level": "一线红",
+   "sector_l3": "教育Ⅲ"
+  },
+  {
+   "code": "603836",
+   "name": "海程邦达",
+   "red_level": "一线红",
+   "sector_l3": "物流Ⅲ"
+  },
+  {
+   "code": "603038",
+   "name": "华立股份",
+   "red_level": "一线红",
+   "sector_l3": "其他建材"
+  },
+  {
+   "code": "002638",
+   "name": "勤上股份",
+   "red_level": "一线红",
+   "sector_l3": "LED"
+  },
+  {
+   "code": "300776",
+   "name": "帝尔激光",
+   "red_level": "一线红",
+   "sector_l3": "光伏加工设备"
+  },
+  {
+   "code": "600121",
+   "name": "郑州煤电",
+   "red_level": "一线红",
+   "sector_l3": "煤炭开采"
+  },
+  {
+   "code": "603387",
+   "name": "基蛋生物",
+   "red_level": "一线红",
+   "sector_l3": "体外诊断"
+  },
+  {
+   "code": "301227",
+   "name": "森鹰窗业",
+   "red_level": "一线红",
+   "sector_l3": "定制家居"
+  },
+  {
+   "code": "605028",
+   "name": "世茂能源",
+   "red_level": "一线红",
+   "sector_l3": "热力"
+  },
+  {
+   "code": "688565",
+   "name": "力源科技",
+   "red_level": "一线红",
+   "sector_l3": "水务及水治理"
+  },
+  {
+   "code": "300964",
+   "name": "本川智能",
+   "red_level": "一线红",
+   "sector_l3": "印制电路板"
+  },
+  {
+   "code": "688127",
+   "name": "蓝特光学",
+   "red_level": "一线红",
+   "sector_l3": "光学元件"
+  },
+  {
+   "code": "300318",
+   "name": "博晖创新",
+   "red_level": "一线红",
+   "sector_l3": "血液制品"
+  },
+  {
+   "code": "002860",
+   "name": "星帅尔",
+   "red_level": "一线红",
+   "sector_l3": "家电零部件"
+  },
+  {
+   "code": "002889",
+   "name": "东方嘉盛",
+   "red_level": "一线红",
+   "sector_l3": "物流Ⅲ"
+  },
+  {
+   "code": "300911",
+   "name": "亿田智能",
+   "red_level": "一线红",
+   "sector_l3": "厨卫电器Ⅲ"
+  },
+  {
+   "code": "603048",
+   "name": "浙江黎明",
+   "red_level": "一线红",
+   "sector_l3": "车身附件及饰件"
+  },
+  {
+   "code": "605303",
+   "name": "园林股份",
+   "red_level": "一线红",
+   "sector_l3": "装饰园林"
+  },
+  {
+   "code": "300164",
+   "name": "通源石油",
+   "red_level": "一线红",
+   "sector_l3": "油服工程"
+  },
+  {
+   "code": "603958",
+   "name": "哈森股份",
+   "red_level": "一线红",
+   "sector_l3": "鞋帽及其他"
+  },
+  {
+   "code": "000736",
+   "name": "中交地产",
+   "red_level": "一线红",
+   "sector_l3": "房地产服务"
+  },
+  {
+   "code": "688203",
+   "name": "海正生材",
+   "red_level": "一线红",
+   "sector_l3": "改性塑料"
+  },
+  {
+   "code": "601088",
+   "name": "中国神华",
+   "red_level": "一线红",
+   "sector_l3": "煤炭开采"
+  },
+  {
+   "code": "688026",
+   "name": "洁特生物",
+   "red_level": "一线红",
+   "sector_l3": "医疗耗材"
+  },
+  {
+   "code": "688215",
+   "name": "瑞晟智能",
+   "red_level": "一线红",
+   "sector_l3": "其他自动化设备"
+  },
+  {
+   "code": "301051",
+   "name": "信濠光电",
+   "red_level": "一线红",
+   "sector_l3": "消费电子零部件及组装"
+  },
+  {
+   "code": "001317",
+   "name": "三羊马",
+   "red_level": "一线红",
+   "sector_l3": "物流Ⅲ"
+  },
+  {
+   "code": "001217",
+   "name": "华尔泰",
+   "red_level": "一线红",
+   "sector_l3": "其他化学原料"
+  },
+  {
+   "code": "300906",
+   "name": "日月明",
+   "red_level": "一线红",
+   "sector_l3": "轨交设备Ⅲ"
+  },
+  {
+   "code": "002966",
+   "name": "苏州银行",
+   "red_level": "一线红",
+   "sector_l3": "城商行"
+  },
+  {
+   "code": "300687",
+   "name": "赛意信息",
+   "red_level": "一线红",
+   "sector_l3": "IT服务Ⅲ"
+  },
+  {
+   "code": "001259",
+   "name": "利仁科技",
+   "red_level": "一线红",
+   "sector_l3": "小家电Ⅲ"
+  },
+  {
+   "code": "603917",
+   "name": "合力科技",
+   "red_level": "一线红",
+   "sector_l3": "其他汽车零部件"
+  },
+  {
+   "code": "301123",
+   "name": "奕东电子",
+   "red_level": "一线红",
+   "sector_l3": "消费电子零部件及组装"
+  },
+  {
+   "code": "001322",
+   "name": "箭牌家居",
+   "red_level": "一线红",
+   "sector_l3": "其他家居用品"
+  },
+  {
+   "code": "603269",
+   "name": "海鸥股份",
+   "red_level": "一线红",
+   "sector_l3": "其他通用设备"
+  },
+  {
+   "code": "300426",
+   "name": "华智数媒",
+   "red_level": "一线红",
+   "sector_l3": "影视院线Ⅲ"
+  },
+  {
+   "code": "301338",
+   "name": "凯格精机",
+   "red_level": "一线红",
+   "sector_l3": "其他专用设备"
+  },
+  {
+   "code": "000892",
+   "name": "欢瑞世纪",
+   "red_level": "一线红",
+   "sector_l3": "影视院线Ⅲ"
+  },
+  {
+   "code": "603998",
+   "name": "方盛制药",
+   "red_level": "一线红",
+   "sector_l3": "中药Ⅲ"
+  },
+  {
+   "code": "300583",
+   "name": "赛托生物",
+   "red_level": "一线红",
+   "sector_l3": "原料药"
+  },
+  {
+   "code": "603313",
+   "name": "梦百合",
+   "red_level": "一线红",
+   "sector_l3": "成品家居"
+  },
+  {
+   "code": "002548",
+   "name": "金新农",
+   "red_level": "一线红",
+   "sector_l3": "畜禽饲料"
+  },
+  {
+   "code": "300917",
+   "name": "特发服务",
+   "red_level": "一线红",
+   "sector_l3": "房地产服务"
+  },
+  {
+   "code": "688003",
+   "name": "天准科技",
+   "red_level": "一线红",
+   "sector_l3": "其他自动化设备"
+  },
+  {
+   "code": "300331",
+   "name": "苏大维格",
+   "red_level": "一线红",
+   "sector_l3": "光学元件"
+  },
+  {
+   "code": "601156",
+   "name": "东航物流",
+   "red_level": "一线红",
+   "sector_l3": "物流Ⅲ"
+  },
+  {
+   "code": "000524",
+   "name": "岭南控股",
+   "red_level": "一线红",
+   "sector_l3": "旅游综合"
+  },
+  {
+   "code": "002133",
+   "name": "广宇集团",
+   "red_level": "一线红",
+   "sector_l3": "住宅开发"
+  },
+  {
+   "code": "603283",
+   "name": "赛腾股份",
+   "red_level": "一线红",
+   "sector_l3": "工控设备"
+  },
+  {
+   "code": "603358",
+   "name": "华达科技",
+   "red_level": "一线红",
+   "sector_l3": "其他汽车零部件"
+  },
+  {
+   "code": "300761",
+   "name": "立华股份",
+   "red_level": "一线红",
+   "sector_l3": "肉鸡养殖"
+  },
+  {
+   "code": "603009",
+   "name": "北特科技",
+   "red_level": "一线红",
+   "sector_l3": "底盘与发动机系统"
+  },
+  {
+   "code": "600405",
+   "name": "动力源",
+   "red_level": "一线红",
+   "sector_l3": "其他电源设备Ⅲ"
+  },
+  {
+   "code": "003005",
+   "name": "竞业达",
+   "red_level": "一线红",
+   "sector_l3": "IT服务Ⅲ"
+  },
+  {
+   "code": "300806",
+   "name": "斯迪克",
+   "red_level": "一线红",
+   "sector_l3": "膜材料"
+  },
+  {
+   "code": "603466",
+   "name": "风语筑",
+   "red_level": "一线红",
+   "sector_l3": "数字媒体"
+  },
+  {
+   "code": "601665",
+   "name": "齐鲁银行",
+   "red_level": "一线红",
+   "sector_l3": "城商行"
+  }
+ ]
+}

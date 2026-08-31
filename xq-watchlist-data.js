@@ -1,36 +1,18 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-08-31T09:06:32",
-  "count": 15,
+  "updated_at": "2026-08-31T15:56:02",
+  "count": 5,
   "stocks": [
     {
-      "symbol": "SZ000713",
-      "name": "国投丰乐",
+      "symbol": "SH600691",
+      "name": "潞化科技",
       "marketplace": "CN",
-      "watched": "2026-08-28T10:41:13"
+      "watched": "2026-08-31T09:38:01"
     },
     {
-      "symbol": "SH600354",
-      "name": "敦煌种业",
+      "symbol": "SH600227",
+      "name": "赤天化",
       "marketplace": "CN",
-      "watched": "2026-08-28T10:41:06"
-    },
-    {
-      "symbol": "SH601212",
-      "name": "白银有色",
-      "marketplace": "CN",
-      "watched": "2026-08-28T10:35:33"
-    },
-    {
-      "symbol": "SZ000506",
-      "name": "招金黄金",
-      "marketplace": "CN",
-      "watched": "2026-08-28T10:30:59"
-    },
-    {
-      "symbol": "SZ000059",
-      "name": "华锦股份",
-      "marketplace": "CN",
-      "watched": "2026-08-28T09:33:46"
+      "watched": "2026-08-31T09:36:41"
     },
     {
       "symbol": "SZ000703",
@@ -39,52 +21,10 @@ window.__SNAPSHOT__ = {
       "watched": "2026-08-27T13:27:16"
     },
     {
-      "symbol": "SH603395",
-      "name": "红四方",
-      "marketplace": "CN",
-      "watched": "2026-08-27T13:19:24"
-    },
-    {
-      "symbol": "SZ300313",
-      "name": "天山生物",
-      "marketplace": "CN",
-      "watched": "2026-08-27T13:14:14"
-    },
-    {
       "symbol": "SZ002165",
       "name": "红宝丽",
       "marketplace": "CN",
       "watched": "2026-08-27T11:08:20"
-    },
-    {
-      "symbol": "SZ300927",
-      "name": "江天化学",
-      "marketplace": "CN",
-      "watched": "2026-08-27T10:02:52"
-    },
-    {
-      "symbol": "SH600127",
-      "name": "金健米业",
-      "marketplace": "CN",
-      "watched": "2026-08-27T09:41:08"
-    },
-    {
-      "symbol": "SH601118",
-      "name": "海南橡胶",
-      "marketplace": "CN",
-      "watched": "2026-08-26T14:25:47"
-    },
-    {
-      "symbol": "SH600362",
-      "name": "江西铜业",
-      "marketplace": "CN",
-      "watched": "2026-08-26T10:25:13"
-    },
-    {
-      "symbol": "SZ000603",
-      "name": "盛达资源",
-      "marketplace": "CN",
-      "watched": "2026-08-26T10:08:35"
     },
     {
       "symbol": "SH600722",
@@ -95,6 +35,97 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-08-31",
+    "changes": [
+      {
+        "time": "14:16",
+        "action": "remove",
+        "symbol": "SH600127",
+        "name": "金健米业"
+      },
+      {
+        "time": "14:16",
+        "action": "remove",
+        "symbol": "SZ000059",
+        "name": "华锦股份"
+      },
+      {
+        "time": "14:01",
+        "action": "remove",
+        "symbol": "SH600354",
+        "name": "敦煌种业"
+      },
+      {
+        "time": "14:01",
+        "action": "remove",
+        "symbol": "SZ300927",
+        "name": "江天化学"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SH603395",
+        "name": "红四方"
+      },
+      {
+        "time": "13:31",
+        "action": "remove",
+        "symbol": "SZ300313",
+        "name": "天山生物"
+      },
+      {
+        "time": "10:40",
+        "action": "add",
+        "symbol": "SH600227",
+        "name": "赤天化",
+        "watched": "2026-08-31T09:36:41"
+      },
+      {
+        "time": "10:40",
+        "action": "add",
+        "symbol": "SH600691",
+        "name": "潞化科技",
+        "watched": "2026-08-31T09:38:01"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SH600362",
+        "name": "江西铜业"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SH601118",
+        "name": "海南橡胶"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SH601212",
+        "name": "白银有色"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SZ000506",
+        "name": "招金黄金"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SZ000603",
+        "name": "盛达资源"
+      },
+      {
+        "time": "10:40",
+        "action": "remove",
+        "symbol": "SZ000713",
+        "name": "国投丰乐"
+      }
+    ]
+  },
   {
     "date": "2026-08-28",
     "changes": [

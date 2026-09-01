@@ -310,7 +310,7 @@
       }
       if (deviation && deviation.runs) {
         deviation.runs.forEach(r => {
-          const alerts = (r.stocks || []).filter(s => s.status !== 'normal');
+          const alerts = (r.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0);
           events.push({ time: r.generated_at, module: '偏离度', icon: '📈',
             content: `${r.time} 检查：${alerts.length > 0 ? alerts.length + ' 只预警' : '全部正常'}` });
         });

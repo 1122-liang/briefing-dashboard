@@ -23,7 +23,7 @@
           "deviation_pct": 0,
           "threshold_pct": 0,
           "trigger_price": null,
-          "status": "very_high",
+          "status": "insufficient",
           "valuation": null
         },
         {

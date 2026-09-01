@@ -1,5 +1,62 @@
 [
   {
+    "date": "2026-09-01",
+    "changes": [
+      {
+        "time": "14:08",
+        "action": "remove",
+        "symbol": "SH600227",
+        "name": "赤天化"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ002165",
+        "name": "红宝丽"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ000703",
+        "name": "恒逸石化"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-09-01T09:31:13"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SH600371",
+        "name": "万向德农",
+        "watched": "2026-09-01T09:32:47"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ000505",
+        "name": "京粮控股",
+        "watched": "2026-09-01T09:32:24"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ300927",
+        "name": "江天化学",
+        "watched": "2026-09-01T09:33:01"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SH600691",
+        "name": "潞化科技"
+      }
+    ]
+  },
+  {
     "date": "2026-08-31",
     "changes": [
       {

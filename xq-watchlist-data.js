@@ -1,30 +1,30 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-01T09:06:32",
+  "updated_at": "2026-09-01T15:58:26",
   "count": 5,
   "stocks": [
     {
-      "symbol": "SH600691",
-      "name": "潞化科技",
+      "symbol": "SZ300927",
+      "name": "江天化学",
       "marketplace": "CN",
-      "watched": "2026-08-31T09:38:01"
+      "watched": "2026-09-01T09:33:01"
     },
     {
-      "symbol": "SH600227",
-      "name": "赤天化",
+      "symbol": "SH600371",
+      "name": "万向德农",
       "marketplace": "CN",
-      "watched": "2026-08-31T09:36:41"
+      "watched": "2026-09-01T09:32:47"
     },
     {
-      "symbol": "SZ000703",
-      "name": "恒逸石化",
+      "symbol": "SZ000505",
+      "name": "京粮控股",
       "marketplace": "CN",
-      "watched": "2026-08-27T13:27:16"
+      "watched": "2026-09-01T09:32:24"
     },
     {
-      "symbol": "SZ002165",
-      "name": "红宝丽",
+      "symbol": "SH600127",
+      "name": "金健米业",
       "marketplace": "CN",
-      "watched": "2026-08-27T11:08:20"
+      "watched": "2026-09-01T09:31:13"
     },
     {
       "symbol": "SH600722",
@@ -35,6 +35,63 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-01",
+    "changes": [
+      {
+        "time": "14:08",
+        "action": "remove",
+        "symbol": "SH600227",
+        "name": "赤天化"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ002165",
+        "name": "红宝丽"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ000703",
+        "name": "恒逸石化"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-09-01T09:31:13"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SH600371",
+        "name": "万向德农",
+        "watched": "2026-09-01T09:32:47"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ000505",
+        "name": "京粮控股",
+        "watched": "2026-09-01T09:32:24"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SZ300927",
+        "name": "江天化学",
+        "watched": "2026-09-01T09:33:01"
+      },
+      {
+        "time": "09:34",
+        "action": "remove",
+        "symbol": "SH600691",
+        "name": "潞化科技"
+      }
+    ]
+  },
   {
     "date": "2026-08-31",
     "changes": [

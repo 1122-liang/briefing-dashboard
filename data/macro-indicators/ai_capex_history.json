@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "quarter": "2026Q2",
+      "date": "2026-09-01",
+      "companies": {
+        "MSFT": {
+          "capex_usd_b": 35.8,
+          "yoy_pct": 110,
+          "qoq_pct": 16
+        },
+        "AMZN": {
+          "capex_usd_b": 54.21,
+          "yoy_pct": 69,
+          "qoq_pct": 23
+        },
+        "GOOGL": {
+          "capex_usd_b": 44.92,
+          "yoy_pct": 101,
+          "qoq_pct": 22
+        },
+        "META": {
+          "capex_usd_b": 30.12,
+          "yoy_pct": 83,
+          "qoq_pct": 25
+        },
+        "ORCL": {
+          "capex_usd_b": null,
+          "yoy_pct": null,
+          "qoq_pct": null
+        },
+        "NVDA": {
+          "capex_usd_b": null,
+          "yoy_pct": null,
+          "qoq_pct": null
+        }
+      },
+      "total_capex_usd_b": 165.05,
+      "total_yoy_pct": 87,
+      "source": "基准数据",
+      "fy2026_outlook": {
+        "AMZN": {
+          "capex_usd_b": 220.0,
+          "note": "上调至2200亿美元（原2000亿）"
+        },
+        "GOOGL": {
+          "capex_usd_b": 200.0,
+          "note": "上调至1950-2050亿美元"
+        },
+        "MSFT": {
+          "capex_usd_b": 175.0,
+          "note": "口径调整后约1750亿（原1900亿，租赁会计/年限调整，需求未放缓）"
+        },
+        "META": {
+          "capex_usd_b": 137.5,
+          "note": "上调至1300-1450亿美元"
+        },
+        "ORCL": {
+          "capex_usd_b": null,
+          "note": "暂无全年指引"
+        },
+        "NVDA": {
+          "capex_usd_b": null,
+          "note": "暂无全年指引"
+        }
+      }
+    }
+  ],
+  "last_checked": "2026-09-01T10:38:29.165360+08:00"
+}

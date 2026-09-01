@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T08:47:45.486827+08:00",
+  "mcp_services": [
+    {
+      "name": "lexiang",
+      "type": "Remote MCP (streamable-http)",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本"
+    },
+    {
+      "name": "dayu-financials",
+      "type": "Local MCP (stdio)",
+      "current_version": "custom",
+      "latest_version": "custom",
+      "status": "up_to_date",
+      "note": "本地自定义服务，无版本号"
+    },
+    {
+      "name": "claude-memory",
+      "type": "npm MCP (stdio)",
+      "current_version": "2.0.1",
+      "latest_version": "2.0.1",
+      "status": "up_to_date",
+      "note": "npm 包文件完全一致"
+    },
+    {
+      "name": "scrapling",
+      "type": "pip MCP (stdio)",
+      "current_version": "0.4.9",
+      "latest_version": "0.4.15",
+      "status": "up_to_date",
+      "note": "已升级 0.4.9→0.4.15 (2026-09-01)",
+      "upgraded_at": "2026-09-01"
+    },
+    {
+      "name": "lighthouse-ops",
+      "type": "Remote MCP",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本"
+    }
+  ],
+  "skills_summary": {
+    "total_count": 69,
+    "self_created": 9,
+    "builtin": 59,
+    "external": 1,
+    "external_with_source": 0,
+    "no_source": 1,
+    "updates_needed": 0
+  },
+  "python_packages": [
+    {
+      "name": "akshare",
+      "current_version": "1.18.94",
+      "latest_version": "1.18.94",
+      "status": "up_to_date",
+      "note": "已升级 1.18.64→1.18.94",
+      "upgraded_at": "2026-09-01"
+    },
+    {
+      "name": "tushare",
+      "current_version": "1.4.29",
+      "latest_version": "1.4.29",
+      "status": "up_to_date",
+      "note": "已升级 1.4.25→1.4.29",
+      "upgraded_at": "2026-09-01"
+    },
+    {
+      "name": "pandas",
+      "current_version": "3.0.5",
+      "latest_version": "3.0.5",
+      "status": "up_to_date",
+      "note": "已升级 3.0.3→3.0.5",
+      "upgraded_at": "2026-09-01"
+    },
+    {
+      "name": "numpy",
+      "current_version": "2.5.2",
+      "latest_version": "2.5.2",
+      "status": "up_to_date",
+      "note": "已升级 2.4.6→2.5.2",
+      "upgraded_at": "2026-09-01"
+    },
+    {
+      "name": "requests",
+      "current_version": "2.34.2",
+      "latest_version": "2.34.2",
+      "status": "up_to_date",
+      "note": "已升级 2.32.5→2.34.2",
+      "upgraded_at": "2026-09-01"
+    }
+  ],
+  "updates_available": 0,
+  "updates_details": {
+    "mcp": [],
+    "python_packages": []
+  },
+  "aihot_api_status": "available (HTTP 200, 375412 bytes)",
+  "_filename": "2026-09-01.json",
+  "_saved_at": "2026-09-01T08:49:24.964336+08:00",
+  "upgrade_record": {
+    "executed_at": "2026-09-01T09:04+08:00",
+    "items": [
+      "scrapling 0.4.9→0.4.15 (系统 Python 3.11)",
+      "akshare 1.18.64→1.18.94 (default, sentiment-backtest)",
+      "tushare 1.4.25→1.4.29 (default)",
+      "pandas 3.0.3→3.0.5 (全部 venv)",
+      "numpy 2.4.6→2.5.2 (default/lithium/macro-indicators/sentiment-backtest; macro-indicators-311 因 Python 3.11 限制保持 2.4.6)",
+      "requests 2.32.5→2.34.2 (default/lithium)"
+    ],
+    "smoke_test": "all passed",
+    "note": "macro-indicators-311 为 Python 3.11，numpy 2.5.x 需 ≥3.12，保持 2.4.6 (该环境最高可用)"
+  }
+}

@@ -1,30 +1,18 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-02T15:55:52",
-  "count": 5,
+  "updated_at": "2026-09-03T09:33:26",
+  "count": 3,
   "stocks": [
+    {
+      "symbol": "SH600127",
+      "name": "金健米业",
+      "marketplace": "CN",
+      "watched": "2026-09-03T09:32:22"
+    },
     {
       "symbol": "SZ003040",
       "name": "楚天龙",
       "marketplace": "CN",
       "watched": "2026-09-02T10:40:06"
-    },
-    {
-      "symbol": "SZ301357",
-      "name": "北方长龙",
-      "marketplace": "CN",
-      "watched": "2026-09-02T10:07:22"
-    },
-    {
-      "symbol": "SH601606",
-      "name": "长城军工",
-      "marketplace": "CN",
-      "watched": "2026-09-02T10:06:29"
-    },
-    {
-      "symbol": "SZ002886",
-      "name": "沃特股份",
-      "marketplace": "CN",
-      "watched": "2026-09-02T10:05:59"
     },
     {
       "symbol": "SH600722",
@@ -35,6 +23,36 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-03",
+    "changes": [
+      {
+        "time": "09:33",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-09-03T09:32:22"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SH601606",
+        "name": "长城军工"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SZ002886",
+        "name": "沃特股份"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SZ301357",
+        "name": "北方长龙"
+      }
+    ]
+  },
   {
     "date": "2026-09-02",
     "changes": [

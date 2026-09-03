@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-09-03",
+    "changes": [
+      {
+        "time": "09:33",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-09-03T09:32:22"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SH601606",
+        "name": "长城军工"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SZ002886",
+        "name": "沃特股份"
+      },
+      {
+        "time": "09:28",
+        "action": "remove",
+        "symbol": "SZ301357",
+        "name": "北方长龙"
+      }
+    ]
+  },
+  {
     "date": "2026-09-02",
     "changes": [
       {

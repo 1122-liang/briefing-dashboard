@@ -1,30 +1,30 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-02T09:09:47",
+  "updated_at": "2026-09-02T15:55:52",
   "count": 5,
   "stocks": [
     {
-      "symbol": "SZ300927",
-      "name": "江天化学",
+      "symbol": "SZ003040",
+      "name": "楚天龙",
       "marketplace": "CN",
-      "watched": "2026-09-01T09:33:01"
+      "watched": "2026-09-02T10:40:06"
     },
     {
-      "symbol": "SH600371",
-      "name": "万向德农",
+      "symbol": "SZ301357",
+      "name": "北方长龙",
       "marketplace": "CN",
-      "watched": "2026-09-01T09:32:47"
+      "watched": "2026-09-02T10:07:22"
     },
     {
-      "symbol": "SZ000505",
-      "name": "京粮控股",
+      "symbol": "SH601606",
+      "name": "长城军工",
       "marketplace": "CN",
-      "watched": "2026-09-01T09:32:24"
+      "watched": "2026-09-02T10:06:29"
     },
     {
-      "symbol": "SH600127",
-      "name": "金健米业",
+      "symbol": "SZ002886",
+      "name": "沃特股份",
       "marketplace": "CN",
-      "watched": "2026-09-01T09:31:13"
+      "watched": "2026-09-02T10:05:59"
     },
     {
       "symbol": "SH600722",
@@ -35,6 +35,63 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-02",
+    "changes": [
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ003040",
+        "name": "楚天龙",
+        "watched": "2026-09-02T10:40:06"
+      },
+      {
+        "time": "10:09",
+        "action": "add",
+        "symbol": "SH601606",
+        "name": "长城军工",
+        "watched": "2026-09-02T10:06:29"
+      },
+      {
+        "time": "10:09",
+        "action": "add",
+        "symbol": "SZ002886",
+        "name": "沃特股份",
+        "watched": "2026-09-02T10:05:59"
+      },
+      {
+        "time": "10:09",
+        "action": "add",
+        "symbol": "SZ301357",
+        "name": "北方长龙",
+        "watched": "2026-09-02T10:07:22"
+      },
+      {
+        "time": "10:09",
+        "action": "remove",
+        "symbol": "SH600127",
+        "name": "金健米业"
+      },
+      {
+        "time": "10:09",
+        "action": "remove",
+        "symbol": "SH600371",
+        "name": "万向德农"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ000505",
+        "name": "京粮控股"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ300927",
+        "name": "江天化学"
+      }
+    ]
+  },
   {
     "date": "2026-09-01",
     "changes": [

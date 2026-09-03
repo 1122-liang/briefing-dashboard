@@ -1,24 +1,5 @@
 {
-  "updated_at": "2026-09-03T09:33:26",
-  "count": 3,
-  "stocks": [
-    {
-      "symbol": "SH600127",
-      "name": "金健米业",
-      "marketplace": "CN",
-      "watched": "2026-09-03T09:32:22"
-    },
-    {
-      "symbol": "SZ003040",
-      "name": "楚天龙",
-      "marketplace": "CN",
-      "watched": "2026-09-02T10:40:06"
-    },
-    {
-      "symbol": "SH600722",
-      "name": "金牛化工",
-      "marketplace": "CN",
-      "watched": "2026-08-19T10:35:24"
-    }
-  ]
+  "updated_at": "2026-09-03T15:57:28",
+  "count": 0,
+  "stocks": []
 }

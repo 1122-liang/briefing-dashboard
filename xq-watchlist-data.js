@@ -1,31 +1,134 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-03T09:33:26",
-  "count": 3,
-  "stocks": [
-    {
-      "symbol": "SH600127",
-      "name": "金健米业",
-      "marketplace": "CN",
-      "watched": "2026-09-03T09:32:22"
-    },
-    {
-      "symbol": "SZ003040",
-      "name": "楚天龙",
-      "marketplace": "CN",
-      "watched": "2026-09-02T10:40:06"
-    },
-    {
-      "symbol": "SH600722",
-      "name": "金牛化工",
-      "marketplace": "CN",
-      "watched": "2026-08-19T10:35:24"
-    }
-  ]
+  "updated_at": "2026-09-03T15:57:28",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
   {
     "date": "2026-09-03",
     "changes": [
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH600610",
+        "name": "中毅达"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH600722",
+        "name": "金牛化工"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH601083",
+        "name": "锦江航运"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH601872",
+        "name": "招商轮船"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH603268",
+        "name": "松发股份"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SH688485",
+        "name": "九州一轨"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SZ002536",
+        "name": "飞龙股份"
+      },
+      {
+        "time": "15:02",
+        "action": "remove",
+        "symbol": "SZ300927",
+        "name": "江天化学"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SH600610",
+        "name": "中毅达",
+        "watched": "2026-09-03T10:00:52"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SH601083",
+        "name": "锦江航运",
+        "watched": "2026-09-03T10:23:13"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SH601872",
+        "name": "招商轮船",
+        "watched": "2026-09-03T10:46:49"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SH603268",
+        "name": "松发股份",
+        "watched": "2026-09-03T10:23:31"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SZ002536",
+        "name": "飞龙股份",
+        "watched": "2026-09-03T11:10:10"
+      },
+      {
+        "time": "13:32",
+        "action": "add",
+        "symbol": "SZ300927",
+        "name": "江天化学",
+        "watched": "2026-09-03T10:05:25"
+      },
+      {
+        "time": "13:32",
+        "action": "remove",
+        "symbol": "SH600127",
+        "name": "金健米业"
+      },
+      {
+        "time": "13:32",
+        "action": "remove",
+        "symbol": "SZ003040",
+        "name": "楚天龙"
+      },
+      {
+        "time": "13:32",
+        "action": "remove",
+        "symbol": "SZ300413",
+        "name": "芒果超媒"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ300413",
+        "name": "芒果超媒",
+        "watched": "2026-09-03T09:38:55"
+      },
+      {
+        "time": "09:38",
+        "action": "add",
+        "symbol": "SH688485",
+        "name": "九州一轨",
+        "watched": "2026-09-03T09:35:03"
+      },
       {
         "time": "09:33",
         "action": "add",

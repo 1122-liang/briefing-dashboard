@@ -5446,3 +5446,314 @@
 [WARN] 无历史快照，将当前列表作为基线
 [INFO] 下次执行将超出 16:00，退出
 [INFO] 持续运行模式已退出
+[INFO] 持续运行模式启动 (PID=22068)
+[INFO] 运行窗口: 9:00 - 16:00
+[INFO] 轮询间隔: 300s
+
+[09:06:14] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:11:14
+
+[09:11:14] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:16:14
+
+[09:16:15] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:21:15
+
+[09:21:15] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:26:15
+
+[09:26:15] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:31:15
+
+[09:31:16] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:36:16
+
+[09:36:17] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:41:17
+
+[09:41:18] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:46:18
+
+[09:46:19] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:51:19
+
+[09:51:20] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 09:56:20
+
+[09:56:20] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:01:20
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+
+[10:27:21] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:32:21
+
+[10:32:22] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:37:22
+
+[10:37:23] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:42:23
+
+[10:42:23] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:47:23
+
+[10:47:24] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:52:24
+
+[10:52:25] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 10:57:25
+
+[10:57:25] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:02:25
+
+[11:02:26] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:07:26
+
+[11:07:26] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:12:26
+
+[11:12:27] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:17:27
+
+[11:17:27] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:22:27
+
+[11:22:28] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:27:28
+
+[11:27:29] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 11:32:29
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+[WARN] 瞬态网络故障: 验证请求失败: <urlopen error [Errno 8] nodename nor servname provided, or not known>，120秒后重试...
+
+[13:32:00] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 13:37:00
+
+[13:37:01] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 13:42:01
+
+[13:42:02] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 13:47:02
+
+[13:47:02] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 13:52:02
+
+[13:52:03] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 13:57:03
+
+[13:57:03] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:02:03
+
+[14:02:04] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:07:04
+
+[14:07:04] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:12:04
+
+[14:12:05] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:17:05
+
+[14:17:06] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:22:06
+
+[14:22:07] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:27:07
+
+[14:27:07] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:32:07
+
+[14:32:07] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:37:07
+
+[14:37:08] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:42:08
+
+[14:42:09] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:47:09
+
+[14:47:09] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:52:09
+
+[14:52:10] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 14:57:10
+
+[14:57:11] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:02:11
+
+[15:02:11] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:07:11
+
+[15:07:13] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:12:13
+
+[15:12:13] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:17:13
+
+[15:17:13] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:22:13
+
+[15:22:14] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:27:14
+
+[15:27:15] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:32:15
+
+[15:32:16] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:37:16
+
+[15:37:17] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:42:17
+
+[15:42:17] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:47:17
+
+[15:47:18] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:52:18
+
+[15:52:18] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次检测: 15:57:18
+
+[15:57:19] 执行检测...
+[INFO] 当前自选股: 0 只
+[WARN] 无历史快照，将当前列表作为基线
+[INFO] 下次执行将超出 16:00，退出
+[INFO] 持续运行模式已退出

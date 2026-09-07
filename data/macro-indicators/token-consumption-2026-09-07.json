@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-07",
+  "record": {
+    "date": "2026-09-07",
+    "total_weekly_tokens_t": 115.46,
+    "models": [
+      {
+        "rank": 1,
+        "name": "Hy4 Preview",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy4-preview-20260827",
+        "weekly_tokens_t": 14.67
+      },
+      {
+        "rank": 2,
+        "name": "Gpt 5.6 Luna",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-luna-20260709",
+        "weekly_tokens_t": 12.94
+      },
+      {
+        "rank": 3,
+        "name": "Glm 5.3 Flash",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.3-flash-20260826",
+        "weekly_tokens_t": 12.39
+      },
+      {
+        "rank": 4,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260731",
+        "weekly_tokens_t": 12.36
+      },
+      {
+        "rank": 5,
+        "name": "Minimax M3",
+        "vendor": "MiniMax",
+        "vendor_slug": "minimax",
+        "slug": "minimax/minimax-m3-20260531",
+        "weekly_tokens_t": 6.46
+      },
+      {
+        "rank": 6,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "weekly_tokens_t": 5.19
+      },
+      {
+        "rank": 7,
+        "name": "Hy3",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy3-20260706",
+        "weekly_tokens_t": 3.99
+      },
+      {
+        "rank": 8,
+        "name": "Nemotron 3 Ultra 550B A55B",
+        "vendor": "Nvidia",
+        "vendor_slug": "nvidia",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "weekly_tokens_t": 3.69
+      },
+      {
+        "rank": 9,
+        "name": "Glm 5.3",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.3-20260816",
+        "weekly_tokens_t": 3.02
+      },
+      {
+        "rank": 10,
+        "name": "Glm 5.2",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.2-20260616",
+        "weekly_tokens_t": 2.37
+      },
+      {
+        "rank": 11,
+        "name": "Mimo V2.5",
+        "vendor": "Xiaomi",
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "weekly_tokens_t": 2.35
+      },
+      {
+        "rank": 12,
+        "name": "Gemini 3.7 Flash",
+        "vendor": "Google",
+        "vendor_slug": "google",
+        "slug": "google/gemini-3.7-flash-20260813",
+        "weekly_tokens_t": 2.11
+      },
+      {
+        "rank": 13,
+        "name": "Kimi K3",
+        "vendor": "MoonshotAI",
+        "vendor_slug": "moonshotai",
+        "slug": "moonshotai/kimi-k3-20260715",
+        "weekly_tokens_t": 1.98
+      },
+      {
+        "rank": 14,
+        "name": "Gpt 5.6 Sol",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-sol-20260709",
+        "weekly_tokens_t": 1.88
+      },
+      {
+        "rank": 15,
+        "name": "Claude Opus 5",
+        "vendor": "Anthropic",
+        "vendor_slug": "anthropic",
+        "slug": "anthropic/claude-opus-5-20260723",
+        "weekly_tokens_t": 1.78
+      }
+    ],
+    "data_source": "openrouter-api",
+    "openrouter_models_count": 430,
+    "data_dates": [
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06"
+    ]
+  },
+  "growth": {
+    "has_growth_data": true,
+    "week_change_t": 22.08,
+    "week_growth_pct": 23.65,
+    "ma4_growth_pct": 45.82,
+    "growth_trend": "波动",
+    "trend_icon": "📊",
+    "total_records": 9
+  },
+  "vendor_share": {
+    "Tencent": 21.4,
+    "Z-AI": 20.4,
+    "DeepSeek": 20.1,
+    "OpenAI": 17.0,
+    "MiniMax": 7.4,
+    "Nvidia": 4.2,
+    "Xiaomi": 2.7,
+    "Google": 2.4,
+    "MoonshotAI": 2.3,
+    "Anthropic": 2.0
+  },
+  "data_source": "OpenRouter Rankings",
+  "generated_at": "2026-09-07T10:13:11.233177+08:00"
+}

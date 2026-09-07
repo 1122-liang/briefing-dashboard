@@ -1,5 +1,5 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-04T15:57:20",
+  "updated_at": "2026-09-07T09:04:39",
   "count": 0,
   "stocks": []
 };

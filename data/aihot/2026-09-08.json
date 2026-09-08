@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-08T08:54:53.988643+08:00",
+  "window_hours": 24,
+  "total_opportunities": 2,
+  "opportunities": [
+    {
+      "id": "cmtrkorpo07jdrotnozlrlyx2",
+      "title": "Anthropic 签约 5170 亿美元算力协议，锁定至少 14.8GW：算力军备进入「千亿级长约」时代",
+      "industry": "AI 算力基础设施",
+      "type": "industry/重大资本开支",
+      "summary": "据 The Information 报道，Anthropic 在 11 个月内签署了价值高达 5170 亿美元的算力合同，自 2025 年 10 月以来累计锁定至少 14.8GW 算力，并计划自建数据中心。此举发生在其 CEO Dario Amodei 就「不计后果的算力竞争风险」警告同行之后，形成「口头警惕、行动加码」的鲜明对比。结合 9/7 曝出的 IPO 提速（目标募资 1000 亿美元、估值预期最高 2 万亿美元），巨额算力长约成为支撑其估值叙事的核心资本开支证据。",
+      "investment_logic": "头部模型厂算力获取模式从「按需租云」转向「多年长约+自建」，把算力需求可见性拉长至数年维度，为算力链提供确定性需求曲线：①14.8GW 锁定规模意味着海量 GPU 采购与数据中心交付，直接利好训练/推理芯片主供应商；②自建数据中心抬升美国电力瓶颈紧迫性（14.8GW 相当于十余座大型核电站出力），核电/独立发电商及电网设备受益逻辑强化；③电力与液冷基础设施（单机柜功率密度持续上行）是确定性外溢方向。该协议与 Anthropic IPO 预期互相强化，10 月路演窗口前算力主线催化密集。",
+      "target_stocks": "英伟达（NVDA.O，Anthropic 训练算力核心供应商）、Constellation Energy（CEG.O，美国核电龙头，AI 数据中心供电主力）、Vertiv Holdings（VRT.N，数据中心电力/液冷基础设施）、Vistra（VST.N，美国独立发电商）、Coherent（COHR.O，AI 数据中心光模块）",
+      "risk_note": "金额为 The Information 报道口径，非公司官方确认，长约通常含可调整/退出条款，实际执行金额可能低于名义值；Anthropic 未上市，二级市场无直接敞口，受益标的集中于供应链；若 IPO 进程生变或融资不顺，巨额 capex 承诺存执行风险；市场此前对算力长约「宣传大于落地」已有疑虑（参照 CoreWeave/OpenAI 条款调整先例）。",
+      "source": "The Decoder（援引 The Information）2026-09-07"
+    },
+    {
+      "id": "cmtrxbv5n02etroftlb6u96xt",
+      "title": "GPT-6 Astra 实操 Blender 建模：AI Agent 突破专业 3D 创作工具，但成本仍高企",
+      "industry": "AI 应用/3D 内容创作",
+      "type": "application/能力边界验证",
+      "summary": "教程作者实测 GPT-6 Astra 操控开源 3D 软件 Blender：Computer Use 模式约 4 小时搭建出天坛祈年殿复杂模型，但消耗 Pro 会员（200 美元）近半额度；MCP 模式可完成摩托车建模与组装动画，复杂任务单次运行会超时，需拆分步骤或用 CLI 执行 Python 脚本兜底。作为 GPT-6 Astra（9/4 发布）后首批深度实操案例，证明旗舰多模态 Agent 已具备驱动专业 DCC 软件完成中等复杂度任务的能力。",
+      "investment_logic": "标志 Agent 能力从编程/网页操作外溢至专业设计工具链，验证「自然语言→专业软件产出」路径，三条受益线索：①DCC/CAD 龙头拥抱 AI 原生工作流，软件形态从工具向「Agent 执行环境」演进；②单任务数百美元级算力消耗（约 100 美元/4 小时任务）说明强推理场景是 token 消耗与算力需求的新增长极，利好推理算力产业链；③AI 生成 3D 资产有望降低游戏/影视/工业设计内容生产成本，驱动 3D 引擎与资产生态平台需求。属 GPT-6 Astra 发布后的生态早期验证，方向上确认「模型能力→专业软件落地」的渗透节奏。",
+      "target_stocks": "Autodesk（ADSK.O，CAD/工业设计软件龙头，AI 原生工作流直接受益）、Unity Software（U.N，3D 实时内容引擎，AI 资产生成降本受益）、Adobe（ADBE.O，创意工具套件 Agent 化）、英伟达（NVDA.O，推理算力与 Omniverse 3D 生态）",
+      "risk_note": "本条为教程/案例类（tip）而非公司基本面事件，仅反映能力边界进展；单任务成本约 100 美元、复杂任务稳定性不足，短期难规模化商用；Blender 为开源软件，教程热度不一定直接转化为上市公司收入；实操体验与生产级工作流仍有差距，需警惕对应用落地节奏的高估。",
+      "source": "公众号：数字生命卡兹克 2026-09-08"
+    }
+  ],
+  "no_opportunity": false,
+  "_filename": "2026-09-08.json",
+  "_saved_at": "2026-09-08T08:54:53.988824+08:00"
+}

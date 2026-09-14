@@ -884,7 +884,144 @@
         "2026-09-05",
         "2026-09-06"
       ]
+    },
+    {
+      "date": "2026-09-14",
+      "total_weekly_tokens_t": 126.76,
+      "models": [
+        {
+          "rank": 1,
+          "name": "Gpt 5.6 Luna",
+          "vendor": "OpenAI",
+          "vendor_slug": "openai",
+          "slug": "openai/gpt-5.6-luna-20260709",
+          "weekly_tokens_t": 18.19
+        },
+        {
+          "rank": 2,
+          "name": "Hy4 Preview",
+          "vendor": "Tencent",
+          "vendor_slug": "tencent",
+          "slug": "tencent/hy4-preview-20260827",
+          "weekly_tokens_t": 16.82
+        },
+        {
+          "rank": 3,
+          "name": "Glm 5.3 Flash",
+          "vendor": "Z-AI",
+          "vendor_slug": "z-ai",
+          "slug": "z-ai/glm-5.3-flash-20260826",
+          "weekly_tokens_t": 11.89
+        },
+        {
+          "rank": 4,
+          "name": "Deepseek V4 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4-flash-20260731",
+          "weekly_tokens_t": 11.56
+        },
+        {
+          "rank": 5,
+          "name": "Mimo V2.5",
+          "vendor": "Xiaomi",
+          "vendor_slug": "xiaomi",
+          "slug": "xiaomi/mimo-v2.5-20260422",
+          "weekly_tokens_t": 7.77
+        },
+        {
+          "rank": 6,
+          "name": "Deepseek V4.1 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4.1-flash-20260910",
+          "weekly_tokens_t": 4.94
+        },
+        {
+          "rank": 7,
+          "name": "Deepseek V4 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4-flash-20260423",
+          "weekly_tokens_t": 4.36
+        },
+        {
+          "rank": 8,
+          "name": "Hy3",
+          "vendor": "Tencent",
+          "vendor_slug": "tencent",
+          "slug": "tencent/hy3-20260706",
+          "weekly_tokens_t": 3.8
+        },
+        {
+          "rank": 9,
+          "name": "Nemotron 3 Ultra 550B A55B",
+          "vendor": "Nvidia",
+          "vendor_slug": "nvidia",
+          "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+          "weekly_tokens_t": 3.6
+        },
+        {
+          "rank": 10,
+          "name": "Gemini 3.8 Flash",
+          "vendor": "Google",
+          "vendor_slug": "google",
+          "slug": "google/gemini-3.8-flash-20260902",
+          "weekly_tokens_t": 2.56
+        },
+        {
+          "rank": 11,
+          "name": "Glm 5.3",
+          "vendor": "Z-AI",
+          "vendor_slug": "z-ai",
+          "slug": "z-ai/glm-5.3-20260816",
+          "weekly_tokens_t": 2.52
+        },
+        {
+          "rank": 12,
+          "name": "Minimax M3",
+          "vendor": "MiniMax",
+          "vendor_slug": "minimax",
+          "slug": "minimax/minimax-m3-20260531",
+          "weekly_tokens_t": 2.04
+        },
+        {
+          "rank": 13,
+          "name": "Muse Spark 1.3 Contributor",
+          "vendor": "Meta",
+          "vendor_slug": "meta",
+          "slug": "meta/muse-spark-1.3-contributor-20260902",
+          "weekly_tokens_t": 1.98
+        },
+        {
+          "rank": 14,
+          "name": "Glm 5.2",
+          "vendor": "Z-AI",
+          "vendor_slug": "z-ai",
+          "slug": "z-ai/glm-5.2-20260616",
+          "weekly_tokens_t": 1.73
+        },
+        {
+          "rank": 15,
+          "name": "Solar Pro4",
+          "vendor": "Upstage",
+          "vendor_slug": "upstage",
+          "slug": "upstage/solar-pro4-20260810",
+          "weekly_tokens_t": 1.71
+        }
+      ],
+      "data_source": "openrouter-api",
+      "openrouter_models_count": 445,
+      "data_dates": [
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13"
+      ]
     }
   ],
-  "last_checked": "2026-09-07T10:13:11.219614+08:00"
+  "last_checked": "2026-09-14T10:03:10.168067+08:00"
 }

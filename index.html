@@ -90,6 +90,8 @@
         const stocks = latestRun.stocks || [];
         // Exclude stocks with invalid deviation data (e.g. HK stocks without monthly deviation)
         const alerts = stocks.filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null).length;
+        // 接口异常（月K获取失败，已重试仍失败）单独计数，不与「全部正常」混淆
+        const fetchFailed = stocks.filter(s => s.status === 'fetch_failed').length;
         const total = stocks.length;
         cards.push(`
           <a href="deviation.html" class="stat-card">
@@ -98,7 +100,9 @@
             <div class="stat-change">
               ${alerts > 0
                 ? `<span class="up">${alerts} 只偏高/极高</span>`
-                : '<span class="down">全部正常</span>'}
+                : (fetchFailed > 0
+                    ? `<span class="up">⚠️ ${fetchFailed} 只接口异常</span>`
+                    : '<span class="down">全部正常</span>')}
             </div>
             <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
               最近更新 ${fmtDateTime(latestRun.generated_at)}
@@ -311,8 +315,12 @@
       if (deviation && deviation.runs) {
         deviation.runs.forEach(r => {
           const alerts = (r.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0);
+          const failed = (r.stocks || []).filter(s => s.status === 'fetch_failed').length;
+          const parts = [];
+          if (alerts.length > 0) parts.push(alerts.length + ' 只预警');
+          if (failed > 0) parts.push(failed + ' 只接口异常');
           events.push({ time: r.generated_at, module: '偏离度', icon: '📈',
-            content: `${r.time} 检查：${alerts.length > 0 ? alerts.length + ' 只预警' : '全部正常'}` });
+            content: `${r.time} 检查：${parts.length > 0 ? parts.join(' · ') : '全部正常'}` });
         });
       }
       if (sanmei && sanmei.generated_at) {

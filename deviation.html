@@ -76,19 +76,26 @@
       app.innerHTML = `
         <div class="flex items-center justify-between mb-4">
           <h1 style="font-size:24px;font-weight:700">📈 月度偏离度预警</h1>
-          <span class="text-sm" style="color:var(--text-muted)">${latestRun.date} ${latestRun.time || ''}</span>
+          <div class="text-sm" style="color:var(--text-muted);text-align:right">
+            <div>${latestRun.date} ${latestRun.time || ''}</div>
+            ${latestRun.method ? `<div class="text-xs">口径：月K${
+                latestRun.method.adjust === 'qfq' ? '前复权' : latestRun.method.adjust
+              } · 回看${latestRun.method.lookback_months}月 · ${latestRun.method.source || ''}</div>` : ''}
+          </div>
         </div>
 
         <!-- Current Status Cards -->
         <div class="stats-grid">
           ${stocks.map(s => {
             const hasValidData = s.threshold_pct > 0 && s.trigger_price != null;
+            // fetch_failed = 月K接口获取失败（已重试仍失败），与真实数据不足区分展示
+            const fetchFailed = s.status === 'fetch_failed';
             const statusCls = !hasValidData ? 'neutral' : s.deviation_pct >= 0 ? 'up' : 'down';
             return `
               <div class="stat-card">
                 <div class="stat-label">${s.name} (${s.code})</div>
-                <div class="stat-value ${statusCls}">${hasValidData ? fmtPct(s.deviation_pct) : '暂无数据'}</div>
-                <div class="stat-change neutral">${hasValidData ? `阈值 ${s.threshold_pct}%` : '月度数据未覆盖'}</div>
+                <div class="stat-value ${statusCls}">${hasValidData ? fmtPct(s.deviation_pct) : (fetchFailed ? '接口异常' : '暂无数据')}</div>
+                <div class="stat-change neutral">${hasValidData ? `阈值 ${s.threshold_pct}%` : (fetchFailed ? '月K接口获取失败，待复核' : '月度数据未覆盖')}</div>
                 ${s.valuation ? `
                   <div class="text-xs" style="margin-top:4px;color:var(--text-muted)">
                     估: ${s.valuation.pessimistic}/${s.valuation.neutral}/${s.valuation.optimistic}
@@ -183,21 +190,40 @@
         }
       }
 
+      // 口径变更边界：由旧到新逐次比较，标记口径切换的那一次运行
+      // （旧记录无 method 字段 = 历史「不复权」口径；新记录带 method = 前复权+固定回看窗口）
+      const methodKeyOf = r => r.method ? `${r.method.adjust}-${r.method.lookback_months}` : 'legacy';
+      const methodLabelOf = r => r.method
+        ? `${r.method.adjust === 'qfq' ? '前复权' : r.method.adjust}·回看${r.method.lookback_months}月`
+        : '旧口径(不复权)';
+      const methodChanged = new Set();
+      const ascRuns = flatRuns.slice().reverse();
+      for (let i = 1; i < ascRuns.length; i++) {
+        if (methodKeyOf(ascRuns[i]) !== methodKeyOf(ascRuns[i - 1])) methodChanged.add(ascRuns[i]);
+      }
+
       // Render history
       const historyEl = document.getElementById('historyList');
       historyEl.innerHTML = flatRuns.slice(0, 30).map(run => {
-        // Exclude stocks with invalid deviation data (threshold_pct=0 means no monthly data)
+        // alerts: 真实预警（阈值/触发价齐备才计入）；failed: 接口异常（单独以黄色徽标提示，不计为预警）
         const alerts = (run.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null);
+        const failed = (run.stocks || []).filter(s => s.status === 'fetch_failed');
+        const badges = [
+          ...alerts.map(a => `<span class="badge badge-red" style="margin-left:4px">${a.name} ${fmtPct(a.deviation_pct)}</span>`),
+          ...failed.map(a => `<span class="badge badge-yellow" style="margin-left:4px" title="${a.data_note || '接口异常'}">${a.name} 接口异常</span>`),
+        ].join('');
+        const methodBadge = methodChanged.has(run)
+          ? `<span class="badge badge-yellow" style="margin-left:4px" title="计算口径在此次运行发生变更，趋势线在该点存在口径性台阶">口径变更 → ${methodLabelOf(run)}</span>`
+          : '';
         return `
           <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
             <div>
               <span class="font-bold">${run.date}</span>
               <span class="badge badge-blue" style="margin-left:8px">${run.time || ''}</span>
+              ${methodBadge}
             </div>
             <div>
-              ${alerts.length > 0
-                ? alerts.map(a => `<span class="badge badge-red" style="margin-left:4px">${a.name} ${fmtPct(a.deviation_pct)}</span>`).join('')
-                : '<span class="badge badge-green">全部正常</span>'}
+              ${badges || '<span class="badge badge-green">全部正常</span>'}
             </div>
           </div>
         `;

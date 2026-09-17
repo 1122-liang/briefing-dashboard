@@ -12,7 +12,7 @@
           "price": 35.15,
           "deviation_pct": 12.4,
           "threshold_pct": 43.7,
-          "trigger_price": 50.52,
+          "trigger_price": 44.94,
           "status": "normal",
           "valuation": null
         },
@@ -32,7 +32,7 @@
           "price": 23.67,
           "deviation_pct": -2.8,
           "threshold_pct": 46.0,
-          "trigger_price": 34.57,
+          "trigger_price": 35.55,
           "status": "normal",
           "valuation": null
         },
@@ -42,7 +42,7 @@
           "price": 10.77,
           "deviation_pct": 0.6,
           "threshold_pct": 29.5,
-          "trigger_price": 13.95,
+          "trigger_price": 13.86,
           "status": "normal",
           "valuation": null
         },
@@ -52,7 +52,7 @@
           "price": 43.29,
           "deviation_pct": 5.1,
           "threshold_pct": 46.3,
-          "trigger_price": 63.35,
+          "trigger_price": 60.3,
           "status": "normal",
           "valuation": null
         },
@@ -62,7 +62,7 @@
           "price": 35.1,
           "deviation_pct": 3.7,
           "threshold_pct": 75.4,
-          "trigger_price": 61.58,
+          "trigger_price": 59.38,
           "status": "normal",
           "valuation": null
         }

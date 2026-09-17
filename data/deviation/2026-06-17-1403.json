@@ -12,7 +12,7 @@
           "price": 71.12,
           "deviation_pct": -7.2,
           "threshold_pct": 65.4,
-          "trigger_price": 117.62,
+          "trigger_price": 126.71,
           "status": "normal",
           "valuation": {
             "pessimistic": 70.02,
@@ -26,7 +26,7 @@
           "price": 63.84,
           "deviation_pct": 0.1,
           "threshold_pct": 68.5,
-          "trigger_price": 107.59,
+          "trigger_price": 107.52,
           "status": "normal",
           "valuation": {
             "pessimistic": 82.68,
@@ -40,7 +40,7 @@
           "price": 30.28,
           "deviation_pct": -9.0,
           "threshold_pct": 43.7,
-          "trigger_price": 43.52,
+          "trigger_price": 47.8,
           "status": "normal",
           "valuation": null
         },
@@ -50,7 +50,7 @@
           "price": 67.8,
           "deviation_pct": 4.5,
           "threshold_pct": 45.0,
-          "trigger_price": 98.33,
+          "trigger_price": 94.09,
           "status": "normal",
           "valuation": null
         },
@@ -60,7 +60,7 @@
           "price": 16.78,
           "deviation_pct": -8.8,
           "threshold_pct": 44.9,
-          "trigger_price": 24.32,
+          "trigger_price": 26.67,
           "status": "normal",
           "valuation": null
         },
@@ -80,7 +80,7 @@
           "price": 22.03,
           "deviation_pct": -15.1,
           "threshold_pct": 46.0,
-          "trigger_price": 32.17,
+          "trigger_price": 37.88,
           "status": "normal",
           "valuation": null
         },
@@ -90,7 +90,7 @@
           "price": 9.77,
           "deviation_pct": -12.9,
           "threshold_pct": 29.5,
-          "trigger_price": 12.65,
+          "trigger_price": 14.53,
           "status": "normal",
           "valuation": null
         },
@@ -100,7 +100,7 @@
           "price": 45.91,
           "deviation_pct": 19.5,
           "threshold_pct": 42.1,
-          "trigger_price": 65.26,
+          "trigger_price": 54.61,
           "status": "normal",
           "valuation": null
         }

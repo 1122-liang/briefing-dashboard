@@ -1,7 +1,14 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-09T15:57:48",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-09-18T09:59:28",
+  "count": 1,
+  "stocks": [
+    {
+      "symbol": "SZ000993",
+      "name": "闽东电力",
+      "marketplace": "CN",
+      "watched": "2026-09-16T09:25:04"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
   {

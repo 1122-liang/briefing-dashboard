@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-18T09:59:28",
-  "count": 1,
+  "updated_at": "2026-09-21T15:59:11",
+  "count": 3,
   "stocks": [
+    {
+      "symbol": "SH601086",
+      "name": "国芳集团",
+      "marketplace": "CN",
+      "watched": "2026-09-21T10:37:35"
+    },
+    {
+      "symbol": "SH600127",
+      "name": "金健米业",
+      "marketplace": "CN",
+      "watched": "2026-09-21T10:18:36"
+    },
     {
       "symbol": "SZ000993",
       "name": "闽东电力",
@@ -11,6 +23,51 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-21",
+    "changes": [
+      {
+        "time": "10:41",
+        "action": "add",
+        "symbol": "SH601086",
+        "name": "国芳集团",
+        "watched": "2026-09-21T10:37:35"
+      },
+      {
+        "time": "10:21",
+        "action": "add",
+        "symbol": "SH600127",
+        "name": "金健米业",
+        "watched": "2026-09-21T10:18:36"
+      },
+      {
+        "time": "09:46",
+        "action": "remove",
+        "symbol": "SH603248",
+        "name": "锡华科技"
+      },
+      {
+        "time": "09:26",
+        "action": "remove",
+        "symbol": "SH603122",
+        "name": "合富中国"
+      },
+      {
+        "time": "09:16",
+        "action": "add",
+        "symbol": "SH603122",
+        "name": "合富中国",
+        "watched": "2026-09-18T10:20:29"
+      },
+      {
+        "time": "09:16",
+        "action": "add",
+        "symbol": "SH603248",
+        "name": "锡华科技",
+        "watched": "2026-09-18T10:20:27"
+      }
+    ]
+  },
   {
     "date": "2026-09-03",
     "changes": [

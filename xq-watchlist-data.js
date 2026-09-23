@@ -1,19 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-21T15:59:11",
-  "count": 3,
+  "updated_at": "2026-09-22T15:55:14",
+  "count": 1,
   "stocks": [
-    {
-      "symbol": "SH601086",
-      "name": "国芳集团",
-      "marketplace": "CN",
-      "watched": "2026-09-21T10:37:35"
-    },
-    {
-      "symbol": "SH600127",
-      "name": "金健米业",
-      "marketplace": "CN",
-      "watched": "2026-09-21T10:18:36"
-    },
     {
       "symbol": "SZ000993",
       "name": "闽东电力",
@@ -23,6 +11,23 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-22",
+    "changes": [
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SH600127",
+        "name": "金健米业"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SH601086",
+        "name": "国芳集团"
+      }
+    ]
+  },
   {
     "date": "2026-09-21",
     "changes": [

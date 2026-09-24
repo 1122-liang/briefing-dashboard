@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-24T09:22:20",
-  "count": 1,
+  "updated_at": "2026-09-24T13:51:13",
+  "count": 2,
   "stocks": [
+    {
+      "symbol": "SH601218",
+      "name": "吉鑫科技",
+      "marketplace": "CN",
+      "watched": "2026-09-24T10:06:46"
+    },
     {
       "symbol": "SZ000993",
       "name": "闽东电力",
@@ -11,6 +17,31 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-24",
+    "changes": [
+      {
+        "time": "10:57",
+        "action": "remove",
+        "symbol": "SH603230",
+        "name": "内蒙新华"
+      },
+      {
+        "time": "10:07",
+        "action": "add",
+        "symbol": "SH601218",
+        "name": "吉鑫科技",
+        "watched": "2026-09-24T10:06:46"
+      },
+      {
+        "time": "09:37",
+        "action": "add",
+        "symbol": "SH603230",
+        "name": "内蒙新华",
+        "watched": "2026-09-24T09:34:34"
+      }
+    ]
+  },
   {
     "date": "2026-09-22",
     "changes": [

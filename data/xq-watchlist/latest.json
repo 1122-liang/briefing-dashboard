@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-09-24T09:22:20",
-  "count": 1,
+  "updated_at": "2026-09-24T13:51:13",
+  "count": 2,
   "stocks": [
+    {
+      "symbol": "SH601218",
+      "name": "吉鑫科技",
+      "marketplace": "CN",
+      "watched": "2026-09-24T10:06:46"
+    },
     {
       "symbol": "SZ000993",
       "name": "闽东电力",

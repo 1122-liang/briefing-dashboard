@@ -189,7 +189,7 @@ function renderNav(currentPage) {
     { id: 'deviation', label: '偏离度', icon: '📈' },
     { id: 'sanmei', label: '三美估值', icon: '💹' },
     { id: 'aihot', label: 'AIHOT', icon: '🤖' },
-    { id: 'news-report', label: '新闻研报', icon: '📰' },
+    { id: 'news-report', label: '股票池新闻', icon: '📰' },
     { id: 'mcp_skills', label: 'MCP/Skills', icon: '🔧' },
     { id: 'weekly-review', label: '周度复盘', icon: '📋' },
     { id: 'xueqiu-digest', label: '雪球动态', icon: '🐦' },

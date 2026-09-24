@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投研简报总览</title>
   <meta property="og:title" content="投研简报总览">
-  <meta property="og:description" content="A股投研数据看板 - 碳酸锂、偏离度、AIHOT、新闻研报等实时简报">
+  <meta property="og:description" content="A股投研数据看板 - 碳酸锂、偏离度、AIHOT、股票池新闻等实时简报">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
@@ -190,23 +190,23 @@
       // News/Report card
       if (newsReport) {
         const stats = newsReport.stats || {};
-        const hasAlert = (stats.high_impact_count || 0) > 0 || (stats.report_changes_count || 0) > 0;
+        const hasAlert = (stats.high_impact_count || 0) > 0;
         cards.push(`
           <a href="news-report.html" class="stat-card">
-            <div class="stat-label">📰 新闻研报日报</div>
+            <div class="stat-label">📰 股票池新闻日报</div>
             <div class="stat-value">${stats.total_news || 0} 条</div>
             <div class="stat-change ${hasAlert ? 'up' : 'neutral'}">
-              重大${stats.high_impact_count || 0} · 变化${stats.report_changes_count || 0}
+              重大${stats.high_impact_count || 0}
             </div>
             <div class="text-xs" style="margin-top:6px;color:var(--text-muted)">
-              ${newsReport.date} · ${newsReport.hours}h窗口 · 研报${stats.total_reports || 0}份
+              ${newsReport.date} · ${newsReport.hours}h窗口
             </div>
           </a>
         `);
       } else {
         cards.push(`
           <a href="news-report.html" class="stat-card">
-            <div class="stat-label">📰 新闻研报日报</div>
+            <div class="stat-label">📰 股票池新闻日报</div>
             <div class="empty-state" style="padding:20px"><p>暂无数据</p></div>
           </a>
         `);
@@ -337,8 +337,8 @@
       }
       if (newsReport && newsReport.stats) {
         const s = newsReport.stats;
-        events.push({ time: newsReport.generated_at || newsReport.date, module: '新闻研报', icon: '📰',
-          content: `新闻${s.total_news || 0}条(重大${s.high_impact_count || 0}) · 研报${s.total_reports || 0}份(变化${s.report_changes_count || 0})` });
+        events.push({ time: newsReport.generated_at || newsReport.date, module: '股票池新闻', icon: '📰',
+          content: `新闻${s.total_news || 0}条(重大${s.high_impact_count || 0})` });
       }
       if (xueqiuDigest && xueqiuDigest.date) {
         events.push({ time: xueqiuDigest.generated_at || xueqiuDigest.date, module: '雪球动态', icon: '🐦',

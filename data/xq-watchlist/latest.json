@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-09-24T13:51:13",
-  "count": 2,
+  "updated_at": "2026-09-25T15:45:27",
+  "count": 4,
   "stocks": [
+    {
+      "symbol": "SZ300300",
+      "name": "海峡创新",
+      "marketplace": "CN",
+      "watched": "2026-09-24T14:22:54"
+    },
+    {
+      "symbol": "SZ002205",
+      "name": "国统股份",
+      "marketplace": "CN",
+      "watched": "2026-09-24T14:21:00"
+    },
     {
       "symbol": "SH601218",
       "name": "吉鑫科技",

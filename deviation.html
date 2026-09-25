@@ -55,6 +55,14 @@
       const stockCodes = validStocks.map(s => s.code);
       const codeToName = Object.fromEntries(validStocks.map(s => [s.code, s.name]));
 
+      // 下行通道（偏低估观察）：仅纳入下行阈值齐备的标的，按距阈值由近到远排序
+      // 旧记录无 threshold_dn_pct 字段 → 该卡片整体不渲染，向后兼容
+      const lowStocks = validStocks
+        .filter(s => s.threshold_dn_pct != null && s.low_trigger_price != null)
+        .sort((a, b) => (a.low_gap_pp == null ? 999 : a.low_gap_pp)
+                      - (b.low_gap_pp == null ? 999 : b.low_gap_pp));
+      const watchStocks = lowStocks.filter(s => (s.low_status || '').startsWith('watch_'));
+
       // Build deviation time series for charts (keyed by code for cross-day stability)
       const stockSeries = {};
       for (const code of stockCodes) {
@@ -81,6 +89,8 @@
             ${latestRun.method ? `<div class="text-xs">口径：月K${
                 latestRun.method.adjust === 'qfq' ? '前复权' : latestRun.method.adjust
               } · 回看${latestRun.method.lookback_months}月 · ${latestRun.method.source || ''}</div>` : ''}
+            ${latestRun.method && latestRun.method.threshold_dn_rule ? `<div class="text-xs">上行阈值：${
+                latestRun.method.threshold_rule} ｜ 下行阈值：${latestRun.method.threshold_dn_rule}</div>` : ''}
           </div>
         </div>
 
@@ -111,6 +121,50 @@
           <div class="card-title mb-4">偏离度趋势</div>
           <div id="deviationChart" class="chart-container" style="min-height:400px"></div>
         </div>
+
+        <!-- Low Deviation Watch (three-layer filter) -->
+        ${lowStocks.length ? `
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">🟢 偏低估观察 · 抄底参考（三层过滤）</div>
+            <div class="card-subtitle">纳入：距下行阈值 ≤ ${latestRun.method && latestRun.method.low_watch_gap_pp != null ? latestRun.method.low_watch_gap_pp : 12}pp ｜ 筛选器，非买入信号</div>
+          </div>
+          <div id="lowChannelChart" class="chart-container" style="min-height:420px"></div>
+          ${watchStocks.length ? `
+          <div class="table-wrap mt-4">
+            <table>
+              <tr>
+                <th>标的</th><th>当期偏离</th><th>下行阈值</th><th>抄底参考价</th>
+                <th>距阈值</th><th>5MA三月斜率</th><th>三层过滤</th>
+              </tr>
+              ${watchStocks.map(s => {
+                const v = lowVerdict(s.low_status);
+                const L = s.low_layers || {};
+                const layerNote = [
+                  L.slope === true ? '斜率✓' : '斜率✗',
+                  L.valuation === 'pass' ? '估值✓' : (L.valuation === 'fail' ? '估值✗' : '估值—'),
+                ].join(' · ');
+                return `
+                <tr>
+                  <td class="font-bold">${s.name} (${s.code})</td>
+                  <td class="${changeClass(s.deviation_pct)}">${fmtPct(s.deviation_pct)}</td>
+                  <td>${s.threshold_dn_pct}%</td>
+                  <td class="font-bold">${fmtPrice(s.low_trigger_price)}</td>
+                  <td>${s.low_gap_pp}pp</td>
+                  <td class="${changeClass(s.slope_pct)}">${s.slope_pct > 0 ? '+' : ''}${s.slope_pct}%</td>
+                  <td>${v ? statusBadgeRaw(v[0], v[1]) : '—'}
+                    <span class="text-xs" style="color:var(--text-muted);margin-left:6px">${layerNote}</span>
+                  </td>
+                </tr>`;
+              }).join('')}
+            </table>
+          </div>
+          ` : `<p class="text-sm" style="color:var(--text-muted);margin-top:12px">本次运行无标的进入观察区（三层过滤第一层未命中）。</p>`}
+          <p class="text-xs" style="color:var(--text-muted);margin-top:12px">
+            提醒：负偏离在趋势性下跌中会自我强化，「达到历史最深负偏离」不蕴含均值回归。抄底参考价 = 月5MA × (1 + 下行阈值)，仅为筛选器，须人工复核后决策。
+          </p>
+        </div>
+        ` : ''}
 
         <!-- Gold RR Section -->
         ${latestRun.gold_rr ? `
@@ -167,6 +221,67 @@
         });
       }
 
+      // Render low-deviation (bottom-fishing reference) channel chart
+      if (lowStocks.length) {
+        const lowChart = initChart('lowChannelChart');
+        if (lowChart) {
+          const theme = getEChartsTheme();
+          lowChart.setOption({
+            ...theme,
+            tooltip: {
+              ...theme.tooltip, trigger: 'axis', axisPointer: { type: 'shadow' },
+              formatter: (params) => {
+                const s = lowStocks[params[0].dataIndex];
+                if (!s) return '';
+                const v = lowVerdict(s.low_status);
+                const rows = [
+                  `<b>${s.name} (${s.code})</b>`,
+                  `当期偏离：${fmtPct(s.deviation_pct)}`,
+                  `下行阈值：${s.threshold_dn_pct}% ｜ 抄底参考价：${fmtPrice(s.low_trigger_price)}`,
+                  `上行阈值：${s.threshold_pct}%`,
+                  `距下行阈值：${s.low_gap_pp}pp`,
+                ];
+                if (s.slope_pct != null) {
+                  rows.push(`5MA三月斜率：${s.slope_pct > 0 ? '+' : ''}${s.slope_pct}%`);
+                }
+                if (v) rows.push(`三层过滤：${v[0]}`);
+                return rows.join('<br/>');
+              }
+            },
+            legend: { ...theme.legend, data: ['下行阈值通道', '上行阈值通道', '当期偏离度'], bottom: 0, type: 'scroll' },
+            grid: { left: 90, right: 40, top: 20, bottom: 60 },
+            xAxis: { ...theme.xAxis, type: 'value', name: '偏离度 %' },
+            yAxis: { ...theme.yAxis, type: 'category', data: lowStocks.map(s => s.name), inverse: true },
+            series: [
+              {
+                // 上下行通道均用「标量值」而非浮动数组 [start, end]：实测 ECharts 5 在本场景下
+                // 对首元素为 0 的浮动数组（如 [0, 43.7]）会算出 width=0 而不渲染。
+                // 标量值即「0 → value」的条带，语义完全等价，且 barGap:'-100%' 三者精确重叠。
+                name: '下行阈值通道', type: 'bar', barGap: '-100%', barWidth: '55%',
+                data: lowStocks.map(s => s.threshold_dn_pct),
+                itemStyle: { color: 'rgba(34,197,94,0.55)' }
+              },
+              {
+                name: '上行阈值通道', type: 'bar', barGap: '-100%', barWidth: '55%',
+                data: lowStocks.map(s => s.threshold_pct),
+                itemStyle: { color: 'rgba(239,68,68,0.45)' }
+              },
+              {
+                name: '当期偏离度', type: 'bar', barGap: '-100%', barWidth: 4,
+                data: lowStocks.map(s => s.deviation_pct),
+                itemStyle: { color: '#1e40af' },
+                markLine: {
+                  silent: true, symbol: 'none',
+                  lineStyle: { color: '#94a3b8', width: 1 },
+                  label: { show: false },
+                  data: [{ xAxis: 0 }]
+                }
+              }
+            ]
+          });
+        }
+      }
+
       // Render RR chart
       if (latestRun.gold_rr) {
         const rrChart = initChart('rrChart');
@@ -208,8 +323,15 @@
         // alerts: 真实预警（阈值/触发价齐备才计入）；failed: 接口异常（单独以黄色徽标提示，不计为预警）
         const alerts = (run.stocks || []).filter(s => s.status !== 'normal' && s.threshold_pct > 0 && s.trigger_price != null);
         const failed = (run.stocks || []).filter(s => s.status === 'fetch_failed');
+        // lowAlerts: 进入「偏低估观察」三层过滤的标的（新口径记录才有该字段）
+        const lowAlerts = (run.stocks || []).filter(s => (s.low_status || '').startsWith('watch_'));
         const badges = [
           ...alerts.map(a => `<span class="badge badge-red" style="margin-left:4px">${a.name} ${fmtPct(a.deviation_pct)}</span>`),
+          ...lowAlerts.map(a => {
+            const v = lowVerdict(a.low_status);
+            const cls = v ? v[1] : 'badge-blue';
+            return `<span class="badge ${cls}" style="margin-left:4px" title="偏低估观察 · ${v ? v[0] : ''}（距下行阈值 ${a.low_gap_pp}pp）">${a.name} 偏低估</span>`;
+          }),
           ...failed.map(a => `<span class="badge badge-yellow" style="margin-left:4px" title="${a.data_note || '接口异常'}">${a.name} 接口异常</span>`),
         ].join('');
         const methodBadge = methodChanged.has(run)
@@ -228,6 +350,17 @@
           </div>
         `;
       }).join('');
+    }
+
+    function lowVerdict(status) {
+      if (status === 'watch_pass') return ['三层全通过', 'badge-green'];
+      if (status === 'watch_partial') return ['两层通过', 'badge-blue'];
+      if (status === 'watch_reject') return ['否决', 'badge-yellow'];
+      return null;
+    }
+
+    function statusBadgeRaw(label, cls) {
+      return `<span class="badge ${cls}">${label}</span>`;
     }
 
     function getRrStatus(signal) {

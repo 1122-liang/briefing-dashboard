@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-28",
+  "record": {
+    "date": "2026-09-28",
+    "total_weekly_tokens_t": 145.84,
+    "models": [
+      {
+        "rank": 1,
+        "name": "Deepseek V4.1 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4.1-flash-20260910",
+        "weekly_tokens_t": 19.58
+      },
+      {
+        "rank": 2,
+        "name": "Glm 5.3 Flash",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.3-flash-20260826",
+        "weekly_tokens_t": 16.32
+      },
+      {
+        "rank": 3,
+        "name": "Space Bunny Alpha",
+        "vendor": "Stealth",
+        "vendor_slug": "stealth",
+        "slug": "stealth/space-bunny-alpha",
+        "weekly_tokens_t": 13.86
+      },
+      {
+        "rank": 4,
+        "name": "Hy4 Preview",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy4-preview-20260827",
+        "weekly_tokens_t": 9.64
+      },
+      {
+        "rank": 5,
+        "name": "Gpt 5.6 Luna",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-5.6-luna-20260709",
+        "weekly_tokens_t": 8.54
+      },
+      {
+        "rank": 6,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260731",
+        "weekly_tokens_t": 7.82
+      },
+      {
+        "rank": 7,
+        "name": "Nemotron 3 Ultra 550B A55B",
+        "vendor": "Nvidia",
+        "vendor_slug": "nvidia",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "weekly_tokens_t": 5.7
+      },
+      {
+        "rank": 8,
+        "name": "Mimo V2.6 Flash",
+        "vendor": "Xiaomi",
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.6-flash-20260921",
+        "weekly_tokens_t": 5.51
+      },
+      {
+        "rank": 9,
+        "name": "Deepseek V4 Flash",
+        "vendor": "DeepSeek",
+        "vendor_slug": "deepseek",
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "weekly_tokens_t": 3.35
+      },
+      {
+        "rank": 10,
+        "name": "Gpt 6 Luna",
+        "vendor": "OpenAI",
+        "vendor_slug": "openai",
+        "slug": "openai/gpt-6-luna-20260922",
+        "weekly_tokens_t": 2.89
+      },
+      {
+        "rank": 11,
+        "name": "Glm 5.3",
+        "vendor": "Z-AI",
+        "vendor_slug": "z-ai",
+        "slug": "z-ai/glm-5.3-20260816",
+        "weekly_tokens_t": 2.8
+      },
+      {
+        "rank": 12,
+        "name": "Mimo V2.5",
+        "vendor": "Xiaomi",
+        "vendor_slug": "xiaomi",
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "weekly_tokens_t": 2.78
+      },
+      {
+        "rank": 13,
+        "name": "Jev 1.13",
+        "vendor": "Typesafe",
+        "vendor_slug": "typesafe",
+        "slug": "typesafe/jev-1.13-20260917",
+        "weekly_tokens_t": 2.58
+      },
+      {
+        "rank": 14,
+        "name": "Hy3",
+        "vendor": "Tencent",
+        "vendor_slug": "tencent",
+        "slug": "tencent/hy3-20260706",
+        "weekly_tokens_t": 2.57
+      },
+      {
+        "rank": 15,
+        "name": "Gemini 3.8 Flash",
+        "vendor": "Google",
+        "vendor_slug": "google",
+        "slug": "google/gemini-3.8-flash-20260902",
+        "weekly_tokens_t": 2.16
+      }
+    ],
+    "data_source": "openrouter-api",
+    "openrouter_models_count": 458,
+    "data_dates": [
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-27"
+    ]
+  },
+  "growth": {
+    "has_growth_data": true,
+    "week_change_t": 16.94,
+    "week_growth_pct": 13.14,
+    "ma4_growth_pct": 12.07,
+    "growth_trend": "波动",
+    "trend_icon": "📊",
+    "total_records": 7
+  },
+  "vendor_share": {
+    "DeepSeek": 29.0,
+    "Z-AI": 18.0,
+    "Stealth": 13.1,
+    "Tencent": 11.5,
+    "OpenAI": 10.8,
+    "Xiaomi": 7.8,
+    "Nvidia": 5.4,
+    "Typesafe": 2.4,
+    "Google": 2.0
+  },
+  "data_source": "openrouter-api",
+  "generated_at": "2026-09-28T10:05:20.513232+08:00"
+}

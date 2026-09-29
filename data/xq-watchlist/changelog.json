@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-09-28",
+    "changes": [
+      {
+        "time": "10:06",
+        "action": "remove",
+        "symbol": "SH600802",
+        "name": "福建水泥"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SH601218",
+        "name": "吉鑫科技"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SZ000993",
+        "name": "闽东电力"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SZ300300",
+        "name": "海峡创新"
+      },
+      {
+        "time": "09:36",
+        "action": "add",
+        "symbol": "SH600802",
+        "name": "福建水泥",
+        "watched": "2026-09-28T09:34:55"
+      },
+      {
+        "time": "09:36",
+        "action": "remove",
+        "symbol": "SZ002205",
+        "name": "国统股份"
+      }
+    ]
+  },
+  {
     "date": "2026-09-25",
     "changes": [
       {

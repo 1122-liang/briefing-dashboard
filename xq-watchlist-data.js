@@ -1,34 +1,51 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-09-28T09:06:40",
-  "count": 4,
-  "stocks": [
-    {
-      "symbol": "SZ300300",
-      "name": "海峡创新",
-      "marketplace": "CN",
-      "watched": "2026-09-24T14:22:54"
-    },
-    {
-      "symbol": "SZ002205",
-      "name": "国统股份",
-      "marketplace": "CN",
-      "watched": "2026-09-24T14:21:00"
-    },
-    {
-      "symbol": "SH601218",
-      "name": "吉鑫科技",
-      "marketplace": "CN",
-      "watched": "2026-09-24T10:06:46"
-    },
-    {
-      "symbol": "SZ000993",
-      "name": "闽东电力",
-      "marketplace": "CN",
-      "watched": "2026-09-16T09:25:04"
-    }
-  ]
+  "updated_at": "2026-09-28T11:16:59",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-09-28",
+    "changes": [
+      {
+        "time": "10:06",
+        "action": "remove",
+        "symbol": "SH600802",
+        "name": "福建水泥"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SH601218",
+        "name": "吉鑫科技"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SZ000993",
+        "name": "闽东电力"
+      },
+      {
+        "time": "10:01",
+        "action": "remove",
+        "symbol": "SZ300300",
+        "name": "海峡创新"
+      },
+      {
+        "time": "09:36",
+        "action": "add",
+        "symbol": "SH600802",
+        "name": "福建水泥",
+        "watched": "2026-09-28T09:34:55"
+      },
+      {
+        "time": "09:36",
+        "action": "remove",
+        "symbol": "SZ002205",
+        "name": "国统股份"
+      }
+    ]
+  },
   {
     "date": "2026-09-25",
     "changes": [

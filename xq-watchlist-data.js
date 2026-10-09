@@ -1,9 +1,34 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-08T15:57:52",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-10-09T15:57:59",
+  "count": 1,
+  "stocks": [
+    {
+      "symbol": "SZ301190",
+      "name": "善水科技",
+      "marketplace": "CN",
+      "watched": "2026-10-09T09:38:02"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-09",
+    "changes": [
+      {
+        "time": "09:53",
+        "action": "remove",
+        "symbol": "SZ301513",
+        "name": "尚水智能"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ301513",
+        "name": "尚水智能",
+        "watched": "2026-10-09T09:39:20"
+      }
+    ]
+  },
   {
     "date": "2026-09-28",
     "changes": [

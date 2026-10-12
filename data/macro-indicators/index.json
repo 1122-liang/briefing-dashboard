@@ -1,5 +1,6 @@
 {
   "files": [
+    "token-consumption-2026-10-12.json",
     "token-consumption-2026-09-28.json",
     "token-consumption-2026-09-21.json",
     "token-consumption-2026-09-14.json",
@@ -26,5 +27,5 @@
     "ai-capex-2026-07-01.json",
     "ai-capex-2026-06-08.json"
   ],
-  "last_updated": "2026-09-28T10:05:20.523303+08:00"
+  "last_updated": "2026-10-12T10:10:00.695475+08:00"
 }

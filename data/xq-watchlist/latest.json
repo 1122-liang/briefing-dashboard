@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-10-14T15:56:04",
-  "count": 2,
+  "updated_at": "2026-10-19T13:54:55",
+  "count": 1,
   "stocks": [
-    {
-      "symbol": "SH603968",
-      "name": "醋化股份",
-      "marketplace": "CN",
-      "watched": "2026-10-14T09:31:33"
-    },
     {
       "symbol": "SZ301190",
       "name": "善水科技",

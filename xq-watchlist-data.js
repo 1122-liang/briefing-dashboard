@@ -1,13 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-14T15:56:04",
-  "count": 2,
+  "updated_at": "2026-10-19T13:54:55",
+  "count": 1,
   "stocks": [
-    {
-      "symbol": "SH603968",
-      "name": "醋化股份",
-      "marketplace": "CN",
-      "watched": "2026-10-14T09:31:33"
-    },
     {
       "symbol": "SZ301190",
       "name": "善水科技",
@@ -17,6 +11,30 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-19",
+    "changes": [
+      {
+        "time": "10:21",
+        "action": "remove",
+        "symbol": "SH603188",
+        "name": "亚邦股份"
+      },
+      {
+        "time": "09:46",
+        "action": "add",
+        "symbol": "SH603188",
+        "name": "亚邦股份",
+        "watched": "2026-10-19T09:45:43"
+      },
+      {
+        "time": "09:06",
+        "action": "remove",
+        "symbol": "SH603968",
+        "name": "醋化股份"
+      }
+    ]
+  },
   {
     "date": "2026-10-14",
     "changes": [

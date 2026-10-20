@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-19T13:54:55",
-  "count": 1,
+  "updated_at": "2026-10-20T11:26:38",
+  "count": 2,
   "stocks": [
+    {
+      "symbol": "SZ002242",
+      "name": "九阳股份",
+      "marketplace": "CN",
+      "watched": "2026-10-20T09:37:08"
+    },
     {
       "symbol": "SZ301190",
       "name": "善水科技",
@@ -11,6 +17,18 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-20",
+    "changes": [
+      {
+        "time": "09:38",
+        "action": "add",
+        "symbol": "SZ002242",
+        "name": "九阳股份",
+        "watched": "2026-10-20T09:37:08"
+      }
+    ]
+  },
   {
     "date": "2026-10-19",
     "changes": [

@@ -1,12 +1,24 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-20T11:26:38",
-  "count": 2,
+  "updated_at": "2026-10-21T15:59:36",
+  "count": 4,
   "stocks": [
     {
       "symbol": "SZ002242",
       "name": "九阳股份",
       "marketplace": "CN",
-      "watched": "2026-10-20T09:37:08"
+      "watched": "2026-10-21T10:37:21"
+    },
+    {
+      "symbol": "SZ300006",
+      "name": "莱美药业",
+      "marketplace": "CN",
+      "watched": "2026-10-21T09:51:40"
+    },
+    {
+      "symbol": "SH600825",
+      "name": "新华传媒",
+      "marketplace": "CN",
+      "watched": "2026-10-21T09:31:20"
     },
     {
       "symbol": "SZ301190",
@@ -17,6 +29,38 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-21",
+    "changes": [
+      {
+        "time": "10:41",
+        "action": "add",
+        "symbol": "SZ002242",
+        "name": "九阳股份",
+        "watched": "2026-10-21T10:37:21"
+      },
+      {
+        "time": "09:56",
+        "action": "add",
+        "symbol": "SZ300006",
+        "name": "莱美药业",
+        "watched": "2026-10-21T09:51:40"
+      },
+      {
+        "time": "09:31",
+        "action": "add",
+        "symbol": "SH600825",
+        "name": "新华传媒",
+        "watched": "2026-10-21T09:31:20"
+      },
+      {
+        "time": "09:31",
+        "action": "remove",
+        "symbol": "SZ002242",
+        "name": "九阳股份"
+      }
+    ]
+  },
   {
     "date": "2026-10-20",
     "changes": [

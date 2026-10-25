@@ -1,34 +1,38 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-21T15:59:36",
-  "count": 4,
-  "stocks": [
-    {
-      "symbol": "SZ002242",
-      "name": "九阳股份",
-      "marketplace": "CN",
-      "watched": "2026-10-21T10:37:21"
-    },
-    {
-      "symbol": "SZ300006",
-      "name": "莱美药业",
-      "marketplace": "CN",
-      "watched": "2026-10-21T09:51:40"
-    },
-    {
-      "symbol": "SH600825",
-      "name": "新华传媒",
-      "marketplace": "CN",
-      "watched": "2026-10-21T09:31:20"
-    },
-    {
-      "symbol": "SZ301190",
-      "name": "善水科技",
-      "marketplace": "CN",
-      "watched": "2026-10-09T09:38:02"
-    }
-  ]
+  "updated_at": "2026-10-22T14:47:24",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-22",
+    "changes": [
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SH600825",
+        "name": "新华传媒"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ301190",
+        "name": "善水科技"
+      },
+      {
+        "time": "09:33",
+        "action": "remove",
+        "symbol": "SZ002242",
+        "name": "九阳股份"
+      },
+      {
+        "time": "09:33",
+        "action": "remove",
+        "symbol": "SZ300006",
+        "name": "莱美药业"
+      }
+    ]
+  },
   {
     "date": "2026-10-21",
     "changes": [

@@ -1,9 +1,20 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-22T14:47:24",
+  "updated_at": "2026-10-26T15:58:39",
   "count": 0,
   "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-26",
+    "changes": [
+      {
+        "time": "09:45",
+        "action": "remove",
+        "symbol": "SH603278",
+        "name": "大业股份"
+      }
+    ]
+  },
   {
     "date": "2026-10-22",
     "changes": [

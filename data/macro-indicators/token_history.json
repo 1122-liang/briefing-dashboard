@@ -1229,7 +1229,144 @@
         "2026-10-17",
         "2026-10-18"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "total_weekly_tokens_t": 188.04,
+      "models": [
+        {
+          "rank": 1,
+          "name": "Deepseek V4.1 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4.1-flash-20261017",
+          "weekly_tokens_t": 33.56
+        },
+        {
+          "rank": 2,
+          "name": "Deepseek V4.1 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4.1-flash-20260910",
+          "weekly_tokens_t": 18.01
+        },
+        {
+          "rank": 3,
+          "name": "Minimax M3.1 Flash",
+          "vendor": "MiniMax",
+          "vendor_slug": "minimax",
+          "slug": "minimax/minimax-m3.1-flash-20261019",
+          "weekly_tokens_t": 14.47
+        },
+        {
+          "rank": 4,
+          "name": "Glm 5.3 Flash",
+          "vendor": "Z-AI",
+          "vendor_slug": "z-ai",
+          "slug": "z-ai/glm-5.3-flash-20260826",
+          "weekly_tokens_t": 13.25
+        },
+        {
+          "rank": 5,
+          "name": "Hy4 Preview",
+          "vendor": "Tencent",
+          "vendor_slug": "tencent",
+          "slug": "tencent/hy4-preview-20260827",
+          "weekly_tokens_t": 8.97
+        },
+        {
+          "rank": 6,
+          "name": "Gpt 6 Luna",
+          "vendor": "OpenAI",
+          "vendor_slug": "openai",
+          "slug": "openai/gpt-6-luna-20260922",
+          "weekly_tokens_t": 8.47
+        },
+        {
+          "rank": 7,
+          "name": "Claude Opus 5.5",
+          "vendor": "Anthropic",
+          "vendor_slug": "anthropic",
+          "slug": "anthropic/claude-opus-5.5-20260921",
+          "weekly_tokens_t": 8.27
+        },
+        {
+          "rank": 8,
+          "name": "Mimo V2.6 Flash",
+          "vendor": "Xiaomi",
+          "vendor_slug": "xiaomi",
+          "slug": "xiaomi/mimo-v2.6-flash-20260921",
+          "weekly_tokens_t": 6.07
+        },
+        {
+          "rank": 9,
+          "name": "Nemotron 3 Ultra 550B A55B",
+          "vendor": "Nvidia",
+          "vendor_slug": "nvidia",
+          "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+          "weekly_tokens_t": 5.9
+        },
+        {
+          "rank": 10,
+          "name": "Glm 5.3",
+          "vendor": "Z-AI",
+          "vendor_slug": "z-ai",
+          "slug": "z-ai/glm-5.3-20260816",
+          "weekly_tokens_t": 5.05
+        },
+        {
+          "rank": 11,
+          "name": "Deepseek V4 Flash",
+          "vendor": "DeepSeek",
+          "vendor_slug": "deepseek",
+          "slug": "deepseek/deepseek-v4-flash-20260731",
+          "weekly_tokens_t": 3.99
+        },
+        {
+          "rank": 12,
+          "name": "Step 5 Preview",
+          "vendor": "StepFun",
+          "vendor_slug": "stepfun",
+          "slug": "stepfun/step-5-preview-20261008",
+          "weekly_tokens_t": 3.63
+        },
+        {
+          "rank": 13,
+          "name": "Hy3",
+          "vendor": "Tencent",
+          "vendor_slug": "tencent",
+          "slug": "tencent/hy3-20260706",
+          "weekly_tokens_t": 3.05
+        },
+        {
+          "rank": 14,
+          "name": "Jev 1.13",
+          "vendor": "Typesafe",
+          "vendor_slug": "typesafe",
+          "slug": "typesafe/jev-1.13-20260917",
+          "weekly_tokens_t": 2.98
+        },
+        {
+          "rank": 15,
+          "name": "Gpt 6.1 Sol",
+          "vendor": "OpenAI",
+          "vendor_slug": "openai",
+          "slug": "openai/gpt-6.1-sol-20260929",
+          "weekly_tokens_t": 2.81
+        }
+      ],
+      "data_source": "openrouter-api",
+      "openrouter_models_count": 467,
+      "data_dates": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ]
     }
   ],
-  "last_checked": "2026-10-19T10:04:21.067721+08:00"
+  "last_checked": "2026-10-26T10:08:34.224133+08:00"
 }

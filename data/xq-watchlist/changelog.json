@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-28",
+    "changes": [
+      {
+        "time": "14:58",
+        "action": "remove",
+        "symbol": "SZ002724",
+        "name": "海洋王"
+      }
+    ]
+  },
+  {
     "date": "2026-10-26",
     "changes": [
       {

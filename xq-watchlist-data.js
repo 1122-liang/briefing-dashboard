@@ -1,9 +1,20 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-10-26T15:58:39",
+  "updated_at": "2026-10-28T15:58:19",
   "count": 0,
   "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-10-28",
+    "changes": [
+      {
+        "time": "14:58",
+        "action": "remove",
+        "symbol": "SZ002724",
+        "name": "海洋王"
+      }
+    ]
+  },
   {
     "date": "2026-10-26",
     "changes": [

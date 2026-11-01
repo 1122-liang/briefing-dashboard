@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T20:35:12.398668+08:00",
+  "skills_summary": {
+    "total_count": 81,
+    "self_created": 19,
+    "builtin": 61,
+    "external": 1,
+    "external_with_source": 1,
+    "no_source": 0,
+    "updates_needed": 1,
+    "note": "本次 Python 环境收敛为唯一解释器 /Library/Frameworks/Python.framework/Versions/3.11；此前 09-01 升级过的 default/lithium/macro-indicators/sentiment-backtest 等 venv 已不存在"
+  },
+  "external_skills": [
+    {
+      "name": "a-stock-data",
+      "source": "https://github.com/simonlin1212/a-stock-data",
+      "current_version": "3.1",
+      "latest_version": "3.10.3",
+      "status": "needs_update",
+      "note": "本地 1991 行 / 71KB，上游 7653 行 / 438KB；且本地 description 已被按 skill-description-normalization 规则压缩（243 vs 553 字符），升级后必须重做描述规范化"
+    }
+  ],
+  "mcp_services": [
+    {
+      "name": "lexiang",
+      "type": "Remote MCP (streamable-http)",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本；mcp.json 中 disabled:true"
+    },
+    {
+      "name": "dayu-financials",
+      "type": "Local MCP (stdio)",
+      "current_version": "custom",
+      "latest_version": "custom",
+      "status": "up_to_date",
+      "note": "本地自定义服务，无版本号；mcp.json 中 disabled:true"
+    },
+    {
+      "name": "claude-memory",
+      "type": "npm MCP (stdio)",
+      "current_version": "2.0.1",
+      "latest_version": "2.0.1",
+      "status": "up_to_date",
+      "note": "版本已是最新，但 mcp.json 指向 node 22.22.2-6，该版本 node 下未安装 claude-memory-fts（实际只装在 22.12.0）→ 配置路径缺陷，需改回 22.12.0；且当前 disabled:true"
+    },
+    {
+      "name": "scrapling",
+      "type": "pip MCP (stdio)",
+      "current_version": "0.4.15",
+      "latest_version": "0.5",
+      "status": "needs_update",
+      "note": "跨大版本升级 0.4.15→0.5（requires >=3.10，当前 Python 3.11 兼容）；mcp.json 中 disabled:true"
+    },
+    {
+      "name": "lighthouse-ops",
+      "type": "Remote MCP",
+      "current_version": "N/A (remote)",
+      "latest_version": "N/A (remote)",
+      "status": "up_to_date",
+      "note": "远程服务，无本地版本；mcp.json 中 disabled:true"
+    }
+  ],
+  "python_packages": [
+    {
+      "name": "akshare",
+      "current_version": "1.18.63",
+      "latest_version": "1.20.21",
+      "status": "needs_update",
+      "note": "落后 2 个次版本；requires_python >=3.11，可直接升级"
+    },
+    {
+      "name": "tushare",
+      "current_version": "1.4.29",
+      "latest_version": "1.4.29",
+      "status": "up_to_date",
+      "note": "-"
+    },
+    {
+      "name": "pandas",
+      "current_version": "3.0.3",
+      "latest_version": "3.1.0",
+      "status": "needs_update",
+      "note": "requires_python >=3.11，可直接升级；升级后需回归验证 K 线/偏离度脚本"
+    },
+    {
+      "name": "numpy",
+      "current_version": "2.4.6",
+      "latest_version": "2.5.4",
+      "status": "blocked",
+      "note": "numpy 2.5.4 要求 Python >=3.12，当前解释器为 3.11，2.4.6 已是该解释器上限"
+    },
+    {
+      "name": "requests",
+      "current_version": "2.34.2",
+      "latest_version": "2.34.2",
+      "status": "up_to_date",
+      "note": "-"
+    }
+  ],
+  "updates_available": 4,
+  "updates_details": {
+    "mcp": [
+      {
+        "name": "scrapling",
+        "from": "0.4.15",
+        "to": "0.5",
+        "action": "pip install -U scrapling（Python 3.11）"
+      }
+    ],
+    "python_packages": [
+      {
+        "name": "akshare",
+        "from": "1.18.63",
+        "to": "1.20.21",
+        "action": "pip install -U akshare"
+      },
+      {
+        "name": "pandas",
+        "from": "3.0.3",
+        "to": "3.1.0",
+        "action": "pip install -U pandas"
+      }
+    ],
+    "skills": [
+      {
+        "name": "a-stock-data",
+        "from": "3.1",
+        "to": "3.10.3",
+        "action": "同步上游正文后重做 description 规范化"
+      }
+    ],
+    "blocked": [
+      {
+        "name": "numpy",
+        "from": "2.4.6",
+        "to": "2.5.4",
+        "reason": "需 Python >=3.12"
+      }
+    ]
+  },
+  "aihot_api_status": "available (API v1 HTTP 200, 4857 bytes; 根域 301→/moved/ 返回 403 属 Cloudflare 拦截，不影响 API)",
+  "environment_notes": [
+    "Python 环境已收敛为单一解释器 /Library/Frameworks/Python.framework/Versions/3.11（含 akshare/tushare/pandas/numpy/requests/scrapling/openai）；历史上 default/lithium/macro-indicators/sentiment-backtest 等 venv 均已不存在，09-01 的升级成果不再对应现存环境",
+    "raw.githubusercontent.com 在本机不可达（curl 返回 000），GitHub 原文须经 ghproxy.net 镜像获取",
+    "registry.npmjs.org 在 urllib 下 TLS 握手超时，curl 正常（1.3s/200），版本判定改用 curl/离线已知值",
+    "~/.workbuddy/mcp.json 中 5 个 MCP 服务当前全部 disabled:true",
+    "check_skill_modifications.py 已修复两处致命缺陷：①无全局 socket 超时（网络受限时空转 12 分钟无输出）②npm CLI 超时异常未捕获（整脚本崩溃）；另新增 GitHub 镜像回退与 npm registry HTTP 直连"
+  ],
+  "_filename": "2026-11-01.json",
+  "_saved_at": "2026-11-01T20:35:12.399116+08:00"
+}

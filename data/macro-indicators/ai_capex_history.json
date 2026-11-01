@@ -64,7 +64,72 @@
           "note": "暂无全年指引"
         }
       }
+    },
+    {
+      "quarter": "2026Q3",
+      "date": "2026-11-01",
+      "companies": {
+        "MSFT": {
+          "capex_usd_b": 39.37,
+          "yoy_pct": 103,
+          "qoq_pct": 10
+        },
+        "AMZN": {
+          "capex_usd_b": 77.26,
+          "yoy_pct": 120,
+          "qoq_pct": 43
+        },
+        "GOOGL": {
+          "capex_usd_b": 51.36,
+          "yoy_pct": 114,
+          "qoq_pct": 14
+        },
+        "META": {
+          "capex_usd_b": 33.94,
+          "yoy_pct": 80,
+          "qoq_pct": 13
+        },
+        "ORCL": {
+          "capex_usd_b": null,
+          "yoy_pct": null,
+          "qoq_pct": null
+        },
+        "NVDA": {
+          "capex_usd_b": null,
+          "yoy_pct": null,
+          "qoq_pct": null
+        }
+      },
+      "total_capex_usd_b": 201.92,
+      "total_yoy_pct": 107,
+      "source": "基准数据",
+      "fy2026_outlook": {
+        "AMZN": {
+          "capex_usd_b": 220.0,
+          "note": "维持2200亿（Q3现金资本开支772.6亿，2027年继续显著上行）"
+        },
+        "GOOGL": {
+          "capex_usd_b": 200.0,
+          "note": "维持1950-2050亿（2027年将大幅增加）"
+        },
+        "MSFT": {
+          "capex_usd_b": 170.0,
+          "note": "FY2027约1700亿含融资租赁（Q1已452亿，Q2指引>500亿）"
+        },
+        "META": {
+          "capex_usd_b": 140.0,
+          "note": "上调至1350-1450亿（原1300-1450，下限上调500亿）"
+        },
+        "ORCL": {
+          "capex_usd_b": null,
+          "note": "暂无全年指引"
+        },
+        "NVDA": {
+          "capex_usd_b": null,
+          "note": "暂无全年指引"
+        }
+      }
     }
   ],
-  "last_checked": "2026-09-01T10:38:29.165360+08:00"
+  "last_checked": "2026-11-01T20:38:08.425767+08:00"
 }

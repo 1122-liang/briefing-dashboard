@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T15:00:28.132386+08:00",
+  "runs": [
+    {
+      "time": "15:00",
+      "generated_at": "2026-11-02T15:00:28.132386+08:00",
+      "method": {
+        "adjust": "qfq",
+        "lookback_months": 60,
+        "source": "tencent_qfq",
+        "threshold_rule": "Top5偏离的中间3值均值",
+        "threshold_dn_rule": "Bottom5偏离的中间3值均值",
+        "low_watch_gap_pp": 12,
+        "low_slope_min_pp": -5
+      },
+      "stocks": [
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 26.84,
+          "deviation_pct": -9.5,
+          "threshold_pct": 37.7,
+          "trigger_price": 40.86,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -20.7,
+          "low_trigger_price": 23.52,
+          "slope_pct": -2.0,
+          "low_gap_pp": 11.2,
+          "low_status": "watch_partial",
+          "low_layers": {
+            "depth": true,
+            "slope": true,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 116.8,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "insufficient",
+          "data_note": "月K仅15条，回看60月需≥16条",
+          "valuation": null,
+          "threshold_dn_pct": null,
+          "low_trigger_price": null,
+          "slope_pct": null,
+          "low_gap_pp": null,
+          "low_status": "na",
+          "low_layers": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 22.52,
+          "deviation_pct": 0.7,
+          "threshold_pct": 27.8,
+          "trigger_price": 28.59,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -20.3,
+          "low_trigger_price": 17.84,
+          "slope_pct": -10.4,
+          "low_gap_pp": 20.9,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 14.02,
+          "deviation_pct": 26.4,
+          "threshold_pct": 36.8,
+          "trigger_price": 15.17,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -19.3,
+          "low_trigger_price": 8.95,
+          "slope_pct": 4.6,
+          "low_gap_pp": 45.7,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "巨化股份",
+          "code": "600160",
+          "price": 29.43,
+          "deviation_pct": -24.3,
+          "threshold_pct": 37.9,
+          "trigger_price": 53.59,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -28.2,
+          "low_trigger_price": 27.9,
+          "slope_pct": 0.1,
+          "low_gap_pp": 3.9,
+          "low_status": "watch_partial",
+          "low_layers": {
+            "depth": true,
+            "slope": true,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "川恒股份",
+          "code": "002895",
+          "price": 28.04,
+          "deviation_pct": -9.3,
+          "threshold_pct": 44.7,
+          "trigger_price": 44.75,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -32.9,
+          "low_trigger_price": 20.75,
+          "slope_pct": -8.7,
+          "low_gap_pp": 23.6,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "三美股份",
+          "code": "603379",
+          "price": 45.95,
+          "deviation_pct": -20.3,
+          "threshold_pct": 40.8,
+          "trigger_price": 81.23,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -28.4,
+          "low_trigger_price": 41.32,
+          "slope_pct": -8.3,
+          "low_gap_pp": 8.0,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "云天化",
+          "code": "600096",
+          "price": 24.75,
+          "deviation_pct": -13.9,
+          "threshold_pct": 42.5,
+          "trigger_price": 40.95,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -30.1,
+          "low_trigger_price": 20.08,
+          "slope_pct": -8.5,
+          "low_gap_pp": 16.3,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "药明康德",
+          "code": "603259",
+          "price": 138.65,
+          "deviation_pct": -3.1,
+          "threshold_pct": 36.7,
+          "trigger_price": 195.56,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -31.4,
+          "low_trigger_price": 98.13,
+          "slope_pct": 28.6,
+          "low_gap_pp": 28.3,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "赣锋锂业",
+          "code": "002460",
+          "price": 35.58,
+          "deviation_pct": -28.0,
+          "threshold_pct": 43.7,
+          "trigger_price": 71.08,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 17.5,
+            "neutral": 21.87,
+            "optimistic": 26.24
+          },
+          "threshold_dn_pct": -30.2,
+          "low_trigger_price": 34.5,
+          "slope_pct": -30.0,
+          "low_gap_pp": 2.2,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "fail"
+          }
+        },
+        {
+          "name": "天华新能",
+          "code": "300390",
+          "price": 34.5,
+          "deviation_pct": -41.5,
+          "threshold_pct": 70.5,
+          "trigger_price": 100.56,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -35.9,
+          "low_trigger_price": 37.81,
+          "slope_pct": -26.4,
+          "low_gap_pp": -5.6,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "中矿资源",
+          "code": "002738",
+          "price": 34.67,
+          "deviation_pct": -26.7,
+          "threshold_pct": 48.7,
+          "trigger_price": 70.29,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 3.22,
+            "neutral": 4.03,
+            "optimistic": 4.83
+          },
+          "threshold_dn_pct": -29.7,
+          "low_trigger_price": 33.21,
+          "slope_pct": -28.8,
+          "low_gap_pp": 3.1,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "fail"
+          }
+        }
+      ],
+      "gold_rr": {
+        "spot": 3907.22,
+        "spot_change_pct": -1.89,
+        "data_time": "2026-11-02 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": -3.7,
+            "daily_change": -1.97,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "1M",
+            "rr": -2.56,
+            "daily_change": -1.38,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "3M",
+            "rr": -1.09,
+            "daily_change": -0.61,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "6M",
+            "rr": -0.25,
+            "daily_change": -0.3,
+            "signal": "中性偏空"
+          },
+          {
+            "period": "9M",
+            "rr": 0.22,
+            "daily_change": -0.18,
+            "signal": "中性偏多"
+          },
+          {
+            "period": "1Y",
+            "rr": 0.52,
+            "daily_change": -0.12,
+            "signal": "偏多📈"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-11-02-1500.json",
+  "_saved_at": "2026-11-02T15:00:28.133140+08:00"
+}

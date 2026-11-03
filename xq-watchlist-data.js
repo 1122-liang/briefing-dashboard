@@ -1,9 +1,20 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-02T15:55:50",
+  "updated_at": "2026-11-03T15:56:26",
   "count": 0,
   "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-03",
+    "changes": [
+      {
+        "time": "14:21",
+        "action": "remove",
+        "symbol": "SZ300739",
+        "name": "明阳电路"
+      }
+    ]
+  },
   {
     "date": "2026-10-28",
     "changes": [

@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-03",
+    "changes": [
+      {
+        "time": "14:21",
+        "action": "remove",
+        "symbol": "SZ300739",
+        "name": "明阳电路"
+      }
+    ]
+  },
+  {
     "date": "2026-10-28",
     "changes": [
       {

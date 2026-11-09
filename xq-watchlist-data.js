@@ -1,9 +1,84 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-06T15:55:41",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-11-09T15:58:14",
+  "count": 7,
+  "stocks": [
+    {
+      "symbol": "SZ300006",
+      "name": "莱美药业",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:27:50"
+    },
+    {
+      "symbol": "SH688585",
+      "name": "上纬新材",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:27:42"
+    },
+    {
+      "symbol": "SZ300413",
+      "name": "芒果超媒",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:19:17"
+    },
+    {
+      "symbol": "SH605488",
+      "name": "福莱新材",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:17:15"
+    },
+    {
+      "symbol": "SH601595",
+      "name": "上海电影",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:16:44"
+    },
+    {
+      "symbol": "SZ301218",
+      "name": "华是科技",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:16:32"
+    },
+    {
+      "symbol": "SH600715",
+      "name": "文投控股",
+      "marketplace": "CN",
+      "watched": "2026-11-09T10:16:25"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-09",
+    "changes": [
+      {
+        "time": "10:53",
+        "action": "remove",
+        "symbol": "SZ300624",
+        "name": "万兴科技"
+      },
+      {
+        "time": "10:28",
+        "action": "add",
+        "symbol": "SH688585",
+        "name": "上纬新材",
+        "watched": "2026-11-09T10:27:42"
+      },
+      {
+        "time": "10:28",
+        "action": "add",
+        "symbol": "SZ300006",
+        "name": "莱美药业",
+        "watched": "2026-11-09T10:27:50"
+      },
+      {
+        "time": "10:23",
+        "action": "add",
+        "symbol": "SZ300413",
+        "name": "芒果超媒",
+        "watched": "2026-11-09T10:19:17"
+      }
+    ]
+  },
   {
     "date": "2026-11-03",
     "changes": [

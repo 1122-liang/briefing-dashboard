@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-09",
+    "changes": [
+      {
+        "time": "10:53",
+        "action": "remove",
+        "symbol": "SZ300624",
+        "name": "万兴科技"
+      },
+      {
+        "time": "10:28",
+        "action": "add",
+        "symbol": "SH688585",
+        "name": "上纬新材",
+        "watched": "2026-11-09T10:27:42"
+      },
+      {
+        "time": "10:28",
+        "action": "add",
+        "symbol": "SZ300006",
+        "name": "莱美药业",
+        "watched": "2026-11-09T10:27:50"
+      },
+      {
+        "time": "10:23",
+        "action": "add",
+        "symbol": "SZ300413",
+        "name": "芒果超媒",
+        "watched": "2026-11-09T10:19:17"
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "changes": [
       {

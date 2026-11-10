@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-10",
+    "changes": [
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SH603626",
+        "name": "科森科技",
+        "watched": "2026-11-10T09:46:14"
+      },
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SZ002708",
+        "name": "光洋股份",
+        "watched": "2026-11-10T09:47:44"
+      },
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SZ301529",
+        "name": "福赛科技",
+        "watched": "2026-11-10T09:46:07"
+      },
+      {
+        "time": "09:38",
+        "action": "add",
+        "symbol": "SZ300133",
+        "name": "华策影视",
+        "watched": "2026-11-10T09:37:17"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "changes": [
       {

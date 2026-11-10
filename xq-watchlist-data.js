@@ -1,7 +1,31 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-09T15:58:14",
-  "count": 7,
+  "updated_at": "2026-11-10T15:59:47",
+  "count": 11,
   "stocks": [
+    {
+      "symbol": "SZ002708",
+      "name": "光洋股份",
+      "marketplace": "CN",
+      "watched": "2026-11-10T09:47:44"
+    },
+    {
+      "symbol": "SH603626",
+      "name": "科森科技",
+      "marketplace": "CN",
+      "watched": "2026-11-10T09:46:14"
+    },
+    {
+      "symbol": "SZ301529",
+      "name": "福赛科技",
+      "marketplace": "CN",
+      "watched": "2026-11-10T09:46:07"
+    },
+    {
+      "symbol": "SZ300133",
+      "name": "华策影视",
+      "marketplace": "CN",
+      "watched": "2026-11-10T09:37:17"
+    },
     {
       "symbol": "SZ300006",
       "name": "莱美药业",
@@ -47,6 +71,39 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-10",
+    "changes": [
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SH603626",
+        "name": "科森科技",
+        "watched": "2026-11-10T09:46:14"
+      },
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SZ002708",
+        "name": "光洋股份",
+        "watched": "2026-11-10T09:47:44"
+      },
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SZ301529",
+        "name": "福赛科技",
+        "watched": "2026-11-10T09:46:07"
+      },
+      {
+        "time": "09:38",
+        "action": "add",
+        "symbol": "SZ300133",
+        "name": "华策影视",
+        "watched": "2026-11-10T09:37:17"
+      }
+    ]
+  },
   {
     "date": "2026-11-09",
     "changes": [

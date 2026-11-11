@@ -1,7 +1,19 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-10T15:59:47",
-  "count": 11,
+  "updated_at": "2026-11-11T15:55:55",
+  "count": 12,
   "stocks": [
+    {
+      "symbol": "SZ301052",
+      "name": "果麦文化",
+      "marketplace": "CN",
+      "watched": "2026-11-11T11:01:42"
+    },
+    {
+      "symbol": "SZ300473",
+      "name": "德尔股份",
+      "marketplace": "CN",
+      "watched": "2026-11-11T10:02:28"
+    },
     {
       "symbol": "SZ002708",
       "name": "光洋股份",
@@ -19,12 +31,6 @@ window.__SNAPSHOT__ = {
       "name": "福赛科技",
       "marketplace": "CN",
       "watched": "2026-11-10T09:46:07"
-    },
-    {
-      "symbol": "SZ300133",
-      "name": "华策影视",
-      "marketplace": "CN",
-      "watched": "2026-11-10T09:37:17"
     },
     {
       "symbol": "SZ300006",
@@ -71,6 +77,31 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-11",
+    "changes": [
+      {
+        "time": "11:05",
+        "action": "add",
+        "symbol": "SZ301052",
+        "name": "果麦文化",
+        "watched": "2026-11-11T11:01:42"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ300473",
+        "name": "德尔股份",
+        "watched": "2026-11-11T10:02:28"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ300133",
+        "name": "华策影视"
+      }
+    ]
+  },
   {
     "date": "2026-11-10",
     "changes": [

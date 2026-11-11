@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-11-11",
+    "changes": [
+      {
+        "time": "11:05",
+        "action": "add",
+        "symbol": "SZ301052",
+        "name": "果麦文化",
+        "watched": "2026-11-11T11:01:42"
+      },
+      {
+        "time": "10:05",
+        "action": "add",
+        "symbol": "SZ300473",
+        "name": "德尔股份",
+        "watched": "2026-11-11T10:02:28"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ300133",
+        "name": "华策影视"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "changes": [
       {

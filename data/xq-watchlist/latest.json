@@ -1,36 +1,18 @@
 {
-  "updated_at": "2026-11-11T15:55:55",
-  "count": 12,
+  "updated_at": "2026-11-12T15:56:21",
+  "count": 5,
   "stocks": [
     {
-      "symbol": "SZ301052",
-      "name": "果麦文化",
+      "symbol": "SZ300058",
+      "name": "蓝色光标",
       "marketplace": "CN",
-      "watched": "2026-11-11T11:01:42"
-    },
-    {
-      "symbol": "SZ300473",
-      "name": "德尔股份",
-      "marketplace": "CN",
-      "watched": "2026-11-11T10:02:28"
-    },
-    {
-      "symbol": "SZ002708",
-      "name": "光洋股份",
-      "marketplace": "CN",
-      "watched": "2026-11-10T09:47:44"
-    },
-    {
-      "symbol": "SH603626",
-      "name": "科森科技",
-      "marketplace": "CN",
-      "watched": "2026-11-10T09:46:14"
+      "watched": "2026-11-12T10:10:53"
     },
     {
       "symbol": "SZ301529",
       "name": "福赛科技",
       "marketplace": "CN",
-      "watched": "2026-11-10T09:46:07"
+      "watched": "2026-11-12T10:06:32"
     },
     {
       "symbol": "SZ300006",
@@ -39,40 +21,16 @@
       "watched": "2026-11-09T10:27:50"
     },
     {
-      "symbol": "SH688585",
-      "name": "上纬新材",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:27:42"
-    },
-    {
       "symbol": "SZ300413",
       "name": "芒果超媒",
       "marketplace": "CN",
       "watched": "2026-11-09T10:19:17"
     },
     {
-      "symbol": "SH605488",
-      "name": "福莱新材",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:17:15"
-    },
-    {
-      "symbol": "SH601595",
-      "name": "上海电影",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:16:44"
-    },
-    {
       "symbol": "SZ301218",
       "name": "华是科技",
       "marketplace": "CN",
       "watched": "2026-11-09T10:16:32"
-    },
-    {
-      "symbol": "SH600715",
-      "name": "文投控股",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:16:25"
     }
   ]
 }

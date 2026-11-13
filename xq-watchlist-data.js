@@ -1,24 +1,36 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-12T15:56:21",
-  "count": 5,
+  "updated_at": "2026-11-13T15:55:49",
+  "count": 7,
   "stocks": [
-    {
-      "symbol": "SZ300058",
-      "name": "蓝色光标",
-      "marketplace": "CN",
-      "watched": "2026-11-12T10:10:53"
-    },
     {
       "symbol": "SZ301529",
       "name": "福赛科技",
       "marketplace": "CN",
-      "watched": "2026-11-12T10:06:32"
+      "watched": "2026-11-13T10:42:53"
     },
     {
-      "symbol": "SZ300006",
-      "name": "莱美药业",
+      "symbol": "SZ300473",
+      "name": "德尔股份",
       "marketplace": "CN",
-      "watched": "2026-11-09T10:27:50"
+      "watched": "2026-11-13T10:42:37"
+    },
+    {
+      "symbol": "SZ000700",
+      "name": "模塑科技",
+      "marketplace": "CN",
+      "watched": "2026-11-13T10:42:20"
+    },
+    {
+      "symbol": "SH600977",
+      "name": "中国电影",
+      "marketplace": "CN",
+      "watched": "2026-11-13T10:06:37"
+    },
+    {
+      "symbol": "SH600715",
+      "name": "文投控股",
+      "marketplace": "CN",
+      "watched": "2026-11-13T09:31:04"
     },
     {
       "symbol": "SZ300413",
@@ -35,6 +47,64 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-13",
+    "changes": [
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ000700",
+        "name": "模塑科技",
+        "watched": "2026-11-13T10:42:20"
+      },
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ300473",
+        "name": "德尔股份",
+        "watched": "2026-11-13T10:42:37"
+      },
+      {
+        "time": "10:45",
+        "action": "add",
+        "symbol": "SZ301529",
+        "name": "福赛科技",
+        "watched": "2026-11-13T10:42:53"
+      },
+      {
+        "time": "10:09",
+        "action": "add",
+        "symbol": "SH600977",
+        "name": "中国电影",
+        "watched": "2026-11-13T10:06:37"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ300006",
+        "name": "莱美药业"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ300058",
+        "name": "蓝色光标"
+      },
+      {
+        "time": "09:44",
+        "action": "remove",
+        "symbol": "SZ301529",
+        "name": "福赛科技"
+      },
+      {
+        "time": "09:34",
+        "action": "add",
+        "symbol": "SH600715",
+        "name": "文投控股",
+        "watched": "2026-11-13T09:31:04"
+      }
+    ]
+  },
   {
     "date": "2026-11-12",
     "changes": [

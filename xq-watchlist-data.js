@@ -1,30 +1,12 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-13T15:55:49",
-  "count": 7,
+  "updated_at": "2026-11-16T15:55:36",
+  "count": 4,
   "stocks": [
     {
-      "symbol": "SZ301529",
-      "name": "福赛科技",
+      "symbol": "SZ301052",
+      "name": "果麦文化",
       "marketplace": "CN",
-      "watched": "2026-11-13T10:42:53"
-    },
-    {
-      "symbol": "SZ300473",
-      "name": "德尔股份",
-      "marketplace": "CN",
-      "watched": "2026-11-13T10:42:37"
-    },
-    {
-      "symbol": "SZ000700",
-      "name": "模塑科技",
-      "marketplace": "CN",
-      "watched": "2026-11-13T10:42:20"
-    },
-    {
-      "symbol": "SH600977",
-      "name": "中国电影",
-      "marketplace": "CN",
-      "watched": "2026-11-13T10:06:37"
+      "watched": "2026-11-16T09:47:23"
     },
     {
       "symbol": "SH600715",
@@ -47,6 +29,42 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-16",
+    "changes": [
+      {
+        "time": "10:49",
+        "action": "remove",
+        "symbol": "SH600977",
+        "name": "中国电影"
+      },
+      {
+        "time": "09:49",
+        "action": "add",
+        "symbol": "SZ301052",
+        "name": "果麦文化",
+        "watched": "2026-11-16T09:47:23"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ000700",
+        "name": "模塑科技"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ300473",
+        "name": "德尔股份"
+      },
+      {
+        "time": "09:39",
+        "action": "remove",
+        "symbol": "SZ301529",
+        "name": "福赛科技"
+      }
+    ]
+  },
   {
     "date": "2026-11-13",
     "changes": [

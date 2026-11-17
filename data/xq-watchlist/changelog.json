@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-11-17",
+    "changes": [
+      {
+        "time": "11:14",
+        "action": "remove",
+        "symbol": "SH600715",
+        "name": "文投控股"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ301052",
+        "name": "果麦文化"
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "changes": [
       {

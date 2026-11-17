@@ -1,19 +1,7 @@
 {
-  "updated_at": "2026-11-16T15:55:36",
-  "count": 4,
+  "updated_at": "2026-11-17T15:55:43",
+  "count": 2,
   "stocks": [
-    {
-      "symbol": "SZ301052",
-      "name": "果麦文化",
-      "marketplace": "CN",
-      "watched": "2026-11-16T09:47:23"
-    },
-    {
-      "symbol": "SH600715",
-      "name": "文投控股",
-      "marketplace": "CN",
-      "watched": "2026-11-13T09:31:04"
-    },
     {
       "symbol": "SZ300413",
       "name": "芒果超媒",

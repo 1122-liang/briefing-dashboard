@@ -1,19 +1,7 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-16T15:55:36",
-  "count": 4,
+  "updated_at": "2026-11-17T15:55:43",
+  "count": 2,
   "stocks": [
-    {
-      "symbol": "SZ301052",
-      "name": "果麦文化",
-      "marketplace": "CN",
-      "watched": "2026-11-16T09:47:23"
-    },
-    {
-      "symbol": "SH600715",
-      "name": "文投控股",
-      "marketplace": "CN",
-      "watched": "2026-11-13T09:31:04"
-    },
     {
       "symbol": "SZ300413",
       "name": "芒果超媒",
@@ -29,6 +17,23 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-17",
+    "changes": [
+      {
+        "time": "11:14",
+        "action": "remove",
+        "symbol": "SH600715",
+        "name": "文投控股"
+      },
+      {
+        "time": "09:54",
+        "action": "remove",
+        "symbol": "SZ301052",
+        "name": "果麦文化"
+      }
+    ]
+  },
   {
     "date": "2026-11-16",
     "changes": [

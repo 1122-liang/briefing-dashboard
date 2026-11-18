@@ -1,22 +1,26 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-17T15:55:43",
-  "count": 2,
-  "stocks": [
-    {
-      "symbol": "SZ300413",
-      "name": "芒果超媒",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:19:17"
-    },
-    {
-      "symbol": "SZ301218",
-      "name": "华是科技",
-      "marketplace": "CN",
-      "watched": "2026-11-09T10:16:32"
-    }
-  ]
+  "updated_at": "2026-11-18T15:58:58",
+  "count": 0,
+  "stocks": []
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-18",
+    "changes": [
+      {
+        "time": "10:12",
+        "action": "remove",
+        "symbol": "SZ300413",
+        "name": "芒果超媒"
+      },
+      {
+        "time": "10:12",
+        "action": "remove",
+        "symbol": "SZ301218",
+        "name": "华是科技"
+      }
+    ]
+  },
   {
     "date": "2026-11-17",
     "changes": [

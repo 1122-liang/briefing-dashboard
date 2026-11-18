@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-11-18",
+    "changes": [
+      {
+        "time": "10:12",
+        "action": "remove",
+        "symbol": "SZ300413",
+        "name": "芒果超媒"
+      },
+      {
+        "time": "10:12",
+        "action": "remove",
+        "symbol": "SZ301218",
+        "name": "华是科技"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "changes": [
       {

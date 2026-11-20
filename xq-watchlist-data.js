@@ -1,7 +1,14 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-19T15:55:34",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-11-20T15:58:02",
+  "count": 1,
+  "stocks": [
+    {
+      "symbol": "SZ002148",
+      "name": "北纬科技",
+      "marketplace": "CN",
+      "watched": "2026-11-20T09:48:45"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
   {

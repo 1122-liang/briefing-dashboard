@@ -1,7 +1,13 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-20T15:58:02",
-  "count": 1,
+  "updated_at": "2026-11-23T10:39:07",
+  "count": 2,
   "stocks": [
+    {
+      "symbol": "SZ002685",
+      "name": "华东重机",
+      "marketplace": "CN",
+      "watched": "2026-11-23T09:41:32"
+    },
     {
       "symbol": "SZ002148",
       "name": "北纬科技",
@@ -11,6 +17,31 @@ window.__SNAPSHOT__ = {
   ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-23",
+    "changes": [
+      {
+        "time": "10:39",
+        "action": "remove",
+        "symbol": "SZ002579",
+        "name": "中京电子"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ002579",
+        "name": "中京电子",
+        "watched": "2026-11-23T09:42:23"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ002685",
+        "name": "华东重机",
+        "watched": "2026-11-23T09:41:32"
+      }
+    ]
+  },
   {
     "date": "2026-11-18",
     "changes": [

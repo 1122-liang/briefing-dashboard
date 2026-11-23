@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-11-20T15:58:02",
-  "count": 1,
+  "updated_at": "2026-11-23T10:39:07",
+  "count": 2,
   "stocks": [
+    {
+      "symbol": "SZ002685",
+      "name": "华东重机",
+      "marketplace": "CN",
+      "watched": "2026-11-23T09:41:32"
+    },
     {
       "symbol": "SZ002148",
       "name": "北纬科技",

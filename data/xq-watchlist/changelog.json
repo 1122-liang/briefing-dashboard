@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-11-23",
+    "changes": [
+      {
+        "time": "10:39",
+        "action": "remove",
+        "symbol": "SZ002579",
+        "name": "中京电子"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ002579",
+        "name": "中京电子",
+        "watched": "2026-11-23T09:42:23"
+      },
+      {
+        "time": "09:43",
+        "action": "add",
+        "symbol": "SZ002685",
+        "name": "华东重机",
+        "watched": "2026-11-23T09:41:32"
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "changes": [
       {

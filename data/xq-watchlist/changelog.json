@@ -1,5 +1,48 @@
 [
   {
+    "date": "2026-11-24",
+    "changes": [
+      {
+        "time": "14:56",
+        "action": "remove",
+        "symbol": "SZ002148",
+        "name": "北纬科技"
+      },
+      {
+        "time": "14:16",
+        "action": "remove",
+        "symbol": "SH600410",
+        "name": "华胜天成"
+      },
+      {
+        "time": "14:16",
+        "action": "remove",
+        "symbol": "SZ002579",
+        "name": "中京电子"
+      },
+      {
+        "time": "13:36",
+        "action": "remove",
+        "symbol": "SZ002685",
+        "name": "华东重机"
+      },
+      {
+        "time": "10:01",
+        "action": "add",
+        "symbol": "SH600410",
+        "name": "华胜天成",
+        "watched": "2026-11-24T09:57:21"
+      },
+      {
+        "time": "10:01",
+        "action": "add",
+        "symbol": "SZ002579",
+        "name": "中京电子",
+        "watched": "2026-11-24T09:57:28"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "changes": [
       {

@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T15:00:48.322457+08:00",
+  "runs": [
+    {
+      "time": "15:00",
+      "generated_at": "2026-11-25T15:00:48.322457+08:00",
+      "method": {
+        "adjust": "qfq",
+        "lookback_months": 60,
+        "source": "tencent_qfq",
+        "threshold_rule": "Top5偏离的中间3值均值",
+        "threshold_dn_rule": "Bottom5偏离的中间3值均值",
+        "low_watch_gap_pp": 12,
+        "low_slope_min_pp": -5
+      },
+      "stocks": [
+        {
+          "name": "紫金矿业",
+          "code": "601899",
+          "price": 22.97,
+          "deviation_pct": -21.6,
+          "threshold_pct": 37.7,
+          "trigger_price": 40.37,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -21.5,
+          "low_trigger_price": 23.0,
+          "slope_pct": -4.2,
+          "low_gap_pp": -0.1,
+          "low_status": "watch_partial",
+          "low_layers": {
+            "depth": true,
+            "slope": true,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "紫金黄金国际",
+          "code": "02259",
+          "price": 100.2,
+          "deviation_pct": 0,
+          "threshold_pct": 0,
+          "trigger_price": null,
+          "status": "insufficient",
+          "data_note": "月K仅15条，回看60月需≥16条",
+          "valuation": null,
+          "threshold_dn_pct": null,
+          "low_trigger_price": null,
+          "slope_pct": null,
+          "low_gap_pp": null,
+          "low_status": "na",
+          "low_layers": null
+        },
+        {
+          "name": "宝丰能源",
+          "code": "600989",
+          "price": 19.27,
+          "deviation_pct": -13.4,
+          "threshold_pct": 27.8,
+          "trigger_price": 28.42,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -20.3,
+          "low_trigger_price": 17.74,
+          "slope_pct": -8.0,
+          "low_gap_pp": 6.9,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "中国石油",
+          "code": "601857",
+          "price": 12.3,
+          "deviation_pct": 3.7,
+          "threshold_pct": 36.8,
+          "trigger_price": 16.23,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -19.3,
+          "low_trigger_price": 9.58,
+          "slope_pct": 13.1,
+          "low_gap_pp": 22.9,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "巨化股份",
+          "code": "600160",
+          "price": 23.36,
+          "deviation_pct": -29.2,
+          "threshold_pct": 37.9,
+          "trigger_price": 45.47,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -28.8,
+          "low_trigger_price": 23.47,
+          "slope_pct": -17.9,
+          "low_gap_pp": -0.3,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "川恒股份",
+          "code": "002895",
+          "price": 30.03,
+          "deviation_pct": -3.6,
+          "threshold_pct": 43.3,
+          "trigger_price": 44.65,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -32.9,
+          "low_trigger_price": 20.9,
+          "slope_pct": -5.6,
+          "low_gap_pp": 29.3,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "三美股份",
+          "code": "603379",
+          "price": 41.07,
+          "deviation_pct": -19.2,
+          "threshold_pct": 40.8,
+          "trigger_price": 71.57,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -28.4,
+          "low_trigger_price": 36.4,
+          "slope_pct": -18.7,
+          "low_gap_pp": 9.2,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "云天化",
+          "code": "600096",
+          "price": 24.44,
+          "deviation_pct": -11.4,
+          "threshold_pct": 40.4,
+          "trigger_price": 38.72,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -30.1,
+          "low_trigger_price": 19.27,
+          "slope_pct": -11.8,
+          "low_gap_pp": 18.7,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "药明康德",
+          "code": "603259",
+          "price": 142.79,
+          "deviation_pct": -2.8,
+          "threshold_pct": 36.7,
+          "trigger_price": 200.7,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -31.4,
+          "low_trigger_price": 100.71,
+          "slope_pct": 19.5,
+          "low_gap_pp": 28.7,
+          "low_status": "normal",
+          "low_layers": null
+        },
+        {
+          "name": "赣锋锂业",
+          "code": "002460",
+          "price": 31.28,
+          "deviation_pct": -26.7,
+          "threshold_pct": 43.7,
+          "trigger_price": 61.31,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 12.15,
+            "neutral": 15.19,
+            "optimistic": 18.23
+          },
+          "threshold_dn_pct": -30.2,
+          "low_trigger_price": 29.76,
+          "slope_pct": -35.1,
+          "low_gap_pp": 3.6,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "fail"
+          }
+        },
+        {
+          "name": "天华新能",
+          "code": "300390",
+          "price": 29.88,
+          "deviation_pct": -35.4,
+          "threshold_pct": 70.5,
+          "trigger_price": 78.86,
+          "status": "normal",
+          "valuation": null,
+          "threshold_dn_pct": -36.0,
+          "low_trigger_price": 29.62,
+          "slope_pct": -43.1,
+          "low_gap_pp": 0.6,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "na"
+          }
+        },
+        {
+          "name": "中矿资源",
+          "code": "002738",
+          "price": 30.0,
+          "deviation_pct": -27.7,
+          "threshold_pct": 48.7,
+          "trigger_price": 61.67,
+          "status": "normal",
+          "valuation": {
+            "pessimistic": 0.42,
+            "neutral": 0.53,
+            "optimistic": 0.63
+          },
+          "threshold_dn_pct": -30.0,
+          "low_trigger_price": 29.02,
+          "slope_pct": -33.6,
+          "low_gap_pp": 2.4,
+          "low_status": "watch_reject",
+          "low_layers": {
+            "depth": true,
+            "slope": false,
+            "valuation": "fail"
+          }
+        }
+      ],
+      "gold_rr": {
+        "spot": 3515.6,
+        "spot_change_pct": -2.97,
+        "data_time": "2026-11-25 07:00 UTC",
+        "terms": [
+          {
+            "period": "1W",
+            "rr": -6.18,
+            "daily_change": -2.23,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "1M",
+            "rr": -4.94,
+            "daily_change": -1.75,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "3M",
+            "rr": -2.94,
+            "daily_change": -1.07,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "6M",
+            "rr": -1.69,
+            "daily_change": -0.76,
+            "signal": "强烈偏空🔻"
+          },
+          {
+            "period": "9M",
+            "rr": -0.91,
+            "daily_change": -0.6,
+            "signal": "偏空📉"
+          },
+          {
+            "period": "1Y",
+            "rr": -0.37,
+            "daily_change": -0.51,
+            "signal": "中性偏空"
+          }
+        ]
+      }
+    }
+  ],
+  "_filename": "2026-11-25-1500.json",
+  "_saved_at": "2026-11-25T15:00:48.324299+08:00"
+}

@@ -1,9 +1,99 @@
 window.__SNAPSHOT__ = {
-  "updated_at": "2026-11-26T15:59:55",
-  "count": 0,
-  "stocks": []
+  "updated_at": "2026-11-27T15:57:22",
+  "count": 7,
+  "stocks": [
+    {
+      "symbol": "SZ300085",
+      "name": "银之杰",
+      "marketplace": "CN",
+      "watched": "2026-11-27T13:01:43"
+    },
+    {
+      "symbol": "SZ300561",
+      "name": "汇金科技",
+      "marketplace": "CN",
+      "watched": "2026-11-27T13:01:22"
+    },
+    {
+      "symbol": "SZ000158",
+      "name": "常山北明",
+      "marketplace": "CN",
+      "watched": "2026-11-27T10:50:59"
+    },
+    {
+      "symbol": "SZ300324",
+      "name": "旋极信息",
+      "marketplace": "CN",
+      "watched": "2026-11-27T10:44:21"
+    },
+    {
+      "symbol": "SZ301391",
+      "name": "卡莱特",
+      "marketplace": "CN",
+      "watched": "2026-11-27T10:44:14"
+    },
+    {
+      "symbol": "SZ300339",
+      "name": "润和软件",
+      "marketplace": "CN",
+      "watched": "2026-11-27T09:47:47"
+    },
+    {
+      "symbol": "SH600410",
+      "name": "华胜天成",
+      "marketplace": "CN",
+      "watched": "2026-11-27T09:37:36"
+    }
+  ]
 };
 window.__CHANGELOG__ = [
+  {
+    "date": "2026-11-27",
+    "changes": [
+      {
+        "time": "13:29",
+        "action": "add",
+        "symbol": "SZ300085",
+        "name": "银之杰",
+        "watched": "2026-11-27T13:01:43"
+      },
+      {
+        "time": "13:29",
+        "action": "add",
+        "symbol": "SZ300561",
+        "name": "汇金科技",
+        "watched": "2026-11-27T13:01:22"
+      },
+      {
+        "time": "10:53",
+        "action": "add",
+        "symbol": "SZ000158",
+        "name": "常山北明",
+        "watched": "2026-11-27T10:50:59"
+      },
+      {
+        "time": "10:48",
+        "action": "add",
+        "symbol": "SZ300324",
+        "name": "旋极信息",
+        "watched": "2026-11-27T10:44:21"
+      },
+      {
+        "time": "10:48",
+        "action": "add",
+        "symbol": "SZ301391",
+        "name": "卡莱特",
+        "watched": "2026-11-27T10:44:14"
+      },
+      {
+        "time": "09:48",
+        "action": "add",
+        "symbol": "SZ300339",
+        "name": "润和软件",
+        "watched": "2026-11-27T09:47:47"
+      }
+    ]
+  },
   {
     "date": "2026-11-24",
     "changes": [
